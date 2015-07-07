@@ -295,6 +295,92 @@ public class Xtext2EcoreTransformerTest extends AbstractXtextTests {
   }
   
   @Test
+  public void testParserRuleFragment_03() throws Exception {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("grammar test with org.eclipse.xtext.common.Terminals");
+    _builder.newLine();
+    _builder.append("generate test \'http://test\'");
+    _builder.newLine();
+    _builder.append("MyRule: IntFeatureHolder;");
+    _builder.newLine();
+    _builder.append("fragment IntFeatureHolder: myFeature=INT NameFeatureHolder;");
+    _builder.newLine();
+    _builder.append("fragment NameFeatureHolder: name=STRING;");
+    _builder.newLine();
+    final String grammar = _builder.toString();
+    EPackage ePackage = this.getEPackageFromGrammar(grammar);
+    final EList<EClassifier> classifiers = ePackage.getEClassifiers();
+    int _size = classifiers.size();
+    Assert.assertEquals(3, _size);
+    final EClassifier myRuleType = IterableExtensions.<EClassifier>head(classifiers);
+    String _name = myRuleType.getName();
+    Assert.assertEquals("MyRule", _name);
+    List<? extends EStructuralFeature> _features = this.features(myRuleType);
+    boolean _isEmpty = _features.isEmpty();
+    Assert.assertTrue(_isEmpty);
+    final EClassifier intFeatureHolder = classifiers.get(1);
+    EStructuralFeature _feature = this.<EStructuralFeature>feature(intFeatureHolder, "myFeature");
+    EClassifier _eType = _feature.getEType();
+    String _name_1 = _eType.getName();
+    Assert.assertEquals("EInt", _name_1);
+    List<EClass> _superTypes = this.superTypes(myRuleType);
+    boolean _contains = _superTypes.contains(intFeatureHolder);
+    Assert.assertTrue(_contains);
+    final EClassifier nameFeatureHolder = IterableExtensions.<EClassifier>last(classifiers);
+    EStructuralFeature _feature_1 = this.<EStructuralFeature>feature(nameFeatureHolder, "name");
+    EClassifier _eType_1 = _feature_1.getEType();
+    String _name_2 = _eType_1.getName();
+    Assert.assertEquals("EString", _name_2);
+    List<EClass> _superTypes_1 = this.superTypes(intFeatureHolder);
+    boolean _contains_1 = _superTypes_1.contains(nameFeatureHolder);
+    Assert.assertTrue(_contains_1);
+  }
+  
+  @Test
+  public void testParserRuleFragment_04() throws Exception {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("grammar test with org.eclipse.xtext.common.Terminals");
+    _builder.newLine();
+    _builder.append("generate test \'http://test\'");
+    _builder.newLine();
+    _builder.append("MyRule: Documentable IntFeatureHolder;");
+    _builder.newLine();
+    _builder.append("fragment IntFeatureHolder: Documentable myFeature=INT NameFeatureHolder;");
+    _builder.newLine();
+    _builder.append("fragment NameFeatureHolder: Documentable name=STRING;");
+    _builder.newLine();
+    _builder.append("fragment Documentable*: doc=STRING;");
+    _builder.newLine();
+    final String grammar = _builder.toString();
+    EPackage ePackage = this.getEPackageFromGrammar(grammar);
+    final EList<EClassifier> classifiers = ePackage.getEClassifiers();
+    int _size = classifiers.size();
+    Assert.assertEquals(3, _size);
+    final EClassifier myRuleType = IterableExtensions.<EClassifier>head(classifiers);
+    String _name = myRuleType.getName();
+    Assert.assertEquals("MyRule", _name);
+    List<? extends EStructuralFeature> _features = this.features(myRuleType);
+    boolean _isEmpty = _features.isEmpty();
+    Assert.assertTrue(_isEmpty);
+    final EClassifier intFeatureHolder = classifiers.get(1);
+    EStructuralFeature _feature = this.<EStructuralFeature>feature(intFeatureHolder, "myFeature");
+    EClassifier _eType = _feature.getEType();
+    String _name_1 = _eType.getName();
+    Assert.assertEquals("EInt", _name_1);
+    List<? extends EStructuralFeature> _features_1 = this.features(intFeatureHolder);
+    int _size_1 = _features_1.size();
+    Assert.assertEquals(1, _size_1);
+    final EClassifier nameFeatureHolder = IterableExtensions.<EClassifier>last(classifiers);
+    EStructuralFeature _feature_1 = this.<EStructuralFeature>feature(nameFeatureHolder, "name");
+    EClassifier _eType_1 = _feature_1.getEType();
+    String _name_2 = _eType_1.getName();
+    Assert.assertEquals("EString", _name_2);
+    List<? extends EStructuralFeature> _features_2 = this.features(nameFeatureHolder);
+    int _size_2 = _features_2.size();
+    Assert.assertEquals(2, _size_2);
+  }
+  
+  @Test
   public void testTypesOfImplicitSuperGrammar() throws Exception {
     StringConcatenation _builder = new StringConcatenation();
     _builder.append("grammar test with org.eclipse.xtext.common.Terminals");

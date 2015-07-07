@@ -200,7 +200,51 @@ class Xtext2EcoreTransformerTest extends AbstractXtextTests {
 		assertEquals("EInt", intFeatureHolder.feature('myFeature').EType.name)
 		assertTrue(myRuleType.superTypes.contains(intFeatureHolder))
 	}
-
+	
+	@Test def void testParserRuleFragment_03() throws Exception {
+		val grammar = '''
+			grammar test with org.eclipse.xtext.common.Terminals
+			generate test 'http://test'
+			MyRule: IntFeatureHolder;
+			fragment IntFeatureHolder: myFeature=INT NameFeatureHolder;
+			fragment NameFeatureHolder: name=STRING;
+		'''
+		var ePackage = getEPackageFromGrammar(grammar)
+		val classifiers = ePackage.EClassifiers
+		assertEquals(3, classifiers.size)
+		val myRuleType = classifiers.head
+		assertEquals("MyRule", myRuleType.name)
+		assertTrue(myRuleType.features.empty)
+		val intFeatureHolder = classifiers.get(1)
+		assertEquals("EInt", intFeatureHolder.feature('myFeature').EType.name)
+		assertTrue(myRuleType.superTypes.contains(intFeatureHolder))
+		val nameFeatureHolder = classifiers.last
+		assertEquals("EString", nameFeatureHolder.feature('name').EType.name)
+		assertTrue(intFeatureHolder.superTypes.contains(nameFeatureHolder))
+	}
+	
+	@Test def void testParserRuleFragment_04() throws Exception {
+		val grammar = '''
+			grammar test with org.eclipse.xtext.common.Terminals
+			generate test 'http://test'
+			MyRule: Documentable IntFeatureHolder;
+			fragment IntFeatureHolder: Documentable myFeature=INT NameFeatureHolder;
+			fragment NameFeatureHolder: Documentable name=STRING;
+			fragment Documentable*: doc=STRING;
+		'''
+		var ePackage = getEPackageFromGrammar(grammar)
+		val classifiers = ePackage.EClassifiers
+		assertEquals(3, classifiers.size)
+		val myRuleType = classifiers.head
+		assertEquals("MyRule", myRuleType.name)
+		assertTrue(myRuleType.features.empty)
+		val intFeatureHolder = classifiers.get(1)
+		assertEquals("EInt", intFeatureHolder.feature('myFeature').EType.name)
+		assertEquals(1, intFeatureHolder.features.size)
+		val nameFeatureHolder = classifiers.last
+		assertEquals("EString", nameFeatureHolder.feature('name').EType.name)
+		assertEquals(2, nameFeatureHolder.features.size)
+	}
 
 	@Test def void testTypesOfImplicitSuperGrammar() throws Exception {
 		val xtextGrammar = '''
