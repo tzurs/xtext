@@ -37,7 +37,7 @@ ReferencedMetamodel :
 
 ParserRule :
 	(^fragment?='fragment' name=ID wildcard?='*' | ^fragment?='fragment'? name=ID ('returns' type=TypeRef)?)
-	(definesHiddenTokens?='hidden' '(' (hiddenTokens+=[AbstractRule] (',' hiddenTokens+=[AbstractRule])*)? ')')?':' 
+	(definesHiddenTokens?='hidden' '(' (hiddenTokens+=[AbstractRule] (',' hiddenTokens+=[AbstractRule])*)? ')')? ':'
     	alternatives=Alternatives   
     ';'
 ;
