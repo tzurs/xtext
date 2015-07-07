@@ -1,19 +1,22 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id: RuleCallImpl.java,v 1.15 2010/04/06 14:09:55 sefftinge Exp $
  */
 package org.eclipse.xtext.impl;
 
+import java.util.Collection;
+
 import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
+
 import org.eclipse.xtext.AbstractRule;
+import org.eclipse.xtext.NamedArgument;
 import org.eclipse.xtext.RuleCall;
 import org.eclipse.xtext.XtextPackage;
 
@@ -26,6 +29,7 @@ import org.eclipse.xtext.XtextPackage;
  * </p>
  * <ul>
  *   <li>{@link org.eclipse.xtext.impl.RuleCallImpl#getRule <em>Rule</em>}</li>
+ *   <li>{@link org.eclipse.xtext.impl.RuleCallImpl#getArguments <em>Arguments</em>}</li>
  * </ul>
  *
  * @generated
@@ -40,6 +44,17 @@ public class RuleCallImpl extends AbstractElementImpl implements RuleCall {
 	 * @ordered
 	 */
 	protected AbstractRule rule;
+
+	/**
+	 * The cached value of the '{@link #getArguments() <em>Arguments</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getArguments()
+	 * @generated
+	 * @ordered
+	 * @since 2.9
+	 */
+	protected EList<NamedArgument> arguments;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -100,6 +115,19 @@ public class RuleCallImpl extends AbstractElementImpl implements RuleCall {
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<NamedArgument> getArguments() {
+		if (arguments == null) {
+			arguments = new EObjectResolvingEList<NamedArgument>(NamedArgument.class, this, XtextPackage.RULE_CALL__ARGUMENTS);
+		}
+		return arguments;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
@@ -109,6 +137,8 @@ public class RuleCallImpl extends AbstractElementImpl implements RuleCall {
 			case XtextPackage.RULE_CALL__RULE:
 				if (resolve) return getRule();
 				return basicGetRule();
+			case XtextPackage.RULE_CALL__ARGUMENTS:
+				return getArguments();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -118,11 +148,16 @@ public class RuleCallImpl extends AbstractElementImpl implements RuleCall {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case XtextPackage.RULE_CALL__RULE:
 				setRule((AbstractRule)newValue);
+				return;
+			case XtextPackage.RULE_CALL__ARGUMENTS:
+				getArguments().clear();
+				getArguments().addAll((Collection<? extends NamedArgument>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -139,6 +174,9 @@ public class RuleCallImpl extends AbstractElementImpl implements RuleCall {
 			case XtextPackage.RULE_CALL__RULE:
 				setRule((AbstractRule)null);
 				return;
+			case XtextPackage.RULE_CALL__ARGUMENTS:
+				getArguments().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -153,6 +191,8 @@ public class RuleCallImpl extends AbstractElementImpl implements RuleCall {
 		switch (featureID) {
 			case XtextPackage.RULE_CALL__RULE:
 				return rule != null;
+			case XtextPackage.RULE_CALL__ARGUMENTS:
+				return arguments != null && !arguments.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

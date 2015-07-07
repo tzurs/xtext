@@ -7,50 +7,52 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import org.eclipse.xtext.TerminalRule;
+import org.eclipse.xtext.Parameter;
 import org.eclipse.xtext.XtextPackage;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Terminal Rule</b></em>'.
+ * An implementation of the model object '<em><b>Parameter</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.eclipse.xtext.impl.TerminalRuleImpl#isFragment <em>Fragment</em>}</li>
+ *   <li>{@link org.eclipse.xtext.impl.ParameterImpl#getName <em>Name</em>}</li>
  * </ul>
  *
  * @generated
+ * @since 2.9
  */
-public class TerminalRuleImpl extends AbstractRuleImpl implements TerminalRule {
+public class ParameterImpl extends MinimalEObjectImpl.Container implements Parameter {
 	/**
-	 * The default value of the '{@link #isFragment() <em>Fragment</em>}' attribute.
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isFragment()
+	 * @see #getName()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final boolean FRAGMENT_EDEFAULT = false;
+	protected static final String NAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #isFragment() <em>Fragment</em>}' attribute.
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isFragment()
+	 * @see #getName()
 	 * @generated
 	 * @ordered
 	 */
-	protected boolean fragment = FRAGMENT_EDEFAULT;
+	protected String name = NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TerminalRuleImpl() {
+	protected ParameterImpl() {
 		super();
 	}
 
@@ -61,7 +63,7 @@ public class TerminalRuleImpl extends AbstractRuleImpl implements TerminalRule {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return XtextPackage.Literals.TERMINAL_RULE;
+		return XtextPackage.Literals.PARAMETER;
 	}
 
 	/**
@@ -69,8 +71,8 @@ public class TerminalRuleImpl extends AbstractRuleImpl implements TerminalRule {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isFragment() {
-		return fragment;
+	public String getName() {
+		return name;
 	}
 
 	/**
@@ -78,11 +80,11 @@ public class TerminalRuleImpl extends AbstractRuleImpl implements TerminalRule {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFragment(boolean newFragment) {
-		boolean oldFragment = fragment;
-		fragment = newFragment;
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, XtextPackage.TERMINAL_RULE__FRAGMENT, oldFragment, fragment));
+			eNotify(new ENotificationImpl(this, Notification.SET, XtextPackage.PARAMETER__NAME, oldName, name));
 	}
 
 	/**
@@ -93,8 +95,8 @@ public class TerminalRuleImpl extends AbstractRuleImpl implements TerminalRule {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case XtextPackage.TERMINAL_RULE__FRAGMENT:
-				return isFragment();
+			case XtextPackage.PARAMETER__NAME:
+				return getName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -107,8 +109,8 @@ public class TerminalRuleImpl extends AbstractRuleImpl implements TerminalRule {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case XtextPackage.TERMINAL_RULE__FRAGMENT:
-				setFragment((Boolean)newValue);
+			case XtextPackage.PARAMETER__NAME:
+				setName((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -122,8 +124,8 @@ public class TerminalRuleImpl extends AbstractRuleImpl implements TerminalRule {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case XtextPackage.TERMINAL_RULE__FRAGMENT:
-				setFragment(FRAGMENT_EDEFAULT);
+			case XtextPackage.PARAMETER__NAME:
+				setName(NAME_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -137,8 +139,8 @@ public class TerminalRuleImpl extends AbstractRuleImpl implements TerminalRule {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case XtextPackage.TERMINAL_RULE__FRAGMENT:
-				return fragment != FRAGMENT_EDEFAULT;
+			case XtextPackage.PARAMETER__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -153,10 +155,10 @@ public class TerminalRuleImpl extends AbstractRuleImpl implements TerminalRule {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (fragment: ");
-		result.append(fragment);
+		result.append(" (name: ");
+		result.append(name);
 		result.append(')');
 		return result.toString();
 	}
 
-} //TerminalRuleImpl
+} //ParameterImpl

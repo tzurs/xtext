@@ -72,7 +72,7 @@ public class XtextFormatter extends AbstractDeclarativeFormatter {
 
 		// ParserRule
 		ParserRuleElements pr = g.getParserRuleAccess();
-		cfg.setNoSpace().before(pr.getLeftParenthesisKeyword_2_1());
+		cfg.setNoSpace().before(pr.getLeftParenthesisKeyword_1_1());
 
 		// TypeRef
 		TypeRefElements typeRef = g.getTypeRefAccess();

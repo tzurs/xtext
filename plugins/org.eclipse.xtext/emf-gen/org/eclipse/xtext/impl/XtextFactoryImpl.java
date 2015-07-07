@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id: XtextFactoryImpl.java,v 1.19 2010/04/06 14:09:54 sefftinge Exp $
  */
 package org.eclipse.xtext.impl;
 
@@ -86,6 +82,9 @@ public class XtextFactoryImpl extends EFactoryImpl implements XtextFactory {
 			case XtextPackage.CHARACTER_RANGE: return createCharacterRange();
 			case XtextPackage.COMPOUND_ELEMENT: return createCompoundElement();
 			case XtextPackage.EOF: return createEOF();
+			case XtextPackage.PARAMETER: return createParameter();
+			case XtextPackage.CONDITIONAL_BRANCH: return createConditionalBranch();
+			case XtextPackage.NAMED_ARGUMENT: return createNamedArgument();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -273,17 +272,6 @@ public class XtextFactoryImpl extends EFactoryImpl implements XtextFactory {
 
 	/**
 	 * <!-- begin-user-doc -->
-	 * @since 2.0
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOF createEOF() {
-		EOFImpl eof = new EOFImpl();
-		return eof;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
@@ -350,6 +338,49 @@ public class XtextFactoryImpl extends EFactoryImpl implements XtextFactory {
 	public CompoundElement createCompoundElement() {
 		CompoundElementImpl compoundElement = new CompoundElementImpl();
 		return compoundElement;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOF createEOF() {
+		EOFImpl eof = new EOFImpl();
+		return eof;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Parameter createParameter() {
+		ParameterImpl parameter = new ParameterImpl();
+		return parameter;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ConditionalBranch createConditionalBranch() {
+		ConditionalBranchImpl conditionalBranch = new ConditionalBranchImpl();
+		return conditionalBranch;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NamedArgument createNamedArgument() {
+		NamedArgumentImpl namedArgument = new NamedArgumentImpl();
+		return namedArgument;
 	}
 
 	/**

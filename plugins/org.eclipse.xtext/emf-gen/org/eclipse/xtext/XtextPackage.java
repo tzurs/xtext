@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id: XtextPackage.java,v 1.23 2010/04/06 14:10:12 sefftinge Exp $
  */
 package org.eclipse.xtext;
 
@@ -22,6 +18,7 @@ import org.eclipse.emf.ecore.EReference;
  *   <li>and each data type</li>
  * </ul>
  * @noimplement This interface is not intended to be implemented by clients.
+ * @noextend This interface is not intended to be extended by clients.
  * <!-- end-user-doc -->
  * @see org.eclipse.xtext.XtextFactory
  * @model kind="package"
@@ -355,13 +352,44 @@ public interface XtextPackage extends EPackage {
 	int PARSER_RULE__HIDDEN_TOKENS = ABSTRACT_RULE_FEATURE_COUNT + 1;
 
 	/**
-	 * The number of structural features of the '<em>Parser Rule</em>' class.
+	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
+	 * @since 2.9
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARSER_RULE_FEATURE_COUNT = ABSTRACT_RULE_FEATURE_COUNT + 2;
+	int PARSER_RULE__PARAMETERS = ABSTRACT_RULE_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Fragment</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARSER_RULE__FRAGMENT = ABSTRACT_RULE_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Wildcard</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARSER_RULE__WILDCARD = ABSTRACT_RULE_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of structural features of the '<em>Parser Rule</em>' class.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARSER_RULE_FEATURE_COUNT = ABSTRACT_RULE_FEATURE_COUNT + 5;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.xtext.impl.TypeRefImpl <em>Type Ref</em>}' class.
@@ -625,13 +653,24 @@ public interface XtextPackage extends EPackage {
 	int RULE_CALL__RULE = ABSTRACT_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of structural features of the '<em>Rule Call</em>' class.
+	 * The feature id for the '<em><b>Arguments</b></em>' reference list.
 	 * <!-- begin-user-doc -->
+	 * @since 2.9
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RULE_CALL_FEATURE_COUNT = ABSTRACT_ELEMENT_FEATURE_COUNT + 1;
+	int RULE_CALL__ARGUMENTS = ABSTRACT_ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Rule Call</em>' class.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RULE_CALL_FEATURE_COUNT = ABSTRACT_ELEMENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.xtext.impl.AssignmentImpl <em>Assignment</em>}' class.
@@ -1043,17 +1082,6 @@ public interface XtextPackage extends EPackage {
 	int WILDCARD_FEATURE_COUNT = ABSTRACT_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.xtext.impl.EOFImpl <em>EOF</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * @since 2.0
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.xtext.impl.EOFImpl
-	 * @see org.eclipse.xtext.impl.XtextPackageImpl#getEOF()
-	 * @generated
-	 */
-	int EOF = 25;
-
-	/**
 	 * The meta object id for the '{@link org.eclipse.xtext.impl.EnumRuleImpl <em>Enum Rule</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1454,9 +1482,18 @@ public interface XtextPackage extends EPackage {
 	int CHARACTER_RANGE_FEATURE_COUNT = ABSTRACT_ELEMENT_FEATURE_COUNT + 2;
 
 	/**
+	 * The meta object id for the '{@link org.eclipse.xtext.impl.EOFImpl <em>EOF</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.xtext.impl.EOFImpl
+	 * @see org.eclipse.xtext.impl.XtextPackageImpl#getEOF()
+	 * @generated
+	 */
+	int EOF = 25;
+
+	/**
 	 * The feature id for the '<em><b>Cardinality</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * @since 2.0
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
@@ -1466,7 +1503,6 @@ public interface XtextPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Predicated</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * @since 2.0
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
@@ -1486,12 +1522,164 @@ public interface XtextPackage extends EPackage {
 	/**
 	 * The number of structural features of the '<em>EOF</em>' class.
 	 * <!-- begin-user-doc -->
-	 * @since 2.0
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
 	int EOF_FEATURE_COUNT = ABSTRACT_ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.eclipse.xtext.impl.ParameterImpl <em>Parameter</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.xtext.impl.ParameterImpl
+	 * @see org.eclipse.xtext.impl.XtextPackageImpl#getParameter()
+	 * @generated
+	 */
+	int PARAMETER = 26;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARAMETER__NAME = 0;
+
+	/**
+	 * The number of structural features of the '<em>Parameter</em>' class.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARAMETER_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link org.eclipse.xtext.impl.ConditionalBranchImpl <em>Conditional Branch</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.xtext.impl.ConditionalBranchImpl
+	 * @see org.eclipse.xtext.impl.XtextPackageImpl#getConditionalBranch()
+	 * @generated
+	 */
+	int CONDITIONAL_BRANCH = 27;
+
+	/**
+	 * The feature id for the '<em><b>Cardinality</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_BRANCH__CARDINALITY = ABSTRACT_ELEMENT__CARDINALITY;
+
+	/**
+	 * The feature id for the '<em><b>Predicated</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_BRANCH__PREDICATED = ABSTRACT_ELEMENT__PREDICATED;
+
+	/**
+	 * The feature id for the '<em><b>First Set Predicated</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_BRANCH__FIRST_SET_PREDICATED = ABSTRACT_ELEMENT__FIRST_SET_PREDICATED;
+
+	/**
+	 * The feature id for the '<em><b>Parameter</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_BRANCH__PARAMETER = ABSTRACT_ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Filtered</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_BRANCH__FILTERED = ABSTRACT_ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Conditional Branch</em>' class.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_BRANCH_FEATURE_COUNT = ABSTRACT_ELEMENT_FEATURE_COUNT + 2;
+
+	/**
+	 * The meta object id for the '{@link org.eclipse.xtext.impl.NamedArgumentImpl <em>Named Argument</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.xtext.impl.NamedArgumentImpl
+	 * @see org.eclipse.xtext.impl.XtextPackageImpl#getNamedArgument()
+	 * @generated
+	 */
+	int NAMED_ARGUMENT = 28;
+
+	/**
+	 * The feature id for the '<em><b>Parameter</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAMED_ARGUMENT__PARAMETER = 0;
+
+	/**
+	 * The feature id for the '<em><b>Literal Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAMED_ARGUMENT__LITERAL_VALUE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAMED_ARGUMENT__VALUE = 2;
+
+	/**
+	 * The number of structural features of the '<em>Named Argument</em>' class.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAMED_ARGUMENT_FEATURE_COUNT = 3;
 
 
 	/**
@@ -1709,6 +1897,42 @@ public interface XtextPackage extends EPackage {
 	EReference getParserRule_HiddenTokens();
 
 	/**
+	 * Returns the meta object for the containment reference list '{@link org.eclipse.xtext.ParserRule#getParameters <em>Parameters</em>}'.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Parameters</em>'.
+	 * @see org.eclipse.xtext.ParserRule#getParameters()
+	 * @see #getParserRule()
+	 * @generated
+	 */
+	EReference getParserRule_Parameters();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.eclipse.xtext.ParserRule#isFragment <em>Fragment</em>}'.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Fragment</em>'.
+	 * @see org.eclipse.xtext.ParserRule#isFragment()
+	 * @see #getParserRule()
+	 * @generated
+	 */
+	EAttribute getParserRule_Fragment();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.eclipse.xtext.ParserRule#isWildcard <em>Wildcard</em>}'.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Wildcard</em>'.
+	 * @see org.eclipse.xtext.ParserRule#isWildcard()
+	 * @see #getParserRule()
+	 * @generated
+	 */
+	EAttribute getParserRule_Wildcard();
+
+	/**
 	 * Returns the meta object for class '{@link org.eclipse.xtext.TypeRef <em>Type Ref</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1870,6 +2094,18 @@ public interface XtextPackage extends EPackage {
 	EReference getRuleCall_Rule();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.eclipse.xtext.RuleCall#getArguments <em>Arguments</em>}'.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Arguments</em>'.
+	 * @see org.eclipse.xtext.RuleCall#getArguments()
+	 * @see #getRuleCall()
+	 * @generated
+	 */
+	EReference getRuleCall_Arguments();
+
+	/**
 	 * Returns the meta object for class '{@link org.eclipse.xtext.Assignment <em>Assignment</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2017,17 +2253,6 @@ public interface XtextPackage extends EPackage {
 	EClass getWildcard();
 
 	/**
-	 * Returns the meta object for class '{@link org.eclipse.xtext.EOF <em>EOF</em>}'.
-	 * <!-- begin-user-doc -->
-	 * @since 2.0
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>EOF</em>'.
-	 * @see org.eclipse.xtext.EOF
-	 * @generated
-	 */
-	EClass getEOF();
-
-	/**
 	 * Returns the meta object for class '{@link org.eclipse.xtext.EnumRule <em>Enum Rule</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2153,6 +2378,121 @@ public interface XtextPackage extends EPackage {
 	EReference getCompoundElement_Elements();
 
 	/**
+	 * Returns the meta object for class '{@link org.eclipse.xtext.EOF <em>EOF</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>EOF</em>'.
+	 * @see org.eclipse.xtext.EOF
+	 * @generated
+	 */
+	EClass getEOF();
+
+	/**
+	 * Returns the meta object for class '{@link org.eclipse.xtext.Parameter <em>Parameter</em>}'.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Parameter</em>'.
+	 * @see org.eclipse.xtext.Parameter
+	 * @generated
+	 */
+	EClass getParameter();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.eclipse.xtext.Parameter#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see org.eclipse.xtext.Parameter#getName()
+	 * @see #getParameter()
+	 * @generated
+	 */
+	EAttribute getParameter_Name();
+
+	/**
+	 * Returns the meta object for class '{@link org.eclipse.xtext.ConditionalBranch <em>Conditional Branch</em>}'.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Conditional Branch</em>'.
+	 * @see org.eclipse.xtext.ConditionalBranch
+	 * @generated
+	 */
+	EClass getConditionalBranch();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.eclipse.xtext.ConditionalBranch#getParameter <em>Parameter</em>}'.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Parameter</em>'.
+	 * @see org.eclipse.xtext.ConditionalBranch#getParameter()
+	 * @see #getConditionalBranch()
+	 * @generated
+	 */
+	EReference getConditionalBranch_Parameter();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.eclipse.xtext.ConditionalBranch#isFiltered <em>Filtered</em>}'.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Filtered</em>'.
+	 * @see org.eclipse.xtext.ConditionalBranch#isFiltered()
+	 * @see #getConditionalBranch()
+	 * @generated
+	 */
+	EAttribute getConditionalBranch_Filtered();
+
+	/**
+	 * Returns the meta object for class '{@link org.eclipse.xtext.NamedArgument <em>Named Argument</em>}'.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Named Argument</em>'.
+	 * @see org.eclipse.xtext.NamedArgument
+	 * @generated
+	 */
+	EClass getNamedArgument();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.eclipse.xtext.NamedArgument#getParameter <em>Parameter</em>}'.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Parameter</em>'.
+	 * @see org.eclipse.xtext.NamedArgument#getParameter()
+	 * @see #getNamedArgument()
+	 * @generated
+	 */
+	EReference getNamedArgument_Parameter();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.eclipse.xtext.NamedArgument#isLiteralValue <em>Literal Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Literal Value</em>'.
+	 * @see org.eclipse.xtext.NamedArgument#isLiteralValue()
+	 * @see #getNamedArgument()
+	 * @generated
+	 */
+	EAttribute getNamedArgument_LiteralValue();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.eclipse.xtext.NamedArgument#getValue <em>Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Value</em>'.
+	 * @see org.eclipse.xtext.NamedArgument#getValue()
+	 * @see #getNamedArgument()
+	 * @generated
+	 */
+	EReference getNamedArgument_Value();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2171,6 +2511,7 @@ public interface XtextPackage extends EPackage {
 	 *   <li>and each data type</li>
 	 * </ul>
 	 * @noimplement This interface is not intended to be implemented by clients.
+	 * @noextend This interface is not intended to be extended by clients.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
@@ -2348,6 +2689,33 @@ public interface XtextPackage extends EPackage {
 		EReference PARSER_RULE__HIDDEN_TOKENS = eINSTANCE.getParserRule_HiddenTokens();
 
 		/**
+		 * The meta object literal for the '<em><b>Parameters</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * @since 2.9
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PARSER_RULE__PARAMETERS = eINSTANCE.getParserRule_Parameters();
+
+		/**
+		 * The meta object literal for the '<em><b>Fragment</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * @since 2.9
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PARSER_RULE__FRAGMENT = eINSTANCE.getParserRule_Fragment();
+
+		/**
+		 * The meta object literal for the '<em><b>Wildcard</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * @since 2.9
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PARSER_RULE__WILDCARD = eINSTANCE.getParserRule_Wildcard();
+
+		/**
 		 * The meta object literal for the '{@link org.eclipse.xtext.impl.TypeRefImpl <em>Type Ref</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2479,6 +2847,15 @@ public interface XtextPackage extends EPackage {
 		EReference RULE_CALL__RULE = eINSTANCE.getRuleCall_Rule();
 
 		/**
+		 * The meta object literal for the '<em><b>Arguments</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * @since 2.9
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference RULE_CALL__ARGUMENTS = eINSTANCE.getRuleCall_Arguments();
+
+		/**
 		 * The meta object literal for the '{@link org.eclipse.xtext.impl.AssignmentImpl <em>Assignment</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2605,17 +2982,6 @@ public interface XtextPackage extends EPackage {
 		EClass WILDCARD = eINSTANCE.getWildcard();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.xtext.impl.EOFImpl <em>EOF</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * @since 2.0
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.xtext.impl.EOFImpl
-		 * @see org.eclipse.xtext.impl.XtextPackageImpl#getEOF()
-		 * @generated
-		 */
-		EClass EOF = eINSTANCE.getEOF();
-
-		/**
 		 * The meta object literal for the '{@link org.eclipse.xtext.impl.EnumRuleImpl <em>Enum Rule</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2724,6 +3090,103 @@ public interface XtextPackage extends EPackage {
 		 * @generated
 		 */
 		EReference COMPOUND_ELEMENT__ELEMENTS = eINSTANCE.getCompoundElement_Elements();
+
+		/**
+		 * The meta object literal for the '{@link org.eclipse.xtext.impl.EOFImpl <em>EOF</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.eclipse.xtext.impl.EOFImpl
+		 * @see org.eclipse.xtext.impl.XtextPackageImpl#getEOF()
+		 * @generated
+		 */
+		EClass EOF = eINSTANCE.getEOF();
+
+		/**
+		 * The meta object literal for the '{@link org.eclipse.xtext.impl.ParameterImpl <em>Parameter</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * @since 2.9
+		 * <!-- end-user-doc -->
+		 * @see org.eclipse.xtext.impl.ParameterImpl
+		 * @see org.eclipse.xtext.impl.XtextPackageImpl#getParameter()
+		 * @generated
+		 */
+		EClass PARAMETER = eINSTANCE.getParameter();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * @since 2.9
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PARAMETER__NAME = eINSTANCE.getParameter_Name();
+
+		/**
+		 * The meta object literal for the '{@link org.eclipse.xtext.impl.ConditionalBranchImpl <em>Conditional Branch</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * @since 2.9
+		 * <!-- end-user-doc -->
+		 * @see org.eclipse.xtext.impl.ConditionalBranchImpl
+		 * @see org.eclipse.xtext.impl.XtextPackageImpl#getConditionalBranch()
+		 * @generated
+		 */
+		EClass CONDITIONAL_BRANCH = eINSTANCE.getConditionalBranch();
+
+		/**
+		 * The meta object literal for the '<em><b>Parameter</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * @since 2.9
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CONDITIONAL_BRANCH__PARAMETER = eINSTANCE.getConditionalBranch_Parameter();
+
+		/**
+		 * The meta object literal for the '<em><b>Filtered</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * @since 2.9
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CONDITIONAL_BRANCH__FILTERED = eINSTANCE.getConditionalBranch_Filtered();
+
+		/**
+		 * The meta object literal for the '{@link org.eclipse.xtext.impl.NamedArgumentImpl <em>Named Argument</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * @since 2.9
+		 * <!-- end-user-doc -->
+		 * @see org.eclipse.xtext.impl.NamedArgumentImpl
+		 * @see org.eclipse.xtext.impl.XtextPackageImpl#getNamedArgument()
+		 * @generated
+		 */
+		EClass NAMED_ARGUMENT = eINSTANCE.getNamedArgument();
+
+		/**
+		 * The meta object literal for the '<em><b>Parameter</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * @since 2.9
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference NAMED_ARGUMENT__PARAMETER = eINSTANCE.getNamedArgument_Parameter();
+
+		/**
+		 * The meta object literal for the '<em><b>Literal Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * @since 2.9
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NAMED_ARGUMENT__LITERAL_VALUE = eINSTANCE.getNamedArgument_LiteralValue();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * @since 2.9
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference NAMED_ARGUMENT__VALUE = eINSTANCE.getNamedArgument_Value();
 
 	}
 

@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id: XtextFactory.java,v 1.16 2010/04/06 14:10:12 sefftinge Exp $
  */
 package org.eclipse.xtext;
 
@@ -12,7 +8,6 @@ import org.eclipse.emf.ecore.EFactory;
  * <!-- begin-user-doc -->
  * The <b>Factory</b> for the model.
  * It provides a create method for each non-abstract class of the model.
- * @noimplement This interface is not intended to be implemented by clients.
  * <!-- end-user-doc -->
  * @see org.eclipse.xtext.XtextPackage
  * @generated
@@ -189,16 +184,6 @@ public interface XtextFactory extends EFactory {
 	Wildcard createWildcard();
 
 	/**
-	 * Returns a new object of class '<em>EOF</em>'.
-	 * <!-- begin-user-doc -->
-	 * @since 2.0
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>EOF</em>'.
-	 * @generated
-	 */
-	EOF createEOF();
-
-	/**
 	 * Returns a new object of class '<em>Enum Rule</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -260,6 +245,45 @@ public interface XtextFactory extends EFactory {
 	 * @generated
 	 */
 	CompoundElement createCompoundElement();
+
+	/**
+	 * Returns a new object of class '<em>EOF</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>EOF</em>'.
+	 * @generated
+	 */
+	EOF createEOF();
+
+	/**
+	 * Returns a new object of class '<em>Parameter</em>'.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Parameter</em>'.
+	 * @generated
+	 */
+	Parameter createParameter();
+
+	/**
+	 * Returns a new object of class '<em>Conditional Branch</em>'.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Conditional Branch</em>'.
+	 * @generated
+	 */
+	ConditionalBranch createConditionalBranch();
+
+	/**
+	 * Returns a new object of class '<em>Named Argument</em>'.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Named Argument</em>'.
+	 * @generated
+	 */
+	NamedArgument createNamedArgument();
 
 	/**
 	 * Returns the package supported by this factory.

@@ -34,7 +34,8 @@ public class XtextParserDefinition extends AbstractXtextParserDefinition {
 		}
 		if (elementType == elementTypeProvider.getAbstractRule_ParserRuleParserRuleCall_0ElementType()) {
 			return new PsiNamedEObjectImpl(node,
-				elementTypeProvider.getParserRule_NameIDTerminalRuleCall_0_0ElementType()
+				elementTypeProvider.getParserRule_NameIDTerminalRuleCall_0_0_1_0ElementType(),
+				elementTypeProvider.getParserRule_NameIDTerminalRuleCall_0_1_1_0ElementType()
 			);
 		}
 		if (elementType == elementTypeProvider.getAbstractRule_TerminalRuleParserRuleCall_1ElementType()) {
@@ -66,10 +67,10 @@ public class XtextParserDefinition extends AbstractXtextParserDefinition {
 		if (elementType == elementTypeProvider.getReferencedMetamodel_EPackageEPackageCrossReference_1_0ElementType()) {
 			return new PsiEObjectReference(node);
 		}
-		if (elementType == elementTypeProvider.getParserRule_HiddenTokensAbstractRuleCrossReference_2_2_0_0ElementType()) {
+		if (elementType == elementTypeProvider.getParserRule_HiddenTokensAbstractRuleCrossReference_1_2_0_0ElementType()) {
 			return new PsiEObjectReference(node);
 		}
-		if (elementType == elementTypeProvider.getParserRule_HiddenTokensAbstractRuleCrossReference_2_2_1_1_0ElementType()) {
+		if (elementType == elementTypeProvider.getParserRule_HiddenTokensAbstractRuleCrossReference_1_2_1_1_0ElementType()) {
 			return new PsiEObjectReference(node);
 		}
 		if (elementType == elementTypeProvider.getTypeRef_MetamodelAbstractMetamodelDeclarationCrossReference_0_0_0ElementType()) {

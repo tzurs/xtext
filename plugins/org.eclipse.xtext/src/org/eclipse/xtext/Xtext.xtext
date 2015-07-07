@@ -36,7 +36,8 @@ ReferencedMetamodel :
 	'import' ePackage=[ecore::EPackage|STRING] ('as' alias=ID)?;
 
 ParserRule :
-    name=ID ('returns' type=TypeRef)? (definesHiddenTokens?='hidden' '(' (hiddenTokens+=[AbstractRule] (',' hiddenTokens+=[AbstractRule])*)? ')')?':' 
+	(^fragment?='fragment' name=ID wildcard?='*' | ^fragment?='fragment'? name=ID ('returns' type=TypeRef)?)
+	(definesHiddenTokens?='hidden' '(' (hiddenTokens+=[AbstractRule] (',' hiddenTokens+=[AbstractRule])*)? ')')?':' 
     	alternatives=Alternatives   
     ';'
 ;
@@ -82,8 +83,6 @@ AbstractTerminal returns AbstractElement:
    PredicatedRuleCall |
    // We have to make this one explicit since the ParenthesizedElement does not
    // create an object but we have to set the predicated flag
-   // TODO: As soon as we have an own element for parenthesized elements with
-   // cardinality, we should refactor this part of the grammar
    PredicatedGroup
 ;
 
@@ -92,7 +91,11 @@ Keyword :
 ;
 
 RuleCall :
-   rule=[AbstractRule]
+   rule=[AbstractRule|RuleID]
+;
+
+RuleID returns ecore::EString:
+  ID ('::' ID)*
 ;
 
 PredicatedKeyword returns Keyword:

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <component id="org.eclipse.xtext" version="2">
     <resource path="META-INF/MANIFEST.MF">
-        <filter comment="version will be generated during buckminster build" id="927989779">
+        <filter id="927989779">
             <message_arguments>
                 <message_argument value="2.9.0"/>
                 <message_argument value="org.eclipse.xtext.util"/>
@@ -24,17 +24,119 @@
             </message_arguments>
         </filter>
     </resource>
-    <resource path="src-gen/org/eclipse/xtext/XtextStandaloneSetupGenerated.java" type="org.eclipse.xtext.XtextStandaloneSetupGenerated">
-        <filter id="1143996420">
+    <resource path="emf-gen/org/eclipse/xtext/XtextFactory.java" type="org.eclipse.xtext.XtextFactory">
+        <filter id="403804204">
             <message_arguments>
-                <message_argument value="getFileExtensions()"/>
+                <message_argument value="org.eclipse.xtext.XtextFactory"/>
+                <message_argument value="createConditionalBranch()"/>
+            </message_arguments>
+        </filter>
+        <filter id="403804204">
+            <message_arguments>
+                <message_argument value="org.eclipse.xtext.XtextFactory"/>
+                <message_argument value="createNamedArgument()"/>
+            </message_arguments>
+        </filter>
+        <filter id="403804204">
+            <message_arguments>
+                <message_argument value="org.eclipse.xtext.XtextFactory"/>
+                <message_argument value="createParameter()"/>
             </message_arguments>
         </filter>
     </resource>
-    <resource path="src-gen/org/eclipse/xtext/common/TerminalsStandaloneSetupGenerated.java" type="org.eclipse.xtext.common.TerminalsStandaloneSetupGenerated">
-        <filter id="1143996420">
+    <resource path="emf-gen/org/eclipse/xtext/XtextPackage.java" type="org.eclipse.xtext.XtextPackage">
+        <filter comment="Number of features changed but no changed feature id" id="388194388">
             <message_arguments>
-                <message_argument value="getFileExtensions()"/>
+                <message_argument value="org.eclipse.xtext.XtextPackage"/>
+                <message_argument value="PARSER_RULE_FEATURE_COUNT"/>
+                <message_argument value="5"/>
+            </message_arguments>
+        </filter>
+        <filter comment="Number of features changed but no changed feature id" id="388194388">
+            <message_arguments>
+                <message_argument value="org.eclipse.xtext.XtextPackage"/>
+                <message_argument value="RULE_CALL_FEATURE_COUNT"/>
+                <message_argument value="4"/>
+            </message_arguments>
+        </filter>
+    </resource>
+    <resource path="emf-gen/org/eclipse/xtext/XtextPackage.java" type="org.eclipse.xtext.XtextPackage$Literals">
+        <filter id="403767336">
+            <message_arguments>
+                <message_argument value="org.eclipse.xtext.XtextPackage.Literals"/>
+                <message_argument value="CONDITIONAL_BRANCH"/>
+            </message_arguments>
+        </filter>
+        <filter id="403767336">
+            <message_arguments>
+                <message_argument value="org.eclipse.xtext.XtextPackage.Literals"/>
+                <message_argument value="CONDITIONAL_BRANCH__FILTERED"/>
+            </message_arguments>
+        </filter>
+        <filter id="403767336">
+            <message_arguments>
+                <message_argument value="org.eclipse.xtext.XtextPackage.Literals"/>
+                <message_argument value="CONDITIONAL_BRANCH__PARAMETER"/>
+            </message_arguments>
+        </filter>
+        <filter id="403767336">
+            <message_arguments>
+                <message_argument value="org.eclipse.xtext.XtextPackage.Literals"/>
+                <message_argument value="NAMED_ARGUMENT"/>
+            </message_arguments>
+        </filter>
+        <filter id="403767336">
+            <message_arguments>
+                <message_argument value="org.eclipse.xtext.XtextPackage.Literals"/>
+                <message_argument value="NAMED_ARGUMENT__LITERAL_VALUE"/>
+            </message_arguments>
+        </filter>
+        <filter id="403767336">
+            <message_arguments>
+                <message_argument value="org.eclipse.xtext.XtextPackage.Literals"/>
+                <message_argument value="NAMED_ARGUMENT__PARAMETER"/>
+            </message_arguments>
+        </filter>
+        <filter id="403767336">
+            <message_arguments>
+                <message_argument value="org.eclipse.xtext.XtextPackage.Literals"/>
+                <message_argument value="NAMED_ARGUMENT__VALUE"/>
+            </message_arguments>
+        </filter>
+        <filter id="403767336">
+            <message_arguments>
+                <message_argument value="org.eclipse.xtext.XtextPackage.Literals"/>
+                <message_argument value="PARAMETER"/>
+            </message_arguments>
+        </filter>
+        <filter id="403767336">
+            <message_arguments>
+                <message_argument value="org.eclipse.xtext.XtextPackage.Literals"/>
+                <message_argument value="PARAMETER__NAME"/>
+            </message_arguments>
+        </filter>
+        <filter id="403767336">
+            <message_arguments>
+                <message_argument value="org.eclipse.xtext.XtextPackage.Literals"/>
+                <message_argument value="PARSER_RULE__FRAGMENT"/>
+            </message_arguments>
+        </filter>
+        <filter id="403767336">
+            <message_arguments>
+                <message_argument value="org.eclipse.xtext.XtextPackage.Literals"/>
+                <message_argument value="PARSER_RULE__PARAMETERS"/>
+            </message_arguments>
+        </filter>
+        <filter id="403767336">
+            <message_arguments>
+                <message_argument value="org.eclipse.xtext.XtextPackage.Literals"/>
+                <message_argument value="PARSER_RULE__WILDCARD"/>
+            </message_arguments>
+        </filter>
+        <filter id="403767336">
+            <message_arguments>
+                <message_argument value="org.eclipse.xtext.XtextPackage.Literals"/>
+                <message_argument value="RULE_CALL__ARGUMENTS"/>
             </message_arguments>
         </filter>
     </resource>

@@ -1,11 +1,8 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id: RuleCall.java,v 1.15 2010/04/06 14:10:16 sefftinge Exp $
  */
 package org.eclipse.xtext;
 
+import org.eclipse.emf.common.util.EList;
 
 /**
  * <!-- begin-user-doc -->
@@ -17,8 +14,11 @@ package org.eclipse.xtext;
  * </p>
  * <ul>
  *   <li>{@link org.eclipse.xtext.RuleCall#getRule <em>Rule</em>}</li>
+ *   <li>{@link org.eclipse.xtext.RuleCall#getArguments <em>Arguments</em>}</li>
  * </ul>
  *
+ * @noimplement This interface is not intended to be implemented by clients.
+ * @noextend This interface is not intended to be extended by clients.
  * @see org.eclipse.xtext.XtextPackage#getRuleCall()
  * @model
  * @generated
@@ -49,5 +49,22 @@ public interface RuleCall extends AbstractElement {
 	 * @generated
 	 */
 	void setRule(AbstractRule value);
+
+	/**
+	 * Returns the value of the '<em><b>Arguments</b></em>' reference list.
+	 * The list contents are of type {@link org.eclipse.xtext.NamedArgument}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Arguments</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Arguments</em>' reference list.
+	 * @see org.eclipse.xtext.XtextPackage#getRuleCall_Arguments()
+	 * @model
+	 * @generated
+	 */
+	EList<NamedArgument> getArguments();
 
 } // RuleCall

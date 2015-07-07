@@ -39,6 +39,7 @@ public class XtextParser extends AbstractContentAssistParser {
 				{
 					put(grammarAccess.getAbstractRuleAccess().getAlternatives(), "rule__AbstractRule__Alternatives");
 					put(grammarAccess.getAbstractMetamodelDeclarationAccess().getAlternatives(), "rule__AbstractMetamodelDeclaration__Alternatives");
+					put(grammarAccess.getParserRuleAccess().getAlternatives_0(), "rule__ParserRule__Alternatives_0");
 					put(grammarAccess.getAbstractTokenAccess().getAlternatives(), "rule__AbstractToken__Alternatives");
 					put(grammarAccess.getAbstractTokenWithCardinalityAccess().getAlternatives_0(), "rule__AbstractTokenWithCardinality__Alternatives_0");
 					put(grammarAccess.getAbstractTokenWithCardinalityAccess().getCardinalityAlternatives_1_0(), "rule__AbstractTokenWithCardinality__CardinalityAlternatives_1_0");
@@ -68,10 +69,12 @@ public class XtextParser extends AbstractContentAssistParser {
 					put(grammarAccess.getReferencedMetamodelAccess().getGroup(), "rule__ReferencedMetamodel__Group__0");
 					put(grammarAccess.getReferencedMetamodelAccess().getGroup_2(), "rule__ReferencedMetamodel__Group_2__0");
 					put(grammarAccess.getParserRuleAccess().getGroup(), "rule__ParserRule__Group__0");
+					put(grammarAccess.getParserRuleAccess().getGroup_0_0(), "rule__ParserRule__Group_0_0__0");
+					put(grammarAccess.getParserRuleAccess().getGroup_0_1(), "rule__ParserRule__Group_0_1__0");
+					put(grammarAccess.getParserRuleAccess().getGroup_0_1_2(), "rule__ParserRule__Group_0_1_2__0");
 					put(grammarAccess.getParserRuleAccess().getGroup_1(), "rule__ParserRule__Group_1__0");
-					put(grammarAccess.getParserRuleAccess().getGroup_2(), "rule__ParserRule__Group_2__0");
-					put(grammarAccess.getParserRuleAccess().getGroup_2_2(), "rule__ParserRule__Group_2_2__0");
-					put(grammarAccess.getParserRuleAccess().getGroup_2_2_1(), "rule__ParserRule__Group_2_2_1__0");
+					put(grammarAccess.getParserRuleAccess().getGroup_1_2(), "rule__ParserRule__Group_1_2__0");
+					put(grammarAccess.getParserRuleAccess().getGroup_1_2_1(), "rule__ParserRule__Group_1_2_1__0");
 					put(grammarAccess.getTypeRefAccess().getGroup(), "rule__TypeRef__Group__0");
 					put(grammarAccess.getTypeRefAccess().getGroup_0(), "rule__TypeRef__Group_0__0");
 					put(grammarAccess.getAlternativesAccess().getGroup(), "rule__Alternatives__Group__0");
@@ -85,6 +88,8 @@ public class XtextParser extends AbstractContentAssistParser {
 					put(grammarAccess.getAbstractTokenWithCardinalityAccess().getGroup(), "rule__AbstractTokenWithCardinality__Group__0");
 					put(grammarAccess.getActionAccess().getGroup(), "rule__Action__Group__0");
 					put(grammarAccess.getActionAccess().getGroup_2(), "rule__Action__Group_2__0");
+					put(grammarAccess.getRuleIDAccess().getGroup(), "rule__RuleID__Group__0");
+					put(grammarAccess.getRuleIDAccess().getGroup_1(), "rule__RuleID__Group_1__0");
 					put(grammarAccess.getPredicatedKeywordAccess().getGroup(), "rule__PredicatedKeyword__Group__0");
 					put(grammarAccess.getPredicatedRuleCallAccess().getGroup(), "rule__PredicatedRuleCall__Group__0");
 					put(grammarAccess.getAssignmentAccess().getGroup(), "rule__Assignment__Group__0");
@@ -133,12 +138,16 @@ public class XtextParser extends AbstractContentAssistParser {
 					put(grammarAccess.getGeneratedMetamodelAccess().getAliasAssignment_3_1(), "rule__GeneratedMetamodel__AliasAssignment_3_1");
 					put(grammarAccess.getReferencedMetamodelAccess().getEPackageAssignment_1(), "rule__ReferencedMetamodel__EPackageAssignment_1");
 					put(grammarAccess.getReferencedMetamodelAccess().getAliasAssignment_2_1(), "rule__ReferencedMetamodel__AliasAssignment_2_1");
-					put(grammarAccess.getParserRuleAccess().getNameAssignment_0(), "rule__ParserRule__NameAssignment_0");
-					put(grammarAccess.getParserRuleAccess().getTypeAssignment_1_1(), "rule__ParserRule__TypeAssignment_1_1");
-					put(grammarAccess.getParserRuleAccess().getDefinesHiddenTokensAssignment_2_0(), "rule__ParserRule__DefinesHiddenTokensAssignment_2_0");
-					put(grammarAccess.getParserRuleAccess().getHiddenTokensAssignment_2_2_0(), "rule__ParserRule__HiddenTokensAssignment_2_2_0");
-					put(grammarAccess.getParserRuleAccess().getHiddenTokensAssignment_2_2_1_1(), "rule__ParserRule__HiddenTokensAssignment_2_2_1_1");
-					put(grammarAccess.getParserRuleAccess().getAlternativesAssignment_4(), "rule__ParserRule__AlternativesAssignment_4");
+					put(grammarAccess.getParserRuleAccess().getFragmentAssignment_0_0_0(), "rule__ParserRule__FragmentAssignment_0_0_0");
+					put(grammarAccess.getParserRuleAccess().getNameAssignment_0_0_1(), "rule__ParserRule__NameAssignment_0_0_1");
+					put(grammarAccess.getParserRuleAccess().getWildcardAssignment_0_0_2(), "rule__ParserRule__WildcardAssignment_0_0_2");
+					put(grammarAccess.getParserRuleAccess().getFragmentAssignment_0_1_0(), "rule__ParserRule__FragmentAssignment_0_1_0");
+					put(grammarAccess.getParserRuleAccess().getNameAssignment_0_1_1(), "rule__ParserRule__NameAssignment_0_1_1");
+					put(grammarAccess.getParserRuleAccess().getTypeAssignment_0_1_2_1(), "rule__ParserRule__TypeAssignment_0_1_2_1");
+					put(grammarAccess.getParserRuleAccess().getDefinesHiddenTokensAssignment_1_0(), "rule__ParserRule__DefinesHiddenTokensAssignment_1_0");
+					put(grammarAccess.getParserRuleAccess().getHiddenTokensAssignment_1_2_0(), "rule__ParserRule__HiddenTokensAssignment_1_2_0");
+					put(grammarAccess.getParserRuleAccess().getHiddenTokensAssignment_1_2_1_1(), "rule__ParserRule__HiddenTokensAssignment_1_2_1_1");
+					put(grammarAccess.getParserRuleAccess().getAlternativesAssignment_3(), "rule__ParserRule__AlternativesAssignment_3");
 					put(grammarAccess.getTypeRefAccess().getMetamodelAssignment_0_0(), "rule__TypeRef__MetamodelAssignment_0_0");
 					put(grammarAccess.getTypeRefAccess().getClassifierAssignment_1(), "rule__TypeRef__ClassifierAssignment_1");
 					put(grammarAccess.getAlternativesAccess().getElementsAssignment_1_1_1(), "rule__Alternatives__ElementsAssignment_1_1_1");

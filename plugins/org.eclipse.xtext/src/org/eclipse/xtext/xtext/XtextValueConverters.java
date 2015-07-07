@@ -51,5 +51,36 @@ public class XtextValueConverters extends DefaultTerminalConverters {
 			}
 		};
 	}
+	
+	@ValueConverter(rule = "RuleID")
+	public IValueConverter<String> RuleID() {
+		return new AbstractNullSafeConverter<String>() {
+			@Override
+			protected String internalToValue(String string, INode node) throws ValueConverterException {
+				StringBuilder result = new StringBuilder();
+				for(ILeafNode leaf: node.getLeafNodes()) {
+					if (!leaf.isHidden()) {
+						if (leaf.getGrammarElement() instanceof Keyword)
+							result.append(".");
+						else
+							result.append(ID().toValue(leaf.getText(), leaf));
+					}
+				}
+				return result.toString();
+			}
+
+			@Override
+			protected String internalToString(String value) {
+				String[] splitted = value.split("\\.");
+				StringBuilder result = new StringBuilder(value.length());
+				for(int i = 0; i < splitted.length; i++) {
+					if (i != 0)
+						result.append("::");
+					result.append(ID().toString(splitted[i]));
+				}
+				return result.toString();
+			}
+		};
+	}
 
 }

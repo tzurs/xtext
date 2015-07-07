@@ -1,15 +1,12 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id: XtextSwitch.java,v 1.19 2010/04/06 14:10:25 sefftinge Exp $
  */
 package org.eclipse.xtext.util;
 
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.emf.ecore.EPackage;
+
 import org.eclipse.emf.ecore.util.Switch;
+
 import org.eclipse.xtext.*;
 
 /**
@@ -249,6 +246,25 @@ public class XtextSwitch<T> extends Switch<T> {
 				EOF eof = (EOF)theEObject;
 				T result = caseEOF(eof);
 				if (result == null) result = caseAbstractElement(eof);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case XtextPackage.PARAMETER: {
+				Parameter parameter = (Parameter)theEObject;
+				T result = caseParameter(parameter);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case XtextPackage.CONDITIONAL_BRANCH: {
+				ConditionalBranch conditionalBranch = (ConditionalBranch)theEObject;
+				T result = caseConditionalBranch(conditionalBranch);
+				if (result == null) result = caseAbstractElement(conditionalBranch);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case XtextPackage.NAMED_ARGUMENT: {
+				NamedArgument namedArgument = (NamedArgument)theEObject;
+				T result = caseNamedArgument(namedArgument);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -527,22 +543,6 @@ public class XtextSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>EOF</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * @since 2.0
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>EOF</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseEOF(EOF object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Enum Rule</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -644,6 +644,71 @@ public class XtextSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseCompoundElement(CompoundElement object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>EOF</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>EOF</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEOF(EOF object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Parameter</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Parameter</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseParameter(Parameter object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Conditional Branch</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Conditional Branch</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 * 
+	 */
+	public T caseConditionalBranch(ConditionalBranch object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Named Argument</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Named Argument</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 * 
+	 */
+	public T caseNamedArgument(NamedArgument object) {
 		return null;
 	}
 
