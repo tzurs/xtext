@@ -673,6 +673,16 @@ public class XtextPackageImpl extends EPackageImpl implements XtextPackage {
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getRuleCall_ExplicitlyCalled() {
+		return (EAttribute)ruleCallEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
@@ -1081,6 +1091,7 @@ public class XtextPackageImpl extends EPackageImpl implements XtextPackage {
 		ruleCallEClass = createEClass(RULE_CALL);
 		createEReference(ruleCallEClass, RULE_CALL__RULE);
 		createEReference(ruleCallEClass, RULE_CALL__ARGUMENTS);
+		createEAttribute(ruleCallEClass, RULE_CALL__EXPLICITLY_CALLED);
 
 		assignmentEClass = createEClass(ASSIGNMENT);
 		createEAttribute(assignmentEClass, ASSIGNMENT__FEATURE);
@@ -1241,6 +1252,7 @@ public class XtextPackageImpl extends EPackageImpl implements XtextPackage {
 		initEClass(ruleCallEClass, RuleCall.class, "RuleCall", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getRuleCall_Rule(), this.getAbstractRule(), null, "rule", null, 0, 1, RuleCall.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRuleCall_Arguments(), this.getNamedArgument(), null, "arguments", null, 0, -1, RuleCall.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRuleCall_ExplicitlyCalled(), theEcorePackage.getEBoolean(), "explicitlyCalled", null, 0, 1, RuleCall.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(assignmentEClass, Assignment.class, "Assignment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAssignment_Feature(), theEcorePackage.getEString(), "feature", null, 0, 1, Assignment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

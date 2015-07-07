@@ -663,6 +663,16 @@ public interface XtextPackage extends EPackage {
 	int RULE_CALL__ARGUMENTS = ABSTRACT_ELEMENT_FEATURE_COUNT + 1;
 
 	/**
+	 * The feature id for the '<em><b>Explicitly Called</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RULE_CALL__EXPLICITLY_CALLED = ABSTRACT_ELEMENT_FEATURE_COUNT + 2;
+
+	/**
 	 * The number of structural features of the '<em>Rule Call</em>' class.
 	 * <!-- begin-user-doc -->
 	 * @since 2.9
@@ -670,7 +680,7 @@ public interface XtextPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RULE_CALL_FEATURE_COUNT = ABSTRACT_ELEMENT_FEATURE_COUNT + 2;
+	int RULE_CALL_FEATURE_COUNT = ABSTRACT_ELEMENT_FEATURE_COUNT + 3;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.xtext.impl.AssignmentImpl <em>Assignment</em>}' class.
@@ -2106,6 +2116,18 @@ public interface XtextPackage extends EPackage {
 	EReference getRuleCall_Arguments();
 
 	/**
+	 * Returns the meta object for the attribute '{@link org.eclipse.xtext.RuleCall#isExplicitlyCalled <em>Explicitly Called</em>}'.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Explicitly Called</em>'.
+	 * @see org.eclipse.xtext.RuleCall#isExplicitlyCalled()
+	 * @see #getRuleCall()
+	 * @generated
+	 */
+	EAttribute getRuleCall_ExplicitlyCalled();
+
+	/**
 	 * Returns the meta object for class '{@link org.eclipse.xtext.Assignment <em>Assignment</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2854,6 +2876,15 @@ public interface XtextPackage extends EPackage {
 		 * @generated
 		 */
 		EReference RULE_CALL__ARGUMENTS = eINSTANCE.getRuleCall_Arguments();
+
+		/**
+		 * The meta object literal for the '<em><b>Explicitly Called</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * @since 2.9
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RULE_CALL__EXPLICITLY_CALLED = eINSTANCE.getRuleCall_ExplicitlyCalled();
 
 		/**
 		 * The meta object literal for the '{@link org.eclipse.xtext.impl.AssignmentImpl <em>Assignment</em>}' class.

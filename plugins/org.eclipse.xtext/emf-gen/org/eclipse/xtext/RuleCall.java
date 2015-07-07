@@ -15,6 +15,7 @@ import org.eclipse.emf.common.util.EList;
  * <ul>
  *   <li>{@link org.eclipse.xtext.RuleCall#getRule <em>Rule</em>}</li>
  *   <li>{@link org.eclipse.xtext.RuleCall#getArguments <em>Arguments</em>}</li>
+ *   <li>{@link org.eclipse.xtext.RuleCall#isExplicitlyCalled <em>Explicitly Called</em>}</li>
  * </ul>
  *
  * @noimplement This interface is not intended to be implemented by clients.
@@ -66,5 +67,33 @@ public interface RuleCall extends AbstractElement {
 	 * @generated
 	 */
 	EList<NamedArgument> getArguments();
+
+	/**
+	 * Returns the value of the '<em><b>Explicitly Called</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Explicitly Called</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Explicitly Called</em>' attribute.
+	 * @see #setExplicitlyCalled(boolean)
+	 * @see org.eclipse.xtext.XtextPackage#getRuleCall_ExplicitlyCalled()
+	 * @model
+	 * @generated
+	 */
+	boolean isExplicitlyCalled();
+
+	/**
+	 * Sets the value of the '{@link org.eclipse.xtext.RuleCall#isExplicitlyCalled <em>Explicitly Called</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Explicitly Called</em>' attribute.
+	 * @see #isExplicitlyCalled()
+	 * @generated
+	 */
+	void setExplicitlyCalled(boolean value);
 
 } // RuleCall

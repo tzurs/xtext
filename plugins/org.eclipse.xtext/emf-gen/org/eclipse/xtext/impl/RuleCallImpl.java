@@ -30,6 +30,7 @@ import org.eclipse.xtext.XtextPackage;
  * <ul>
  *   <li>{@link org.eclipse.xtext.impl.RuleCallImpl#getRule <em>Rule</em>}</li>
  *   <li>{@link org.eclipse.xtext.impl.RuleCallImpl#getArguments <em>Arguments</em>}</li>
+ *   <li>{@link org.eclipse.xtext.impl.RuleCallImpl#isExplicitlyCalled <em>Explicitly Called</em>}</li>
  * </ul>
  *
  * @generated
@@ -48,13 +49,35 @@ public class RuleCallImpl extends AbstractElementImpl implements RuleCall {
 	/**
 	 * The cached value of the '{@link #getArguments() <em>Arguments</em>}' reference list.
 	 * <!-- begin-user-doc -->
+	 * @since 2.9
 	 * <!-- end-user-doc -->
 	 * @see #getArguments()
 	 * @generated
 	 * @ordered
-	 * @since 2.9
 	 */
 	protected EList<NamedArgument> arguments;
+
+	/**
+	 * The default value of the '{@link #isExplicitlyCalled() <em>Explicitly Called</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @see #isExplicitlyCalled()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final boolean EXPLICITLY_CALLED_EDEFAULT = false;
+
+	/**
+	 * The cached value of the '{@link #isExplicitlyCalled() <em>Explicitly Called</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @see #isExplicitlyCalled()
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean explicitlyCalled = EXPLICITLY_CALLED_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -128,6 +151,29 @@ public class RuleCallImpl extends AbstractElementImpl implements RuleCall {
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean isExplicitlyCalled() {
+		return explicitlyCalled;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setExplicitlyCalled(boolean newExplicitlyCalled) {
+		boolean oldExplicitlyCalled = explicitlyCalled;
+		explicitlyCalled = newExplicitlyCalled;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, XtextPackage.RULE_CALL__EXPLICITLY_CALLED, oldExplicitlyCalled, explicitlyCalled));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
@@ -139,6 +185,8 @@ public class RuleCallImpl extends AbstractElementImpl implements RuleCall {
 				return basicGetRule();
 			case XtextPackage.RULE_CALL__ARGUMENTS:
 				return getArguments();
+			case XtextPackage.RULE_CALL__EXPLICITLY_CALLED:
+				return isExplicitlyCalled();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -159,6 +207,9 @@ public class RuleCallImpl extends AbstractElementImpl implements RuleCall {
 				getArguments().clear();
 				getArguments().addAll((Collection<? extends NamedArgument>)newValue);
 				return;
+			case XtextPackage.RULE_CALL__EXPLICITLY_CALLED:
+				setExplicitlyCalled((Boolean)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -177,6 +228,9 @@ public class RuleCallImpl extends AbstractElementImpl implements RuleCall {
 			case XtextPackage.RULE_CALL__ARGUMENTS:
 				getArguments().clear();
 				return;
+			case XtextPackage.RULE_CALL__EXPLICITLY_CALLED:
+				setExplicitlyCalled(EXPLICITLY_CALLED_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -193,8 +247,26 @@ public class RuleCallImpl extends AbstractElementImpl implements RuleCall {
 				return rule != null;
 			case XtextPackage.RULE_CALL__ARGUMENTS:
 				return arguments != null && !arguments.isEmpty();
+			case XtextPackage.RULE_CALL__EXPLICITLY_CALLED:
+				return explicitlyCalled != EXPLICITLY_CALLED_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (explicitlyCalled: ");
+		result.append(explicitlyCalled);
+		result.append(')');
+		return result.toString();
 	}
 
 } //RuleCallImpl

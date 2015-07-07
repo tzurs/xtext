@@ -57,6 +57,7 @@
     <genClasses ecoreClass="Xtext.ecore#//RuleCall">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Xtext.ecore#//RuleCall/rule"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Xtext.ecore#//RuleCall/arguments"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Xtext.ecore#//RuleCall/explicitlyCalled"/>
     </genClasses>
     <genClasses ecoreClass="Xtext.ecore#//Assignment">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Xtext.ecore#//Assignment/feature"/>
