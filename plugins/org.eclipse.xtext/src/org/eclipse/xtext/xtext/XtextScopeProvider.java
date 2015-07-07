@@ -10,7 +10,6 @@ package org.eclipse.xtext.xtext;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.LinkedHashSet;
 import java.util.List;
 
 import org.eclipse.emf.common.util.URI;
@@ -46,6 +45,7 @@ import org.eclipse.xtext.scoping.impl.SimpleScope;
 import com.google.common.base.Function;
 import com.google.common.base.Predicate;
 import com.google.common.collect.Iterables;
+import com.google.common.collect.Lists;
 import com.google.inject.Inject;
 
 /**
@@ -93,7 +93,10 @@ public class XtextScopeProvider extends AbstractScopeProvider {
 				}
 			});
 		}
-		return createScope(context.eResource(), reference.getEReferenceType());
+		if(reference == XtextPackage.eINSTANCE.getRuleCall_Rule()) {
+			return createScope(context.eResource(), reference.getEReferenceType(), new SuperCallScope(context));
+		}
+		return createScope(context.eResource(), reference.getEReferenceType(), IScope.NULLSCOPE);
 	}
 
 	protected IScope createEnumLiteralsScope(EEnum eEnum) {
@@ -124,17 +127,17 @@ public class XtextScopeProvider extends AbstractScopeProvider {
 		return createClassifierScope(allClassifiers);
 	}
 
-	protected IScope createScope(Resource resource, EClass type) {
+	protected IScope createScope(Resource resource, EClass type, IScope parent) {
 		if (resource.getContents().size() < 1)
 			throw new IllegalArgumentException("resource is not as expected: contents.size == "
 					+ resource.getContents().size() + " but expected: >= 1");
 		final EObject firstContent = resource.getContents().get(0);
 		if (!(firstContent instanceof Grammar))
-			return IScope.NULLSCOPE;
-		return createScope((Grammar) firstContent, type);
+			return parent;
+		return createScope((Grammar) firstContent, type, parent);
 	}
 
-	protected IScope createScope(final Grammar grammar, EClass type) {
+	protected IScope createScope(final Grammar grammar, EClass type, IScope current) {
 		if (EcorePackage.Literals.EPACKAGE == type) {
 			return createEPackageScope(grammar);
 		} else if (AbstractMetamodelDeclaration.class.isAssignableFrom(type.getInstanceClass())) {
@@ -148,30 +151,21 @@ public class XtextScopeProvider extends AbstractScopeProvider {
 							}));
 		}
 		final List<Grammar> allGrammars = getAllGrammars(grammar);
-		IScope current = IScope.NULLSCOPE;
 		for (int i = allGrammars.size() - 1; i >= 0; i--) {
-			current = createScope(allGrammars.get(i), type, current);
+			current = doCreateScope(allGrammars.get(i), type, current);
 		}
 		return current;
 	}
 
-	protected IScope createScope(final Grammar grammar, final EClass type, IScope parent) {
+	protected IScope doCreateScope(final Grammar grammar, final EClass type, IScope parent) {
 		final IResourceDescription resourceDescription = resourceDecriptionProvider.getResourceDescription(grammar.eResource());
 		return SelectableBasedScope.createScope(parent, resourceDescription, type, false);
 	}
 
 	protected List<Grammar> getAllGrammars(Grammar grammar) {
-		Collection<Grammar> visitedGrammars = new LinkedHashSet<Grammar>();
-		collectAllUsedGrammars(grammar, visitedGrammars);
-		return new ArrayList<Grammar>(visitedGrammars);
-	}
-
-	protected void collectAllUsedGrammars(Grammar grammar, Collection<Grammar> visited) {
-		if (!visited.add(grammar))
-			return;
-		for(Grammar usedGrammar: grammar.getUsedGrammars()) {
-			collectAllUsedGrammars(usedGrammar, visited);
-		}
+		List<Grammar> result = Lists.newArrayList(grammar);
+		result.addAll(GrammarUtil.allUsedGrammars(grammar));
+		return result;
 	}
 
 	protected IScope createEPackageScope(final Grammar grammar, IScope parent) {

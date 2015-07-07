@@ -15,6 +15,7 @@ import static org.eclipse.xtext.EcoreUtil2.*;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -271,6 +272,9 @@ public class GrammarUtil {
 						return rule;
 					}
 				}
+				if (langName != null) {
+					return null;
+				}
 			}
 			for (Grammar usedGrammar : grammar.getUsedGrammars()) {
 				AbstractRule rule = findRuleForNameRecursively(usedGrammar, langName, ruleName, visited);
@@ -283,15 +287,18 @@ public class GrammarUtil {
 	}
 
 	public static List<Grammar> allUsedGrammars(Grammar grammar) {
-		List<Grammar> grammars = new ArrayList<Grammar>();
-		collectAllUsedGrammars(grammars, grammar);
-		return grammars;
+		Collection<Grammar> visitedGrammars = new LinkedHashSet<Grammar>();
+		for(Grammar used: grammar.getUsedGrammars())
+			collectAllUsedGrammars(used, grammar, visitedGrammars);
+		return new ArrayList<Grammar>(visitedGrammars);
 	}
-
-	private static void collectAllUsedGrammars(List<Grammar> grammars, Grammar grammar) {
-		grammars.addAll(grammar.getUsedGrammars());
-		for (Grammar g : grammar.getUsedGrammars())
-			collectAllUsedGrammars(grammars, g);
+	
+	private static void collectAllUsedGrammars(Grammar grammar, Grammar start, Collection<Grammar> result) {
+		if (grammar == start || !result.add(grammar))
+			return;
+		for(Grammar usedGrammar: grammar.getUsedGrammars()) {
+			collectAllUsedGrammars(usedGrammar, start, result);
+		}
 	}
 
 	public static List<AbstractRule> allRules(Grammar grammar) {
