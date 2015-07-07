@@ -629,6 +629,9 @@ public class Xtext2EcoreTransformer {
 	private void deriveTypesAndHierarchy(final ParserRule rule, final EClassifierInfo ruleReturnType,
 			AbstractElement element) throws TransformationException {
 		TransformationException ex = new XtextSwitch<TransformationException>() {
+			
+			Set<AbstractRule> visiting = Sets.newHashSet();
+			
 			@Override
 			public TransformationException caseAction(Action action) {
 				final TypeRef actionTypeRef = action.getType();
@@ -644,10 +647,8 @@ public class Xtext2EcoreTransformer {
 			@Override
 			public TransformationException caseCompoundElement(CompoundElement object) {
 				for (AbstractElement ele : object.getElements()) {
-					try {
-						deriveTypesAndHierarchy(rule, ruleReturnType, ele);
-					}
-					catch (TransformationException ex) {
+					TransformationException ex = doSwitch(ele);
+					if (ex != null) {
 						return ex;
 					}
 				}
@@ -678,6 +679,14 @@ public class Xtext2EcoreTransformer {
 					if (isParserRuleFragment(calledRule)) {
 						TypeRef subTypeRef = getOrComputeReturnType(rule);
 						addSuperType(rule, subTypeRef, findOrCreateEClassifierInfo(calledRule));
+						if (visiting.add(calledRule)) {
+							try {
+								AbstractElement fragment = calledRule.getAlternatives();
+								doSwitch(fragment);
+							} finally {
+								visiting.remove(calledRule);
+							}
+						}
 					} else {
 						final TypeRef calledRuleReturnTypeRef = getOrComputeReturnType(calledRule);
 						addSuperType(rule, calledRuleReturnTypeRef, ruleReturnType);
@@ -685,6 +694,12 @@ public class Xtext2EcoreTransformer {
 				} catch (TransformationException ex) {
 					return ex;
 				}
+				return null;
+			}
+			
+			@Override
+			public TransformationException defaultCase(EObject object) {
+				// ignore
 				return null;
 			}
 

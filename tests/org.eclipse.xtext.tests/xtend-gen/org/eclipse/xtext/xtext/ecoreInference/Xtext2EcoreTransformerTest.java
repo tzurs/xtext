@@ -381,6 +381,100 @@ public class Xtext2EcoreTransformerTest extends AbstractXtextTests {
   }
   
   @Test
+  public void testParserRuleFragment_05() throws Exception {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("grammar test with org.eclipse.xtext.common.Terminals");
+    _builder.newLine();
+    _builder.append("generate test \'http://test\'");
+    _builder.newLine();
+    _builder.append("Middle: Top;");
+    _builder.newLine();
+    _builder.append("fragment Top: name=ID ({Bottom.prev=current} Top)?;");
+    _builder.newLine();
+    final String grammar = _builder.toString();
+    EPackage ePackage = this.getEPackageFromGrammar(grammar);
+    final EList<EClassifier> classifiers = ePackage.getEClassifiers();
+    int _size = classifiers.size();
+    Assert.assertEquals(3, _size);
+    final EClassifier middleType = IterableExtensions.<EClassifier>head(classifiers);
+    String _name = middleType.getName();
+    Assert.assertEquals("Middle", _name);
+    List<? extends EStructuralFeature> _features = this.features(middleType);
+    boolean _isEmpty = _features.isEmpty();
+    Assert.assertTrue(_isEmpty);
+    final EClassifier topType = classifiers.get(1);
+    EStructuralFeature _feature = this.<EStructuralFeature>feature(topType, "name");
+    EClassifier _eType = _feature.getEType();
+    String _name_1 = _eType.getName();
+    Assert.assertEquals("EString", _name_1);
+    List<EClass> _superTypes = this.superTypes(middleType);
+    boolean _contains = _superTypes.contains(topType);
+    Assert.assertTrue(_contains);
+    final EClassifier bottomType = IterableExtensions.<EClassifier>last(classifiers);
+    EStructuralFeature _feature_1 = this.<EStructuralFeature>feature(bottomType, "prev");
+    EClassifier _eType_1 = _feature_1.getEType();
+    String _name_2 = _eType_1.getName();
+    Assert.assertEquals("Top", _name_2);
+    List<EClass> _superTypes_1 = this.superTypes(bottomType);
+    boolean _contains_1 = _superTypes_1.contains(middleType);
+    Assert.assertTrue(_contains_1);
+  }
+  
+  @Test
+  public void testParserRuleFragment_06() throws Exception {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("grammar test with org.eclipse.xtext.common.Terminals");
+    _builder.newLine();
+    _builder.append("generate test \'http://test\'");
+    _builder.newLine();
+    _builder.append("Middle1: Top;");
+    _builder.newLine();
+    _builder.append("Middle2: Top;");
+    _builder.newLine();
+    _builder.append("fragment Top: name=ID ({Bottom.prev=current} Top)?;");
+    _builder.newLine();
+    final String grammar = _builder.toString();
+    EPackage ePackage = this.getEPackageFromGrammar(grammar);
+    final EList<EClassifier> classifiers = ePackage.getEClassifiers();
+    int _size = classifiers.size();
+    Assert.assertEquals(4, _size);
+    final EClassifier middleType1 = IterableExtensions.<EClassifier>head(classifiers);
+    String _name = middleType1.getName();
+    Assert.assertEquals("Middle1", _name);
+    List<? extends EStructuralFeature> _features = this.features(middleType1);
+    boolean _isEmpty = _features.isEmpty();
+    Assert.assertTrue(_isEmpty);
+    final EClassifier middleType2 = classifiers.get(1);
+    String _name_1 = middleType2.getName();
+    Assert.assertEquals("Middle2", _name_1);
+    List<? extends EStructuralFeature> _features_1 = this.features(middleType2);
+    boolean _isEmpty_1 = _features_1.isEmpty();
+    Assert.assertTrue(_isEmpty_1);
+    final EClassifier topType = classifiers.get(2);
+    EStructuralFeature _feature = this.<EStructuralFeature>feature(topType, "name");
+    EClassifier _eType = _feature.getEType();
+    String _name_2 = _eType.getName();
+    Assert.assertEquals("EString", _name_2);
+    List<EClass> _superTypes = this.superTypes(middleType1);
+    boolean _contains = _superTypes.contains(topType);
+    Assert.assertTrue(_contains);
+    List<EClass> _superTypes_1 = this.superTypes(middleType2);
+    boolean _contains_1 = _superTypes_1.contains(topType);
+    Assert.assertTrue(_contains_1);
+    final EClassifier bottomType = IterableExtensions.<EClassifier>last(classifiers);
+    EStructuralFeature _feature_1 = this.<EStructuralFeature>feature(bottomType, "prev");
+    EClassifier _eType_1 = _feature_1.getEType();
+    String _name_3 = _eType_1.getName();
+    Assert.assertEquals("Top", _name_3);
+    List<EClass> _superTypes_2 = this.superTypes(bottomType);
+    boolean _contains_2 = _superTypes_2.contains(middleType1);
+    Assert.assertTrue(_contains_2);
+    List<EClass> _superTypes_3 = this.superTypes(bottomType);
+    boolean _contains_3 = _superTypes_3.contains(middleType2);
+    Assert.assertTrue(_contains_3);
+  }
+  
+  @Test
   public void testTypesOfImplicitSuperGrammar() throws Exception {
     StringConcatenation _builder = new StringConcatenation();
     _builder.append("grammar test with org.eclipse.xtext.common.Terminals");
