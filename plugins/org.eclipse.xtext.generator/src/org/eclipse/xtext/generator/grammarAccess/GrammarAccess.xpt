@@ -103,7 +103,7 @@ import «usedGrammar.gaFQName()»;
 
 «DEFINE parseRuleClasses(String lineDelimiter) FOR ParserRule»
 	public class «gaRuleAccessorClassName()» extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "«name»");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "«grammar().name».«name»");
 «FOREACH containedAbstractElements() AS e-»
 		private final «e.getClassName()» «e.gaElementAccessorLocalVarName()» = «e.loadElementStatement()»;
 «ENDFOREACH-»

@@ -39,6 +39,7 @@ import org.eclipse.xtext.xtext.CurrentTypeFinder;
 
 import com.google.common.base.Function;
 import com.google.common.base.Predicate;
+import com.google.common.collect.Sets;
 
 /**
  * @author Jan Koehnlein
@@ -179,8 +180,7 @@ public class GrammarUtil {
 	public static boolean isEObjectRuleCall(EObject grammarElement) {
 		if (grammarElement instanceof RuleCall) {
 			AbstractRule calledRule = ((RuleCall) grammarElement).getRule();
-			return calledRule != null && calledRule instanceof ParserRule
-					&& calledRule.getType().getClassifier() instanceof EClass;
+			return isEObjectRule(calledRule);
 		}
 		return false;
 	}
@@ -248,18 +248,35 @@ public class GrammarUtil {
 		return false;
 	}
 
+	/**
+	 * @param ruleName
+	 *            the name of the rule that should be found. May be a qualified name with a dot as a delimiter.
+	 */
 	public static AbstractRule findRuleForName(Grammar grammar, String ruleName) {
 		if (ruleName == null)
 			return null;
-		for (AbstractRule rule : grammar.getRules()) {
-			if (ruleName.equals(rule.getName())) {
-				return rule;
-			}
+		int lastIndex = ruleName.lastIndexOf('.');
+		if (lastIndex == -1) {
+			return findRuleForNameRecursively(grammar, null, ruleName, Sets.<Grammar>newHashSet());
+		} else {
+			return findRuleForNameRecursively(grammar, ruleName.substring(0, lastIndex), ruleName.substring(lastIndex + 1), Sets.<Grammar>newHashSet());
 		}
-		for (Grammar usedGrammar : grammar.getUsedGrammars()) {
-			AbstractRule rule = findRuleForName(usedGrammar, ruleName);
-			if (rule != null) {
-				return rule;
+	}
+
+	private static AbstractRule findRuleForNameRecursively(Grammar grammar, String langName, String ruleName, Set<Grammar> visited) {
+		if (visited.add(grammar)) {
+			if (langName == null || langName.equals(grammar.getName())) {
+				for (AbstractRule rule : grammar.getRules()) {
+					if (ruleName.equals(rule.getName())) {
+						return rule;
+					}
+				}
+			}
+			for (Grammar usedGrammar : grammar.getUsedGrammars()) {
+				AbstractRule rule = findRuleForNameRecursively(usedGrammar, langName, ruleName, visited);
+				if (rule != null) {
+					return rule;
+				}
 			}
 		}
 		return null;
