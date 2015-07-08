@@ -1503,6 +1503,86 @@ public class XtextValidationTest extends AbstractValidationMessageAcceptingTestC
 		messageAcceptor.validate();
 	}
 	
+	@Test public void testRuleCallAllowed_10() throws Exception {
+		String grammarAsText =
+			"grammar test with org.eclipse.xtext.common.Terminals\n" +
+			"generate test 'http://test'\n" +
+			"Model: name=ID Fragment;\n"+
+			"fragment Fragment: value=STRING;";
+	
+		Grammar grammar = (Grammar) getModel(grammarAsText);
+		ParserRule rule = (ParserRule) grammar.getRules().get(0);
+		RuleCall ruleCall = (RuleCall) ((Group) rule.getAlternatives()).getElements().get(1);
+		XtextValidator validator = get(XtextValidator.class);
+		ValidatingMessageAcceptor messageAcceptor = new ValidatingMessageAcceptor(null, false, false);
+		validator.setMessageAcceptor(messageAcceptor);
+		validator.checkUnassignedRuleCallAllowed(ruleCall);
+		messageAcceptor.validate();
+	}
+	
+	@Test public void testRuleCallAllowed_11() throws Exception {
+		String grammarAsText =
+			"grammar test with org.eclipse.xtext.common.Terminals\n" +
+			"generate test 'http://test'\n" +
+			"Model: name=ID Fragment;\n" +
+			"fragment Fragment: Other;\n" +
+			"Other: name=ID;";
+	
+		Grammar grammar = (Grammar) getModel(grammarAsText);
+		ParserRule rule = (ParserRule) grammar.getRules().get(1);
+		RuleCall ruleCall = (RuleCall) rule.getAlternatives();
+		XtextValidator validator = get(XtextValidator.class);
+		ValidatingMessageAcceptor messageAcceptor = new ValidatingMessageAcceptor(ruleCall, true, false);
+		validator.setMessageAcceptor(messageAcceptor);
+		try {
+			validator.checkUnassignedRuleCallAllowed(ruleCall);
+			fail();
+		} catch(RuntimeException e) {
+			assertEquals("org.eclipse.xtext.validation.GuardException", e.getClass().getName());
+		}
+		messageAcceptor.validate();
+	}
+	
+	@Test public void testRuleCallAllowed_12() throws Exception {
+		String grammarAsText =
+			"grammar test with org.eclipse.xtext.common.Terminals\n" +
+			"generate test 'http://test'\n" +
+			"Model: name=ID Fragment;\n" +
+			"fragment Fragment: Other;\n" +
+			"fragment Other: name=ID;";
+	
+		Grammar grammar = (Grammar) getModel(grammarAsText);
+		ParserRule rule = (ParserRule) grammar.getRules().get(1);
+		RuleCall ruleCall = (RuleCall) rule.getAlternatives();
+		XtextValidator validator = get(XtextValidator.class);
+		ValidatingMessageAcceptor messageAcceptor = new ValidatingMessageAcceptor(null, false, false);
+		validator.setMessageAcceptor(messageAcceptor);
+		validator.checkUnassignedRuleCallAllowed(ruleCall);
+		messageAcceptor.validate();
+	}
+	
+	@Test public void testActionAllowed_01() throws Exception {
+		String grammarAsText =
+			"grammar test with org.eclipse.xtext.common.Terminals\n" +
+			"generate test 'http://test'\n" +
+			"Model: name=ID Fragment;\n" +
+			"fragment Fragment: {Model};\n";
+	
+		Grammar grammar = (Grammar) getModel(grammarAsText);
+		ParserRule rule = (ParserRule) grammar.getRules().get(1);
+		Action action = (Action) rule.getAlternatives();
+		XtextValidator validator = get(XtextValidator.class);
+		ValidatingMessageAcceptor messageAcceptor = new ValidatingMessageAcceptor(action, true, false);
+		validator.setMessageAcceptor(messageAcceptor);
+		try {
+			validator.checkUnassignedActionAfterAssignment(action);
+			fail();
+		} catch(RuntimeException e) {
+			assertEquals("org.eclipse.xtext.validation.GuardException", e.getClass().getName());
+		}
+		messageAcceptor.validate();
+	}
+	
 	@Test public void testPredicatedUnorderedGroup_01() throws Exception {
 		String grammarAsText =
 				"grammar test with org.eclipse.xtext.common.Terminals\n" +

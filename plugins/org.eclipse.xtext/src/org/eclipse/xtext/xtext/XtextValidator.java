@@ -78,7 +78,6 @@ import org.eclipse.xtext.util.XtextSwitch;
 import org.eclipse.xtext.validation.AbstractDeclarativeValidator;
 import org.eclipse.xtext.validation.AbstractValidationMessageAcceptor;
 import org.eclipse.xtext.validation.Check;
-import org.eclipse.xtext.validation.CheckType;
 import org.eclipse.xtext.validation.ValidationMessageAcceptor;
 import org.eclipse.xtext.xtext.ecoreInference.SourceAdapter;
 
@@ -110,7 +109,7 @@ public class XtextValidator extends AbstractDeclarativeValidator {
 		return Collections.<EPackage>singletonList(XtextPackage.eINSTANCE);
 	}
 
-	@Check(CheckType.FAST)
+	@Check
 	public void checkGrammarUsesMaxOneOther(Grammar grammar) {
 		if (grammar.getUsedGrammars().size() > 1) {
 			for(int i = 1; i < grammar.getUsedGrammars().size(); i++) {
@@ -122,7 +121,7 @@ public class XtextValidator extends AbstractDeclarativeValidator {
 		}
 	}
 	
-	@Check(CheckType.FAST)
+	@Check
 	public void checkGrammarRecursiveReference(Grammar grammar) {
 		Set<Grammar> visitedGrammars = Sets.newHashSet(grammar);
 		for (int i = 0; i < grammar.getUsedGrammars().size(); i++) {
@@ -684,7 +683,7 @@ public class XtextValidator extends AbstractDeclarativeValidator {
 	@Check
 	public void checkUnassignedRuleCallAllowed(final RuleCall call) {
 		if (call.getRule() != null && !call.getRule().eIsProxy() && GrammarUtil.containingAssignment(call) == null) {
-			AbstractRule container = EcoreUtil2.getContainerOfType(call, AbstractRule.class);
+			AbstractRule container = GrammarUtil.containingRule(call);
 			if (call.getRule() instanceof ParserRule) {
 				if (container instanceof TerminalRule) {
 					getMessageAcceptor().acceptError(
@@ -693,9 +692,12 @@ public class XtextValidator extends AbstractDeclarativeValidator {
 							XtextPackage.Literals.RULE_CALL__RULE,
 							ValidationMessageAcceptor.INSIGNIFICANT_INDEX,
 							null);
+				} else {
+					ParserRule parserRule = (ParserRule) call.getRule();
+					if (!GrammarUtil.isDatatypeRule(parserRule) && !parserRule.isFragment()) {
+						checkCurrentMustBeUnassigned(call);
+					}
 				}
-				else if (!GrammarUtil.isDatatypeRule((ParserRule) call.getRule()))
-					checkCurrentMustBeUnassigned(call);
 			}
 			if (call.getRule() instanceof EnumRule) {
 				if (container instanceof TerminalRule) {
@@ -714,7 +716,7 @@ public class XtextValidator extends AbstractDeclarativeValidator {
 	public void checkTerminalFragmentCalledFromTerminalRule(final RuleCall call) {
 		if (call.getRule() != null && !call.getRule().eIsProxy()) {
 			if (call.getRule() instanceof TerminalRule && ((TerminalRule) call.getRule()).isFragment()) {
-				AbstractRule container = EcoreUtil2.getContainerOfType(call, AbstractRule.class);
+				AbstractRule container = GrammarUtil.containingRule(call);
 				if (!(container instanceof TerminalRule)) {
 					getMessageAcceptor().acceptError(
 							"Only terminal rules may use terminal fragments.", 
@@ -728,12 +730,11 @@ public class XtextValidator extends AbstractDeclarativeValidator {
 	}
 
 	private void checkCurrentMustBeUnassigned(final AbstractElement element) {
-		ParserRule rule = GrammarUtil.containingParserRule(element);
+		final ParserRule rule = GrammarUtil.containingParserRule(element);
 		if (GrammarUtil.isDatatypeRule(rule))
 			return;
-		
 		XtextSwitch<Boolean> visitor = new XtextSwitch<Boolean>() {
-			private boolean isNull = true;
+			private boolean isNull = !rule.isFragment();
 
 			@Override
 			public Boolean caseAbstractElement(AbstractElement object) {
@@ -781,7 +782,7 @@ public class XtextValidator extends AbstractDeclarativeValidator {
 			public Boolean caseAction(Action object) {
 				if (object == element) {
 					if (!(isNull && !isMany(object))) {
-						error("An unassigned action is not allowed, when the 'current' was already created.", null);
+						error("An unassigned action is not allowed, when the 'current' was already created.", object, null);
 						checkDone();
 					}
 				}
@@ -792,8 +793,13 @@ public class XtextValidator extends AbstractDeclarativeValidator {
 			@Override
 			public Boolean caseRuleCall(RuleCall object) {
 				if (object == element) {
+					AbstractRule calledRule = object.getRule();
+					if (calledRule instanceof ParserRule && ((ParserRule) calledRule).isFragment()) {
+						isNull = false;
+						return isNull;
+					}
 					if (!(isNull && !isMany(object))) {
-						error("An unassigned rule call is not allowed, when the 'current' was already created.", null);
+						error("An unassigned rule call is not allowed, when the 'current' was already created.", object, null);
 						checkDone();
 					}
 				}
@@ -880,7 +886,7 @@ public class XtextValidator extends AbstractDeclarativeValidator {
 				public Boolean caseAction(Action object) {
 					if (object == action) {
 						if (!assignedActionAllowed) {
-							error("An action is not allowed, when the current may still be unassigned.", null);
+							error("An action is not allowed in wildcard fragments and when the current may still be unassigned.", null);
 							checkDone();
 						}
 					}
@@ -899,7 +905,7 @@ public class XtextValidator extends AbstractDeclarativeValidator {
 
 				@Override
 				public Boolean caseParserRule(ParserRule object) {
-					assignedActionAllowed = !GrammarUtil.isDatatypeRule(object);
+					assignedActionAllowed = !GrammarUtil.isDatatypeRule(object) && !(object.isFragment() && object.isWildcard());
 					return assignedActionAllowed;
 				}
 
