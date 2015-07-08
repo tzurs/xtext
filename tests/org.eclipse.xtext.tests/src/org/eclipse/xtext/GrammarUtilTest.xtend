@@ -34,11 +34,11 @@ class GrammarUtilTest extends AbstractXtextTests {
 			terminal STRING: '"';
 		'''
 		val r = getResourceFromString(model)
-		assertTrue(r.getErrors().isEmpty())
 		val grammar = r.getContents().get(0) as Grammar
 		val allRules = GrammarUtil.allRules(grammar);
 		// order is crucial for terminal rules
-		assertEquals(#['Rule', 'STRING', 'ID', 'INT', 'STRING', 'ML_COMMENT', 'SL_COMMENT', 'WS', 'ANY_OTHER'].toString,
+		assertEquals(
+			#['Rule', 'STRING', 'ID', 'INT', 'STRING', 'ML_COMMENT', 'SL_COMMENT', 'WS', 'ANY_OTHER'].toString,
 			allRules.map[ name ].toString 
 		)
 	}
@@ -53,7 +53,6 @@ class GrammarUtilTest extends AbstractXtextTests {
 			terminal STRING: '"';
 		'''
 		var r = getResourceFromString(model)
-		assertTrue(r.getErrors().isEmpty())
 		var grammar = r.getContents().get(0) as Grammar
 		assertEquals(grammar, GrammarUtil.findRuleForName(grammar, 'Rule').eContainer)
 		assertNull(GrammarUtil.findRuleForName(grammar, 'org.eclipse.xtext.common.Terminals.Rule'))
@@ -71,7 +70,6 @@ class GrammarUtilTest extends AbstractXtextTests {
 			startrule returns ecore::startrule: name=ID;
 		'''
 		var Resource r = getResourceFromString(model)
-		assertTrue(r.getErrors().isEmpty())
 		var Grammar g = r.getContents().get(0) as Grammar
 		var List<AbstractMetamodelDeclaration> decls = GrammarUtil.allMetamodelDeclarations(g)
 		// ecore as ecore
@@ -98,7 +96,6 @@ class GrammarUtilTest extends AbstractXtextTests {
 			startrule returns bar::startrule: name=ID;
 		'''
 		var Resource r = getResourceFromString(model)
-		assertTrue(r.getErrors().isEmpty())
 		var Grammar g = r.getContents().get(0) as Grammar
 		var List<AbstractMetamodelDeclaration> decls = GrammarUtil.allMetamodelDeclarations(g)
 		// ecore as bar
@@ -132,7 +129,6 @@ class GrammarUtilTest extends AbstractXtextTests {
 			startrule returns bar::startrule: name=ID;
 		'''
 		var Resource r = getResourceFromString(model)
-		assertTrue(r.getErrors().isEmpty())
 		var Grammar g = r.getContents().get(0) as Grammar
 		var List<AbstractMetamodelDeclaration> decls = GrammarUtil.allMetamodelDeclarations(g)
 		// ecore as bar

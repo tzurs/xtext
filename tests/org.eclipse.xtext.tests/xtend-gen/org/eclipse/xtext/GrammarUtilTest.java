@@ -63,9 +63,6 @@ public class GrammarUtilTest extends AbstractXtextTests {
     _builder.newLine();
     String model = _builder.toString();
     final XtextResource r = this.getResourceFromString(model);
-    EList<Resource.Diagnostic> _errors = r.getErrors();
-    boolean _isEmpty = _errors.isEmpty();
-    Assert.assertTrue(_isEmpty);
     EList<EObject> _contents = r.getContents();
     EObject _get = _contents.get(0);
     final Grammar grammar = ((Grammar) _get);
@@ -99,9 +96,6 @@ public class GrammarUtilTest extends AbstractXtextTests {
     _builder.newLine();
     String model = _builder.toString();
     XtextResource r = this.getResourceFromString(model);
-    EList<Resource.Diagnostic> _errors = r.getErrors();
-    boolean _isEmpty = _errors.isEmpty();
-    Assert.assertTrue(_isEmpty);
     EList<EObject> _contents = r.getContents();
     EObject _get = _contents.get(0);
     Grammar grammar = ((Grammar) _get);
@@ -139,9 +133,6 @@ public class GrammarUtilTest extends AbstractXtextTests {
     _builder.newLine();
     String model = _builder.toString();
     Resource r = this.getResourceFromString(model);
-    EList<Resource.Diagnostic> _errors = r.getErrors();
-    boolean _isEmpty = _errors.isEmpty();
-    Assert.assertTrue(_isEmpty);
     EList<EObject> _contents = r.getContents();
     EObject _get = _contents.get(0);
     Grammar g = ((Grammar) _get);
@@ -182,9 +173,6 @@ public class GrammarUtilTest extends AbstractXtextTests {
     _builder.newLine();
     String model = _builder.toString();
     Resource r = this.getResourceFromString(model);
-    EList<Resource.Diagnostic> _errors = r.getErrors();
-    boolean _isEmpty = _errors.isEmpty();
-    Assert.assertTrue(_isEmpty);
     EList<EObject> _contents = r.getContents();
     EObject _get = _contents.get(0);
     Grammar g = ((Grammar) _get);
@@ -241,9 +229,6 @@ public class GrammarUtilTest extends AbstractXtextTests {
     _builder.newLine();
     String model = _builder.toString();
     Resource r = this.getResourceFromString(model);
-    EList<Resource.Diagnostic> _errors = r.getErrors();
-    boolean _isEmpty = _errors.isEmpty();
-    Assert.assertTrue(_isEmpty);
     EList<EObject> _contents = r.getContents();
     EObject _get = _contents.get(0);
     Grammar g = ((Grammar) _get);
