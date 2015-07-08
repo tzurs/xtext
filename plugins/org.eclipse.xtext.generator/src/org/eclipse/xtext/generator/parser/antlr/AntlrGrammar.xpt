@@ -122,6 +122,7 @@ import «gaFQName()»;
 «IF isCalled(original,this)»
 «IF !isDatatypeRule()»
 «IF !debugGrammar-»
+«IF !fragment-»
 // Entry rule «entryRuleName()»
 «entryRuleName()» returns [EObject current=null] 
 «IF definesHiddenTokens || (options.backtrack && !allContents().typeSelect(UnorderedGroup).isEmpty)-»
@@ -155,9 +156,10 @@ finally {
 }
 «ENDIF-»
 «ENDIF-»
+«ENDIF-»
 
 // Rule «name»
-«ruleName()» «IF !debugGrammar-»returns [EObject current=null] 
+«ruleName()» «IF !debugGrammar-»«IF fragment-»[EObject in_current] «ENDIF»returns [EObject current=«IF fragment-»in_current«ELSE»null«ENDIF»] 
     @init { enterRule(); 
 «IF definesHiddenTokens-»
 		HiddenTokens myHiddenTokenState = ((XtextTokenStream)input).setHiddenTokens(«FOREACH hiddenTokens AS hidden SEPARATOR ", "»"«hidden.ruleName()»"«ENDFOREACH-»);
@@ -187,6 +189,7 @@ finally {
 «ENDIF-»
 «ELSE»
 «IF !debugGrammar-»
+«IF !fragment-»
 // Entry rule «entryRuleName()»
 «entryRuleName()» returns [String current=null] 
 «IF definesHiddenTokens || (options.backtrack && !allContents().typeSelect(UnorderedGroup).isEmpty)-»
@@ -220,9 +223,10 @@ finally {
 }
 «ENDIF-»
 «ENDIF-»
+«ENDIF-»
 
 // Rule «name»
-«ruleName()» «IF !debugGrammar-»returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] 
+«ruleName()» «IF fragment-»[AntlrDatatypeRuleToken in_current] «ENDIF»«IF !debugGrammar-»returns [AntlrDatatypeRuleToken current=«IF fragment-»in_current«ELSE»new AntlrDatatypeRuleToken()«ENDIF»] 
     @init { enterRule(); 
 «IF definesHiddenTokens-»
 		HiddenTokens myHiddenTokenState = ((XtextTokenStream)input).setHiddenTokens(«FOREACH hiddenTokens AS hidden SEPARATOR ", "»"«hidden.ruleName()»"«ENDFOREACH-»);
@@ -353,7 +357,7 @@ finally {
         «EXPAND newCompositeNode» 
     }
 «ENDIF-»
-    «localVar()»=«ELSE» «ENDIF-»«rule.ruleName()-»«IF !debugGrammar-»
+    «localVar()»=«ELSE» «ENDIF-»«rule.ruleName()-»«IF !debugGrammar-»«IF rule.fragment»[$current]«ENDIF-»
     {
 		$current.merge(«localVar()»);
     }
@@ -636,11 +640,16 @@ finally {
 	}
 «ENDIF-»
     { 
+«IF rule.fragment-»
+		if ($current==null) {
+			$current = createModelElement(grammarAccess.«containingParserRule().grammarElementAccess()»);
+		}
+«ENDIF-»
         «EXPAND newCompositeNode» 
     }
 «IF (ParserRule.isInstance(rule) && !isDatatypeRule((ParserRule)rule) && !EnumRule.isInstance(rule))-»
     «localVar()»=«ENDIF-»«ENDIF-»«IF TerminalRule.isInstance(rule)-»«localVar()»=«ENDIF-»
-«rule.ruleName()-»
+«rule.ruleName()-»«IF rule.fragment»[$current]«ENDIF-»
 «IF (ParserRule.isInstance(rule) || EnumRule.isInstance(rule)) && !isAssigned()»
     { 
 «IF (ParserRule.isInstance(rule) && !isDatatypeRule((ParserRule)rule) && !EnumRule.isInstance(rule))-»

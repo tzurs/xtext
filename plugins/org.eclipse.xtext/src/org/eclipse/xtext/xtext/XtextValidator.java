@@ -832,6 +832,9 @@ public class XtextValidator extends AbstractDeclarativeValidator {
 	public void checkAssignedActionAfterAssignment(final Action action) {
 		if (action.getFeature() != null) {
 			ParserRule rule = GrammarUtil.containingParserRule(action);
+			if (rule.isFragment() && !rule.isWildcard()) {
+				return;
+			}
 			XtextSwitch<Boolean> visitor = new XtextSwitch<Boolean>() {
 				private boolean assignedActionAllowed = false;
 
