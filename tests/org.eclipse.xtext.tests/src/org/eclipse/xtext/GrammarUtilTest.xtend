@@ -24,6 +24,76 @@ import org.junit.Test
  */
 class GrammarUtilTest extends AbstractXtextTests {
 	
+	@Test def void testFindCurrentType_01() throws Exception {
+		with(XtextStandaloneSetup)
+		var String model = '''
+			grammar myLang with org.eclipse.xtext.common.Terminals
+			generate g 'http://1'
+			Rule:
+				Fragment;
+			fragment Fragment*: name=ID;
+		'''
+		val r = getResourceFromString(model)
+		val grammar = r.getContents().get(0) as Grammar
+		val rule = grammar.rules.head
+		val fragmentCall = rule.alternatives
+		val currentType = GrammarUtil.findCurrentType(fragmentCall)
+		assertEquals('Rule', currentType.name)
+	}
+	
+	@Test def void testFindCurrentType_02() throws Exception {
+		with(XtextStandaloneSetup)
+		var String model = '''
+			grammar myLang with org.eclipse.xtext.common.Terminals
+			generate g 'http://1'
+			Rule:
+				Fragment;
+			fragment Fragment: name=ID {SubRule.named=current};
+		'''
+		val r = getResourceFromString(model)
+		val grammar = r.getContents().get(0) as Grammar
+		val rule = grammar.rules.head
+		val fragmentCall = rule.alternatives
+		val currentType = GrammarUtil.findCurrentType(fragmentCall)
+		assertEquals('SubRule', currentType.name)
+	}
+	
+	@Test def void testFindCurrentType_03() throws Exception {
+		with(XtextStandaloneSetup)
+		var String model = '''
+			grammar myLang with org.eclipse.xtext.common.Terminals
+			generate g 'http://1'
+			Rule:
+				Fragment;
+			fragment Fragment: name=ID SecondFragment;
+			fragment SecondFragment: {SubRule.named=current} value=ID;
+		'''
+		val r = getResourceFromString(model)
+		val grammar = r.getContents().get(0) as Grammar
+		val rule = grammar.rules.head
+		val fragmentCall = rule.alternatives
+		val currentType = GrammarUtil.findCurrentType(fragmentCall)
+		assertEquals('SubRule', currentType.name)
+	}
+	
+	@Test def void testFindCurrentType_04() throws Exception {
+		with(XtextStandaloneSetup)
+		var String model = '''
+			grammar myLang with org.eclipse.xtext.common.Terminals
+			generate g 'http://1'
+			Rule:
+				Fragment;
+			fragment Fragment: name=ID SecondFragment?;
+			fragment SecondFragment: {SubRule.named=current} value=ID;
+		'''
+		val r = getResourceFromString(model)
+		val grammar = r.getContents().get(0) as Grammar
+		val rule = grammar.rules.head
+		val fragmentCall = rule.alternatives
+		val currentType = GrammarUtil.findCurrentType(fragmentCall)
+		assertEquals('Rule', currentType.name)
+	}
+	
 	@Test def void testAllRules() throws Exception {
 		with(XtextStandaloneSetup)
 		var String model = '''

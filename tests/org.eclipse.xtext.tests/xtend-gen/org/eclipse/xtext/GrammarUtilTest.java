@@ -11,6 +11,7 @@ import java.util.Collections;
 import java.util.List;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -46,6 +47,122 @@ import org.junit.Test;
  */
 @SuppressWarnings("all")
 public class GrammarUtilTest extends AbstractXtextTests {
+  @Test
+  public void testFindCurrentType_01() throws Exception {
+    this.with(XtextStandaloneSetup.class);
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("grammar myLang with org.eclipse.xtext.common.Terminals");
+    _builder.newLine();
+    _builder.append("generate g \'http://1\'");
+    _builder.newLine();
+    _builder.append("Rule:");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("Fragment;");
+    _builder.newLine();
+    _builder.append("fragment Fragment*: name=ID;");
+    _builder.newLine();
+    String model = _builder.toString();
+    final XtextResource r = this.getResourceFromString(model);
+    EList<EObject> _contents = r.getContents();
+    EObject _get = _contents.get(0);
+    final Grammar grammar = ((Grammar) _get);
+    EList<AbstractRule> _rules = grammar.getRules();
+    final AbstractRule rule = IterableExtensions.<AbstractRule>head(_rules);
+    final AbstractElement fragmentCall = rule.getAlternatives();
+    final EClassifier currentType = GrammarUtil.findCurrentType(fragmentCall);
+    String _name = currentType.getName();
+    Assert.assertEquals("Rule", _name);
+  }
+  
+  @Test
+  public void testFindCurrentType_02() throws Exception {
+    this.with(XtextStandaloneSetup.class);
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("grammar myLang with org.eclipse.xtext.common.Terminals");
+    _builder.newLine();
+    _builder.append("generate g \'http://1\'");
+    _builder.newLine();
+    _builder.append("Rule:");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("Fragment;");
+    _builder.newLine();
+    _builder.append("fragment Fragment: name=ID {SubRule.named=current};");
+    _builder.newLine();
+    String model = _builder.toString();
+    final XtextResource r = this.getResourceFromString(model);
+    EList<EObject> _contents = r.getContents();
+    EObject _get = _contents.get(0);
+    final Grammar grammar = ((Grammar) _get);
+    EList<AbstractRule> _rules = grammar.getRules();
+    final AbstractRule rule = IterableExtensions.<AbstractRule>head(_rules);
+    final AbstractElement fragmentCall = rule.getAlternatives();
+    final EClassifier currentType = GrammarUtil.findCurrentType(fragmentCall);
+    String _name = currentType.getName();
+    Assert.assertEquals("SubRule", _name);
+  }
+  
+  @Test
+  public void testFindCurrentType_03() throws Exception {
+    this.with(XtextStandaloneSetup.class);
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("grammar myLang with org.eclipse.xtext.common.Terminals");
+    _builder.newLine();
+    _builder.append("generate g \'http://1\'");
+    _builder.newLine();
+    _builder.append("Rule:");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("Fragment;");
+    _builder.newLine();
+    _builder.append("fragment Fragment: name=ID SecondFragment;");
+    _builder.newLine();
+    _builder.append("fragment SecondFragment: {SubRule.named=current} value=ID;");
+    _builder.newLine();
+    String model = _builder.toString();
+    final XtextResource r = this.getResourceFromString(model);
+    EList<EObject> _contents = r.getContents();
+    EObject _get = _contents.get(0);
+    final Grammar grammar = ((Grammar) _get);
+    EList<AbstractRule> _rules = grammar.getRules();
+    final AbstractRule rule = IterableExtensions.<AbstractRule>head(_rules);
+    final AbstractElement fragmentCall = rule.getAlternatives();
+    final EClassifier currentType = GrammarUtil.findCurrentType(fragmentCall);
+    String _name = currentType.getName();
+    Assert.assertEquals("SubRule", _name);
+  }
+  
+  @Test
+  public void testFindCurrentType_04() throws Exception {
+    this.with(XtextStandaloneSetup.class);
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("grammar myLang with org.eclipse.xtext.common.Terminals");
+    _builder.newLine();
+    _builder.append("generate g \'http://1\'");
+    _builder.newLine();
+    _builder.append("Rule:");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("Fragment;");
+    _builder.newLine();
+    _builder.append("fragment Fragment: name=ID SecondFragment?;");
+    _builder.newLine();
+    _builder.append("fragment SecondFragment: {SubRule.named=current} value=ID;");
+    _builder.newLine();
+    String model = _builder.toString();
+    final XtextResource r = this.getResourceFromString(model);
+    EList<EObject> _contents = r.getContents();
+    EObject _get = _contents.get(0);
+    final Grammar grammar = ((Grammar) _get);
+    EList<AbstractRule> _rules = grammar.getRules();
+    final AbstractRule rule = IterableExtensions.<AbstractRule>head(_rules);
+    final AbstractElement fragmentCall = rule.getAlternatives();
+    final EClassifier currentType = GrammarUtil.findCurrentType(fragmentCall);
+    String _name = currentType.getName();
+    Assert.assertEquals("Rule", _name);
+  }
+  
   @Test
   public void testAllRules() throws Exception {
     this.with(XtextStandaloneSetup.class);
