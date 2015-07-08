@@ -23,6 +23,26 @@ import org.junit.Test
  * @author Sebastian Zarnekow
  */
 class GrammarUtilTest extends AbstractXtextTests {
+	
+	@Test def void testAllRules() throws Exception {
+		with(XtextStandaloneSetup)
+		var String model = '''
+			grammar myLang with org.eclipse.xtext.common.Terminals
+			generate g 'http://1'
+			Rule:
+				name=super::STRING;
+			terminal STRING: '"';
+		'''
+		val r = getResourceFromString(model)
+		assertTrue(r.getErrors().isEmpty())
+		val grammar = r.getContents().get(0) as Grammar
+		val allRules = GrammarUtil.allRules(grammar);
+		// order is crucial for terminal rules
+		assertEquals(#['Rule', 'STRING', 'ID', 'INT', 'STRING', 'ML_COMMENT', 'SL_COMMENT', 'WS', 'ANY_OTHER'].toString,
+			allRules.map[ name ].toString 
+		)
+	}
+	
 	@Test def void testFindRuleByName() throws Exception {
 		with(XtextStandaloneSetup)
 		var String model = '''

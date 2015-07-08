@@ -17,6 +17,7 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import org.eclipse.emf.common.util.TreeIterator;
@@ -40,6 +41,8 @@ import org.eclipse.xtext.xtext.CurrentTypeFinder;
 
 import com.google.common.base.Function;
 import com.google.common.base.Predicate;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
 
 /**
@@ -302,27 +305,67 @@ public class GrammarUtil {
 	}
 
 	public static List<AbstractRule> allRules(Grammar grammar) {
-		final List<AbstractRule> result = new ArrayList<AbstractRule>();
-		final Set<String> names = new HashSet<String>();
-		final Set<Grammar> grammars = new HashSet<Grammar>();
-		collectAllRules(grammar, result, grammars, names);
-		return result;
+		final Set<AbstractRule> result = Sets.newLinkedHashSet();
+		final Set<AbstractRule> explicitlyCalled = Sets.newHashSet();
+		final Set<String> seenNames = Sets.newHashSet();
+		final Set<Grammar> seenGrammars = Sets.newHashSet();
+		collectAllRules(grammar, result, explicitlyCalled, seenNames, seenGrammars);
+		return Lists.newArrayList(result);
 	}
 
-	private static void collectAllRules(Grammar grammar, List<AbstractRule> result, Set<Grammar> visitedGrammars,
-			Set<String> knownRulenames) {
-		if (!visitedGrammars.add(grammar))
+	private static void collectAllRules(
+			Grammar grammar,
+			Set<AbstractRule> result,
+			Set<AbstractRule> explicitlyCalled,
+			Set<String> seenNames,
+			Set<Grammar> seenGrammars) {
+		if (!seenGrammars.add(grammar))
 			return;
-
 		for (AbstractRule rule : grammar.getRules()) {
-			if (knownRulenames.add(rule.getName())) {
+			// we need to iterate the rules twice in case an explicit call to a
+			// rule is made from a rule defined later
+			// this explicitly called rule needs to be added
+			// to the set of all rules even though it may 
+			// have been specialized in the sub grammar
+			if (!seenNames.contains(rule.getName()) || explicitlyCalled.contains(rule)) {
+				TreeIterator<EObject> contents = eAll(rule.getAlternatives());
+				while(contents.hasNext()) {
+					EObject content = contents.next();
+					if (content instanceof RuleCall) {
+						AbstractRule calledRule = ((RuleCall) content).getRule();
+						explicitlyCalled.add(calledRule);
+					}
+				}
+			}
+		}
+		for (AbstractRule rule : grammar.getRules()) {
+			if (seenNames.add(rule.getName()) || explicitlyCalled.contains(rule)) {
 				result.add(rule);
 			}
 		}
-
 		for (Grammar usedGrammar : grammar.getUsedGrammars()) {
-			collectAllRules(usedGrammar, result, visitedGrammars, knownRulenames);
+			collectAllRules(usedGrammar, result, explicitlyCalled, seenNames, seenGrammars);
 		}
+	}
+
+	/**
+	 * Returns a map with all rules that are defined in this grammar or used from
+	 * super grammars by an explicit notation.
+	 * 
+	 * @since 2.9
+	 */
+	public static Map<AbstractRule, String> allRulesToName(Grammar grammar) {
+		Set<String> seenNames = Sets.newHashSet();
+		Map<AbstractRule, String> result = Maps.newLinkedHashMap();
+		List<AbstractRule> allRules = allRules(grammar);
+		for(AbstractRule rule: allRules) {
+			String name = rule.getName();
+			if (seenNames.contains(name)) {
+				name = getGrammar(rule).getName() + "." + name;
+			}
+			result.put(rule, name);
+		}
+		return result;
 	}
 
 	public static List<ParserRule> allParserRules(Grammar _this) {

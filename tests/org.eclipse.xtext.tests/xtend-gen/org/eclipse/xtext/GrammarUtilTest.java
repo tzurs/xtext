@@ -7,6 +7,7 @@
  */
 package org.eclipse.xtext;
 
+import java.util.Collections;
 import java.util.List;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
@@ -32,7 +33,10 @@ import org.eclipse.xtext.linking.langATestLanguage.Main;
 import org.eclipse.xtext.linking.langATestLanguage.Type;
 import org.eclipse.xtext.linking.services.LangATestLanguageGrammarAccess;
 import org.eclipse.xtext.resource.XtextResource;
+import org.eclipse.xtext.xbase.lib.CollectionLiterals;
+import org.eclipse.xtext.xbase.lib.Functions.Function1;
 import org.eclipse.xtext.xbase.lib.IterableExtensions;
+import org.eclipse.xtext.xbase.lib.ListExtensions;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -42,6 +46,42 @@ import org.junit.Test;
  */
 @SuppressWarnings("all")
 public class GrammarUtilTest extends AbstractXtextTests {
+  @Test
+  public void testAllRules() throws Exception {
+    this.with(XtextStandaloneSetup.class);
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("grammar myLang with org.eclipse.xtext.common.Terminals");
+    _builder.newLine();
+    _builder.append("generate g \'http://1\'");
+    _builder.newLine();
+    _builder.append("Rule:");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("name=super::STRING;");
+    _builder.newLine();
+    _builder.append("terminal STRING: \'\"\';");
+    _builder.newLine();
+    String model = _builder.toString();
+    final XtextResource r = this.getResourceFromString(model);
+    EList<Resource.Diagnostic> _errors = r.getErrors();
+    boolean _isEmpty = _errors.isEmpty();
+    Assert.assertTrue(_isEmpty);
+    EList<EObject> _contents = r.getContents();
+    EObject _get = _contents.get(0);
+    final Grammar grammar = ((Grammar) _get);
+    final List<AbstractRule> allRules = GrammarUtil.allRules(grammar);
+    String _string = Collections.<String>unmodifiableList(CollectionLiterals.<String>newArrayList("Rule", "STRING", "ID", "INT", "STRING", "ML_COMMENT", "SL_COMMENT", "WS", "ANY_OTHER")).toString();
+    final Function1<AbstractRule, String> _function = new Function1<AbstractRule, String>() {
+      @Override
+      public String apply(final AbstractRule it) {
+        return it.getName();
+      }
+    };
+    List<String> _map = ListExtensions.<AbstractRule, String>map(allRules, _function);
+    String _string_1 = _map.toString();
+    Assert.assertEquals(_string, _string_1);
+  }
+  
   @Test
   public void testFindRuleByName() throws Exception {
     this.with(XtextStandaloneSetup.class);
