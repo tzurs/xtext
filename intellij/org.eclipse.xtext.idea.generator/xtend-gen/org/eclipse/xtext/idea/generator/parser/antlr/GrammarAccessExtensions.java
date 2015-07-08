@@ -20,7 +20,6 @@ import org.eclipse.xtend2.lib.StringConcatenation;
 import org.eclipse.xtext.AbstractElement;
 import org.eclipse.xtext.AbstractRule;
 import org.eclipse.xtext.Action;
-import org.eclipse.xtext.Alternatives;
 import org.eclipse.xtext.Assignment;
 import org.eclipse.xtext.CompoundElement;
 import org.eclipse.xtext.EcoreUtil2;
@@ -143,33 +142,23 @@ public class GrammarAccessExtensions {
       if (_equals) {
         _or = true;
       } else {
-        final Function1<AbstractRule, List<EObject>> _function = new Function1<AbstractRule, List<EObject>>() {
+        final Function1<AbstractRule, List<RuleCall>> _function = new Function1<AbstractRule, List<RuleCall>>() {
           @Override
-          public List<EObject> apply(final AbstractRule it) {
-            return EcoreUtil2.eAllContentsAsList(it);
+          public List<RuleCall> apply(final AbstractRule it) {
+            return GrammarUtil.containedRuleCalls(it);
           }
         };
-        List<List<EObject>> _map = ListExtensions.<AbstractRule, List<EObject>>map(allRules, _function);
-        Iterable<EObject> _flatten = Iterables.<EObject>concat(_map);
-        Iterable<RuleCall> _filter = Iterables.<RuleCall>filter(_flatten, RuleCall.class);
+        List<List<RuleCall>> _map = ListExtensions.<AbstractRule, List<RuleCall>>map(allRules, _function);
+        Iterable<RuleCall> _flatten = Iterables.<RuleCall>concat(_map);
         final Function1<RuleCall, Boolean> _function_1 = new Function1<RuleCall, Boolean>() {
           @Override
           public Boolean apply(final RuleCall ruleCall) {
             AbstractRule _rule = ruleCall.getRule();
-            return Boolean.valueOf((!Objects.equal(_rule, null)));
+            return Boolean.valueOf((!Objects.equal(_rule, rule)));
           }
         };
-        Iterable<RuleCall> _filter_1 = IterableExtensions.<RuleCall>filter(_filter, _function_1);
-        final Function1<RuleCall, AbstractRule> _function_2 = new Function1<RuleCall, AbstractRule>() {
-          @Override
-          public AbstractRule apply(final RuleCall ruleCall) {
-            return ruleCall.getRule();
-          }
-        };
-        Iterable<AbstractRule> _map_1 = IterableExtensions.<RuleCall, AbstractRule>map(_filter_1, _function_2);
-        List<AbstractRule> _list = IterableExtensions.<AbstractRule>toList(_map_1);
-        boolean _contains = _list.contains(rule);
-        _or = _contains;
+        boolean _exists = IterableExtensions.<RuleCall>exists(_flatten, _function_1);
+        _or = _exists;
       }
       _xblockexpression = _or;
     }
@@ -192,22 +181,6 @@ public class GrammarAccessExtensions {
   }
   
   protected boolean _mustBeParenthesized(final AbstractElement it) {
-    return true;
-  }
-  
-  protected boolean _mustBeParenthesized(final Group it) {
-    return true;
-  }
-  
-  protected boolean _mustBeParenthesized(final UnorderedGroup it) {
-    return true;
-  }
-  
-  protected boolean _mustBeParenthesized(final Alternatives it) {
-    return true;
-  }
-  
-  protected boolean _mustBeParenthesized(final EnumLiteralDeclaration it) {
     return true;
   }
   
@@ -434,11 +407,6 @@ public class GrammarAccessExtensions {
     return _xifexpression;
   }
   
-  public boolean isBoolean(final Assignment it) {
-    String _operator = it.getOperator();
-    return Objects.equal(_operator, "?=");
-  }
-  
   public CharSequence toStringLiteral(final AbstractElement it) {
     CharSequence _switchResult = null;
     boolean _matched = false;
@@ -518,15 +486,7 @@ public class GrammarAccessExtensions {
   }
   
   public boolean mustBeParenthesized(final AbstractElement it) {
-    if (it instanceof Alternatives) {
-      return _mustBeParenthesized((Alternatives)it);
-    } else if (it instanceof Group) {
-      return _mustBeParenthesized((Group)it);
-    } else if (it instanceof UnorderedGroup) {
-      return _mustBeParenthesized((UnorderedGroup)it);
-    } else if (it instanceof EnumLiteralDeclaration) {
-      return _mustBeParenthesized((EnumLiteralDeclaration)it);
-    } else if (it instanceof Keyword) {
+    if (it instanceof Keyword) {
       return _mustBeParenthesized((Keyword)it);
     } else if (it instanceof RuleCall) {
       return _mustBeParenthesized((RuleCall)it);

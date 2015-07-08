@@ -14,12 +14,12 @@ import org.eclipse.emf.ecore.EObject
 import org.eclipse.xtext.AbstractElement
 import org.eclipse.xtext.AbstractRule
 import org.eclipse.xtext.Action
-import org.eclipse.xtext.Alternatives
 import org.eclipse.xtext.Assignment
 import org.eclipse.xtext.CompoundElement
 import org.eclipse.xtext.EnumLiteralDeclaration
 import org.eclipse.xtext.EnumRule
 import org.eclipse.xtext.Grammar
+import org.eclipse.xtext.GrammarUtil
 import org.eclipse.xtext.Group
 import org.eclipse.xtext.Keyword
 import org.eclipse.xtext.ParserRule
@@ -86,8 +86,8 @@ class GrammarAccessExtensions {
 	def isCalled(AbstractRule rule, Grammar grammar) {
 		val allRules = grammar.allRules
 		allRules.indexOf(rule) == 0 || allRules.map [
-			eAllContentsAsList
-		].flatten.filter(RuleCall).filter[ruleCall | ruleCall.rule != null].map[ruleCall | ruleCall.rule].toList.contains(rule)
+			GrammarUtil.containedRuleCalls(it)
+		].flatten.exists[ruleCall | ruleCall.rule != rule]
 	}
 
 	def definesUnorderedGroups(ParserRule it, AntlrOptions options) {
@@ -95,14 +95,6 @@ class GrammarAccessExtensions {
 	}
 
 	dispatch def mustBeParenthesized(AbstractElement it) { true }
-
-	dispatch def mustBeParenthesized(Group it) { true }
-
-	dispatch def mustBeParenthesized(UnorderedGroup it) { true }
-
-	dispatch def mustBeParenthesized(Alternatives it) { true }
-
-	dispatch def mustBeParenthesized(EnumLiteralDeclaration it) { true }
 
 	dispatch def mustBeParenthesized(Keyword it) { predicated() || firstSetPredicated || cardinality != null }
 
@@ -182,10 +174,6 @@ class GrammarAccessExtensions {
 
 	def setOrAdd(Assignment it) {
 		if(operator == '+=') 'add' else 'set'
-	}
-
-	def isBoolean(Assignment it) {
-		operator == "?="
 	}
 
 	def toStringLiteral(AbstractElement it) {

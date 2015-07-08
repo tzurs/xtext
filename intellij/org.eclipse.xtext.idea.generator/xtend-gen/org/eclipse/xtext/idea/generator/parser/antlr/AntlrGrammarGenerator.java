@@ -1005,8 +1005,8 @@ public class AntlrGrammarGenerator extends AbstractActionAwareAntlrGrammarGenera
       _builder.append(_feature, "\t");
       _builder.append("\", ");
       {
-        boolean _isBoolean = this._grammarAccessExtensions.isBoolean(assignment);
-        if (_isBoolean) {
+        boolean _isBooleanAssignment = GrammarUtil.isBooleanAssignment(assignment);
+        if (_isBooleanAssignment) {
           _builder.append("true");
         } else {
           String _localVar_1 = this._grammarAccessExtensions.localVar(assignment, it);
@@ -1090,8 +1090,8 @@ public class AntlrGrammarGenerator extends AbstractActionAwareAntlrGrammarGenera
           _builder.newLineIfNotEmpty();
           _builder.append("\t\t");
           {
-            boolean _isBoolean = this._grammarAccessExtensions.isBoolean(assignment);
-            if (_isBoolean) {
+            boolean _isBooleanAssignment = GrammarUtil.isBooleanAssignment(assignment);
+            if (_isBooleanAssignment) {
               _builder.append("true");
             } else {
               String _localVar_1 = this._grammarAccessExtensions.localVar(assignment, it);
@@ -1162,8 +1162,8 @@ public class AntlrGrammarGenerator extends AbstractActionAwareAntlrGrammarGenera
           _builder_1.newLineIfNotEmpty();
           _builder_1.append("\t\t");
           {
-            boolean _isBoolean_1 = this._grammarAccessExtensions.isBoolean(assignment);
-            if (_isBoolean_1) {
+            boolean _isBooleanAssignment_1 = GrammarUtil.isBooleanAssignment(assignment);
+            if (_isBooleanAssignment_1) {
               _builder_1.append("true");
             } else {
               String _localVar_4 = this._grammarAccessExtensions.localVar(assignment, it);

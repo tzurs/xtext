@@ -362,7 +362,7 @@ class AntlrGrammarGenerator extends AbstractActionAwareAntlrGrammarGenerator {
 					$current = «assignment.createModelElement»;
 				}
 				«assignment.setOrAdd»WithLastConsumed($current, "«assignment.feature»", «
-	        		IF assignment.boolean»true«
+	        		IF assignment.isBooleanAssignment»true«
 	        		ELSE»«assignment.localVar(it)»«
 	        		ENDIF», «assignment.terminal.toStringLiteral»);
 			}
@@ -387,7 +387,7 @@ class AntlrGrammarGenerator extends AbstractActionAwareAntlrGrammarGenerator {
 						«assignment.setOrAdd»(
 							$current,
 							"«assignment.feature»",
-							«IF assignment.boolean»true«ELSE»«assignment.localVar(it)»«ENDIF»,
+							«IF assignment.isBooleanAssignment»true«ELSE»«assignment.localVar(it)»«ENDIF»,
 							«toStringLiteral»);
 						afterParserOrEnumRuleCall();
 					}
@@ -404,7 +404,7 @@ class AntlrGrammarGenerator extends AbstractActionAwareAntlrGrammarGenerator {
 						«assignment.setOrAdd»WithLastConsumed(
 							$current,
 							"«assignment.feature»",
-							«IF assignment.isBoolean»true«ELSE»«assignment.localVar(it)»«ENDIF»,
+							«IF assignment.isBooleanAssignment»true«ELSE»«assignment.localVar(it)»«ENDIF»,
 							«toStringLiteral»);
 					}
 				'''
