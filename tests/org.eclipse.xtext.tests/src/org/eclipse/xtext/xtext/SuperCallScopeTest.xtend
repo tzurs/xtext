@@ -7,15 +7,14 @@
  *******************************************************************************/
 package org.eclipse.xtext.xtext
 
+import org.eclipse.xtext.AbstractRule
+import org.eclipse.xtext.Grammar
+import org.eclipse.xtext.GrammarUtil
 import org.eclipse.xtext.XtextStandaloneSetup
 import org.eclipse.xtext.junit4.AbstractXtextTests
-import org.junit.Test
-import org.eclipse.xtext.Grammar
-import org.eclipse.xtext.resource.IEObjectDescription
 import org.eclipse.xtext.naming.QualifiedName
-import org.eclipse.xtext.AbstractElement
-import org.eclipse.xtext.AbstractRule
-import org.eclipse.xtext.GrammarUtil
+import org.eclipse.xtext.resource.IEObjectDescription
+import org.junit.Test
 
 /**
  * @author Sebastian Zarnekow - Initial contribution and API

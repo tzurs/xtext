@@ -67,6 +67,9 @@ public class XtextTransientValueService extends DefaultTransientValueService {
 			return decl.getEnumLiteral() != null && decl.getLiteral() != null &&
 				Strings.equal(decl.getLiteral().getValue(), decl.getEnumLiteral().getName());
 		}
+		else if (feature == XtextPackage.eINSTANCE.getRuleCall_ExplicitlyCalled()) {
+			return true;
+		}
 		return super.isTransient(owner, feature, index);
 	}
 

@@ -80,6 +80,8 @@ public class XtextTransientValueService2 extends TransientValueService {
 				return NO;
 			}
 			return YES;
+		} else if (feature == XtextPackage.eINSTANCE.getRuleCall_ExplicitlyCalled()) {
+			return YES;
 		}
 		return super.isValueTransient(owner, feature);
 	}
