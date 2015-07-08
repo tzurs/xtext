@@ -426,6 +426,9 @@ public class XtextLinker extends Linker {
 			if (node == null)
 				obj.eUnset(ref);
 		}
+		if (ref == XtextPackage.Literals.RULE_CALL__RULE) {
+			obj.eUnset(XtextPackage.Literals.RULE_CALL__EXPLICITLY_CALLED);
+		}
 	}
 
 	public void setPackageRemover(PackageRemover packageRemover) {

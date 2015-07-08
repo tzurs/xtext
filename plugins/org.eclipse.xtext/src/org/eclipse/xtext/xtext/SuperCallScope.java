@@ -14,17 +14,39 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.xtext.AbstractRule;
 import org.eclipse.xtext.Grammar;
 import org.eclipse.xtext.GrammarUtil;
+import org.eclipse.xtext.RuleCall;
 import org.eclipse.xtext.naming.QualifiedName;
 import org.eclipse.xtext.resource.EObjectDescription;
+import org.eclipse.xtext.resource.ForwardingEObjectDescription;
 import org.eclipse.xtext.resource.IEObjectDescription;
 import org.eclipse.xtext.scoping.IScope;
 import org.eclipse.xtext.util.Strings;
 
 /**
  * @author Sebastian Zarnekow - Initial contribution and API
+ * 
+ * TODO implement missing methods
+ * TODO set explicit name flag
  */
 public class SuperCallScope implements IScope {
 
+	public static class ExplicitCallDescription extends ForwardingEObjectDescription {
+
+		private RuleCall ruleCall;
+
+		public ExplicitCallDescription(IEObjectDescription delegate, RuleCall ruleCall) {
+			super(delegate);
+			this.ruleCall = ruleCall;
+		}
+		
+		@Override
+		public EObject getEObjectOrProxy() {
+			ruleCall.setExplicitlyCalled(true);
+			return super.getEObjectOrProxy();
+		}
+		
+	}
+	
 	private EObject context;
 
 	public SuperCallScope(EObject context) {
@@ -33,7 +55,11 @@ public class SuperCallScope implements IScope {
 	
 	@Override
 	public IEObjectDescription getSingleElement(QualifiedName name) {
-		return doGetSingleElement(name);
+		IEObjectDescription result = doGetSingleElement(name);
+		if (result != null && context instanceof RuleCall) {
+			return new ExplicitCallDescription(result, (RuleCall) context);
+		}
+		return result;
 	}
 
 	private IEObjectDescription doGetSingleElement(QualifiedName qn) {

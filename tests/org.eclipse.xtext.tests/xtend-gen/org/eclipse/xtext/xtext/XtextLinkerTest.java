@@ -8,8 +8,11 @@
 package org.eclipse.xtext.xtext;
 
 import com.google.common.base.Objects;
+import com.google.common.collect.Iterators;
+import java.util.Iterator;
 import java.util.List;
 import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.common.util.TreeIterator;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
@@ -29,6 +32,7 @@ import org.eclipse.xtext.junit4.AbstractXtextTests;
 import org.eclipse.xtext.resource.XtextResource;
 import org.eclipse.xtext.xbase.lib.Functions.Function1;
 import org.eclipse.xtext.xbase.lib.IterableExtensions;
+import org.eclipse.xtext.xbase.lib.IteratorExtensions;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -42,6 +46,60 @@ public class XtextLinkerTest extends AbstractXtextTests {
     super.setUp();
     XtextStandaloneSetup _xtextStandaloneSetup = new XtextStandaloneSetup();
     this.with(_xtextStandaloneSetup);
+  }
+  
+  @Test
+  public void testExplicitRuleCallsAreTracked() throws Exception {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("grammar test.Lang with org.eclipse.xtext.common.Terminals");
+    _builder.newLine();
+    _builder.append("generate test \'http://test\'");
+    _builder.newLine();
+    _builder.append("Rule: name=super::ID name=ID;");
+    _builder.newLine();
+    _builder.append("terminal ID: super;");
+    _builder.newLine();
+    _builder.append("terminal _super: \'s\';");
+    _builder.newLine();
+    final String grammarAsString = _builder.toString();
+    final XtextResource resource = this.getResourceFromString(grammarAsString);
+    EList<EObject> _contents = resource.getContents();
+    EObject _get = _contents.get(0);
+    Grammar grammar = ((Grammar) _get);
+    EList<AbstractRule> _rules = grammar.getRules();
+    final AbstractRule firstRule = IterableExtensions.<AbstractRule>head(_rules);
+    TreeIterator<EObject> _eAllContents = firstRule.eAllContents();
+    Iterator<RuleCall> _filter = Iterators.<RuleCall>filter(_eAllContents, RuleCall.class);
+    final RuleCall firstRuleCall = IteratorExtensions.<RuleCall>head(_filter);
+    boolean _isExplicitlyCalled = firstRuleCall.isExplicitlyCalled();
+    Assert.assertTrue(_isExplicitlyCalled);
+    TreeIterator<EObject> _eAllContents_1 = firstRule.eAllContents();
+    Iterator<RuleCall> _filter_1 = Iterators.<RuleCall>filter(_eAllContents_1, RuleCall.class);
+    final RuleCall secondRuleCall = IteratorExtensions.<RuleCall>last(_filter_1);
+    boolean _isExplicitlyCalled_1 = secondRuleCall.isExplicitlyCalled();
+    Assert.assertFalse(_isExplicitlyCalled_1);
+    EList<AbstractRule> _rules_1 = grammar.getRules();
+    AbstractRule _get_1 = _rules_1.get(1);
+    TreeIterator<EObject> _eAllContents_2 = _get_1.eAllContents();
+    Iterator<RuleCall> _filter_2 = Iterators.<RuleCall>filter(_eAllContents_2, RuleCall.class);
+    final RuleCall thirdRuleCall = IteratorExtensions.<RuleCall>head(_filter_2);
+    boolean _isExplicitlyCalled_2 = thirdRuleCall.isExplicitlyCalled();
+    Assert.assertTrue(_isExplicitlyCalled_2);
+    int _indexOf = grammarAsString.indexOf("_super");
+    resource.update(_indexOf, 1, " ");
+    Resource _eResource = firstRuleCall.eResource();
+    Assert.assertEquals(resource, _eResource);
+    Resource _eResource_1 = secondRuleCall.eResource();
+    Assert.assertEquals(resource, _eResource_1);
+    Resource _eResource_2 = thirdRuleCall.eResource();
+    Assert.assertEquals(resource, _eResource_2);
+    resource.getContents();
+    boolean _isExplicitlyCalled_3 = thirdRuleCall.isExplicitlyCalled();
+    Assert.assertFalse(_isExplicitlyCalled_3);
+    EList<AbstractRule> _rules_2 = grammar.getRules();
+    AbstractRule _last = IterableExtensions.<AbstractRule>last(_rules_2);
+    AbstractRule _rule = thirdRuleCall.getRule();
+    Assert.assertEquals(_last, _rule);
   }
   
   @Test

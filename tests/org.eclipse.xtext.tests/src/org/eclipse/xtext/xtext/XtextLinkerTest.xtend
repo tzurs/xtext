@@ -25,6 +25,36 @@ class XtextLinkerTest extends AbstractXtextTests {
 		with(new XtextStandaloneSetup())
 	}
 	
+	@Test def void testExplicitRuleCallsAreTracked() throws Exception {
+		val grammarAsString = '''
+			grammar test.Lang with org.eclipse.xtext.common.Terminals
+			generate test 'http://test'
+			Rule: name=super::ID name=ID;
+			terminal ID: super;
+			terminal _super: 's';
+		'''
+		val resource = grammarAsString.resourceFromString
+		var grammar = resource.getContents().get(0) as Grammar
+		val firstRule = grammar.rules.head
+		val firstRuleCall = firstRule.eAllContents.filter(RuleCall).head
+		assertTrue(firstRuleCall.isExplicitlyCalled)
+		
+		val secondRuleCall = firstRule.eAllContents.filter(RuleCall).last
+		assertFalse(secondRuleCall.isExplicitlyCalled)
+		
+		val thirdRuleCall = grammar.rules.get(1).eAllContents.filter(RuleCall).head
+		assertTrue(thirdRuleCall.isExplicitlyCalled)
+		
+		resource.update(grammarAsString.indexOf('_super'), 1, ' ');
+		assertEquals(resource, firstRuleCall.eResource)
+		assertEquals(resource, secondRuleCall.eResource)
+		assertEquals(resource, thirdRuleCall.eResource)
+		// bogus - resource is only updated after a call to getContents
+		resource.contents
+		assertFalse(thirdRuleCall.isExplicitlyCalled)
+		assertEquals(grammar.rules.last, thirdRuleCall.rule)
+	}
+	
 	@Test def void testQualifiedRuleCall_01() throws Exception {
 		val grammarAsString = '''
 			grammar test.Lang with org.eclipse.xtext.common.Terminals
