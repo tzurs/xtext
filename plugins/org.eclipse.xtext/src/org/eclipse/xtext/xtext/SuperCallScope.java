@@ -9,6 +9,7 @@ package org.eclipse.xtext.xtext;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.xtext.AbstractRule;
@@ -22,14 +23,22 @@ import org.eclipse.xtext.resource.IEObjectDescription;
 import org.eclipse.xtext.scoping.IScope;
 import org.eclipse.xtext.util.Strings;
 
+import com.google.common.collect.Iterables;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
+
 /**
  * @author Sebastian Zarnekow - Initial contribution and API
- * 
- * TODO implement missing methods
- * TODO set explicit name flag
  */
 public class SuperCallScope implements IScope {
 
+	private static final String SUPER = "super";
+
+	/**
+	 * Used during linking to set the {@link RuleCall#isExplicitlyCalled() flag}
+	 * which keeps track of explicitly chosen rules.
+	 * @author zarnekow - Initial contribution and API
+	 */
 	public static class ExplicitCallDescription extends ForwardingEObjectDescription {
 
 		private RuleCall ruleCall;
@@ -65,7 +74,7 @@ public class SuperCallScope implements IScope {
 	private IEObjectDescription doGetSingleElement(QualifiedName qn) {
 		List<String> name = Strings.split(qn.getFirstSegment(), '.');
 		if (name.size() == 1) {
-			if ("super".equals(name.get(0))) {
+			if (SUPER.equals(name.get(0))) {
 				AbstractRule containingRule = GrammarUtil.containingRule(context);
 				if (containingRule != null) {
 					Grammar grammar = GrammarUtil.getGrammar(containingRule);
@@ -83,7 +92,7 @@ public class SuperCallScope implements IScope {
 				String firstSegment = name.get(0);
 				if (name.size() == 2) {
 					String ruleName = name.get(1);
-					if ("super".equals(firstSegment)) {
+					if (SUPER.equals(firstSegment)) {
 						for(Grammar parent: grammar.getUsedGrammars()) {
 							AbstractRule superRule = GrammarUtil.findRuleForName(parent, ruleName);
 							if (superRule != null) {
@@ -130,20 +139,69 @@ public class SuperCallScope implements IScope {
 
 	@Override
 	public IEObjectDescription getSingleElement(EObject object) {
-		// TODO Auto-generated method stub
-		return null;
+		return Iterables.getFirst(getElements(object), null);
 	}
 
 	@Override
 	public Iterable<IEObjectDescription> getElements(EObject object) {
-		// TODO Auto-generated method stub
-		return null;
+		if (object instanceof AbstractRule) {
+			Grammar grammar = GrammarUtil.getGrammar(context);
+			AbstractRule rule = (AbstractRule) object;
+			if (GrammarUtil.getGrammar(rule) == grammar) {
+				return Lists.newArrayList(
+						EObjectDescription.create(GrammarUtil.getName(grammar) + "." + rule.getName(), rule),
+						EObjectDescription.create(grammar.getName() + "." + rule.getName(), rule));
+			}
+			List<IEObjectDescription> result = Lists.newArrayList(
+					EObjectDescription.create(SUPER + "." + rule.getName(), rule),
+					EObjectDescription.create(GrammarUtil.getName(grammar) + "." + rule.getName(), rule),
+					EObjectDescription.create(grammar.getName() + "." + rule.getName(), rule));
+			AbstractRule contextRule = GrammarUtil.containingRule(context);
+			if (contextRule != null && contextRule.getName().equals(rule.getName())) {
+				result.add(0, EObjectDescription.create(SUPER, rule));
+			}
+			return result;
+		}
+		return Collections.emptyList();
 	}
 
 	@Override
 	public Iterable<IEObjectDescription> getAllElements() {
-		// TODO Auto-generated method stub
-		return null;
+		AbstractRule contextRule = GrammarUtil.containingRule(context);
+		Grammar grammar = contextRule != null ? GrammarUtil.getGrammar(contextRule) : GrammarUtil.getGrammar(context);
+		Map<QualifiedName, IEObjectDescription> result = Maps.newLinkedHashMap();
+		if (grammar != null) {
+			String shortName = GrammarUtil.getName(grammar) + ".";
+			String longName = grammar.getName() + ".";
+			for(AbstractRule rule: grammar.getRules()) {
+				putIfAbsent(EObjectDescription.create(shortName + rule.getName(), rule), result);
+				putIfAbsent(EObjectDescription.create(longName + rule.getName(), rule), result);
+			}
+			boolean waitingForSuper = contextRule != null;
+			for(Grammar usedGrammar: GrammarUtil.allUsedGrammars(grammar)) {
+				shortName = GrammarUtil.getName(usedGrammar) + ".";
+				longName = usedGrammar.getName() + ".";
+				for(AbstractRule rule: usedGrammar.getRules()) {
+					if (waitingForSuper) {
+						assert contextRule != null;
+						if (rule.getName().equals(contextRule.getName())) {
+							putIfAbsent(EObjectDescription.create(SUPER, rule), result);
+							waitingForSuper = false;
+						}
+					}
+					putIfAbsent(EObjectDescription.create(SUPER + "." + rule.getName(), rule), result);
+					putIfAbsent(EObjectDescription.create(shortName + rule.getName(), rule), result);
+					putIfAbsent(EObjectDescription.create(longName + rule.getName(), rule), result);
+				}	
+			}
+		}
+		return Lists.newArrayList(result.values());
+	}
+
+	private void putIfAbsent(IEObjectDescription desc, Map<QualifiedName, IEObjectDescription> result) {
+		if (!result.containsKey(desc.getName())) {
+			result.put(desc.getName(), desc);
+		}
 	}
 
 }
