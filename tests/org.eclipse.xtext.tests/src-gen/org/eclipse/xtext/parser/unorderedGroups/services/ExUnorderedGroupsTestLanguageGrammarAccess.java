@@ -19,7 +19,7 @@ public class ExUnorderedGroupsTestLanguageGrammarAccess extends AbstractGrammarE
 	
 	
 	public class DelegateModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "DelegateModel");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.unorderedGroups.ExUnorderedGroupsTestLanguage.DelegateModel");
 		private final RuleCall cModelParserRuleCall = (RuleCall)rule.eContents().get(1);
 		
 		//DelegateModel returns Model:

@@ -19,7 +19,7 @@ public class MetamodelRefTestLanguageGrammarAccess extends AbstractGrammarElemen
 	
 	
 	public class FooElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Foo");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.metamodelreferencing.tests.MetamodelRefTestLanguage.Foo");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cNameAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cNameIDTerminalRuleCall_0_0 = (RuleCall)cNameAssignment_0.eContents().get(0);
@@ -47,7 +47,7 @@ public class MetamodelRefTestLanguageGrammarAccess extends AbstractGrammarElemen
 	}
 
 	public class NameRefElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "NameRef");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.metamodelreferencing.tests.MetamodelRefTestLanguage.NameRef");
 		private final Assignment cRuleAssignment = (Assignment)rule.eContents().get(1);
 		private final CrossReference cRuleParserRuleCrossReference_0 = (CrossReference)cRuleAssignment.eContents().get(0);
 		private final RuleCall cRuleParserRuleIDTerminalRuleCall_0_1 = (RuleCall)cRuleParserRuleCrossReference_0.eContents().get(1);
@@ -67,7 +67,7 @@ public class MetamodelRefTestLanguageGrammarAccess extends AbstractGrammarElemen
 	}
 
 	public class MyRuleElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "MyRule");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.metamodelreferencing.tests.MetamodelRefTestLanguage.MyRule");
 		private final Assignment cNameAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cNameIDTerminalRuleCall_0 = (RuleCall)cNameAssignment.eContents().get(0);
 		

@@ -19,7 +19,7 @@ public class OptionalEmptyTestLanguageGrammarAccess extends AbstractGrammarEleme
 	
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.OptionalEmptyTestLanguage.Model");
 		private final Assignment cChildAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cChildGreetingParserRuleCall_0 = (RuleCall)cChildAssignment.eContents().get(0);
 		
@@ -35,7 +35,7 @@ public class OptionalEmptyTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class GreetingElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Greeting");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.OptionalEmptyTestLanguage.Greeting");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cHalloKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);

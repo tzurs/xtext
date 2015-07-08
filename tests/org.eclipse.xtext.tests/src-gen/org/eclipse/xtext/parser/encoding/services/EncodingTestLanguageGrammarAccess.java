@@ -18,7 +18,7 @@ public class EncodingTestLanguageGrammarAccess extends AbstractGrammarElementFin
 	
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.encoding.EncodingTestLanguage.Model");
 		private final Assignment cWordsAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cWordsWordParserRuleCall_0 = (RuleCall)cWordsAssignment.eContents().get(0);
 		
@@ -34,7 +34,7 @@ public class EncodingTestLanguageGrammarAccess extends AbstractGrammarElementFin
 	}
 
 	public class WordElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Word");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.encoding.EncodingTestLanguage.Word");
 		private final Assignment cValueAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cValueLEXEMETerminalRuleCall_0 = (RuleCall)cValueAssignment.eContents().get(0);
 		

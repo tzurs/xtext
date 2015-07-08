@@ -19,7 +19,7 @@ public class ReferenceGrammarTestLanguageGrammarAccess extends AbstractGrammarEl
 	
 	
 	public class SpielplatzElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Spielplatz");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.ReferenceGrammarTestLanguage.Spielplatz");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cSpielplatzKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cGroesseAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -97,7 +97,7 @@ public class ReferenceGrammarTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class PersonElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Person");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.ReferenceGrammarTestLanguage.Person");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cKindParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cErwachsenerParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -117,7 +117,7 @@ public class ReferenceGrammarTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class KindElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Kind");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.ReferenceGrammarTestLanguage.Kind");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cKindKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Keyword cLeftParenthesisKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -157,7 +157,7 @@ public class ReferenceGrammarTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class ErwachsenerElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Erwachsener");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.ReferenceGrammarTestLanguage.Erwachsener");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cErwachsenerKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Keyword cLeftParenthesisKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -197,7 +197,7 @@ public class ReferenceGrammarTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class SpielzeugElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Spielzeug");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.ReferenceGrammarTestLanguage.Spielzeug");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cSpielzeugKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Keyword cLeftParenthesisKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -237,7 +237,7 @@ public class ReferenceGrammarTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class FarbeElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Farbe");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.ReferenceGrammarTestLanguage.Farbe");
 		private final Assignment cWertAssignment = (Assignment)rule.eContents().get(1);
 		private final Alternatives cWertAlternatives_0 = (Alternatives)cWertAssignment.eContents().get(0);
 		private final Keyword cWertROTKeyword_0_0 = (Keyword)cWertAlternatives_0.eContents().get(0);
@@ -269,7 +269,7 @@ public class ReferenceGrammarTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class FamilieElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Familie");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.ReferenceGrammarTestLanguage.Familie");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cFamilieKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Keyword cLeftParenthesisKeyword_1 = (Keyword)cGroup.eContents().get(1);

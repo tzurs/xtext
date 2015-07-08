@@ -19,7 +19,7 @@ public class HiddenTokenSequencerTestLanguageGrammarAccess extends AbstractGramm
 	
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.HiddenTokenSequencerTestLanguage.Model");
 		private final Assignment cDomainModelAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cDomainModelDomainModelParserRuleCall_0 = (RuleCall)cDomainModelAssignment.eContents().get(0);
 		
@@ -35,7 +35,7 @@ public class HiddenTokenSequencerTestLanguageGrammarAccess extends AbstractGramm
 	}
 
 	public class DomainModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "DomainModel");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.HiddenTokenSequencerTestLanguage.DomainModel");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cEntitiesKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cEntitiesAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -63,7 +63,7 @@ public class HiddenTokenSequencerTestLanguageGrammarAccess extends AbstractGramm
 	}
 
 	public class EntityElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Entity");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.HiddenTokenSequencerTestLanguage.Entity");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cNameAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cNameIDTerminalRuleCall_0_0 = (RuleCall)cNameAssignment_0.eContents().get(0);

@@ -18,7 +18,7 @@ public class BacktrackingLexerTestLanguageGrammarAccess extends AbstractGrammarE
 	
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.lexer.BacktrackingLexerTestLanguage.Model");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cEnumsAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cEnumsEnumNameEnumRuleCall_0_0 = (RuleCall)cEnumsAssignment_0.eContents().get(0);
@@ -78,7 +78,7 @@ public class BacktrackingLexerTestLanguageGrammarAccess extends AbstractGrammarE
 	}
 
 	public class AbElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Ab");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.lexer.BacktrackingLexerTestLanguage.Ab");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cXAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cXCharATerminalRuleCall_0_0 = (RuleCall)cXAssignment_0.eContents().get(0);
@@ -106,7 +106,7 @@ public class BacktrackingLexerTestLanguageGrammarAccess extends AbstractGrammarE
 	}
 
 	public class XbElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Xb");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.lexer.BacktrackingLexerTestLanguage.Xb");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cXAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cXCharXTerminalRuleCall_0_0 = (RuleCall)cXAssignment_0.eContents().get(0);

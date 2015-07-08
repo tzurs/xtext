@@ -19,7 +19,7 @@ public class BacktrackingBug325745TestLanguageGrammarAccess extends AbstractGram
 	
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.unorderedGroups.BacktrackingBug325745TestLanguage.Model");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cModelAction_0 = (Action)cGroup.eContents().get(0);
 		private final Assignment cFieldsAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -43,7 +43,7 @@ public class BacktrackingBug325745TestLanguageGrammarAccess extends AbstractGram
 	}
 
 	public class ElementElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Element");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.unorderedGroups.BacktrackingBug325745TestLanguage.Element");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cNameAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cNameIDTerminalRuleCall_0_0 = (RuleCall)cNameAssignment_0.eContents().get(0);
@@ -83,7 +83,7 @@ public class BacktrackingBug325745TestLanguageGrammarAccess extends AbstractGram
 	}
 
 	public class DataTypeElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "DataType");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.unorderedGroups.BacktrackingBug325745TestLanguage.DataType");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cBaseTypeAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cBaseTypeIDTerminalRuleCall_0_0 = (RuleCall)cBaseTypeAssignment_0.eContents().get(0);
@@ -119,7 +119,7 @@ public class BacktrackingBug325745TestLanguageGrammarAccess extends AbstractGram
 	}
 
 	public class ExpressionElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Expression");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.unorderedGroups.BacktrackingBug325745TestLanguage.Expression");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cExpressionAction_0 = (Action)cGroup.eContents().get(0);
 		private final UnorderedGroup cUnorderedGroup_1 = (UnorderedGroup)cGroup.eContents().get(1);
@@ -187,7 +187,7 @@ public class BacktrackingBug325745TestLanguageGrammarAccess extends AbstractGram
 	}
 
 	public class SimpleTermElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "SimpleTerm");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.unorderedGroups.BacktrackingBug325745TestLanguage.SimpleTerm");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Group cGroup_0 = (Group)cAlternatives.eContents().get(0);
 		private final Assignment cLineCountAssignment_0_0 = (Assignment)cGroup_0.eContents().get(0);

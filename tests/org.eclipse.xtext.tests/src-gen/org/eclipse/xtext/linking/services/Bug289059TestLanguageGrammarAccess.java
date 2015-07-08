@@ -19,7 +19,7 @@ public class Bug289059TestLanguageGrammarAccess extends AbstractGrammarElementFi
 	
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.linking.Bug289059TestLanguage.Model");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cNameAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cNameIDTerminalRuleCall_0_0 = (RuleCall)cNameAssignment_0.eContents().get(0);
@@ -59,7 +59,7 @@ public class Bug289059TestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class UnassignedActionElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "UnassignedAction");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.linking.Bug289059TestLanguage.UnassignedAction");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cUnassignedActionAction_0 = (Action)cGroup.eContents().get(0);
 		private final Keyword cEnabledKeyword_1 = (Keyword)cGroup.eContents().get(1);

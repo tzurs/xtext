@@ -19,7 +19,7 @@ public class Bug311337TestLanguageGrammarAccess extends AbstractGrammarElementFi
 	
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.linking.lazy.Bug311337TestLanguage.Model");
 		private final Assignment cDefAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cDefDefinitionParserRuleCall_0 = (RuleCall)cDefAssignment.eContents().get(0);
 		
@@ -35,7 +35,7 @@ public class Bug311337TestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class DefinitionElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Definition");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.linking.lazy.Bug311337TestLanguage.Definition");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cDefKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -79,7 +79,7 @@ public class Bug311337TestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class ChildElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Child");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.linking.lazy.Bug311337TestLanguage.Child");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cChildKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -119,7 +119,7 @@ public class Bug311337TestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class ReferenceElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Reference");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.linking.lazy.Bug311337TestLanguage.Reference");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cRefKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cRefChildAssignment_1 = (Assignment)cGroup.eContents().get(1);

@@ -19,7 +19,7 @@ public class Bug301935ExTestLanguageGrammarAccess extends AbstractGrammarElement
 	
 	
 	public class DelegateModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "DelegateModel");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.antlr.Bug301935ExTestLanguage.DelegateModel");
 		private final RuleCall cModelParserRuleCall = (RuleCall)rule.eContents().get(1);
 		
 		//DelegateModel returns Model:

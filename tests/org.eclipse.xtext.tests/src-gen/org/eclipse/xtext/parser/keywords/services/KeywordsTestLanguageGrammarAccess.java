@@ -19,7 +19,7 @@ public class KeywordsTestLanguageGrammarAccess extends AbstractGrammarElementFin
 	
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.keywords.KeywordsTestLanguage.Model");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Assignment cFirstAssignment_0 = (Assignment)cAlternatives.eContents().get(0);
 		private final Keyword cFirstFooBarKeyword_0_0 = (Keyword)cFirstAssignment_0.eContents().get(0);

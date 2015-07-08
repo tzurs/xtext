@@ -19,7 +19,7 @@ public class ActionTestLanguage2GrammarAccess extends AbstractGrammarElementFind
 	
 	
 	public class ORingElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ORing");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.ActionTestLanguage2.ORing");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cValueParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
@@ -56,7 +56,7 @@ public class ActionTestLanguage2GrammarAccess extends AbstractGrammarElementFind
 	}
 
 	public class ValueElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Value");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.ActionTestLanguage2.Value");
 		private final Assignment cValueAssignment = (Assignment)rule.eContents().get(1);
 		private final Keyword cValueAKeyword_0 = (Keyword)cValueAssignment.eContents().get(0);
 		

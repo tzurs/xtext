@@ -154,7 +154,7 @@ public class GrammarAccessExtensions {
           @Override
           public Boolean apply(final RuleCall ruleCall) {
             AbstractRule _rule = ruleCall.getRule();
-            return Boolean.valueOf((!Objects.equal(_rule, rule)));
+            return Boolean.valueOf(Objects.equal(_rule, rule));
           }
         };
         boolean _exists = IterableExtensions.<RuleCall>exists(_flatten, _function_1);

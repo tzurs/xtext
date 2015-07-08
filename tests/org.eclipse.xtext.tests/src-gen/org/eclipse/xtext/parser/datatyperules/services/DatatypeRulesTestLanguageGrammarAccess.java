@@ -19,7 +19,7 @@ public class DatatypeRulesTestLanguageGrammarAccess extends AbstractGrammarEleme
 	
 	
 	public class CompositeModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "CompositeModel");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.datatyperules.DatatypeRulesTestLanguage.CompositeModel");
 		private final Assignment cModelAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cModelModelParserRuleCall_0 = (RuleCall)cModelAssignment.eContents().get(0);
 		
@@ -35,7 +35,7 @@ public class DatatypeRulesTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class ModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.datatyperules.DatatypeRulesTestLanguage.Model");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cIdAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cIdNestedModelIdParserRuleCall_0_0 = (RuleCall)cIdAssignment_0.eContents().get(0);
@@ -123,7 +123,7 @@ public class DatatypeRulesTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class ModelIdElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ModelId");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.datatyperules.DatatypeRulesTestLanguage.ModelId");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cIDTerminalRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Keyword cFullStopKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -147,7 +147,7 @@ public class DatatypeRulesTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class NestedModelIdElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "NestedModelId");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.datatyperules.DatatypeRulesTestLanguage.NestedModelId");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cModelIdParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Keyword cFullStopKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -171,7 +171,7 @@ public class DatatypeRulesTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class FractionElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Fraction");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.datatyperules.DatatypeRulesTestLanguage.Fraction");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cINTTerminalRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
@@ -199,7 +199,7 @@ public class DatatypeRulesTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class VectorElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Vector");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.datatyperules.DatatypeRulesTestLanguage.Vector");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cLeftParenthesisKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final RuleCall cINTTerminalRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
@@ -227,7 +227,7 @@ public class DatatypeRulesTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class DotsElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Dots");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.datatyperules.DatatypeRulesTestLanguage.Dots");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Group cGroup_0 = (Group)cAlternatives.eContents().get(0);
 		private final Keyword cFullStopKeyword_0_0 = (Keyword)cGroup_0.eContents().get(0);
@@ -255,7 +255,7 @@ public class DatatypeRulesTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class DoubleElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Double");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.datatyperules.DatatypeRulesTestLanguage.Double");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cHyphenMinusKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final RuleCall cINTTerminalRuleCall_1 = (RuleCall)cGroup.eContents().get(1);

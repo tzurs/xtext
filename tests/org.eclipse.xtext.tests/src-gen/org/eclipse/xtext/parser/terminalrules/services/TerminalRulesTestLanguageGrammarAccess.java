@@ -18,7 +18,7 @@ public class TerminalRulesTestLanguageGrammarAccess extends AbstractGrammarEleme
 	
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.TerminalRulesTestLanguage.Model");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Assignment cIdValueAssignment_0 = (Assignment)cAlternatives.eContents().get(0);
 		private final RuleCall cIdValueIDTerminalRuleCall_0_0 = (RuleCall)cIdValueAssignment_0.eContents().get(0);

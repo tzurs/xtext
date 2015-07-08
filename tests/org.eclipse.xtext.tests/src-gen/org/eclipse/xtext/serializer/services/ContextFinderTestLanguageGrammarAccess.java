@@ -19,7 +19,7 @@ public class ContextFinderTestLanguageGrammarAccess extends AbstractGrammarEleme
 	
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.ContextFinderTestLanguage.Model");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Group cGroup_0 = (Group)cAlternatives.eContents().get(0);
 		private final Keyword cNumberSignDigitZeroKeyword_0_0 = (Keyword)cGroup_0.eContents().get(0);
@@ -265,7 +265,7 @@ public class ContextFinderTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class Model2Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model2");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.ContextFinderTestLanguage.Model2");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cModelAction_0 = (Action)cGroup.eContents().get(0);
 		private final Keyword cModelKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -285,7 +285,7 @@ public class ContextFinderTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class AttributeExclusionTest1Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AttributeExclusionTest1");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.ContextFinderTestLanguage.AttributeExclusionTest1");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cKw1Keyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cAttr1Assignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -309,7 +309,7 @@ public class ContextFinderTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class AttributeExclusionTest2Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AttributeExclusionTest2");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.ContextFinderTestLanguage.AttributeExclusionTest2");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cKw2Keyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cAttr2Assignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -333,7 +333,7 @@ public class ContextFinderTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class NestedTypeTest1Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "NestedTypeTest1");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.ContextFinderTestLanguage.NestedTypeTest1");
 		private final Assignment cNestedAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cNestedNestedTypeChild1ParserRuleCall_0 = (RuleCall)cNestedAssignment.eContents().get(0);
 		
@@ -349,7 +349,7 @@ public class ContextFinderTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class NestedTypeTest2Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "NestedTypeTest2");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.ContextFinderTestLanguage.NestedTypeTest2");
 		private final Assignment cNestedAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cNestedNestedTypeChild2ParserRuleCall_0 = (RuleCall)cNestedAssignment.eContents().get(0);
 		
@@ -365,7 +365,7 @@ public class ContextFinderTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class NestedTypeChildElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "NestedTypeChild");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.ContextFinderTestLanguage.NestedTypeChild");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cNestedTypeChild1ParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cNestedTypeChild2ParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -385,7 +385,7 @@ public class ContextFinderTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class NestedTypeChild1Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "NestedTypeChild1");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.ContextFinderTestLanguage.NestedTypeChild1");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cKw1Keyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cValAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -409,7 +409,7 @@ public class ContextFinderTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class NestedTypeChild2Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "NestedTypeChild2");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.ContextFinderTestLanguage.NestedTypeChild2");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cKw2Keyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cValAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -433,7 +433,7 @@ public class ContextFinderTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class NestedTypeRecursiveTest1Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "NestedTypeRecursiveTest1");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.ContextFinderTestLanguage.NestedTypeRecursiveTest1");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cNestedTypeRecursiveTest1Action_0 = (Action)cGroup.eContents().get(0);
 		private final Keyword cKw1Keyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -465,7 +465,7 @@ public class ContextFinderTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class NestedTypeRecursiveTest2Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "NestedTypeRecursiveTest2");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.ContextFinderTestLanguage.NestedTypeRecursiveTest2");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cNestedTypeRecursiveTest2Action_0 = (Action)cGroup.eContents().get(0);
 		private final Keyword cKw2Keyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -497,7 +497,7 @@ public class ContextFinderTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class ParentRefTest1Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ParentRefTest1");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.ContextFinderTestLanguage.ParentRefTest1");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cKw1Keyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cChild1Assignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -521,7 +521,7 @@ public class ContextFinderTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class ParentRefTest2Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ParentRefTest2");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.ContextFinderTestLanguage.ParentRefTest2");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cKw2Keyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cChild2Assignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -545,7 +545,7 @@ public class ContextFinderTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class ParentRefTestChild1Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ParentRefTestChild1");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.ContextFinderTestLanguage.ParentRefTestChild1");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cParentRefTestChildAction_0 = (Action)cGroup.eContents().get(0);
 		private final Keyword cFooKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -573,7 +573,7 @@ public class ContextFinderTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class ParentRefTestChild2Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ParentRefTestChild2");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.ContextFinderTestLanguage.ParentRefTestChild2");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cParentRefTestChildAction_0 = (Action)cGroup.eContents().get(0);
 		private final Keyword cFooKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -601,7 +601,7 @@ public class ContextFinderTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class QuantityExclusionTest1Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "QuantityExclusionTest1");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.ContextFinderTestLanguage.QuantityExclusionTest1");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cKw1Keyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cAttr1Assignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -633,7 +633,7 @@ public class ContextFinderTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class QuantityExclusionTest2Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "QuantityExclusionTest2");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.ContextFinderTestLanguage.QuantityExclusionTest2");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cKw2Keyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cAttr1Assignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -665,7 +665,7 @@ public class ContextFinderTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class ValueExclusionTest1Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ValueExclusionTest1");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.ContextFinderTestLanguage.ValueExclusionTest1");
 		private final Assignment cValAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cValValueExclusionTestEn1EnumRuleCall_0 = (RuleCall)cValAssignment.eContents().get(0);
 		
@@ -681,7 +681,7 @@ public class ContextFinderTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class ValueExclusionTest2Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ValueExclusionTest2");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.ContextFinderTestLanguage.ValueExclusionTest2");
 		private final Assignment cValAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cValValueExclusionTestEn2EnumRuleCall_0 = (RuleCall)cValAssignment.eContents().get(0);
 		
@@ -697,7 +697,7 @@ public class ContextFinderTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class NodeExclusion1Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "NodeExclusion1");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.ContextFinderTestLanguage.NodeExclusion1");
 		private final Assignment cRefAssignment = (Assignment)rule.eContents().get(1);
 		private final CrossReference cRefModelCrossReference_0 = (CrossReference)cRefAssignment.eContents().get(0);
 		private final RuleCall cRefModelIDTerminalRuleCall_0_1 = (RuleCall)cRefModelCrossReference_0.eContents().get(1);
@@ -717,7 +717,7 @@ public class ContextFinderTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class NodeExclusion2Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "NodeExclusion2");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.ContextFinderTestLanguage.NodeExclusion2");
 		private final Assignment cRefAssignment = (Assignment)rule.eContents().get(1);
 		private final CrossReference cRefModelCrossReference_0 = (CrossReference)cRefAssignment.eContents().get(0);
 		private final RuleCall cRefModelSTRINGTerminalRuleCall_0_1 = (RuleCall)cRefModelCrossReference_0.eContents().get(1);
@@ -737,7 +737,7 @@ public class ContextFinderTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class NodeExclusion1ListElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "NodeExclusion1List");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.ContextFinderTestLanguage.NodeExclusion1List");
 		private final Assignment cRefAssignment = (Assignment)rule.eContents().get(1);
 		private final CrossReference cRefModelCrossReference_0 = (CrossReference)cRefAssignment.eContents().get(0);
 		private final RuleCall cRefModelIDTerminalRuleCall_0_1 = (RuleCall)cRefModelCrossReference_0.eContents().get(1);
@@ -757,7 +757,7 @@ public class ContextFinderTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class NodeExclusion2ListElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "NodeExclusion2List");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.ContextFinderTestLanguage.NodeExclusion2List");
 		private final Assignment cRefAssignment = (Assignment)rule.eContents().get(1);
 		private final CrossReference cRefModelCrossReference_0 = (CrossReference)cRefAssignment.eContents().get(0);
 		private final RuleCall cRefModelSTRINGTerminalRuleCall_0_1 = (RuleCall)cRefModelCrossReference_0.eContents().get(1);

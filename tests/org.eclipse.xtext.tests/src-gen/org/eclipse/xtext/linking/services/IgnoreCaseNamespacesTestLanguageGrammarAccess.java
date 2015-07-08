@@ -19,7 +19,7 @@ public class IgnoreCaseNamespacesTestLanguageGrammarAccess extends AbstractGramm
 	
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.linking.IgnoreCaseNamespacesTestLanguage.Model");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cImportsAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cImportsImportParserRuleCall_0_0 = (RuleCall)cImportsAssignment_0.eContents().get(0);
@@ -47,7 +47,7 @@ public class IgnoreCaseNamespacesTestLanguageGrammarAccess extends AbstractGramm
 	}
 
 	public class ImportElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Import");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.linking.IgnoreCaseNamespacesTestLanguage.Import");
 		private final Assignment cImportedNamespaceAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cImportedNamespaceSTRINGTerminalRuleCall_0 = (RuleCall)cImportedNamespaceAssignment.eContents().get(0);
 		

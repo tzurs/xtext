@@ -19,7 +19,7 @@ public class EcoreReferenceTestLanguageGrammarAccess extends AbstractGrammarElem
 	
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.metamodelreferencing.tests.EcoreReferenceTestLanguage.Model");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cExtendsAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cExtendsExtendsNsURIEObjectParserRuleCall_0_0 = (RuleCall)cExtendsAssignment_0.eContents().get(0);
@@ -55,7 +55,7 @@ public class EcoreReferenceTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class ExtendsNsURIEObjectElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ExtendsNsURIEObject");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.metamodelreferencing.tests.EcoreReferenceTestLanguage.ExtendsNsURIEObject");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cExtendsNsURIEObjectKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -285,7 +285,7 @@ public class EcoreReferenceTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class MyEAttributeElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "MyEAttribute");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.metamodelreferencing.tests.EcoreReferenceTestLanguage.MyEAttribute");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cMyEAttributeAction_0 = (Action)cGroup.eContents().get(0);
 		private final Keyword cMyEAttributeKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -305,7 +305,7 @@ public class EcoreReferenceTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class EAttributeElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "EAttribute");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.metamodelreferencing.tests.EcoreReferenceTestLanguage.EAttribute");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cEAttributeAction_0 = (Action)cGroup.eContents().get(0);
 		private final Keyword cEAttributeKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -325,7 +325,7 @@ public class EcoreReferenceTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class ExtendsPluginEObjectElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ExtendsPluginEObject");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.metamodelreferencing.tests.EcoreReferenceTestLanguage.ExtendsPluginEObject");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cExtendsPluginEObjectKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -542,7 +542,7 @@ public class EcoreReferenceTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class Unused_01Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Unused_01");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.metamodelreferencing.tests.EcoreReferenceTestLanguage.Unused_01");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cMyNamedElement_01Action_0 = (Action)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -566,7 +566,7 @@ public class EcoreReferenceTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class Unused_02Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Unused_02");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.metamodelreferencing.tests.EcoreReferenceTestLanguage.Unused_02");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cMyNamedElement_02Action_0 = (Action)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -590,7 +590,7 @@ public class EcoreReferenceTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class Unused_03Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Unused_03");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.metamodelreferencing.tests.EcoreReferenceTestLanguage.Unused_03");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cMyNamedElement_03Action_0 = (Action)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -614,7 +614,7 @@ public class EcoreReferenceTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class ExtendsResourceEObjectElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ExtendsResourceEObject");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.metamodelreferencing.tests.EcoreReferenceTestLanguage.ExtendsResourceEObject");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cExtendsResourceEObjectKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -831,7 +831,7 @@ public class EcoreReferenceTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class EObjectElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "EObject");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.metamodelreferencing.tests.EcoreReferenceTestLanguage.EObject");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cEObjectAction_0 = (Action)cGroup.eContents().get(0);
 		private final Keyword cObjectKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -851,7 +851,7 @@ public class EcoreReferenceTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class ValidIDElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ValidID");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.metamodelreferencing.tests.EcoreReferenceTestLanguage.ValidID");
 		private final RuleCall cIDTerminalRuleCall = (RuleCall)rule.eContents().get(1);
 		
 		//ValidID returns EString:

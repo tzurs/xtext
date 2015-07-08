@@ -19,7 +19,7 @@ public class ConcreteTestLanguageGrammarAccess extends AbstractGrammarElementFin
 	
 	
 	public class RootRuleElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "RootRule");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.grammarinheritance.ConcreteTestLanguage.RootRule");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cConcreteParserRuleParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cCallOverridenParserRuleParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -47,7 +47,7 @@ public class ConcreteTestLanguageGrammarAccess extends AbstractGrammarElementFin
 	}
 
 	public class ConcreteParserRuleElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ConcreteParserRule");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.grammarinheritance.ConcreteTestLanguage.ConcreteParserRule");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cModelKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cMagicNumberAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -84,7 +84,7 @@ public class ConcreteTestLanguageGrammarAccess extends AbstractGrammarElementFin
 	}
 
 	public class OverridableParserRuleElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "OverridableParserRule");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.grammarinheritance.ConcreteTestLanguage.OverridableParserRule");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cOverriddenelementKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -109,7 +109,7 @@ public class ConcreteTestLanguageGrammarAccess extends AbstractGrammarElementFin
 	}
 
 	public class CallOverridenParserRuleElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "CallOverridenParserRule");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.grammarinheritance.ConcreteTestLanguage.CallOverridenParserRule");
 		private final Assignment cCallAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cCallAbstractCallOverridenParserRuleParserRuleCall_0 = (RuleCall)cCallAssignment.eContents().get(0);
 		
@@ -125,7 +125,7 @@ public class ConcreteTestLanguageGrammarAccess extends AbstractGrammarElementFin
 	}
 
 	public class OverridableParserRule2Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "OverridableParserRule2");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.grammarinheritance.ConcreteTestLanguage.OverridableParserRule2");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cOverriddenOtherElementKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -162,7 +162,7 @@ public class ConcreteTestLanguageGrammarAccess extends AbstractGrammarElementFin
 	}
 
 	public class ExtendableParserRuleElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ExtendableParserRule");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.grammarinheritance.ConcreteTestLanguage.ExtendableParserRule");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cSubrule1ParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cSubrule2ParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -187,7 +187,7 @@ public class ConcreteTestLanguageGrammarAccess extends AbstractGrammarElementFin
 	}
 
 	public class Subrule1Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Subrule1");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.grammarinheritance.ConcreteTestLanguage.Subrule1");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cSubrule1Keyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -219,7 +219,7 @@ public class ConcreteTestLanguageGrammarAccess extends AbstractGrammarElementFin
 	}
 
 	public class Subrule2Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Subrule2");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.grammarinheritance.ConcreteTestLanguage.Subrule2");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cSubrule3Keyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -251,7 +251,7 @@ public class ConcreteTestLanguageGrammarAccess extends AbstractGrammarElementFin
 	}
 
 	public class Subrule3Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Subrule3");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.grammarinheritance.ConcreteTestLanguage.Subrule3");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cSubrule3Keyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -283,7 +283,7 @@ public class ConcreteTestLanguageGrammarAccess extends AbstractGrammarElementFin
 	}
 
 	public class CallExtendedParserRuleElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "CallExtendedParserRule");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.grammarinheritance.ConcreteTestLanguage.CallExtendedParserRule");
 		private final Assignment cCallAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cCallAbstractCallExtendedParserRuleParserRuleCall_0 = (RuleCall)cCallAssignment.eContents().get(0);
 		

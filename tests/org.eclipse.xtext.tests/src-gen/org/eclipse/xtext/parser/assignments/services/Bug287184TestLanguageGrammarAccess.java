@@ -19,7 +19,7 @@ public class Bug287184TestLanguageGrammarAccess extends AbstractGrammarElementFi
 	
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.assignments.Bug287184TestLanguage.Model");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cModelKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -59,7 +59,7 @@ public class Bug287184TestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class AbstractDetailElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AbstractDetail");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.assignments.Bug287184TestLanguage.AbstractDetail");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cDetailParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cAssociatedDetailParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -79,7 +79,7 @@ public class Bug287184TestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class DetailElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Detail");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.assignments.Bug287184TestLanguage.Detail");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cDetailKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cVisibilityAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -127,7 +127,7 @@ public class Bug287184TestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class AssociatedDetailElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AssociatedDetail");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.assignments.Bug287184TestLanguage.AssociatedDetail");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cAssociatedKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cDetailClassAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -159,7 +159,7 @@ public class Bug287184TestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class FQNElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "FQN");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.assignments.Bug287184TestLanguage.FQN");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cIDTerminalRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);

@@ -19,7 +19,7 @@ public class PartialSerializationTestLanguageGrammarAccess extends AbstractGramm
 	
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.PartialSerializationTestLanguage.Model");
 		private final RuleCall cNodeRootParserRuleCall = (RuleCall)rule.eContents().get(1);
 		
 		//Model:
@@ -31,7 +31,7 @@ public class PartialSerializationTestLanguageGrammarAccess extends AbstractGramm
 	}
 
 	public class NodeRootElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "NodeRoot");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.PartialSerializationTestLanguage.NodeRoot");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitOneKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNodeAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -55,7 +55,7 @@ public class PartialSerializationTestLanguageGrammarAccess extends AbstractGramm
 	}
 
 	public class NodeElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Node");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.PartialSerializationTestLanguage.Node");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNodeKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);

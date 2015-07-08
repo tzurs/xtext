@@ -19,7 +19,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	
 	
 	public class OpElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Op");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.Op");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cTermParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
@@ -51,7 +51,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class TermElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Term");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.Term");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cAtomParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cTwoNumbersParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -171,7 +171,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class AtomElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Atom");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.Atom");
 		private final Assignment cNameAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cNameIDTerminalRuleCall_0 = (RuleCall)cNameAssignment.eContents().get(0);
 		
@@ -187,7 +187,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class ParensElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Parens");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.Parens");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cLeftParenthesisKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final RuleCall cOpParserRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
@@ -219,7 +219,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class TwoNumbersElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TwoNumbers");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.TwoNumbers");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cNum1Assignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cNum1INTTerminalRuleCall_0_0 = (RuleCall)cNum1Assignment_0.eContents().get(0);
@@ -263,7 +263,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class ManyStringsElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ManyStrings");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.ManyStrings");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cEqualsSignKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cStr1Assignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -295,7 +295,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class TypeElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Type");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.Type");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cTypeKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -335,7 +335,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class Ref2Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Ref2");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.Ref2");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitTwoKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cRef2Assignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -371,7 +371,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class SpareElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Spare");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.Spare");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitThreeKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cIdAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -411,7 +411,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class BooleanElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Boolean");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.Boolean");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitFourKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cBoolAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -447,7 +447,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class Transient1Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Transient1");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.Transient1");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitFiveKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Alternatives cAlternatives_1 = (Alternatives)cGroup.eContents().get(1);
@@ -511,7 +511,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class Consumed1Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Consumed1");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.Consumed1");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitSixKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Alternatives cAlternatives_1 = (Alternatives)cGroup.eContents().get(1);
@@ -579,7 +579,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class Consumed2Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Consumed2");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.Consumed2");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitSevenKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cChildAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -603,7 +603,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class Loop1Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Loop1");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.Loop1");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cKw0Keyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Keyword cNumberSignDigitEightKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -655,7 +655,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class Loop2Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Loop2");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.Loop2");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitNineKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cIdAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -739,7 +739,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class Loop3Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Loop3");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.Loop3");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Alternatives cAlternatives_0 = (Alternatives)cGroup.eContents().get(0);
 		private final Keyword cKw1Keyword_0_0 = (Keyword)cAlternatives_0.eContents().get(0);
@@ -799,7 +799,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class Loop4Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Loop4");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.Loop4");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitOneDigitOneKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Alternatives cAlternatives_1 = (Alternatives)cGroup.eContents().get(1);
@@ -867,7 +867,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class LoopBug285452Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "LoopBug285452");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.LoopBug285452");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitOneDigitTwoKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Alternatives cAlternatives_1 = (Alternatives)cGroup.eContents().get(1);
@@ -907,7 +907,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class DuplicateBug284491Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "DuplicateBug284491");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.DuplicateBug284491");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitOneDigitThreeKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Alternatives cAlternatives_1 = (Alternatives)cGroup.eContents().get(1);
@@ -951,7 +951,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class EmptyObjectBug284850Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "EmptyObjectBug284850");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.EmptyObjectBug284850");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitOneDigitFourKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cItemsAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -975,7 +975,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class EmptyObjectItemsElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "EmptyObjectItems");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.EmptyObjectItems");
 		private final Assignment cListAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cListEmptyObjectItemParserRuleCall_0 = (RuleCall)cListAssignment.eContents().get(0);
 		
@@ -991,7 +991,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class EmptyObjectItemElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "EmptyObjectItem");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.EmptyObjectItem");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cItemKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -1015,7 +1015,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class MultiInheritanceBug280439Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "MultiInheritanceBug280439");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.MultiInheritanceBug280439");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitOneDigitFiveKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cValAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -1039,7 +1039,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class AbstractMulti1Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AbstractMulti1");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.AbstractMulti1");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cConcreteMultiParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final Assignment cM1Assignment_1 = (Assignment)cAlternatives.eContents().get(1);
@@ -1063,7 +1063,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class AbstractMulti2Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AbstractMulti2");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.AbstractMulti2");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cConcreteMultiParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final Assignment cM2Assignment_1 = (Assignment)cAlternatives.eContents().get(1);
@@ -1087,7 +1087,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class ConcreteMultiElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ConcreteMulti");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.ConcreteMulti");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cM1Assignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cM1IDTerminalRuleCall_0_0 = (RuleCall)cM1Assignment_0.eContents().get(0);
@@ -1115,7 +1115,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class EObjectRefElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "EObjectRef");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.EObjectRef");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitOneDigitSixKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cObjAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -1155,7 +1155,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class EObjectElementElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "EObjectElement");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.EObjectElement");
 		private final Assignment cNameAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cNameIDTerminalRuleCall_0 = (RuleCall)cNameAssignment.eContents().get(0);
 		
@@ -1171,7 +1171,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class TypeBug305577_1Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TypeBug305577_1");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.TypeBug305577_1");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitOneDigitSevenKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Alternatives cAlternatives_1 = (Alternatives)cGroup.eContents().get(1);
@@ -1199,7 +1199,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class TypeBug305577_2Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TypeBug305577_2");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.TypeBug305577_2");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitOneDigitEightKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Alternatives cAlternatives_1 = (Alternatives)cGroup.eContents().get(1);
@@ -1227,7 +1227,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class TypeBug1AInhElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TypeBug1AInh");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.TypeBug1AInh");
 		private final RuleCall cTypeBug1BParserRuleCall = (RuleCall)rule.eContents().get(1);
 		
 		//TypeBug1AInh returns TypeBug1A:
@@ -1239,7 +1239,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class TypeBug1AElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TypeBug1A");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.TypeBug1A");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cTypeBug1AAction_0 = (Action)cGroup.eContents().get(0);
 		private final Keyword cKaKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -1267,7 +1267,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class TypeBug1BElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TypeBug1B");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.TypeBug1B");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cTypeBug1BAction_0 = (Action)cGroup.eContents().get(0);
 		private final Keyword cKbKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -1295,7 +1295,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class TypeBug2AInhElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TypeBug2AInh");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.TypeBug2AInh");
 		private final RuleCall cTypeBug2BParserRuleCall = (RuleCall)rule.eContents().get(1);
 		
 		//TypeBug2AInh returns TypeBug2A:
@@ -1307,7 +1307,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class TypeBug2AElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TypeBug2A");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.TypeBug2A");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cTypeBug2AAction_0 = (Action)cGroup.eContents().get(0);
 		private final Keyword cKaKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -1335,7 +1335,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class TypeBug2BElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TypeBug2B");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.TypeBug2B");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cTypeBug2BAction_0 = (Action)cGroup.eContents().get(0);
 		private final Keyword cKbKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -1363,7 +1363,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class Bug305171Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Bug305171");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.Bug305171");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitOneDigitNineKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
@@ -1491,7 +1491,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class Bug310435EnumElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Bug310435Enum");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.Bug310435Enum");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitTwoDigitZeroKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Alternatives cAlternatives_1 = (Alternatives)cGroup.eContents().get(1);
@@ -1543,7 +1543,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class Bug310435ValElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Bug310435Val");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.Bug310435Val");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitTwoDigitOneKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Alternatives cAlternatives_1 = (Alternatives)cGroup.eContents().get(1);
@@ -1595,7 +1595,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class CrossRefNameTestElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "CrossRefNameTest");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.CrossRefNameTest");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitTwoDigitTwoKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNamedAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -1667,7 +1667,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class CrossRefNamedElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "CrossRefNamed");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.CrossRefNamed");
 		private final Assignment cNameAssignment = (Assignment)rule.eContents().get(1);
 		private final Alternatives cNameAlternatives_0 = (Alternatives)cNameAssignment.eContents().get(0);
 		private final RuleCall cNameID1TerminalRuleCall_0_0 = (RuleCall)cNameAlternatives_0.eContents().get(0);

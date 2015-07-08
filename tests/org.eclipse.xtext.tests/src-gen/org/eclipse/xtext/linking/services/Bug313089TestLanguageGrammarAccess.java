@@ -19,7 +19,7 @@ public class Bug313089TestLanguageGrammarAccess extends AbstractGrammarElementFi
 	
 	
 	public class FooElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Foo");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.linking.Bug313089TestLanguage.Foo");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cNameAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cNameIDTerminalRuleCall_0_0 = (RuleCall)cNameAssignment_0.eContents().get(0);
@@ -71,7 +71,7 @@ public class Bug313089TestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class BarElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Bar");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.linking.Bug313089TestLanguage.Bar");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cBarAction_0 = (Action)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -95,7 +95,7 @@ public class Bug313089TestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class BazElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Baz");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.linking.Bug313089TestLanguage.Baz");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cBazKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);

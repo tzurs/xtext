@@ -18,7 +18,7 @@ public class IgnoreCaseLexerTestLanguageGrammarAccess extends AbstractGrammarEle
 	
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.lexer.IgnoreCaseLexerTestLanguage.Model");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cCaseKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Keyword cFooKeyword_1 = (Keyword)cGroup.eContents().get(1);

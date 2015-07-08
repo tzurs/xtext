@@ -19,7 +19,7 @@ public class HiddenTokensMergerTestLanguageGrammarAccess extends AbstractGrammar
 	
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.HiddenTokensMergerTestLanguage.Model");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cDatatypeBug286557ParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cEnumBugParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -63,7 +63,7 @@ public class HiddenTokensMergerTestLanguageGrammarAccess extends AbstractGrammar
 	}
 
 	public class DatatypeBug286557Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "DatatypeBug286557");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.HiddenTokensMergerTestLanguage.DatatypeBug286557");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitOneKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -111,7 +111,7 @@ public class HiddenTokensMergerTestLanguageGrammarAccess extends AbstractGrammar
 	}
 
 	public class FQNElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "FQN");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.HiddenTokensMergerTestLanguage.FQN");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cIDTerminalRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
@@ -139,7 +139,7 @@ public class HiddenTokensMergerTestLanguageGrammarAccess extends AbstractGrammar
 	}
 
 	public class EnumBugElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "EnumBug");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.HiddenTokensMergerTestLanguage.EnumBug");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitTwoKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Keyword cKw1Keyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -175,7 +175,7 @@ public class HiddenTokensMergerTestLanguageGrammarAccess extends AbstractGrammar
 	}
 
 	public class CommentableElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Commentable");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.HiddenTokensMergerTestLanguage.Commentable");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitThreeKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cItemAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -199,7 +199,7 @@ public class HiddenTokensMergerTestLanguageGrammarAccess extends AbstractGrammar
 	}
 
 	public class CommentableItemElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "CommentableItem");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.HiddenTokensMergerTestLanguage.CommentableItem");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cItemKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cIdAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -223,7 +223,7 @@ public class HiddenTokensMergerTestLanguageGrammarAccess extends AbstractGrammar
 	}
 
 	public class ValueListElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ValueList");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.HiddenTokensMergerTestLanguage.ValueList");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitFourKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cIdsAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -247,7 +247,7 @@ public class HiddenTokensMergerTestLanguageGrammarAccess extends AbstractGrammar
 	}
 
 	public class RefListElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "RefList");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.HiddenTokensMergerTestLanguage.RefList");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitFiveKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cObjsAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -287,7 +287,7 @@ public class HiddenTokensMergerTestLanguageGrammarAccess extends AbstractGrammar
 	}
 
 	public class RefObjElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "RefObj");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.HiddenTokensMergerTestLanguage.RefObj");
 		private final Assignment cNameAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cNameFQNParserRuleCall_0 = (RuleCall)cNameAssignment.eContents().get(0);
 		
@@ -303,7 +303,7 @@ public class HiddenTokensMergerTestLanguageGrammarAccess extends AbstractGrammar
 	}
 
 	public class SingleRefElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "SingleRef");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.HiddenTokensMergerTestLanguage.SingleRef");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitSixKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cObjAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -343,7 +343,7 @@ public class HiddenTokensMergerTestLanguageGrammarAccess extends AbstractGrammar
 	}
 
 	public class AppendToFileEndElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AppendToFileEnd");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.HiddenTokensMergerTestLanguage.AppendToFileEnd");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitSevenKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cItemsAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -368,7 +368,7 @@ public class HiddenTokensMergerTestLanguageGrammarAccess extends AbstractGrammar
 	}
 
 	public class AppendToFileEndItemElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AppendToFileEndItem");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.HiddenTokensMergerTestLanguage.AppendToFileEndItem");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cClassKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -396,7 +396,7 @@ public class HiddenTokensMergerTestLanguageGrammarAccess extends AbstractGrammar
 	}
 
 	public class Action1Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Action1");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.HiddenTokensMergerTestLanguage.Action1");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNumberSignDigitEightKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Action cAction1Action_1 = (Action)cGroup.eContents().get(1);
@@ -440,7 +440,7 @@ public class HiddenTokensMergerTestLanguageGrammarAccess extends AbstractGrammar
 	}
 
 	public class Action1Sub1Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Action1Sub1");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.HiddenTokensMergerTestLanguage.Action1Sub1");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cAction1SubAction_0 = (Action)cGroup.eContents().get(0);
 		private final Keyword cSub1Keyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -460,7 +460,7 @@ public class HiddenTokensMergerTestLanguageGrammarAccess extends AbstractGrammar
 	}
 
 	public class Action1Sub2Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Action1Sub2");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.HiddenTokensMergerTestLanguage.Action1Sub2");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cAction1SubClassAction_0 = (Action)cGroup.eContents().get(0);
 		private final Keyword cSub2Keyword_1 = (Keyword)cGroup.eContents().get(1);

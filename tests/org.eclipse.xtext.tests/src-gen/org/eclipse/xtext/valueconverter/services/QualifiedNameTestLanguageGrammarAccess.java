@@ -19,7 +19,7 @@ public class QualifiedNameTestLanguageGrammarAccess extends AbstractGrammarEleme
 	
 	
 	public class ElementElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Element");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.valueconverter.QualifiedNameTestLanguage.Element");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cKeywordKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cQualifiedNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -43,7 +43,7 @@ public class QualifiedNameTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class QualifiedNameElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "QualifiedName");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.valueconverter.QualifiedNameTestLanguage.QualifiedName");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cIDTerminalRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);

@@ -19,7 +19,7 @@ public class PartialParserTestLanguageGrammarAccess extends AbstractGrammarEleme
 	
 	
 	public class SomeContainerElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "SomeContainer");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.PartialParserTestLanguage.SomeContainer");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cContainerKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -71,7 +71,7 @@ public class PartialParserTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class NestedElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Nested");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.PartialParserTestLanguage.Nested");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNestedKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Keyword cLeftCurlyBracketKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -103,7 +103,7 @@ public class PartialParserTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class ContentElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Content");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.PartialParserTestLanguage.Content");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cChildrenParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cAbstractChildrenParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -123,7 +123,7 @@ public class PartialParserTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class ChildrenElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Children");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.PartialParserTestLanguage.Children");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cChildrenKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Keyword cLeftCurlyBracketKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -171,7 +171,7 @@ public class PartialParserTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class ChildElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Child");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.PartialParserTestLanguage.Child");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cHyphenMinusGreaterThanSignKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Keyword cCKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -207,7 +207,7 @@ public class PartialParserTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class AbstractChildrenElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AbstractChildren");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.PartialParserTestLanguage.AbstractChildren");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cAbstractChildrenKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Keyword cLeftCurlyBracketKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -239,7 +239,7 @@ public class PartialParserTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class AbstractChildElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AbstractChild");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.PartialParserTestLanguage.AbstractChild");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cFirstConcreteParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cSecondConcreteParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -259,7 +259,7 @@ public class PartialParserTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class FirstConcreteElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "FirstConcrete");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.PartialParserTestLanguage.FirstConcrete");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cHyphenMinusGreaterThanSignKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Keyword cFKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -307,7 +307,7 @@ public class PartialParserTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class SecondConcreteElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "SecondConcrete");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.PartialParserTestLanguage.SecondConcrete");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cHyphenMinusGreaterThanSignKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Keyword cFKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -359,7 +359,7 @@ public class PartialParserTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class NamedElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Named");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.PartialParserTestLanguage.Named");
 		private final Assignment cNameAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cNameIDTerminalRuleCall_0 = (RuleCall)cNameAssignment.eContents().get(0);
 		

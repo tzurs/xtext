@@ -19,7 +19,7 @@ public class MultiValueFeatureTestLanguageGrammarAccess extends AbstractGrammarE
 	
 	
 	public class StartElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Start");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.xtext.ecoreInference.MultiValueFeatureTestLanguage.Start");
 		private final Assignment cFeatureAAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cFeatureAIDTerminalRuleCall_0 = (RuleCall)cFeatureAAssignment.eContents().get(0);
 		

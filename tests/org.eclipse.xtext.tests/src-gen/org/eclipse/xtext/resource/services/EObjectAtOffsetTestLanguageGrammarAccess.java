@@ -19,7 +19,7 @@ public class EObjectAtOffsetTestLanguageGrammarAccess extends AbstractGrammarEle
 	
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.resource.EObjectAtOffsetTestLanguage.Model");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Assignment cFoosAssignment_0 = (Assignment)cAlternatives.eContents().get(0);
 		private final RuleCall cFoosFooParserRuleCall_0_0 = (RuleCall)cFoosAssignment_0.eContents().get(0);
@@ -47,7 +47,7 @@ public class EObjectAtOffsetTestLanguageGrammarAccess extends AbstractGrammarEle
 	}
 
 	public class AbstractBarElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AbstractBar");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.resource.EObjectAtOffsetTestLanguage.AbstractBar");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cZonkKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final RuleCall cINTTerminalRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
@@ -109,7 +109,7 @@ public class EObjectAtOffsetTestLanguageGrammarAccess extends AbstractGrammarEle
 	}
 
 	public class BarElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Bar");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.resource.EObjectAtOffsetTestLanguage.Bar");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cBarKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -165,7 +165,7 @@ public class EObjectAtOffsetTestLanguageGrammarAccess extends AbstractGrammarEle
 	}
 
 	public class FooElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Foo");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.resource.EObjectAtOffsetTestLanguage.Foo");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cFooKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -189,7 +189,7 @@ public class EObjectAtOffsetTestLanguageGrammarAccess extends AbstractGrammarEle
 	}
 
 	public class QualifiedNameWithOtherDelimElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "QualifiedNameWithOtherDelim");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.resource.EObjectAtOffsetTestLanguage.QualifiedNameWithOtherDelim");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cQualifiedNameParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
@@ -217,7 +217,7 @@ public class EObjectAtOffsetTestLanguageGrammarAccess extends AbstractGrammarEle
 	}
 
 	public class QualifiedNameElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "QualifiedName");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.resource.EObjectAtOffsetTestLanguage.QualifiedName");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cIDTerminalRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);

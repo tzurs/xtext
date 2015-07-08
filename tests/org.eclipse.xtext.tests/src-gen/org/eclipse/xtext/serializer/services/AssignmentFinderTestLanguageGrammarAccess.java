@@ -19,7 +19,7 @@ public class AssignmentFinderTestLanguageGrammarAccess extends AbstractGrammarEl
 	
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.AssignmentFinderTestLanguage.Model");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Group cGroup_0 = (Group)cAlternatives.eContents().get(0);
 		private final Keyword cNumberSignDigitZeroDigitZeroKeyword_0_0 = (Keyword)cGroup_0.eContents().get(0);
@@ -195,7 +195,7 @@ public class AssignmentFinderTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class KeywordValElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "KeywordVal");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.AssignmentFinderTestLanguage.KeywordVal");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Assignment cKwAssignment_0 = (Assignment)cAlternatives.eContents().get(0);
 		private final Keyword cKwKw1Keyword_0_0 = (Keyword)cKwAssignment_0.eContents().get(0);
@@ -223,7 +223,7 @@ public class AssignmentFinderTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class TerminalValElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TerminalVal");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.AssignmentFinderTestLanguage.TerminalVal");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Assignment cTermAssignment_0 = (Assignment)cAlternatives.eContents().get(0);
 		private final RuleCall cTermTerminal1TerminalRuleCall_0_0 = (RuleCall)cTermAssignment_0.eContents().get(0);
@@ -259,7 +259,7 @@ public class AssignmentFinderTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class EnumValElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "EnumVal");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.AssignmentFinderTestLanguage.EnumVal");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Assignment cEnAssignment_0 = (Assignment)cAlternatives.eContents().get(0);
 		private final RuleCall cEnEnum1EnumRuleCall_0_0 = (RuleCall)cEnAssignment_0.eContents().get(0);
@@ -287,7 +287,7 @@ public class AssignmentFinderTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class KeywordBoolElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "KeywordBool");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.AssignmentFinderTestLanguage.KeywordBool");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Assignment cKwAssignment_0 = (Assignment)cAlternatives.eContents().get(0);
 		private final Keyword cKwKw1Keyword_0_0 = (Keyword)cKwAssignment_0.eContents().get(0);
@@ -315,7 +315,7 @@ public class AssignmentFinderTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class TerminalBoolElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TerminalBool");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.AssignmentFinderTestLanguage.TerminalBool");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Assignment cTermAssignment_0 = (Assignment)cAlternatives.eContents().get(0);
 		private final RuleCall cTermTerminal1TerminalRuleCall_0_0 = (RuleCall)cTermAssignment_0.eContents().get(0);
@@ -351,7 +351,7 @@ public class AssignmentFinderTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class EnumBoolElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "EnumBool");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.AssignmentFinderTestLanguage.EnumBool");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Assignment cEnAssignment_0 = (Assignment)cAlternatives.eContents().get(0);
 		private final RuleCall cEnEnum1EnumRuleCall_0_0 = (RuleCall)cEnAssignment_0.eContents().get(0);
@@ -379,7 +379,7 @@ public class AssignmentFinderTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class MixedBoolElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "MixedBool");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.AssignmentFinderTestLanguage.MixedBool");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Assignment cValAssignment_0 = (Assignment)cAlternatives.eContents().get(0);
 		private final Keyword cValKw1Keyword_0_0 = (Keyword)cValAssignment_0.eContents().get(0);
@@ -407,7 +407,7 @@ public class AssignmentFinderTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class BooleanElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Boolean");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.AssignmentFinderTestLanguage.Boolean");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Keyword cTrueKeyword_0 = (Keyword)cAlternatives.eContents().get(0);
 		private final Keyword cFalseKeyword_1 = (Keyword)cAlternatives.eContents().get(1);
@@ -427,7 +427,7 @@ public class AssignmentFinderTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class MixedValueElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "MixedValue");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.AssignmentFinderTestLanguage.MixedValue");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Assignment cValAssignment_0 = (Assignment)cAlternatives.eContents().get(0);
 		private final RuleCall cValEnum1EnumRuleCall_0_0 = (RuleCall)cValAssignment_0.eContents().get(0);
@@ -455,7 +455,7 @@ public class AssignmentFinderTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class DatEnumElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "DatEnum");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.AssignmentFinderTestLanguage.DatEnum");
 		private final Keyword cLit3Keyword = (Keyword)rule.eContents().get(1);
 		
 		//DatEnum returns TestEnum:
@@ -467,7 +467,7 @@ public class AssignmentFinderTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class ContainmentRefElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ContainmentRef");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.AssignmentFinderTestLanguage.ContainmentRef");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Assignment cCtxAssignment_0 = (Assignment)cAlternatives.eContents().get(0);
 		private final RuleCall cCtxContainmentRef1ParserRuleCall_0_0 = (RuleCall)cCtxAssignment_0.eContents().get(0);
@@ -495,7 +495,7 @@ public class AssignmentFinderTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class ContainmentRef1Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ContainmentRef1");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.AssignmentFinderTestLanguage.ContainmentRef1");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cKw1Keyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cVal1Assignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -519,7 +519,7 @@ public class AssignmentFinderTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class ContainmentRef2Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ContainmentRef2");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.AssignmentFinderTestLanguage.ContainmentRef2");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cKw2Keyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cVal2Assignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -543,7 +543,7 @@ public class AssignmentFinderTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class CrossRefElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "CrossRef");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.AssignmentFinderTestLanguage.CrossRef");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cNameAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final Alternatives cNameAlternatives_0_0 = (Alternatives)cNameAssignment_0.eContents().get(0);

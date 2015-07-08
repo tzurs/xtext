@@ -19,7 +19,7 @@ public class ComplexReconstrTestLanguageGrammarAccess extends AbstractGrammarEle
 	
 	
 	public class RootElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Root");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.ComplexReconstrTestLanguage.Root");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cOpParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cTrickyGParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -39,7 +39,7 @@ public class ComplexReconstrTestLanguageGrammarAccess extends AbstractGrammarEle
 	}
 
 	public class OpElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Op");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.ComplexReconstrTestLanguage.Op");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cTermParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Alternatives cAlternatives_1 = (Alternatives)cGroup.eContents().get(1);
@@ -99,7 +99,7 @@ public class ComplexReconstrTestLanguageGrammarAccess extends AbstractGrammarEle
 	}
 
 	public class TermElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Term");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.ComplexReconstrTestLanguage.Term");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cAtomParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cParensParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -119,7 +119,7 @@ public class ComplexReconstrTestLanguageGrammarAccess extends AbstractGrammarEle
 	}
 
 	public class AtomElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Atom");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.ComplexReconstrTestLanguage.Atom");
 		private final Assignment cNameAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cNameIDTerminalRuleCall_0 = (RuleCall)cNameAssignment.eContents().get(0);
 		
@@ -135,7 +135,7 @@ public class ComplexReconstrTestLanguageGrammarAccess extends AbstractGrammarEle
 	}
 
 	public class ParensElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Parens");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.ComplexReconstrTestLanguage.Parens");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cLeftParenthesisKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final RuleCall cOpParserRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
@@ -167,7 +167,7 @@ public class ComplexReconstrTestLanguageGrammarAccess extends AbstractGrammarEle
 	}
 
 	public class TrickyBElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TrickyB");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.ComplexReconstrTestLanguage.TrickyB");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cTBKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
@@ -217,7 +217,7 @@ public class ComplexReconstrTestLanguageGrammarAccess extends AbstractGrammarEle
 	}
 
 	public class TrickyCElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TrickyC");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.ComplexReconstrTestLanguage.TrickyC");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cTCKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -277,7 +277,7 @@ public class ComplexReconstrTestLanguageGrammarAccess extends AbstractGrammarEle
 	}
 
 	public class TrickyDElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TrickyD");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.ComplexReconstrTestLanguage.TrickyD");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cTDKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
@@ -349,7 +349,7 @@ public class ComplexReconstrTestLanguageGrammarAccess extends AbstractGrammarEle
 	}
 
 	public class TrickyEElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TrickyE");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.ComplexReconstrTestLanguage.TrickyE");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cTEKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
@@ -418,7 +418,7 @@ public class ComplexReconstrTestLanguageGrammarAccess extends AbstractGrammarEle
 	}
 
 	public class TrickyFElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TrickyF");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.ComplexReconstrTestLanguage.TrickyF");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cTFKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
@@ -475,7 +475,7 @@ public class ComplexReconstrTestLanguageGrammarAccess extends AbstractGrammarEle
 	}
 
 	public class TrickyGElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TrickyG");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.ComplexReconstrTestLanguage.TrickyG");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cTGKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cTreeAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -499,7 +499,7 @@ public class ComplexReconstrTestLanguageGrammarAccess extends AbstractGrammarEle
 	}
 
 	public class TrickyG1Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TrickyG1");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.ComplexReconstrTestLanguage.TrickyG1");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cLeftSquareBracketKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
@@ -547,7 +547,7 @@ public class ComplexReconstrTestLanguageGrammarAccess extends AbstractGrammarEle
 	}
 
 	public class TrickyG2Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TrickyG2");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.ComplexReconstrTestLanguage.TrickyG2");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cTrickyG1ParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final Assignment cValAssignment_1 = (Assignment)cAlternatives.eContents().get(1);

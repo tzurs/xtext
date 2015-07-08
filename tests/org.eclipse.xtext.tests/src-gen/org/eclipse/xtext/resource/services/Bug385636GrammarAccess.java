@@ -19,7 +19,7 @@ public class Bug385636GrammarAccess extends AbstractGrammarElementFinder {
 	
 	
 	public class ProgramElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Program");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.resource.Bug385636.Program");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cDefineAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cDefineDefineVariablesParserRuleCall_0_0 = (RuleCall)cDefineAssignment_0.eContents().get(0);
@@ -51,7 +51,7 @@ public class Bug385636GrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	public class DefineVariablesElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "DefineVariables");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.resource.Bug385636.DefineVariables");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cVARIABLESKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cVariablesAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -79,7 +79,7 @@ public class Bug385636GrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	public class DefineVariableElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "DefineVariable");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.resource.Bug385636.DefineVariable");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cNAMEKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -103,7 +103,7 @@ public class Bug385636GrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	public class NVariableAccessElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "NVariableAccess");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.resource.Bug385636.NVariableAccess");
 		private final Assignment cVariableAssignment = (Assignment)rule.eContents().get(1);
 		private final CrossReference cVariableDefineVariableCrossReference_0 = (CrossReference)cVariableAssignment.eContents().get(0);
 		private final RuleCall cVariableDefineVariableIDTerminalRuleCall_0_1 = (RuleCall)cVariableDefineVariableCrossReference_0.eContents().get(1);
@@ -123,7 +123,7 @@ public class Bug385636GrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	public class StatementElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Statement");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.resource.Bug385636.Statement");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cExpression_VariableNameParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Alternatives cAlternatives_1 = (Alternatives)cGroup.eContents().get(1);
@@ -312,7 +312,7 @@ public class Bug385636GrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	public class Expression_VariableNameElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Expression_VariableName");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.resource.Bug385636.Expression_VariableName");
 		private final Assignment cVariableAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cVariableNVariableAccessParserRuleCall_0 = (RuleCall)cVariableAssignment.eContents().get(0);
 		

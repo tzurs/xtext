@@ -19,7 +19,7 @@ public class UnicodeTestLanguageGrammarAccess extends AbstractGrammarElementFind
 	
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.UnicodeTestLanguage.Model");
 		private final Assignment cStringsAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cStringsAbstractStringParserRuleCall_0 = (RuleCall)cStringsAssignment.eContents().get(0);
 		
@@ -35,7 +35,7 @@ public class UnicodeTestLanguageGrammarAccess extends AbstractGrammarElementFind
 	}
 
 	public class AbstractStringElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AbstractString");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.UnicodeTestLanguage.AbstractString");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cGStringParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cQuotedStringParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -55,7 +55,7 @@ public class UnicodeTestLanguageGrammarAccess extends AbstractGrammarElementFind
 	}
 
 	public class GStringElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "GString");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.UnicodeTestLanguage.GString");
 		private final Assignment cNameAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cNameGERMAN_STRINGTerminalRuleCall_0 = (RuleCall)cNameAssignment.eContents().get(0);
 		
@@ -71,7 +71,7 @@ public class UnicodeTestLanguageGrammarAccess extends AbstractGrammarElementFind
 	}
 
 	public class QuotedStringElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "QuotedString");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.UnicodeTestLanguage.QuotedString");
 		private final Assignment cNameAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cNameSTRINGTerminalRuleCall_0 = (RuleCall)cNameAssignment.eContents().get(0);
 		

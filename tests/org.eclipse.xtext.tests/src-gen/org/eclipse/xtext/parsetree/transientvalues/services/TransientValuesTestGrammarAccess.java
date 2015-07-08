@@ -19,7 +19,7 @@ public class TransientValuesTestGrammarAccess extends AbstractGrammarElementFind
 	
 	
 	public class RootElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Root");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.transientvalues.TransientValuesTest.Root");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cTestKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Alternatives cAlternatives_1 = (Alternatives)cGroup.eContents().get(1);
@@ -51,7 +51,7 @@ public class TransientValuesTestGrammarAccess extends AbstractGrammarElementFind
 	}
 
 	public class TestRequiredElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TestRequired");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.transientvalues.TransientValuesTest.TestRequired");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cTestRequiredAction_0 = (Action)cGroup.eContents().get(0);
 		private final Keyword cRequiredKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -87,7 +87,7 @@ public class TransientValuesTestGrammarAccess extends AbstractGrammarElementFind
 	}
 
 	public class TestOptionalElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TestOptional");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.transientvalues.TransientValuesTest.TestOptional");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cTestOptionalAction_0 = (Action)cGroup.eContents().get(0);
 		private final Keyword cOptionalKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -131,7 +131,7 @@ public class TransientValuesTestGrammarAccess extends AbstractGrammarElementFind
 	}
 
 	public class TestListElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TestList");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.transientvalues.TransientValuesTest.TestList");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cTestListAction_0 = (Action)cGroup.eContents().get(0);
 		private final Keyword cListKeyword_1 = (Keyword)cGroup.eContents().get(1);

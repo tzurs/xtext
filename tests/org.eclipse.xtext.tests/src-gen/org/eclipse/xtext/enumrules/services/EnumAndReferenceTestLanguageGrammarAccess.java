@@ -19,7 +19,7 @@ public class EnumAndReferenceTestLanguageGrammarAccess extends AbstractGrammarEl
 	
 	
 	public class EntityWithEnumAndReferenceElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "EntityWithEnumAndReference");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.enumrules.EnumAndReferenceTestLanguage.EntityWithEnumAndReference");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cTypeAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cTypeKindOfKeywordEnumRuleCall_0_0 = (RuleCall)cTypeAssignment_0.eContents().get(0);

@@ -19,7 +19,7 @@ public class Bug289524ExTestLanguageGrammarAccess extends AbstractGrammarElement
 	
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.antlr.Bug289524ExTestLanguage.Model");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cModelAction_0 = (Action)cGroup.eContents().get(0);
 		private final Keyword cModelKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -47,7 +47,7 @@ public class Bug289524ExTestLanguageGrammarAccess extends AbstractGrammarElement
 	}
 
 	public class ModelElementElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ModelElement");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.antlr.Bug289524ExTestLanguage.ModelElement");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cModelElementAction_0 = (Action)cGroup.eContents().get(0);
 		private final Alternatives cAlternatives_1 = (Alternatives)cGroup.eContents().get(1);
@@ -115,7 +115,7 @@ public class Bug289524ExTestLanguageGrammarAccess extends AbstractGrammarElement
 	}
 
 	public class ContainedElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Contained");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.antlr.Bug289524ExTestLanguage.Contained");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cContainmentKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);

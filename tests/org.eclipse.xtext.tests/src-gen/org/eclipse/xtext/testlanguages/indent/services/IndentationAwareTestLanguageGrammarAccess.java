@@ -18,7 +18,7 @@ public class IndentationAwareTestLanguageGrammarAccess extends AbstractGrammarEl
 	
 	
 	public class NodeListElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "NodeList");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.indent.IndentationAwareTestLanguage.NodeList");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cChildrenAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cChildrenNodeParserRuleCall_0_0 = (RuleCall)cChildrenAssignment_0.eContents().get(0);
@@ -54,7 +54,7 @@ public class IndentationAwareTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class NodeElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Node");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.indent.IndentationAwareTestLanguage.Node");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cNameAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cNameStringParserRuleCall_0_0 = (RuleCall)cNameAssignment_0.eContents().get(0);
@@ -98,7 +98,7 @@ public class IndentationAwareTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class StringElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "String");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.indent.IndentationAwareTestLanguage.String");
 		private final RuleCall cOTHERTerminalRuleCall = (RuleCall)rule.eContents().get(1);
 		
 		//String returns ecore::EString:

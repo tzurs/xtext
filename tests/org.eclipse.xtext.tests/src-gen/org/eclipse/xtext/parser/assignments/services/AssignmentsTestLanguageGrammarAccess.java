@@ -19,7 +19,7 @@ public class AssignmentsTestLanguageGrammarAccess extends AbstractGrammarElement
 	
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.assignments.AssignmentsTestLanguage.Model");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Group cGroup_0 = (Group)cAlternatives.eContents().get(0);
 		private final Keyword cSimpleKeyword_0_0 = (Keyword)cGroup_0.eContents().get(0);
@@ -109,7 +109,7 @@ public class AssignmentsTestLanguageGrammarAccess extends AbstractGrammarElement
 	}
 
 	public class SingleValueElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "SingleValue");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.assignments.AssignmentsTestLanguage.SingleValue");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Group cGroup_0 = (Group)cAlternatives.eContents().get(0);
 		private final Keyword cIdKeyword_0_0 = (Keyword)cGroup_0.eContents().get(0);
@@ -177,7 +177,7 @@ public class AssignmentsTestLanguageGrammarAccess extends AbstractGrammarElement
 	}
 
 	public class MultiValueElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "MultiValue");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.assignments.AssignmentsTestLanguage.MultiValue");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Group cGroup_0 = (Group)cAlternatives.eContents().get(0);
 		private final Keyword cIdsKeyword_0_0 = (Keyword)cGroup_0.eContents().get(0);
@@ -245,7 +245,7 @@ public class AssignmentsTestLanguageGrammarAccess extends AbstractGrammarElement
 	}
 
 	public class SingleDatatypeElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "SingleDatatype");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.assignments.AssignmentsTestLanguage.SingleDatatype");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Group cGroup_0 = (Group)cAlternatives.eContents().get(0);
 		private final Keyword cDatatypeidKeyword_0_0 = (Keyword)cGroup_0.eContents().get(0);
@@ -315,7 +315,7 @@ public class AssignmentsTestLanguageGrammarAccess extends AbstractGrammarElement
 	}
 
 	public class MultiDatatypeElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "MultiDatatype");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.assignments.AssignmentsTestLanguage.MultiDatatype");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Group cGroup_0 = (Group)cAlternatives.eContents().get(0);
 		private final Keyword cDatatypeidsKeyword_0_0 = (Keyword)cGroup_0.eContents().get(0);
@@ -385,7 +385,7 @@ public class AssignmentsTestLanguageGrammarAccess extends AbstractGrammarElement
 	}
 
 	public class IdDatatypeElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "IdDatatype");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.assignments.AssignmentsTestLanguage.IdDatatype");
 		private final RuleCall cIDTerminalRuleCall = (RuleCall)rule.eContents().get(1);
 		
 		//IdDatatype:
@@ -397,7 +397,7 @@ public class AssignmentsTestLanguageGrammarAccess extends AbstractGrammarElement
 	}
 
 	public class StringDatatypeElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "StringDatatype");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.assignments.AssignmentsTestLanguage.StringDatatype");
 		private final RuleCall cSTRINGTerminalRuleCall = (RuleCall)rule.eContents().get(1);
 		
 		//StringDatatype:

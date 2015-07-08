@@ -19,7 +19,7 @@ public class LocationProviderTestLanguageGrammarAccess extends AbstractGrammarEl
 	
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.resource.LocationProviderTestLanguage.Model");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cElementsAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cElementsElementParserRuleCall_0_0 = (RuleCall)cElementsAssignment_0.eContents().get(0);
@@ -47,7 +47,7 @@ public class LocationProviderTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class ElementElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Element");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.resource.LocationProviderTestLanguage.Element");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cElementKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -111,7 +111,7 @@ public class LocationProviderTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class ComponentElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Component");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.resource.LocationProviderTestLanguage.Component");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Alternatives cAlternatives_0 = (Alternatives)cGroup.eContents().get(0);
 		private final RuleCall cBusParserRuleCall_0_0 = (RuleCall)cAlternatives_0.eContents().get(0);
@@ -171,7 +171,7 @@ public class LocationProviderTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class BusElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Bus");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.resource.LocationProviderTestLanguage.Bus");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cBusKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -203,7 +203,7 @@ public class LocationProviderTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class ProcessorElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Processor");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.resource.LocationProviderTestLanguage.Processor");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cProcessorKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -235,7 +235,7 @@ public class LocationProviderTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class ModeElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Mode");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.resource.LocationProviderTestLanguage.Mode");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cModeKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -263,7 +263,7 @@ public class LocationProviderTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class TransitionElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Transition");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.resource.LocationProviderTestLanguage.Transition");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cNameAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cNameIDTerminalRuleCall_0_0 = (RuleCall)cNameAssignment_0.eContents().get(0);
@@ -319,7 +319,7 @@ public class LocationProviderTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class PortElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Port");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.resource.LocationProviderTestLanguage.Port");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cPortKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -347,7 +347,7 @@ public class LocationProviderTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class DataElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Data");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.resource.LocationProviderTestLanguage.Data");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cDataKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);

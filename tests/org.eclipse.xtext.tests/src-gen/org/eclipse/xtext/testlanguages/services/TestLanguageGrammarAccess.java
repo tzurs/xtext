@@ -19,7 +19,7 @@ public class TestLanguageGrammarAccess extends AbstractGrammarElementFinder {
 	
 	
 	public class EntryRuleElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "EntryRule");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.TestLanguage.EntryRule");
 		private final Assignment cMultiFeatureAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cMultiFeatureAbstractRuleParserRuleCall_0 = (RuleCall)cMultiFeatureAssignment.eContents().get(0);
 		
@@ -35,7 +35,7 @@ public class TestLanguageGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	public class AbstractRuleElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AbstractRule");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.TestLanguage.AbstractRule");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cChoiceRuleParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cReducibleRuleParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -55,7 +55,7 @@ public class TestLanguageGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	public class ChoiceRuleElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ChoiceRule");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.TestLanguage.ChoiceRule");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cChoiceKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cOptionalKeywordAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -87,7 +87,7 @@ public class TestLanguageGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	public class ReducibleRuleElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ReducibleRule");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.TestLanguage.ReducibleRule");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cReducibleKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final RuleCall cTerminalRuleParserRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
@@ -123,7 +123,7 @@ public class TestLanguageGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	public class TerminalRuleElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TerminalRule");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.TestLanguage.TerminalRule");
 		private final Assignment cStringFeatureAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cStringFeatureSTRINGTerminalRuleCall_0 = (RuleCall)cStringFeatureAssignment.eContents().get(0);
 		

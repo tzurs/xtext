@@ -19,7 +19,7 @@ public class Bug297105TestLanguageGrammarAccess extends AbstractGrammarElementFi
 	
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.Bug297105TestLanguage.Model");
 		private final Assignment cExpressionsAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cExpressionsExpressionParserRuleCall_0 = (RuleCall)cExpressionsAssignment.eContents().get(0);
 		
@@ -35,7 +35,7 @@ public class Bug297105TestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class ExpressionElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Expression");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.Bug297105TestLanguage.Expression");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cLeftAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cLeftLiteralParserRuleCall_0_0 = (RuleCall)cLeftAssignment_0.eContents().get(0);
@@ -67,7 +67,7 @@ public class Bug297105TestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class LiteralElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Literal");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.Bug297105TestLanguage.Literal");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cRealLiteralParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cIntLiteralParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -87,7 +87,7 @@ public class Bug297105TestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class IntLiteralElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "IntLiteral");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.Bug297105TestLanguage.IntLiteral");
 		private final Assignment cValueAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cValueIntValueParserRuleCall_0 = (RuleCall)cValueAssignment.eContents().get(0);
 		
@@ -103,7 +103,7 @@ public class Bug297105TestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class RealLiteralElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "RealLiteral");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.Bug297105TestLanguage.RealLiteral");
 		private final Assignment cValueAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cValueRealValueParserRuleCall_0 = (RuleCall)cValueAssignment.eContents().get(0);
 		
@@ -119,7 +119,7 @@ public class Bug297105TestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class IntValueElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "IntValue");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.Bug297105TestLanguage.IntValue");
 		private final RuleCall cINTTerminalRuleCall = (RuleCall)rule.eContents().get(1);
 		
 		//IntValue:
@@ -131,7 +131,7 @@ public class Bug297105TestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class RealValueElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "RealValue");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.Bug297105TestLanguage.RealValue");
 		private final RuleCall cRealParserRuleCall = (RuleCall)rule.eContents().get(1);
 		
 		//RealValue:
@@ -143,7 +143,7 @@ public class Bug297105TestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class RealElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Real");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.Bug297105TestLanguage.Real");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cINTTerminalRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Keyword cFullStopKeyword_1 = (Keyword)cGroup.eContents().get(1);

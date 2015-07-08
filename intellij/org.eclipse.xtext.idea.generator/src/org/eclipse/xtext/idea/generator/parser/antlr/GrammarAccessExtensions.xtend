@@ -87,7 +87,7 @@ class GrammarAccessExtensions {
 		val allRules = grammar.allRules
 		allRules.indexOf(rule) == 0 || allRules.map [
 			GrammarUtil.containedRuleCalls(it)
-		].flatten.exists[ruleCall | ruleCall.rule != rule]
+		].flatten.exists[ruleCall | ruleCall.rule == rule]
 	}
 
 	def definesUnorderedGroups(ParserRule it, AntlrOptions options) {

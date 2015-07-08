@@ -18,7 +18,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	
 	
 	public class GrammarElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Grammar");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.Grammar");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cGrammarKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -158,7 +158,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class GrammarIDElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "GrammarID");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.GrammarID");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cIDTerminalRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
@@ -186,7 +186,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class AbstractRuleElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AbstractRule");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.AbstractRule");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cParserRuleParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cTerminalRuleParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -210,7 +210,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class AbstractMetamodelDeclarationElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AbstractMetamodelDeclaration");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.AbstractMetamodelDeclaration");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cGeneratedMetamodelParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cReferencedMetamodelParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -230,7 +230,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class GeneratedMetamodelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "GeneratedMetamodel");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.GeneratedMetamodel");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cGenerateKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -284,7 +284,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class ReferencedMetamodelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ReferencedMetamodel");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.ReferencedMetamodel");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cImportKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cEPackageAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -330,7 +330,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class ParserRuleElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ParserRule");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.ParserRule");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cNameAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cNameIDTerminalRuleCall_0_0 = (RuleCall)cNameAssignment_0.eContents().get(0);
@@ -440,7 +440,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class TypeRefElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TypeRef");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.TypeRef");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Group cGroup_0 = (Group)cGroup.eContents().get(0);
 		private final Assignment cMetamodelAssignment_0_0 = (Assignment)cGroup_0.eContents().get(0);
@@ -484,7 +484,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class AlternativesElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Alternatives");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.Alternatives");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cGroupParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
@@ -524,7 +524,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class GroupElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Group");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.Group");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cAbstractTokenParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
@@ -556,7 +556,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class AbstractTokenElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AbstractToken");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.AbstractToken");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cAbstractTokenWithCardinalityParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cActionParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -576,7 +576,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class AbstractTokenWithCardinalityElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AbstractTokenWithCardinality");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.AbstractTokenWithCardinality");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Alternatives cAlternatives_0 = (Alternatives)cGroup.eContents().get(0);
 		private final RuleCall cAssignmentParserRuleCall_0_0 = (RuleCall)cAlternatives_0.eContents().get(0);
@@ -620,7 +620,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class ActionElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Action");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.Action");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cLeftCurlyBracketKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cTypeAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -684,7 +684,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class AbstractTerminalElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AbstractTerminal");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.AbstractTerminal");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cKeywordParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cRuleCallParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -708,7 +708,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class KeywordElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Keyword");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.Keyword");
 		private final Assignment cValueAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cValueSTRINGTerminalRuleCall_0 = (RuleCall)cValueAssignment.eContents().get(0);
 		
@@ -724,7 +724,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class RuleCallElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "RuleCall");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.RuleCall");
 		private final Assignment cRuleAssignment = (Assignment)rule.eContents().get(1);
 		private final CrossReference cRuleAbstractRuleCrossReference_0 = (CrossReference)cRuleAssignment.eContents().get(0);
 		private final RuleCall cRuleAbstractRuleIDTerminalRuleCall_0_1 = (RuleCall)cRuleAbstractRuleCrossReference_0.eContents().get(1);
@@ -744,7 +744,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class AssignmentElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Assignment");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.Assignment");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cFeatureAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cFeatureIDTerminalRuleCall_0_0 = (RuleCall)cFeatureAssignment_0.eContents().get(0);
@@ -792,7 +792,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class AssignableTerminalElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AssignableTerminal");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.AssignableTerminal");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cKeywordParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cRuleCallParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -820,7 +820,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class ParenthesizedAssignableElementElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ParenthesizedAssignableElement");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.ParenthesizedAssignableElement");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cLeftParenthesisKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final RuleCall cAssignableAlternativesParserRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
@@ -844,7 +844,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class AssignableAlternativesElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AssignableAlternatives");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.AssignableAlternatives");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cAssignableTerminalParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
@@ -884,7 +884,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class CrossReferenceElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "CrossReference");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.CrossReference");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cLeftSquareBracketKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cTypeAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -928,7 +928,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class CrossReferenceableTerminalElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "CrossReferenceableTerminal");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.CrossReferenceableTerminal");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cKeywordParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cRuleCallParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -948,7 +948,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class ParenthesizedElementElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ParenthesizedElement");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.ParenthesizedElement");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cLeftParenthesisKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final RuleCall cAlternativesParserRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
@@ -972,7 +972,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class TerminalRuleElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TerminalRule");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.TerminalRule");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cTerminalKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -1028,7 +1028,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class TerminalAlternativesElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TerminalAlternatives");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.TerminalAlternatives");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cTerminalGroupParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
@@ -1068,7 +1068,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class TerminalGroupElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TerminalGroup");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.TerminalGroup");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cTerminalTokenParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
@@ -1100,7 +1100,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class TerminalTokenElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TerminalToken");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.TerminalToken");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cTerminalTokenElementParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Assignment cCardinalityAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -1136,7 +1136,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class TerminalTokenElementElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TerminalTokenElement");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.TerminalTokenElement");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cCharacterRangeParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cRuleCallParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -1168,7 +1168,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class ParenthesizedTerminalElementElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ParenthesizedTerminalElement");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.ParenthesizedTerminalElement");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cLeftParenthesisKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final RuleCall cTerminalAlternativesParserRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
@@ -1192,7 +1192,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class AbstractNegatedTokenElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AbstractNegatedToken");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.AbstractNegatedToken");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cNegatedTokenParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cUntilTokenParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -1212,7 +1212,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class NegatedTokenElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "NegatedToken");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.NegatedToken");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cExclamationMarkKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cTerminalAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -1236,7 +1236,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class UntilTokenElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "UntilToken");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.UntilToken");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cHyphenMinusGreaterThanSignKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cTerminalAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -1260,7 +1260,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class WildcardElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Wildcard");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.Wildcard");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cWildcardAction_0 = (Action)cGroup.eContents().get(0);
 		private final Keyword cFullStopKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -1280,7 +1280,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class CharacterRangeElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "CharacterRange");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.CharacterRange");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cKeywordParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
@@ -1316,7 +1316,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class EnumRuleElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "EnumRule");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.EnumRule");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cEnumKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -1372,7 +1372,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class EnumLiteralsElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "EnumLiterals");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.EnumLiterals");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cEnumLiteralDeclarationParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
@@ -1412,7 +1412,7 @@ public class XtextTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class EnumLiteralDeclarationElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "EnumLiteralDeclaration");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.XtextTerminalsTestLanguage.EnumLiteralDeclaration");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cEnumLiteralAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final CrossReference cEnumLiteralEEnumLiteralCrossReference_0_0 = (CrossReference)cEnumLiteralAssignment_0.eContents().get(0);

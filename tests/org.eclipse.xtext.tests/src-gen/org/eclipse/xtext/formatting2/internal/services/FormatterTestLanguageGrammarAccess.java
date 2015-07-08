@@ -19,7 +19,7 @@ public class FormatterTestLanguageGrammarAccess extends AbstractGrammarElementFi
 	
 	
 	public class RootElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Root");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.formatting2.internal.FormatterTestLanguage.Root");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cIDListParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cKWListParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -39,7 +39,7 @@ public class FormatterTestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class IDListElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "IDList");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.formatting2.internal.FormatterTestLanguage.IDList");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cIDListAction_0 = (Action)cGroup.eContents().get(0);
 		private final Keyword cIdlistKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -67,7 +67,7 @@ public class FormatterTestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class KWListElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "KWList");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.formatting2.internal.FormatterTestLanguage.KWList");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cKWListAction_0 = (Action)cGroup.eContents().get(0);
 		private final Keyword cKwlistKeyword_1 = (Keyword)cGroup.eContents().get(1);

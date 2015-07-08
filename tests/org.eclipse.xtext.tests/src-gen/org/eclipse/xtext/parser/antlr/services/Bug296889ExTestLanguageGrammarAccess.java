@@ -19,7 +19,7 @@ public class Bug296889ExTestLanguageGrammarAccess extends AbstractGrammarElement
 	
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.antlr.Bug296889ExTestLanguage.Model");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Group cGroup_0 = (Group)cAlternatives.eContents().get(0);
 		private final Keyword cModelKeyword_0_0 = (Keyword)cGroup_0.eContents().get(0);
@@ -63,7 +63,7 @@ public class Bug296889ExTestLanguageGrammarAccess extends AbstractGrammarElement
 	}
 
 	public class ExpressionElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Expression");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.antlr.Bug296889ExTestLanguage.Expression");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cPostopParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cPreopParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -83,7 +83,7 @@ public class Bug296889ExTestLanguageGrammarAccess extends AbstractGrammarElement
 	}
 
 	public class PreopElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Preop");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.antlr.Bug296889ExTestLanguage.Preop");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cPreopAction_0 = (Action)cGroup.eContents().get(0);
 		private final Assignment cFunctionNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -115,7 +115,7 @@ public class Bug296889ExTestLanguageGrammarAccess extends AbstractGrammarElement
 	}
 
 	public class PostopElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Postop");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.antlr.Bug296889ExTestLanguage.Postop");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cVariableParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
@@ -147,7 +147,7 @@ public class Bug296889ExTestLanguageGrammarAccess extends AbstractGrammarElement
 	}
 
 	public class VariableElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Variable");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.antlr.Bug296889ExTestLanguage.Variable");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cVariableAction_0 = (Action)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -171,7 +171,7 @@ public class Bug296889ExTestLanguageGrammarAccess extends AbstractGrammarElement
 	}
 
 	public class DataTypeExpressionElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "DataTypeExpression");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.antlr.Bug296889ExTestLanguage.DataTypeExpression");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cDataTypePostopParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cDataTypePreopParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -191,7 +191,7 @@ public class Bug296889ExTestLanguageGrammarAccess extends AbstractGrammarElement
 	}
 
 	public class DataTypePreopElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "DataTypePreop");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.antlr.Bug296889ExTestLanguage.DataTypePreop");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cHyphenMinusHyphenMinusKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final RuleCall cDataTypeVariableParserRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
@@ -211,7 +211,7 @@ public class Bug296889ExTestLanguageGrammarAccess extends AbstractGrammarElement
 	}
 
 	public class DataTypePostopElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "DataTypePostop");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.antlr.Bug296889ExTestLanguage.DataTypePostop");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cDataTypeVariableParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Keyword cHyphenMinusHyphenMinusKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -231,7 +231,7 @@ public class Bug296889ExTestLanguageGrammarAccess extends AbstractGrammarElement
 	}
 
 	public class DataTypeVariableElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "DataTypeVariable");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.antlr.Bug296889ExTestLanguage.DataTypeVariable");
 		private final RuleCall cIDTerminalRuleCall = (RuleCall)rule.eContents().get(1);
 		
 		//DataTypeVariable:

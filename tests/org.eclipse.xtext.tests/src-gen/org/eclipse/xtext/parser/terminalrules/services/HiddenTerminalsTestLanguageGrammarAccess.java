@@ -18,7 +18,7 @@ public class HiddenTerminalsTestLanguageGrammarAccess extends AbstractGrammarEle
 	
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.HiddenTerminalsTestLanguage.Model");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cWithoutHiddensParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cWithHiddensParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -50,7 +50,7 @@ public class HiddenTerminalsTestLanguageGrammarAccess extends AbstractGrammarEle
 	}
 
 	public class WithoutHiddensElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "WithoutHiddens");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.HiddenTerminalsTestLanguage.WithoutHiddens");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cWithoutKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cSpacesAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -94,7 +94,7 @@ public class HiddenTerminalsTestLanguageGrammarAccess extends AbstractGrammarEle
 	}
 
 	public class WithHiddensElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "WithHiddens");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.HiddenTerminalsTestLanguage.WithHiddens");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cWithKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Keyword cHiddensKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -122,7 +122,7 @@ public class HiddenTerminalsTestLanguageGrammarAccess extends AbstractGrammarEle
 	}
 
 	public class OverridingHiddensElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "OverridingHiddens");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.HiddenTerminalsTestLanguage.OverridingHiddens");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cOverridingKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Keyword cHiddensKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -166,7 +166,7 @@ public class HiddenTerminalsTestLanguageGrammarAccess extends AbstractGrammarEle
 	}
 
 	public class OverridingHiddensCallElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "OverridingHiddensCall");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.HiddenTerminalsTestLanguage.OverridingHiddensCall");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cCallKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cSpacesAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -198,7 +198,7 @@ public class HiddenTerminalsTestLanguageGrammarAccess extends AbstractGrammarEle
 	}
 
 	public class InheritingHiddensElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "InheritingHiddens");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.HiddenTerminalsTestLanguage.InheritingHiddens");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cInheritingKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Keyword cHiddensKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -254,7 +254,7 @@ public class HiddenTerminalsTestLanguageGrammarAccess extends AbstractGrammarEle
 	}
 
 	public class DatatypeHiddensElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "DatatypeHiddens");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.HiddenTerminalsTestLanguage.DatatypeHiddens");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cDatatypeKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cValidAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -278,7 +278,7 @@ public class HiddenTerminalsTestLanguageGrammarAccess extends AbstractGrammarEle
 	}
 
 	public class DatatypeRuleElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "DatatypeRule");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.HiddenTerminalsTestLanguage.DatatypeRule");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cRuleKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Keyword cSemicolonKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -298,7 +298,7 @@ public class HiddenTerminalsTestLanguageGrammarAccess extends AbstractGrammarEle
 	}
 
 	public class HidingHiddensElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "HidingHiddens");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.HiddenTerminalsTestLanguage.HidingHiddens");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cHidingKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cSpaceAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -330,7 +330,7 @@ public class HiddenTerminalsTestLanguageGrammarAccess extends AbstractGrammarEle
 	}
 
 	public class InheritingHiddensCallElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "InheritingHiddensCall");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.HiddenTerminalsTestLanguage.InheritingHiddensCall");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cCallKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cValidAssignment_1 = (Assignment)cGroup.eContents().get(1);

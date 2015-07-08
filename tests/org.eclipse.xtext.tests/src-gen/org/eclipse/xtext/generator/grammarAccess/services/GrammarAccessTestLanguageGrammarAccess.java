@@ -19,7 +19,7 @@ public class GrammarAccessTestLanguageGrammarAccess extends AbstractGrammarEleme
 	
 	
 	public class RootElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Root");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.generator.grammarAccess.GrammarAccessTestLanguage.Root");
 		private final Assignment cElementsAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cElementsTypeParserRuleCall_0 = (RuleCall)cElementsAssignment.eContents().get(0);
 		
@@ -35,7 +35,7 @@ public class GrammarAccessTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class TypeElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Type");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.generator.grammarAccess.GrammarAccessTestLanguage.Type");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cATypeParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cAnotherTypeParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -55,7 +55,7 @@ public class GrammarAccessTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class ATypeElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AType");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.generator.grammarAccess.GrammarAccessTestLanguage.AType");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cFooKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Action cATypeAction_1 = (Action)cGroup.eContents().get(1);
@@ -75,7 +75,7 @@ public class GrammarAccessTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class AnotherTypeElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AnotherType");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.generator.grammarAccess.GrammarAccessTestLanguage.AnotherType");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cBarKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Action cAnotherTypeAction_1 = (Action)cGroup.eContents().get(1);

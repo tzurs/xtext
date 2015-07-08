@@ -19,7 +19,7 @@ public class LookaheadTestLanguageGrammarAccess extends AbstractGrammarElementFi
 	
 	
 	public class EntryElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Entry");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.LookaheadTestLanguage.Entry");
 		private final Assignment cContentsAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cContentsAltsParserRuleCall_0 = (RuleCall)cContentsAssignment.eContents().get(0);
 		
@@ -35,7 +35,7 @@ public class LookaheadTestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class AltsElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Alts");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.LookaheadTestLanguage.Alts");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cLookAhead0ParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cLookAhead1ParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -59,7 +59,7 @@ public class LookaheadTestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class LookAhead0Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "LookAhead0");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.LookaheadTestLanguage.LookAhead0");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cBarKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cXAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -83,7 +83,7 @@ public class LookaheadTestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class LookAhead1Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "LookAhead1");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.LookaheadTestLanguage.LookAhead1");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cFooKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cYAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -123,7 +123,7 @@ public class LookaheadTestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class LookAhead2Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "LookAhead2");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.LookaheadTestLanguage.LookAhead2");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Alternatives cAlternatives_0 = (Alternatives)cGroup.eContents().get(0);
 		private final Assignment cZAssignment_0_0 = (Assignment)cAlternatives_0.eContents().get(0);
@@ -159,7 +159,7 @@ public class LookaheadTestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class LookAhead3Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "LookAhead3");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.LookaheadTestLanguage.LookAhead3");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cFooKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Keyword cBarKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -195,7 +195,7 @@ public class LookaheadTestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class LookAhead4Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "LookAhead4");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.LookaheadTestLanguage.LookAhead4");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Assignment cXAssignment_0 = (Assignment)cAlternatives.eContents().get(0);
 		private final Keyword cXCKeyword_0_0 = (Keyword)cXAssignment_0.eContents().get(0);

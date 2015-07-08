@@ -19,7 +19,7 @@ public class RegionAccessTestLanguageGrammarAccess extends AbstractGrammarElemen
 	
 	
 	public class RootElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Root");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.formatting2.regionaccess.internal.RegionAccessTestLanguage.Root");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cSimpleParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cDelegationParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -87,7 +87,7 @@ public class RegionAccessTestLanguageGrammarAccess extends AbstractGrammarElemen
 	}
 
 	public class SimpleElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Simple");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.formatting2.regionaccess.internal.RegionAccessTestLanguage.Simple");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cDigitOneKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -111,7 +111,7 @@ public class RegionAccessTestLanguageGrammarAccess extends AbstractGrammarElemen
 	}
 
 	public class DelegationElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Delegation");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.formatting2.regionaccess.internal.RegionAccessTestLanguage.Delegation");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cDigitTwoKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cDelegateAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -135,7 +135,7 @@ public class RegionAccessTestLanguageGrammarAccess extends AbstractGrammarElemen
 	}
 
 	public class UnassignedElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Unassigned");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.formatting2.regionaccess.internal.RegionAccessTestLanguage.Unassigned");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cDigitThreeKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final RuleCall cDelegateParserRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
@@ -155,7 +155,7 @@ public class RegionAccessTestLanguageGrammarAccess extends AbstractGrammarElemen
 	}
 
 	public class PrefixedUnassignedElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "PrefixedUnassigned");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.formatting2.regionaccess.internal.RegionAccessTestLanguage.PrefixedUnassigned");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cDigitFourKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cDelegateAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -179,7 +179,7 @@ public class RegionAccessTestLanguageGrammarAccess extends AbstractGrammarElemen
 	}
 
 	public class PrefixedDelegateElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "PrefixedDelegate");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.formatting2.regionaccess.internal.RegionAccessTestLanguage.PrefixedDelegate");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cPrefixKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final RuleCall cDelegateParserRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
@@ -199,7 +199,7 @@ public class RegionAccessTestLanguageGrammarAccess extends AbstractGrammarElemen
 	}
 
 	public class DelegateElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Delegate");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.formatting2.regionaccess.internal.RegionAccessTestLanguage.Delegate");
 		private final Assignment cNameAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cNameIDTerminalRuleCall_0 = (RuleCall)cNameAssignment.eContents().get(0);
 		
@@ -215,7 +215,7 @@ public class RegionAccessTestLanguageGrammarAccess extends AbstractGrammarElemen
 	}
 
 	public class ExpressionElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Expression");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.formatting2.regionaccess.internal.RegionAccessTestLanguage.Expression");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cPrimaryParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
@@ -251,7 +251,7 @@ public class RegionAccessTestLanguageGrammarAccess extends AbstractGrammarElemen
 	}
 
 	public class PrimaryElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Primary");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.formatting2.regionaccess.internal.RegionAccessTestLanguage.Primary");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Group cGroup_0 = (Group)cAlternatives.eContents().get(0);
 		private final Action cNamedAction_0_0 = (Action)cGroup_0.eContents().get(0);
@@ -283,7 +283,7 @@ public class RegionAccessTestLanguageGrammarAccess extends AbstractGrammarElemen
 	}
 
 	public class ParenthesizedElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Parenthesized");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.formatting2.regionaccess.internal.RegionAccessTestLanguage.Parenthesized");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cLeftParenthesisKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final RuleCall cExpressionParserRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
@@ -307,7 +307,7 @@ public class RegionAccessTestLanguageGrammarAccess extends AbstractGrammarElemen
 	}
 
 	public class MixedElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Mixed");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.formatting2.regionaccess.internal.RegionAccessTestLanguage.Mixed");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cLeftParenthesisKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
@@ -453,7 +453,7 @@ public class RegionAccessTestLanguageGrammarAccess extends AbstractGrammarElemen
 	}
 
 	public class DatatypeElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Datatype");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.formatting2.regionaccess.internal.RegionAccessTestLanguage.Datatype");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cDatatypeKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Alternatives cAlternatives_1 = (Alternatives)cGroup.eContents().get(1);

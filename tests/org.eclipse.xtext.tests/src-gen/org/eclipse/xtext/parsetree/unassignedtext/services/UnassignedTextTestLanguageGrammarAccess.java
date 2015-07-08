@@ -19,7 +19,7 @@ public class UnassignedTextTestLanguageGrammarAccess extends AbstractGrammarElem
 	
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.unassignedtext.UnassignedTextTestLanguage.Model");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cCaseInsensitiveKeywordRuleParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final RuleCall cPluralRuleParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -51,7 +51,7 @@ public class UnassignedTextTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class CaseInsensitiveKeywordRuleElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "CaseInsensitiveKeywordRule");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.unassignedtext.UnassignedTextTestLanguage.CaseInsensitiveKeywordRule");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cCaseInsensitiveKeywordTerminalRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Assignment cValAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -75,7 +75,7 @@ public class UnassignedTextTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class PluralRuleElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "PluralRule");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.unassignedtext.UnassignedTextTestLanguage.PluralRule");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cContentsKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cCountAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -103,7 +103,7 @@ public class UnassignedTextTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class MultiRuleElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "MultiRule");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.unassignedtext.UnassignedTextTestLanguage.MultiRule");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cMultiKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cValAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -139,7 +139,7 @@ public class UnassignedTextTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class DatatypeRuleElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "DatatypeRule");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.unassignedtext.UnassignedTextTestLanguage.DatatypeRule");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cDatatypeKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cValAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -167,7 +167,7 @@ public class UnassignedTextTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class DatatypeElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Datatype");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.unassignedtext.UnassignedTextTestLanguage.Datatype");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Keyword cStrKeyword_0 = (Keyword)cAlternatives.eContents().get(0);
 		private final RuleCall cINTTerminalRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
@@ -191,7 +191,7 @@ public class UnassignedTextTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class Datatype2Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Datatype2");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.unassignedtext.UnassignedTextTestLanguage.Datatype2");
 		private final RuleCall cSTRINGTerminalRuleCall = (RuleCall)rule.eContents().get(1);
 		
 		//Datatype2 returns ecore::EString:
@@ -203,7 +203,7 @@ public class UnassignedTextTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class CommonTerminalsRuleElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "CommonTerminalsRule");
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.unassignedtext.UnassignedTextTestLanguage.CommonTerminalsRule");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cTerminalsKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final RuleCall cIDTerminalRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
