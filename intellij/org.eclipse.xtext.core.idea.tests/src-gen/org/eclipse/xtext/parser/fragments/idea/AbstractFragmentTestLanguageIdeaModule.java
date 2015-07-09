@@ -39,10 +39,6 @@ public class AbstractFragmentTestLanguageIdeaModule extends org.eclipse.xtext.id
 	public com.intellij.facet.FacetTypeId bindFacetTypeIdToInstance() {
 		return org.eclipse.xtext.parser.fragments.idea.facet.FragmentTestLanguageFacetType.TYPEID;
 	}
-	// contributed by org.eclipse.xtext.idea.generator.IdeaPluginGenerator
-	public Class<? extends org.eclipse.xtext.idea.highlighting.IHighlightingConfiguration> bindIHighlightingConfiguration() {
-		return org.eclipse.xtext.parser.fragments.idea.highlighting.FragmentTestLanguageHighlightingConfiguration.class;
-	}
 	
 	
 }
