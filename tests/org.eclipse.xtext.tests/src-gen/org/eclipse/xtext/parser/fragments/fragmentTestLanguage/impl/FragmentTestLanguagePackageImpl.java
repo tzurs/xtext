@@ -11,9 +11,9 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.FragmentTestLanguageFactory;
 import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.FragmentTestLanguagePackage;
-import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Fragments;
-import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Named;
-import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.NamedWithAction;
+import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamed;
+import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamedWithAction;
+import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.ParserRuleFragments;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,21 +28,21 @@ public class FragmentTestLanguagePackageImpl extends EPackageImpl implements Fra
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass fragmentsEClass = null;
+  private EClass parserRuleFragmentsEClass = null;
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass namedEClass = null;
+  private EClass prfNamedEClass = null;
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass namedWithActionEClass = null;
+  private EClass prfNamedWithActionEClass = null;
 
   /**
    * Creates an instance of the model <b>Package</b>, registered with
@@ -112,9 +112,9 @@ public class FragmentTestLanguagePackageImpl extends EPackageImpl implements Fra
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getFragments()
+  public EClass getParserRuleFragments()
   {
-    return fragmentsEClass;
+    return parserRuleFragmentsEClass;
   }
 
   /**
@@ -122,9 +122,9 @@ public class FragmentTestLanguagePackageImpl extends EPackageImpl implements Fra
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getFragments_Element()
+  public EReference getParserRuleFragments_Element()
   {
-    return (EReference)fragmentsEClass.getEStructuralFeatures().get(0);
+    return (EReference)parserRuleFragmentsEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -132,9 +132,9 @@ public class FragmentTestLanguagePackageImpl extends EPackageImpl implements Fra
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getFragments_Ref()
+  public EReference getParserRuleFragments_Ref()
   {
-    return (EReference)fragmentsEClass.getEStructuralFeatures().get(1);
+    return (EReference)parserRuleFragmentsEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -142,9 +142,9 @@ public class FragmentTestLanguagePackageImpl extends EPackageImpl implements Fra
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getNamed()
+  public EClass getPRFNamed()
   {
-    return namedEClass;
+    return prfNamedEClass;
   }
 
   /**
@@ -152,9 +152,9 @@ public class FragmentTestLanguagePackageImpl extends EPackageImpl implements Fra
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getNamed_Ref()
+  public EReference getPRFNamed_Ref()
   {
-    return (EReference)namedEClass.getEStructuralFeatures().get(0);
+    return (EReference)prfNamedEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -162,9 +162,9 @@ public class FragmentTestLanguagePackageImpl extends EPackageImpl implements Fra
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getNamed_Name()
+  public EAttribute getPRFNamed_Name()
   {
-    return (EAttribute)namedEClass.getEStructuralFeatures().get(1);
+    return (EAttribute)prfNamedEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -172,9 +172,9 @@ public class FragmentTestLanguagePackageImpl extends EPackageImpl implements Fra
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getNamedWithAction()
+  public EClass getPRFNamedWithAction()
   {
-    return namedWithActionEClass;
+    return prfNamedWithActionEClass;
   }
 
   /**
@@ -182,9 +182,9 @@ public class FragmentTestLanguagePackageImpl extends EPackageImpl implements Fra
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getNamedWithAction_Prev()
+  public EReference getPRFNamedWithAction_Prev()
   {
-    return (EReference)namedWithActionEClass.getEStructuralFeatures().get(0);
+    return (EReference)prfNamedWithActionEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -192,9 +192,9 @@ public class FragmentTestLanguagePackageImpl extends EPackageImpl implements Fra
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getNamedWithAction_Ref2()
+  public EReference getPRFNamedWithAction_Ref2()
   {
-    return (EReference)namedWithActionEClass.getEStructuralFeatures().get(1);
+    return (EReference)prfNamedWithActionEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -227,17 +227,17 @@ public class FragmentTestLanguagePackageImpl extends EPackageImpl implements Fra
     isCreated = true;
 
     // Create classes and their features
-    fragmentsEClass = createEClass(FRAGMENTS);
-    createEReference(fragmentsEClass, FRAGMENTS__ELEMENT);
-    createEReference(fragmentsEClass, FRAGMENTS__REF);
+    parserRuleFragmentsEClass = createEClass(PARSER_RULE_FRAGMENTS);
+    createEReference(parserRuleFragmentsEClass, PARSER_RULE_FRAGMENTS__ELEMENT);
+    createEReference(parserRuleFragmentsEClass, PARSER_RULE_FRAGMENTS__REF);
 
-    namedEClass = createEClass(NAMED);
-    createEReference(namedEClass, NAMED__REF);
-    createEAttribute(namedEClass, NAMED__NAME);
+    prfNamedEClass = createEClass(PRF_NAMED);
+    createEReference(prfNamedEClass, PRF_NAMED__REF);
+    createEAttribute(prfNamedEClass, PRF_NAMED__NAME);
 
-    namedWithActionEClass = createEClass(NAMED_WITH_ACTION);
-    createEReference(namedWithActionEClass, NAMED_WITH_ACTION__PREV);
-    createEReference(namedWithActionEClass, NAMED_WITH_ACTION__REF2);
+    prfNamedWithActionEClass = createEClass(PRF_NAMED_WITH_ACTION);
+    createEReference(prfNamedWithActionEClass, PRF_NAMED_WITH_ACTION__PREV);
+    createEReference(prfNamedWithActionEClass, PRF_NAMED_WITH_ACTION__REF2);
   }
 
   /**
@@ -269,20 +269,20 @@ public class FragmentTestLanguagePackageImpl extends EPackageImpl implements Fra
     // Set bounds for type parameters
 
     // Add supertypes to classes
-    namedWithActionEClass.getESuperTypes().add(this.getNamed());
+    prfNamedWithActionEClass.getESuperTypes().add(this.getPRFNamed());
 
     // Initialize classes and features; add operations and parameters
-    initEClass(fragmentsEClass, Fragments.class, "Fragments", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getFragments_Element(), this.getNamed(), null, "element", null, 0, 1, Fragments.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getFragments_Ref(), this.getNamed(), null, "ref", null, 0, 1, Fragments.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEClass(parserRuleFragmentsEClass, ParserRuleFragments.class, "ParserRuleFragments", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getParserRuleFragments_Element(), this.getPRFNamed(), null, "element", null, 0, 1, ParserRuleFragments.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getParserRuleFragments_Ref(), this.getPRFNamed(), null, "ref", null, 0, 1, ParserRuleFragments.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-    initEClass(namedEClass, Named.class, "Named", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getNamed_Ref(), this.getNamed(), null, "ref", null, 0, 1, Named.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getNamed_Name(), ecorePackage.getEString(), "name", null, 0, 1, Named.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEClass(prfNamedEClass, PRFNamed.class, "PRFNamed", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getPRFNamed_Ref(), this.getPRFNamed(), null, "ref", null, 0, 1, PRFNamed.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getPRFNamed_Name(), ecorePackage.getEString(), "name", null, 0, 1, PRFNamed.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-    initEClass(namedWithActionEClass, NamedWithAction.class, "NamedWithAction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getNamedWithAction_Prev(), this.getNamed(), null, "prev", null, 0, 1, NamedWithAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getNamedWithAction_Ref2(), this.getNamed(), null, "ref2", null, 0, 1, NamedWithAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEClass(prfNamedWithActionEClass, PRFNamedWithAction.class, "PRFNamedWithAction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getPRFNamedWithAction_Prev(), this.getPRFNamed(), null, "prev", null, 0, 1, PRFNamedWithAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getPRFNamedWithAction_Ref2(), this.getPRFNamed(), null, "ref2", null, 0, 1, PRFNamedWithAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     // Create resource
     createResource(eNS_URI);

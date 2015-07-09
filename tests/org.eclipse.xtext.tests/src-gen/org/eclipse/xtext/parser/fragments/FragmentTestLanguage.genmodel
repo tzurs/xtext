@@ -8,17 +8,17 @@
     runtimeVersion="2.9">
   <genPackages prefix="FragmentTestLanguage" basePackage="org.eclipse.xtext.parser.fragments"
       disposableProviderFactory="true" ecorePackage="FragmentTestLanguage.ecore#/">
-    <genClasses ecoreClass="FragmentTestLanguage.ecore#//Fragments">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FragmentTestLanguage.ecore#//Fragments/element"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FragmentTestLanguage.ecore#//Fragments/ref"/>
+    <genClasses ecoreClass="FragmentTestLanguage.ecore#//ParserRuleFragments">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FragmentTestLanguage.ecore#//ParserRuleFragments/element"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FragmentTestLanguage.ecore#//ParserRuleFragments/ref"/>
     </genClasses>
-    <genClasses ecoreClass="FragmentTestLanguage.ecore#//Named">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FragmentTestLanguage.ecore#//Named/ref"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FragmentTestLanguage.ecore#//Named/name"/>
+    <genClasses ecoreClass="FragmentTestLanguage.ecore#//PRFNamed">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FragmentTestLanguage.ecore#//PRFNamed/ref"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FragmentTestLanguage.ecore#//PRFNamed/name"/>
     </genClasses>
-    <genClasses ecoreClass="FragmentTestLanguage.ecore#//NamedWithAction">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FragmentTestLanguage.ecore#//NamedWithAction/prev"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FragmentTestLanguage.ecore#//NamedWithAction/ref2"/>
+    <genClasses ecoreClass="FragmentTestLanguage.ecore#//PRFNamedWithAction">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FragmentTestLanguage.ecore#//PRFNamedWithAction/prev"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FragmentTestLanguage.ecore#//PRFNamedWithAction/ref2"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

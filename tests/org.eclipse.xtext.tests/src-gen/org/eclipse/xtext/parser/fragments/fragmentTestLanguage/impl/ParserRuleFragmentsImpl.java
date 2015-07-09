@@ -12,24 +12,24 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.FragmentTestLanguagePackage;
-import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Fragments;
-import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Named;
+import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamed;
+import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.ParserRuleFragments;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Fragments</b></em>'.
+ * An implementation of the model object '<em><b>Parser Rule Fragments</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.FragmentsImpl#getElement <em>Element</em>}</li>
- *   <li>{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.FragmentsImpl#getRef <em>Ref</em>}</li>
+ *   <li>{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.ParserRuleFragmentsImpl#getElement <em>Element</em>}</li>
+ *   <li>{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.ParserRuleFragmentsImpl#getRef <em>Ref</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class FragmentsImpl extends MinimalEObjectImpl.Container implements Fragments
+public class ParserRuleFragmentsImpl extends MinimalEObjectImpl.Container implements ParserRuleFragments
 {
   /**
    * The cached value of the '{@link #getElement() <em>Element</em>}' containment reference.
@@ -39,7 +39,7 @@ public class FragmentsImpl extends MinimalEObjectImpl.Container implements Fragm
    * @generated
    * @ordered
    */
-  protected Named element;
+  protected PRFNamed element;
 
   /**
    * The cached value of the '{@link #getRef() <em>Ref</em>}' reference.
@@ -49,14 +49,14 @@ public class FragmentsImpl extends MinimalEObjectImpl.Container implements Fragm
    * @generated
    * @ordered
    */
-  protected Named ref;
+  protected PRFNamed ref;
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected FragmentsImpl()
+  protected ParserRuleFragmentsImpl()
   {
     super();
   }
@@ -69,7 +69,7 @@ public class FragmentsImpl extends MinimalEObjectImpl.Container implements Fragm
   @Override
   protected EClass eStaticClass()
   {
-    return FragmentTestLanguagePackage.Literals.FRAGMENTS;
+    return FragmentTestLanguagePackage.Literals.PARSER_RULE_FRAGMENTS;
   }
 
   /**
@@ -77,7 +77,7 @@ public class FragmentsImpl extends MinimalEObjectImpl.Container implements Fragm
    * <!-- end-user-doc -->
    * @generated
    */
-  public Named getElement()
+  public PRFNamed getElement()
   {
     return element;
   }
@@ -87,13 +87,13 @@ public class FragmentsImpl extends MinimalEObjectImpl.Container implements Fragm
    * <!-- end-user-doc -->
    * @generated
    */
-  public NotificationChain basicSetElement(Named newElement, NotificationChain msgs)
+  public NotificationChain basicSetElement(PRFNamed newElement, NotificationChain msgs)
   {
-    Named oldElement = element;
+    PRFNamed oldElement = element;
     element = newElement;
     if (eNotificationRequired())
     {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, FragmentTestLanguagePackage.FRAGMENTS__ELEMENT, oldElement, newElement);
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, FragmentTestLanguagePackage.PARSER_RULE_FRAGMENTS__ELEMENT, oldElement, newElement);
       if (msgs == null) msgs = notification; else msgs.add(notification);
     }
     return msgs;
@@ -104,20 +104,20 @@ public class FragmentsImpl extends MinimalEObjectImpl.Container implements Fragm
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setElement(Named newElement)
+  public void setElement(PRFNamed newElement)
   {
     if (newElement != element)
     {
       NotificationChain msgs = null;
       if (element != null)
-        msgs = ((InternalEObject)element).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - FragmentTestLanguagePackage.FRAGMENTS__ELEMENT, null, msgs);
+        msgs = ((InternalEObject)element).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - FragmentTestLanguagePackage.PARSER_RULE_FRAGMENTS__ELEMENT, null, msgs);
       if (newElement != null)
-        msgs = ((InternalEObject)newElement).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - FragmentTestLanguagePackage.FRAGMENTS__ELEMENT, null, msgs);
+        msgs = ((InternalEObject)newElement).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - FragmentTestLanguagePackage.PARSER_RULE_FRAGMENTS__ELEMENT, null, msgs);
       msgs = basicSetElement(newElement, msgs);
       if (msgs != null) msgs.dispatch();
     }
     else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, FragmentTestLanguagePackage.FRAGMENTS__ELEMENT, newElement, newElement));
+      eNotify(new ENotificationImpl(this, Notification.SET, FragmentTestLanguagePackage.PARSER_RULE_FRAGMENTS__ELEMENT, newElement, newElement));
   }
 
   /**
@@ -125,16 +125,16 @@ public class FragmentsImpl extends MinimalEObjectImpl.Container implements Fragm
    * <!-- end-user-doc -->
    * @generated
    */
-  public Named getRef()
+  public PRFNamed getRef()
   {
     if (ref != null && ref.eIsProxy())
     {
       InternalEObject oldRef = (InternalEObject)ref;
-      ref = (Named)eResolveProxy(oldRef);
+      ref = (PRFNamed)eResolveProxy(oldRef);
       if (ref != oldRef)
       {
         if (eNotificationRequired())
-          eNotify(new ENotificationImpl(this, Notification.RESOLVE, FragmentTestLanguagePackage.FRAGMENTS__REF, oldRef, ref));
+          eNotify(new ENotificationImpl(this, Notification.RESOLVE, FragmentTestLanguagePackage.PARSER_RULE_FRAGMENTS__REF, oldRef, ref));
       }
     }
     return ref;
@@ -145,7 +145,7 @@ public class FragmentsImpl extends MinimalEObjectImpl.Container implements Fragm
    * <!-- end-user-doc -->
    * @generated
    */
-  public Named basicGetRef()
+  public PRFNamed basicGetRef()
   {
     return ref;
   }
@@ -155,12 +155,12 @@ public class FragmentsImpl extends MinimalEObjectImpl.Container implements Fragm
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setRef(Named newRef)
+  public void setRef(PRFNamed newRef)
   {
-    Named oldRef = ref;
+    PRFNamed oldRef = ref;
     ref = newRef;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, FragmentTestLanguagePackage.FRAGMENTS__REF, oldRef, ref));
+      eNotify(new ENotificationImpl(this, Notification.SET, FragmentTestLanguagePackage.PARSER_RULE_FRAGMENTS__REF, oldRef, ref));
   }
 
   /**
@@ -173,7 +173,7 @@ public class FragmentsImpl extends MinimalEObjectImpl.Container implements Fragm
   {
     switch (featureID)
     {
-      case FragmentTestLanguagePackage.FRAGMENTS__ELEMENT:
+      case FragmentTestLanguagePackage.PARSER_RULE_FRAGMENTS__ELEMENT:
         return basicSetElement(null, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -189,9 +189,9 @@ public class FragmentsImpl extends MinimalEObjectImpl.Container implements Fragm
   {
     switch (featureID)
     {
-      case FragmentTestLanguagePackage.FRAGMENTS__ELEMENT:
+      case FragmentTestLanguagePackage.PARSER_RULE_FRAGMENTS__ELEMENT:
         return getElement();
-      case FragmentTestLanguagePackage.FRAGMENTS__REF:
+      case FragmentTestLanguagePackage.PARSER_RULE_FRAGMENTS__REF:
         if (resolve) return getRef();
         return basicGetRef();
     }
@@ -208,11 +208,11 @@ public class FragmentsImpl extends MinimalEObjectImpl.Container implements Fragm
   {
     switch (featureID)
     {
-      case FragmentTestLanguagePackage.FRAGMENTS__ELEMENT:
-        setElement((Named)newValue);
+      case FragmentTestLanguagePackage.PARSER_RULE_FRAGMENTS__ELEMENT:
+        setElement((PRFNamed)newValue);
         return;
-      case FragmentTestLanguagePackage.FRAGMENTS__REF:
-        setRef((Named)newValue);
+      case FragmentTestLanguagePackage.PARSER_RULE_FRAGMENTS__REF:
+        setRef((PRFNamed)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -228,11 +228,11 @@ public class FragmentsImpl extends MinimalEObjectImpl.Container implements Fragm
   {
     switch (featureID)
     {
-      case FragmentTestLanguagePackage.FRAGMENTS__ELEMENT:
-        setElement((Named)null);
+      case FragmentTestLanguagePackage.PARSER_RULE_FRAGMENTS__ELEMENT:
+        setElement((PRFNamed)null);
         return;
-      case FragmentTestLanguagePackage.FRAGMENTS__REF:
-        setRef((Named)null);
+      case FragmentTestLanguagePackage.PARSER_RULE_FRAGMENTS__REF:
+        setRef((PRFNamed)null);
         return;
     }
     super.eUnset(featureID);
@@ -248,12 +248,12 @@ public class FragmentsImpl extends MinimalEObjectImpl.Container implements Fragm
   {
     switch (featureID)
     {
-      case FragmentTestLanguagePackage.FRAGMENTS__ELEMENT:
+      case FragmentTestLanguagePackage.PARSER_RULE_FRAGMENTS__ELEMENT:
         return element != null;
-      case FragmentTestLanguagePackage.FRAGMENTS__REF:
+      case FragmentTestLanguagePackage.PARSER_RULE_FRAGMENTS__REF:
         return ref != null;
     }
     return super.eIsSet(featureID);
   }
 
-} //FragmentsImpl
+} //ParserRuleFragmentsImpl

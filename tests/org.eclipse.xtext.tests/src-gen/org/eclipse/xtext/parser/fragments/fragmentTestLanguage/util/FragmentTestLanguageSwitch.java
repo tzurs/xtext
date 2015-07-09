@@ -72,25 +72,25 @@ public class FragmentTestLanguageSwitch<T> extends Switch<T>
   {
     switch (classifierID)
     {
-      case FragmentTestLanguagePackage.FRAGMENTS:
+      case FragmentTestLanguagePackage.PARSER_RULE_FRAGMENTS:
       {
-        Fragments fragments = (Fragments)theEObject;
-        T result = caseFragments(fragments);
+        ParserRuleFragments parserRuleFragments = (ParserRuleFragments)theEObject;
+        T result = caseParserRuleFragments(parserRuleFragments);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case FragmentTestLanguagePackage.NAMED:
+      case FragmentTestLanguagePackage.PRF_NAMED:
       {
-        Named named = (Named)theEObject;
-        T result = caseNamed(named);
+        PRFNamed prfNamed = (PRFNamed)theEObject;
+        T result = casePRFNamed(prfNamed);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case FragmentTestLanguagePackage.NAMED_WITH_ACTION:
+      case FragmentTestLanguagePackage.PRF_NAMED_WITH_ACTION:
       {
-        NamedWithAction namedWithAction = (NamedWithAction)theEObject;
-        T result = caseNamedWithAction(namedWithAction);
-        if (result == null) result = caseNamed(namedWithAction);
+        PRFNamedWithAction prfNamedWithAction = (PRFNamedWithAction)theEObject;
+        T result = casePRFNamedWithAction(prfNamedWithAction);
+        if (result == null) result = casePRFNamed(prfNamedWithAction);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -99,49 +99,49 @@ public class FragmentTestLanguageSwitch<T> extends Switch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Fragments</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Parser Rule Fragments</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Fragments</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Parser Rule Fragments</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseFragments(Fragments object)
+  public T caseParserRuleFragments(ParserRuleFragments object)
   {
     return null;
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Named</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>PRF Named</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Named</em>'.
+   * @return the result of interpreting the object as an instance of '<em>PRF Named</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseNamed(Named object)
+  public T casePRFNamed(PRFNamed object)
   {
     return null;
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Named With Action</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>PRF Named With Action</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Named With Action</em>'.
+   * @return the result of interpreting the object as an instance of '<em>PRF Named With Action</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseNamedWithAction(NamedWithAction object)
+  public T casePRFNamedWithAction(PRFNamedWithAction object)
   {
     return null;
   }

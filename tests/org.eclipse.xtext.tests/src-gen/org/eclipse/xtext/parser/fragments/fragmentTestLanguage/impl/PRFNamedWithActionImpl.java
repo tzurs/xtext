@@ -11,24 +11,24 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.FragmentTestLanguagePackage;
-import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Named;
-import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.NamedWithAction;
+import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamed;
+import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamedWithAction;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Named With Action</b></em>'.
+ * An implementation of the model object '<em><b>PRF Named With Action</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.NamedWithActionImpl#getPrev <em>Prev</em>}</li>
- *   <li>{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.NamedWithActionImpl#getRef2 <em>Ref2</em>}</li>
+ *   <li>{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.PRFNamedWithActionImpl#getPrev <em>Prev</em>}</li>
+ *   <li>{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.PRFNamedWithActionImpl#getRef2 <em>Ref2</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class NamedWithActionImpl extends NamedImpl implements NamedWithAction
+public class PRFNamedWithActionImpl extends PRFNamedImpl implements PRFNamedWithAction
 {
   /**
    * The cached value of the '{@link #getPrev() <em>Prev</em>}' containment reference.
@@ -38,7 +38,7 @@ public class NamedWithActionImpl extends NamedImpl implements NamedWithAction
    * @generated
    * @ordered
    */
-  protected Named prev;
+  protected PRFNamed prev;
 
   /**
    * The cached value of the '{@link #getRef2() <em>Ref2</em>}' reference.
@@ -48,14 +48,14 @@ public class NamedWithActionImpl extends NamedImpl implements NamedWithAction
    * @generated
    * @ordered
    */
-  protected Named ref2;
+  protected PRFNamed ref2;
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected NamedWithActionImpl()
+  protected PRFNamedWithActionImpl()
   {
     super();
   }
@@ -68,7 +68,7 @@ public class NamedWithActionImpl extends NamedImpl implements NamedWithAction
   @Override
   protected EClass eStaticClass()
   {
-    return FragmentTestLanguagePackage.Literals.NAMED_WITH_ACTION;
+    return FragmentTestLanguagePackage.Literals.PRF_NAMED_WITH_ACTION;
   }
 
   /**
@@ -76,7 +76,7 @@ public class NamedWithActionImpl extends NamedImpl implements NamedWithAction
    * <!-- end-user-doc -->
    * @generated
    */
-  public Named getPrev()
+  public PRFNamed getPrev()
   {
     return prev;
   }
@@ -86,13 +86,13 @@ public class NamedWithActionImpl extends NamedImpl implements NamedWithAction
    * <!-- end-user-doc -->
    * @generated
    */
-  public NotificationChain basicSetPrev(Named newPrev, NotificationChain msgs)
+  public NotificationChain basicSetPrev(PRFNamed newPrev, NotificationChain msgs)
   {
-    Named oldPrev = prev;
+    PRFNamed oldPrev = prev;
     prev = newPrev;
     if (eNotificationRequired())
     {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, FragmentTestLanguagePackage.NAMED_WITH_ACTION__PREV, oldPrev, newPrev);
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, FragmentTestLanguagePackage.PRF_NAMED_WITH_ACTION__PREV, oldPrev, newPrev);
       if (msgs == null) msgs = notification; else msgs.add(notification);
     }
     return msgs;
@@ -103,20 +103,20 @@ public class NamedWithActionImpl extends NamedImpl implements NamedWithAction
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setPrev(Named newPrev)
+  public void setPrev(PRFNamed newPrev)
   {
     if (newPrev != prev)
     {
       NotificationChain msgs = null;
       if (prev != null)
-        msgs = ((InternalEObject)prev).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - FragmentTestLanguagePackage.NAMED_WITH_ACTION__PREV, null, msgs);
+        msgs = ((InternalEObject)prev).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - FragmentTestLanguagePackage.PRF_NAMED_WITH_ACTION__PREV, null, msgs);
       if (newPrev != null)
-        msgs = ((InternalEObject)newPrev).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - FragmentTestLanguagePackage.NAMED_WITH_ACTION__PREV, null, msgs);
+        msgs = ((InternalEObject)newPrev).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - FragmentTestLanguagePackage.PRF_NAMED_WITH_ACTION__PREV, null, msgs);
       msgs = basicSetPrev(newPrev, msgs);
       if (msgs != null) msgs.dispatch();
     }
     else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, FragmentTestLanguagePackage.NAMED_WITH_ACTION__PREV, newPrev, newPrev));
+      eNotify(new ENotificationImpl(this, Notification.SET, FragmentTestLanguagePackage.PRF_NAMED_WITH_ACTION__PREV, newPrev, newPrev));
   }
 
   /**
@@ -124,16 +124,16 @@ public class NamedWithActionImpl extends NamedImpl implements NamedWithAction
    * <!-- end-user-doc -->
    * @generated
    */
-  public Named getRef2()
+  public PRFNamed getRef2()
   {
     if (ref2 != null && ref2.eIsProxy())
     {
       InternalEObject oldRef2 = (InternalEObject)ref2;
-      ref2 = (Named)eResolveProxy(oldRef2);
+      ref2 = (PRFNamed)eResolveProxy(oldRef2);
       if (ref2 != oldRef2)
       {
         if (eNotificationRequired())
-          eNotify(new ENotificationImpl(this, Notification.RESOLVE, FragmentTestLanguagePackage.NAMED_WITH_ACTION__REF2, oldRef2, ref2));
+          eNotify(new ENotificationImpl(this, Notification.RESOLVE, FragmentTestLanguagePackage.PRF_NAMED_WITH_ACTION__REF2, oldRef2, ref2));
       }
     }
     return ref2;
@@ -144,7 +144,7 @@ public class NamedWithActionImpl extends NamedImpl implements NamedWithAction
    * <!-- end-user-doc -->
    * @generated
    */
-  public Named basicGetRef2()
+  public PRFNamed basicGetRef2()
   {
     return ref2;
   }
@@ -154,12 +154,12 @@ public class NamedWithActionImpl extends NamedImpl implements NamedWithAction
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setRef2(Named newRef2)
+  public void setRef2(PRFNamed newRef2)
   {
-    Named oldRef2 = ref2;
+    PRFNamed oldRef2 = ref2;
     ref2 = newRef2;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, FragmentTestLanguagePackage.NAMED_WITH_ACTION__REF2, oldRef2, ref2));
+      eNotify(new ENotificationImpl(this, Notification.SET, FragmentTestLanguagePackage.PRF_NAMED_WITH_ACTION__REF2, oldRef2, ref2));
   }
 
   /**
@@ -172,7 +172,7 @@ public class NamedWithActionImpl extends NamedImpl implements NamedWithAction
   {
     switch (featureID)
     {
-      case FragmentTestLanguagePackage.NAMED_WITH_ACTION__PREV:
+      case FragmentTestLanguagePackage.PRF_NAMED_WITH_ACTION__PREV:
         return basicSetPrev(null, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -188,9 +188,9 @@ public class NamedWithActionImpl extends NamedImpl implements NamedWithAction
   {
     switch (featureID)
     {
-      case FragmentTestLanguagePackage.NAMED_WITH_ACTION__PREV:
+      case FragmentTestLanguagePackage.PRF_NAMED_WITH_ACTION__PREV:
         return getPrev();
-      case FragmentTestLanguagePackage.NAMED_WITH_ACTION__REF2:
+      case FragmentTestLanguagePackage.PRF_NAMED_WITH_ACTION__REF2:
         if (resolve) return getRef2();
         return basicGetRef2();
     }
@@ -207,11 +207,11 @@ public class NamedWithActionImpl extends NamedImpl implements NamedWithAction
   {
     switch (featureID)
     {
-      case FragmentTestLanguagePackage.NAMED_WITH_ACTION__PREV:
-        setPrev((Named)newValue);
+      case FragmentTestLanguagePackage.PRF_NAMED_WITH_ACTION__PREV:
+        setPrev((PRFNamed)newValue);
         return;
-      case FragmentTestLanguagePackage.NAMED_WITH_ACTION__REF2:
-        setRef2((Named)newValue);
+      case FragmentTestLanguagePackage.PRF_NAMED_WITH_ACTION__REF2:
+        setRef2((PRFNamed)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -227,11 +227,11 @@ public class NamedWithActionImpl extends NamedImpl implements NamedWithAction
   {
     switch (featureID)
     {
-      case FragmentTestLanguagePackage.NAMED_WITH_ACTION__PREV:
-        setPrev((Named)null);
+      case FragmentTestLanguagePackage.PRF_NAMED_WITH_ACTION__PREV:
+        setPrev((PRFNamed)null);
         return;
-      case FragmentTestLanguagePackage.NAMED_WITH_ACTION__REF2:
-        setRef2((Named)null);
+      case FragmentTestLanguagePackage.PRF_NAMED_WITH_ACTION__REF2:
+        setRef2((PRFNamed)null);
         return;
     }
     super.eUnset(featureID);
@@ -247,12 +247,12 @@ public class NamedWithActionImpl extends NamedImpl implements NamedWithAction
   {
     switch (featureID)
     {
-      case FragmentTestLanguagePackage.NAMED_WITH_ACTION__PREV:
+      case FragmentTestLanguagePackage.PRF_NAMED_WITH_ACTION__PREV:
         return prev != null;
-      case FragmentTestLanguagePackage.NAMED_WITH_ACTION__REF2:
+      case FragmentTestLanguagePackage.PRF_NAMED_WITH_ACTION__REF2:
         return ref2 != null;
     }
     return super.eIsSet(featureID);
   }
 
-} //NamedWithActionImpl
+} //PRFNamedWithActionImpl

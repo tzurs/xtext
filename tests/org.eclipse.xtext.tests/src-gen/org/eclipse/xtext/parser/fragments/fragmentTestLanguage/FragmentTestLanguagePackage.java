@@ -57,14 +57,14 @@ public interface FragmentTestLanguagePackage extends EPackage
   FragmentTestLanguagePackage eINSTANCE = org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.FragmentTestLanguagePackageImpl.init();
 
   /**
-   * The meta object id for the '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.FragmentsImpl <em>Fragments</em>}' class.
+   * The meta object id for the '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.ParserRuleFragmentsImpl <em>Parser Rule Fragments</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.FragmentsImpl
-   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.FragmentTestLanguagePackageImpl#getFragments()
+   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.ParserRuleFragmentsImpl
+   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.FragmentTestLanguagePackageImpl#getParserRuleFragments()
    * @generated
    */
-  int FRAGMENTS = 0;
+  int PARSER_RULE_FRAGMENTS = 0;
 
   /**
    * The feature id for the '<em><b>Element</b></em>' containment reference.
@@ -73,7 +73,7 @@ public interface FragmentTestLanguagePackage extends EPackage
    * @generated
    * @ordered
    */
-  int FRAGMENTS__ELEMENT = 0;
+  int PARSER_RULE_FRAGMENTS__ELEMENT = 0;
 
   /**
    * The feature id for the '<em><b>Ref</b></em>' reference.
@@ -82,26 +82,26 @@ public interface FragmentTestLanguagePackage extends EPackage
    * @generated
    * @ordered
    */
-  int FRAGMENTS__REF = 1;
+  int PARSER_RULE_FRAGMENTS__REF = 1;
 
   /**
-   * The number of structural features of the '<em>Fragments</em>' class.
+   * The number of structural features of the '<em>Parser Rule Fragments</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int FRAGMENTS_FEATURE_COUNT = 2;
+  int PARSER_RULE_FRAGMENTS_FEATURE_COUNT = 2;
 
   /**
-   * The meta object id for the '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.NamedImpl <em>Named</em>}' class.
+   * The meta object id for the '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.PRFNamedImpl <em>PRF Named</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.NamedImpl
-   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.FragmentTestLanguagePackageImpl#getNamed()
+   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.PRFNamedImpl
+   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.FragmentTestLanguagePackageImpl#getPRFNamed()
    * @generated
    */
-  int NAMED = 1;
+  int PRF_NAMED = 1;
 
   /**
    * The feature id for the '<em><b>Ref</b></em>' reference.
@@ -110,7 +110,7 @@ public interface FragmentTestLanguagePackage extends EPackage
    * @generated
    * @ordered
    */
-  int NAMED__REF = 0;
+  int PRF_NAMED__REF = 0;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -119,26 +119,26 @@ public interface FragmentTestLanguagePackage extends EPackage
    * @generated
    * @ordered
    */
-  int NAMED__NAME = 1;
+  int PRF_NAMED__NAME = 1;
 
   /**
-   * The number of structural features of the '<em>Named</em>' class.
+   * The number of structural features of the '<em>PRF Named</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int NAMED_FEATURE_COUNT = 2;
+  int PRF_NAMED_FEATURE_COUNT = 2;
 
   /**
-   * The meta object id for the '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.NamedWithActionImpl <em>Named With Action</em>}' class.
+   * The meta object id for the '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.PRFNamedWithActionImpl <em>PRF Named With Action</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.NamedWithActionImpl
-   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.FragmentTestLanguagePackageImpl#getNamedWithAction()
+   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.PRFNamedWithActionImpl
+   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.FragmentTestLanguagePackageImpl#getPRFNamedWithAction()
    * @generated
    */
-  int NAMED_WITH_ACTION = 2;
+  int PRF_NAMED_WITH_ACTION = 2;
 
   /**
    * The feature id for the '<em><b>Ref</b></em>' reference.
@@ -147,7 +147,7 @@ public interface FragmentTestLanguagePackage extends EPackage
    * @generated
    * @ordered
    */
-  int NAMED_WITH_ACTION__REF = NAMED__REF;
+  int PRF_NAMED_WITH_ACTION__REF = PRF_NAMED__REF;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -156,7 +156,7 @@ public interface FragmentTestLanguagePackage extends EPackage
    * @generated
    * @ordered
    */
-  int NAMED_WITH_ACTION__NAME = NAMED__NAME;
+  int PRF_NAMED_WITH_ACTION__NAME = PRF_NAMED__NAME;
 
   /**
    * The feature id for the '<em><b>Prev</b></em>' containment reference.
@@ -165,7 +165,7 @@ public interface FragmentTestLanguagePackage extends EPackage
    * @generated
    * @ordered
    */
-  int NAMED_WITH_ACTION__PREV = NAMED_FEATURE_COUNT + 0;
+  int PRF_NAMED_WITH_ACTION__PREV = PRF_NAMED_FEATURE_COUNT + 0;
 
   /**
    * The feature id for the '<em><b>Ref2</b></em>' reference.
@@ -174,113 +174,113 @@ public interface FragmentTestLanguagePackage extends EPackage
    * @generated
    * @ordered
    */
-  int NAMED_WITH_ACTION__REF2 = NAMED_FEATURE_COUNT + 1;
+  int PRF_NAMED_WITH_ACTION__REF2 = PRF_NAMED_FEATURE_COUNT + 1;
 
   /**
-   * The number of structural features of the '<em>Named With Action</em>' class.
+   * The number of structural features of the '<em>PRF Named With Action</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int NAMED_WITH_ACTION_FEATURE_COUNT = NAMED_FEATURE_COUNT + 2;
+  int PRF_NAMED_WITH_ACTION_FEATURE_COUNT = PRF_NAMED_FEATURE_COUNT + 2;
 
 
   /**
-   * Returns the meta object for class '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Fragments <em>Fragments</em>}'.
+   * Returns the meta object for class '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.ParserRuleFragments <em>Parser Rule Fragments</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Fragments</em>'.
-   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Fragments
+   * @return the meta object for class '<em>Parser Rule Fragments</em>'.
+   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.ParserRuleFragments
    * @generated
    */
-  EClass getFragments();
+  EClass getParserRuleFragments();
 
   /**
-   * Returns the meta object for the containment reference '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Fragments#getElement <em>Element</em>}'.
+   * Returns the meta object for the containment reference '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.ParserRuleFragments#getElement <em>Element</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the containment reference '<em>Element</em>'.
-   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Fragments#getElement()
-   * @see #getFragments()
+   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.ParserRuleFragments#getElement()
+   * @see #getParserRuleFragments()
    * @generated
    */
-  EReference getFragments_Element();
+  EReference getParserRuleFragments_Element();
 
   /**
-   * Returns the meta object for the reference '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Fragments#getRef <em>Ref</em>}'.
+   * Returns the meta object for the reference '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.ParserRuleFragments#getRef <em>Ref</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the reference '<em>Ref</em>'.
-   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Fragments#getRef()
-   * @see #getFragments()
+   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.ParserRuleFragments#getRef()
+   * @see #getParserRuleFragments()
    * @generated
    */
-  EReference getFragments_Ref();
+  EReference getParserRuleFragments_Ref();
 
   /**
-   * Returns the meta object for class '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Named <em>Named</em>}'.
+   * Returns the meta object for class '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamed <em>PRF Named</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Named</em>'.
-   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Named
+   * @return the meta object for class '<em>PRF Named</em>'.
+   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamed
    * @generated
    */
-  EClass getNamed();
+  EClass getPRFNamed();
 
   /**
-   * Returns the meta object for the reference '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Named#getRef <em>Ref</em>}'.
+   * Returns the meta object for the reference '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamed#getRef <em>Ref</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the reference '<em>Ref</em>'.
-   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Named#getRef()
-   * @see #getNamed()
+   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamed#getRef()
+   * @see #getPRFNamed()
    * @generated
    */
-  EReference getNamed_Ref();
+  EReference getPRFNamed_Ref();
 
   /**
-   * Returns the meta object for the attribute '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Named#getName <em>Name</em>}'.
+   * Returns the meta object for the attribute '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamed#getName <em>Name</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Name</em>'.
-   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Named#getName()
-   * @see #getNamed()
+   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamed#getName()
+   * @see #getPRFNamed()
    * @generated
    */
-  EAttribute getNamed_Name();
+  EAttribute getPRFNamed_Name();
 
   /**
-   * Returns the meta object for class '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.NamedWithAction <em>Named With Action</em>}'.
+   * Returns the meta object for class '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamedWithAction <em>PRF Named With Action</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Named With Action</em>'.
-   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.NamedWithAction
+   * @return the meta object for class '<em>PRF Named With Action</em>'.
+   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamedWithAction
    * @generated
    */
-  EClass getNamedWithAction();
+  EClass getPRFNamedWithAction();
 
   /**
-   * Returns the meta object for the containment reference '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.NamedWithAction#getPrev <em>Prev</em>}'.
+   * Returns the meta object for the containment reference '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamedWithAction#getPrev <em>Prev</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the containment reference '<em>Prev</em>'.
-   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.NamedWithAction#getPrev()
-   * @see #getNamedWithAction()
+   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamedWithAction#getPrev()
+   * @see #getPRFNamedWithAction()
    * @generated
    */
-  EReference getNamedWithAction_Prev();
+  EReference getPRFNamedWithAction_Prev();
 
   /**
-   * Returns the meta object for the reference '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.NamedWithAction#getRef2 <em>Ref2</em>}'.
+   * Returns the meta object for the reference '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamedWithAction#getRef2 <em>Ref2</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the reference '<em>Ref2</em>'.
-   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.NamedWithAction#getRef2()
-   * @see #getNamedWithAction()
+   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamedWithAction#getRef2()
+   * @see #getPRFNamedWithAction()
    * @generated
    */
-  EReference getNamedWithAction_Ref2();
+  EReference getPRFNamedWithAction_Ref2();
 
   /**
    * Returns the factory that creates the instances of the model.
@@ -306,14 +306,14 @@ public interface FragmentTestLanguagePackage extends EPackage
   interface Literals
   {
     /**
-     * The meta object literal for the '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.FragmentsImpl <em>Fragments</em>}' class.
+     * The meta object literal for the '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.ParserRuleFragmentsImpl <em>Parser Rule Fragments</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.FragmentsImpl
-     * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.FragmentTestLanguagePackageImpl#getFragments()
+     * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.ParserRuleFragmentsImpl
+     * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.FragmentTestLanguagePackageImpl#getParserRuleFragments()
      * @generated
      */
-    EClass FRAGMENTS = eINSTANCE.getFragments();
+    EClass PARSER_RULE_FRAGMENTS = eINSTANCE.getParserRuleFragments();
 
     /**
      * The meta object literal for the '<em><b>Element</b></em>' containment reference feature.
@@ -321,7 +321,7 @@ public interface FragmentTestLanguagePackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference FRAGMENTS__ELEMENT = eINSTANCE.getFragments_Element();
+    EReference PARSER_RULE_FRAGMENTS__ELEMENT = eINSTANCE.getParserRuleFragments_Element();
 
     /**
      * The meta object literal for the '<em><b>Ref</b></em>' reference feature.
@@ -329,17 +329,17 @@ public interface FragmentTestLanguagePackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference FRAGMENTS__REF = eINSTANCE.getFragments_Ref();
+    EReference PARSER_RULE_FRAGMENTS__REF = eINSTANCE.getParserRuleFragments_Ref();
 
     /**
-     * The meta object literal for the '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.NamedImpl <em>Named</em>}' class.
+     * The meta object literal for the '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.PRFNamedImpl <em>PRF Named</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.NamedImpl
-     * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.FragmentTestLanguagePackageImpl#getNamed()
+     * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.PRFNamedImpl
+     * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.FragmentTestLanguagePackageImpl#getPRFNamed()
      * @generated
      */
-    EClass NAMED = eINSTANCE.getNamed();
+    EClass PRF_NAMED = eINSTANCE.getPRFNamed();
 
     /**
      * The meta object literal for the '<em><b>Ref</b></em>' reference feature.
@@ -347,7 +347,7 @@ public interface FragmentTestLanguagePackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference NAMED__REF = eINSTANCE.getNamed_Ref();
+    EReference PRF_NAMED__REF = eINSTANCE.getPRFNamed_Ref();
 
     /**
      * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
@@ -355,17 +355,17 @@ public interface FragmentTestLanguagePackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute NAMED__NAME = eINSTANCE.getNamed_Name();
+    EAttribute PRF_NAMED__NAME = eINSTANCE.getPRFNamed_Name();
 
     /**
-     * The meta object literal for the '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.NamedWithActionImpl <em>Named With Action</em>}' class.
+     * The meta object literal for the '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.PRFNamedWithActionImpl <em>PRF Named With Action</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.NamedWithActionImpl
-     * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.FragmentTestLanguagePackageImpl#getNamedWithAction()
+     * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.PRFNamedWithActionImpl
+     * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.FragmentTestLanguagePackageImpl#getPRFNamedWithAction()
      * @generated
      */
-    EClass NAMED_WITH_ACTION = eINSTANCE.getNamedWithAction();
+    EClass PRF_NAMED_WITH_ACTION = eINSTANCE.getPRFNamedWithAction();
 
     /**
      * The meta object literal for the '<em><b>Prev</b></em>' containment reference feature.
@@ -373,7 +373,7 @@ public interface FragmentTestLanguagePackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference NAMED_WITH_ACTION__PREV = eINSTANCE.getNamedWithAction_Prev();
+    EReference PRF_NAMED_WITH_ACTION__PREV = eINSTANCE.getPRFNamedWithAction_Prev();
 
     /**
      * The meta object literal for the '<em><b>Ref2</b></em>' reference feature.
@@ -381,7 +381,7 @@ public interface FragmentTestLanguagePackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference NAMED_WITH_ACTION__REF2 = eINSTANCE.getNamedWithAction_Ref2();
+    EReference PRF_NAMED_WITH_ACTION__REF2 = eINSTANCE.getPRFNamedWithAction_Ref2();
 
   }
 

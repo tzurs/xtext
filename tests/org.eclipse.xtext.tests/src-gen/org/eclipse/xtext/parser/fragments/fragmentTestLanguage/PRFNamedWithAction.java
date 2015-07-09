@@ -5,22 +5,22 @@ package org.eclipse.xtext.parser.fragments.fragmentTestLanguage;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Named With Action</b></em>'.
+ * A representation of the model object '<em><b>PRF Named With Action</b></em>'.
  * <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.NamedWithAction#getPrev <em>Prev</em>}</li>
- *   <li>{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.NamedWithAction#getRef2 <em>Ref2</em>}</li>
+ *   <li>{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamedWithAction#getPrev <em>Prev</em>}</li>
+ *   <li>{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamedWithAction#getRef2 <em>Ref2</em>}</li>
  * </ul>
  *
- * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.FragmentTestLanguagePackage#getNamedWithAction()
+ * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.FragmentTestLanguagePackage#getPRFNamedWithAction()
  * @model
  * @generated
  */
-public interface NamedWithAction extends Named
+public interface PRFNamedWithAction extends PRFNamed
 {
   /**
    * Returns the value of the '<em><b>Prev</b></em>' containment reference.
@@ -31,22 +31,22 @@ public interface NamedWithAction extends Named
    * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Prev</em>' containment reference.
-   * @see #setPrev(Named)
-   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.FragmentTestLanguagePackage#getNamedWithAction_Prev()
+   * @see #setPrev(PRFNamed)
+   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.FragmentTestLanguagePackage#getPRFNamedWithAction_Prev()
    * @model containment="true"
    * @generated
    */
-  Named getPrev();
+  PRFNamed getPrev();
 
   /**
-   * Sets the value of the '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.NamedWithAction#getPrev <em>Prev</em>}' containment reference.
+   * Sets the value of the '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamedWithAction#getPrev <em>Prev</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>Prev</em>' containment reference.
    * @see #getPrev()
    * @generated
    */
-  void setPrev(Named value);
+  void setPrev(PRFNamed value);
 
   /**
    * Returns the value of the '<em><b>Ref2</b></em>' reference.
@@ -57,21 +57,21 @@ public interface NamedWithAction extends Named
    * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Ref2</em>' reference.
-   * @see #setRef2(Named)
-   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.FragmentTestLanguagePackage#getNamedWithAction_Ref2()
+   * @see #setRef2(PRFNamed)
+   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.FragmentTestLanguagePackage#getPRFNamedWithAction_Ref2()
    * @model
    * @generated
    */
-  Named getRef2();
+  PRFNamed getRef2();
 
   /**
-   * Sets the value of the '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.NamedWithAction#getRef2 <em>Ref2</em>}' reference.
+   * Sets the value of the '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamedWithAction#getRef2 <em>Ref2</em>}' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>Ref2</em>' reference.
    * @see #getRef2()
    * @generated
    */
-  void setRef2(Named value);
+  void setRef2(PRFNamed value);
 
-} // NamedWithAction
+} // PRFNamedWithAction

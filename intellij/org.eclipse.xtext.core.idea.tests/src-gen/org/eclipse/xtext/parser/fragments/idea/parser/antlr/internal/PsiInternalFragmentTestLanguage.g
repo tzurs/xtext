@@ -43,30 +43,30 @@ import com.intellij.lang.PsiBuilder;
 
 	@Override
 	protected String getFirstRuleName() {
-		return "Fragments";
+		return "ParserRuleFragments";
 	}
 
 }
 
-//Entry rule entryRuleFragments
-entryRuleFragments:
-	{ markComposite(elementTypeProvider.getFragmentsElementType()); }
-	ruleFragments
+//Entry rule entryRuleParserRuleFragments
+entryRuleParserRuleFragments:
+	{ markComposite(elementTypeProvider.getParserRuleFragmentsElementType()); }
+	ruleParserRuleFragments
 	EOF;
 
-// Rule Fragments
-ruleFragments:
+// Rule ParserRuleFragments
+ruleParserRuleFragments:
 	(
 		(
 			{
-				precedeComposite(elementTypeProvider.getFragments_FragmentsAction_0ElementType());
+				precedeComposite(elementTypeProvider.getParserRuleFragments_ParserRuleFragmentsAction_0ElementType());
 				doneComposite();
 			}
 		)
 		(
 			(
 				{
-					markLeaf(elementTypeProvider.getFragments_NumberSignDigitOneKeyword_1_0_0ElementType());
+					markLeaf(elementTypeProvider.getParserRuleFragments_NumberSignDigitOneKeyword_1_0_0ElementType());
 				}
 				otherlv_1='#1'
 				{
@@ -75,9 +75,9 @@ ruleFragments:
 				(
 					(
 						{
-							markComposite(elementTypeProvider.getFragments_ElementNamedParserRuleCall_1_0_1_0ElementType());
+							markComposite(elementTypeProvider.getParserRuleFragments_ElementPRFNamedParserRuleCall_1_0_1_0ElementType());
 						}
-						lv_element_2_0=ruleNamed
+						lv_element_2_0=rulePRFNamed
 						{
 							doneComposite();
 						}
@@ -87,7 +87,7 @@ ruleFragments:
 			    |
 			(
 				{
-					markLeaf(elementTypeProvider.getFragments_NumberSignDigitTwoKeyword_1_1_0ElementType());
+					markLeaf(elementTypeProvider.getParserRuleFragments_NumberSignDigitTwoKeyword_1_1_0ElementType());
 				}
 				otherlv_3='#2'
 				{
@@ -96,16 +96,16 @@ ruleFragments:
 				(
 					(
 						{
-							markComposite(elementTypeProvider.getFragments_ElementNamedParserRuleCall_1_1_1_0ElementType());
+							markComposite(elementTypeProvider.getParserRuleFragments_ElementPRFNamedParserRuleCall_1_1_1_0ElementType());
 						}
-						lv_element_4_0=ruleNamed
+						lv_element_4_0=rulePRFNamed
 						{
 							doneComposite();
 						}
 					)
 				)
 				{
-					markLeaf(elementTypeProvider.getFragments_HyphenMinusGreaterThanSignKeyword_1_1_2ElementType());
+					markLeaf(elementTypeProvider.getParserRuleFragments_HyphenMinusGreaterThanSignKeyword_1_1_2ElementType());
 				}
 				otherlv_5='->'
 				{
@@ -114,7 +114,7 @@ ruleFragments:
 				(
 					(
 						{
-							markLeaf(elementTypeProvider.getFragments_RefNamedCrossReference_1_1_3_0ElementType());
+							markLeaf(elementTypeProvider.getParserRuleFragments_RefPRFNamedCrossReference_1_1_3_0ElementType());
 						}
 						otherlv_6=RULE_ID
 						{
@@ -126,7 +126,7 @@ ruleFragments:
 			    |
 			(
 				{
-					markLeaf(elementTypeProvider.getFragments_NumberSignDigitThreeKeyword_1_2_0ElementType());
+					markLeaf(elementTypeProvider.getParserRuleFragments_NumberSignDigitThreeKeyword_1_2_0ElementType());
 				}
 				otherlv_7='#3'
 				{
@@ -135,9 +135,9 @@ ruleFragments:
 				(
 					(
 						{
-							markComposite(elementTypeProvider.getFragments_ElementNamedRefFirstParserRuleCall_1_2_1_0ElementType());
+							markComposite(elementTypeProvider.getParserRuleFragments_ElementPRFNamedRefFirstParserRuleCall_1_2_1_0ElementType());
 						}
-						lv_element_8_0=ruleNamedRefFirst
+						lv_element_8_0=rulePRFNamedRefFirst
 						{
 							doneComposite();
 						}
@@ -147,7 +147,7 @@ ruleFragments:
 			    |
 			(
 				{
-					markLeaf(elementTypeProvider.getFragments_NumberSignDigitFourKeyword_1_3_0ElementType());
+					markLeaf(elementTypeProvider.getParserRuleFragments_NumberSignDigitFourKeyword_1_3_0ElementType());
 				}
 				otherlv_9='#4'
 				{
@@ -156,9 +156,9 @@ ruleFragments:
 				(
 					(
 						{
-							markComposite(elementTypeProvider.getFragments_ElementNamedWithActionParserRuleCall_1_3_1_0ElementType());
+							markComposite(elementTypeProvider.getParserRuleFragments_ElementPRFNamedWithActionParserRuleCall_1_3_1_0ElementType());
 						}
-						lv_element_10_0=ruleNamedWithAction
+						lv_element_10_0=rulePRFNamedWithAction
 						{
 							doneComposite();
 						}
@@ -168,7 +168,7 @@ ruleFragments:
 			    |
 			(
 				{
-					markLeaf(elementTypeProvider.getFragments_NumberSignDigitFiveKeyword_1_4_0ElementType());
+					markLeaf(elementTypeProvider.getParserRuleFragments_NumberSignDigitFiveKeyword_1_4_0ElementType());
 				}
 				otherlv_11='#5'
 				{
@@ -177,9 +177,9 @@ ruleFragments:
 				(
 					(
 						{
-							markComposite(elementTypeProvider.getFragments_ElementNamedWithActionInFragmentParserRuleCall_1_4_1_0ElementType());
+							markComposite(elementTypeProvider.getParserRuleFragments_ElementPRFNamedWithActionInFragmentParserRuleCall_1_4_1_0ElementType());
 						}
-						lv_element_12_0=ruleNamedWithActionInFragment
+						lv_element_12_0=rulePRFNamedWithActionInFragment
 						{
 							doneComposite();
 						}
@@ -189,7 +189,7 @@ ruleFragments:
 			    |
 			(
 				{
-					markLeaf(elementTypeProvider.getFragments_NumberSignDigitSixKeyword_1_5_0ElementType());
+					markLeaf(elementTypeProvider.getParserRuleFragments_NumberSignDigitSixKeyword_1_5_0ElementType());
 				}
 				otherlv_13='#6'
 				{
@@ -198,9 +198,9 @@ ruleFragments:
 				(
 					(
 						{
-							markComposite(elementTypeProvider.getFragments_ElementNamedWithActionInFragment2ParserRuleCall_1_5_1_0ElementType());
+							markComposite(elementTypeProvider.getParserRuleFragments_ElementPRFNamedWithActionInFragment2ParserRuleCall_1_5_1_0ElementType());
 						}
-						lv_element_14_0=ruleNamedWithActionInFragment2
+						lv_element_14_0=rulePRFNamedWithActionInFragment2
 						{
 							doneComposite();
 						}
@@ -210,7 +210,7 @@ ruleFragments:
 			    |
 			(
 				{
-					markLeaf(elementTypeProvider.getFragments_NumberSignDigitSevenKeyword_1_6_0ElementType());
+					markLeaf(elementTypeProvider.getParserRuleFragments_NumberSignDigitSevenKeyword_1_6_0ElementType());
 				}
 				otherlv_15='#7'
 				{
@@ -219,9 +219,9 @@ ruleFragments:
 				(
 					(
 						{
-							markComposite(elementTypeProvider.getFragments_ElementNamedWithActionInFragment3ParserRuleCall_1_6_1_0ElementType());
+							markComposite(elementTypeProvider.getParserRuleFragments_ElementPRFNamedWithActionInFragment3ParserRuleCall_1_6_1_0ElementType());
 						}
-						lv_element_16_0=ruleNamedWithActionInFragment3
+						lv_element_16_0=rulePRFNamedWithActionInFragment3
 						{
 							doneComposite();
 						}
@@ -232,26 +232,26 @@ ruleFragments:
 	)
 ;
 
-//Entry rule entryRuleNamed
-entryRuleNamed:
-	{ markComposite(elementTypeProvider.getNamedElementType()); }
-	ruleNamed
+//Entry rule entryRulePRFNamed
+entryRulePRFNamed:
+	{ markComposite(elementTypeProvider.getPRFNamedElementType()); }
+	rulePRFNamed
 	EOF;
 
-// Rule Named
-ruleNamed:
+// Rule PRFNamed
+rulePRFNamed:
 	(
 		{
-			markComposite(elementTypeProvider.getNamed_NamedFragmentParserRuleCall_0ElementType());
+			markComposite(elementTypeProvider.getPRFNamed_PRFNamedFragmentParserRuleCall_0ElementType());
 		}
-		ruleNamedFragment
+		rulePRFNamedFragment
 		{
 			doneComposite();
 		}
 		(
 			(
 				{
-					markLeaf(elementTypeProvider.getNamed_ColonKeyword_1_0_0ElementType());
+					markLeaf(elementTypeProvider.getPRFNamed_ColonKeyword_1_0_0ElementType());
 				}
 				otherlv_1=':'
 				{
@@ -260,7 +260,7 @@ ruleNamed:
 				(
 					(
 						{
-							markLeaf(elementTypeProvider.getNamed_RefNamedCrossReference_1_0_1_0ElementType());
+							markLeaf(elementTypeProvider.getPRFNamed_RefPRFNamedCrossReference_1_0_1_0ElementType());
 						}
 						otherlv_2=RULE_ID
 						{
@@ -272,16 +272,16 @@ ruleNamed:
 			    |
 			(
 				{
-					markLeaf(elementTypeProvider.getNamed_HyphenMinusKeyword_1_1_0ElementType());
+					markLeaf(elementTypeProvider.getPRFNamed_HyphenMinusKeyword_1_1_0ElementType());
 				}
 				otherlv_3='-'
 				{
 					doneLeaf(otherlv_3);
 				}
 				{
-					markComposite(elementTypeProvider.getNamed_NamedRefParserRuleCall_1_1_1ElementType());
+					markComposite(elementTypeProvider.getPRFNamed_PRFNamedRefParserRuleCall_1_1_1ElementType());
 				}
-				ruleNamedRef
+				rulePRFNamedRef
 				{
 					doneComposite();
 				}
@@ -290,19 +290,19 @@ ruleNamed:
 	)
 ;
 
-//Entry rule entryRuleNamedRefFirst
-entryRuleNamedRefFirst:
-	{ markComposite(elementTypeProvider.getNamedRefFirstElementType()); }
-	ruleNamedRefFirst
+//Entry rule entryRulePRFNamedRefFirst
+entryRulePRFNamedRefFirst:
+	{ markComposite(elementTypeProvider.getPRFNamedRefFirstElementType()); }
+	rulePRFNamedRefFirst
 	EOF;
 
-// Rule NamedRefFirst
-ruleNamedRefFirst:
+// Rule PRFNamedRefFirst
+rulePRFNamedRefFirst:
 	(
 		(
 			(
 				{
-					markLeaf(elementTypeProvider.getNamedRefFirst_RefNamedCrossReference_0_0ElementType());
+					markLeaf(elementTypeProvider.getPRFNamedRefFirst_RefPRFNamedCrossReference_0_0ElementType());
 				}
 				otherlv_0=RULE_ID
 				{
@@ -311,48 +311,48 @@ ruleNamedRefFirst:
 			)
 		)
 		{
-			markLeaf(elementTypeProvider.getNamedRefFirst_LessThanSignHyphenMinusKeyword_1ElementType());
+			markLeaf(elementTypeProvider.getPRFNamedRefFirst_LessThanSignHyphenMinusKeyword_1ElementType());
 		}
 		otherlv_1='<-'
 		{
 			doneLeaf(otherlv_1);
 		}
 		{
-			markComposite(elementTypeProvider.getNamedRefFirst_NamedFragmentParserRuleCall_2ElementType());
+			markComposite(elementTypeProvider.getPRFNamedRefFirst_PRFNamedFragmentParserRuleCall_2ElementType());
 		}
-		ruleNamedFragment
+		rulePRFNamedFragment
 		{
 			doneComposite();
 		}
 	)
 ;
 
-//Entry rule entryRuleNamedWithAction
-entryRuleNamedWithAction:
-	{ markComposite(elementTypeProvider.getNamedWithActionElementType()); }
-	ruleNamedWithAction
+//Entry rule entryRulePRFNamedWithAction
+entryRulePRFNamedWithAction:
+	{ markComposite(elementTypeProvider.getPRFNamedWithActionElementType()); }
+	rulePRFNamedWithAction
 	EOF;
 
-// Rule NamedWithAction
-ruleNamedWithAction:
+// Rule PRFNamedWithAction
+rulePRFNamedWithAction:
 	(
 		{
-			markComposite(elementTypeProvider.getNamedWithAction_NamedParserRuleCall_0ElementType());
+			markComposite(elementTypeProvider.getPRFNamedWithAction_PRFNamedParserRuleCall_0ElementType());
 		}
-		ruleNamed
+		rulePRFNamed
 		{
 			doneComposite();
 		}
 		(
 			{
-				precedeComposite(elementTypeProvider.getNamedWithAction_NamedWithActionPrevAction_1ElementType());
+				precedeComposite(elementTypeProvider.getPRFNamedWithAction_PRFNamedWithActionPrevAction_1ElementType());
 				doneComposite();
 			}
 		)
 		(
 			(
 				{
-					markLeaf(elementTypeProvider.getNamedWithAction_NameIDTerminalRuleCall_2_0ElementType());
+					markLeaf(elementTypeProvider.getPRFNamedWithAction_NameIDTerminalRuleCall_2_0ElementType());
 				}
 				lv_name_2_0=RULE_ID
 				{
@@ -364,7 +364,7 @@ ruleNamedWithAction:
 			(
 				(
 					{
-						markLeaf(elementTypeProvider.getNamedWithAction_RefNamedCrossReference_3_0_0ElementType());
+						markLeaf(elementTypeProvider.getPRFNamedWithAction_RefPRFNamedCrossReference_3_0_0ElementType());
 					}
 					otherlv_3=RULE_ID
 					{
@@ -375,7 +375,7 @@ ruleNamedWithAction:
 			(
 				(
 					{
-						markLeaf(elementTypeProvider.getNamedWithAction_Ref2NamedCrossReference_3_1_0ElementType());
+						markLeaf(elementTypeProvider.getPRFNamedWithAction_Ref2PRFNamedCrossReference_3_1_0ElementType());
 					}
 					otherlv_4=RULE_ID
 					{
@@ -387,17 +387,17 @@ ruleNamedWithAction:
 	)
 ;
 
-//Entry rule entryRuleNamedWithActionInFragment
-entryRuleNamedWithActionInFragment:
-	{ markComposite(elementTypeProvider.getNamedWithActionInFragmentElementType()); }
-	ruleNamedWithActionInFragment
+//Entry rule entryRulePRFNamedWithActionInFragment
+entryRulePRFNamedWithActionInFragment:
+	{ markComposite(elementTypeProvider.getPRFNamedWithActionInFragmentElementType()); }
+	rulePRFNamedWithActionInFragment
 	EOF;
 
-// Rule NamedWithActionInFragment
-ruleNamedWithActionInFragment:
+// Rule PRFNamedWithActionInFragment
+rulePRFNamedWithActionInFragment:
 	(
 		{
-			markComposite(elementTypeProvider.getNamedWithActionInFragment_FragmentWithActionParserRuleCall_0ElementType());
+			markComposite(elementTypeProvider.getPRFNamedWithActionInFragment_FragmentWithActionParserRuleCall_0ElementType());
 		}
 		ruleFragmentWithAction
 		{
@@ -405,7 +405,7 @@ ruleNamedWithActionInFragment:
 		}
 		(
 			{
-				markLeaf(elementTypeProvider.getNamedWithActionInFragment_HyphenMinusKeyword_1_0ElementType());
+				markLeaf(elementTypeProvider.getPRFNamedWithActionInFragment_HyphenMinusKeyword_1_0ElementType());
 			}
 			otherlv_1='-'
 			{
@@ -414,7 +414,7 @@ ruleNamedWithActionInFragment:
 			(
 				(
 					{
-						markLeaf(elementTypeProvider.getNamedWithActionInFragment_RefNamedCrossReference_1_1_0ElementType());
+						markLeaf(elementTypeProvider.getPRFNamedWithActionInFragment_RefPRFNamedCrossReference_1_1_0ElementType());
 					}
 					otherlv_2=RULE_ID
 					{
@@ -426,19 +426,19 @@ ruleNamedWithActionInFragment:
 	)
 ;
 
-//Entry rule entryRuleNamedWithActionInFragment2
-entryRuleNamedWithActionInFragment2:
-	{ markComposite(elementTypeProvider.getNamedWithActionInFragment2ElementType()); }
-	ruleNamedWithActionInFragment2
+//Entry rule entryRulePRFNamedWithActionInFragment2
+entryRulePRFNamedWithActionInFragment2:
+	{ markComposite(elementTypeProvider.getPRFNamedWithActionInFragment2ElementType()); }
+	rulePRFNamedWithActionInFragment2
 	EOF;
 
-// Rule NamedWithActionInFragment2
-ruleNamedWithActionInFragment2:
+// Rule PRFNamedWithActionInFragment2
+rulePRFNamedWithActionInFragment2:
 	(
 		(
 			(
 				{
-					markLeaf(elementTypeProvider.getNamedWithActionInFragment2_NameIDTerminalRuleCall_0_0ElementType());
+					markLeaf(elementTypeProvider.getPRFNamedWithActionInFragment2_NameIDTerminalRuleCall_0_0ElementType());
 				}
 				lv_name_0_0=RULE_ID
 				{
@@ -447,7 +447,7 @@ ruleNamedWithActionInFragment2:
 			)
 		)
 		{
-			markComposite(elementTypeProvider.getNamedWithActionInFragment2_FragmentWithAction2ParserRuleCall_1ElementType());
+			markComposite(elementTypeProvider.getPRFNamedWithActionInFragment2_FragmentWithAction2ParserRuleCall_1ElementType());
 		}
 		ruleFragmentWithAction2
 		{
@@ -455,7 +455,7 @@ ruleNamedWithActionInFragment2:
 		}
 		(
 			{
-				markLeaf(elementTypeProvider.getNamedWithActionInFragment2_HyphenMinusKeyword_2_0ElementType());
+				markLeaf(elementTypeProvider.getPRFNamedWithActionInFragment2_HyphenMinusKeyword_2_0ElementType());
 			}
 			otherlv_2='-'
 			{
@@ -464,7 +464,7 @@ ruleNamedWithActionInFragment2:
 			(
 				(
 					{
-						markLeaf(elementTypeProvider.getNamedWithActionInFragment2_RefNamedCrossReference_2_1_0ElementType());
+						markLeaf(elementTypeProvider.getPRFNamedWithActionInFragment2_RefPRFNamedCrossReference_2_1_0ElementType());
 					}
 					otherlv_3=RULE_ID
 					{
@@ -476,17 +476,17 @@ ruleNamedWithActionInFragment2:
 	)
 ;
 
-//Entry rule entryRuleNamedWithActionInFragment3
-entryRuleNamedWithActionInFragment3:
-	{ markComposite(elementTypeProvider.getNamedWithActionInFragment3ElementType()); }
-	ruleNamedWithActionInFragment3
+//Entry rule entryRulePRFNamedWithActionInFragment3
+entryRulePRFNamedWithActionInFragment3:
+	{ markComposite(elementTypeProvider.getPRFNamedWithActionInFragment3ElementType()); }
+	rulePRFNamedWithActionInFragment3
 	EOF;
 
-// Rule NamedWithActionInFragment3
-ruleNamedWithActionInFragment3:
+// Rule PRFNamedWithActionInFragment3
+rulePRFNamedWithActionInFragment3:
 	(
 		{
-			markComposite(elementTypeProvider.getNamedWithActionInFragment3_FragmentWithAction3ParserRuleCall_0ElementType());
+			markComposite(elementTypeProvider.getPRFNamedWithActionInFragment3_FragmentWithAction3ParserRuleCall_0ElementType());
 		}
 		ruleFragmentWithAction3
 		{
@@ -494,7 +494,7 @@ ruleNamedWithActionInFragment3:
 		}
 		(
 			{
-				markLeaf(elementTypeProvider.getNamedWithActionInFragment3_HyphenMinusKeyword_1_0ElementType());
+				markLeaf(elementTypeProvider.getPRFNamedWithActionInFragment3_HyphenMinusKeyword_1_0ElementType());
 			}
 			otherlv_1='-'
 			{
@@ -503,7 +503,7 @@ ruleNamedWithActionInFragment3:
 			(
 				(
 					{
-						markLeaf(elementTypeProvider.getNamedWithActionInFragment3_RefNamedCrossReference_1_1_0ElementType());
+						markLeaf(elementTypeProvider.getPRFNamedWithActionInFragment3_RefPRFNamedCrossReference_1_1_0ElementType());
 					}
 					otherlv_2=RULE_ID
 					{
@@ -537,7 +537,7 @@ ruleFragmentWithAction:
 		)
 		(
 			{
-				precedeComposite(elementTypeProvider.getFragmentWithAction_NamedWithActionPrevAction_1ElementType());
+				precedeComposite(elementTypeProvider.getFragmentWithAction_PRFNamedWithActionPrevAction_1ElementType());
 				doneComposite();
 			}
 		)
@@ -555,7 +555,7 @@ ruleFragmentWithAction:
 		(
 			(
 				{
-					markLeaf(elementTypeProvider.getFragmentWithAction_Ref2NamedCrossReference_3_0ElementType());
+					markLeaf(elementTypeProvider.getFragmentWithAction_Ref2PRFNamedCrossReference_3_0ElementType());
 				}
 				otherlv_3=RULE_ID
 				{
@@ -577,7 +577,7 @@ ruleFragmentWithAction2:
 	(
 		(
 			{
-				precedeComposite(elementTypeProvider.getFragmentWithAction2_NamedWithActionPrevAction_0ElementType());
+				precedeComposite(elementTypeProvider.getFragmentWithAction2_PRFNamedWithActionPrevAction_0ElementType());
 				doneComposite();
 			}
 		)
@@ -595,7 +595,7 @@ ruleFragmentWithAction2:
 		(
 			(
 				{
-					markLeaf(elementTypeProvider.getFragmentWithAction2_Ref2NamedCrossReference_2_0ElementType());
+					markLeaf(elementTypeProvider.getFragmentWithAction2_Ref2PRFNamedCrossReference_2_0ElementType());
 				}
 				otherlv_2=RULE_ID
 				{
@@ -629,7 +629,7 @@ ruleFragmentWithAction3:
 		(
 			(
 				{
-					precedeComposite(elementTypeProvider.getFragmentWithAction3_NamedWithActionPrevAction_1_0ElementType());
+					precedeComposite(elementTypeProvider.getFragmentWithAction3_PRFNamedWithActionPrevAction_1_0ElementType());
 					doneComposite();
 				}
 			)
@@ -654,7 +654,7 @@ ruleFragmentWithAction3:
 			(
 				(
 					{
-						markLeaf(elementTypeProvider.getFragmentWithAction3_Ref2NamedCrossReference_1_3_0ElementType());
+						markLeaf(elementTypeProvider.getFragmentWithAction3_Ref2PRFNamedCrossReference_1_3_0ElementType());
 					}
 					otherlv_4=RULE_ID
 					{
@@ -666,18 +666,18 @@ ruleFragmentWithAction3:
 	)
 ;
 
-//Entry rule entryRuleNamedFragment
-entryRuleNamedFragment:
-	{ markComposite(elementTypeProvider.getNamedFragmentElementType()); }
-	ruleNamedFragment
+//Entry rule entryRulePRFNamedFragment
+entryRulePRFNamedFragment:
+	{ markComposite(elementTypeProvider.getPRFNamedFragmentElementType()); }
+	rulePRFNamedFragment
 	EOF;
 
-// Rule NamedFragment
-ruleNamedFragment:
+// Rule PRFNamedFragment
+rulePRFNamedFragment:
 	(
 		(
 			{
-				markLeaf(elementTypeProvider.getNamedFragment_NameIDTerminalRuleCall_0ElementType());
+				markLeaf(elementTypeProvider.getPRFNamedFragment_NameIDTerminalRuleCall_0ElementType());
 			}
 			lv_name_0_0=RULE_ID
 			{
@@ -687,18 +687,18 @@ ruleNamedFragment:
 	)
 ;
 
-//Entry rule entryRuleNamedRef
-entryRuleNamedRef:
-	{ markComposite(elementTypeProvider.getNamedRefElementType()); }
-	ruleNamedRef
+//Entry rule entryRulePRFNamedRef
+entryRulePRFNamedRef:
+	{ markComposite(elementTypeProvider.getPRFNamedRefElementType()); }
+	rulePRFNamedRef
 	EOF;
 
-// Rule NamedRef
-ruleNamedRef:
+// Rule PRFNamedRef
+rulePRFNamedRef:
 	(
 		(
 			{
-				markLeaf(elementTypeProvider.getNamedRef_RefNamedCrossReference_0ElementType());
+				markLeaf(elementTypeProvider.getPRFNamedRef_RefPRFNamedCrossReference_0ElementType());
 			}
 			otherlv_0=RULE_ID
 			{

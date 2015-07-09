@@ -6,22 +6,22 @@ import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Fragments</b></em>'.
+ * A representation of the model object '<em><b>Parser Rule Fragments</b></em>'.
  * <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Fragments#getElement <em>Element</em>}</li>
- *   <li>{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Fragments#getRef <em>Ref</em>}</li>
+ *   <li>{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.ParserRuleFragments#getElement <em>Element</em>}</li>
+ *   <li>{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.ParserRuleFragments#getRef <em>Ref</em>}</li>
  * </ul>
  *
- * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.FragmentTestLanguagePackage#getFragments()
+ * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.FragmentTestLanguagePackage#getParserRuleFragments()
  * @model
  * @generated
  */
-public interface Fragments extends EObject
+public interface ParserRuleFragments extends EObject
 {
   /**
    * Returns the value of the '<em><b>Element</b></em>' containment reference.
@@ -32,22 +32,22 @@ public interface Fragments extends EObject
    * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Element</em>' containment reference.
-   * @see #setElement(Named)
-   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.FragmentTestLanguagePackage#getFragments_Element()
+   * @see #setElement(PRFNamed)
+   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.FragmentTestLanguagePackage#getParserRuleFragments_Element()
    * @model containment="true"
    * @generated
    */
-  Named getElement();
+  PRFNamed getElement();
 
   /**
-   * Sets the value of the '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Fragments#getElement <em>Element</em>}' containment reference.
+   * Sets the value of the '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.ParserRuleFragments#getElement <em>Element</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>Element</em>' containment reference.
    * @see #getElement()
    * @generated
    */
-  void setElement(Named value);
+  void setElement(PRFNamed value);
 
   /**
    * Returns the value of the '<em><b>Ref</b></em>' reference.
@@ -58,21 +58,21 @@ public interface Fragments extends EObject
    * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Ref</em>' reference.
-   * @see #setRef(Named)
-   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.FragmentTestLanguagePackage#getFragments_Ref()
+   * @see #setRef(PRFNamed)
+   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.FragmentTestLanguagePackage#getParserRuleFragments_Ref()
    * @model
    * @generated
    */
-  Named getRef();
+  PRFNamed getRef();
 
   /**
-   * Sets the value of the '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Fragments#getRef <em>Ref</em>}' reference.
+   * Sets the value of the '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.ParserRuleFragments#getRef <em>Ref</em>}' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>Ref</em>' reference.
    * @see #getRef()
    * @generated
    */
-  void setRef(Named value);
+  void setRef(PRFNamed value);
 
-} // Fragments
+} // ParserRuleFragments

@@ -11,19 +11,19 @@ import com.google.inject.Inject
 import org.eclipse.xtext.junit4.util.ParseHelper
 import org.eclipse.xtext.junit4.validation.ValidationTestHelper
 import org.eclipse.xtext.nodemodel.impl.InvariantChecker
-import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Fragments
-import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.NamedWithAction
 import org.eclipse.xtext.resource.XtextResource
 import org.junit.Test
 
 import static org.junit.Assert.*
+import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.ParserRuleFragments
+import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamedWithAction
 
 /**
  * @author Sebastian Zarnekow - Initial contribution and API
  */
 abstract class AbstractFragmentsTest {
 	@Inject
-	extension ParseHelper<Fragments> parseHelper
+	extension ParseHelper<ParserRuleFragments> parseHelper
 	
 	@Inject
 	extension ValidationTestHelper validationTestHelper
@@ -75,7 +75,7 @@ abstract class AbstractFragmentsTest {
 		val fragments = '#4 prev current'.parseAndValidate
 		assertNotNull(fragments)
 		assertEquals('current', fragments.element.name)
-		assertEquals('prev', (fragments.element as NamedWithAction).prev.name)
+		assertEquals('prev', (fragments.element as PRFNamedWithAction).prev.name)
 	}
 	
 	@Test
@@ -84,11 +84,11 @@ abstract class AbstractFragmentsTest {
 		assertNotNull(fragments)
 		val element = fragments.element
 		assertEquals('current', element.name)
-		val prev = (element as NamedWithAction).prev
+		val prev = (element as PRFNamedWithAction).prev
 		assertEquals('prev', prev.name)
 		
 		assertEquals(prev, element.ref)
-		assertEquals(element, (element as NamedWithAction).ref2)
+		assertEquals(element, (element as PRFNamedWithAction).ref2)
 	}
 	
 	@Test
@@ -96,7 +96,7 @@ abstract class AbstractFragmentsTest {
 		val fragments = '#5 prev current'.parseAndValidate
 		assertNotNull(fragments)
 		assertEquals('current', fragments.element.name)
-		assertEquals('prev', (fragments.element as NamedWithAction).prev.name)
+		assertEquals('prev', (fragments.element as PRFNamedWithAction).prev.name)
 	}
 	
 	@Test
@@ -104,7 +104,7 @@ abstract class AbstractFragmentsTest {
 		val fragments = '#6 prev current'.parseAndValidate
 		assertNotNull(fragments)
 		assertEquals('current', fragments.element.name)
-		assertEquals('prev', (fragments.element as NamedWithAction).prev.name)
+		assertEquals('prev', (fragments.element as PRFNamedWithAction).prev.name)
 	}
 	
 	@Test
@@ -113,11 +113,11 @@ abstract class AbstractFragmentsTest {
 		assertNotNull(fragments)
 		val element = fragments.element
 		assertEquals('current', element.name)
-		val prev = (element as NamedWithAction).prev
+		val prev = (element as PRFNamedWithAction).prev
 		assertEquals('prev', prev.name)
 		
 		assertEquals(prev, element.ref)
-		assertEquals(element, (element as NamedWithAction).ref2)
+		assertEquals(element, (element as PRFNamedWithAction).ref2)
 	}
 	
 	@Test
@@ -126,11 +126,11 @@ abstract class AbstractFragmentsTest {
 		assertNotNull(fragments)
 		val element = fragments.element
 		assertEquals('current', element.name)
-		val prev = (element as NamedWithAction).prev
+		val prev = (element as PRFNamedWithAction).prev
 		assertEquals('prev', prev.name)
 		
 		assertEquals(prev, element.ref)
-		assertEquals(element, (element as NamedWithAction).ref2)
+		assertEquals(element, (element as PRFNamedWithAction).ref2)
 	}
 	
 	@Test
@@ -139,7 +139,7 @@ abstract class AbstractFragmentsTest {
 		assertNotNull(fragments)
 		
 		var element = fragments.element
-		while(element instanceof NamedWithAction) {
+		while(element instanceof PRFNamedWithAction) {
 			assertEquals(element, element.ref2)
 			element = element.prev
 		}

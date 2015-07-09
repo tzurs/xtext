@@ -3,53 +3,53 @@
  */
 grammar DebugInternalFragmentTestLanguage ;
 
-// Rule Fragments
-ruleFragments :
-	'#1' ruleNamed |
-	'#2' ruleNamed '->' RULE_ID |
-	'#3' ruleNamedRefFirst |
-	'#4' ruleNamedWithAction |
-	'#5' ruleNamedWithActionInFragment |
-	'#6' ruleNamedWithActionInFragment2 |
-	'#7' ruleNamedWithActionInFragment3
+// Rule ParserRuleFragments
+ruleParserRuleFragments :
+	'#1' rulePRFNamed |
+	'#2' rulePRFNamed '->' RULE_ID |
+	'#3' rulePRFNamedRefFirst |
+	'#4' rulePRFNamedWithAction |
+	'#5' rulePRFNamedWithActionInFragment |
+	'#6' rulePRFNamedWithActionInFragment2 |
+	'#7' rulePRFNamedWithActionInFragment3
 ;
 
-// Rule Named
-ruleNamed :
-	ruleNamedFragment (
+// Rule PRFNamed
+rulePRFNamed :
+	rulePRFNamedFragment (
 		':' RULE_ID |
-		'-' ruleNamedRef
+		'-' rulePRFNamedRef
 	)?
 ;
 
-// Rule NamedRefFirst
-ruleNamedRefFirst :
-	RULE_ID '<-' ruleNamedFragment
+// Rule PRFNamedRefFirst
+rulePRFNamedRefFirst :
+	RULE_ID '<-' rulePRFNamedFragment
 ;
 
-// Rule NamedWithAction
-ruleNamedWithAction :
-	ruleNamed RULE_ID (
+// Rule PRFNamedWithAction
+rulePRFNamedWithAction :
+	rulePRFNamed RULE_ID (
 		RULE_ID RULE_ID
 	)?
 ;
 
-// Rule NamedWithActionInFragment
-ruleNamedWithActionInFragment :
+// Rule PRFNamedWithActionInFragment
+rulePRFNamedWithActionInFragment :
 	ruleFragmentWithAction (
 		'-' RULE_ID
 	)?
 ;
 
-// Rule NamedWithActionInFragment2
-ruleNamedWithActionInFragment2 :
+// Rule PRFNamedWithActionInFragment2
+rulePRFNamedWithActionInFragment2 :
 	RULE_ID ruleFragmentWithAction2 (
 		'-' RULE_ID
 	)?
 ;
 
-// Rule NamedWithActionInFragment3
-ruleNamedWithActionInFragment3 :
+// Rule PRFNamedWithActionInFragment3
+rulePRFNamedWithActionInFragment3 :
 	ruleFragmentWithAction3 (
 		'-' RULE_ID
 	)?
@@ -72,13 +72,13 @@ ruleFragmentWithAction3 :
 	)*
 ;
 
-// Rule NamedFragment
-ruleNamedFragment :
+// Rule PRFNamedFragment
+rulePRFNamedFragment :
 	RULE_ID
 ;
 
-// Rule NamedRef
-ruleNamedRef :
+// Rule PRFNamedRef
+rulePRFNamedRef :
 	RULE_ID
 ;
 

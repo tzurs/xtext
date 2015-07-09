@@ -25,7 +25,7 @@ public class FragmentTestLanguageParser extends org.eclipse.xtext.parser.antlr.A
 	
 	@Override 
 	protected String getDefaultRuleName() {
-		return "Fragments";
+		return "ParserRuleFragments";
 	}
 	
 	public FragmentTestLanguageGrammarAccess getGrammarAccess() {

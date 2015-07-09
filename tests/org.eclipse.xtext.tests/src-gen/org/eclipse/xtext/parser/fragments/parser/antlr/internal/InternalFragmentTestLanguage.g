@@ -44,7 +44,7 @@ import org.eclipse.xtext.parser.fragments.services.FragmentTestLanguageGrammarAc
     
     @Override
     protected String getFirstRuleName() {
-    	return "Fragments";	
+    	return "ParserRuleFragments";	
    	}
    	
    	@Override
@@ -63,44 +63,44 @@ import org.eclipse.xtext.parser.fragments.services.FragmentTestLanguageGrammarAc
 
 
 
-// Entry rule entryRuleFragments
-entryRuleFragments returns [EObject current=null] 
+// Entry rule entryRuleParserRuleFragments
+entryRuleParserRuleFragments returns [EObject current=null] 
 	:
-	{ newCompositeNode(grammarAccess.getFragmentsRule()); }
-	 iv_ruleFragments=ruleFragments 
-	 { $current=$iv_ruleFragments.current; } 
+	{ newCompositeNode(grammarAccess.getParserRuleFragmentsRule()); }
+	 iv_ruleParserRuleFragments=ruleParserRuleFragments 
+	 { $current=$iv_ruleParserRuleFragments.current; } 
 	 EOF 
 ;
 
-// Rule Fragments
-ruleFragments returns [EObject current=null] 
+// Rule ParserRuleFragments
+ruleParserRuleFragments returns [EObject current=null] 
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
 ((
     {
         $current = forceCreateModelElement(
-            grammarAccess.getFragmentsAccess().getFragmentsAction_0(),
+            grammarAccess.getParserRuleFragmentsAccess().getParserRuleFragmentsAction_0(),
             $current);
     }
 )((	otherlv_1='#1' 
     {
-    	newLeafNode(otherlv_1, grammarAccess.getFragmentsAccess().getNumberSignDigitOneKeyword_1_0_0());
+    	newLeafNode(otherlv_1, grammarAccess.getParserRuleFragmentsAccess().getNumberSignDigitOneKeyword_1_0_0());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getFragmentsAccess().getElementNamedParserRuleCall_1_0_1_0()); 
+	        newCompositeNode(grammarAccess.getParserRuleFragmentsAccess().getElementPRFNamedParserRuleCall_1_0_1_0()); 
 	    }
-		lv_element_2_0=ruleNamed		{
+		lv_element_2_0=rulePRFNamed		{
 	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getFragmentsRule());
+	            $current = createModelElementForParent(grammarAccess.getParserRuleFragmentsRule());
 	        }
        		set(
        			$current, 
        			"element",
         		lv_element_2_0, 
-        		"Named");
+        		"PRFNamed");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -108,62 +108,62 @@ ruleFragments returns [EObject current=null]
 ))
     |(	otherlv_3='#2' 
     {
-    	newLeafNode(otherlv_3, grammarAccess.getFragmentsAccess().getNumberSignDigitTwoKeyword_1_1_0());
+    	newLeafNode(otherlv_3, grammarAccess.getParserRuleFragmentsAccess().getNumberSignDigitTwoKeyword_1_1_0());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getFragmentsAccess().getElementNamedParserRuleCall_1_1_1_0()); 
+	        newCompositeNode(grammarAccess.getParserRuleFragmentsAccess().getElementPRFNamedParserRuleCall_1_1_1_0()); 
 	    }
-		lv_element_4_0=ruleNamed		{
+		lv_element_4_0=rulePRFNamed		{
 	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getFragmentsRule());
+	            $current = createModelElementForParent(grammarAccess.getParserRuleFragmentsRule());
 	        }
        		set(
        			$current, 
        			"element",
         		lv_element_4_0, 
-        		"Named");
+        		"PRFNamed");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
 )	otherlv_5='->' 
     {
-    	newLeafNode(otherlv_5, grammarAccess.getFragmentsAccess().getHyphenMinusGreaterThanSignKeyword_1_1_2());
+    	newLeafNode(otherlv_5, grammarAccess.getParserRuleFragmentsAccess().getHyphenMinusGreaterThanSignKeyword_1_1_2());
     }
 (
 (
 		{
 			if ($current==null) {
-	            $current = createModelElement(grammarAccess.getFragmentsRule());
+	            $current = createModelElement(grammarAccess.getParserRuleFragmentsRule());
 	        }
         }
 	otherlv_6=RULE_ID
 	{
-		newLeafNode(otherlv_6, grammarAccess.getFragmentsAccess().getRefNamedCrossReference_1_1_3_0()); 
+		newLeafNode(otherlv_6, grammarAccess.getParserRuleFragmentsAccess().getRefPRFNamedCrossReference_1_1_3_0()); 
 	}
 
 )
 ))
     |(	otherlv_7='#3' 
     {
-    	newLeafNode(otherlv_7, grammarAccess.getFragmentsAccess().getNumberSignDigitThreeKeyword_1_2_0());
+    	newLeafNode(otherlv_7, grammarAccess.getParserRuleFragmentsAccess().getNumberSignDigitThreeKeyword_1_2_0());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getFragmentsAccess().getElementNamedRefFirstParserRuleCall_1_2_1_0()); 
+	        newCompositeNode(grammarAccess.getParserRuleFragmentsAccess().getElementPRFNamedRefFirstParserRuleCall_1_2_1_0()); 
 	    }
-		lv_element_8_0=ruleNamedRefFirst		{
+		lv_element_8_0=rulePRFNamedRefFirst		{
 	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getFragmentsRule());
+	            $current = createModelElementForParent(grammarAccess.getParserRuleFragmentsRule());
 	        }
        		set(
        			$current, 
        			"element",
         		lv_element_8_0, 
-        		"NamedRefFirst");
+        		"PRFNamedRefFirst");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -171,22 +171,22 @@ ruleFragments returns [EObject current=null]
 ))
     |(	otherlv_9='#4' 
     {
-    	newLeafNode(otherlv_9, grammarAccess.getFragmentsAccess().getNumberSignDigitFourKeyword_1_3_0());
+    	newLeafNode(otherlv_9, grammarAccess.getParserRuleFragmentsAccess().getNumberSignDigitFourKeyword_1_3_0());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getFragmentsAccess().getElementNamedWithActionParserRuleCall_1_3_1_0()); 
+	        newCompositeNode(grammarAccess.getParserRuleFragmentsAccess().getElementPRFNamedWithActionParserRuleCall_1_3_1_0()); 
 	    }
-		lv_element_10_0=ruleNamedWithAction		{
+		lv_element_10_0=rulePRFNamedWithAction		{
 	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getFragmentsRule());
+	            $current = createModelElementForParent(grammarAccess.getParserRuleFragmentsRule());
 	        }
        		set(
        			$current, 
        			"element",
         		lv_element_10_0, 
-        		"NamedWithAction");
+        		"PRFNamedWithAction");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -194,22 +194,22 @@ ruleFragments returns [EObject current=null]
 ))
     |(	otherlv_11='#5' 
     {
-    	newLeafNode(otherlv_11, grammarAccess.getFragmentsAccess().getNumberSignDigitFiveKeyword_1_4_0());
+    	newLeafNode(otherlv_11, grammarAccess.getParserRuleFragmentsAccess().getNumberSignDigitFiveKeyword_1_4_0());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getFragmentsAccess().getElementNamedWithActionInFragmentParserRuleCall_1_4_1_0()); 
+	        newCompositeNode(grammarAccess.getParserRuleFragmentsAccess().getElementPRFNamedWithActionInFragmentParserRuleCall_1_4_1_0()); 
 	    }
-		lv_element_12_0=ruleNamedWithActionInFragment		{
+		lv_element_12_0=rulePRFNamedWithActionInFragment		{
 	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getFragmentsRule());
+	            $current = createModelElementForParent(grammarAccess.getParserRuleFragmentsRule());
 	        }
        		set(
        			$current, 
        			"element",
         		lv_element_12_0, 
-        		"NamedWithActionInFragment");
+        		"PRFNamedWithActionInFragment");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -217,22 +217,22 @@ ruleFragments returns [EObject current=null]
 ))
     |(	otherlv_13='#6' 
     {
-    	newLeafNode(otherlv_13, grammarAccess.getFragmentsAccess().getNumberSignDigitSixKeyword_1_5_0());
+    	newLeafNode(otherlv_13, grammarAccess.getParserRuleFragmentsAccess().getNumberSignDigitSixKeyword_1_5_0());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getFragmentsAccess().getElementNamedWithActionInFragment2ParserRuleCall_1_5_1_0()); 
+	        newCompositeNode(grammarAccess.getParserRuleFragmentsAccess().getElementPRFNamedWithActionInFragment2ParserRuleCall_1_5_1_0()); 
 	    }
-		lv_element_14_0=ruleNamedWithActionInFragment2		{
+		lv_element_14_0=rulePRFNamedWithActionInFragment2		{
 	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getFragmentsRule());
+	            $current = createModelElementForParent(grammarAccess.getParserRuleFragmentsRule());
 	        }
        		set(
        			$current, 
        			"element",
         		lv_element_14_0, 
-        		"NamedWithActionInFragment2");
+        		"PRFNamedWithActionInFragment2");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -240,22 +240,22 @@ ruleFragments returns [EObject current=null]
 ))
     |(	otherlv_15='#7' 
     {
-    	newLeafNode(otherlv_15, grammarAccess.getFragmentsAccess().getNumberSignDigitSevenKeyword_1_6_0());
+    	newLeafNode(otherlv_15, grammarAccess.getParserRuleFragmentsAccess().getNumberSignDigitSevenKeyword_1_6_0());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getFragmentsAccess().getElementNamedWithActionInFragment3ParserRuleCall_1_6_1_0()); 
+	        newCompositeNode(grammarAccess.getParserRuleFragmentsAccess().getElementPRFNamedWithActionInFragment3ParserRuleCall_1_6_1_0()); 
 	    }
-		lv_element_16_0=ruleNamedWithActionInFragment3		{
+		lv_element_16_0=rulePRFNamedWithActionInFragment3		{
 	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getFragmentsRule());
+	            $current = createModelElementForParent(grammarAccess.getParserRuleFragmentsRule());
 	        }
        		set(
        			$current, 
        			"element",
         		lv_element_16_0, 
-        		"NamedWithActionInFragment3");
+        		"PRFNamedWithActionInFragment3");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -267,64 +267,64 @@ ruleFragments returns [EObject current=null]
 
 
 
-// Entry rule entryRuleNamed
-entryRuleNamed returns [EObject current=null] 
+// Entry rule entryRulePRFNamed
+entryRulePRFNamed returns [EObject current=null] 
 	:
-	{ newCompositeNode(grammarAccess.getNamedRule()); }
-	 iv_ruleNamed=ruleNamed 
-	 { $current=$iv_ruleNamed.current; } 
+	{ newCompositeNode(grammarAccess.getPRFNamedRule()); }
+	 iv_rulePRFNamed=rulePRFNamed 
+	 { $current=$iv_rulePRFNamed.current; } 
 	 EOF 
 ;
 
-// Rule Named
-ruleNamed returns [EObject current=null] 
+// Rule PRFNamed
+rulePRFNamed returns [EObject current=null] 
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
 (
     { 
 		if ($current==null) {
-			$current = createModelElement(grammarAccess.getNamedRule());
+			$current = createModelElement(grammarAccess.getPRFNamedRule());
 		}
-        newCompositeNode(grammarAccess.getNamedAccess().getNamedFragmentParserRuleCall_0()); 
+        newCompositeNode(grammarAccess.getPRFNamedAccess().getPRFNamedFragmentParserRuleCall_0()); 
     }
-    this_NamedFragment_0=ruleNamedFragment[$current]
+    this_PRFNamedFragment_0=rulePRFNamedFragment[$current]
     { 
-        $current = $this_NamedFragment_0.current; 
+        $current = $this_PRFNamedFragment_0.current; 
         afterParserOrEnumRuleCall();
     }
 ((	otherlv_1=':' 
     {
-    	newLeafNode(otherlv_1, grammarAccess.getNamedAccess().getColonKeyword_1_0_0());
+    	newLeafNode(otherlv_1, grammarAccess.getPRFNamedAccess().getColonKeyword_1_0_0());
     }
 (
 (
 		{
 			if ($current==null) {
-	            $current = createModelElement(grammarAccess.getNamedRule());
+	            $current = createModelElement(grammarAccess.getPRFNamedRule());
 	        }
         }
 	otherlv_2=RULE_ID
 	{
-		newLeafNode(otherlv_2, grammarAccess.getNamedAccess().getRefNamedCrossReference_1_0_1_0()); 
+		newLeafNode(otherlv_2, grammarAccess.getPRFNamedAccess().getRefPRFNamedCrossReference_1_0_1_0()); 
 	}
 
 )
 ))
     |(	otherlv_3='-' 
     {
-    	newLeafNode(otherlv_3, grammarAccess.getNamedAccess().getHyphenMinusKeyword_1_1_0());
+    	newLeafNode(otherlv_3, grammarAccess.getPRFNamedAccess().getHyphenMinusKeyword_1_1_0());
     }
 
     { 
 		if ($current==null) {
-			$current = createModelElement(grammarAccess.getNamedRule());
+			$current = createModelElement(grammarAccess.getPRFNamedRule());
 		}
-        newCompositeNode(grammarAccess.getNamedAccess().getNamedRefParserRuleCall_1_1_1()); 
+        newCompositeNode(grammarAccess.getPRFNamedAccess().getPRFNamedRefParserRuleCall_1_1_1()); 
     }
-    this_NamedRef_4=ruleNamedRef[$current]
+    this_PRFNamedRef_4=rulePRFNamedRef[$current]
     { 
-        $current = $this_NamedRef_4.current; 
+        $current = $this_PRFNamedRef_4.current; 
         afterParserOrEnumRuleCall();
     }
 ))?)
@@ -334,17 +334,17 @@ ruleNamed returns [EObject current=null]
 
 
 
-// Entry rule entryRuleNamedRefFirst
-entryRuleNamedRefFirst returns [EObject current=null] 
+// Entry rule entryRulePRFNamedRefFirst
+entryRulePRFNamedRefFirst returns [EObject current=null] 
 	:
-	{ newCompositeNode(grammarAccess.getNamedRefFirstRule()); }
-	 iv_ruleNamedRefFirst=ruleNamedRefFirst 
-	 { $current=$iv_ruleNamedRefFirst.current; } 
+	{ newCompositeNode(grammarAccess.getPRFNamedRefFirstRule()); }
+	 iv_rulePRFNamedRefFirst=rulePRFNamedRefFirst 
+	 { $current=$iv_rulePRFNamedRefFirst.current; } 
 	 EOF 
 ;
 
-// Rule NamedRefFirst
-ruleNamedRefFirst returns [EObject current=null] 
+// Rule PRFNamedRefFirst
+rulePRFNamedRefFirst returns [EObject current=null] 
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
@@ -352,29 +352,29 @@ ruleNamedRefFirst returns [EObject current=null]
 (
 		{
 			if ($current==null) {
-	            $current = createModelElement(grammarAccess.getNamedRefFirstRule());
+	            $current = createModelElement(grammarAccess.getPRFNamedRefFirstRule());
 	        }
         }
 	otherlv_0=RULE_ID
 	{
-		newLeafNode(otherlv_0, grammarAccess.getNamedRefFirstAccess().getRefNamedCrossReference_0_0()); 
+		newLeafNode(otherlv_0, grammarAccess.getPRFNamedRefFirstAccess().getRefPRFNamedCrossReference_0_0()); 
 	}
 
 )
 )	otherlv_1='<-' 
     {
-    	newLeafNode(otherlv_1, grammarAccess.getNamedRefFirstAccess().getLessThanSignHyphenMinusKeyword_1());
+    	newLeafNode(otherlv_1, grammarAccess.getPRFNamedRefFirstAccess().getLessThanSignHyphenMinusKeyword_1());
     }
 
     { 
 		if ($current==null) {
-			$current = createModelElement(grammarAccess.getNamedRefFirstRule());
+			$current = createModelElement(grammarAccess.getPRFNamedRefFirstRule());
 		}
-        newCompositeNode(grammarAccess.getNamedRefFirstAccess().getNamedFragmentParserRuleCall_2()); 
+        newCompositeNode(grammarAccess.getPRFNamedRefFirstAccess().getPRFNamedFragmentParserRuleCall_2()); 
     }
-    this_NamedFragment_2=ruleNamedFragment[$current]
+    this_PRFNamedFragment_2=rulePRFNamedFragment[$current]
     { 
-        $current = $this_NamedFragment_2.current; 
+        $current = $this_PRFNamedFragment_2.current; 
         afterParserOrEnumRuleCall();
     }
 )
@@ -384,44 +384,44 @@ ruleNamedRefFirst returns [EObject current=null]
 
 
 
-// Entry rule entryRuleNamedWithAction
-entryRuleNamedWithAction returns [EObject current=null] 
+// Entry rule entryRulePRFNamedWithAction
+entryRulePRFNamedWithAction returns [EObject current=null] 
 	:
-	{ newCompositeNode(grammarAccess.getNamedWithActionRule()); }
-	 iv_ruleNamedWithAction=ruleNamedWithAction 
-	 { $current=$iv_ruleNamedWithAction.current; } 
+	{ newCompositeNode(grammarAccess.getPRFNamedWithActionRule()); }
+	 iv_rulePRFNamedWithAction=rulePRFNamedWithAction 
+	 { $current=$iv_rulePRFNamedWithAction.current; } 
 	 EOF 
 ;
 
-// Rule NamedWithAction
-ruleNamedWithAction returns [EObject current=null] 
+// Rule PRFNamedWithAction
+rulePRFNamedWithAction returns [EObject current=null] 
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
 (
     { 
-        newCompositeNode(grammarAccess.getNamedWithActionAccess().getNamedParserRuleCall_0()); 
+        newCompositeNode(grammarAccess.getPRFNamedWithActionAccess().getPRFNamedParserRuleCall_0()); 
     }
-    this_Named_0=ruleNamed
+    this_PRFNamed_0=rulePRFNamed
     { 
-        $current = $this_Named_0.current; 
+        $current = $this_PRFNamed_0.current; 
         afterParserOrEnumRuleCall();
     }
 (
     {
         $current = forceCreateModelElementAndSet(
-            grammarAccess.getNamedWithActionAccess().getNamedWithActionPrevAction_1(),
+            grammarAccess.getPRFNamedWithActionAccess().getPRFNamedWithActionPrevAction_1(),
             $current);
     }
 )(
 (
 		lv_name_2_0=RULE_ID
 		{
-			newLeafNode(lv_name_2_0, grammarAccess.getNamedWithActionAccess().getNameIDTerminalRuleCall_2_0()); 
+			newLeafNode(lv_name_2_0, grammarAccess.getPRFNamedWithActionAccess().getNameIDTerminalRuleCall_2_0()); 
 		}
 		{
 	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getNamedWithActionRule());
+	            $current = createModelElement(grammarAccess.getPRFNamedWithActionRule());
 	        }
        		setWithLastConsumed(
        			$current, 
@@ -435,12 +435,12 @@ ruleNamedWithAction returns [EObject current=null]
 (
 		{
 			if ($current==null) {
-	            $current = createModelElement(grammarAccess.getNamedWithActionRule());
+	            $current = createModelElement(grammarAccess.getPRFNamedWithActionRule());
 	        }
         }
 	otherlv_3=RULE_ID
 	{
-		newLeafNode(otherlv_3, grammarAccess.getNamedWithActionAccess().getRefNamedCrossReference_3_0_0()); 
+		newLeafNode(otherlv_3, grammarAccess.getPRFNamedWithActionAccess().getRefPRFNamedCrossReference_3_0_0()); 
 	}
 
 )
@@ -448,12 +448,12 @@ ruleNamedWithAction returns [EObject current=null]
 (
 		{
 			if ($current==null) {
-	            $current = createModelElement(grammarAccess.getNamedWithActionRule());
+	            $current = createModelElement(grammarAccess.getPRFNamedWithActionRule());
 	        }
         }
 	otherlv_4=RULE_ID
 	{
-		newLeafNode(otherlv_4, grammarAccess.getNamedWithActionAccess().getRef2NamedCrossReference_3_1_0()); 
+		newLeafNode(otherlv_4, grammarAccess.getPRFNamedWithActionAccess().getRef2PRFNamedCrossReference_3_1_0()); 
 	}
 
 )
@@ -464,26 +464,26 @@ ruleNamedWithAction returns [EObject current=null]
 
 
 
-// Entry rule entryRuleNamedWithActionInFragment
-entryRuleNamedWithActionInFragment returns [EObject current=null] 
+// Entry rule entryRulePRFNamedWithActionInFragment
+entryRulePRFNamedWithActionInFragment returns [EObject current=null] 
 	:
-	{ newCompositeNode(grammarAccess.getNamedWithActionInFragmentRule()); }
-	 iv_ruleNamedWithActionInFragment=ruleNamedWithActionInFragment 
-	 { $current=$iv_ruleNamedWithActionInFragment.current; } 
+	{ newCompositeNode(grammarAccess.getPRFNamedWithActionInFragmentRule()); }
+	 iv_rulePRFNamedWithActionInFragment=rulePRFNamedWithActionInFragment 
+	 { $current=$iv_rulePRFNamedWithActionInFragment.current; } 
 	 EOF 
 ;
 
-// Rule NamedWithActionInFragment
-ruleNamedWithActionInFragment returns [EObject current=null] 
+// Rule PRFNamedWithActionInFragment
+rulePRFNamedWithActionInFragment returns [EObject current=null] 
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
 (
     { 
 		if ($current==null) {
-			$current = createModelElement(grammarAccess.getNamedWithActionInFragmentRule());
+			$current = createModelElement(grammarAccess.getPRFNamedWithActionInFragmentRule());
 		}
-        newCompositeNode(grammarAccess.getNamedWithActionInFragmentAccess().getFragmentWithActionParserRuleCall_0()); 
+        newCompositeNode(grammarAccess.getPRFNamedWithActionInFragmentAccess().getFragmentWithActionParserRuleCall_0()); 
     }
     this_FragmentWithAction_0=ruleFragmentWithAction[$current]
     { 
@@ -492,18 +492,18 @@ ruleNamedWithActionInFragment returns [EObject current=null]
     }
 (	otherlv_1='-' 
     {
-    	newLeafNode(otherlv_1, grammarAccess.getNamedWithActionInFragmentAccess().getHyphenMinusKeyword_1_0());
+    	newLeafNode(otherlv_1, grammarAccess.getPRFNamedWithActionInFragmentAccess().getHyphenMinusKeyword_1_0());
     }
 (
 (
 		{
 			if ($current==null) {
-	            $current = createModelElement(grammarAccess.getNamedWithActionInFragmentRule());
+	            $current = createModelElement(grammarAccess.getPRFNamedWithActionInFragmentRule());
 	        }
         }
 	otherlv_2=RULE_ID
 	{
-		newLeafNode(otherlv_2, grammarAccess.getNamedWithActionInFragmentAccess().getRefNamedCrossReference_1_1_0()); 
+		newLeafNode(otherlv_2, grammarAccess.getPRFNamedWithActionInFragmentAccess().getRefPRFNamedCrossReference_1_1_0()); 
 	}
 
 )
@@ -514,17 +514,17 @@ ruleNamedWithActionInFragment returns [EObject current=null]
 
 
 
-// Entry rule entryRuleNamedWithActionInFragment2
-entryRuleNamedWithActionInFragment2 returns [EObject current=null] 
+// Entry rule entryRulePRFNamedWithActionInFragment2
+entryRulePRFNamedWithActionInFragment2 returns [EObject current=null] 
 	:
-	{ newCompositeNode(grammarAccess.getNamedWithActionInFragment2Rule()); }
-	 iv_ruleNamedWithActionInFragment2=ruleNamedWithActionInFragment2 
-	 { $current=$iv_ruleNamedWithActionInFragment2.current; } 
+	{ newCompositeNode(grammarAccess.getPRFNamedWithActionInFragment2Rule()); }
+	 iv_rulePRFNamedWithActionInFragment2=rulePRFNamedWithActionInFragment2 
+	 { $current=$iv_rulePRFNamedWithActionInFragment2.current; } 
 	 EOF 
 ;
 
-// Rule NamedWithActionInFragment2
-ruleNamedWithActionInFragment2 returns [EObject current=null] 
+// Rule PRFNamedWithActionInFragment2
+rulePRFNamedWithActionInFragment2 returns [EObject current=null] 
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
@@ -532,11 +532,11 @@ ruleNamedWithActionInFragment2 returns [EObject current=null]
 (
 		lv_name_0_0=RULE_ID
 		{
-			newLeafNode(lv_name_0_0, grammarAccess.getNamedWithActionInFragment2Access().getNameIDTerminalRuleCall_0_0()); 
+			newLeafNode(lv_name_0_0, grammarAccess.getPRFNamedWithActionInFragment2Access().getNameIDTerminalRuleCall_0_0()); 
 		}
 		{
 	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getNamedWithActionInFragment2Rule());
+	            $current = createModelElement(grammarAccess.getPRFNamedWithActionInFragment2Rule());
 	        }
        		setWithLastConsumed(
        			$current, 
@@ -549,9 +549,9 @@ ruleNamedWithActionInFragment2 returns [EObject current=null]
 )
     { 
 		if ($current==null) {
-			$current = createModelElement(grammarAccess.getNamedWithActionInFragment2Rule());
+			$current = createModelElement(grammarAccess.getPRFNamedWithActionInFragment2Rule());
 		}
-        newCompositeNode(grammarAccess.getNamedWithActionInFragment2Access().getFragmentWithAction2ParserRuleCall_1()); 
+        newCompositeNode(grammarAccess.getPRFNamedWithActionInFragment2Access().getFragmentWithAction2ParserRuleCall_1()); 
     }
     this_FragmentWithAction2_1=ruleFragmentWithAction2[$current]
     { 
@@ -560,18 +560,18 @@ ruleNamedWithActionInFragment2 returns [EObject current=null]
     }
 (	otherlv_2='-' 
     {
-    	newLeafNode(otherlv_2, grammarAccess.getNamedWithActionInFragment2Access().getHyphenMinusKeyword_2_0());
+    	newLeafNode(otherlv_2, grammarAccess.getPRFNamedWithActionInFragment2Access().getHyphenMinusKeyword_2_0());
     }
 (
 (
 		{
 			if ($current==null) {
-	            $current = createModelElement(grammarAccess.getNamedWithActionInFragment2Rule());
+	            $current = createModelElement(grammarAccess.getPRFNamedWithActionInFragment2Rule());
 	        }
         }
 	otherlv_3=RULE_ID
 	{
-		newLeafNode(otherlv_3, grammarAccess.getNamedWithActionInFragment2Access().getRefNamedCrossReference_2_1_0()); 
+		newLeafNode(otherlv_3, grammarAccess.getPRFNamedWithActionInFragment2Access().getRefPRFNamedCrossReference_2_1_0()); 
 	}
 
 )
@@ -582,26 +582,26 @@ ruleNamedWithActionInFragment2 returns [EObject current=null]
 
 
 
-// Entry rule entryRuleNamedWithActionInFragment3
-entryRuleNamedWithActionInFragment3 returns [EObject current=null] 
+// Entry rule entryRulePRFNamedWithActionInFragment3
+entryRulePRFNamedWithActionInFragment3 returns [EObject current=null] 
 	:
-	{ newCompositeNode(grammarAccess.getNamedWithActionInFragment3Rule()); }
-	 iv_ruleNamedWithActionInFragment3=ruleNamedWithActionInFragment3 
-	 { $current=$iv_ruleNamedWithActionInFragment3.current; } 
+	{ newCompositeNode(grammarAccess.getPRFNamedWithActionInFragment3Rule()); }
+	 iv_rulePRFNamedWithActionInFragment3=rulePRFNamedWithActionInFragment3 
+	 { $current=$iv_rulePRFNamedWithActionInFragment3.current; } 
 	 EOF 
 ;
 
-// Rule NamedWithActionInFragment3
-ruleNamedWithActionInFragment3 returns [EObject current=null] 
+// Rule PRFNamedWithActionInFragment3
+rulePRFNamedWithActionInFragment3 returns [EObject current=null] 
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
 (
     { 
 		if ($current==null) {
-			$current = createModelElement(grammarAccess.getNamedWithActionInFragment3Rule());
+			$current = createModelElement(grammarAccess.getPRFNamedWithActionInFragment3Rule());
 		}
-        newCompositeNode(grammarAccess.getNamedWithActionInFragment3Access().getFragmentWithAction3ParserRuleCall_0()); 
+        newCompositeNode(grammarAccess.getPRFNamedWithActionInFragment3Access().getFragmentWithAction3ParserRuleCall_0()); 
     }
     this_FragmentWithAction3_0=ruleFragmentWithAction3[$current]
     { 
@@ -610,18 +610,18 @@ ruleNamedWithActionInFragment3 returns [EObject current=null]
     }
 (	otherlv_1='-' 
     {
-    	newLeafNode(otherlv_1, grammarAccess.getNamedWithActionInFragment3Access().getHyphenMinusKeyword_1_0());
+    	newLeafNode(otherlv_1, grammarAccess.getPRFNamedWithActionInFragment3Access().getHyphenMinusKeyword_1_0());
     }
 (
 (
 		{
 			if ($current==null) {
-	            $current = createModelElement(grammarAccess.getNamedWithActionInFragment3Rule());
+	            $current = createModelElement(grammarAccess.getPRFNamedWithActionInFragment3Rule());
 	        }
         }
 	otherlv_2=RULE_ID
 	{
-		newLeafNode(otherlv_2, grammarAccess.getNamedWithActionInFragment3Access().getRefNamedCrossReference_1_1_0()); 
+		newLeafNode(otherlv_2, grammarAccess.getPRFNamedWithActionInFragment3Access().getRefPRFNamedCrossReference_1_1_0()); 
 	}
 
 )
@@ -659,7 +659,7 @@ ruleFragmentWithAction [EObject in_current] returns [EObject current=in_current]
 )(
     {
         $current = forceCreateModelElementAndSet(
-            grammarAccess.getFragmentWithActionAccess().getNamedWithActionPrevAction_1(),
+            grammarAccess.getFragmentWithActionAccess().getPRFNamedWithActionPrevAction_1(),
             $current);
     }
 )(
@@ -689,7 +689,7 @@ ruleFragmentWithAction [EObject in_current] returns [EObject current=in_current]
         }
 	otherlv_3=RULE_ID
 	{
-		newLeafNode(otherlv_3, grammarAccess.getFragmentWithActionAccess().getRef2NamedCrossReference_3_0()); 
+		newLeafNode(otherlv_3, grammarAccess.getFragmentWithActionAccess().getRef2PRFNamedCrossReference_3_0()); 
 	}
 
 )
@@ -709,7 +709,7 @@ ruleFragmentWithAction2 [EObject in_current] returns [EObject current=in_current
 ((
     {
         $current = forceCreateModelElementAndSet(
-            grammarAccess.getFragmentWithAction2Access().getNamedWithActionPrevAction_0(),
+            grammarAccess.getFragmentWithAction2Access().getPRFNamedWithActionPrevAction_0(),
             $current);
     }
 )(
@@ -739,7 +739,7 @@ ruleFragmentWithAction2 [EObject in_current] returns [EObject current=in_current
         }
 	otherlv_2=RULE_ID
 	{
-		newLeafNode(otherlv_2, grammarAccess.getFragmentWithAction2Access().getRef2NamedCrossReference_2_0()); 
+		newLeafNode(otherlv_2, grammarAccess.getFragmentWithAction2Access().getRef2PRFNamedCrossReference_2_0()); 
 	}
 
 )
@@ -777,7 +777,7 @@ ruleFragmentWithAction3 [EObject in_current] returns [EObject current=in_current
 )((
     {
         $current = forceCreateModelElementAndSet(
-            grammarAccess.getFragmentWithAction3Access().getNamedWithActionPrevAction_1_0(),
+            grammarAccess.getFragmentWithAction3Access().getPRFNamedWithActionPrevAction_1_0(),
             $current);
     }
 )	otherlv_2='->' 
@@ -811,7 +811,7 @@ ruleFragmentWithAction3 [EObject in_current] returns [EObject current=in_current
         }
 	otherlv_4=RULE_ID
 	{
-		newLeafNode(otherlv_4, grammarAccess.getFragmentWithAction3Access().getRef2NamedCrossReference_1_3_0()); 
+		newLeafNode(otherlv_4, grammarAccess.getFragmentWithAction3Access().getRef2PRFNamedCrossReference_1_3_0()); 
 	}
 
 )
@@ -823,8 +823,8 @@ ruleFragmentWithAction3 [EObject in_current] returns [EObject current=in_current
 
 
 
-// Rule NamedFragment
-ruleNamedFragment [EObject in_current] returns [EObject current=in_current] 
+// Rule PRFNamedFragment
+rulePRFNamedFragment [EObject in_current] returns [EObject current=in_current] 
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
@@ -832,11 +832,11 @@ ruleNamedFragment [EObject in_current] returns [EObject current=in_current]
 (
 		lv_name_0_0=RULE_ID
 		{
-			newLeafNode(lv_name_0_0, grammarAccess.getNamedFragmentAccess().getNameIDTerminalRuleCall_0()); 
+			newLeafNode(lv_name_0_0, grammarAccess.getPRFNamedFragmentAccess().getNameIDTerminalRuleCall_0()); 
 		}
 		{
 	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getNamedFragmentRule());
+	            $current = createModelElement(grammarAccess.getPRFNamedFragmentRule());
 	        }
        		setWithLastConsumed(
        			$current, 
@@ -854,8 +854,8 @@ ruleNamedFragment [EObject in_current] returns [EObject current=in_current]
 
 
 
-// Rule NamedRef
-ruleNamedRef [EObject in_current] returns [EObject current=in_current] 
+// Rule PRFNamedRef
+rulePRFNamedRef [EObject in_current] returns [EObject current=in_current] 
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
@@ -863,12 +863,12 @@ ruleNamedRef [EObject in_current] returns [EObject current=in_current]
 (
 		{
 			if ($current==null) {
-	            $current = createModelElement(grammarAccess.getNamedRefRule());
+	            $current = createModelElement(grammarAccess.getPRFNamedRefRule());
 	        }
         }
 	otherlv_0=RULE_ID
 	{
-		newLeafNode(otherlv_0, grammarAccess.getNamedRefAccess().getRefNamedCrossReference_0()); 
+		newLeafNode(otherlv_0, grammarAccess.getPRFNamedRefAccess().getRefPRFNamedCrossReference_0()); 
 	}
 
 )

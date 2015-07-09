@@ -75,19 +75,19 @@ public class FragmentTestLanguageAdapterFactory extends AdapterFactoryImpl
     new FragmentTestLanguageSwitch<Adapter>()
     {
       @Override
-      public Adapter caseFragments(Fragments object)
+      public Adapter caseParserRuleFragments(ParserRuleFragments object)
       {
-        return createFragmentsAdapter();
+        return createParserRuleFragmentsAdapter();
       }
       @Override
-      public Adapter caseNamed(Named object)
+      public Adapter casePRFNamed(PRFNamed object)
       {
-        return createNamedAdapter();
+        return createPRFNamedAdapter();
       }
       @Override
-      public Adapter caseNamedWithAction(NamedWithAction object)
+      public Adapter casePRFNamedWithAction(PRFNamedWithAction object)
       {
-        return createNamedWithActionAdapter();
+        return createPRFNamedWithActionAdapter();
       }
       @Override
       public Adapter defaultCase(EObject object)
@@ -112,46 +112,46 @@ public class FragmentTestLanguageAdapterFactory extends AdapterFactoryImpl
 
 
   /**
-   * Creates a new adapter for an object of class '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Fragments <em>Fragments</em>}'.
+   * Creates a new adapter for an object of class '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.ParserRuleFragments <em>Parser Rule Fragments</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Fragments
+   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.ParserRuleFragments
    * @generated
    */
-  public Adapter createFragmentsAdapter()
+  public Adapter createParserRuleFragmentsAdapter()
   {
     return null;
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Named <em>Named</em>}'.
+   * Creates a new adapter for an object of class '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamed <em>PRF Named</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Named
+   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamed
    * @generated
    */
-  public Adapter createNamedAdapter()
+  public Adapter createPRFNamedAdapter()
   {
     return null;
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.NamedWithAction <em>Named With Action</em>}'.
+   * Creates a new adapter for an object of class '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamedWithAction <em>PRF Named With Action</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.NamedWithAction
+   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamedWithAction
    * @generated
    */
-  public Adapter createNamedWithActionAdapter()
+  public Adapter createPRFNamedWithActionAdapter()
   {
     return null;
   }

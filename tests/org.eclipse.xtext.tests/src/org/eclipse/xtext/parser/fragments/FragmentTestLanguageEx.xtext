@@ -9,6 +9,6 @@ grammar org.eclipse.xtext.parser.fragments.FragmentTestLanguageEx with org.eclip
 
 import "http://www.eclipse.org/2015/tmf/xtext/fragments"
  
-FragmentsEx returns Fragments: 
-	Fragments
+ParserRuleFragmentsEx returns ParserRuleFragments: 
+	ParserRuleFragments
 ;

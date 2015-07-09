@@ -7,9 +7,9 @@ import com.google.inject.Inject;
 import com.google.inject.Provider;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.FragmentTestLanguagePackage;
-import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Fragments;
-import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Named;
-import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.NamedWithAction;
+import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamed;
+import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamedWithAction;
+import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.ParserRuleFragments;
 import org.eclipse.xtext.parser.fragments.serializer.FragmentTestLanguageSemanticSequencer;
 import org.eclipse.xtext.parser.fragments.services.FragmentTestLanguageExGrammarAccess;
 import org.eclipse.xtext.serializer.acceptor.ISemanticSequenceAcceptor;
@@ -28,72 +28,72 @@ public class FragmentTestLanguageExSemanticSequencer extends FragmentTestLanguag
 	@Override
 	public void createSequence(EObject context, EObject semanticObject) {
 		if(semanticObject.eClass().getEPackage() == FragmentTestLanguagePackage.eINSTANCE) switch(semanticObject.eClass().getClassifierID()) {
-			case FragmentTestLanguagePackage.FRAGMENTS:
-				sequence_Fragments(context, (Fragments) semanticObject); 
-				return; 
-			case FragmentTestLanguagePackage.NAMED:
+			case FragmentTestLanguagePackage.PRF_NAMED:
 				if(context == grammarAccess.getFragmentWithAction3Rule() ||
-				   context == grammarAccess.getFragmentWithAction3Access().getNamedWithActionPrevAction_1_0()) {
-					sequence_FragmentWithAction3(context, (Named) semanticObject); 
+				   context == grammarAccess.getFragmentWithAction3Access().getPRFNamedWithActionPrevAction_1_0()) {
+					sequence_FragmentWithAction3(context, (PRFNamed) semanticObject); 
 					return; 
 				}
-				else if(context == grammarAccess.getNamedWithActionInFragment3Rule()) {
-					sequence_FragmentWithAction3_NamedWithActionInFragment3(context, (Named) semanticObject); 
+				else if(context == grammarAccess.getPRFNamedWithActionInFragment3Rule()) {
+					sequence_FragmentWithAction3_PRFNamedWithActionInFragment3(context, (PRFNamed) semanticObject); 
 					return; 
 				}
-				else if(context == grammarAccess.getFragmentWithActionAccess().getNamedWithActionPrevAction_1()) {
-					sequence_FragmentWithAction_NamedWithAction_1(context, (Named) semanticObject); 
+				else if(context == grammarAccess.getFragmentWithActionAccess().getPRFNamedWithActionPrevAction_1()) {
+					sequence_FragmentWithAction_PRFNamedWithAction_1(context, (PRFNamed) semanticObject); 
 					return; 
 				}
-				else if(context == grammarAccess.getNamedFragmentRule()) {
-					sequence_NamedFragment(context, (Named) semanticObject); 
+				else if(context == grammarAccess.getPRFNamedFragmentRule()) {
+					sequence_PRFNamedFragment(context, (PRFNamed) semanticObject); 
 					return; 
 				}
-				else if(context == grammarAccess.getNamedRefFirstRule()) {
-					sequence_NamedFragment_NamedRefFirst(context, (Named) semanticObject); 
+				else if(context == grammarAccess.getPRFNamedRefFirstRule()) {
+					sequence_PRFNamedFragment_PRFNamedRefFirst(context, (PRFNamed) semanticObject); 
 					return; 
 				}
-				else if(context == grammarAccess.getNamedRefRule()) {
-					sequence_NamedRef(context, (Named) semanticObject); 
+				else if(context == grammarAccess.getPRFNamedRefRule()) {
+					sequence_PRFNamedRef(context, (PRFNamed) semanticObject); 
 					return; 
 				}
-				else if(context == grammarAccess.getNamedRule() ||
-				   context == grammarAccess.getNamedWithActionAccess().getNamedWithActionPrevAction_1()) {
-					sequence_Named_NamedFragment_NamedRef(context, (Named) semanticObject); 
+				else if(context == grammarAccess.getPRFNamedRule() ||
+				   context == grammarAccess.getPRFNamedWithActionAccess().getPRFNamedWithActionPrevAction_1()) {
+					sequence_PRFNamed_PRFNamedFragment_PRFNamedRef(context, (PRFNamed) semanticObject); 
 					return; 
 				}
 				else break;
-			case FragmentTestLanguagePackage.NAMED_WITH_ACTION:
+			case FragmentTestLanguagePackage.PRF_NAMED_WITH_ACTION:
 				if(context == grammarAccess.getFragmentWithAction2Rule()) {
-					sequence_FragmentWithAction2(context, (NamedWithAction) semanticObject); 
+					sequence_FragmentWithAction2(context, (PRFNamedWithAction) semanticObject); 
 					return; 
 				}
-				else if(context == grammarAccess.getNamedWithActionInFragment2Rule()) {
-					sequence_FragmentWithAction2_NamedWithActionInFragment2(context, (NamedWithAction) semanticObject); 
+				else if(context == grammarAccess.getPRFNamedWithActionInFragment2Rule()) {
+					sequence_FragmentWithAction2_PRFNamedWithActionInFragment2(context, (PRFNamedWithAction) semanticObject); 
 					return; 
 				}
 				else if(context == grammarAccess.getFragmentWithAction3Rule() ||
-				   context == grammarAccess.getFragmentWithAction3Access().getNamedWithActionPrevAction_1_0()) {
-					sequence_FragmentWithAction3(context, (NamedWithAction) semanticObject); 
+				   context == grammarAccess.getFragmentWithAction3Access().getPRFNamedWithActionPrevAction_1_0()) {
+					sequence_FragmentWithAction3(context, (PRFNamedWithAction) semanticObject); 
 					return; 
 				}
-				else if(context == grammarAccess.getNamedWithActionInFragment3Rule()) {
-					sequence_FragmentWithAction3_NamedWithActionInFragment3(context, (NamedWithAction) semanticObject); 
+				else if(context == grammarAccess.getPRFNamedWithActionInFragment3Rule()) {
+					sequence_FragmentWithAction3_PRFNamedWithActionInFragment3(context, (PRFNamedWithAction) semanticObject); 
 					return; 
 				}
 				else if(context == grammarAccess.getFragmentWithActionRule()) {
-					sequence_FragmentWithAction(context, (NamedWithAction) semanticObject); 
+					sequence_FragmentWithAction(context, (PRFNamedWithAction) semanticObject); 
 					return; 
 				}
-				else if(context == grammarAccess.getNamedWithActionInFragmentRule()) {
-					sequence_FragmentWithAction_NamedWithActionInFragment(context, (NamedWithAction) semanticObject); 
+				else if(context == grammarAccess.getPRFNamedWithActionInFragmentRule()) {
+					sequence_FragmentWithAction_PRFNamedWithActionInFragment(context, (PRFNamedWithAction) semanticObject); 
 					return; 
 				}
-				else if(context == grammarAccess.getNamedWithActionRule()) {
-					sequence_NamedWithAction(context, (NamedWithAction) semanticObject); 
+				else if(context == grammarAccess.getPRFNamedWithActionRule()) {
+					sequence_PRFNamedWithAction(context, (PRFNamedWithAction) semanticObject); 
 					return; 
 				}
 				else break;
+			case FragmentTestLanguagePackage.PARSER_RULE_FRAGMENTS:
+				sequence_ParserRuleFragments(context, (ParserRuleFragments) semanticObject); 
+				return; 
 			}
 		if (errorAcceptor != null) errorAcceptor.accept(diagnosticProvider.createInvalidContextOrTypeDiagnostic(semanticObject, context));
 	}

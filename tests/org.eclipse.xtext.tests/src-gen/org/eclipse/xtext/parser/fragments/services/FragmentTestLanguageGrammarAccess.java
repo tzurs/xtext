@@ -18,271 +18,271 @@ import org.eclipse.xtext.common.services.TerminalsGrammarAccess;
 public class FragmentTestLanguageGrammarAccess extends AbstractGrammarElementFinder {
 	
 	
-	public class FragmentsElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.fragments.FragmentTestLanguage.Fragments");
+	public class ParserRuleFragmentsElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.fragments.FragmentTestLanguage.ParserRuleFragments");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Action cFragmentsAction_0 = (Action)cGroup.eContents().get(0);
+		private final Action cParserRuleFragmentsAction_0 = (Action)cGroup.eContents().get(0);
 		private final Alternatives cAlternatives_1 = (Alternatives)cGroup.eContents().get(1);
 		private final Group cGroup_1_0 = (Group)cAlternatives_1.eContents().get(0);
 		private final Keyword cNumberSignDigitOneKeyword_1_0_0 = (Keyword)cGroup_1_0.eContents().get(0);
 		private final Assignment cElementAssignment_1_0_1 = (Assignment)cGroup_1_0.eContents().get(1);
-		private final RuleCall cElementNamedParserRuleCall_1_0_1_0 = (RuleCall)cElementAssignment_1_0_1.eContents().get(0);
+		private final RuleCall cElementPRFNamedParserRuleCall_1_0_1_0 = (RuleCall)cElementAssignment_1_0_1.eContents().get(0);
 		private final Group cGroup_1_1 = (Group)cAlternatives_1.eContents().get(1);
 		private final Keyword cNumberSignDigitTwoKeyword_1_1_0 = (Keyword)cGroup_1_1.eContents().get(0);
 		private final Assignment cElementAssignment_1_1_1 = (Assignment)cGroup_1_1.eContents().get(1);
-		private final RuleCall cElementNamedParserRuleCall_1_1_1_0 = (RuleCall)cElementAssignment_1_1_1.eContents().get(0);
+		private final RuleCall cElementPRFNamedParserRuleCall_1_1_1_0 = (RuleCall)cElementAssignment_1_1_1.eContents().get(0);
 		private final Keyword cHyphenMinusGreaterThanSignKeyword_1_1_2 = (Keyword)cGroup_1_1.eContents().get(2);
 		private final Assignment cRefAssignment_1_1_3 = (Assignment)cGroup_1_1.eContents().get(3);
-		private final CrossReference cRefNamedCrossReference_1_1_3_0 = (CrossReference)cRefAssignment_1_1_3.eContents().get(0);
-		private final RuleCall cRefNamedIDTerminalRuleCall_1_1_3_0_1 = (RuleCall)cRefNamedCrossReference_1_1_3_0.eContents().get(1);
+		private final CrossReference cRefPRFNamedCrossReference_1_1_3_0 = (CrossReference)cRefAssignment_1_1_3.eContents().get(0);
+		private final RuleCall cRefPRFNamedIDTerminalRuleCall_1_1_3_0_1 = (RuleCall)cRefPRFNamedCrossReference_1_1_3_0.eContents().get(1);
 		private final Group cGroup_1_2 = (Group)cAlternatives_1.eContents().get(2);
 		private final Keyword cNumberSignDigitThreeKeyword_1_2_0 = (Keyword)cGroup_1_2.eContents().get(0);
 		private final Assignment cElementAssignment_1_2_1 = (Assignment)cGroup_1_2.eContents().get(1);
-		private final RuleCall cElementNamedRefFirstParserRuleCall_1_2_1_0 = (RuleCall)cElementAssignment_1_2_1.eContents().get(0);
+		private final RuleCall cElementPRFNamedRefFirstParserRuleCall_1_2_1_0 = (RuleCall)cElementAssignment_1_2_1.eContents().get(0);
 		private final Group cGroup_1_3 = (Group)cAlternatives_1.eContents().get(3);
 		private final Keyword cNumberSignDigitFourKeyword_1_3_0 = (Keyword)cGroup_1_3.eContents().get(0);
 		private final Assignment cElementAssignment_1_3_1 = (Assignment)cGroup_1_3.eContents().get(1);
-		private final RuleCall cElementNamedWithActionParserRuleCall_1_3_1_0 = (RuleCall)cElementAssignment_1_3_1.eContents().get(0);
+		private final RuleCall cElementPRFNamedWithActionParserRuleCall_1_3_1_0 = (RuleCall)cElementAssignment_1_3_1.eContents().get(0);
 		private final Group cGroup_1_4 = (Group)cAlternatives_1.eContents().get(4);
 		private final Keyword cNumberSignDigitFiveKeyword_1_4_0 = (Keyword)cGroup_1_4.eContents().get(0);
 		private final Assignment cElementAssignment_1_4_1 = (Assignment)cGroup_1_4.eContents().get(1);
-		private final RuleCall cElementNamedWithActionInFragmentParserRuleCall_1_4_1_0 = (RuleCall)cElementAssignment_1_4_1.eContents().get(0);
+		private final RuleCall cElementPRFNamedWithActionInFragmentParserRuleCall_1_4_1_0 = (RuleCall)cElementAssignment_1_4_1.eContents().get(0);
 		private final Group cGroup_1_5 = (Group)cAlternatives_1.eContents().get(5);
 		private final Keyword cNumberSignDigitSixKeyword_1_5_0 = (Keyword)cGroup_1_5.eContents().get(0);
 		private final Assignment cElementAssignment_1_5_1 = (Assignment)cGroup_1_5.eContents().get(1);
-		private final RuleCall cElementNamedWithActionInFragment2ParserRuleCall_1_5_1_0 = (RuleCall)cElementAssignment_1_5_1.eContents().get(0);
+		private final RuleCall cElementPRFNamedWithActionInFragment2ParserRuleCall_1_5_1_0 = (RuleCall)cElementAssignment_1_5_1.eContents().get(0);
 		private final Group cGroup_1_6 = (Group)cAlternatives_1.eContents().get(6);
 		private final Keyword cNumberSignDigitSevenKeyword_1_6_0 = (Keyword)cGroup_1_6.eContents().get(0);
 		private final Assignment cElementAssignment_1_6_1 = (Assignment)cGroup_1_6.eContents().get(1);
-		private final RuleCall cElementNamedWithActionInFragment3ParserRuleCall_1_6_1_0 = (RuleCall)cElementAssignment_1_6_1.eContents().get(0);
+		private final RuleCall cElementPRFNamedWithActionInFragment3ParserRuleCall_1_6_1_0 = (RuleCall)cElementAssignment_1_6_1.eContents().get(0);
 		
-		//Fragments:
-		//	{Fragments} ("#1" element=Named | "#2" element=Named "->" ref=[Named] | "#3" element=NamedRefFirst | "#4"
-		//	element=NamedWithAction | "#5" element=NamedWithActionInFragment | "#6" element=NamedWithActionInFragment2 | "#7"
-		//	element=NamedWithActionInFragment3);
+		//ParserRuleFragments:
+		//	{ParserRuleFragments} ("#1" element=PRFNamed | "#2" element=PRFNamed "->" ref=[PRFNamed] | "#3"
+		//	element=PRFNamedRefFirst | "#4" element=PRFNamedWithAction | "#5" element=PRFNamedWithActionInFragment | "#6"
+		//	element=PRFNamedWithActionInFragment2 | "#7" element=PRFNamedWithActionInFragment3);
 		@Override public ParserRule getRule() { return rule; }
 
-		//{Fragments} ("#1" element=Named | "#2" element=Named "->" ref=[Named] | "#3" element=NamedRefFirst | "#4"
-		//element=NamedWithAction | "#5" element=NamedWithActionInFragment | "#6" element=NamedWithActionInFragment2 | "#7"
-		//element=NamedWithActionInFragment3)
+		//{ParserRuleFragments} ("#1" element=PRFNamed | "#2" element=PRFNamed "->" ref=[PRFNamed] | "#3" element=PRFNamedRefFirst
+		//| "#4" element=PRFNamedWithAction | "#5" element=PRFNamedWithActionInFragment | "#6"
+		//element=PRFNamedWithActionInFragment2 | "#7" element=PRFNamedWithActionInFragment3)
 		public Group getGroup() { return cGroup; }
 
-		//{Fragments}
-		public Action getFragmentsAction_0() { return cFragmentsAction_0; }
+		//{ParserRuleFragments}
+		public Action getParserRuleFragmentsAction_0() { return cParserRuleFragmentsAction_0; }
 
-		//"#1" element=Named | "#2" element=Named "->" ref=[Named] | "#3" element=NamedRefFirst | "#4" element=NamedWithAction |
-		//"#5" element=NamedWithActionInFragment | "#6" element=NamedWithActionInFragment2 | "#7"
-		//element=NamedWithActionInFragment3
+		//"#1" element=PRFNamed | "#2" element=PRFNamed "->" ref=[PRFNamed] | "#3" element=PRFNamedRefFirst | "#4"
+		//element=PRFNamedWithAction | "#5" element=PRFNamedWithActionInFragment | "#6" element=PRFNamedWithActionInFragment2 |
+		//"#7" element=PRFNamedWithActionInFragment3
 		public Alternatives getAlternatives_1() { return cAlternatives_1; }
 
-		//"#1" element=Named
+		//"#1" element=PRFNamed
 		public Group getGroup_1_0() { return cGroup_1_0; }
 
 		//"#1"
 		public Keyword getNumberSignDigitOneKeyword_1_0_0() { return cNumberSignDigitOneKeyword_1_0_0; }
 
-		//element=Named
+		//element=PRFNamed
 		public Assignment getElementAssignment_1_0_1() { return cElementAssignment_1_0_1; }
 
-		//Named
-		public RuleCall getElementNamedParserRuleCall_1_0_1_0() { return cElementNamedParserRuleCall_1_0_1_0; }
+		//PRFNamed
+		public RuleCall getElementPRFNamedParserRuleCall_1_0_1_0() { return cElementPRFNamedParserRuleCall_1_0_1_0; }
 
-		//"#2" element=Named "->" ref=[Named]
+		//"#2" element=PRFNamed "->" ref=[PRFNamed]
 		public Group getGroup_1_1() { return cGroup_1_1; }
 
 		//"#2"
 		public Keyword getNumberSignDigitTwoKeyword_1_1_0() { return cNumberSignDigitTwoKeyword_1_1_0; }
 
-		//element=Named
+		//element=PRFNamed
 		public Assignment getElementAssignment_1_1_1() { return cElementAssignment_1_1_1; }
 
-		//Named
-		public RuleCall getElementNamedParserRuleCall_1_1_1_0() { return cElementNamedParserRuleCall_1_1_1_0; }
+		//PRFNamed
+		public RuleCall getElementPRFNamedParserRuleCall_1_1_1_0() { return cElementPRFNamedParserRuleCall_1_1_1_0; }
 
 		//"->"
 		public Keyword getHyphenMinusGreaterThanSignKeyword_1_1_2() { return cHyphenMinusGreaterThanSignKeyword_1_1_2; }
 
-		//ref=[Named]
+		//ref=[PRFNamed]
 		public Assignment getRefAssignment_1_1_3() { return cRefAssignment_1_1_3; }
 
-		//[Named]
-		public CrossReference getRefNamedCrossReference_1_1_3_0() { return cRefNamedCrossReference_1_1_3_0; }
+		//[PRFNamed]
+		public CrossReference getRefPRFNamedCrossReference_1_1_3_0() { return cRefPRFNamedCrossReference_1_1_3_0; }
 
 		//ID
-		public RuleCall getRefNamedIDTerminalRuleCall_1_1_3_0_1() { return cRefNamedIDTerminalRuleCall_1_1_3_0_1; }
+		public RuleCall getRefPRFNamedIDTerminalRuleCall_1_1_3_0_1() { return cRefPRFNamedIDTerminalRuleCall_1_1_3_0_1; }
 
-		//"#3" element=NamedRefFirst
+		//"#3" element=PRFNamedRefFirst
 		public Group getGroup_1_2() { return cGroup_1_2; }
 
 		//"#3"
 		public Keyword getNumberSignDigitThreeKeyword_1_2_0() { return cNumberSignDigitThreeKeyword_1_2_0; }
 
-		//element=NamedRefFirst
+		//element=PRFNamedRefFirst
 		public Assignment getElementAssignment_1_2_1() { return cElementAssignment_1_2_1; }
 
-		//NamedRefFirst
-		public RuleCall getElementNamedRefFirstParserRuleCall_1_2_1_0() { return cElementNamedRefFirstParserRuleCall_1_2_1_0; }
+		//PRFNamedRefFirst
+		public RuleCall getElementPRFNamedRefFirstParserRuleCall_1_2_1_0() { return cElementPRFNamedRefFirstParserRuleCall_1_2_1_0; }
 
-		//"#4" element=NamedWithAction
+		//"#4" element=PRFNamedWithAction
 		public Group getGroup_1_3() { return cGroup_1_3; }
 
 		//"#4"
 		public Keyword getNumberSignDigitFourKeyword_1_3_0() { return cNumberSignDigitFourKeyword_1_3_0; }
 
-		//element=NamedWithAction
+		//element=PRFNamedWithAction
 		public Assignment getElementAssignment_1_3_1() { return cElementAssignment_1_3_1; }
 
-		//NamedWithAction
-		public RuleCall getElementNamedWithActionParserRuleCall_1_3_1_0() { return cElementNamedWithActionParserRuleCall_1_3_1_0; }
+		//PRFNamedWithAction
+		public RuleCall getElementPRFNamedWithActionParserRuleCall_1_3_1_0() { return cElementPRFNamedWithActionParserRuleCall_1_3_1_0; }
 
-		//"#5" element=NamedWithActionInFragment
+		//"#5" element=PRFNamedWithActionInFragment
 		public Group getGroup_1_4() { return cGroup_1_4; }
 
 		//"#5"
 		public Keyword getNumberSignDigitFiveKeyword_1_4_0() { return cNumberSignDigitFiveKeyword_1_4_0; }
 
-		//element=NamedWithActionInFragment
+		//element=PRFNamedWithActionInFragment
 		public Assignment getElementAssignment_1_4_1() { return cElementAssignment_1_4_1; }
 
-		//NamedWithActionInFragment
-		public RuleCall getElementNamedWithActionInFragmentParserRuleCall_1_4_1_0() { return cElementNamedWithActionInFragmentParserRuleCall_1_4_1_0; }
+		//PRFNamedWithActionInFragment
+		public RuleCall getElementPRFNamedWithActionInFragmentParserRuleCall_1_4_1_0() { return cElementPRFNamedWithActionInFragmentParserRuleCall_1_4_1_0; }
 
-		//"#6" element=NamedWithActionInFragment2
+		//"#6" element=PRFNamedWithActionInFragment2
 		public Group getGroup_1_5() { return cGroup_1_5; }
 
 		//"#6"
 		public Keyword getNumberSignDigitSixKeyword_1_5_0() { return cNumberSignDigitSixKeyword_1_5_0; }
 
-		//element=NamedWithActionInFragment2
+		//element=PRFNamedWithActionInFragment2
 		public Assignment getElementAssignment_1_5_1() { return cElementAssignment_1_5_1; }
 
-		//NamedWithActionInFragment2
-		public RuleCall getElementNamedWithActionInFragment2ParserRuleCall_1_5_1_0() { return cElementNamedWithActionInFragment2ParserRuleCall_1_5_1_0; }
+		//PRFNamedWithActionInFragment2
+		public RuleCall getElementPRFNamedWithActionInFragment2ParserRuleCall_1_5_1_0() { return cElementPRFNamedWithActionInFragment2ParserRuleCall_1_5_1_0; }
 
-		//"#7" element=NamedWithActionInFragment3
+		//"#7" element=PRFNamedWithActionInFragment3
 		public Group getGroup_1_6() { return cGroup_1_6; }
 
 		//"#7"
 		public Keyword getNumberSignDigitSevenKeyword_1_6_0() { return cNumberSignDigitSevenKeyword_1_6_0; }
 
-		//element=NamedWithActionInFragment3
+		//element=PRFNamedWithActionInFragment3
 		public Assignment getElementAssignment_1_6_1() { return cElementAssignment_1_6_1; }
 
-		//NamedWithActionInFragment3
-		public RuleCall getElementNamedWithActionInFragment3ParserRuleCall_1_6_1_0() { return cElementNamedWithActionInFragment3ParserRuleCall_1_6_1_0; }
+		//PRFNamedWithActionInFragment3
+		public RuleCall getElementPRFNamedWithActionInFragment3ParserRuleCall_1_6_1_0() { return cElementPRFNamedWithActionInFragment3ParserRuleCall_1_6_1_0; }
 	}
 
-	public class NamedElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.fragments.FragmentTestLanguage.Named");
+	public class PRFNamedElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.fragments.FragmentTestLanguage.PRFNamed");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final RuleCall cNamedFragmentParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
+		private final RuleCall cPRFNamedFragmentParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Alternatives cAlternatives_1 = (Alternatives)cGroup.eContents().get(1);
 		private final Group cGroup_1_0 = (Group)cAlternatives_1.eContents().get(0);
 		private final Keyword cColonKeyword_1_0_0 = (Keyword)cGroup_1_0.eContents().get(0);
 		private final Assignment cRefAssignment_1_0_1 = (Assignment)cGroup_1_0.eContents().get(1);
-		private final CrossReference cRefNamedCrossReference_1_0_1_0 = (CrossReference)cRefAssignment_1_0_1.eContents().get(0);
-		private final RuleCall cRefNamedIDTerminalRuleCall_1_0_1_0_1 = (RuleCall)cRefNamedCrossReference_1_0_1_0.eContents().get(1);
+		private final CrossReference cRefPRFNamedCrossReference_1_0_1_0 = (CrossReference)cRefAssignment_1_0_1.eContents().get(0);
+		private final RuleCall cRefPRFNamedIDTerminalRuleCall_1_0_1_0_1 = (RuleCall)cRefPRFNamedCrossReference_1_0_1_0.eContents().get(1);
 		private final Group cGroup_1_1 = (Group)cAlternatives_1.eContents().get(1);
 		private final Keyword cHyphenMinusKeyword_1_1_0 = (Keyword)cGroup_1_1.eContents().get(0);
-		private final RuleCall cNamedRefParserRuleCall_1_1_1 = (RuleCall)cGroup_1_1.eContents().get(1);
+		private final RuleCall cPRFNamedRefParserRuleCall_1_1_1 = (RuleCall)cGroup_1_1.eContents().get(1);
 		
-		//Named:
-		//	NamedFragment (":" ref=[Named] | "-" NamedRef)?;
+		//PRFNamed:
+		//	PRFNamedFragment (":" ref=[PRFNamed] | "-" PRFNamedRef)?;
 		@Override public ParserRule getRule() { return rule; }
 
-		//NamedFragment (":" ref=[Named] | "-" NamedRef)?
+		//PRFNamedFragment (":" ref=[PRFNamed] | "-" PRFNamedRef)?
 		public Group getGroup() { return cGroup; }
 
-		//NamedFragment
-		public RuleCall getNamedFragmentParserRuleCall_0() { return cNamedFragmentParserRuleCall_0; }
+		//PRFNamedFragment
+		public RuleCall getPRFNamedFragmentParserRuleCall_0() { return cPRFNamedFragmentParserRuleCall_0; }
 
-		//(":" ref=[Named] | "-" NamedRef)?
+		//(":" ref=[PRFNamed] | "-" PRFNamedRef)?
 		public Alternatives getAlternatives_1() { return cAlternatives_1; }
 
-		//":" ref=[Named]
+		//":" ref=[PRFNamed]
 		public Group getGroup_1_0() { return cGroup_1_0; }
 
 		//":"
 		public Keyword getColonKeyword_1_0_0() { return cColonKeyword_1_0_0; }
 
-		//ref=[Named]
+		//ref=[PRFNamed]
 		public Assignment getRefAssignment_1_0_1() { return cRefAssignment_1_0_1; }
 
-		//[Named]
-		public CrossReference getRefNamedCrossReference_1_0_1_0() { return cRefNamedCrossReference_1_0_1_0; }
+		//[PRFNamed]
+		public CrossReference getRefPRFNamedCrossReference_1_0_1_0() { return cRefPRFNamedCrossReference_1_0_1_0; }
 
 		//ID
-		public RuleCall getRefNamedIDTerminalRuleCall_1_0_1_0_1() { return cRefNamedIDTerminalRuleCall_1_0_1_0_1; }
+		public RuleCall getRefPRFNamedIDTerminalRuleCall_1_0_1_0_1() { return cRefPRFNamedIDTerminalRuleCall_1_0_1_0_1; }
 
-		//"-" NamedRef
+		//"-" PRFNamedRef
 		public Group getGroup_1_1() { return cGroup_1_1; }
 
 		//"-"
 		public Keyword getHyphenMinusKeyword_1_1_0() { return cHyphenMinusKeyword_1_1_0; }
 
-		//NamedRef
-		public RuleCall getNamedRefParserRuleCall_1_1_1() { return cNamedRefParserRuleCall_1_1_1; }
+		//PRFNamedRef
+		public RuleCall getPRFNamedRefParserRuleCall_1_1_1() { return cPRFNamedRefParserRuleCall_1_1_1; }
 	}
 
-	public class NamedRefFirstElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.fragments.FragmentTestLanguage.NamedRefFirst");
+	public class PRFNamedRefFirstElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.fragments.FragmentTestLanguage.PRFNamedRefFirst");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cRefAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final CrossReference cRefNamedCrossReference_0_0 = (CrossReference)cRefAssignment_0.eContents().get(0);
-		private final RuleCall cRefNamedIDTerminalRuleCall_0_0_1 = (RuleCall)cRefNamedCrossReference_0_0.eContents().get(1);
+		private final CrossReference cRefPRFNamedCrossReference_0_0 = (CrossReference)cRefAssignment_0.eContents().get(0);
+		private final RuleCall cRefPRFNamedIDTerminalRuleCall_0_0_1 = (RuleCall)cRefPRFNamedCrossReference_0_0.eContents().get(1);
 		private final Keyword cLessThanSignHyphenMinusKeyword_1 = (Keyword)cGroup.eContents().get(1);
-		private final RuleCall cNamedFragmentParserRuleCall_2 = (RuleCall)cGroup.eContents().get(2);
+		private final RuleCall cPRFNamedFragmentParserRuleCall_2 = (RuleCall)cGroup.eContents().get(2);
 		
-		//NamedRefFirst returns Named:
-		//	ref=[Named] "<-" NamedFragment;
+		//PRFNamedRefFirst returns PRFNamed:
+		//	ref=[PRFNamed] "<-" PRFNamedFragment;
 		@Override public ParserRule getRule() { return rule; }
 
-		//ref=[Named] "<-" NamedFragment
+		//ref=[PRFNamed] "<-" PRFNamedFragment
 		public Group getGroup() { return cGroup; }
 
-		//ref=[Named]
+		//ref=[PRFNamed]
 		public Assignment getRefAssignment_0() { return cRefAssignment_0; }
 
-		//[Named]
-		public CrossReference getRefNamedCrossReference_0_0() { return cRefNamedCrossReference_0_0; }
+		//[PRFNamed]
+		public CrossReference getRefPRFNamedCrossReference_0_0() { return cRefPRFNamedCrossReference_0_0; }
 
 		//ID
-		public RuleCall getRefNamedIDTerminalRuleCall_0_0_1() { return cRefNamedIDTerminalRuleCall_0_0_1; }
+		public RuleCall getRefPRFNamedIDTerminalRuleCall_0_0_1() { return cRefPRFNamedIDTerminalRuleCall_0_0_1; }
 
 		//"<-"
 		public Keyword getLessThanSignHyphenMinusKeyword_1() { return cLessThanSignHyphenMinusKeyword_1; }
 
-		//NamedFragment
-		public RuleCall getNamedFragmentParserRuleCall_2() { return cNamedFragmentParserRuleCall_2; }
+		//PRFNamedFragment
+		public RuleCall getPRFNamedFragmentParserRuleCall_2() { return cPRFNamedFragmentParserRuleCall_2; }
 	}
 
-	public class NamedWithActionElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.fragments.FragmentTestLanguage.NamedWithAction");
+	public class PRFNamedWithActionElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.fragments.FragmentTestLanguage.PRFNamedWithAction");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final RuleCall cNamedParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
-		private final Action cNamedWithActionPrevAction_1 = (Action)cGroup.eContents().get(1);
+		private final RuleCall cPRFNamedParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
+		private final Action cPRFNamedWithActionPrevAction_1 = (Action)cGroup.eContents().get(1);
 		private final Assignment cNameAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final RuleCall cNameIDTerminalRuleCall_2_0 = (RuleCall)cNameAssignment_2.eContents().get(0);
 		private final Group cGroup_3 = (Group)cGroup.eContents().get(3);
 		private final Assignment cRefAssignment_3_0 = (Assignment)cGroup_3.eContents().get(0);
-		private final CrossReference cRefNamedCrossReference_3_0_0 = (CrossReference)cRefAssignment_3_0.eContents().get(0);
-		private final RuleCall cRefNamedIDTerminalRuleCall_3_0_0_1 = (RuleCall)cRefNamedCrossReference_3_0_0.eContents().get(1);
+		private final CrossReference cRefPRFNamedCrossReference_3_0_0 = (CrossReference)cRefAssignment_3_0.eContents().get(0);
+		private final RuleCall cRefPRFNamedIDTerminalRuleCall_3_0_0_1 = (RuleCall)cRefPRFNamedCrossReference_3_0_0.eContents().get(1);
 		private final Assignment cRef2Assignment_3_1 = (Assignment)cGroup_3.eContents().get(1);
-		private final CrossReference cRef2NamedCrossReference_3_1_0 = (CrossReference)cRef2Assignment_3_1.eContents().get(0);
-		private final RuleCall cRef2NamedIDTerminalRuleCall_3_1_0_1 = (RuleCall)cRef2NamedCrossReference_3_1_0.eContents().get(1);
+		private final CrossReference cRef2PRFNamedCrossReference_3_1_0 = (CrossReference)cRef2Assignment_3_1.eContents().get(0);
+		private final RuleCall cRef2PRFNamedIDTerminalRuleCall_3_1_0_1 = (RuleCall)cRef2PRFNamedCrossReference_3_1_0.eContents().get(1);
 		
-		//NamedWithAction returns Named:
-		//	Named {NamedWithAction.prev=current} name=ID (ref=[Named] ref2=[Named])?;
+		//PRFNamedWithAction returns PRFNamed:
+		//	PRFNamed {PRFNamedWithAction.prev=current} name=ID (ref=[PRFNamed] ref2=[PRFNamed])?;
 		@Override public ParserRule getRule() { return rule; }
 
-		//Named {NamedWithAction.prev=current} name=ID (ref=[Named] ref2=[Named])?
+		//PRFNamed {PRFNamedWithAction.prev=current} name=ID (ref=[PRFNamed] ref2=[PRFNamed])?
 		public Group getGroup() { return cGroup; }
 
-		//Named
-		public RuleCall getNamedParserRuleCall_0() { return cNamedParserRuleCall_0; }
+		//PRFNamed
+		public RuleCall getPRFNamedParserRuleCall_0() { return cPRFNamedParserRuleCall_0; }
 
-		//{NamedWithAction.prev=current}
-		public Action getNamedWithActionPrevAction_1() { return cNamedWithActionPrevAction_1; }
+		//{PRFNamedWithAction.prev=current}
+		public Action getPRFNamedWithActionPrevAction_1() { return cPRFNamedWithActionPrevAction_1; }
 
 		//name=ID
 		public Assignment getNameAssignment_2() { return cNameAssignment_2; }
@@ -290,66 +290,66 @@ public class FragmentTestLanguageGrammarAccess extends AbstractGrammarElementFin
 		//ID
 		public RuleCall getNameIDTerminalRuleCall_2_0() { return cNameIDTerminalRuleCall_2_0; }
 
-		//(ref=[Named] ref2=[Named])?
+		//(ref=[PRFNamed] ref2=[PRFNamed])?
 		public Group getGroup_3() { return cGroup_3; }
 
-		//ref=[Named]
+		//ref=[PRFNamed]
 		public Assignment getRefAssignment_3_0() { return cRefAssignment_3_0; }
 
-		//[Named]
-		public CrossReference getRefNamedCrossReference_3_0_0() { return cRefNamedCrossReference_3_0_0; }
+		//[PRFNamed]
+		public CrossReference getRefPRFNamedCrossReference_3_0_0() { return cRefPRFNamedCrossReference_3_0_0; }
 
 		//ID
-		public RuleCall getRefNamedIDTerminalRuleCall_3_0_0_1() { return cRefNamedIDTerminalRuleCall_3_0_0_1; }
+		public RuleCall getRefPRFNamedIDTerminalRuleCall_3_0_0_1() { return cRefPRFNamedIDTerminalRuleCall_3_0_0_1; }
 
-		//ref2=[Named]
+		//ref2=[PRFNamed]
 		public Assignment getRef2Assignment_3_1() { return cRef2Assignment_3_1; }
 
-		//[Named]
-		public CrossReference getRef2NamedCrossReference_3_1_0() { return cRef2NamedCrossReference_3_1_0; }
+		//[PRFNamed]
+		public CrossReference getRef2PRFNamedCrossReference_3_1_0() { return cRef2PRFNamedCrossReference_3_1_0; }
 
 		//ID
-		public RuleCall getRef2NamedIDTerminalRuleCall_3_1_0_1() { return cRef2NamedIDTerminalRuleCall_3_1_0_1; }
+		public RuleCall getRef2PRFNamedIDTerminalRuleCall_3_1_0_1() { return cRef2PRFNamedIDTerminalRuleCall_3_1_0_1; }
 	}
 
-	public class NamedWithActionInFragmentElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.fragments.FragmentTestLanguage.NamedWithActionInFragment");
+	public class PRFNamedWithActionInFragmentElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.fragments.FragmentTestLanguage.PRFNamedWithActionInFragment");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cFragmentWithActionParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
 		private final Keyword cHyphenMinusKeyword_1_0 = (Keyword)cGroup_1.eContents().get(0);
 		private final Assignment cRefAssignment_1_1 = (Assignment)cGroup_1.eContents().get(1);
-		private final CrossReference cRefNamedCrossReference_1_1_0 = (CrossReference)cRefAssignment_1_1.eContents().get(0);
-		private final RuleCall cRefNamedIDTerminalRuleCall_1_1_0_1 = (RuleCall)cRefNamedCrossReference_1_1_0.eContents().get(1);
+		private final CrossReference cRefPRFNamedCrossReference_1_1_0 = (CrossReference)cRefAssignment_1_1.eContents().get(0);
+		private final RuleCall cRefPRFNamedIDTerminalRuleCall_1_1_0_1 = (RuleCall)cRefPRFNamedCrossReference_1_1_0.eContents().get(1);
 		
-		//NamedWithActionInFragment returns Named:
-		//	FragmentWithAction ("-" ref=[Named])?;
+		//PRFNamedWithActionInFragment returns PRFNamed:
+		//	FragmentWithAction ("-" ref=[PRFNamed])?;
 		@Override public ParserRule getRule() { return rule; }
 
-		//FragmentWithAction ("-" ref=[Named])?
+		//FragmentWithAction ("-" ref=[PRFNamed])?
 		public Group getGroup() { return cGroup; }
 
 		//FragmentWithAction
 		public RuleCall getFragmentWithActionParserRuleCall_0() { return cFragmentWithActionParserRuleCall_0; }
 
-		//("-" ref=[Named])?
+		//("-" ref=[PRFNamed])?
 		public Group getGroup_1() { return cGroup_1; }
 
 		//"-"
 		public Keyword getHyphenMinusKeyword_1_0() { return cHyphenMinusKeyword_1_0; }
 
-		//ref=[Named]
+		//ref=[PRFNamed]
 		public Assignment getRefAssignment_1_1() { return cRefAssignment_1_1; }
 
-		//[Named]
-		public CrossReference getRefNamedCrossReference_1_1_0() { return cRefNamedCrossReference_1_1_0; }
+		//[PRFNamed]
+		public CrossReference getRefPRFNamedCrossReference_1_1_0() { return cRefPRFNamedCrossReference_1_1_0; }
 
 		//ID
-		public RuleCall getRefNamedIDTerminalRuleCall_1_1_0_1() { return cRefNamedIDTerminalRuleCall_1_1_0_1; }
+		public RuleCall getRefPRFNamedIDTerminalRuleCall_1_1_0_1() { return cRefPRFNamedIDTerminalRuleCall_1_1_0_1; }
 	}
 
-	public class NamedWithActionInFragment2Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.fragments.FragmentTestLanguage.NamedWithActionInFragment2");
+	public class PRFNamedWithActionInFragment2Elements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.fragments.FragmentTestLanguage.PRFNamedWithActionInFragment2");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cNameAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cNameIDTerminalRuleCall_0_0 = (RuleCall)cNameAssignment_0.eContents().get(0);
@@ -357,14 +357,14 @@ public class FragmentTestLanguageGrammarAccess extends AbstractGrammarElementFin
 		private final Group cGroup_2 = (Group)cGroup.eContents().get(2);
 		private final Keyword cHyphenMinusKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
 		private final Assignment cRefAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
-		private final CrossReference cRefNamedCrossReference_2_1_0 = (CrossReference)cRefAssignment_2_1.eContents().get(0);
-		private final RuleCall cRefNamedIDTerminalRuleCall_2_1_0_1 = (RuleCall)cRefNamedCrossReference_2_1_0.eContents().get(1);
+		private final CrossReference cRefPRFNamedCrossReference_2_1_0 = (CrossReference)cRefAssignment_2_1.eContents().get(0);
+		private final RuleCall cRefPRFNamedIDTerminalRuleCall_2_1_0_1 = (RuleCall)cRefPRFNamedCrossReference_2_1_0.eContents().get(1);
 		
-		//NamedWithActionInFragment2 returns Named:
-		//	name=ID FragmentWithAction2 ("-" ref=[Named])?;
+		//PRFNamedWithActionInFragment2 returns PRFNamed:
+		//	name=ID FragmentWithAction2 ("-" ref=[PRFNamed])?;
 		@Override public ParserRule getRule() { return rule; }
 
-		//name=ID FragmentWithAction2 ("-" ref=[Named])?
+		//name=ID FragmentWithAction2 ("-" ref=[PRFNamed])?
 		public Group getGroup() { return cGroup; }
 
 		//name=ID
@@ -376,56 +376,56 @@ public class FragmentTestLanguageGrammarAccess extends AbstractGrammarElementFin
 		//FragmentWithAction2
 		public RuleCall getFragmentWithAction2ParserRuleCall_1() { return cFragmentWithAction2ParserRuleCall_1; }
 
-		//("-" ref=[Named])?
+		//("-" ref=[PRFNamed])?
 		public Group getGroup_2() { return cGroup_2; }
 
 		//"-"
 		public Keyword getHyphenMinusKeyword_2_0() { return cHyphenMinusKeyword_2_0; }
 
-		//ref=[Named]
+		//ref=[PRFNamed]
 		public Assignment getRefAssignment_2_1() { return cRefAssignment_2_1; }
 
-		//[Named]
-		public CrossReference getRefNamedCrossReference_2_1_0() { return cRefNamedCrossReference_2_1_0; }
+		//[PRFNamed]
+		public CrossReference getRefPRFNamedCrossReference_2_1_0() { return cRefPRFNamedCrossReference_2_1_0; }
 
 		//ID
-		public RuleCall getRefNamedIDTerminalRuleCall_2_1_0_1() { return cRefNamedIDTerminalRuleCall_2_1_0_1; }
+		public RuleCall getRefPRFNamedIDTerminalRuleCall_2_1_0_1() { return cRefPRFNamedIDTerminalRuleCall_2_1_0_1; }
 	}
 
-	public class NamedWithActionInFragment3Elements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.fragments.FragmentTestLanguage.NamedWithActionInFragment3");
+	public class PRFNamedWithActionInFragment3Elements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.fragments.FragmentTestLanguage.PRFNamedWithActionInFragment3");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final RuleCall cFragmentWithAction3ParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
 		private final Keyword cHyphenMinusKeyword_1_0 = (Keyword)cGroup_1.eContents().get(0);
 		private final Assignment cRefAssignment_1_1 = (Assignment)cGroup_1.eContents().get(1);
-		private final CrossReference cRefNamedCrossReference_1_1_0 = (CrossReference)cRefAssignment_1_1.eContents().get(0);
-		private final RuleCall cRefNamedIDTerminalRuleCall_1_1_0_1 = (RuleCall)cRefNamedCrossReference_1_1_0.eContents().get(1);
+		private final CrossReference cRefPRFNamedCrossReference_1_1_0 = (CrossReference)cRefAssignment_1_1.eContents().get(0);
+		private final RuleCall cRefPRFNamedIDTerminalRuleCall_1_1_0_1 = (RuleCall)cRefPRFNamedCrossReference_1_1_0.eContents().get(1);
 		
-		//NamedWithActionInFragment3 returns Named:
-		//	FragmentWithAction3 ("-" ref=[Named])?;
+		//PRFNamedWithActionInFragment3 returns PRFNamed:
+		//	FragmentWithAction3 ("-" ref=[PRFNamed])?;
 		@Override public ParserRule getRule() { return rule; }
 
-		//FragmentWithAction3 ("-" ref=[Named])?
+		//FragmentWithAction3 ("-" ref=[PRFNamed])?
 		public Group getGroup() { return cGroup; }
 
 		//FragmentWithAction3
 		public RuleCall getFragmentWithAction3ParserRuleCall_0() { return cFragmentWithAction3ParserRuleCall_0; }
 
-		//("-" ref=[Named])?
+		//("-" ref=[PRFNamed])?
 		public Group getGroup_1() { return cGroup_1; }
 
 		//"-"
 		public Keyword getHyphenMinusKeyword_1_0() { return cHyphenMinusKeyword_1_0; }
 
-		//ref=[Named]
+		//ref=[PRFNamed]
 		public Assignment getRefAssignment_1_1() { return cRefAssignment_1_1; }
 
-		//[Named]
-		public CrossReference getRefNamedCrossReference_1_1_0() { return cRefNamedCrossReference_1_1_0; }
+		//[PRFNamed]
+		public CrossReference getRefPRFNamedCrossReference_1_1_0() { return cRefPRFNamedCrossReference_1_1_0; }
 
 		//ID
-		public RuleCall getRefNamedIDTerminalRuleCall_1_1_0_1() { return cRefNamedIDTerminalRuleCall_1_1_0_1; }
+		public RuleCall getRefPRFNamedIDTerminalRuleCall_1_1_0_1() { return cRefPRFNamedIDTerminalRuleCall_1_1_0_1; }
 	}
 
 	public class FragmentWithActionElements extends AbstractParserRuleElementFinder {
@@ -433,18 +433,18 @@ public class FragmentTestLanguageGrammarAccess extends AbstractGrammarElementFin
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cNameAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cNameIDTerminalRuleCall_0_0 = (RuleCall)cNameAssignment_0.eContents().get(0);
-		private final Action cNamedWithActionPrevAction_1 = (Action)cGroup.eContents().get(1);
+		private final Action cPRFNamedWithActionPrevAction_1 = (Action)cGroup.eContents().get(1);
 		private final Assignment cNameAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final RuleCall cNameIDTerminalRuleCall_2_0 = (RuleCall)cNameAssignment_2.eContents().get(0);
 		private final Assignment cRef2Assignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final CrossReference cRef2NamedCrossReference_3_0 = (CrossReference)cRef2Assignment_3.eContents().get(0);
-		private final RuleCall cRef2NamedIDTerminalRuleCall_3_0_1 = (RuleCall)cRef2NamedCrossReference_3_0.eContents().get(1);
+		private final CrossReference cRef2PRFNamedCrossReference_3_0 = (CrossReference)cRef2Assignment_3.eContents().get(0);
+		private final RuleCall cRef2PRFNamedIDTerminalRuleCall_3_0_1 = (RuleCall)cRef2PRFNamedCrossReference_3_0.eContents().get(1);
 		
-		//fragment FragmentWithAction returns Named:
-		//	name=ID {NamedWithAction.prev=current} name=ID ref2=[Named]?;
+		//fragment FragmentWithAction returns PRFNamed:
+		//	name=ID {PRFNamedWithAction.prev=current} name=ID ref2=[PRFNamed]?;
 		@Override public ParserRule getRule() { return rule; }
 
-		//name=ID {NamedWithAction.prev=current} name=ID ref2=[Named]?
+		//name=ID {PRFNamedWithAction.prev=current} name=ID ref2=[PRFNamed]?
 		public Group getGroup() { return cGroup; }
 
 		//name=ID
@@ -453,8 +453,8 @@ public class FragmentTestLanguageGrammarAccess extends AbstractGrammarElementFin
 		//ID
 		public RuleCall getNameIDTerminalRuleCall_0_0() { return cNameIDTerminalRuleCall_0_0; }
 
-		//{NamedWithAction.prev=current}
-		public Action getNamedWithActionPrevAction_1() { return cNamedWithActionPrevAction_1; }
+		//{PRFNamedWithAction.prev=current}
+		public Action getPRFNamedWithActionPrevAction_1() { return cPRFNamedWithActionPrevAction_1; }
 
 		//name=ID
 		public Assignment getNameAssignment_2() { return cNameAssignment_2; }
@@ -462,35 +462,35 @@ public class FragmentTestLanguageGrammarAccess extends AbstractGrammarElementFin
 		//ID
 		public RuleCall getNameIDTerminalRuleCall_2_0() { return cNameIDTerminalRuleCall_2_0; }
 
-		//ref2=[Named]?
+		//ref2=[PRFNamed]?
 		public Assignment getRef2Assignment_3() { return cRef2Assignment_3; }
 
-		//[Named]
-		public CrossReference getRef2NamedCrossReference_3_0() { return cRef2NamedCrossReference_3_0; }
+		//[PRFNamed]
+		public CrossReference getRef2PRFNamedCrossReference_3_0() { return cRef2PRFNamedCrossReference_3_0; }
 
 		//ID
-		public RuleCall getRef2NamedIDTerminalRuleCall_3_0_1() { return cRef2NamedIDTerminalRuleCall_3_0_1; }
+		public RuleCall getRef2PRFNamedIDTerminalRuleCall_3_0_1() { return cRef2PRFNamedIDTerminalRuleCall_3_0_1; }
 	}
 
 	public class FragmentWithAction2Elements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.fragments.FragmentTestLanguage.FragmentWithAction2");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Action cNamedWithActionPrevAction_0 = (Action)cGroup.eContents().get(0);
+		private final Action cPRFNamedWithActionPrevAction_0 = (Action)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cNameIDTerminalRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
 		private final Assignment cRef2Assignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final CrossReference cRef2NamedCrossReference_2_0 = (CrossReference)cRef2Assignment_2.eContents().get(0);
-		private final RuleCall cRef2NamedIDTerminalRuleCall_2_0_1 = (RuleCall)cRef2NamedCrossReference_2_0.eContents().get(1);
+		private final CrossReference cRef2PRFNamedCrossReference_2_0 = (CrossReference)cRef2Assignment_2.eContents().get(0);
+		private final RuleCall cRef2PRFNamedIDTerminalRuleCall_2_0_1 = (RuleCall)cRef2PRFNamedCrossReference_2_0.eContents().get(1);
 		
-		//fragment FragmentWithAction2 returns Named:
-		//	{NamedWithAction.prev=current} name=ID ref2=[Named]?;
+		//fragment FragmentWithAction2 returns PRFNamed:
+		//	{PRFNamedWithAction.prev=current} name=ID ref2=[PRFNamed]?;
 		@Override public ParserRule getRule() { return rule; }
 
-		//{NamedWithAction.prev=current} name=ID ref2=[Named]?
+		//{PRFNamedWithAction.prev=current} name=ID ref2=[PRFNamed]?
 		public Group getGroup() { return cGroup; }
 
-		//{NamedWithAction.prev=current}
-		public Action getNamedWithActionPrevAction_0() { return cNamedWithActionPrevAction_0; }
+		//{PRFNamedWithAction.prev=current}
+		public Action getPRFNamedWithActionPrevAction_0() { return cPRFNamedWithActionPrevAction_0; }
 
 		//name=ID
 		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
@@ -498,14 +498,14 @@ public class FragmentTestLanguageGrammarAccess extends AbstractGrammarElementFin
 		//ID
 		public RuleCall getNameIDTerminalRuleCall_1_0() { return cNameIDTerminalRuleCall_1_0; }
 
-		//ref2=[Named]?
+		//ref2=[PRFNamed]?
 		public Assignment getRef2Assignment_2() { return cRef2Assignment_2; }
 
-		//[Named]
-		public CrossReference getRef2NamedCrossReference_2_0() { return cRef2NamedCrossReference_2_0; }
+		//[PRFNamed]
+		public CrossReference getRef2PRFNamedCrossReference_2_0() { return cRef2PRFNamedCrossReference_2_0; }
 
 		//ID
-		public RuleCall getRef2NamedIDTerminalRuleCall_2_0_1() { return cRef2NamedIDTerminalRuleCall_2_0_1; }
+		public RuleCall getRef2PRFNamedIDTerminalRuleCall_2_0_1() { return cRef2PRFNamedIDTerminalRuleCall_2_0_1; }
 	}
 
 	public class FragmentWithAction3Elements extends AbstractParserRuleElementFinder {
@@ -514,19 +514,19 @@ public class FragmentTestLanguageGrammarAccess extends AbstractGrammarElementFin
 		private final Assignment cNameAssignment_0 = (Assignment)cGroup.eContents().get(0);
 		private final RuleCall cNameIDTerminalRuleCall_0_0 = (RuleCall)cNameAssignment_0.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
-		private final Action cNamedWithActionPrevAction_1_0 = (Action)cGroup_1.eContents().get(0);
+		private final Action cPRFNamedWithActionPrevAction_1_0 = (Action)cGroup_1.eContents().get(0);
 		private final Keyword cHyphenMinusGreaterThanSignKeyword_1_1 = (Keyword)cGroup_1.eContents().get(1);
 		private final Assignment cNameAssignment_1_2 = (Assignment)cGroup_1.eContents().get(2);
 		private final RuleCall cNameIDTerminalRuleCall_1_2_0 = (RuleCall)cNameAssignment_1_2.eContents().get(0);
 		private final Assignment cRef2Assignment_1_3 = (Assignment)cGroup_1.eContents().get(3);
-		private final CrossReference cRef2NamedCrossReference_1_3_0 = (CrossReference)cRef2Assignment_1_3.eContents().get(0);
-		private final RuleCall cRef2NamedIDTerminalRuleCall_1_3_0_1 = (RuleCall)cRef2NamedCrossReference_1_3_0.eContents().get(1);
+		private final CrossReference cRef2PRFNamedCrossReference_1_3_0 = (CrossReference)cRef2Assignment_1_3.eContents().get(0);
+		private final RuleCall cRef2PRFNamedIDTerminalRuleCall_1_3_0_1 = (RuleCall)cRef2PRFNamedCrossReference_1_3_0.eContents().get(1);
 		
-		//fragment FragmentWithAction3 returns Named:
-		//	name=ID ({NamedWithAction.prev=current} "->" name=ID ref2=[Named]?)*;
+		//fragment FragmentWithAction3 returns PRFNamed:
+		//	name=ID ({PRFNamedWithAction.prev=current} "->" name=ID ref2=[PRFNamed]?)*;
 		@Override public ParserRule getRule() { return rule; }
 
-		//name=ID ({NamedWithAction.prev=current} "->" name=ID ref2=[Named]?)*
+		//name=ID ({PRFNamedWithAction.prev=current} "->" name=ID ref2=[PRFNamed]?)*
 		public Group getGroup() { return cGroup; }
 
 		//name=ID
@@ -535,11 +535,11 @@ public class FragmentTestLanguageGrammarAccess extends AbstractGrammarElementFin
 		//ID
 		public RuleCall getNameIDTerminalRuleCall_0_0() { return cNameIDTerminalRuleCall_0_0; }
 
-		//({NamedWithAction.prev=current} "->" name=ID ref2=[Named]?)*
+		//({PRFNamedWithAction.prev=current} "->" name=ID ref2=[PRFNamed]?)*
 		public Group getGroup_1() { return cGroup_1; }
 
-		//{NamedWithAction.prev=current}
-		public Action getNamedWithActionPrevAction_1_0() { return cNamedWithActionPrevAction_1_0; }
+		//{PRFNamedWithAction.prev=current}
+		public Action getPRFNamedWithActionPrevAction_1_0() { return cPRFNamedWithActionPrevAction_1_0; }
 
 		//"->"
 		public Keyword getHyphenMinusGreaterThanSignKeyword_1_1() { return cHyphenMinusGreaterThanSignKeyword_1_1; }
@@ -550,22 +550,22 @@ public class FragmentTestLanguageGrammarAccess extends AbstractGrammarElementFin
 		//ID
 		public RuleCall getNameIDTerminalRuleCall_1_2_0() { return cNameIDTerminalRuleCall_1_2_0; }
 
-		//ref2=[Named]?
+		//ref2=[PRFNamed]?
 		public Assignment getRef2Assignment_1_3() { return cRef2Assignment_1_3; }
 
-		//[Named]
-		public CrossReference getRef2NamedCrossReference_1_3_0() { return cRef2NamedCrossReference_1_3_0; }
+		//[PRFNamed]
+		public CrossReference getRef2PRFNamedCrossReference_1_3_0() { return cRef2PRFNamedCrossReference_1_3_0; }
 
 		//ID
-		public RuleCall getRef2NamedIDTerminalRuleCall_1_3_0_1() { return cRef2NamedIDTerminalRuleCall_1_3_0_1; }
+		public RuleCall getRef2PRFNamedIDTerminalRuleCall_1_3_0_1() { return cRef2PRFNamedIDTerminalRuleCall_1_3_0_1; }
 	}
 
-	public class NamedFragmentElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.fragments.FragmentTestLanguage.NamedFragment");
+	public class PRFNamedFragmentElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.fragments.FragmentTestLanguage.PRFNamedFragment");
 		private final Assignment cNameAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cNameIDTerminalRuleCall_0 = (RuleCall)cNameAssignment.eContents().get(0);
 		
-		//fragment NamedFragment returns Named:
+		//fragment PRFNamedFragment returns PRFNamed:
 		//	name=ID;
 		@Override public ParserRule getRule() { return rule; }
 
@@ -576,39 +576,39 @@ public class FragmentTestLanguageGrammarAccess extends AbstractGrammarElementFin
 		public RuleCall getNameIDTerminalRuleCall_0() { return cNameIDTerminalRuleCall_0; }
 	}
 
-	public class NamedRefElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.fragments.FragmentTestLanguage.NamedRef");
+	public class PRFNamedRefElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.fragments.FragmentTestLanguage.PRFNamedRef");
 		private final Assignment cRefAssignment = (Assignment)rule.eContents().get(1);
-		private final CrossReference cRefNamedCrossReference_0 = (CrossReference)cRefAssignment.eContents().get(0);
-		private final RuleCall cRefNamedIDTerminalRuleCall_0_1 = (RuleCall)cRefNamedCrossReference_0.eContents().get(1);
+		private final CrossReference cRefPRFNamedCrossReference_0 = (CrossReference)cRefAssignment.eContents().get(0);
+		private final RuleCall cRefPRFNamedIDTerminalRuleCall_0_1 = (RuleCall)cRefPRFNamedCrossReference_0.eContents().get(1);
 		
-		//fragment NamedRef returns Named:
-		//	ref=[Named];
+		//fragment PRFNamedRef returns PRFNamed:
+		//	ref=[PRFNamed];
 		@Override public ParserRule getRule() { return rule; }
 
-		//ref=[Named]
+		//ref=[PRFNamed]
 		public Assignment getRefAssignment() { return cRefAssignment; }
 
-		//[Named]
-		public CrossReference getRefNamedCrossReference_0() { return cRefNamedCrossReference_0; }
+		//[PRFNamed]
+		public CrossReference getRefPRFNamedCrossReference_0() { return cRefPRFNamedCrossReference_0; }
 
 		//ID
-		public RuleCall getRefNamedIDTerminalRuleCall_0_1() { return cRefNamedIDTerminalRuleCall_0_1; }
+		public RuleCall getRefPRFNamedIDTerminalRuleCall_0_1() { return cRefPRFNamedIDTerminalRuleCall_0_1; }
 	}
 	
 	
-	private final FragmentsElements pFragments;
-	private final NamedElements pNamed;
-	private final NamedRefFirstElements pNamedRefFirst;
-	private final NamedWithActionElements pNamedWithAction;
-	private final NamedWithActionInFragmentElements pNamedWithActionInFragment;
-	private final NamedWithActionInFragment2Elements pNamedWithActionInFragment2;
-	private final NamedWithActionInFragment3Elements pNamedWithActionInFragment3;
+	private final ParserRuleFragmentsElements pParserRuleFragments;
+	private final PRFNamedElements pPRFNamed;
+	private final PRFNamedRefFirstElements pPRFNamedRefFirst;
+	private final PRFNamedWithActionElements pPRFNamedWithAction;
+	private final PRFNamedWithActionInFragmentElements pPRFNamedWithActionInFragment;
+	private final PRFNamedWithActionInFragment2Elements pPRFNamedWithActionInFragment2;
+	private final PRFNamedWithActionInFragment3Elements pPRFNamedWithActionInFragment3;
 	private final FragmentWithActionElements pFragmentWithAction;
 	private final FragmentWithAction2Elements pFragmentWithAction2;
 	private final FragmentWithAction3Elements pFragmentWithAction3;
-	private final NamedFragmentElements pNamedFragment;
-	private final NamedRefElements pNamedRef;
+	private final PRFNamedFragmentElements pPRFNamedFragment;
+	private final PRFNamedRefElements pPRFNamedRef;
 	
 	private final Grammar grammar;
 
@@ -619,18 +619,18 @@ public class FragmentTestLanguageGrammarAccess extends AbstractGrammarElementFin
 		TerminalsGrammarAccess gaTerminals) {
 		this.grammar = internalFindGrammar(grammarProvider);
 		this.gaTerminals = gaTerminals;
-		this.pFragments = new FragmentsElements();
-		this.pNamed = new NamedElements();
-		this.pNamedRefFirst = new NamedRefFirstElements();
-		this.pNamedWithAction = new NamedWithActionElements();
-		this.pNamedWithActionInFragment = new NamedWithActionInFragmentElements();
-		this.pNamedWithActionInFragment2 = new NamedWithActionInFragment2Elements();
-		this.pNamedWithActionInFragment3 = new NamedWithActionInFragment3Elements();
+		this.pParserRuleFragments = new ParserRuleFragmentsElements();
+		this.pPRFNamed = new PRFNamedElements();
+		this.pPRFNamedRefFirst = new PRFNamedRefFirstElements();
+		this.pPRFNamedWithAction = new PRFNamedWithActionElements();
+		this.pPRFNamedWithActionInFragment = new PRFNamedWithActionInFragmentElements();
+		this.pPRFNamedWithActionInFragment2 = new PRFNamedWithActionInFragment2Elements();
+		this.pPRFNamedWithActionInFragment3 = new PRFNamedWithActionInFragment3Elements();
 		this.pFragmentWithAction = new FragmentWithActionElements();
 		this.pFragmentWithAction2 = new FragmentWithAction2Elements();
 		this.pFragmentWithAction3 = new FragmentWithAction3Elements();
-		this.pNamedFragment = new NamedFragmentElements();
-		this.pNamedRef = new NamedRefElements();
+		this.pPRFNamedFragment = new PRFNamedFragmentElements();
+		this.pPRFNamedRef = new PRFNamedRefElements();
 	}
 	
 	protected Grammar internalFindGrammar(GrammarProvider grammarProvider) {
@@ -660,80 +660,80 @@ public class FragmentTestLanguageGrammarAccess extends AbstractGrammarElementFin
 	}
 
 	
-	//Fragments:
-	//	{Fragments} ("#1" element=Named | "#2" element=Named "->" ref=[Named] | "#3" element=NamedRefFirst | "#4"
-	//	element=NamedWithAction | "#5" element=NamedWithActionInFragment | "#6" element=NamedWithActionInFragment2 | "#7"
-	//	element=NamedWithActionInFragment3);
-	public FragmentsElements getFragmentsAccess() {
-		return pFragments;
+	//ParserRuleFragments:
+	//	{ParserRuleFragments} ("#1" element=PRFNamed | "#2" element=PRFNamed "->" ref=[PRFNamed] | "#3"
+	//	element=PRFNamedRefFirst | "#4" element=PRFNamedWithAction | "#5" element=PRFNamedWithActionInFragment | "#6"
+	//	element=PRFNamedWithActionInFragment2 | "#7" element=PRFNamedWithActionInFragment3);
+	public ParserRuleFragmentsElements getParserRuleFragmentsAccess() {
+		return pParserRuleFragments;
 	}
 	
-	public ParserRule getFragmentsRule() {
-		return getFragmentsAccess().getRule();
+	public ParserRule getParserRuleFragmentsRule() {
+		return getParserRuleFragmentsAccess().getRule();
 	}
 
-	//Named:
-	//	NamedFragment (":" ref=[Named] | "-" NamedRef)?;
-	public NamedElements getNamedAccess() {
-		return pNamed;
+	//PRFNamed:
+	//	PRFNamedFragment (":" ref=[PRFNamed] | "-" PRFNamedRef)?;
+	public PRFNamedElements getPRFNamedAccess() {
+		return pPRFNamed;
 	}
 	
-	public ParserRule getNamedRule() {
-		return getNamedAccess().getRule();
+	public ParserRule getPRFNamedRule() {
+		return getPRFNamedAccess().getRule();
 	}
 
-	//NamedRefFirst returns Named:
-	//	ref=[Named] "<-" NamedFragment;
-	public NamedRefFirstElements getNamedRefFirstAccess() {
-		return pNamedRefFirst;
+	//PRFNamedRefFirst returns PRFNamed:
+	//	ref=[PRFNamed] "<-" PRFNamedFragment;
+	public PRFNamedRefFirstElements getPRFNamedRefFirstAccess() {
+		return pPRFNamedRefFirst;
 	}
 	
-	public ParserRule getNamedRefFirstRule() {
-		return getNamedRefFirstAccess().getRule();
+	public ParserRule getPRFNamedRefFirstRule() {
+		return getPRFNamedRefFirstAccess().getRule();
 	}
 
-	//NamedWithAction returns Named:
-	//	Named {NamedWithAction.prev=current} name=ID (ref=[Named] ref2=[Named])?;
-	public NamedWithActionElements getNamedWithActionAccess() {
-		return pNamedWithAction;
+	//PRFNamedWithAction returns PRFNamed:
+	//	PRFNamed {PRFNamedWithAction.prev=current} name=ID (ref=[PRFNamed] ref2=[PRFNamed])?;
+	public PRFNamedWithActionElements getPRFNamedWithActionAccess() {
+		return pPRFNamedWithAction;
 	}
 	
-	public ParserRule getNamedWithActionRule() {
-		return getNamedWithActionAccess().getRule();
+	public ParserRule getPRFNamedWithActionRule() {
+		return getPRFNamedWithActionAccess().getRule();
 	}
 
-	//NamedWithActionInFragment returns Named:
-	//	FragmentWithAction ("-" ref=[Named])?;
-	public NamedWithActionInFragmentElements getNamedWithActionInFragmentAccess() {
-		return pNamedWithActionInFragment;
+	//PRFNamedWithActionInFragment returns PRFNamed:
+	//	FragmentWithAction ("-" ref=[PRFNamed])?;
+	public PRFNamedWithActionInFragmentElements getPRFNamedWithActionInFragmentAccess() {
+		return pPRFNamedWithActionInFragment;
 	}
 	
-	public ParserRule getNamedWithActionInFragmentRule() {
-		return getNamedWithActionInFragmentAccess().getRule();
+	public ParserRule getPRFNamedWithActionInFragmentRule() {
+		return getPRFNamedWithActionInFragmentAccess().getRule();
 	}
 
-	//NamedWithActionInFragment2 returns Named:
-	//	name=ID FragmentWithAction2 ("-" ref=[Named])?;
-	public NamedWithActionInFragment2Elements getNamedWithActionInFragment2Access() {
-		return pNamedWithActionInFragment2;
+	//PRFNamedWithActionInFragment2 returns PRFNamed:
+	//	name=ID FragmentWithAction2 ("-" ref=[PRFNamed])?;
+	public PRFNamedWithActionInFragment2Elements getPRFNamedWithActionInFragment2Access() {
+		return pPRFNamedWithActionInFragment2;
 	}
 	
-	public ParserRule getNamedWithActionInFragment2Rule() {
-		return getNamedWithActionInFragment2Access().getRule();
+	public ParserRule getPRFNamedWithActionInFragment2Rule() {
+		return getPRFNamedWithActionInFragment2Access().getRule();
 	}
 
-	//NamedWithActionInFragment3 returns Named:
-	//	FragmentWithAction3 ("-" ref=[Named])?;
-	public NamedWithActionInFragment3Elements getNamedWithActionInFragment3Access() {
-		return pNamedWithActionInFragment3;
+	//PRFNamedWithActionInFragment3 returns PRFNamed:
+	//	FragmentWithAction3 ("-" ref=[PRFNamed])?;
+	public PRFNamedWithActionInFragment3Elements getPRFNamedWithActionInFragment3Access() {
+		return pPRFNamedWithActionInFragment3;
 	}
 	
-	public ParserRule getNamedWithActionInFragment3Rule() {
-		return getNamedWithActionInFragment3Access().getRule();
+	public ParserRule getPRFNamedWithActionInFragment3Rule() {
+		return getPRFNamedWithActionInFragment3Access().getRule();
 	}
 
-	//fragment FragmentWithAction returns Named:
-	//	name=ID {NamedWithAction.prev=current} name=ID ref2=[Named]?;
+	//fragment FragmentWithAction returns PRFNamed:
+	//	name=ID {PRFNamedWithAction.prev=current} name=ID ref2=[PRFNamed]?;
 	public FragmentWithActionElements getFragmentWithActionAccess() {
 		return pFragmentWithAction;
 	}
@@ -742,8 +742,8 @@ public class FragmentTestLanguageGrammarAccess extends AbstractGrammarElementFin
 		return getFragmentWithActionAccess().getRule();
 	}
 
-	//fragment FragmentWithAction2 returns Named:
-	//	{NamedWithAction.prev=current} name=ID ref2=[Named]?;
+	//fragment FragmentWithAction2 returns PRFNamed:
+	//	{PRFNamedWithAction.prev=current} name=ID ref2=[PRFNamed]?;
 	public FragmentWithAction2Elements getFragmentWithAction2Access() {
 		return pFragmentWithAction2;
 	}
@@ -752,8 +752,8 @@ public class FragmentTestLanguageGrammarAccess extends AbstractGrammarElementFin
 		return getFragmentWithAction2Access().getRule();
 	}
 
-	//fragment FragmentWithAction3 returns Named:
-	//	name=ID ({NamedWithAction.prev=current} "->" name=ID ref2=[Named]?)*;
+	//fragment FragmentWithAction3 returns PRFNamed:
+	//	name=ID ({PRFNamedWithAction.prev=current} "->" name=ID ref2=[PRFNamed]?)*;
 	public FragmentWithAction3Elements getFragmentWithAction3Access() {
 		return pFragmentWithAction3;
 	}
@@ -762,24 +762,24 @@ public class FragmentTestLanguageGrammarAccess extends AbstractGrammarElementFin
 		return getFragmentWithAction3Access().getRule();
 	}
 
-	//fragment NamedFragment returns Named:
+	//fragment PRFNamedFragment returns PRFNamed:
 	//	name=ID;
-	public NamedFragmentElements getNamedFragmentAccess() {
-		return pNamedFragment;
+	public PRFNamedFragmentElements getPRFNamedFragmentAccess() {
+		return pPRFNamedFragment;
 	}
 	
-	public ParserRule getNamedFragmentRule() {
-		return getNamedFragmentAccess().getRule();
+	public ParserRule getPRFNamedFragmentRule() {
+		return getPRFNamedFragmentAccess().getRule();
 	}
 
-	//fragment NamedRef returns Named:
-	//	ref=[Named];
-	public NamedRefElements getNamedRefAccess() {
-		return pNamedRef;
+	//fragment PRFNamedRef returns PRFNamed:
+	//	ref=[PRFNamed];
+	public PRFNamedRefElements getPRFNamedRefAccess() {
+		return pPRFNamedRef;
 	}
 	
-	public ParserRule getNamedRefRule() {
-		return getNamedRefAccess().getRule();
+	public ParserRule getPRFNamedRefRule() {
+		return getPRFNamedRefAccess().getRule();
 	}
 
 	//terminal ID:

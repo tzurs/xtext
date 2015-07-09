@@ -72,7 +72,7 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
     	
     	@Override
     	protected String getFirstRuleName() {
-    		return "FragmentsEx";	
+    		return "ParserRuleFragmentsEx";	
     	} 
     	   	   	
     	@Override
@@ -82,26 +82,26 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
 
 
 
-    // $ANTLR start "entryRuleFragmentsEx"
-    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:61:1: entryRuleFragmentsEx returns [EObject current=null] : iv_ruleFragmentsEx= ruleFragmentsEx EOF ;
-    public final EObject entryRuleFragmentsEx() throws RecognitionException {
+    // $ANTLR start "entryRuleParserRuleFragmentsEx"
+    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:61:1: entryRuleParserRuleFragmentsEx returns [EObject current=null] : iv_ruleParserRuleFragmentsEx= ruleParserRuleFragmentsEx EOF ;
+    public final EObject entryRuleParserRuleFragmentsEx() throws RecognitionException {
         EObject current = null;
 
-        EObject iv_ruleFragmentsEx = null;
+        EObject iv_ruleParserRuleFragmentsEx = null;
 
 
         try {
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:62:2: (iv_ruleFragmentsEx= ruleFragmentsEx EOF )
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:63:2: iv_ruleFragmentsEx= ruleFragmentsEx EOF
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:62:2: (iv_ruleParserRuleFragmentsEx= ruleParserRuleFragmentsEx EOF )
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:63:2: iv_ruleParserRuleFragmentsEx= ruleParserRuleFragmentsEx EOF
             {
-             newCompositeNode(grammarAccess.getFragmentsExRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleFragmentsEx_in_entryRuleFragmentsEx67);
-            iv_ruleFragmentsEx=ruleFragmentsEx();
+             newCompositeNode(grammarAccess.getParserRuleFragmentsExRule()); 
+            pushFollow(FollowSets000.FOLLOW_ruleParserRuleFragmentsEx_in_entryRuleParserRuleFragmentsEx67);
+            iv_ruleParserRuleFragmentsEx=ruleParserRuleFragmentsEx();
 
             state._fsp--;
 
-             current =iv_ruleFragmentsEx; 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleFragmentsEx77); 
+             current =iv_ruleParserRuleFragmentsEx; 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleParserRuleFragmentsEx77); 
 
             }
 
@@ -115,33 +115,33 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
         }
         return current;
     }
-    // $ANTLR end "entryRuleFragmentsEx"
+    // $ANTLR end "entryRuleParserRuleFragmentsEx"
 
 
-    // $ANTLR start "ruleFragmentsEx"
-    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:70:1: ruleFragmentsEx returns [EObject current=null] : this_Fragments_0= ruleFragments ;
-    public final EObject ruleFragmentsEx() throws RecognitionException {
+    // $ANTLR start "ruleParserRuleFragmentsEx"
+    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:70:1: ruleParserRuleFragmentsEx returns [EObject current=null] : this_ParserRuleFragments_0= ruleParserRuleFragments ;
+    public final EObject ruleParserRuleFragmentsEx() throws RecognitionException {
         EObject current = null;
 
-        EObject this_Fragments_0 = null;
+        EObject this_ParserRuleFragments_0 = null;
 
 
          enterRule(); 
             
         try {
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:73:28: (this_Fragments_0= ruleFragments )
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:75:5: this_Fragments_0= ruleFragments
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:73:28: (this_ParserRuleFragments_0= ruleParserRuleFragments )
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:75:5: this_ParserRuleFragments_0= ruleParserRuleFragments
             {
              
-                    newCompositeNode(grammarAccess.getFragmentsExAccess().getFragmentsParserRuleCall()); 
+                    newCompositeNode(grammarAccess.getParserRuleFragmentsExAccess().getParserRuleFragmentsParserRuleCall()); 
                 
-            pushFollow(FollowSets000.FOLLOW_ruleFragments_in_ruleFragmentsEx123);
-            this_Fragments_0=ruleFragments();
+            pushFollow(FollowSets000.FOLLOW_ruleParserRuleFragments_in_ruleParserRuleFragmentsEx123);
+            this_ParserRuleFragments_0=ruleParserRuleFragments();
 
             state._fsp--;
 
 
-                    current = this_Fragments_0;
+                    current = this_ParserRuleFragments_0;
                     afterParserOrEnumRuleCall();
                 
 
@@ -158,29 +158,29 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
         }
         return current;
     }
-    // $ANTLR end "ruleFragmentsEx"
+    // $ANTLR end "ruleParserRuleFragmentsEx"
 
 
-    // $ANTLR start "entryRuleFragments"
-    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:91:1: entryRuleFragments returns [EObject current=null] : iv_ruleFragments= ruleFragments EOF ;
-    public final EObject entryRuleFragments() throws RecognitionException {
+    // $ANTLR start "entryRuleParserRuleFragments"
+    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:91:1: entryRuleParserRuleFragments returns [EObject current=null] : iv_ruleParserRuleFragments= ruleParserRuleFragments EOF ;
+    public final EObject entryRuleParserRuleFragments() throws RecognitionException {
         EObject current = null;
 
-        EObject iv_ruleFragments = null;
+        EObject iv_ruleParserRuleFragments = null;
 
 
         try {
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:92:2: (iv_ruleFragments= ruleFragments EOF )
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:93:2: iv_ruleFragments= ruleFragments EOF
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:92:2: (iv_ruleParserRuleFragments= ruleParserRuleFragments EOF )
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:93:2: iv_ruleParserRuleFragments= ruleParserRuleFragments EOF
             {
-             newCompositeNode(grammarAccess.getFragmentsRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleFragments_in_entryRuleFragments156);
-            iv_ruleFragments=ruleFragments();
+             newCompositeNode(grammarAccess.getParserRuleFragmentsRule()); 
+            pushFollow(FollowSets000.FOLLOW_ruleParserRuleFragments_in_entryRuleParserRuleFragments156);
+            iv_ruleParserRuleFragments=ruleParserRuleFragments();
 
             state._fsp--;
 
-             current =iv_ruleFragments; 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleFragments166); 
+             current =iv_ruleParserRuleFragments; 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleParserRuleFragments166); 
 
             }
 
@@ -194,12 +194,12 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
         }
         return current;
     }
-    // $ANTLR end "entryRuleFragments"
+    // $ANTLR end "entryRuleParserRuleFragments"
 
 
-    // $ANTLR start "ruleFragments"
-    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:100:1: ruleFragments returns [EObject current=null] : ( () ( (otherlv_1= NumberSignDigitOne ( (lv_element_2_0= ruleNamed ) ) ) | (otherlv_3= NumberSignDigitTwo ( (lv_element_4_0= ruleNamed ) ) otherlv_5= HyphenMinusGreaterThanSign ( (otherlv_6= RULE_ID ) ) ) | (otherlv_7= NumberSignDigitThree ( (lv_element_8_0= ruleNamedRefFirst ) ) ) | (otherlv_9= NumberSignDigitFour ( (lv_element_10_0= ruleNamedWithAction ) ) ) | (otherlv_11= NumberSignDigitFive ( (lv_element_12_0= ruleNamedWithActionInFragment ) ) ) | (otherlv_13= NumberSignDigitSix ( (lv_element_14_0= ruleNamedWithActionInFragment2 ) ) ) | (otherlv_15= NumberSignDigitSeven ( (lv_element_16_0= ruleNamedWithActionInFragment3 ) ) ) ) ) ;
-    public final EObject ruleFragments() throws RecognitionException {
+    // $ANTLR start "ruleParserRuleFragments"
+    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:100:1: ruleParserRuleFragments returns [EObject current=null] : ( () ( (otherlv_1= NumberSignDigitOne ( (lv_element_2_0= rulePRFNamed ) ) ) | (otherlv_3= NumberSignDigitTwo ( (lv_element_4_0= rulePRFNamed ) ) otherlv_5= HyphenMinusGreaterThanSign ( (otherlv_6= RULE_ID ) ) ) | (otherlv_7= NumberSignDigitThree ( (lv_element_8_0= rulePRFNamedRefFirst ) ) ) | (otherlv_9= NumberSignDigitFour ( (lv_element_10_0= rulePRFNamedWithAction ) ) ) | (otherlv_11= NumberSignDigitFive ( (lv_element_12_0= rulePRFNamedWithActionInFragment ) ) ) | (otherlv_13= NumberSignDigitSix ( (lv_element_14_0= rulePRFNamedWithActionInFragment2 ) ) ) | (otherlv_15= NumberSignDigitSeven ( (lv_element_16_0= rulePRFNamedWithActionInFragment3 ) ) ) ) ) ;
+    public final EObject ruleParserRuleFragments() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_1=null;
@@ -229,24 +229,24 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
          enterRule(); 
             
         try {
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:103:28: ( ( () ( (otherlv_1= NumberSignDigitOne ( (lv_element_2_0= ruleNamed ) ) ) | (otherlv_3= NumberSignDigitTwo ( (lv_element_4_0= ruleNamed ) ) otherlv_5= HyphenMinusGreaterThanSign ( (otherlv_6= RULE_ID ) ) ) | (otherlv_7= NumberSignDigitThree ( (lv_element_8_0= ruleNamedRefFirst ) ) ) | (otherlv_9= NumberSignDigitFour ( (lv_element_10_0= ruleNamedWithAction ) ) ) | (otherlv_11= NumberSignDigitFive ( (lv_element_12_0= ruleNamedWithActionInFragment ) ) ) | (otherlv_13= NumberSignDigitSix ( (lv_element_14_0= ruleNamedWithActionInFragment2 ) ) ) | (otherlv_15= NumberSignDigitSeven ( (lv_element_16_0= ruleNamedWithActionInFragment3 ) ) ) ) ) )
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:104:1: ( () ( (otherlv_1= NumberSignDigitOne ( (lv_element_2_0= ruleNamed ) ) ) | (otherlv_3= NumberSignDigitTwo ( (lv_element_4_0= ruleNamed ) ) otherlv_5= HyphenMinusGreaterThanSign ( (otherlv_6= RULE_ID ) ) ) | (otherlv_7= NumberSignDigitThree ( (lv_element_8_0= ruleNamedRefFirst ) ) ) | (otherlv_9= NumberSignDigitFour ( (lv_element_10_0= ruleNamedWithAction ) ) ) | (otherlv_11= NumberSignDigitFive ( (lv_element_12_0= ruleNamedWithActionInFragment ) ) ) | (otherlv_13= NumberSignDigitSix ( (lv_element_14_0= ruleNamedWithActionInFragment2 ) ) ) | (otherlv_15= NumberSignDigitSeven ( (lv_element_16_0= ruleNamedWithActionInFragment3 ) ) ) ) )
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:103:28: ( ( () ( (otherlv_1= NumberSignDigitOne ( (lv_element_2_0= rulePRFNamed ) ) ) | (otherlv_3= NumberSignDigitTwo ( (lv_element_4_0= rulePRFNamed ) ) otherlv_5= HyphenMinusGreaterThanSign ( (otherlv_6= RULE_ID ) ) ) | (otherlv_7= NumberSignDigitThree ( (lv_element_8_0= rulePRFNamedRefFirst ) ) ) | (otherlv_9= NumberSignDigitFour ( (lv_element_10_0= rulePRFNamedWithAction ) ) ) | (otherlv_11= NumberSignDigitFive ( (lv_element_12_0= rulePRFNamedWithActionInFragment ) ) ) | (otherlv_13= NumberSignDigitSix ( (lv_element_14_0= rulePRFNamedWithActionInFragment2 ) ) ) | (otherlv_15= NumberSignDigitSeven ( (lv_element_16_0= rulePRFNamedWithActionInFragment3 ) ) ) ) ) )
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:104:1: ( () ( (otherlv_1= NumberSignDigitOne ( (lv_element_2_0= rulePRFNamed ) ) ) | (otherlv_3= NumberSignDigitTwo ( (lv_element_4_0= rulePRFNamed ) ) otherlv_5= HyphenMinusGreaterThanSign ( (otherlv_6= RULE_ID ) ) ) | (otherlv_7= NumberSignDigitThree ( (lv_element_8_0= rulePRFNamedRefFirst ) ) ) | (otherlv_9= NumberSignDigitFour ( (lv_element_10_0= rulePRFNamedWithAction ) ) ) | (otherlv_11= NumberSignDigitFive ( (lv_element_12_0= rulePRFNamedWithActionInFragment ) ) ) | (otherlv_13= NumberSignDigitSix ( (lv_element_14_0= rulePRFNamedWithActionInFragment2 ) ) ) | (otherlv_15= NumberSignDigitSeven ( (lv_element_16_0= rulePRFNamedWithActionInFragment3 ) ) ) ) )
             {
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:104:1: ( () ( (otherlv_1= NumberSignDigitOne ( (lv_element_2_0= ruleNamed ) ) ) | (otherlv_3= NumberSignDigitTwo ( (lv_element_4_0= ruleNamed ) ) otherlv_5= HyphenMinusGreaterThanSign ( (otherlv_6= RULE_ID ) ) ) | (otherlv_7= NumberSignDigitThree ( (lv_element_8_0= ruleNamedRefFirst ) ) ) | (otherlv_9= NumberSignDigitFour ( (lv_element_10_0= ruleNamedWithAction ) ) ) | (otherlv_11= NumberSignDigitFive ( (lv_element_12_0= ruleNamedWithActionInFragment ) ) ) | (otherlv_13= NumberSignDigitSix ( (lv_element_14_0= ruleNamedWithActionInFragment2 ) ) ) | (otherlv_15= NumberSignDigitSeven ( (lv_element_16_0= ruleNamedWithActionInFragment3 ) ) ) ) )
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:104:2: () ( (otherlv_1= NumberSignDigitOne ( (lv_element_2_0= ruleNamed ) ) ) | (otherlv_3= NumberSignDigitTwo ( (lv_element_4_0= ruleNamed ) ) otherlv_5= HyphenMinusGreaterThanSign ( (otherlv_6= RULE_ID ) ) ) | (otherlv_7= NumberSignDigitThree ( (lv_element_8_0= ruleNamedRefFirst ) ) ) | (otherlv_9= NumberSignDigitFour ( (lv_element_10_0= ruleNamedWithAction ) ) ) | (otherlv_11= NumberSignDigitFive ( (lv_element_12_0= ruleNamedWithActionInFragment ) ) ) | (otherlv_13= NumberSignDigitSix ( (lv_element_14_0= ruleNamedWithActionInFragment2 ) ) ) | (otherlv_15= NumberSignDigitSeven ( (lv_element_16_0= ruleNamedWithActionInFragment3 ) ) ) )
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:104:1: ( () ( (otherlv_1= NumberSignDigitOne ( (lv_element_2_0= rulePRFNamed ) ) ) | (otherlv_3= NumberSignDigitTwo ( (lv_element_4_0= rulePRFNamed ) ) otherlv_5= HyphenMinusGreaterThanSign ( (otherlv_6= RULE_ID ) ) ) | (otherlv_7= NumberSignDigitThree ( (lv_element_8_0= rulePRFNamedRefFirst ) ) ) | (otherlv_9= NumberSignDigitFour ( (lv_element_10_0= rulePRFNamedWithAction ) ) ) | (otherlv_11= NumberSignDigitFive ( (lv_element_12_0= rulePRFNamedWithActionInFragment ) ) ) | (otherlv_13= NumberSignDigitSix ( (lv_element_14_0= rulePRFNamedWithActionInFragment2 ) ) ) | (otherlv_15= NumberSignDigitSeven ( (lv_element_16_0= rulePRFNamedWithActionInFragment3 ) ) ) ) )
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:104:2: () ( (otherlv_1= NumberSignDigitOne ( (lv_element_2_0= rulePRFNamed ) ) ) | (otherlv_3= NumberSignDigitTwo ( (lv_element_4_0= rulePRFNamed ) ) otherlv_5= HyphenMinusGreaterThanSign ( (otherlv_6= RULE_ID ) ) ) | (otherlv_7= NumberSignDigitThree ( (lv_element_8_0= rulePRFNamedRefFirst ) ) ) | (otherlv_9= NumberSignDigitFour ( (lv_element_10_0= rulePRFNamedWithAction ) ) ) | (otherlv_11= NumberSignDigitFive ( (lv_element_12_0= rulePRFNamedWithActionInFragment ) ) ) | (otherlv_13= NumberSignDigitSix ( (lv_element_14_0= rulePRFNamedWithActionInFragment2 ) ) ) | (otherlv_15= NumberSignDigitSeven ( (lv_element_16_0= rulePRFNamedWithActionInFragment3 ) ) ) )
             {
             // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:104:2: ()
             // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:105:5: 
             {
 
                     current = forceCreateModelElement(
-                        grammarAccess.getFragmentsAccess().getFragmentsAction_0(),
+                        grammarAccess.getParserRuleFragmentsAccess().getParserRuleFragmentsAction_0(),
                         current);
                 
 
             }
 
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:110:2: ( (otherlv_1= NumberSignDigitOne ( (lv_element_2_0= ruleNamed ) ) ) | (otherlv_3= NumberSignDigitTwo ( (lv_element_4_0= ruleNamed ) ) otherlv_5= HyphenMinusGreaterThanSign ( (otherlv_6= RULE_ID ) ) ) | (otherlv_7= NumberSignDigitThree ( (lv_element_8_0= ruleNamedRefFirst ) ) ) | (otherlv_9= NumberSignDigitFour ( (lv_element_10_0= ruleNamedWithAction ) ) ) | (otherlv_11= NumberSignDigitFive ( (lv_element_12_0= ruleNamedWithActionInFragment ) ) ) | (otherlv_13= NumberSignDigitSix ( (lv_element_14_0= ruleNamedWithActionInFragment2 ) ) ) | (otherlv_15= NumberSignDigitSeven ( (lv_element_16_0= ruleNamedWithActionInFragment3 ) ) ) )
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:110:2: ( (otherlv_1= NumberSignDigitOne ( (lv_element_2_0= rulePRFNamed ) ) ) | (otherlv_3= NumberSignDigitTwo ( (lv_element_4_0= rulePRFNamed ) ) otherlv_5= HyphenMinusGreaterThanSign ( (otherlv_6= RULE_ID ) ) ) | (otherlv_7= NumberSignDigitThree ( (lv_element_8_0= rulePRFNamedRefFirst ) ) ) | (otherlv_9= NumberSignDigitFour ( (lv_element_10_0= rulePRFNamedWithAction ) ) ) | (otherlv_11= NumberSignDigitFive ( (lv_element_12_0= rulePRFNamedWithActionInFragment ) ) ) | (otherlv_13= NumberSignDigitSix ( (lv_element_14_0= rulePRFNamedWithActionInFragment2 ) ) ) | (otherlv_15= NumberSignDigitSeven ( (lv_element_16_0= rulePRFNamedWithActionInFragment3 ) ) ) )
             int alt1=7;
             switch ( input.LA(1) ) {
             case NumberSignDigitOne:
@@ -293,38 +293,38 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
 
             switch (alt1) {
                 case 1 :
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:110:3: (otherlv_1= NumberSignDigitOne ( (lv_element_2_0= ruleNamed ) ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:110:3: (otherlv_1= NumberSignDigitOne ( (lv_element_2_0= rulePRFNamed ) ) )
                     {
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:110:3: (otherlv_1= NumberSignDigitOne ( (lv_element_2_0= ruleNamed ) ) )
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:111:2: otherlv_1= NumberSignDigitOne ( (lv_element_2_0= ruleNamed ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:110:3: (otherlv_1= NumberSignDigitOne ( (lv_element_2_0= rulePRFNamed ) ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:111:2: otherlv_1= NumberSignDigitOne ( (lv_element_2_0= rulePRFNamed ) )
                     {
-                    otherlv_1=(Token)match(input,NumberSignDigitOne,FollowSets000.FOLLOW_NumberSignDigitOne_in_ruleFragments215); 
+                    otherlv_1=(Token)match(input,NumberSignDigitOne,FollowSets000.FOLLOW_NumberSignDigitOne_in_ruleParserRuleFragments215); 
 
-                        	newLeafNode(otherlv_1, grammarAccess.getFragmentsAccess().getNumberSignDigitOneKeyword_1_0_0());
+                        	newLeafNode(otherlv_1, grammarAccess.getParserRuleFragmentsAccess().getNumberSignDigitOneKeyword_1_0_0());
                         
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:115:1: ( (lv_element_2_0= ruleNamed ) )
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:116:1: (lv_element_2_0= ruleNamed )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:115:1: ( (lv_element_2_0= rulePRFNamed ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:116:1: (lv_element_2_0= rulePRFNamed )
                     {
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:116:1: (lv_element_2_0= ruleNamed )
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:117:3: lv_element_2_0= ruleNamed
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:116:1: (lv_element_2_0= rulePRFNamed )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:117:3: lv_element_2_0= rulePRFNamed
                     {
                      
-                    	        newCompositeNode(grammarAccess.getFragmentsAccess().getElementNamedParserRuleCall_1_0_1_0()); 
+                    	        newCompositeNode(grammarAccess.getParserRuleFragmentsAccess().getElementPRFNamedParserRuleCall_1_0_1_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleNamed_in_ruleFragments235);
-                    lv_element_2_0=ruleNamed();
+                    pushFollow(FollowSets000.FOLLOW_rulePRFNamed_in_ruleParserRuleFragments235);
+                    lv_element_2_0=rulePRFNamed();
 
                     state._fsp--;
 
 
                     	        if (current==null) {
-                    	            current = createModelElementForParent(grammarAccess.getFragmentsRule());
+                    	            current = createModelElementForParent(grammarAccess.getParserRuleFragmentsRule());
                     	        }
                            		set(
                            			current, 
                            			"element",
                             		lv_element_2_0, 
-                            		"Named");
+                            		"PRFNamed");
                     	        afterParserOrEnumRuleCall();
                     	    
 
@@ -340,38 +340,38 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
                     }
                     break;
                 case 2 :
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:134:6: (otherlv_3= NumberSignDigitTwo ( (lv_element_4_0= ruleNamed ) ) otherlv_5= HyphenMinusGreaterThanSign ( (otherlv_6= RULE_ID ) ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:134:6: (otherlv_3= NumberSignDigitTwo ( (lv_element_4_0= rulePRFNamed ) ) otherlv_5= HyphenMinusGreaterThanSign ( (otherlv_6= RULE_ID ) ) )
                     {
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:134:6: (otherlv_3= NumberSignDigitTwo ( (lv_element_4_0= ruleNamed ) ) otherlv_5= HyphenMinusGreaterThanSign ( (otherlv_6= RULE_ID ) ) )
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:135:2: otherlv_3= NumberSignDigitTwo ( (lv_element_4_0= ruleNamed ) ) otherlv_5= HyphenMinusGreaterThanSign ( (otherlv_6= RULE_ID ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:134:6: (otherlv_3= NumberSignDigitTwo ( (lv_element_4_0= rulePRFNamed ) ) otherlv_5= HyphenMinusGreaterThanSign ( (otherlv_6= RULE_ID ) ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:135:2: otherlv_3= NumberSignDigitTwo ( (lv_element_4_0= rulePRFNamed ) ) otherlv_5= HyphenMinusGreaterThanSign ( (otherlv_6= RULE_ID ) )
                     {
-                    otherlv_3=(Token)match(input,NumberSignDigitTwo,FollowSets000.FOLLOW_NumberSignDigitTwo_in_ruleFragments256); 
+                    otherlv_3=(Token)match(input,NumberSignDigitTwo,FollowSets000.FOLLOW_NumberSignDigitTwo_in_ruleParserRuleFragments256); 
 
-                        	newLeafNode(otherlv_3, grammarAccess.getFragmentsAccess().getNumberSignDigitTwoKeyword_1_1_0());
+                        	newLeafNode(otherlv_3, grammarAccess.getParserRuleFragmentsAccess().getNumberSignDigitTwoKeyword_1_1_0());
                         
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:139:1: ( (lv_element_4_0= ruleNamed ) )
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:140:1: (lv_element_4_0= ruleNamed )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:139:1: ( (lv_element_4_0= rulePRFNamed ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:140:1: (lv_element_4_0= rulePRFNamed )
                     {
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:140:1: (lv_element_4_0= ruleNamed )
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:141:3: lv_element_4_0= ruleNamed
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:140:1: (lv_element_4_0= rulePRFNamed )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:141:3: lv_element_4_0= rulePRFNamed
                     {
                      
-                    	        newCompositeNode(grammarAccess.getFragmentsAccess().getElementNamedParserRuleCall_1_1_1_0()); 
+                    	        newCompositeNode(grammarAccess.getParserRuleFragmentsAccess().getElementPRFNamedParserRuleCall_1_1_1_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleNamed_in_ruleFragments276);
-                    lv_element_4_0=ruleNamed();
+                    pushFollow(FollowSets000.FOLLOW_rulePRFNamed_in_ruleParserRuleFragments276);
+                    lv_element_4_0=rulePRFNamed();
 
                     state._fsp--;
 
 
                     	        if (current==null) {
-                    	            current = createModelElementForParent(grammarAccess.getFragmentsRule());
+                    	            current = createModelElementForParent(grammarAccess.getParserRuleFragmentsRule());
                     	        }
                            		set(
                            			current, 
                            			"element",
                             		lv_element_4_0, 
-                            		"Named");
+                            		"PRFNamed");
                     	        afterParserOrEnumRuleCall();
                     	    
 
@@ -380,9 +380,9 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
 
                     }
 
-                    otherlv_5=(Token)match(input,HyphenMinusGreaterThanSign,FollowSets000.FOLLOW_HyphenMinusGreaterThanSign_in_ruleFragments289); 
+                    otherlv_5=(Token)match(input,HyphenMinusGreaterThanSign,FollowSets000.FOLLOW_HyphenMinusGreaterThanSign_in_ruleParserRuleFragments289); 
 
-                        	newLeafNode(otherlv_5, grammarAccess.getFragmentsAccess().getHyphenMinusGreaterThanSignKeyword_1_1_2());
+                        	newLeafNode(otherlv_5, grammarAccess.getParserRuleFragmentsAccess().getHyphenMinusGreaterThanSignKeyword_1_1_2());
                         
                     // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:162:1: ( (otherlv_6= RULE_ID ) )
                     // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:163:1: (otherlv_6= RULE_ID )
@@ -392,12 +392,12 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
                     {
 
                     			if (current==null) {
-                    	            current = createModelElement(grammarAccess.getFragmentsRule());
+                    	            current = createModelElement(grammarAccess.getParserRuleFragmentsRule());
                     	        }
                             
-                    otherlv_6=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleFragments308); 
+                    otherlv_6=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleParserRuleFragments308); 
 
-                    		newLeafNode(otherlv_6, grammarAccess.getFragmentsAccess().getRefNamedCrossReference_1_1_3_0()); 
+                    		newLeafNode(otherlv_6, grammarAccess.getParserRuleFragmentsAccess().getRefPRFNamedCrossReference_1_1_3_0()); 
                     	
 
                     }
@@ -412,38 +412,38 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
                     }
                     break;
                 case 3 :
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:176:6: (otherlv_7= NumberSignDigitThree ( (lv_element_8_0= ruleNamedRefFirst ) ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:176:6: (otherlv_7= NumberSignDigitThree ( (lv_element_8_0= rulePRFNamedRefFirst ) ) )
                     {
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:176:6: (otherlv_7= NumberSignDigitThree ( (lv_element_8_0= ruleNamedRefFirst ) ) )
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:177:2: otherlv_7= NumberSignDigitThree ( (lv_element_8_0= ruleNamedRefFirst ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:176:6: (otherlv_7= NumberSignDigitThree ( (lv_element_8_0= rulePRFNamedRefFirst ) ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:177:2: otherlv_7= NumberSignDigitThree ( (lv_element_8_0= rulePRFNamedRefFirst ) )
                     {
-                    otherlv_7=(Token)match(input,NumberSignDigitThree,FollowSets000.FOLLOW_NumberSignDigitThree_in_ruleFragments329); 
+                    otherlv_7=(Token)match(input,NumberSignDigitThree,FollowSets000.FOLLOW_NumberSignDigitThree_in_ruleParserRuleFragments329); 
 
-                        	newLeafNode(otherlv_7, grammarAccess.getFragmentsAccess().getNumberSignDigitThreeKeyword_1_2_0());
+                        	newLeafNode(otherlv_7, grammarAccess.getParserRuleFragmentsAccess().getNumberSignDigitThreeKeyword_1_2_0());
                         
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:181:1: ( (lv_element_8_0= ruleNamedRefFirst ) )
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:182:1: (lv_element_8_0= ruleNamedRefFirst )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:181:1: ( (lv_element_8_0= rulePRFNamedRefFirst ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:182:1: (lv_element_8_0= rulePRFNamedRefFirst )
                     {
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:182:1: (lv_element_8_0= ruleNamedRefFirst )
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:183:3: lv_element_8_0= ruleNamedRefFirst
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:182:1: (lv_element_8_0= rulePRFNamedRefFirst )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:183:3: lv_element_8_0= rulePRFNamedRefFirst
                     {
                      
-                    	        newCompositeNode(grammarAccess.getFragmentsAccess().getElementNamedRefFirstParserRuleCall_1_2_1_0()); 
+                    	        newCompositeNode(grammarAccess.getParserRuleFragmentsAccess().getElementPRFNamedRefFirstParserRuleCall_1_2_1_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleNamedRefFirst_in_ruleFragments349);
-                    lv_element_8_0=ruleNamedRefFirst();
+                    pushFollow(FollowSets000.FOLLOW_rulePRFNamedRefFirst_in_ruleParserRuleFragments349);
+                    lv_element_8_0=rulePRFNamedRefFirst();
 
                     state._fsp--;
 
 
                     	        if (current==null) {
-                    	            current = createModelElementForParent(grammarAccess.getFragmentsRule());
+                    	            current = createModelElementForParent(grammarAccess.getParserRuleFragmentsRule());
                     	        }
                            		set(
                            			current, 
                            			"element",
                             		lv_element_8_0, 
-                            		"NamedRefFirst");
+                            		"PRFNamedRefFirst");
                     	        afterParserOrEnumRuleCall();
                     	    
 
@@ -459,38 +459,38 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
                     }
                     break;
                 case 4 :
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:200:6: (otherlv_9= NumberSignDigitFour ( (lv_element_10_0= ruleNamedWithAction ) ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:200:6: (otherlv_9= NumberSignDigitFour ( (lv_element_10_0= rulePRFNamedWithAction ) ) )
                     {
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:200:6: (otherlv_9= NumberSignDigitFour ( (lv_element_10_0= ruleNamedWithAction ) ) )
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:201:2: otherlv_9= NumberSignDigitFour ( (lv_element_10_0= ruleNamedWithAction ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:200:6: (otherlv_9= NumberSignDigitFour ( (lv_element_10_0= rulePRFNamedWithAction ) ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:201:2: otherlv_9= NumberSignDigitFour ( (lv_element_10_0= rulePRFNamedWithAction ) )
                     {
-                    otherlv_9=(Token)match(input,NumberSignDigitFour,FollowSets000.FOLLOW_NumberSignDigitFour_in_ruleFragments370); 
+                    otherlv_9=(Token)match(input,NumberSignDigitFour,FollowSets000.FOLLOW_NumberSignDigitFour_in_ruleParserRuleFragments370); 
 
-                        	newLeafNode(otherlv_9, grammarAccess.getFragmentsAccess().getNumberSignDigitFourKeyword_1_3_0());
+                        	newLeafNode(otherlv_9, grammarAccess.getParserRuleFragmentsAccess().getNumberSignDigitFourKeyword_1_3_0());
                         
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:205:1: ( (lv_element_10_0= ruleNamedWithAction ) )
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:206:1: (lv_element_10_0= ruleNamedWithAction )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:205:1: ( (lv_element_10_0= rulePRFNamedWithAction ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:206:1: (lv_element_10_0= rulePRFNamedWithAction )
                     {
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:206:1: (lv_element_10_0= ruleNamedWithAction )
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:207:3: lv_element_10_0= ruleNamedWithAction
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:206:1: (lv_element_10_0= rulePRFNamedWithAction )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:207:3: lv_element_10_0= rulePRFNamedWithAction
                     {
                      
-                    	        newCompositeNode(grammarAccess.getFragmentsAccess().getElementNamedWithActionParserRuleCall_1_3_1_0()); 
+                    	        newCompositeNode(grammarAccess.getParserRuleFragmentsAccess().getElementPRFNamedWithActionParserRuleCall_1_3_1_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleNamedWithAction_in_ruleFragments390);
-                    lv_element_10_0=ruleNamedWithAction();
+                    pushFollow(FollowSets000.FOLLOW_rulePRFNamedWithAction_in_ruleParserRuleFragments390);
+                    lv_element_10_0=rulePRFNamedWithAction();
 
                     state._fsp--;
 
 
                     	        if (current==null) {
-                    	            current = createModelElementForParent(grammarAccess.getFragmentsRule());
+                    	            current = createModelElementForParent(grammarAccess.getParserRuleFragmentsRule());
                     	        }
                            		set(
                            			current, 
                            			"element",
                             		lv_element_10_0, 
-                            		"NamedWithAction");
+                            		"PRFNamedWithAction");
                     	        afterParserOrEnumRuleCall();
                     	    
 
@@ -506,38 +506,38 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
                     }
                     break;
                 case 5 :
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:224:6: (otherlv_11= NumberSignDigitFive ( (lv_element_12_0= ruleNamedWithActionInFragment ) ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:224:6: (otherlv_11= NumberSignDigitFive ( (lv_element_12_0= rulePRFNamedWithActionInFragment ) ) )
                     {
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:224:6: (otherlv_11= NumberSignDigitFive ( (lv_element_12_0= ruleNamedWithActionInFragment ) ) )
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:225:2: otherlv_11= NumberSignDigitFive ( (lv_element_12_0= ruleNamedWithActionInFragment ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:224:6: (otherlv_11= NumberSignDigitFive ( (lv_element_12_0= rulePRFNamedWithActionInFragment ) ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:225:2: otherlv_11= NumberSignDigitFive ( (lv_element_12_0= rulePRFNamedWithActionInFragment ) )
                     {
-                    otherlv_11=(Token)match(input,NumberSignDigitFive,FollowSets000.FOLLOW_NumberSignDigitFive_in_ruleFragments411); 
+                    otherlv_11=(Token)match(input,NumberSignDigitFive,FollowSets000.FOLLOW_NumberSignDigitFive_in_ruleParserRuleFragments411); 
 
-                        	newLeafNode(otherlv_11, grammarAccess.getFragmentsAccess().getNumberSignDigitFiveKeyword_1_4_0());
+                        	newLeafNode(otherlv_11, grammarAccess.getParserRuleFragmentsAccess().getNumberSignDigitFiveKeyword_1_4_0());
                         
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:229:1: ( (lv_element_12_0= ruleNamedWithActionInFragment ) )
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:230:1: (lv_element_12_0= ruleNamedWithActionInFragment )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:229:1: ( (lv_element_12_0= rulePRFNamedWithActionInFragment ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:230:1: (lv_element_12_0= rulePRFNamedWithActionInFragment )
                     {
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:230:1: (lv_element_12_0= ruleNamedWithActionInFragment )
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:231:3: lv_element_12_0= ruleNamedWithActionInFragment
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:230:1: (lv_element_12_0= rulePRFNamedWithActionInFragment )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:231:3: lv_element_12_0= rulePRFNamedWithActionInFragment
                     {
                      
-                    	        newCompositeNode(grammarAccess.getFragmentsAccess().getElementNamedWithActionInFragmentParserRuleCall_1_4_1_0()); 
+                    	        newCompositeNode(grammarAccess.getParserRuleFragmentsAccess().getElementPRFNamedWithActionInFragmentParserRuleCall_1_4_1_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleNamedWithActionInFragment_in_ruleFragments431);
-                    lv_element_12_0=ruleNamedWithActionInFragment();
+                    pushFollow(FollowSets000.FOLLOW_rulePRFNamedWithActionInFragment_in_ruleParserRuleFragments431);
+                    lv_element_12_0=rulePRFNamedWithActionInFragment();
 
                     state._fsp--;
 
 
                     	        if (current==null) {
-                    	            current = createModelElementForParent(grammarAccess.getFragmentsRule());
+                    	            current = createModelElementForParent(grammarAccess.getParserRuleFragmentsRule());
                     	        }
                            		set(
                            			current, 
                            			"element",
                             		lv_element_12_0, 
-                            		"NamedWithActionInFragment");
+                            		"PRFNamedWithActionInFragment");
                     	        afterParserOrEnumRuleCall();
                     	    
 
@@ -553,38 +553,38 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
                     }
                     break;
                 case 6 :
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:248:6: (otherlv_13= NumberSignDigitSix ( (lv_element_14_0= ruleNamedWithActionInFragment2 ) ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:248:6: (otherlv_13= NumberSignDigitSix ( (lv_element_14_0= rulePRFNamedWithActionInFragment2 ) ) )
                     {
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:248:6: (otherlv_13= NumberSignDigitSix ( (lv_element_14_0= ruleNamedWithActionInFragment2 ) ) )
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:249:2: otherlv_13= NumberSignDigitSix ( (lv_element_14_0= ruleNamedWithActionInFragment2 ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:248:6: (otherlv_13= NumberSignDigitSix ( (lv_element_14_0= rulePRFNamedWithActionInFragment2 ) ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:249:2: otherlv_13= NumberSignDigitSix ( (lv_element_14_0= rulePRFNamedWithActionInFragment2 ) )
                     {
-                    otherlv_13=(Token)match(input,NumberSignDigitSix,FollowSets000.FOLLOW_NumberSignDigitSix_in_ruleFragments452); 
+                    otherlv_13=(Token)match(input,NumberSignDigitSix,FollowSets000.FOLLOW_NumberSignDigitSix_in_ruleParserRuleFragments452); 
 
-                        	newLeafNode(otherlv_13, grammarAccess.getFragmentsAccess().getNumberSignDigitSixKeyword_1_5_0());
+                        	newLeafNode(otherlv_13, grammarAccess.getParserRuleFragmentsAccess().getNumberSignDigitSixKeyword_1_5_0());
                         
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:253:1: ( (lv_element_14_0= ruleNamedWithActionInFragment2 ) )
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:254:1: (lv_element_14_0= ruleNamedWithActionInFragment2 )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:253:1: ( (lv_element_14_0= rulePRFNamedWithActionInFragment2 ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:254:1: (lv_element_14_0= rulePRFNamedWithActionInFragment2 )
                     {
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:254:1: (lv_element_14_0= ruleNamedWithActionInFragment2 )
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:255:3: lv_element_14_0= ruleNamedWithActionInFragment2
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:254:1: (lv_element_14_0= rulePRFNamedWithActionInFragment2 )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:255:3: lv_element_14_0= rulePRFNamedWithActionInFragment2
                     {
                      
-                    	        newCompositeNode(grammarAccess.getFragmentsAccess().getElementNamedWithActionInFragment2ParserRuleCall_1_5_1_0()); 
+                    	        newCompositeNode(grammarAccess.getParserRuleFragmentsAccess().getElementPRFNamedWithActionInFragment2ParserRuleCall_1_5_1_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleNamedWithActionInFragment2_in_ruleFragments472);
-                    lv_element_14_0=ruleNamedWithActionInFragment2();
+                    pushFollow(FollowSets000.FOLLOW_rulePRFNamedWithActionInFragment2_in_ruleParserRuleFragments472);
+                    lv_element_14_0=rulePRFNamedWithActionInFragment2();
 
                     state._fsp--;
 
 
                     	        if (current==null) {
-                    	            current = createModelElementForParent(grammarAccess.getFragmentsRule());
+                    	            current = createModelElementForParent(grammarAccess.getParserRuleFragmentsRule());
                     	        }
                            		set(
                            			current, 
                            			"element",
                             		lv_element_14_0, 
-                            		"NamedWithActionInFragment2");
+                            		"PRFNamedWithActionInFragment2");
                     	        afterParserOrEnumRuleCall();
                     	    
 
@@ -600,38 +600,38 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
                     }
                     break;
                 case 7 :
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:272:6: (otherlv_15= NumberSignDigitSeven ( (lv_element_16_0= ruleNamedWithActionInFragment3 ) ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:272:6: (otherlv_15= NumberSignDigitSeven ( (lv_element_16_0= rulePRFNamedWithActionInFragment3 ) ) )
                     {
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:272:6: (otherlv_15= NumberSignDigitSeven ( (lv_element_16_0= ruleNamedWithActionInFragment3 ) ) )
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:273:2: otherlv_15= NumberSignDigitSeven ( (lv_element_16_0= ruleNamedWithActionInFragment3 ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:272:6: (otherlv_15= NumberSignDigitSeven ( (lv_element_16_0= rulePRFNamedWithActionInFragment3 ) ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:273:2: otherlv_15= NumberSignDigitSeven ( (lv_element_16_0= rulePRFNamedWithActionInFragment3 ) )
                     {
-                    otherlv_15=(Token)match(input,NumberSignDigitSeven,FollowSets000.FOLLOW_NumberSignDigitSeven_in_ruleFragments493); 
+                    otherlv_15=(Token)match(input,NumberSignDigitSeven,FollowSets000.FOLLOW_NumberSignDigitSeven_in_ruleParserRuleFragments493); 
 
-                        	newLeafNode(otherlv_15, grammarAccess.getFragmentsAccess().getNumberSignDigitSevenKeyword_1_6_0());
+                        	newLeafNode(otherlv_15, grammarAccess.getParserRuleFragmentsAccess().getNumberSignDigitSevenKeyword_1_6_0());
                         
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:277:1: ( (lv_element_16_0= ruleNamedWithActionInFragment3 ) )
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:278:1: (lv_element_16_0= ruleNamedWithActionInFragment3 )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:277:1: ( (lv_element_16_0= rulePRFNamedWithActionInFragment3 ) )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:278:1: (lv_element_16_0= rulePRFNamedWithActionInFragment3 )
                     {
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:278:1: (lv_element_16_0= ruleNamedWithActionInFragment3 )
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:279:3: lv_element_16_0= ruleNamedWithActionInFragment3
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:278:1: (lv_element_16_0= rulePRFNamedWithActionInFragment3 )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:279:3: lv_element_16_0= rulePRFNamedWithActionInFragment3
                     {
                      
-                    	        newCompositeNode(grammarAccess.getFragmentsAccess().getElementNamedWithActionInFragment3ParserRuleCall_1_6_1_0()); 
+                    	        newCompositeNode(grammarAccess.getParserRuleFragmentsAccess().getElementPRFNamedWithActionInFragment3ParserRuleCall_1_6_1_0()); 
                     	    
-                    pushFollow(FollowSets000.FOLLOW_ruleNamedWithActionInFragment3_in_ruleFragments513);
-                    lv_element_16_0=ruleNamedWithActionInFragment3();
+                    pushFollow(FollowSets000.FOLLOW_rulePRFNamedWithActionInFragment3_in_ruleParserRuleFragments513);
+                    lv_element_16_0=rulePRFNamedWithActionInFragment3();
 
                     state._fsp--;
 
 
                     	        if (current==null) {
-                    	            current = createModelElementForParent(grammarAccess.getFragmentsRule());
+                    	            current = createModelElementForParent(grammarAccess.getParserRuleFragmentsRule());
                     	        }
                            		set(
                            			current, 
                            			"element",
                             		lv_element_16_0, 
-                            		"NamedWithActionInFragment3");
+                            		"PRFNamedWithActionInFragment3");
                     	        afterParserOrEnumRuleCall();
                     	    
 
@@ -666,29 +666,29 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
         }
         return current;
     }
-    // $ANTLR end "ruleFragments"
+    // $ANTLR end "ruleParserRuleFragments"
 
 
-    // $ANTLR start "entryRuleNamed"
-    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:303:1: entryRuleNamed returns [EObject current=null] : iv_ruleNamed= ruleNamed EOF ;
-    public final EObject entryRuleNamed() throws RecognitionException {
+    // $ANTLR start "entryRulePRFNamed"
+    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:303:1: entryRulePRFNamed returns [EObject current=null] : iv_rulePRFNamed= rulePRFNamed EOF ;
+    public final EObject entryRulePRFNamed() throws RecognitionException {
         EObject current = null;
 
-        EObject iv_ruleNamed = null;
+        EObject iv_rulePRFNamed = null;
 
 
         try {
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:304:2: (iv_ruleNamed= ruleNamed EOF )
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:305:2: iv_ruleNamed= ruleNamed EOF
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:304:2: (iv_rulePRFNamed= rulePRFNamed EOF )
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:305:2: iv_rulePRFNamed= rulePRFNamed EOF
             {
-             newCompositeNode(grammarAccess.getNamedRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleNamed_in_entryRuleNamed550);
-            iv_ruleNamed=ruleNamed();
+             newCompositeNode(grammarAccess.getPRFNamedRule()); 
+            pushFollow(FollowSets000.FOLLOW_rulePRFNamed_in_entryRulePRFNamed550);
+            iv_rulePRFNamed=rulePRFNamed();
 
             state._fsp--;
 
-             current =iv_ruleNamed; 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleNamed560); 
+             current =iv_rulePRFNamed; 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRulePRFNamed560); 
 
             }
 
@@ -702,44 +702,44 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
         }
         return current;
     }
-    // $ANTLR end "entryRuleNamed"
+    // $ANTLR end "entryRulePRFNamed"
 
 
-    // $ANTLR start "ruleNamed"
-    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:312:1: ruleNamed returns [EObject current=null] : (this_NamedFragment_0= ruleNamedFragment ( (otherlv_1= Colon ( (otherlv_2= RULE_ID ) ) ) | (otherlv_3= HyphenMinus this_NamedRef_4= ruleNamedRef ) )? ) ;
-    public final EObject ruleNamed() throws RecognitionException {
+    // $ANTLR start "rulePRFNamed"
+    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:312:1: rulePRFNamed returns [EObject current=null] : (this_PRFNamedFragment_0= rulePRFNamedFragment ( (otherlv_1= Colon ( (otherlv_2= RULE_ID ) ) ) | (otherlv_3= HyphenMinus this_PRFNamedRef_4= rulePRFNamedRef ) )? ) ;
+    public final EObject rulePRFNamed() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_1=null;
         Token otherlv_2=null;
         Token otherlv_3=null;
-        EObject this_NamedFragment_0 = null;
+        EObject this_PRFNamedFragment_0 = null;
 
-        EObject this_NamedRef_4 = null;
+        EObject this_PRFNamedRef_4 = null;
 
 
          enterRule(); 
             
         try {
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:315:28: ( (this_NamedFragment_0= ruleNamedFragment ( (otherlv_1= Colon ( (otherlv_2= RULE_ID ) ) ) | (otherlv_3= HyphenMinus this_NamedRef_4= ruleNamedRef ) )? ) )
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:316:1: (this_NamedFragment_0= ruleNamedFragment ( (otherlv_1= Colon ( (otherlv_2= RULE_ID ) ) ) | (otherlv_3= HyphenMinus this_NamedRef_4= ruleNamedRef ) )? )
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:315:28: ( (this_PRFNamedFragment_0= rulePRFNamedFragment ( (otherlv_1= Colon ( (otherlv_2= RULE_ID ) ) ) | (otherlv_3= HyphenMinus this_PRFNamedRef_4= rulePRFNamedRef ) )? ) )
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:316:1: (this_PRFNamedFragment_0= rulePRFNamedFragment ( (otherlv_1= Colon ( (otherlv_2= RULE_ID ) ) ) | (otherlv_3= HyphenMinus this_PRFNamedRef_4= rulePRFNamedRef ) )? )
             {
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:316:1: (this_NamedFragment_0= ruleNamedFragment ( (otherlv_1= Colon ( (otherlv_2= RULE_ID ) ) ) | (otherlv_3= HyphenMinus this_NamedRef_4= ruleNamedRef ) )? )
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:317:5: this_NamedFragment_0= ruleNamedFragment ( (otherlv_1= Colon ( (otherlv_2= RULE_ID ) ) ) | (otherlv_3= HyphenMinus this_NamedRef_4= ruleNamedRef ) )?
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:316:1: (this_PRFNamedFragment_0= rulePRFNamedFragment ( (otherlv_1= Colon ( (otherlv_2= RULE_ID ) ) ) | (otherlv_3= HyphenMinus this_PRFNamedRef_4= rulePRFNamedRef ) )? )
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:317:5: this_PRFNamedFragment_0= rulePRFNamedFragment ( (otherlv_1= Colon ( (otherlv_2= RULE_ID ) ) ) | (otherlv_3= HyphenMinus this_PRFNamedRef_4= rulePRFNamedRef ) )?
             {
              
-                    newCompositeNode(grammarAccess.getNamedAccess().getNamedFragmentParserRuleCall_0()); 
+                    newCompositeNode(grammarAccess.getPRFNamedAccess().getPRFNamedFragmentParserRuleCall_0()); 
                 
-            pushFollow(FollowSets000.FOLLOW_ruleNamedFragment_in_ruleNamed607);
-            this_NamedFragment_0=ruleNamedFragment();
+            pushFollow(FollowSets000.FOLLOW_rulePRFNamedFragment_in_rulePRFNamed607);
+            this_PRFNamedFragment_0=rulePRFNamedFragment();
 
             state._fsp--;
 
 
-                    current = this_NamedFragment_0;
+                    current = this_PRFNamedFragment_0;
                     afterParserOrEnumRuleCall();
                 
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:325:1: ( (otherlv_1= Colon ( (otherlv_2= RULE_ID ) ) ) | (otherlv_3= HyphenMinus this_NamedRef_4= ruleNamedRef ) )?
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:325:1: ( (otherlv_1= Colon ( (otherlv_2= RULE_ID ) ) ) | (otherlv_3= HyphenMinus this_PRFNamedRef_4= rulePRFNamedRef ) )?
             int alt2=3;
             int LA2_0 = input.LA(1);
 
@@ -756,9 +756,9 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
                     // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:325:2: (otherlv_1= Colon ( (otherlv_2= RULE_ID ) ) )
                     // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:326:2: otherlv_1= Colon ( (otherlv_2= RULE_ID ) )
                     {
-                    otherlv_1=(Token)match(input,Colon,FollowSets000.FOLLOW_Colon_in_ruleNamed621); 
+                    otherlv_1=(Token)match(input,Colon,FollowSets000.FOLLOW_Colon_in_rulePRFNamed621); 
 
-                        	newLeafNode(otherlv_1, grammarAccess.getNamedAccess().getColonKeyword_1_0_0());
+                        	newLeafNode(otherlv_1, grammarAccess.getPRFNamedAccess().getColonKeyword_1_0_0());
                         
                     // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:330:1: ( (otherlv_2= RULE_ID ) )
                     // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:331:1: (otherlv_2= RULE_ID )
@@ -768,12 +768,12 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
                     {
 
                     			if (current==null) {
-                    	            current = createModelElement(grammarAccess.getNamedRule());
+                    	            current = createModelElement(grammarAccess.getPRFNamedRule());
                     	        }
                             
-                    otherlv_2=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleNamed640); 
+                    otherlv_2=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rulePRFNamed640); 
 
-                    		newLeafNode(otherlv_2, grammarAccess.getNamedAccess().getRefNamedCrossReference_1_0_1_0()); 
+                    		newLeafNode(otherlv_2, grammarAccess.getPRFNamedAccess().getRefPRFNamedCrossReference_1_0_1_0()); 
                     	
 
                     }
@@ -788,25 +788,25 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
                     }
                     break;
                 case 2 :
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:344:6: (otherlv_3= HyphenMinus this_NamedRef_4= ruleNamedRef )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:344:6: (otherlv_3= HyphenMinus this_PRFNamedRef_4= rulePRFNamedRef )
                     {
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:344:6: (otherlv_3= HyphenMinus this_NamedRef_4= ruleNamedRef )
-                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:345:2: otherlv_3= HyphenMinus this_NamedRef_4= ruleNamedRef
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:344:6: (otherlv_3= HyphenMinus this_PRFNamedRef_4= rulePRFNamedRef )
+                    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:345:2: otherlv_3= HyphenMinus this_PRFNamedRef_4= rulePRFNamedRef
                     {
-                    otherlv_3=(Token)match(input,HyphenMinus,FollowSets000.FOLLOW_HyphenMinus_in_ruleNamed661); 
+                    otherlv_3=(Token)match(input,HyphenMinus,FollowSets000.FOLLOW_HyphenMinus_in_rulePRFNamed661); 
 
-                        	newLeafNode(otherlv_3, grammarAccess.getNamedAccess().getHyphenMinusKeyword_1_1_0());
+                        	newLeafNode(otherlv_3, grammarAccess.getPRFNamedAccess().getHyphenMinusKeyword_1_1_0());
                         
                      
-                            newCompositeNode(grammarAccess.getNamedAccess().getNamedRefParserRuleCall_1_1_1()); 
+                            newCompositeNode(grammarAccess.getPRFNamedAccess().getPRFNamedRefParserRuleCall_1_1_1()); 
                         
-                    pushFollow(FollowSets000.FOLLOW_ruleNamedRef_in_ruleNamed682);
-                    this_NamedRef_4=ruleNamedRef();
+                    pushFollow(FollowSets000.FOLLOW_rulePRFNamedRef_in_rulePRFNamed682);
+                    this_PRFNamedRef_4=rulePRFNamedRef();
 
                     state._fsp--;
 
 
-                            current = this_NamedRef_4;
+                            current = this_PRFNamedRef_4;
                             afterParserOrEnumRuleCall();
                         
 
@@ -835,29 +835,29 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
         }
         return current;
     }
-    // $ANTLR end "ruleNamed"
+    // $ANTLR end "rulePRFNamed"
 
 
-    // $ANTLR start "entryRuleNamedRefFirst"
-    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:366:1: entryRuleNamedRefFirst returns [EObject current=null] : iv_ruleNamedRefFirst= ruleNamedRefFirst EOF ;
-    public final EObject entryRuleNamedRefFirst() throws RecognitionException {
+    // $ANTLR start "entryRulePRFNamedRefFirst"
+    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:366:1: entryRulePRFNamedRefFirst returns [EObject current=null] : iv_rulePRFNamedRefFirst= rulePRFNamedRefFirst EOF ;
+    public final EObject entryRulePRFNamedRefFirst() throws RecognitionException {
         EObject current = null;
 
-        EObject iv_ruleNamedRefFirst = null;
+        EObject iv_rulePRFNamedRefFirst = null;
 
 
         try {
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:367:2: (iv_ruleNamedRefFirst= ruleNamedRefFirst EOF )
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:368:2: iv_ruleNamedRefFirst= ruleNamedRefFirst EOF
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:367:2: (iv_rulePRFNamedRefFirst= rulePRFNamedRefFirst EOF )
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:368:2: iv_rulePRFNamedRefFirst= rulePRFNamedRefFirst EOF
             {
-             newCompositeNode(grammarAccess.getNamedRefFirstRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleNamedRefFirst_in_entryRuleNamedRefFirst719);
-            iv_ruleNamedRefFirst=ruleNamedRefFirst();
+             newCompositeNode(grammarAccess.getPRFNamedRefFirstRule()); 
+            pushFollow(FollowSets000.FOLLOW_rulePRFNamedRefFirst_in_entryRulePRFNamedRefFirst719);
+            iv_rulePRFNamedRefFirst=rulePRFNamedRefFirst();
 
             state._fsp--;
 
-             current =iv_ruleNamedRefFirst; 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleNamedRefFirst729); 
+             current =iv_rulePRFNamedRefFirst; 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRulePRFNamedRefFirst729); 
 
             }
 
@@ -871,27 +871,27 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
         }
         return current;
     }
-    // $ANTLR end "entryRuleNamedRefFirst"
+    // $ANTLR end "entryRulePRFNamedRefFirst"
 
 
-    // $ANTLR start "ruleNamedRefFirst"
-    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:375:1: ruleNamedRefFirst returns [EObject current=null] : ( ( (otherlv_0= RULE_ID ) ) otherlv_1= LessThanSignHyphenMinus this_NamedFragment_2= ruleNamedFragment ) ;
-    public final EObject ruleNamedRefFirst() throws RecognitionException {
+    // $ANTLR start "rulePRFNamedRefFirst"
+    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:375:1: rulePRFNamedRefFirst returns [EObject current=null] : ( ( (otherlv_0= RULE_ID ) ) otherlv_1= LessThanSignHyphenMinus this_PRFNamedFragment_2= rulePRFNamedFragment ) ;
+    public final EObject rulePRFNamedRefFirst() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_0=null;
         Token otherlv_1=null;
-        EObject this_NamedFragment_2 = null;
+        EObject this_PRFNamedFragment_2 = null;
 
 
          enterRule(); 
             
         try {
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:378:28: ( ( ( (otherlv_0= RULE_ID ) ) otherlv_1= LessThanSignHyphenMinus this_NamedFragment_2= ruleNamedFragment ) )
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:379:1: ( ( (otherlv_0= RULE_ID ) ) otherlv_1= LessThanSignHyphenMinus this_NamedFragment_2= ruleNamedFragment )
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:378:28: ( ( ( (otherlv_0= RULE_ID ) ) otherlv_1= LessThanSignHyphenMinus this_PRFNamedFragment_2= rulePRFNamedFragment ) )
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:379:1: ( ( (otherlv_0= RULE_ID ) ) otherlv_1= LessThanSignHyphenMinus this_PRFNamedFragment_2= rulePRFNamedFragment )
             {
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:379:1: ( ( (otherlv_0= RULE_ID ) ) otherlv_1= LessThanSignHyphenMinus this_NamedFragment_2= ruleNamedFragment )
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:379:2: ( (otherlv_0= RULE_ID ) ) otherlv_1= LessThanSignHyphenMinus this_NamedFragment_2= ruleNamedFragment
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:379:1: ( ( (otherlv_0= RULE_ID ) ) otherlv_1= LessThanSignHyphenMinus this_PRFNamedFragment_2= rulePRFNamedFragment )
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:379:2: ( (otherlv_0= RULE_ID ) ) otherlv_1= LessThanSignHyphenMinus this_PRFNamedFragment_2= rulePRFNamedFragment
             {
             // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:379:2: ( (otherlv_0= RULE_ID ) )
             // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:380:1: (otherlv_0= RULE_ID )
@@ -901,12 +901,12 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
             {
 
             			if (current==null) {
-            	            current = createModelElement(grammarAccess.getNamedRefFirstRule());
+            	            current = createModelElement(grammarAccess.getPRFNamedRefFirstRule());
             	        }
                     
-            otherlv_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleNamedRefFirst774); 
+            otherlv_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rulePRFNamedRefFirst774); 
 
-            		newLeafNode(otherlv_0, grammarAccess.getNamedRefFirstAccess().getRefNamedCrossReference_0_0()); 
+            		newLeafNode(otherlv_0, grammarAccess.getPRFNamedRefFirstAccess().getRefPRFNamedCrossReference_0_0()); 
             	
 
             }
@@ -914,20 +914,20 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
 
             }
 
-            otherlv_1=(Token)match(input,LessThanSignHyphenMinus,FollowSets000.FOLLOW_LessThanSignHyphenMinus_in_ruleNamedRefFirst787); 
+            otherlv_1=(Token)match(input,LessThanSignHyphenMinus,FollowSets000.FOLLOW_LessThanSignHyphenMinus_in_rulePRFNamedRefFirst787); 
 
-                	newLeafNode(otherlv_1, grammarAccess.getNamedRefFirstAccess().getLessThanSignHyphenMinusKeyword_1());
+                	newLeafNode(otherlv_1, grammarAccess.getPRFNamedRefFirstAccess().getLessThanSignHyphenMinusKeyword_1());
                 
              
-                    newCompositeNode(grammarAccess.getNamedRefFirstAccess().getNamedFragmentParserRuleCall_2()); 
+                    newCompositeNode(grammarAccess.getPRFNamedRefFirstAccess().getPRFNamedFragmentParserRuleCall_2()); 
                 
-            pushFollow(FollowSets000.FOLLOW_ruleNamedFragment_in_ruleNamedRefFirst808);
-            this_NamedFragment_2=ruleNamedFragment();
+            pushFollow(FollowSets000.FOLLOW_rulePRFNamedFragment_in_rulePRFNamedRefFirst808);
+            this_PRFNamedFragment_2=rulePRFNamedFragment();
 
             state._fsp--;
 
 
-                    current = this_NamedFragment_2;
+                    current = this_PRFNamedFragment_2;
                     afterParserOrEnumRuleCall();
                 
 
@@ -947,29 +947,29 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
         }
         return current;
     }
-    // $ANTLR end "ruleNamedRefFirst"
+    // $ANTLR end "rulePRFNamedRefFirst"
 
 
-    // $ANTLR start "entryRuleNamedWithAction"
-    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:414:1: entryRuleNamedWithAction returns [EObject current=null] : iv_ruleNamedWithAction= ruleNamedWithAction EOF ;
-    public final EObject entryRuleNamedWithAction() throws RecognitionException {
+    // $ANTLR start "entryRulePRFNamedWithAction"
+    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:414:1: entryRulePRFNamedWithAction returns [EObject current=null] : iv_rulePRFNamedWithAction= rulePRFNamedWithAction EOF ;
+    public final EObject entryRulePRFNamedWithAction() throws RecognitionException {
         EObject current = null;
 
-        EObject iv_ruleNamedWithAction = null;
+        EObject iv_rulePRFNamedWithAction = null;
 
 
         try {
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:415:2: (iv_ruleNamedWithAction= ruleNamedWithAction EOF )
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:416:2: iv_ruleNamedWithAction= ruleNamedWithAction EOF
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:415:2: (iv_rulePRFNamedWithAction= rulePRFNamedWithAction EOF )
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:416:2: iv_rulePRFNamedWithAction= rulePRFNamedWithAction EOF
             {
-             newCompositeNode(grammarAccess.getNamedWithActionRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleNamedWithAction_in_entryRuleNamedWithAction842);
-            iv_ruleNamedWithAction=ruleNamedWithAction();
+             newCompositeNode(grammarAccess.getPRFNamedWithActionRule()); 
+            pushFollow(FollowSets000.FOLLOW_rulePRFNamedWithAction_in_entryRulePRFNamedWithAction842);
+            iv_rulePRFNamedWithAction=rulePRFNamedWithAction();
 
             state._fsp--;
 
-             current =iv_ruleNamedWithAction; 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleNamedWithAction852); 
+             current =iv_rulePRFNamedWithAction; 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRulePRFNamedWithAction852); 
 
             }
 
@@ -983,39 +983,39 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
         }
         return current;
     }
-    // $ANTLR end "entryRuleNamedWithAction"
+    // $ANTLR end "entryRulePRFNamedWithAction"
 
 
-    // $ANTLR start "ruleNamedWithAction"
-    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:423:1: ruleNamedWithAction returns [EObject current=null] : (this_Named_0= ruleNamed () ( (lv_name_2_0= RULE_ID ) ) ( ( (otherlv_3= RULE_ID ) ) ( (otherlv_4= RULE_ID ) ) )? ) ;
-    public final EObject ruleNamedWithAction() throws RecognitionException {
+    // $ANTLR start "rulePRFNamedWithAction"
+    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:423:1: rulePRFNamedWithAction returns [EObject current=null] : (this_PRFNamed_0= rulePRFNamed () ( (lv_name_2_0= RULE_ID ) ) ( ( (otherlv_3= RULE_ID ) ) ( (otherlv_4= RULE_ID ) ) )? ) ;
+    public final EObject rulePRFNamedWithAction() throws RecognitionException {
         EObject current = null;
 
         Token lv_name_2_0=null;
         Token otherlv_3=null;
         Token otherlv_4=null;
-        EObject this_Named_0 = null;
+        EObject this_PRFNamed_0 = null;
 
 
          enterRule(); 
             
         try {
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:426:28: ( (this_Named_0= ruleNamed () ( (lv_name_2_0= RULE_ID ) ) ( ( (otherlv_3= RULE_ID ) ) ( (otherlv_4= RULE_ID ) ) )? ) )
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:427:1: (this_Named_0= ruleNamed () ( (lv_name_2_0= RULE_ID ) ) ( ( (otherlv_3= RULE_ID ) ) ( (otherlv_4= RULE_ID ) ) )? )
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:426:28: ( (this_PRFNamed_0= rulePRFNamed () ( (lv_name_2_0= RULE_ID ) ) ( ( (otherlv_3= RULE_ID ) ) ( (otherlv_4= RULE_ID ) ) )? ) )
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:427:1: (this_PRFNamed_0= rulePRFNamed () ( (lv_name_2_0= RULE_ID ) ) ( ( (otherlv_3= RULE_ID ) ) ( (otherlv_4= RULE_ID ) ) )? )
             {
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:427:1: (this_Named_0= ruleNamed () ( (lv_name_2_0= RULE_ID ) ) ( ( (otherlv_3= RULE_ID ) ) ( (otherlv_4= RULE_ID ) ) )? )
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:428:5: this_Named_0= ruleNamed () ( (lv_name_2_0= RULE_ID ) ) ( ( (otherlv_3= RULE_ID ) ) ( (otherlv_4= RULE_ID ) ) )?
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:427:1: (this_PRFNamed_0= rulePRFNamed () ( (lv_name_2_0= RULE_ID ) ) ( ( (otherlv_3= RULE_ID ) ) ( (otherlv_4= RULE_ID ) ) )? )
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:428:5: this_PRFNamed_0= rulePRFNamed () ( (lv_name_2_0= RULE_ID ) ) ( ( (otherlv_3= RULE_ID ) ) ( (otherlv_4= RULE_ID ) ) )?
             {
              
-                    newCompositeNode(grammarAccess.getNamedWithActionAccess().getNamedParserRuleCall_0()); 
+                    newCompositeNode(grammarAccess.getPRFNamedWithActionAccess().getPRFNamedParserRuleCall_0()); 
                 
-            pushFollow(FollowSets000.FOLLOW_ruleNamed_in_ruleNamedWithAction899);
-            this_Named_0=ruleNamed();
+            pushFollow(FollowSets000.FOLLOW_rulePRFNamed_in_rulePRFNamedWithAction899);
+            this_PRFNamed_0=rulePRFNamed();
 
             state._fsp--;
 
 
-                    current = this_Named_0;
+                    current = this_PRFNamed_0;
                     afterParserOrEnumRuleCall();
                 
             // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:436:1: ()
@@ -1023,7 +1023,7 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
             {
 
                     current = forceCreateModelElementAndSet(
-                        grammarAccess.getNamedWithActionAccess().getNamedWithActionPrevAction_1(),
+                        grammarAccess.getPRFNamedWithActionAccess().getPRFNamedWithActionPrevAction_1(),
                         current);
                 
 
@@ -1035,13 +1035,13 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
             // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:443:1: (lv_name_2_0= RULE_ID )
             // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:444:3: lv_name_2_0= RULE_ID
             {
-            lv_name_2_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleNamedWithAction924); 
+            lv_name_2_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rulePRFNamedWithAction924); 
 
-            			newLeafNode(lv_name_2_0, grammarAccess.getNamedWithActionAccess().getNameIDTerminalRuleCall_2_0()); 
+            			newLeafNode(lv_name_2_0, grammarAccess.getPRFNamedWithActionAccess().getNameIDTerminalRuleCall_2_0()); 
             		
 
             	        if (current==null) {
-            	            current = createModelElement(grammarAccess.getNamedWithActionRule());
+            	            current = createModelElement(grammarAccess.getPRFNamedWithActionRule());
             	        }
                    		setWithLastConsumed(
                    			current, 
@@ -1074,12 +1074,12 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
                     {
 
                     			if (current==null) {
-                    	            current = createModelElement(grammarAccess.getNamedWithActionRule());
+                    	            current = createModelElement(grammarAccess.getPRFNamedWithActionRule());
                     	        }
                             
-                    otherlv_3=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleNamedWithAction950); 
+                    otherlv_3=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rulePRFNamedWithAction950); 
 
-                    		newLeafNode(otherlv_3, grammarAccess.getNamedWithActionAccess().getRefNamedCrossReference_3_0_0()); 
+                    		newLeafNode(otherlv_3, grammarAccess.getPRFNamedWithActionAccess().getRefPRFNamedCrossReference_3_0_0()); 
                     	
 
                     }
@@ -1095,12 +1095,12 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
                     {
 
                     			if (current==null) {
-                    	            current = createModelElement(grammarAccess.getNamedWithActionRule());
+                    	            current = createModelElement(grammarAccess.getPRFNamedWithActionRule());
                     	        }
                             
-                    otherlv_4=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleNamedWithAction970); 
+                    otherlv_4=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rulePRFNamedWithAction970); 
 
-                    		newLeafNode(otherlv_4, grammarAccess.getNamedWithActionAccess().getRef2NamedCrossReference_3_1_0()); 
+                    		newLeafNode(otherlv_4, grammarAccess.getPRFNamedWithActionAccess().getRef2PRFNamedCrossReference_3_1_0()); 
                     	
 
                     }
@@ -1131,29 +1131,29 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
         }
         return current;
     }
-    // $ANTLR end "ruleNamedWithAction"
+    // $ANTLR end "rulePRFNamedWithAction"
 
 
-    // $ANTLR start "entryRuleNamedWithActionInFragment"
-    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:494:1: entryRuleNamedWithActionInFragment returns [EObject current=null] : iv_ruleNamedWithActionInFragment= ruleNamedWithActionInFragment EOF ;
-    public final EObject entryRuleNamedWithActionInFragment() throws RecognitionException {
+    // $ANTLR start "entryRulePRFNamedWithActionInFragment"
+    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:494:1: entryRulePRFNamedWithActionInFragment returns [EObject current=null] : iv_rulePRFNamedWithActionInFragment= rulePRFNamedWithActionInFragment EOF ;
+    public final EObject entryRulePRFNamedWithActionInFragment() throws RecognitionException {
         EObject current = null;
 
-        EObject iv_ruleNamedWithActionInFragment = null;
+        EObject iv_rulePRFNamedWithActionInFragment = null;
 
 
         try {
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:495:2: (iv_ruleNamedWithActionInFragment= ruleNamedWithActionInFragment EOF )
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:496:2: iv_ruleNamedWithActionInFragment= ruleNamedWithActionInFragment EOF
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:495:2: (iv_rulePRFNamedWithActionInFragment= rulePRFNamedWithActionInFragment EOF )
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:496:2: iv_rulePRFNamedWithActionInFragment= rulePRFNamedWithActionInFragment EOF
             {
-             newCompositeNode(grammarAccess.getNamedWithActionInFragmentRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleNamedWithActionInFragment_in_entryRuleNamedWithActionInFragment1007);
-            iv_ruleNamedWithActionInFragment=ruleNamedWithActionInFragment();
+             newCompositeNode(grammarAccess.getPRFNamedWithActionInFragmentRule()); 
+            pushFollow(FollowSets000.FOLLOW_rulePRFNamedWithActionInFragment_in_entryRulePRFNamedWithActionInFragment1007);
+            iv_rulePRFNamedWithActionInFragment=rulePRFNamedWithActionInFragment();
 
             state._fsp--;
 
-             current =iv_ruleNamedWithActionInFragment; 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleNamedWithActionInFragment1017); 
+             current =iv_rulePRFNamedWithActionInFragment; 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRulePRFNamedWithActionInFragment1017); 
 
             }
 
@@ -1167,12 +1167,12 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
         }
         return current;
     }
-    // $ANTLR end "entryRuleNamedWithActionInFragment"
+    // $ANTLR end "entryRulePRFNamedWithActionInFragment"
 
 
-    // $ANTLR start "ruleNamedWithActionInFragment"
-    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:503:1: ruleNamedWithActionInFragment returns [EObject current=null] : (this_FragmentWithAction_0= ruleFragmentWithAction (otherlv_1= HyphenMinus ( (otherlv_2= RULE_ID ) ) )? ) ;
-    public final EObject ruleNamedWithActionInFragment() throws RecognitionException {
+    // $ANTLR start "rulePRFNamedWithActionInFragment"
+    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:503:1: rulePRFNamedWithActionInFragment returns [EObject current=null] : (this_FragmentWithAction_0= ruleFragmentWithAction (otherlv_1= HyphenMinus ( (otherlv_2= RULE_ID ) ) )? ) ;
+    public final EObject rulePRFNamedWithActionInFragment() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_1=null;
@@ -1190,9 +1190,9 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
             // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:508:5: this_FragmentWithAction_0= ruleFragmentWithAction (otherlv_1= HyphenMinus ( (otherlv_2= RULE_ID ) ) )?
             {
              
-                    newCompositeNode(grammarAccess.getNamedWithActionInFragmentAccess().getFragmentWithActionParserRuleCall_0()); 
+                    newCompositeNode(grammarAccess.getPRFNamedWithActionInFragmentAccess().getFragmentWithActionParserRuleCall_0()); 
                 
-            pushFollow(FollowSets000.FOLLOW_ruleFragmentWithAction_in_ruleNamedWithActionInFragment1064);
+            pushFollow(FollowSets000.FOLLOW_ruleFragmentWithAction_in_rulePRFNamedWithActionInFragment1064);
             this_FragmentWithAction_0=ruleFragmentWithAction();
 
             state._fsp--;
@@ -1212,9 +1212,9 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
                 case 1 :
                     // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:517:2: otherlv_1= HyphenMinus ( (otherlv_2= RULE_ID ) )
                     {
-                    otherlv_1=(Token)match(input,HyphenMinus,FollowSets000.FOLLOW_HyphenMinus_in_ruleNamedWithActionInFragment1077); 
+                    otherlv_1=(Token)match(input,HyphenMinus,FollowSets000.FOLLOW_HyphenMinus_in_rulePRFNamedWithActionInFragment1077); 
 
-                        	newLeafNode(otherlv_1, grammarAccess.getNamedWithActionInFragmentAccess().getHyphenMinusKeyword_1_0());
+                        	newLeafNode(otherlv_1, grammarAccess.getPRFNamedWithActionInFragmentAccess().getHyphenMinusKeyword_1_0());
                         
                     // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:521:1: ( (otherlv_2= RULE_ID ) )
                     // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:522:1: (otherlv_2= RULE_ID )
@@ -1224,12 +1224,12 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
                     {
 
                     			if (current==null) {
-                    	            current = createModelElement(grammarAccess.getNamedWithActionInFragmentRule());
+                    	            current = createModelElement(grammarAccess.getPRFNamedWithActionInFragmentRule());
                     	        }
                             
-                    otherlv_2=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleNamedWithActionInFragment1096); 
+                    otherlv_2=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rulePRFNamedWithActionInFragment1096); 
 
-                    		newLeafNode(otherlv_2, grammarAccess.getNamedWithActionInFragmentAccess().getRefNamedCrossReference_1_1_0()); 
+                    		newLeafNode(otherlv_2, grammarAccess.getPRFNamedWithActionInFragmentAccess().getRefPRFNamedCrossReference_1_1_0()); 
                     	
 
                     }
@@ -1260,29 +1260,29 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
         }
         return current;
     }
-    // $ANTLR end "ruleNamedWithActionInFragment"
+    // $ANTLR end "rulePRFNamedWithActionInFragment"
 
 
-    // $ANTLR start "entryRuleNamedWithActionInFragment2"
-    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:542:1: entryRuleNamedWithActionInFragment2 returns [EObject current=null] : iv_ruleNamedWithActionInFragment2= ruleNamedWithActionInFragment2 EOF ;
-    public final EObject entryRuleNamedWithActionInFragment2() throws RecognitionException {
+    // $ANTLR start "entryRulePRFNamedWithActionInFragment2"
+    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:542:1: entryRulePRFNamedWithActionInFragment2 returns [EObject current=null] : iv_rulePRFNamedWithActionInFragment2= rulePRFNamedWithActionInFragment2 EOF ;
+    public final EObject entryRulePRFNamedWithActionInFragment2() throws RecognitionException {
         EObject current = null;
 
-        EObject iv_ruleNamedWithActionInFragment2 = null;
+        EObject iv_rulePRFNamedWithActionInFragment2 = null;
 
 
         try {
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:543:2: (iv_ruleNamedWithActionInFragment2= ruleNamedWithActionInFragment2 EOF )
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:544:2: iv_ruleNamedWithActionInFragment2= ruleNamedWithActionInFragment2 EOF
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:543:2: (iv_rulePRFNamedWithActionInFragment2= rulePRFNamedWithActionInFragment2 EOF )
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:544:2: iv_rulePRFNamedWithActionInFragment2= rulePRFNamedWithActionInFragment2 EOF
             {
-             newCompositeNode(grammarAccess.getNamedWithActionInFragment2Rule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleNamedWithActionInFragment2_in_entryRuleNamedWithActionInFragment21133);
-            iv_ruleNamedWithActionInFragment2=ruleNamedWithActionInFragment2();
+             newCompositeNode(grammarAccess.getPRFNamedWithActionInFragment2Rule()); 
+            pushFollow(FollowSets000.FOLLOW_rulePRFNamedWithActionInFragment2_in_entryRulePRFNamedWithActionInFragment21133);
+            iv_rulePRFNamedWithActionInFragment2=rulePRFNamedWithActionInFragment2();
 
             state._fsp--;
 
-             current =iv_ruleNamedWithActionInFragment2; 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleNamedWithActionInFragment21143); 
+             current =iv_rulePRFNamedWithActionInFragment2; 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRulePRFNamedWithActionInFragment21143); 
 
             }
 
@@ -1296,12 +1296,12 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
         }
         return current;
     }
-    // $ANTLR end "entryRuleNamedWithActionInFragment2"
+    // $ANTLR end "entryRulePRFNamedWithActionInFragment2"
 
 
-    // $ANTLR start "ruleNamedWithActionInFragment2"
-    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:551:1: ruleNamedWithActionInFragment2 returns [EObject current=null] : ( ( (lv_name_0_0= RULE_ID ) ) this_FragmentWithAction2_1= ruleFragmentWithAction2 (otherlv_2= HyphenMinus ( (otherlv_3= RULE_ID ) ) )? ) ;
-    public final EObject ruleNamedWithActionInFragment2() throws RecognitionException {
+    // $ANTLR start "rulePRFNamedWithActionInFragment2"
+    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:551:1: rulePRFNamedWithActionInFragment2 returns [EObject current=null] : ( ( (lv_name_0_0= RULE_ID ) ) this_FragmentWithAction2_1= ruleFragmentWithAction2 (otherlv_2= HyphenMinus ( (otherlv_3= RULE_ID ) ) )? ) ;
+    public final EObject rulePRFNamedWithActionInFragment2() throws RecognitionException {
         EObject current = null;
 
         Token lv_name_0_0=null;
@@ -1325,13 +1325,13 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
             // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:556:1: (lv_name_0_0= RULE_ID )
             // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:557:3: lv_name_0_0= RULE_ID
             {
-            lv_name_0_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleNamedWithActionInFragment21185); 
+            lv_name_0_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rulePRFNamedWithActionInFragment21185); 
 
-            			newLeafNode(lv_name_0_0, grammarAccess.getNamedWithActionInFragment2Access().getNameIDTerminalRuleCall_0_0()); 
+            			newLeafNode(lv_name_0_0, grammarAccess.getPRFNamedWithActionInFragment2Access().getNameIDTerminalRuleCall_0_0()); 
             		
 
             	        if (current==null) {
-            	            current = createModelElement(grammarAccess.getNamedWithActionInFragment2Rule());
+            	            current = createModelElement(grammarAccess.getPRFNamedWithActionInFragment2Rule());
             	        }
                    		setWithLastConsumed(
                    			current, 
@@ -1346,9 +1346,9 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
             }
 
              
-                    newCompositeNode(grammarAccess.getNamedWithActionInFragment2Access().getFragmentWithAction2ParserRuleCall_1()); 
+                    newCompositeNode(grammarAccess.getPRFNamedWithActionInFragment2Access().getFragmentWithAction2ParserRuleCall_1()); 
                 
-            pushFollow(FollowSets000.FOLLOW_ruleFragmentWithAction2_in_ruleNamedWithActionInFragment21212);
+            pushFollow(FollowSets000.FOLLOW_ruleFragmentWithAction2_in_rulePRFNamedWithActionInFragment21212);
             this_FragmentWithAction2_1=ruleFragmentWithAction2();
 
             state._fsp--;
@@ -1368,9 +1368,9 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
                 case 1 :
                     // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:583:2: otherlv_2= HyphenMinus ( (otherlv_3= RULE_ID ) )
                     {
-                    otherlv_2=(Token)match(input,HyphenMinus,FollowSets000.FOLLOW_HyphenMinus_in_ruleNamedWithActionInFragment21225); 
+                    otherlv_2=(Token)match(input,HyphenMinus,FollowSets000.FOLLOW_HyphenMinus_in_rulePRFNamedWithActionInFragment21225); 
 
-                        	newLeafNode(otherlv_2, grammarAccess.getNamedWithActionInFragment2Access().getHyphenMinusKeyword_2_0());
+                        	newLeafNode(otherlv_2, grammarAccess.getPRFNamedWithActionInFragment2Access().getHyphenMinusKeyword_2_0());
                         
                     // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:587:1: ( (otherlv_3= RULE_ID ) )
                     // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:588:1: (otherlv_3= RULE_ID )
@@ -1380,12 +1380,12 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
                     {
 
                     			if (current==null) {
-                    	            current = createModelElement(grammarAccess.getNamedWithActionInFragment2Rule());
+                    	            current = createModelElement(grammarAccess.getPRFNamedWithActionInFragment2Rule());
                     	        }
                             
-                    otherlv_3=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleNamedWithActionInFragment21244); 
+                    otherlv_3=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rulePRFNamedWithActionInFragment21244); 
 
-                    		newLeafNode(otherlv_3, grammarAccess.getNamedWithActionInFragment2Access().getRefNamedCrossReference_2_1_0()); 
+                    		newLeafNode(otherlv_3, grammarAccess.getPRFNamedWithActionInFragment2Access().getRefPRFNamedCrossReference_2_1_0()); 
                     	
 
                     }
@@ -1416,29 +1416,29 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
         }
         return current;
     }
-    // $ANTLR end "ruleNamedWithActionInFragment2"
+    // $ANTLR end "rulePRFNamedWithActionInFragment2"
 
 
-    // $ANTLR start "entryRuleNamedWithActionInFragment3"
-    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:608:1: entryRuleNamedWithActionInFragment3 returns [EObject current=null] : iv_ruleNamedWithActionInFragment3= ruleNamedWithActionInFragment3 EOF ;
-    public final EObject entryRuleNamedWithActionInFragment3() throws RecognitionException {
+    // $ANTLR start "entryRulePRFNamedWithActionInFragment3"
+    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:608:1: entryRulePRFNamedWithActionInFragment3 returns [EObject current=null] : iv_rulePRFNamedWithActionInFragment3= rulePRFNamedWithActionInFragment3 EOF ;
+    public final EObject entryRulePRFNamedWithActionInFragment3() throws RecognitionException {
         EObject current = null;
 
-        EObject iv_ruleNamedWithActionInFragment3 = null;
+        EObject iv_rulePRFNamedWithActionInFragment3 = null;
 
 
         try {
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:609:2: (iv_ruleNamedWithActionInFragment3= ruleNamedWithActionInFragment3 EOF )
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:610:2: iv_ruleNamedWithActionInFragment3= ruleNamedWithActionInFragment3 EOF
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:609:2: (iv_rulePRFNamedWithActionInFragment3= rulePRFNamedWithActionInFragment3 EOF )
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:610:2: iv_rulePRFNamedWithActionInFragment3= rulePRFNamedWithActionInFragment3 EOF
             {
-             newCompositeNode(grammarAccess.getNamedWithActionInFragment3Rule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleNamedWithActionInFragment3_in_entryRuleNamedWithActionInFragment31281);
-            iv_ruleNamedWithActionInFragment3=ruleNamedWithActionInFragment3();
+             newCompositeNode(grammarAccess.getPRFNamedWithActionInFragment3Rule()); 
+            pushFollow(FollowSets000.FOLLOW_rulePRFNamedWithActionInFragment3_in_entryRulePRFNamedWithActionInFragment31281);
+            iv_rulePRFNamedWithActionInFragment3=rulePRFNamedWithActionInFragment3();
 
             state._fsp--;
 
-             current =iv_ruleNamedWithActionInFragment3; 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleNamedWithActionInFragment31291); 
+             current =iv_rulePRFNamedWithActionInFragment3; 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRulePRFNamedWithActionInFragment31291); 
 
             }
 
@@ -1452,12 +1452,12 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
         }
         return current;
     }
-    // $ANTLR end "entryRuleNamedWithActionInFragment3"
+    // $ANTLR end "entryRulePRFNamedWithActionInFragment3"
 
 
-    // $ANTLR start "ruleNamedWithActionInFragment3"
-    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:617:1: ruleNamedWithActionInFragment3 returns [EObject current=null] : (this_FragmentWithAction3_0= ruleFragmentWithAction3 (otherlv_1= HyphenMinus ( (otherlv_2= RULE_ID ) ) )? ) ;
-    public final EObject ruleNamedWithActionInFragment3() throws RecognitionException {
+    // $ANTLR start "rulePRFNamedWithActionInFragment3"
+    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:617:1: rulePRFNamedWithActionInFragment3 returns [EObject current=null] : (this_FragmentWithAction3_0= ruleFragmentWithAction3 (otherlv_1= HyphenMinus ( (otherlv_2= RULE_ID ) ) )? ) ;
+    public final EObject rulePRFNamedWithActionInFragment3() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_1=null;
@@ -1475,9 +1475,9 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
             // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:622:5: this_FragmentWithAction3_0= ruleFragmentWithAction3 (otherlv_1= HyphenMinus ( (otherlv_2= RULE_ID ) ) )?
             {
              
-                    newCompositeNode(grammarAccess.getNamedWithActionInFragment3Access().getFragmentWithAction3ParserRuleCall_0()); 
+                    newCompositeNode(grammarAccess.getPRFNamedWithActionInFragment3Access().getFragmentWithAction3ParserRuleCall_0()); 
                 
-            pushFollow(FollowSets000.FOLLOW_ruleFragmentWithAction3_in_ruleNamedWithActionInFragment31338);
+            pushFollow(FollowSets000.FOLLOW_ruleFragmentWithAction3_in_rulePRFNamedWithActionInFragment31338);
             this_FragmentWithAction3_0=ruleFragmentWithAction3();
 
             state._fsp--;
@@ -1497,9 +1497,9 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
                 case 1 :
                     // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:631:2: otherlv_1= HyphenMinus ( (otherlv_2= RULE_ID ) )
                     {
-                    otherlv_1=(Token)match(input,HyphenMinus,FollowSets000.FOLLOW_HyphenMinus_in_ruleNamedWithActionInFragment31351); 
+                    otherlv_1=(Token)match(input,HyphenMinus,FollowSets000.FOLLOW_HyphenMinus_in_rulePRFNamedWithActionInFragment31351); 
 
-                        	newLeafNode(otherlv_1, grammarAccess.getNamedWithActionInFragment3Access().getHyphenMinusKeyword_1_0());
+                        	newLeafNode(otherlv_1, grammarAccess.getPRFNamedWithActionInFragment3Access().getHyphenMinusKeyword_1_0());
                         
                     // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:635:1: ( (otherlv_2= RULE_ID ) )
                     // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:636:1: (otherlv_2= RULE_ID )
@@ -1509,12 +1509,12 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
                     {
 
                     			if (current==null) {
-                    	            current = createModelElement(grammarAccess.getNamedWithActionInFragment3Rule());
+                    	            current = createModelElement(grammarAccess.getPRFNamedWithActionInFragment3Rule());
                     	        }
                             
-                    otherlv_2=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleNamedWithActionInFragment31370); 
+                    otherlv_2=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rulePRFNamedWithActionInFragment31370); 
 
-                    		newLeafNode(otherlv_2, grammarAccess.getNamedWithActionInFragment3Access().getRefNamedCrossReference_1_1_0()); 
+                    		newLeafNode(otherlv_2, grammarAccess.getPRFNamedWithActionInFragment3Access().getRefPRFNamedCrossReference_1_1_0()); 
                     	
 
                     }
@@ -1545,7 +1545,7 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
         }
         return current;
     }
-    // $ANTLR end "ruleNamedWithActionInFragment3"
+    // $ANTLR end "rulePRFNamedWithActionInFragment3"
 
 
     // $ANTLR start "entryRuleFragmentWithAction"
@@ -1633,7 +1633,7 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
             {
 
                     current = forceCreateModelElementAndSet(
-                        grammarAccess.getFragmentWithActionAccess().getNamedWithActionPrevAction_1(),
+                        grammarAccess.getFragmentWithActionAccess().getPRFNamedWithActionPrevAction_1(),
                         current);
                 
 
@@ -1686,7 +1686,7 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
                             
                     otherlv_3=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleFragmentWithAction1515); 
 
-                    		newLeafNode(otherlv_3, grammarAccess.getFragmentWithActionAccess().getRef2NamedCrossReference_3_0()); 
+                    		newLeafNode(otherlv_3, grammarAccess.getFragmentWithActionAccess().getRef2PRFNamedCrossReference_3_0()); 
                     	
 
                     }
@@ -1775,7 +1775,7 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
             {
 
                     current = forceCreateModelElementAndSet(
-                        grammarAccess.getFragmentWithAction2Access().getNamedWithActionPrevAction_0(),
+                        grammarAccess.getFragmentWithAction2Access().getPRFNamedWithActionPrevAction_0(),
                         current);
                 
 
@@ -1828,7 +1828,7 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
                             
                     otherlv_2=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleFragmentWithAction21637); 
 
-                    		newLeafNode(otherlv_2, grammarAccess.getFragmentWithAction2Access().getRef2NamedCrossReference_2_0()); 
+                    		newLeafNode(otherlv_2, grammarAccess.getFragmentWithAction2Access().getRef2PRFNamedCrossReference_2_0()); 
                     	
 
                     }
@@ -1960,7 +1960,7 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
             	    {
 
             	            current = forceCreateModelElementAndSet(
-            	                grammarAccess.getFragmentWithAction3Access().getNamedWithActionPrevAction_1_0(),
+            	                grammarAccess.getFragmentWithAction3Access().getPRFNamedWithActionPrevAction_1_0(),
             	                current);
             	        
 
@@ -2017,7 +2017,7 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
             	                    
             	            otherlv_4=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleFragmentWithAction31794); 
 
-            	            		newLeafNode(otherlv_4, grammarAccess.getFragmentWithAction3Access().getRef2NamedCrossReference_1_3_0()); 
+            	            		newLeafNode(otherlv_4, grammarAccess.getFragmentWithAction3Access().getRef2PRFNamedCrossReference_1_3_0()); 
             	            	
 
             	            }
@@ -2057,26 +2057,26 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
     // $ANTLR end "ruleFragmentWithAction3"
 
 
-    // $ANTLR start "entryRuleNamedFragment"
-    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:871:1: entryRuleNamedFragment returns [EObject current=null] : iv_ruleNamedFragment= ruleNamedFragment EOF ;
-    public final EObject entryRuleNamedFragment() throws RecognitionException {
+    // $ANTLR start "entryRulePRFNamedFragment"
+    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:871:1: entryRulePRFNamedFragment returns [EObject current=null] : iv_rulePRFNamedFragment= rulePRFNamedFragment EOF ;
+    public final EObject entryRulePRFNamedFragment() throws RecognitionException {
         EObject current = null;
 
-        EObject iv_ruleNamedFragment = null;
+        EObject iv_rulePRFNamedFragment = null;
 
 
         try {
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:872:2: (iv_ruleNamedFragment= ruleNamedFragment EOF )
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:873:2: iv_ruleNamedFragment= ruleNamedFragment EOF
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:872:2: (iv_rulePRFNamedFragment= rulePRFNamedFragment EOF )
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:873:2: iv_rulePRFNamedFragment= rulePRFNamedFragment EOF
             {
-             newCompositeNode(grammarAccess.getNamedFragmentRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleNamedFragment_in_entryRuleNamedFragment1832);
-            iv_ruleNamedFragment=ruleNamedFragment();
+             newCompositeNode(grammarAccess.getPRFNamedFragmentRule()); 
+            pushFollow(FollowSets000.FOLLOW_rulePRFNamedFragment_in_entryRulePRFNamedFragment1832);
+            iv_rulePRFNamedFragment=rulePRFNamedFragment();
 
             state._fsp--;
 
-             current =iv_ruleNamedFragment; 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleNamedFragment1842); 
+             current =iv_rulePRFNamedFragment; 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRulePRFNamedFragment1842); 
 
             }
 
@@ -2090,12 +2090,12 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
         }
         return current;
     }
-    // $ANTLR end "entryRuleNamedFragment"
+    // $ANTLR end "entryRulePRFNamedFragment"
 
 
-    // $ANTLR start "ruleNamedFragment"
-    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:880:1: ruleNamedFragment returns [EObject current=null] : ( (lv_name_0_0= RULE_ID ) ) ;
-    public final EObject ruleNamedFragment() throws RecognitionException {
+    // $ANTLR start "rulePRFNamedFragment"
+    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:880:1: rulePRFNamedFragment returns [EObject current=null] : ( (lv_name_0_0= RULE_ID ) ) ;
+    public final EObject rulePRFNamedFragment() throws RecognitionException {
         EObject current = null;
 
         Token lv_name_0_0=null;
@@ -2112,13 +2112,13 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
             // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:885:1: (lv_name_0_0= RULE_ID )
             // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:886:3: lv_name_0_0= RULE_ID
             {
-            lv_name_0_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleNamedFragment1883); 
+            lv_name_0_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rulePRFNamedFragment1883); 
 
-            			newLeafNode(lv_name_0_0, grammarAccess.getNamedFragmentAccess().getNameIDTerminalRuleCall_0()); 
+            			newLeafNode(lv_name_0_0, grammarAccess.getPRFNamedFragmentAccess().getNameIDTerminalRuleCall_0()); 
             		
 
             	        if (current==null) {
-            	            current = createModelElement(grammarAccess.getNamedFragmentRule());
+            	            current = createModelElement(grammarAccess.getPRFNamedFragmentRule());
             	        }
                    		setWithLastConsumed(
                    			current, 
@@ -2146,29 +2146,29 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
         }
         return current;
     }
-    // $ANTLR end "ruleNamedFragment"
+    // $ANTLR end "rulePRFNamedFragment"
 
 
-    // $ANTLR start "entryRuleNamedRef"
-    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:910:1: entryRuleNamedRef returns [EObject current=null] : iv_ruleNamedRef= ruleNamedRef EOF ;
-    public final EObject entryRuleNamedRef() throws RecognitionException {
+    // $ANTLR start "entryRulePRFNamedRef"
+    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:910:1: entryRulePRFNamedRef returns [EObject current=null] : iv_rulePRFNamedRef= rulePRFNamedRef EOF ;
+    public final EObject entryRulePRFNamedRef() throws RecognitionException {
         EObject current = null;
 
-        EObject iv_ruleNamedRef = null;
+        EObject iv_rulePRFNamedRef = null;
 
 
         try {
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:911:2: (iv_ruleNamedRef= ruleNamedRef EOF )
-            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:912:2: iv_ruleNamedRef= ruleNamedRef EOF
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:911:2: (iv_rulePRFNamedRef= rulePRFNamedRef EOF )
+            // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:912:2: iv_rulePRFNamedRef= rulePRFNamedRef EOF
             {
-             newCompositeNode(grammarAccess.getNamedRefRule()); 
-            pushFollow(FollowSets000.FOLLOW_ruleNamedRef_in_entryRuleNamedRef1922);
-            iv_ruleNamedRef=ruleNamedRef();
+             newCompositeNode(grammarAccess.getPRFNamedRefRule()); 
+            pushFollow(FollowSets000.FOLLOW_rulePRFNamedRef_in_entryRulePRFNamedRef1922);
+            iv_rulePRFNamedRef=rulePRFNamedRef();
 
             state._fsp--;
 
-             current =iv_ruleNamedRef; 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleNamedRef1932); 
+             current =iv_rulePRFNamedRef; 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRulePRFNamedRef1932); 
 
             }
 
@@ -2182,12 +2182,12 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
         }
         return current;
     }
-    // $ANTLR end "entryRuleNamedRef"
+    // $ANTLR end "entryRulePRFNamedRef"
 
 
-    // $ANTLR start "ruleNamedRef"
-    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:919:1: ruleNamedRef returns [EObject current=null] : ( (otherlv_0= RULE_ID ) ) ;
-    public final EObject ruleNamedRef() throws RecognitionException {
+    // $ANTLR start "rulePRFNamedRef"
+    // ../org.eclipse.xtext.tests/src-gen/org/eclipse/xtext/parser/fragments/parser/antlr/internal/InternalFragmentTestLanguageExParser.g:919:1: rulePRFNamedRef returns [EObject current=null] : ( (otherlv_0= RULE_ID ) ) ;
+    public final EObject rulePRFNamedRef() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_0=null;
@@ -2206,12 +2206,12 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
             {
 
             			if (current==null) {
-            	            current = createModelElement(grammarAccess.getNamedRefRule());
+            	            current = createModelElement(grammarAccess.getPRFNamedRefRule());
             	        }
                     
-            otherlv_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleNamedRef1976); 
+            otherlv_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rulePRFNamedRef1976); 
 
-            		newLeafNode(otherlv_0, grammarAccess.getNamedRefAccess().getRefNamedCrossReference_0()); 
+            		newLeafNode(otherlv_0, grammarAccess.getPRFNamedRefAccess().getRefPRFNamedCrossReference_0()); 
             	
 
             }
@@ -2233,7 +2233,7 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
         }
         return current;
     }
-    // $ANTLR end "ruleNamedRef"
+    // $ANTLR end "rulePRFNamedRef"
 
     // Delegated rules
 
@@ -2242,61 +2242,61 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
 
     
     private static class FollowSets000 {
-        public static final BitSet FOLLOW_ruleFragmentsEx_in_entryRuleFragmentsEx67 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleFragmentsEx77 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleFragments_in_ruleFragmentsEx123 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleFragments_in_entryRuleFragments156 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleFragments166 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_NumberSignDigitOne_in_ruleFragments215 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_ruleNamed_in_ruleFragments235 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_NumberSignDigitTwo_in_ruleFragments256 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_ruleNamed_in_ruleFragments276 = new BitSet(new long[]{0x0000000000000800L});
-        public static final BitSet FOLLOW_HyphenMinusGreaterThanSign_in_ruleFragments289 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleFragments308 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_NumberSignDigitThree_in_ruleFragments329 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_ruleNamedRefFirst_in_ruleFragments349 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_NumberSignDigitFour_in_ruleFragments370 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_ruleNamedWithAction_in_ruleFragments390 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_NumberSignDigitFive_in_ruleFragments411 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_ruleNamedWithActionInFragment_in_ruleFragments431 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_NumberSignDigitSix_in_ruleFragments452 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_ruleNamedWithActionInFragment2_in_ruleFragments472 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_NumberSignDigitSeven_in_ruleFragments493 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_ruleNamedWithActionInFragment3_in_ruleFragments513 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleNamed_in_entryRuleNamed550 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleNamed560 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleNamedFragment_in_ruleNamed607 = new BitSet(new long[]{0x0000000000006002L});
-        public static final BitSet FOLLOW_Colon_in_ruleNamed621 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleNamed640 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_HyphenMinus_in_ruleNamed661 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_ruleNamedRef_in_ruleNamed682 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleNamedRefFirst_in_entryRuleNamedRefFirst719 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleNamedRefFirst729 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleNamedRefFirst774 = new BitSet(new long[]{0x0000000000001000L});
-        public static final BitSet FOLLOW_LessThanSignHyphenMinus_in_ruleNamedRefFirst787 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_ruleNamedFragment_in_ruleNamedRefFirst808 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleNamedWithAction_in_entryRuleNamedWithAction842 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleNamedWithAction852 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleNamed_in_ruleNamedWithAction899 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleNamedWithAction924 = new BitSet(new long[]{0x0000000000008002L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleNamedWithAction950 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleNamedWithAction970 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleNamedWithActionInFragment_in_entryRuleNamedWithActionInFragment1007 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleNamedWithActionInFragment1017 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleFragmentWithAction_in_ruleNamedWithActionInFragment1064 = new BitSet(new long[]{0x0000000000002002L});
-        public static final BitSet FOLLOW_HyphenMinus_in_ruleNamedWithActionInFragment1077 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleNamedWithActionInFragment1096 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleNamedWithActionInFragment2_in_entryRuleNamedWithActionInFragment21133 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleNamedWithActionInFragment21143 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleNamedWithActionInFragment21185 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_ruleFragmentWithAction2_in_ruleNamedWithActionInFragment21212 = new BitSet(new long[]{0x0000000000002002L});
-        public static final BitSet FOLLOW_HyphenMinus_in_ruleNamedWithActionInFragment21225 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleNamedWithActionInFragment21244 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleNamedWithActionInFragment3_in_entryRuleNamedWithActionInFragment31281 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleNamedWithActionInFragment31291 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleFragmentWithAction3_in_ruleNamedWithActionInFragment31338 = new BitSet(new long[]{0x0000000000002002L});
-        public static final BitSet FOLLOW_HyphenMinus_in_ruleNamedWithActionInFragment31351 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleNamedWithActionInFragment31370 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleParserRuleFragmentsEx_in_entryRuleParserRuleFragmentsEx67 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleParserRuleFragmentsEx77 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleParserRuleFragments_in_ruleParserRuleFragmentsEx123 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleParserRuleFragments_in_entryRuleParserRuleFragments156 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleParserRuleFragments166 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_NumberSignDigitOne_in_ruleParserRuleFragments215 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_rulePRFNamed_in_ruleParserRuleFragments235 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_NumberSignDigitTwo_in_ruleParserRuleFragments256 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_rulePRFNamed_in_ruleParserRuleFragments276 = new BitSet(new long[]{0x0000000000000800L});
+        public static final BitSet FOLLOW_HyphenMinusGreaterThanSign_in_ruleParserRuleFragments289 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleParserRuleFragments308 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_NumberSignDigitThree_in_ruleParserRuleFragments329 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_rulePRFNamedRefFirst_in_ruleParserRuleFragments349 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_NumberSignDigitFour_in_ruleParserRuleFragments370 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_rulePRFNamedWithAction_in_ruleParserRuleFragments390 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_NumberSignDigitFive_in_ruleParserRuleFragments411 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_rulePRFNamedWithActionInFragment_in_ruleParserRuleFragments431 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_NumberSignDigitSix_in_ruleParserRuleFragments452 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_rulePRFNamedWithActionInFragment2_in_ruleParserRuleFragments472 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_NumberSignDigitSeven_in_ruleParserRuleFragments493 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_rulePRFNamedWithActionInFragment3_in_ruleParserRuleFragments513 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePRFNamed_in_entryRulePRFNamed550 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRulePRFNamed560 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePRFNamedFragment_in_rulePRFNamed607 = new BitSet(new long[]{0x0000000000006002L});
+        public static final BitSet FOLLOW_Colon_in_rulePRFNamed621 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_RULE_ID_in_rulePRFNamed640 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_HyphenMinus_in_rulePRFNamed661 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_rulePRFNamedRef_in_rulePRFNamed682 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePRFNamedRefFirst_in_entryRulePRFNamedRefFirst719 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRulePRFNamedRefFirst729 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rulePRFNamedRefFirst774 = new BitSet(new long[]{0x0000000000001000L});
+        public static final BitSet FOLLOW_LessThanSignHyphenMinus_in_rulePRFNamedRefFirst787 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_rulePRFNamedFragment_in_rulePRFNamedRefFirst808 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePRFNamedWithAction_in_entryRulePRFNamedWithAction842 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRulePRFNamedWithAction852 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePRFNamed_in_rulePRFNamedWithAction899 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_RULE_ID_in_rulePRFNamedWithAction924 = new BitSet(new long[]{0x0000000000008002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rulePRFNamedWithAction950 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_RULE_ID_in_rulePRFNamedWithAction970 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePRFNamedWithActionInFragment_in_entryRulePRFNamedWithActionInFragment1007 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRulePRFNamedWithActionInFragment1017 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleFragmentWithAction_in_rulePRFNamedWithActionInFragment1064 = new BitSet(new long[]{0x0000000000002002L});
+        public static final BitSet FOLLOW_HyphenMinus_in_rulePRFNamedWithActionInFragment1077 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_RULE_ID_in_rulePRFNamedWithActionInFragment1096 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePRFNamedWithActionInFragment2_in_entryRulePRFNamedWithActionInFragment21133 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRulePRFNamedWithActionInFragment21143 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rulePRFNamedWithActionInFragment21185 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_ruleFragmentWithAction2_in_rulePRFNamedWithActionInFragment21212 = new BitSet(new long[]{0x0000000000002002L});
+        public static final BitSet FOLLOW_HyphenMinus_in_rulePRFNamedWithActionInFragment21225 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_RULE_ID_in_rulePRFNamedWithActionInFragment21244 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePRFNamedWithActionInFragment3_in_entryRulePRFNamedWithActionInFragment31281 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRulePRFNamedWithActionInFragment31291 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleFragmentWithAction3_in_rulePRFNamedWithActionInFragment31338 = new BitSet(new long[]{0x0000000000002002L});
+        public static final BitSet FOLLOW_HyphenMinus_in_rulePRFNamedWithActionInFragment31351 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_RULE_ID_in_rulePRFNamedWithActionInFragment31370 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_ruleFragmentWithAction_in_entryRuleFragmentWithAction1407 = new BitSet(new long[]{0x0000000000000000L});
         public static final BitSet FOLLOW_EOF_in_entryRuleFragmentWithAction1417 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_RULE_ID_in_ruleFragmentWithAction1459 = new BitSet(new long[]{0x0000000000008000L});
@@ -2312,12 +2312,12 @@ public class InternalFragmentTestLanguageExParser extends AbstractInternalAntlrP
         public static final BitSet FOLLOW_HyphenMinusGreaterThanSign_in_ruleFragmentWithAction31753 = new BitSet(new long[]{0x0000000000008000L});
         public static final BitSet FOLLOW_RULE_ID_in_ruleFragmentWithAction31769 = new BitSet(new long[]{0x0000000000008802L});
         public static final BitSet FOLLOW_RULE_ID_in_ruleFragmentWithAction31794 = new BitSet(new long[]{0x0000000000000802L});
-        public static final BitSet FOLLOW_ruleNamedFragment_in_entryRuleNamedFragment1832 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleNamedFragment1842 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleNamedFragment1883 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleNamedRef_in_entryRuleNamedRef1922 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleNamedRef1932 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleNamedRef1976 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePRFNamedFragment_in_entryRulePRFNamedFragment1832 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRulePRFNamedFragment1842 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rulePRFNamedFragment1883 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePRFNamedRef_in_entryRulePRFNamedRef1922 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRulePRFNamedRef1932 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rulePRFNamedRef1976 = new BitSet(new long[]{0x0000000000000002L});
     }
 
 

@@ -9,59 +9,59 @@ grammar org.eclipse.xtext.parser.fragments.FragmentTestLanguage with org.eclipse
 
 generate fragmentTestLanguage "http://www.eclipse.org/2015/tmf/xtext/fragments"
  
-Fragments: {Fragments} 
-  ( '#1' element=Named
-  | '#2' element=Named '->' ref=[Named]
-  | '#3' element=NamedRefFirst
-  | '#4' element=NamedWithAction
-  | '#5' element=NamedWithActionInFragment
-  | '#6' element=NamedWithActionInFragment2
-  | '#7' element=NamedWithActionInFragment3
+ParserRuleFragments: {ParserRuleFragments} 
+  ( '#1' element=PRFNamed
+  | '#2' element=PRFNamed '->' ref=[PRFNamed]
+  | '#3' element=PRFNamedRefFirst
+  | '#4' element=PRFNamedWithAction
+  | '#5' element=PRFNamedWithActionInFragment
+  | '#6' element=PRFNamedWithActionInFragment2
+  | '#7' element=PRFNamedWithActionInFragment3
   )
 ;
 
-Named: NamedFragment (
-	  ':' ref=[Named]
-	| '-' NamedRef
+PRFNamed: PRFNamedFragment (
+	  ':' ref=[PRFNamed]
+	| '-' PRFNamedRef
 	)?
 ;
 
-NamedRefFirst returns Named:
-	ref=[Named] '<-' NamedFragment
+PRFNamedRefFirst returns PRFNamed:
+	ref=[PRFNamed] '<-' PRFNamedFragment
 ;
 
-NamedWithAction returns Named:
-	Named {NamedWithAction.prev=current} name=ID (ref=[Named] ref2=[Named])?
+PRFNamedWithAction returns PRFNamed:
+	PRFNamed {PRFNamedWithAction.prev=current} name=ID (ref=[PRFNamed] ref2=[PRFNamed])?
 ;
 
-NamedWithActionInFragment returns Named:
-	FragmentWithAction ('-' ref=[Named])?
+PRFNamedWithActionInFragment returns PRFNamed:
+	FragmentWithAction ('-' ref=[PRFNamed])?
 ;
 
-NamedWithActionInFragment2 returns Named:
-	name=ID FragmentWithAction2 ('-' ref=[Named])?
+PRFNamedWithActionInFragment2 returns PRFNamed:
+	name=ID FragmentWithAction2 ('-' ref=[PRFNamed])?
 ;
 
-NamedWithActionInFragment3 returns Named:
-	FragmentWithAction3 ('-' ref=[Named])?
+PRFNamedWithActionInFragment3 returns PRFNamed:
+	FragmentWithAction3 ('-' ref=[PRFNamed])?
 ;
 
-fragment FragmentWithAction returns Named:
-	name=ID {NamedWithAction.prev=current} name=ID (ref2=[Named])?
+fragment FragmentWithAction returns PRFNamed:
+	name=ID {PRFNamedWithAction.prev=current} name=ID (ref2=[PRFNamed])?
 ;
 
-fragment FragmentWithAction2 returns Named:
-	{NamedWithAction.prev=current} name=ID (ref2=[Named])?
+fragment FragmentWithAction2 returns PRFNamed:
+	{PRFNamedWithAction.prev=current} name=ID (ref2=[PRFNamed])?
 ;
 
-fragment FragmentWithAction3 returns Named:
-	name=ID ({NamedWithAction.prev=current} '->' name=ID (ref2=[Named])?)* 
+fragment FragmentWithAction3 returns PRFNamed:
+	name=ID ({PRFNamedWithAction.prev=current} '->' name=ID (ref2=[PRFNamed])?)* 
 ;
 
-fragment NamedFragment returns Named:
+fragment PRFNamedFragment returns PRFNamed:
 	name=ID
 ;
 
-fragment NamedRef returns Named:
-	ref=[Named]
+fragment PRFNamedRef returns PRFNamed:
+	ref=[PRFNamed]
 ;

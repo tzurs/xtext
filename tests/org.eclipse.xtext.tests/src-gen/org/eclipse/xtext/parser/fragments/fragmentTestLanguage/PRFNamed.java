@@ -6,22 +6,22 @@ import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Named</b></em>'.
+ * A representation of the model object '<em><b>PRF Named</b></em>'.
  * <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Named#getRef <em>Ref</em>}</li>
- *   <li>{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Named#getName <em>Name</em>}</li>
+ *   <li>{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamed#getRef <em>Ref</em>}</li>
+ *   <li>{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamed#getName <em>Name</em>}</li>
  * </ul>
  *
- * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.FragmentTestLanguagePackage#getNamed()
+ * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.FragmentTestLanguagePackage#getPRFNamed()
  * @model
  * @generated
  */
-public interface Named extends EObject
+public interface PRFNamed extends EObject
 {
   /**
    * Returns the value of the '<em><b>Ref</b></em>' reference.
@@ -32,22 +32,22 @@ public interface Named extends EObject
    * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Ref</em>' reference.
-   * @see #setRef(Named)
-   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.FragmentTestLanguagePackage#getNamed_Ref()
+   * @see #setRef(PRFNamed)
+   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.FragmentTestLanguagePackage#getPRFNamed_Ref()
    * @model
    * @generated
    */
-  Named getRef();
+  PRFNamed getRef();
 
   /**
-   * Sets the value of the '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Named#getRef <em>Ref</em>}' reference.
+   * Sets the value of the '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamed#getRef <em>Ref</em>}' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>Ref</em>' reference.
    * @see #getRef()
    * @generated
    */
-  void setRef(Named value);
+  void setRef(PRFNamed value);
 
   /**
    * Returns the value of the '<em><b>Name</b></em>' attribute.
@@ -59,14 +59,14 @@ public interface Named extends EObject
    * <!-- end-user-doc -->
    * @return the value of the '<em>Name</em>' attribute.
    * @see #setName(String)
-   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.FragmentTestLanguagePackage#getNamed_Name()
+   * @see org.eclipse.xtext.parser.fragments.fragmentTestLanguage.FragmentTestLanguagePackage#getPRFNamed_Name()
    * @model
    * @generated
    */
   String getName();
 
   /**
-   * Sets the value of the '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Named#getName <em>Name</em>}' attribute.
+   * Sets the value of the '{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamed#getName <em>Name</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @param value the new value of the '<em>Name</em>' attribute.
@@ -75,4 +75,4 @@ public interface Named extends EObject
    */
   void setName(String value);
 
-} // Named
+} // PRFNamed

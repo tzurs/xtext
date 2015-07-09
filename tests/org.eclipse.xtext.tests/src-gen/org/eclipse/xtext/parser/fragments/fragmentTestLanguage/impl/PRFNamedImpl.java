@@ -11,23 +11,23 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.FragmentTestLanguagePackage;
-import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.Named;
+import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamed;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Named</b></em>'.
+ * An implementation of the model object '<em><b>PRF Named</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.NamedImpl#getRef <em>Ref</em>}</li>
- *   <li>{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.NamedImpl#getName <em>Name</em>}</li>
+ *   <li>{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.PRFNamedImpl#getRef <em>Ref</em>}</li>
+ *   <li>{@link org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.PRFNamedImpl#getName <em>Name</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class NamedImpl extends MinimalEObjectImpl.Container implements Named
+public class PRFNamedImpl extends MinimalEObjectImpl.Container implements PRFNamed
 {
   /**
    * The cached value of the '{@link #getRef() <em>Ref</em>}' reference.
@@ -37,7 +37,7 @@ public class NamedImpl extends MinimalEObjectImpl.Container implements Named
    * @generated
    * @ordered
    */
-  protected Named ref;
+  protected PRFNamed ref;
 
   /**
    * The default value of the '{@link #getName() <em>Name</em>}' attribute.
@@ -64,7 +64,7 @@ public class NamedImpl extends MinimalEObjectImpl.Container implements Named
    * <!-- end-user-doc -->
    * @generated
    */
-  protected NamedImpl()
+  protected PRFNamedImpl()
   {
     super();
   }
@@ -77,7 +77,7 @@ public class NamedImpl extends MinimalEObjectImpl.Container implements Named
   @Override
   protected EClass eStaticClass()
   {
-    return FragmentTestLanguagePackage.Literals.NAMED;
+    return FragmentTestLanguagePackage.Literals.PRF_NAMED;
   }
 
   /**
@@ -85,16 +85,16 @@ public class NamedImpl extends MinimalEObjectImpl.Container implements Named
    * <!-- end-user-doc -->
    * @generated
    */
-  public Named getRef()
+  public PRFNamed getRef()
   {
     if (ref != null && ref.eIsProxy())
     {
       InternalEObject oldRef = (InternalEObject)ref;
-      ref = (Named)eResolveProxy(oldRef);
+      ref = (PRFNamed)eResolveProxy(oldRef);
       if (ref != oldRef)
       {
         if (eNotificationRequired())
-          eNotify(new ENotificationImpl(this, Notification.RESOLVE, FragmentTestLanguagePackage.NAMED__REF, oldRef, ref));
+          eNotify(new ENotificationImpl(this, Notification.RESOLVE, FragmentTestLanguagePackage.PRF_NAMED__REF, oldRef, ref));
       }
     }
     return ref;
@@ -105,7 +105,7 @@ public class NamedImpl extends MinimalEObjectImpl.Container implements Named
    * <!-- end-user-doc -->
    * @generated
    */
-  public Named basicGetRef()
+  public PRFNamed basicGetRef()
   {
     return ref;
   }
@@ -115,12 +115,12 @@ public class NamedImpl extends MinimalEObjectImpl.Container implements Named
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setRef(Named newRef)
+  public void setRef(PRFNamed newRef)
   {
-    Named oldRef = ref;
+    PRFNamed oldRef = ref;
     ref = newRef;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, FragmentTestLanguagePackage.NAMED__REF, oldRef, ref));
+      eNotify(new ENotificationImpl(this, Notification.SET, FragmentTestLanguagePackage.PRF_NAMED__REF, oldRef, ref));
   }
 
   /**
@@ -143,7 +143,7 @@ public class NamedImpl extends MinimalEObjectImpl.Container implements Named
     String oldName = name;
     name = newName;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, FragmentTestLanguagePackage.NAMED__NAME, oldName, name));
+      eNotify(new ENotificationImpl(this, Notification.SET, FragmentTestLanguagePackage.PRF_NAMED__NAME, oldName, name));
   }
 
   /**
@@ -156,10 +156,10 @@ public class NamedImpl extends MinimalEObjectImpl.Container implements Named
   {
     switch (featureID)
     {
-      case FragmentTestLanguagePackage.NAMED__REF:
+      case FragmentTestLanguagePackage.PRF_NAMED__REF:
         if (resolve) return getRef();
         return basicGetRef();
-      case FragmentTestLanguagePackage.NAMED__NAME:
+      case FragmentTestLanguagePackage.PRF_NAMED__NAME:
         return getName();
     }
     return super.eGet(featureID, resolve, coreType);
@@ -175,10 +175,10 @@ public class NamedImpl extends MinimalEObjectImpl.Container implements Named
   {
     switch (featureID)
     {
-      case FragmentTestLanguagePackage.NAMED__REF:
-        setRef((Named)newValue);
+      case FragmentTestLanguagePackage.PRF_NAMED__REF:
+        setRef((PRFNamed)newValue);
         return;
-      case FragmentTestLanguagePackage.NAMED__NAME:
+      case FragmentTestLanguagePackage.PRF_NAMED__NAME:
         setName((String)newValue);
         return;
     }
@@ -195,10 +195,10 @@ public class NamedImpl extends MinimalEObjectImpl.Container implements Named
   {
     switch (featureID)
     {
-      case FragmentTestLanguagePackage.NAMED__REF:
-        setRef((Named)null);
+      case FragmentTestLanguagePackage.PRF_NAMED__REF:
+        setRef((PRFNamed)null);
         return;
-      case FragmentTestLanguagePackage.NAMED__NAME:
+      case FragmentTestLanguagePackage.PRF_NAMED__NAME:
         setName(NAME_EDEFAULT);
         return;
     }
@@ -215,9 +215,9 @@ public class NamedImpl extends MinimalEObjectImpl.Container implements Named
   {
     switch (featureID)
     {
-      case FragmentTestLanguagePackage.NAMED__REF:
+      case FragmentTestLanguagePackage.PRF_NAMED__REF:
         return ref != null;
-      case FragmentTestLanguagePackage.NAMED__NAME:
+      case FragmentTestLanguagePackage.PRF_NAMED__NAME:
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
     }
     return super.eIsSet(featureID);
@@ -240,4 +240,4 @@ public class NamedImpl extends MinimalEObjectImpl.Container implements Named
     return result.toString();
   }
 
-} //NamedImpl
+} //PRFNamedImpl

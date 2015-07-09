@@ -64,9 +64,9 @@ public class FragmentTestLanguageFactoryImpl extends EFactoryImpl implements Fra
   {
     switch (eClass.getClassifierID())
     {
-      case FragmentTestLanguagePackage.FRAGMENTS: return createFragments();
-      case FragmentTestLanguagePackage.NAMED: return createNamed();
-      case FragmentTestLanguagePackage.NAMED_WITH_ACTION: return createNamedWithAction();
+      case FragmentTestLanguagePackage.PARSER_RULE_FRAGMENTS: return createParserRuleFragments();
+      case FragmentTestLanguagePackage.PRF_NAMED: return createPRFNamed();
+      case FragmentTestLanguagePackage.PRF_NAMED_WITH_ACTION: return createPRFNamedWithAction();
       default:
         throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
     }
@@ -77,10 +77,10 @@ public class FragmentTestLanguageFactoryImpl extends EFactoryImpl implements Fra
    * <!-- end-user-doc -->
    * @generated
    */
-  public Fragments createFragments()
+  public ParserRuleFragments createParserRuleFragments()
   {
-    FragmentsImpl fragments = new FragmentsImpl();
-    return fragments;
+    ParserRuleFragmentsImpl parserRuleFragments = new ParserRuleFragmentsImpl();
+    return parserRuleFragments;
   }
 
   /**
@@ -88,10 +88,10 @@ public class FragmentTestLanguageFactoryImpl extends EFactoryImpl implements Fra
    * <!-- end-user-doc -->
    * @generated
    */
-  public Named createNamed()
+  public PRFNamed createPRFNamed()
   {
-    NamedImpl named = new NamedImpl();
-    return named;
+    PRFNamedImpl prfNamed = new PRFNamedImpl();
+    return prfNamed;
   }
 
   /**
@@ -99,10 +99,10 @@ public class FragmentTestLanguageFactoryImpl extends EFactoryImpl implements Fra
    * <!-- end-user-doc -->
    * @generated
    */
-  public NamedWithAction createNamedWithAction()
+  public PRFNamedWithAction createPRFNamedWithAction()
   {
-    NamedWithActionImpl namedWithAction = new NamedWithActionImpl();
-    return namedWithAction;
+    PRFNamedWithActionImpl prfNamedWithAction = new PRFNamedWithActionImpl();
+    return prfNamedWithAction;
   }
 
   /**

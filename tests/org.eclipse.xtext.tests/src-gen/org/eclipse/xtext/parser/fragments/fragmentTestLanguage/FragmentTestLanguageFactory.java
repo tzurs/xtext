@@ -23,31 +23,31 @@ public interface FragmentTestLanguageFactory extends EFactory
   FragmentTestLanguageFactory eINSTANCE = org.eclipse.xtext.parser.fragments.fragmentTestLanguage.impl.FragmentTestLanguageFactoryImpl.init();
 
   /**
-   * Returns a new object of class '<em>Fragments</em>'.
+   * Returns a new object of class '<em>Parser Rule Fragments</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Fragments</em>'.
+   * @return a new object of class '<em>Parser Rule Fragments</em>'.
    * @generated
    */
-  Fragments createFragments();
+  ParserRuleFragments createParserRuleFragments();
 
   /**
-   * Returns a new object of class '<em>Named</em>'.
+   * Returns a new object of class '<em>PRF Named</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Named</em>'.
+   * @return a new object of class '<em>PRF Named</em>'.
    * @generated
    */
-  Named createNamed();
+  PRFNamed createPRFNamed();
 
   /**
-   * Returns a new object of class '<em>Named With Action</em>'.
+   * Returns a new object of class '<em>PRF Named With Action</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Named With Action</em>'.
+   * @return a new object of class '<em>PRF Named With Action</em>'.
    * @generated
    */
-  NamedWithAction createNamedWithAction();
+  PRFNamedWithAction createPRFNamedWithAction();
 
   /**
    * Returns the package supported by this factory.
