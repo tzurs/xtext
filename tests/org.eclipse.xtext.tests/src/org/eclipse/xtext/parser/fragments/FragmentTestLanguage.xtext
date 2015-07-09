@@ -17,6 +17,7 @@ ParserRuleFragments: {ParserRuleFragments}
   | '#5' element=PRFNamedWithActionInFragment
   | '#6' element=PRFNamedWithActionInFragment2
   | '#7' element=PRFNamedWithActionInFragment3
+  | '#8' element=PRFNamedWithFQN
   )
 ;
 
@@ -44,6 +45,26 @@ PRFNamedWithActionInFragment2 returns PRFNamed:
 
 PRFNamedWithActionInFragment3 returns PRFNamed:
 	FragmentWithAction3 ('-' ref=[PRFNamed])?
+;
+
+PRFNamedWithFQN returns PRFNamed:
+	name=FQN ('-' ref=[PRFNamed|FQN2])?
+;
+
+FQN:
+	ID Suffix? 
+;
+
+FQN2:
+	ID Suffix2*
+;
+
+fragment Suffix:
+	'.' ID Suffix?
+;
+
+fragment Suffix2:
+	'.' ID
 ;
 
 fragment FragmentWithAction returns PRFNamed:

@@ -226,7 +226,7 @@ finally {
 «ENDIF-»
 
 // Rule «name»
-«ruleName()» «IF fragment-»[AntlrDatatypeRuleToken in_current] «ENDIF»«IF !debugGrammar-»returns [AntlrDatatypeRuleToken current=«IF fragment-»in_current«ELSE»new AntlrDatatypeRuleToken()«ENDIF»] 
+«ruleName()» «IF !debugGrammar-»returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] 
     @init { enterRule(); 
 «IF definesHiddenTokens-»
 		HiddenTokens myHiddenTokenState = ((XtextTokenStream)input).setHiddenTokens(«FOREACH hiddenTokens AS hidden SEPARATOR ", "»"«hidden.ruleName()»"«ENDFOREACH-»);
@@ -357,7 +357,7 @@ finally {
         «EXPAND newCompositeNode» 
     }
 «ENDIF-»
-    «localVar()»=«ELSE» «ENDIF-»«rule.ruleName()-»«IF !debugGrammar-»«IF rule.fragment»[$current]«ENDIF-»
+    «localVar()»=«ELSE» «ENDIF-»«rule.ruleName()-»«IF !debugGrammar-»«IF rule.fragment»«ENDIF-»
     {
 		$current.merge(«localVar()»);
     }

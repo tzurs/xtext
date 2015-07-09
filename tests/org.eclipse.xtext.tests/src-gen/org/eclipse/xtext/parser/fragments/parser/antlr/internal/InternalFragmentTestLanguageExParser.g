@@ -292,6 +292,30 @@ ruleParserRuleFragments returns [EObject current=null]
 	    }
 
 )
+))
+    |(
+	otherlv_17=NumberSignDigitEight
+    {
+    	newLeafNode(otherlv_17, grammarAccess.getParserRuleFragmentsAccess().getNumberSignDigitEightKeyword_1_7_0());
+    }
+(
+(
+		{ 
+	        newCompositeNode(grammarAccess.getParserRuleFragmentsAccess().getElementPRFNamedWithFQNParserRuleCall_1_7_1_0()); 
+	    }
+		lv_element_18_0=rulePRFNamedWithFQN		{
+	        if ($current==null) {
+	            $current = createModelElementForParent(grammarAccess.getParserRuleFragmentsRule());
+	        }
+       		set(
+       			$current, 
+       			"element",
+        		lv_element_18_0, 
+        		"PRFNamedWithFQN");
+	        afterParserOrEnumRuleCall();
+	    }
+
+)
 ))))
 ;
 
@@ -647,6 +671,226 @@ rulePRFNamedWithActionInFragment3 returns [EObject current=null]
 )
 ))?)
 ;
+
+
+
+
+
+// Entry rule entryRulePRFNamedWithFQN
+entryRulePRFNamedWithFQN returns [EObject current=null]
+	:
+	{ newCompositeNode(grammarAccess.getPRFNamedWithFQNRule()); }
+	 iv_rulePRFNamedWithFQN=rulePRFNamedWithFQN 
+	 { $current=$iv_rulePRFNamedWithFQN.current; } 
+	 EOF 
+;
+
+// Rule PRFNamedWithFQN
+rulePRFNamedWithFQN returns [EObject current=null] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+((
+(
+		{ 
+	        newCompositeNode(grammarAccess.getPRFNamedWithFQNAccess().getNameFQNParserRuleCall_0_0()); 
+	    }
+		lv_name_0_0=ruleFQN		{
+	        if ($current==null) {
+	            $current = createModelElementForParent(grammarAccess.getPRFNamedWithFQNRule());
+	        }
+       		set(
+       			$current, 
+       			"name",
+        		lv_name_0_0, 
+        		"FQN");
+	        afterParserOrEnumRuleCall();
+	    }
+
+)
+)(
+	otherlv_1=HyphenMinus
+    {
+    	newLeafNode(otherlv_1, grammarAccess.getPRFNamedWithFQNAccess().getHyphenMinusKeyword_1_0());
+    }
+(
+(
+		{
+			if ($current==null) {
+	            $current = createModelElement(grammarAccess.getPRFNamedWithFQNRule());
+	        }
+        }
+		{ 
+	        newCompositeNode(grammarAccess.getPRFNamedWithFQNAccess().getRefPRFNamedCrossReference_1_1_0()); 
+	    }
+		ruleFQN2		{ 
+	        afterParserOrEnumRuleCall();
+	    }
+
+)
+))?)
+;
+
+
+
+
+
+// Entry rule entryRuleFQN
+entryRuleFQN returns [String current=null] 
+:
+	{ newCompositeNode(grammarAccess.getFQNRule()); } 
+	 iv_ruleFQN=ruleFQN 
+	 { $current=$iv_ruleFQN.current.getText(); }  
+	 EOF 
+;
+
+// Rule FQN
+ruleFQN returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule();
+    }:
+(    this_ID_0=RULE_ID    {
+		$current.merge(this_ID_0);
+    }
+
+    { 
+    newLeafNode(this_ID_0, grammarAccess.getFQNAccess().getIDTerminalRuleCall_0()); 
+    }
+(
+    { 
+        newCompositeNode(grammarAccess.getFQNAccess().getSuffixParserRuleCall_1()); 
+    }
+    this_Suffix_1=ruleSuffix    {
+		$current.merge(this_Suffix_1);
+    }
+
+    { 
+        afterParserOrEnumRuleCall();
+    }
+)?)
+    ;
+
+
+
+
+
+// Entry rule entryRuleFQN2
+entryRuleFQN2 returns [String current=null] 
+:
+	{ newCompositeNode(grammarAccess.getFQN2Rule()); } 
+	 iv_ruleFQN2=ruleFQN2 
+	 { $current=$iv_ruleFQN2.current.getText(); }  
+	 EOF 
+;
+
+// Rule FQN2
+ruleFQN2 returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule();
+    }:
+(    this_ID_0=RULE_ID    {
+		$current.merge(this_ID_0);
+    }
+
+    { 
+    newLeafNode(this_ID_0, grammarAccess.getFQN2Access().getIDTerminalRuleCall_0()); 
+    }
+(
+    { 
+        newCompositeNode(grammarAccess.getFQN2Access().getSuffix2ParserRuleCall_1()); 
+    }
+    this_Suffix2_1=ruleSuffix2    {
+		$current.merge(this_Suffix2_1);
+    }
+
+    { 
+        afterParserOrEnumRuleCall();
+    }
+)*)
+    ;
+
+
+
+
+
+// Entry rule entryRuleSuffix
+entryRuleSuffix returns [String current=null] 
+:
+	{ newCompositeNode(grammarAccess.getSuffixRule()); } 
+	 iv_ruleSuffix=ruleSuffix 
+	 { $current=$iv_ruleSuffix.current.getText(); }  
+	 EOF 
+;
+
+// Rule Suffix
+ruleSuffix returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule();
+    }:
+(
+	kw=FullStop 
+    {
+        $current.merge(kw);
+        newLeafNode(kw, grammarAccess.getSuffixAccess().getFullStopKeyword_0()); 
+    }
+    this_ID_1=RULE_ID    {
+		$current.merge(this_ID_1);
+    }
+
+    { 
+    newLeafNode(this_ID_1, grammarAccess.getSuffixAccess().getIDTerminalRuleCall_1()); 
+    }
+(
+    { 
+        newCompositeNode(grammarAccess.getSuffixAccess().getSuffixParserRuleCall_2()); 
+    }
+    this_Suffix_2=ruleSuffix    {
+		$current.merge(this_Suffix_2);
+    }
+
+    { 
+        afterParserOrEnumRuleCall();
+    }
+)?)
+    ;
+
+
+
+
+
+// Entry rule entryRuleSuffix2
+entryRuleSuffix2 returns [String current=null] 
+:
+	{ newCompositeNode(grammarAccess.getSuffix2Rule()); } 
+	 iv_ruleSuffix2=ruleSuffix2 
+	 { $current=$iv_ruleSuffix2.current.getText(); }  
+	 EOF 
+;
+
+// Rule Suffix2
+ruleSuffix2 returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule();
+    }:
+(
+	kw=FullStop 
+    {
+        $current.merge(kw);
+        newLeafNode(kw, grammarAccess.getSuffix2Access().getFullStopKeyword_0()); 
+    }
+    this_ID_1=RULE_ID    {
+		$current.merge(this_ID_1);
+    }
+
+    { 
+    newLeafNode(this_ID_1, grammarAccess.getSuffix2Access().getIDTerminalRuleCall_1()); 
+    }
+)
+    ;
 
 
 

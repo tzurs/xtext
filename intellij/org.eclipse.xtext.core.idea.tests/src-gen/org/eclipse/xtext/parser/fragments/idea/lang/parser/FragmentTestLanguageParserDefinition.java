@@ -42,6 +42,11 @@ public class FragmentTestLanguageParserDefinition extends AbstractXtextParserDef
 				elementTypeProvider.getPRFNamedWithActionInFragment2_NameIDTerminalRuleCall_0_0ElementType()
 			);
 		}
+		if (elementType == elementTypeProvider.getParserRuleFragments_ElementPRFNamedWithFQNParserRuleCall_1_7_1_0ElementType()) {
+			return new PsiNamedEObjectImpl(node,
+				elementTypeProvider.getPRFNamedWithFQN_NameFQNParserRuleCall_0_0ElementType()
+			);
+		}
 		if (elementType == elementTypeProvider.getPRFNamedWithActionInFragment_FragmentWithActionParserRuleCall_0ElementType()) {
 			return new PsiNamedEObjectImpl(node,
 				elementTypeProvider.getFragmentWithAction_NameIDTerminalRuleCall_0_0ElementType(),
@@ -108,6 +113,9 @@ public class FragmentTestLanguageParserDefinition extends AbstractXtextParserDef
 			return new PsiEObjectReference(node);
 		}
 		if (elementType == elementTypeProvider.getPRFNamedWithActionInFragment3_RefPRFNamedCrossReference_1_1_0ElementType()) {
+			return new PsiEObjectReference(node);
+		}
+		if (elementType == elementTypeProvider.getPRFNamedWithFQN_RefPRFNamedCrossReference_1_1_0ElementType()) {
 			return new PsiEObjectReference(node);
 		}
 		if (elementType == elementTypeProvider.getFragmentWithAction_Ref2PRFNamedCrossReference_3_0ElementType()) {

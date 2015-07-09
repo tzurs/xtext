@@ -30,11 +30,15 @@ NumberSignDigitSix : '#6';
 
 NumberSignDigitSeven : '#7';
 
+NumberSignDigitEight : '#8';
+
 HyphenMinusGreaterThanSign : '->';
 
 LessThanSignHyphenMinus : '<-';
 
 HyphenMinus : '-';
+
+FullStop : '.';
 
 Colon : ':';
 

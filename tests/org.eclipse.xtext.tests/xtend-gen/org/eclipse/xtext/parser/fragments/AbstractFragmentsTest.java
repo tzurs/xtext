@@ -204,6 +204,33 @@ public abstract class AbstractFragmentsTest {
     Assert.assertEquals(element, _ref);
   }
   
+  @Test
+  public void testDatatypeRule_01() {
+    final ParserRuleFragments fragments = this.parseAndValidate("#8 a - a");
+    Assert.assertNotNull(fragments);
+    PRFNamed element = fragments.getElement();
+    PRFNamed _ref = element.getRef();
+    Assert.assertEquals(element, _ref);
+  }
+  
+  @Test
+  public void testDatatypeRule_02() {
+    final ParserRuleFragments fragments = this.parseAndValidate("#8 a.b.c.d");
+    Assert.assertNotNull(fragments);
+    PRFNamed element = fragments.getElement();
+    String _name = element.getName();
+    Assert.assertEquals("a.b.c.d", _name);
+  }
+  
+  @Test
+  public void testDatatypeRule_03() {
+    final ParserRuleFragments fragments = this.parseAndValidate("#8 a.b.c.d - a.b.c.d");
+    Assert.assertNotNull(fragments);
+    PRFNamed element = fragments.getElement();
+    PRFNamed _ref = element.getRef();
+    Assert.assertEquals(element, _ref);
+  }
+  
   protected ParserRuleFragments parseAndValidate(final CharSequence s) {
     try {
       final ParserRuleFragments result = this.parseHelper.parse(s);

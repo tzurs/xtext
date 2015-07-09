@@ -146,6 +146,33 @@ abstract class AbstractFragmentsTest {
 		assertEquals(element, element.ref)
 	}
 	
+	@Test
+	def void testDatatypeRule_01() {
+		val fragments = '#8 a - a'.parseAndValidate
+		assertNotNull(fragments)
+		
+		var element = fragments.element
+		assertEquals(element, element.ref)
+	}
+	
+	@Test
+	def void testDatatypeRule_02() {
+		val fragments = '#8 a.b.c.d'.parseAndValidate
+		assertNotNull(fragments)
+		
+		var element = fragments.element
+		assertEquals('a.b.c.d', element.name)
+	}
+	
+	@Test
+	def void testDatatypeRule_03() {
+		val fragments = '#8 a.b.c.d - a.b.c.d'.parseAndValidate
+		assertNotNull(fragments)
+		
+		var element = fragments.element
+		assertEquals(element, element.ref)
+	}
+	
 	protected def parseAndValidate(CharSequence s) {
 		val result = s.parse
 		result.assertNoIssues

@@ -55,16 +55,20 @@ public class FragmentTestLanguageGrammarAccess extends AbstractGrammarElementFin
 		private final Keyword cNumberSignDigitSevenKeyword_1_6_0 = (Keyword)cGroup_1_6.eContents().get(0);
 		private final Assignment cElementAssignment_1_6_1 = (Assignment)cGroup_1_6.eContents().get(1);
 		private final RuleCall cElementPRFNamedWithActionInFragment3ParserRuleCall_1_6_1_0 = (RuleCall)cElementAssignment_1_6_1.eContents().get(0);
+		private final Group cGroup_1_7 = (Group)cAlternatives_1.eContents().get(7);
+		private final Keyword cNumberSignDigitEightKeyword_1_7_0 = (Keyword)cGroup_1_7.eContents().get(0);
+		private final Assignment cElementAssignment_1_7_1 = (Assignment)cGroup_1_7.eContents().get(1);
+		private final RuleCall cElementPRFNamedWithFQNParserRuleCall_1_7_1_0 = (RuleCall)cElementAssignment_1_7_1.eContents().get(0);
 		
 		//ParserRuleFragments:
 		//	{ParserRuleFragments} ("#1" element=PRFNamed | "#2" element=PRFNamed "->" ref=[PRFNamed] | "#3"
 		//	element=PRFNamedRefFirst | "#4" element=PRFNamedWithAction | "#5" element=PRFNamedWithActionInFragment | "#6"
-		//	element=PRFNamedWithActionInFragment2 | "#7" element=PRFNamedWithActionInFragment3);
+		//	element=PRFNamedWithActionInFragment2 | "#7" element=PRFNamedWithActionInFragment3 | "#8" element=PRFNamedWithFQN);
 		@Override public ParserRule getRule() { return rule; }
 
 		//{ParserRuleFragments} ("#1" element=PRFNamed | "#2" element=PRFNamed "->" ref=[PRFNamed] | "#3" element=PRFNamedRefFirst
 		//| "#4" element=PRFNamedWithAction | "#5" element=PRFNamedWithActionInFragment | "#6"
-		//element=PRFNamedWithActionInFragment2 | "#7" element=PRFNamedWithActionInFragment3)
+		//element=PRFNamedWithActionInFragment2 | "#7" element=PRFNamedWithActionInFragment3 | "#8" element=PRFNamedWithFQN)
 		public Group getGroup() { return cGroup; }
 
 		//{ParserRuleFragments}
@@ -72,7 +76,7 @@ public class FragmentTestLanguageGrammarAccess extends AbstractGrammarElementFin
 
 		//"#1" element=PRFNamed | "#2" element=PRFNamed "->" ref=[PRFNamed] | "#3" element=PRFNamedRefFirst | "#4"
 		//element=PRFNamedWithAction | "#5" element=PRFNamedWithActionInFragment | "#6" element=PRFNamedWithActionInFragment2 |
-		//"#7" element=PRFNamedWithActionInFragment3
+		//"#7" element=PRFNamedWithActionInFragment3 | "#8" element=PRFNamedWithFQN
 		public Alternatives getAlternatives_1() { return cAlternatives_1; }
 
 		//"#1" element=PRFNamed
@@ -170,6 +174,18 @@ public class FragmentTestLanguageGrammarAccess extends AbstractGrammarElementFin
 
 		//PRFNamedWithActionInFragment3
 		public RuleCall getElementPRFNamedWithActionInFragment3ParserRuleCall_1_6_1_0() { return cElementPRFNamedWithActionInFragment3ParserRuleCall_1_6_1_0; }
+
+		//"#8" element=PRFNamedWithFQN
+		public Group getGroup_1_7() { return cGroup_1_7; }
+
+		//"#8"
+		public Keyword getNumberSignDigitEightKeyword_1_7_0() { return cNumberSignDigitEightKeyword_1_7_0; }
+
+		//element=PRFNamedWithFQN
+		public Assignment getElementAssignment_1_7_1() { return cElementAssignment_1_7_1; }
+
+		//PRFNamedWithFQN
+		public RuleCall getElementPRFNamedWithFQNParserRuleCall_1_7_1_0() { return cElementPRFNamedWithFQNParserRuleCall_1_7_1_0; }
 	}
 
 	public class PRFNamedElements extends AbstractParserRuleElementFinder {
@@ -428,6 +444,130 @@ public class FragmentTestLanguageGrammarAccess extends AbstractGrammarElementFin
 		public RuleCall getRefPRFNamedIDTerminalRuleCall_1_1_0_1() { return cRefPRFNamedIDTerminalRuleCall_1_1_0_1; }
 	}
 
+	public class PRFNamedWithFQNElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.fragments.FragmentTestLanguage.PRFNamedWithFQN");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Assignment cNameAssignment_0 = (Assignment)cGroup.eContents().get(0);
+		private final RuleCall cNameFQNParserRuleCall_0_0 = (RuleCall)cNameAssignment_0.eContents().get(0);
+		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
+		private final Keyword cHyphenMinusKeyword_1_0 = (Keyword)cGroup_1.eContents().get(0);
+		private final Assignment cRefAssignment_1_1 = (Assignment)cGroup_1.eContents().get(1);
+		private final CrossReference cRefPRFNamedCrossReference_1_1_0 = (CrossReference)cRefAssignment_1_1.eContents().get(0);
+		private final RuleCall cRefPRFNamedFQN2ParserRuleCall_1_1_0_1 = (RuleCall)cRefPRFNamedCrossReference_1_1_0.eContents().get(1);
+		
+		//PRFNamedWithFQN returns PRFNamed:
+		//	name=FQN ("-" ref=[PRFNamed|FQN2])?;
+		@Override public ParserRule getRule() { return rule; }
+
+		//name=FQN ("-" ref=[PRFNamed|FQN2])?
+		public Group getGroup() { return cGroup; }
+
+		//name=FQN
+		public Assignment getNameAssignment_0() { return cNameAssignment_0; }
+
+		//FQN
+		public RuleCall getNameFQNParserRuleCall_0_0() { return cNameFQNParserRuleCall_0_0; }
+
+		//("-" ref=[PRFNamed|FQN2])?
+		public Group getGroup_1() { return cGroup_1; }
+
+		//"-"
+		public Keyword getHyphenMinusKeyword_1_0() { return cHyphenMinusKeyword_1_0; }
+
+		//ref=[PRFNamed|FQN2]
+		public Assignment getRefAssignment_1_1() { return cRefAssignment_1_1; }
+
+		//[PRFNamed|FQN2]
+		public CrossReference getRefPRFNamedCrossReference_1_1_0() { return cRefPRFNamedCrossReference_1_1_0; }
+
+		//FQN2
+		public RuleCall getRefPRFNamedFQN2ParserRuleCall_1_1_0_1() { return cRefPRFNamedFQN2ParserRuleCall_1_1_0_1; }
+	}
+
+	public class FQNElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.fragments.FragmentTestLanguage.FQN");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final RuleCall cIDTerminalRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
+		private final RuleCall cSuffixParserRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
+		
+		//FQN:
+		//	ID Suffix?;
+		@Override public ParserRule getRule() { return rule; }
+
+		//ID Suffix?
+		public Group getGroup() { return cGroup; }
+
+		//ID
+		public RuleCall getIDTerminalRuleCall_0() { return cIDTerminalRuleCall_0; }
+
+		//Suffix?
+		public RuleCall getSuffixParserRuleCall_1() { return cSuffixParserRuleCall_1; }
+	}
+
+	public class FQN2Elements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.fragments.FragmentTestLanguage.FQN2");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final RuleCall cIDTerminalRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
+		private final RuleCall cSuffix2ParserRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
+		
+		//FQN2:
+		//	ID Suffix2*;
+		@Override public ParserRule getRule() { return rule; }
+
+		//ID Suffix2*
+		public Group getGroup() { return cGroup; }
+
+		//ID
+		public RuleCall getIDTerminalRuleCall_0() { return cIDTerminalRuleCall_0; }
+
+		//Suffix2*
+		public RuleCall getSuffix2ParserRuleCall_1() { return cSuffix2ParserRuleCall_1; }
+	}
+
+	public class SuffixElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.fragments.FragmentTestLanguage.Suffix");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cFullStopKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final RuleCall cIDTerminalRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
+		private final RuleCall cSuffixParserRuleCall_2 = (RuleCall)cGroup.eContents().get(2);
+		
+		//fragment Suffix:
+		//	"." ID Suffix?;
+		@Override public ParserRule getRule() { return rule; }
+
+		//"." ID Suffix?
+		public Group getGroup() { return cGroup; }
+
+		//"."
+		public Keyword getFullStopKeyword_0() { return cFullStopKeyword_0; }
+
+		//ID
+		public RuleCall getIDTerminalRuleCall_1() { return cIDTerminalRuleCall_1; }
+
+		//Suffix?
+		public RuleCall getSuffixParserRuleCall_2() { return cSuffixParserRuleCall_2; }
+	}
+
+	public class Suffix2Elements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.fragments.FragmentTestLanguage.Suffix2");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cFullStopKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final RuleCall cIDTerminalRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
+		
+		//fragment Suffix2:
+		//	"." ID;
+		@Override public ParserRule getRule() { return rule; }
+
+		//"." ID
+		public Group getGroup() { return cGroup; }
+
+		//"."
+		public Keyword getFullStopKeyword_0() { return cFullStopKeyword_0; }
+
+		//ID
+		public RuleCall getIDTerminalRuleCall_1() { return cIDTerminalRuleCall_1; }
+	}
+
 	public class FragmentWithActionElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.fragments.FragmentTestLanguage.FragmentWithAction");
 		private final Group cGroup = (Group)rule.eContents().get(1);
@@ -604,6 +744,11 @@ public class FragmentTestLanguageGrammarAccess extends AbstractGrammarElementFin
 	private final PRFNamedWithActionInFragmentElements pPRFNamedWithActionInFragment;
 	private final PRFNamedWithActionInFragment2Elements pPRFNamedWithActionInFragment2;
 	private final PRFNamedWithActionInFragment3Elements pPRFNamedWithActionInFragment3;
+	private final PRFNamedWithFQNElements pPRFNamedWithFQN;
+	private final FQNElements pFQN;
+	private final FQN2Elements pFQN2;
+	private final SuffixElements pSuffix;
+	private final Suffix2Elements pSuffix2;
 	private final FragmentWithActionElements pFragmentWithAction;
 	private final FragmentWithAction2Elements pFragmentWithAction2;
 	private final FragmentWithAction3Elements pFragmentWithAction3;
@@ -626,6 +771,11 @@ public class FragmentTestLanguageGrammarAccess extends AbstractGrammarElementFin
 		this.pPRFNamedWithActionInFragment = new PRFNamedWithActionInFragmentElements();
 		this.pPRFNamedWithActionInFragment2 = new PRFNamedWithActionInFragment2Elements();
 		this.pPRFNamedWithActionInFragment3 = new PRFNamedWithActionInFragment3Elements();
+		this.pPRFNamedWithFQN = new PRFNamedWithFQNElements();
+		this.pFQN = new FQNElements();
+		this.pFQN2 = new FQN2Elements();
+		this.pSuffix = new SuffixElements();
+		this.pSuffix2 = new Suffix2Elements();
 		this.pFragmentWithAction = new FragmentWithActionElements();
 		this.pFragmentWithAction2 = new FragmentWithAction2Elements();
 		this.pFragmentWithAction3 = new FragmentWithAction3Elements();
@@ -663,7 +813,7 @@ public class FragmentTestLanguageGrammarAccess extends AbstractGrammarElementFin
 	//ParserRuleFragments:
 	//	{ParserRuleFragments} ("#1" element=PRFNamed | "#2" element=PRFNamed "->" ref=[PRFNamed] | "#3"
 	//	element=PRFNamedRefFirst | "#4" element=PRFNamedWithAction | "#5" element=PRFNamedWithActionInFragment | "#6"
-	//	element=PRFNamedWithActionInFragment2 | "#7" element=PRFNamedWithActionInFragment3);
+	//	element=PRFNamedWithActionInFragment2 | "#7" element=PRFNamedWithActionInFragment3 | "#8" element=PRFNamedWithFQN);
 	public ParserRuleFragmentsElements getParserRuleFragmentsAccess() {
 		return pParserRuleFragments;
 	}
@@ -730,6 +880,56 @@ public class FragmentTestLanguageGrammarAccess extends AbstractGrammarElementFin
 	
 	public ParserRule getPRFNamedWithActionInFragment3Rule() {
 		return getPRFNamedWithActionInFragment3Access().getRule();
+	}
+
+	//PRFNamedWithFQN returns PRFNamed:
+	//	name=FQN ("-" ref=[PRFNamed|FQN2])?;
+	public PRFNamedWithFQNElements getPRFNamedWithFQNAccess() {
+		return pPRFNamedWithFQN;
+	}
+	
+	public ParserRule getPRFNamedWithFQNRule() {
+		return getPRFNamedWithFQNAccess().getRule();
+	}
+
+	//FQN:
+	//	ID Suffix?;
+	public FQNElements getFQNAccess() {
+		return pFQN;
+	}
+	
+	public ParserRule getFQNRule() {
+		return getFQNAccess().getRule();
+	}
+
+	//FQN2:
+	//	ID Suffix2*;
+	public FQN2Elements getFQN2Access() {
+		return pFQN2;
+	}
+	
+	public ParserRule getFQN2Rule() {
+		return getFQN2Access().getRule();
+	}
+
+	//fragment Suffix:
+	//	"." ID Suffix?;
+	public SuffixElements getSuffixAccess() {
+		return pSuffix;
+	}
+	
+	public ParserRule getSuffixRule() {
+		return getSuffixAccess().getRule();
+	}
+
+	//fragment Suffix2:
+	//	"." ID;
+	public Suffix2Elements getSuffix2Access() {
+		return pSuffix2;
+	}
+	
+	public ParserRule getSuffix2Rule() {
+		return getSuffix2Access().getRule();
 	}
 
 	//fragment FragmentWithAction returns PRFNamed:

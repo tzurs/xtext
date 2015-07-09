@@ -85,7 +85,7 @@ public class FragmentTestLanguageExGrammarAccess extends AbstractGrammarElementF
 	//ParserRuleFragments:
 	//	{ParserRuleFragments} ("#1" element=PRFNamed | "#2" element=PRFNamed "->" ref=[PRFNamed] | "#3"
 	//	element=PRFNamedRefFirst | "#4" element=PRFNamedWithAction | "#5" element=PRFNamedWithActionInFragment | "#6"
-	//	element=PRFNamedWithActionInFragment2 | "#7" element=PRFNamedWithActionInFragment3);
+	//	element=PRFNamedWithActionInFragment2 | "#7" element=PRFNamedWithActionInFragment3 | "#8" element=PRFNamedWithFQN);
 	public FragmentTestLanguageGrammarAccess.ParserRuleFragmentsElements getParserRuleFragmentsAccess() {
 		return gaFragmentTestLanguage.getParserRuleFragmentsAccess();
 	}
@@ -152,6 +152,56 @@ public class FragmentTestLanguageExGrammarAccess extends AbstractGrammarElementF
 	
 	public ParserRule getPRFNamedWithActionInFragment3Rule() {
 		return getPRFNamedWithActionInFragment3Access().getRule();
+	}
+
+	//PRFNamedWithFQN returns PRFNamed:
+	//	name=FQN ("-" ref=[PRFNamed|FQN2])?;
+	public FragmentTestLanguageGrammarAccess.PRFNamedWithFQNElements getPRFNamedWithFQNAccess() {
+		return gaFragmentTestLanguage.getPRFNamedWithFQNAccess();
+	}
+	
+	public ParserRule getPRFNamedWithFQNRule() {
+		return getPRFNamedWithFQNAccess().getRule();
+	}
+
+	//FQN:
+	//	ID Suffix?;
+	public FragmentTestLanguageGrammarAccess.FQNElements getFQNAccess() {
+		return gaFragmentTestLanguage.getFQNAccess();
+	}
+	
+	public ParserRule getFQNRule() {
+		return getFQNAccess().getRule();
+	}
+
+	//FQN2:
+	//	ID Suffix2*;
+	public FragmentTestLanguageGrammarAccess.FQN2Elements getFQN2Access() {
+		return gaFragmentTestLanguage.getFQN2Access();
+	}
+	
+	public ParserRule getFQN2Rule() {
+		return getFQN2Access().getRule();
+	}
+
+	//fragment Suffix:
+	//	"." ID Suffix?;
+	public FragmentTestLanguageGrammarAccess.SuffixElements getSuffixAccess() {
+		return gaFragmentTestLanguage.getSuffixAccess();
+	}
+	
+	public ParserRule getSuffixRule() {
+		return getSuffixAccess().getRule();
+	}
+
+	//fragment Suffix2:
+	//	"." ID;
+	public FragmentTestLanguageGrammarAccess.Suffix2Elements getSuffix2Access() {
+		return gaFragmentTestLanguage.getSuffix2Access();
+	}
+	
+	public ParserRule getSuffix2Rule() {
+		return getSuffix2Access().getRule();
 	}
 
 	//fragment FragmentWithAction returns PRFNamed:
