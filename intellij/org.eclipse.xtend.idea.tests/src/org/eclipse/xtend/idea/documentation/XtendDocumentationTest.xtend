@@ -17,6 +17,7 @@ import static extension com.intellij.codeInsight.documentation.DocumentationMana
 /**
  * 
  * @author kosyakov - Initial contribution and API
+ * @author moritz.eysholdt@itemis.de
  */
 class XtendDocumentationTest extends LightXtendTest {
 
@@ -24,30 +25,105 @@ class XtendDocumentationTest extends LightXtendTest {
 		WriteCommandAction.runWriteCommandAction(project, runnable)
 	}
 
-	def void testGenerateDocumentation() {
-		myFixture.configureByText('Bar.java', '''
-			package bar
-			public class Bar {
-				private foo.Fo<caret>o foo;
+	def void testJavaClass() {
+		myFixture.addFileToProject("foo/Foo.java", '''
+			package foo;
+			/**
+			 * mydocumentation
+			 */
+			public class Foo {
 			}
 		''')
-		val expectedDocumentation = generateDocumentation('testSrc-xtend-gen', 'foo/Foo.java')
-		val actualDocumentation = generateDocumentation('testSrc', 'foo/Foo.xtend')
-		assertEquals(expectedDocumentation, actualDocumentation)
+		val xtend = myFixture.configureByText('Bar.xtend', '''
+			class Bar extends foo.F<caret>oo {
+			}
+		''')
+		val expected = xtend.findReferenceAt(myFixture.caretOffset).generateDocumentation
+		assertTrue(expected.contains("mydocumentation"))
 	}
 
-	protected def generateDocumentation(String sourceFolder, String sourcePath) {
-		val virtualFile = myFixture.copyFileToProject(sourceFolder + '/' + sourcePath, sourcePath)
-		try {
-			file.findReferenceAt(myFixture.caretOffset).generateDocumentation
-		} finally {
-			virtualFile.delete(this)
-		}
+	def void testXtendClass() {
+		myFixture.addFileToProject("foo/Foo.xtend", '''
+			package foo;
+			/**
+			 * mydocumentation
+			 */
+			class Foo {
+			}
+		''')
+		val xtend = myFixture.configureByText('Bar.xtend', '''
+			class Bar extends foo.F<caret>oo {
+			}
+		''')
+		val expected = xtend.findReferenceAt(myFixture.caretOffset).generateDocumentation
+		assertTrue(expected.contains("mydocumentation"))
+	}
+
+	def void testXtendField() {
+		myFixture.addFileToProject("foo/Foo.xtend", '''
+			package foo;
+			class Foo {
+				/**
+				 * mydocumentation
+				 */
+				public val String myfoo = "x"
+			}
+		''')
+		val xtend = myFixture.configureByText('Bar.xtend', '''
+			class Bar {
+				val String x = new foo.Foo().my<caret>foo
+			}
+		''')
+		val expected = xtend.findReferenceAt(myFixture.caretOffset).generateDocumentation
+		assertTrue(expected.contains("<b>myfoo = &quot;x&quot;</b>"))
+		assertTrue(expected.contains("mydocumentation"))
+	}
+
+	def void testXtendMethod() {
+		myFixture.addFileToProject("foo/Foo.xtend", '''
+			package foo;
+			class Foo {
+				/**
+				 * mydocumentation
+				 */
+				def myfoo() { "x" }
+			}
+		''')
+		val xtend = myFixture.configureByText('Bar.xtend', '''
+			class Bar {
+				val String x = new foo.Foo().my<caret>foo()
+			}
+		''')
+		val expected = xtend.findReferenceAt(myFixture.caretOffset).generateDocumentation
+		assertTrue(expected.contains("<b>myfoo</b>()"))
+		assertTrue(expected.contains("mydocumentation"))
+	}
+
+	def void testXtendConstructor() {
+		myFixture.addFileToProject("foo/Foo.xtend", '''
+			package foo;
+			class Foo {
+				/**
+				 * mydocumentation
+				 */
+				new() {}
+			}
+		''')
+		val xtend = myFixture.configureByText('Bar.xtend', '''
+			class Bar {
+				val String x = new foo.F<caret>oo()
+			}
+		''')
+		val expected = xtend.findReferenceAt(myFixture.caretOffset).generateDocumentation
+		assertTrue(expected.contains("<b>Foo</b>()"))
+		assertTrue(expected.contains("mydocumentation"))
 	}
 
 	protected def generateDocumentation(PsiReference reference) {
 		val originalElement = reference.element
 		val element = reference.resolve
+		assertNotNull(originalElement)
+		assertNotNull(element)
 		generateDocumentation(element, originalElement)
 	}
 

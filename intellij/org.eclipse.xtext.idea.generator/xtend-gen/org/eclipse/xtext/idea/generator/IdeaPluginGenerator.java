@@ -1270,6 +1270,10 @@ public class IdeaPluginGenerator extends Xtend2GeneratorFragment {
     CharSequence _compileExtension_7 = this.compileExtension(grammar, "lang.psiStructureViewFactory", "com.intellij.lang.PsiStructureViewFactory");
     _builder.append(_compileExtension_7, "      \t");
     _builder.newLineIfNotEmpty();
+    _builder.append("      \t");
+    CharSequence _compileExtension_8 = this.compileExtension(grammar, "lang.documentationProvider", "org.eclipse.xtext.idea.documentation.XtextDocumentationProvider");
+    _builder.append(_compileExtension_8, "      \t");
+    _builder.newLineIfNotEmpty();
     _builder.append("\t\t");
     _builder.append("<facetType implementation=\"");
     String _facetTypeName = this._ideaPluginClassNames.getFacetTypeName(grammar);

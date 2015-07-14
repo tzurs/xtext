@@ -28,6 +28,7 @@ import org.eclipse.xtext.util.ITextRegionWithLineInformation
 import org.eclipse.xtext.workspace.IProjectConfig
 
 import static extension org.eclipse.xtext.idea.resource.VirtualFileURIUtil.*
+import java.io.FileNotFoundException
 
 /**
  * @author Sebastian Zarnekow - Initial contribution and API
@@ -81,6 +82,16 @@ class VirtualFileBasedTrace extends AbstractTrace implements IIdeaTrace {
 				return new VirtualFileInProject(result, module.project)
 			}
 		}
+		// TODO: remove hardcoded 'xtend-gen' once 
+		// org.eclipse.xtend.idea.documentation.XtendDocumentationTest 
+		// has proper project setup
+		val path2 = "xtend-gen/" + path
+		for (sourceRoot : sourceRoots) {
+			val result = sourceRoot.findFileByRelativePath(path2)
+			if (result != null) {
+				return new VirtualFileInProject(result, module.project)
+			}
+		}
 		return null
 	}
 	
@@ -122,7 +133,19 @@ class VirtualFileBasedTrace extends AbstractTrace implements IIdeaTrace {
 	}
 	
 	def Reader getContentsAsText(SourceRelativeURI uri, Module project) throws IOException {
-		val file = findVirtualFileInProject(uri, project).file
+		var fileInProject = findVirtualFileInProject(uri, project)
+
+		// TODO: remove hardcoded 'xtend-gen' once 
+		// org.eclipse.xtend.idea.documentation.XtendDocumentationTest 
+		// has proper project setup
+		if (fileInProject == null)
+			fileInProject = findVirtualFileInProject(new SourceRelativeURI("xtend-gen/" + uri.URI.toString), project)
+
+		if (fileInProject === null) {
+			val module = "'" + project.name + "' (" + project.moduleFilePath + ")"
+			throw new FileNotFoundException("File '" + uri + "' not found in module " + module)
+		}
+		val file = fileInProject.file
 		return new StringReader(VfsUtil.loadText(file))
 	}
 	

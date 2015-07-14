@@ -11,17 +11,16 @@ import com.intellij.codeInsight.documentation.DocumentationManager;
 import com.intellij.lang.documentation.DocumentationProvider;
 import com.intellij.openapi.command.WriteCommandAction;
 import com.intellij.openapi.project.Project;
-import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiFile;
 import com.intellij.psi.PsiReference;
 import junit.framework.TestCase;
 import org.eclipse.xtend.idea.LightXtendTest;
 import org.eclipse.xtend2.lib.StringConcatenation;
-import org.eclipse.xtext.xbase.lib.Exceptions;
 
 /**
  * @author kosyakov - Initial contribution and API
+ * @author moritz.eysholdt@itemis.de
  */
 @SuppressWarnings("all")
 public class XtendDocumentationTest extends LightXtendTest {
@@ -31,43 +30,181 @@ public class XtendDocumentationTest extends LightXtendTest {
     WriteCommandAction.runWriteCommandAction(_project, runnable);
   }
   
-  public void testGenerateDocumentation() {
+  public void testJavaClass() {
     StringConcatenation _builder = new StringConcatenation();
-    _builder.append("package bar");
+    _builder.append("package foo;");
     _builder.newLine();
-    _builder.append("public class Bar {");
+    _builder.append("/**");
     _builder.newLine();
-    _builder.append("\t");
-    _builder.append("private foo.Fo<caret>o foo;");
+    _builder.append(" ");
+    _builder.append("* mydocumentation");
+    _builder.newLine();
+    _builder.append(" ");
+    _builder.append("*/");
+    _builder.newLine();
+    _builder.append("public class Foo {");
     _builder.newLine();
     _builder.append("}");
     _builder.newLine();
-    this.myFixture.configureByText("Bar.java", _builder.toString());
-    final String expectedDocumentation = this.generateDocumentation("testSrc-xtend-gen", "foo/Foo.java");
-    final String actualDocumentation = this.generateDocumentation("testSrc", "foo/Foo.xtend");
-    TestCase.assertEquals(expectedDocumentation, actualDocumentation);
+    this.myFixture.addFileToProject("foo/Foo.java", _builder.toString());
+    StringConcatenation _builder_1 = new StringConcatenation();
+    _builder_1.append("class Bar extends foo.F<caret>oo {");
+    _builder_1.newLine();
+    _builder_1.append("}");
+    _builder_1.newLine();
+    final PsiFile xtend = this.myFixture.configureByText("Bar.xtend", _builder_1.toString());
+    int _caretOffset = this.myFixture.getCaretOffset();
+    PsiReference _findReferenceAt = xtend.findReferenceAt(_caretOffset);
+    final String expected = this.generateDocumentation(_findReferenceAt);
+    boolean _contains = expected.contains("mydocumentation");
+    TestCase.assertTrue(_contains);
   }
   
-  protected String generateDocumentation(final String sourceFolder, final String sourcePath) {
-    try {
-      String _xblockexpression = null;
-      {
-        final VirtualFile virtualFile = this.myFixture.copyFileToProject(((sourceFolder + "/") + sourcePath), sourcePath);
-        String _xtrycatchfinallyexpression = null;
-        try {
-          PsiFile _file = this.getFile();
-          int _caretOffset = this.myFixture.getCaretOffset();
-          PsiReference _findReferenceAt = _file.findReferenceAt(_caretOffset);
-          _xtrycatchfinallyexpression = this.generateDocumentation(_findReferenceAt);
-        } finally {
-          virtualFile.delete(this);
-        }
-        _xblockexpression = _xtrycatchfinallyexpression;
-      }
-      return _xblockexpression;
-    } catch (Throwable _e) {
-      throw Exceptions.sneakyThrow(_e);
-    }
+  public void testXtendClass() {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("package foo;");
+    _builder.newLine();
+    _builder.append("/**");
+    _builder.newLine();
+    _builder.append(" ");
+    _builder.append("* mydocumentation");
+    _builder.newLine();
+    _builder.append(" ");
+    _builder.append("*/");
+    _builder.newLine();
+    _builder.append("class Foo {");
+    _builder.newLine();
+    _builder.append("}");
+    _builder.newLine();
+    this.myFixture.addFileToProject("foo/Foo.xtend", _builder.toString());
+    StringConcatenation _builder_1 = new StringConcatenation();
+    _builder_1.append("class Bar extends foo.F<caret>oo {");
+    _builder_1.newLine();
+    _builder_1.append("}");
+    _builder_1.newLine();
+    final PsiFile xtend = this.myFixture.configureByText("Bar.xtend", _builder_1.toString());
+    int _caretOffset = this.myFixture.getCaretOffset();
+    PsiReference _findReferenceAt = xtend.findReferenceAt(_caretOffset);
+    final String expected = this.generateDocumentation(_findReferenceAt);
+    boolean _contains = expected.contains("mydocumentation");
+    TestCase.assertTrue(_contains);
+  }
+  
+  public void testXtendField() {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("package foo;");
+    _builder.newLine();
+    _builder.append("class Foo {");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("/**");
+    _builder.newLine();
+    _builder.append("\t ");
+    _builder.append("* mydocumentation");
+    _builder.newLine();
+    _builder.append("\t ");
+    _builder.append("*/");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("public val String myfoo = \"x\"");
+    _builder.newLine();
+    _builder.append("}");
+    _builder.newLine();
+    this.myFixture.addFileToProject("foo/Foo.xtend", _builder.toString());
+    StringConcatenation _builder_1 = new StringConcatenation();
+    _builder_1.append("class Bar {");
+    _builder_1.newLine();
+    _builder_1.append("\t");
+    _builder_1.append("val String x = new foo.Foo().my<caret>foo");
+    _builder_1.newLine();
+    _builder_1.append("}");
+    _builder_1.newLine();
+    final PsiFile xtend = this.myFixture.configureByText("Bar.xtend", _builder_1.toString());
+    int _caretOffset = this.myFixture.getCaretOffset();
+    PsiReference _findReferenceAt = xtend.findReferenceAt(_caretOffset);
+    final String expected = this.generateDocumentation(_findReferenceAt);
+    boolean _contains = expected.contains("<b>myfoo = &quot;x&quot;</b>");
+    TestCase.assertTrue(_contains);
+    boolean _contains_1 = expected.contains("mydocumentation");
+    TestCase.assertTrue(_contains_1);
+  }
+  
+  public void testXtendMethod() {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("package foo;");
+    _builder.newLine();
+    _builder.append("class Foo {");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("/**");
+    _builder.newLine();
+    _builder.append("\t ");
+    _builder.append("* mydocumentation");
+    _builder.newLine();
+    _builder.append("\t ");
+    _builder.append("*/");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("def myfoo() { \"x\" }");
+    _builder.newLine();
+    _builder.append("}");
+    _builder.newLine();
+    this.myFixture.addFileToProject("foo/Foo.xtend", _builder.toString());
+    StringConcatenation _builder_1 = new StringConcatenation();
+    _builder_1.append("class Bar {");
+    _builder_1.newLine();
+    _builder_1.append("\t");
+    _builder_1.append("val String x = new foo.Foo().my<caret>foo()");
+    _builder_1.newLine();
+    _builder_1.append("}");
+    _builder_1.newLine();
+    final PsiFile xtend = this.myFixture.configureByText("Bar.xtend", _builder_1.toString());
+    int _caretOffset = this.myFixture.getCaretOffset();
+    PsiReference _findReferenceAt = xtend.findReferenceAt(_caretOffset);
+    final String expected = this.generateDocumentation(_findReferenceAt);
+    boolean _contains = expected.contains("<b>myfoo</b>()");
+    TestCase.assertTrue(_contains);
+    boolean _contains_1 = expected.contains("mydocumentation");
+    TestCase.assertTrue(_contains_1);
+  }
+  
+  public void testXtendConstructor() {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("package foo;");
+    _builder.newLine();
+    _builder.append("class Foo {");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("/**");
+    _builder.newLine();
+    _builder.append("\t ");
+    _builder.append("* mydocumentation");
+    _builder.newLine();
+    _builder.append("\t ");
+    _builder.append("*/");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("new() {}");
+    _builder.newLine();
+    _builder.append("}");
+    _builder.newLine();
+    this.myFixture.addFileToProject("foo/Foo.xtend", _builder.toString());
+    StringConcatenation _builder_1 = new StringConcatenation();
+    _builder_1.append("class Bar {");
+    _builder_1.newLine();
+    _builder_1.append("\t");
+    _builder_1.append("val String x = new foo.F<caret>oo()");
+    _builder_1.newLine();
+    _builder_1.append("}");
+    _builder_1.newLine();
+    final PsiFile xtend = this.myFixture.configureByText("Bar.xtend", _builder_1.toString());
+    int _caretOffset = this.myFixture.getCaretOffset();
+    PsiReference _findReferenceAt = xtend.findReferenceAt(_caretOffset);
+    final String expected = this.generateDocumentation(_findReferenceAt);
+    boolean _contains = expected.contains("<b>Foo</b>()");
+    TestCase.assertTrue(_contains);
+    boolean _contains_1 = expected.contains("mydocumentation");
+    TestCase.assertTrue(_contains_1);
   }
   
   protected String generateDocumentation(final PsiReference reference) {
@@ -75,6 +212,8 @@ public class XtendDocumentationTest extends LightXtendTest {
     {
       final PsiElement originalElement = reference.getElement();
       final PsiElement element = reference.resolve();
+      TestCase.assertNotNull(originalElement);
+      TestCase.assertNotNull(element);
       _xblockexpression = this.generateDocumentation(element, originalElement);
     }
     return _xblockexpression;

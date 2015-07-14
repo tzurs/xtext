@@ -14,6 +14,7 @@ import com.intellij.openapi.roots.ModuleRootManager;
 import com.intellij.openapi.vfs.VfsUtil;
 import com.intellij.openapi.vfs.VirtualFile;
 import java.io.ByteArrayInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Reader;
@@ -105,6 +106,17 @@ public class VirtualFileBasedTrace extends AbstractTrace implements IIdeaTrace {
         }
       }
     }
+    final String path2 = ("xtend-gen/" + path);
+    for (final VirtualFile sourceRoot_1 : sourceRoots) {
+      {
+        final VirtualFile result = sourceRoot_1.findFileByRelativePath(path2);
+        boolean _notEquals = (!Objects.equal(result, null));
+        if (_notEquals) {
+          Project _project = module.getProject();
+          return new VirtualFileInProject(result, _project);
+        }
+      }
+    }
     return null;
   }
   
@@ -175,8 +187,26 @@ public class VirtualFileBasedTrace extends AbstractTrace implements IIdeaTrace {
   }
   
   public Reader getContentsAsText(final SourceRelativeURI uri, final Module project) throws IOException {
-    VirtualFileInProject _findVirtualFileInProject = this.findVirtualFileInProject(uri, project);
-    final VirtualFile file = _findVirtualFileInProject.getFile();
+    VirtualFileInProject fileInProject = this.findVirtualFileInProject(uri, project);
+    boolean _equals = Objects.equal(fileInProject, null);
+    if (_equals) {
+      URI _uRI = uri.getURI();
+      String _string = _uRI.toString();
+      String _plus = ("xtend-gen/" + _string);
+      SourceRelativeURI _sourceRelativeURI = new SourceRelativeURI(_plus);
+      VirtualFileInProject _findVirtualFileInProject = this.findVirtualFileInProject(_sourceRelativeURI, project);
+      fileInProject = _findVirtualFileInProject;
+    }
+    if ((fileInProject == null)) {
+      String _name = project.getName();
+      String _plus_1 = ("\'" + _name);
+      String _plus_2 = (_plus_1 + "\' (");
+      String _moduleFilePath = project.getModuleFilePath();
+      String _plus_3 = (_plus_2 + _moduleFilePath);
+      final String module = (_plus_3 + ")");
+      throw new FileNotFoundException(((("File \'" + uri) + "\' not found in module ") + module));
+    }
+    final VirtualFile file = fileInProject.getFile();
     String _loadText = VfsUtil.loadText(file);
     return new StringReader(_loadText);
   }
