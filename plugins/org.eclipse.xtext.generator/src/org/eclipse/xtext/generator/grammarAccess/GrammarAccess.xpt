@@ -176,8 +176,8 @@ import «usedGrammar.gaFQName()»;
 		return «gaRuleAccessorLocalVarName()»;
 	}
 «ELSE-»	
-	public «containingGrammar().gaSimpleName()».«gaRuleAccessorClassName()» «gaElementsAccessor()» {
-		return «usedGrammar(original).gaGrammarAccessLocalVarName()».«gaElementsAccessor()»;
+	public «containingGrammar().gaSimpleName()».«gaBaseRuleAccessorClassName()» «gaElementsAccessor()» {
+		return «usedGrammar(original).gaGrammarAccessLocalVarName()».«gaBaseElementsAccessor()»;
 	}
 «ENDIF-»
 	
@@ -193,8 +193,8 @@ import «usedGrammar.gaFQName()»;
 		return «gaRuleAccessorLocalVarName()»;
 	}
 «ELSE-»	
-	public «containingGrammar().gaSimpleName()».«gaRuleAccessorClassName()» «gaElementsAccessor()» {
-		return «usedGrammar(original).gaGrammarAccessLocalVarName()».«gaElementsAccessor()»;
+	public «containingGrammar().gaSimpleName()».«gaBaseRuleAccessorClassName()» «gaElementsAccessor()» {
+		return «usedGrammar(original).gaGrammarAccessLocalVarName()».«gaBaseElementsAccessor()»;
 	}
 «ENDIF-»
 	
@@ -209,7 +209,7 @@ import «usedGrammar.gaFQName()»;
 «IF containingGrammar() == original-»
 		return «gaRuleAccessorLocalVarName()»;
 «ELSE-»
-		return «usedGrammar(original).gaGrammarAccessLocalVarName()».«gaRuleAccessor()»;
+		return «usedGrammar(original).gaGrammarAccessLocalVarName()».«gaBaseRuleAccessor()»;
 «ENDIF-»
 	} 
 «ENDDEFINE»

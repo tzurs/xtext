@@ -23,16 +23,8 @@ class IdeaPluginExtension {
 	
 	@Inject extension IdeaPluginClassNames 
 	
-	def getAllRules(Grammar grammar) {
-		getAllRules(grammar, <AbstractRule>newArrayList())
-	}
-	
-	def List<AbstractRule> getAllRules(Grammar grammar, List<AbstractRule> rules) {
-		rules.addAll(grammar.rules.filter(e | !(e instanceof TerminalRule) && rules.filter(r | r.name.equals(e.name)).empty))
-		for (usedGrammar : grammar.usedGrammars) {
-			getAllRules(usedGrammar, rules);
-		}
-		return rules;
+	def getAllNonTerminalRules(Grammar grammar) {
+		GrammarUtil.allRules(grammar).filter[!(it instanceof TerminalRule)]
 	}
 	
 	def getSimpleName(Grammar grammar) {
@@ -49,10 +41,6 @@ class IdeaPluginExtension {
 	
 	def getInstanceName(AbstractRule abstractRule) {
 		abstractRule.name.toUpperCase
-	}
-	
-	def ruleName(TerminalRule terminalRule) {
-		"RULE_" + terminalRule.instanceName
 	}
 	
 	def getRuleInstanceName(Assignment assignment) {

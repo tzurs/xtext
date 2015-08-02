@@ -18,11 +18,13 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EEnumLiteral;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.xtend.lib.annotations.FinalFieldsConstructor;
 import org.eclipse.xtend2.lib.StringConcatenationClient;
 import org.eclipse.xtext.AbstractElement;
@@ -45,6 +47,7 @@ import org.eclipse.xtext.xbase.lib.Exceptions;
 import org.eclipse.xtext.xbase.lib.StringExtensions;
 import org.eclipse.xtext.xtext.generator.CodeConfig;
 import org.eclipse.xtext.xtext.generator.XtextGeneratorNaming;
+import org.eclipse.xtext.xtext.generator.grammarAccess.UniqueRuleNameAdapter;
 import org.eclipse.xtext.xtext.generator.model.TypeReference;
 
 /**
@@ -229,9 +232,20 @@ public class GrammarAccessExtensions {
   
   /**
    * Creates an identifier for a Rule which is a valid Java identifier and unique within
-   * the Rule's grammar.
+   * the Rule's grammar and its super grammars.
    */
   public String gaRuleIdentifier(final AbstractRule rule) {
+    EList<Adapter> _eAdapters = rule.eAdapters();
+    Adapter _adapter = EcoreUtil.getAdapter(_eAdapters, UniqueRuleNameAdapter.class);
+    final UniqueRuleNameAdapter adapter = ((UniqueRuleNameAdapter) _adapter);
+    return adapter.getName();
+  }
+  
+  /**
+   * Creates an identifier for a Rule which is a valid Java identifier and unique within
+   * the grammar that defines the rule.
+   */
+  public String gaBaseRuleIdentifier(final AbstractRule rule) {
     String _name = rule.getName();
     return this.toJavaIdentifier(_name, true);
   }
@@ -402,11 +416,29 @@ public class GrammarAccessExtensions {
   }
   
   /**
+   * Returns the method name for accessing a rule via a GrammarAccess implementation.
+   */
+  public String gaBaseRuleAccessMethodName(final AbstractRule rule) {
+    String _gaBaseRuleIdentifier = this.gaBaseRuleIdentifier(rule);
+    String _plus = ("get" + _gaBaseRuleIdentifier);
+    return (_plus + "Rule");
+  }
+  
+  /**
    * Returns the method name for accessing a rule's content via a ParserRuleAccess implementation.
    */
   public String gaRuleElementsMethodName(final AbstractRule rule) {
     String _gaRuleIdentifier = this.gaRuleIdentifier(rule);
     String _plus = ("get" + _gaRuleIdentifier);
+    return (_plus + "Access");
+  }
+  
+  /**
+   * Returns the method name for accessing a rule's content via a ParserRuleAccess implementation.
+   */
+  public String gaBaseRuleElementsMethodName(final AbstractRule rule) {
+    String _gaBaseRuleIdentifier = this.gaBaseRuleIdentifier(rule);
+    String _plus = ("get" + _gaBaseRuleIdentifier);
     return (_plus + "Access");
   }
   
@@ -428,6 +460,15 @@ public class GrammarAccessExtensions {
   }
   
   /**
+   * Returns the simple class name of a rule's facade. A GrammarAccess implementation has
+   * a facade for each parser rule, which contains the methods for accessing the rule's elements.
+   */
+  public String gaBaseRuleAccessorClassName(final AbstractRule rule) {
+    String _gaBaseRuleIdentifier = this.gaBaseRuleIdentifier(rule);
+    return (_gaBaseRuleIdentifier + "Elements");
+  }
+  
+  /**
    * Returns the invocation of the rule accessor method as Java statement.
    */
   public String gaRuleAccessor(final AbstractRule rule) {
@@ -436,11 +477,27 @@ public class GrammarAccessExtensions {
   }
   
   /**
+   * Returns the invocation of the rule accessor method as Java statement.
+   */
+  public String gaBaseRuleAccessor(final AbstractRule rule) {
+    String _gaBaseRuleAccessMethodName = this.gaBaseRuleAccessMethodName(rule);
+    return (_gaBaseRuleAccessMethodName + "()");
+  }
+  
+  /**
    * Returns the invocation of the rule's content accessor method as Java statement.
    */
   public String gaElementsAccessor(final AbstractRule rule) {
     String _gaRuleElementsMethodName = this.gaRuleElementsMethodName(rule);
     return (_gaRuleElementsMethodName + "()");
+  }
+  
+  /**
+   * Returns the invocation of the rule's content accessor method as Java statement.
+   */
+  public String gaBaseElementsAccessor(final AbstractRule rule) {
+    String _gaBaseRuleElementsMethodName = this.gaBaseRuleElementsMethodName(rule);
+    return (_gaBaseRuleElementsMethodName + "()");
   }
   
   /**

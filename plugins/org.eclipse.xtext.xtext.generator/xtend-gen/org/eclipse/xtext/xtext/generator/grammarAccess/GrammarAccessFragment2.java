@@ -859,8 +859,8 @@ public class GrammarAccessFragment2 extends AbstractGeneratorFragment2 {
             TypeReference _grammarAccess = GrammarAccessFragment2.this._grammarAccessExtensions.getGrammarAccess(_grammar_1);
             _builder.append(_grammarAccess, "");
             _builder.append(".");
-            String _gaRuleAccessorClassName_1 = GrammarAccessFragment2.this._grammarAccessExtensions.gaRuleAccessorClassName(it);
-            _builder.append(_gaRuleAccessorClassName_1, "");
+            String _gaBaseRuleAccessorClassName = GrammarAccessFragment2.this._grammarAccessExtensions.gaBaseRuleAccessorClassName(it);
+            _builder.append(_gaBaseRuleAccessorClassName, "");
             _builder.append(" ");
             String _gaElementsAccessor_1 = GrammarAccessFragment2.this._grammarAccessExtensions.gaElementsAccessor(it);
             _builder.append(_gaElementsAccessor_1, "");
@@ -872,8 +872,8 @@ public class GrammarAccessFragment2 extends AbstractGeneratorFragment2 {
             String _gaGrammarAccessLocalVarName = GrammarAccessFragment2.this.gaGrammarAccessLocalVarName(_usedGrammar);
             _builder.append(_gaGrammarAccessLocalVarName, "\t");
             _builder.append(".");
-            String _gaElementsAccessor_2 = GrammarAccessFragment2.this._grammarAccessExtensions.gaElementsAccessor(it);
-            _builder.append(_gaElementsAccessor_2, "\t");
+            String _gaBaseElementsAccessor = GrammarAccessFragment2.this._grammarAccessExtensions.gaBaseElementsAccessor(it);
+            _builder.append(_gaBaseElementsAccessor, "\t");
             _builder.append(";");
             _builder.newLineIfNotEmpty();
             _builder.append("}");
@@ -888,8 +888,8 @@ public class GrammarAccessFragment2 extends AbstractGeneratorFragment2 {
         _builder.newLineIfNotEmpty();
         _builder.append("\t");
         _builder.append("return ");
-        String _gaElementsAccessor_3 = GrammarAccessFragment2.this._grammarAccessExtensions.gaElementsAccessor(it);
-        _builder.append(_gaElementsAccessor_3, "\t");
+        String _gaElementsAccessor_2 = GrammarAccessFragment2.this._grammarAccessExtensions.gaElementsAccessor(it);
+        _builder.append(_gaElementsAccessor_2, "\t");
         _builder.append(".getRule();");
         _builder.newLineIfNotEmpty();
         _builder.append("}");
@@ -1005,8 +1005,8 @@ public class GrammarAccessFragment2 extends AbstractGeneratorFragment2 {
             String _gaGrammarAccessLocalVarName = GrammarAccessFragment2.this.gaGrammarAccessLocalVarName(_usedGrammar);
             _builder.append(_gaGrammarAccessLocalVarName, "\t");
             _builder.append(".");
-            String _gaRuleAccessor_1 = GrammarAccessFragment2.this._grammarAccessExtensions.gaRuleAccessor(it);
-            _builder.append(_gaRuleAccessor_1, "\t");
+            String _gaBaseRuleAccessor = GrammarAccessFragment2.this._grammarAccessExtensions.gaBaseRuleAccessor(it);
+            _builder.append(_gaBaseRuleAccessor, "\t");
             _builder.append(";");
             _builder.newLineIfNotEmpty();
           }

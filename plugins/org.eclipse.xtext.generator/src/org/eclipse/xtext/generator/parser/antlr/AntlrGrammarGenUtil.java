@@ -12,6 +12,7 @@ import java.util.List;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.xtext.AbstractElement;
+import org.eclipse.xtext.AbstractRule;
 import org.eclipse.xtext.Grammar;
 import org.eclipse.xtext.util.Strings;
 
@@ -20,6 +21,17 @@ import org.eclipse.xtext.util.Strings;
  * @author Heiko Behrens
  */
 public class AntlrGrammarGenUtil {
+	
+	/**
+	 * Returns the effective rule name for the generated Antlr grammar.
+	 * Inherited rules may be prefixed by {@code super[0..9]*}. Otherwise the
+	 * prefix {@code rule or RULE_} is used.
+	 * @since 2.9
+	 */
+	public static String getRuleName(AbstractRule rule) {
+		AntlrRuleNameAdapter adapter = (AntlrRuleNameAdapter) EcoreUtil.getAdapter(rule.eAdapters(), AntlrRuleNameAdapter.class);
+		return adapter.getName();
+	}
 
 	public static String toAntlrString(String string) {
 		return Strings.convertToJavaString(string, true).replace("\\\"", "\"");

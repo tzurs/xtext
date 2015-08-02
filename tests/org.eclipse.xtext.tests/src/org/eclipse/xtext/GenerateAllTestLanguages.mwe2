@@ -208,6 +208,10 @@ Workflow {
 			fragment = @TestLanguagesFragments {}
 		}
 		language = { 
+			uri = "classpath:/org/eclipse/xtext/grammarinheritance/InheritanceTest3Language.xtext"
+			fragment = @TestLanguagesFragments {}
+		}
+		language = { 
 			uri = "classpath:/org/eclipse/xtext/index/IndexTestLanguage.xtext"
 			fragment = @TestLanguagesFragmentsQualifiedNames {}
 		}

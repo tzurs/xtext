@@ -309,8 +309,8 @@ class GrammarAccessFragment2 extends AbstractGeneratorFragment2 {
 				return «gaRuleAccessorLocalVarName»;
 			}
 		«ELSE»	
-			public «grammar.grammarAccess».«gaRuleAccessorClassName» «gaElementsAccessor» {
-				return «usedGrammar(original).gaGrammarAccessLocalVarName».«gaElementsAccessor»;
+			public «grammar.grammarAccess».«gaBaseRuleAccessorClassName» «gaElementsAccessor» {
+				return «usedGrammar(original).gaGrammarAccessLocalVarName».«gaBaseElementsAccessor»;
 			}
 		«ENDIF»
 		
@@ -342,7 +342,7 @@ class GrammarAccessFragment2 extends AbstractGeneratorFragment2 {
 			«IF grammar === original»
 				return «gaRuleAccessorLocalVarName»;
 			«ELSE»
-				return «usedGrammar(original).gaGrammarAccessLocalVarName».«gaRuleAccessor»;
+				return «usedGrammar(original).gaGrammarAccessLocalVarName».«gaBaseRuleAccessor»;
 			«ENDIF»
 		}
 	'''

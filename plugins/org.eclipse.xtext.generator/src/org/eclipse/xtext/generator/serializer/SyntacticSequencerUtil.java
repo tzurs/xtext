@@ -107,7 +107,7 @@ public class SyntacticSequencerUtil {
 			card = "q";
 		if (alias instanceof TokenAlias) {
 			TokenAlias ele = (TokenAlias) alias;
-			rules.add(GrammarUtil.containingRule(ele.getToken()).getName());
+			rules.add(GrammarUtil.getUniqueRuleName(grammar, GrammarUtil.containingRule(ele.getToken())));
 			card = card == null ? "" : "_" + card;
 			return GrammarAccessUtil.getUniqueElementName(ele.getToken()) + card;
 		} else if (alias instanceof GroupAlias) {

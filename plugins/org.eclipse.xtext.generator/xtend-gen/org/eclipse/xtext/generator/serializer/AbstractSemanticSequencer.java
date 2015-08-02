@@ -402,7 +402,7 @@ public class AbstractSemanticSequencer extends GeneratedFile {
               final Function1<EObject, String> _function_1 = new Function1<EObject, String>() {
                 @Override
                 public String apply(final EObject e) {
-                  return AbstractSemanticSequencer.this.ctx2name.getContextName(e);
+                  return AbstractSemanticSequencer.this.ctx2name.getContextName(AbstractSemanticSequencer.this.grammar, e);
                 }
               };
               List<EObject> _sortBy = IterableExtensions.<EObject, String>sortBy(_value, _function_1);

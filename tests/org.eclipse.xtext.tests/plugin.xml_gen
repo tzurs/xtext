@@ -3,11 +3,39 @@
 
 <plugin>
 
+
   <extension point="org.eclipse.emf.ecore.generated_package">
     <package 
-       uri = "http://www.eclipse.org/2015/tmf/xtext/fragments" 
-       class = "org.eclipse.xtext.parser.fragments.fragmentTestLanguage.FragmentTestLanguagePackage"
-       genModel = "org/eclipse/xtext/parser/fragments/FragmentTestLanguage.genmodel" /> 
+       uri = "http://www.eclipse.org/2009/tmf/xtext/BaseInheritanceTestLanguage" 
+       class = "org.eclipse.xtext.grammarinheritance.baseInheritanceTest.BaseInheritanceTestPackage"
+       genModel = "org/eclipse/xtext/grammarinheritance/BaseInheritanceTestLanguage.genmodel" /> 
+	
+  </extension>
+
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http://holla" 
+       class = "org.eclipse.xtext.grammarinheritance.foo.FooPackage"
+       genModel = "org/eclipse/xtext/grammarinheritance/ConcreteTestLanguage.genmodel" /> 
+	
+  </extension>
+
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http://www.eclipse.org/2009/tmf/xtext/InheritanceTestLanguage" 
+       class = "org.eclipse.xtext.grammarinheritance.inheritanceTest.InheritanceTestPackage"
+       genModel = "org/eclipse/xtext/grammarinheritance/InheritanceTestLanguage.genmodel" /> 
+	
+  </extension>
+
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http://www.eclipse.org/2009/tmf/xtext/InheritanceTest2Language" 
+       class = "org.eclipse.xtext.grammarinheritance.inheritanceTest2.InheritanceTest2Package"
+       genModel = "org/eclipse/xtext/grammarinheritance/InheritanceTest2Language.genmodel" /> 
 	
   </extension>
 

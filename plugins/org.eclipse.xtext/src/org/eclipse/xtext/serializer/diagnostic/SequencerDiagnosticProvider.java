@@ -89,16 +89,16 @@ public class SequencerDiagnosticProvider implements ISemanticSequencerDiagnostic
 			else
 				otherValidCtxs.add(ctx);
 		}
-		String contextName = context2Name.apply(context);
+		String contextName = context2Name.getContextName(grammarAccess.getGrammar(), context);
 		String semanticType = semanticObject.eClass().getName();
-		String recommendCtxNames = Joiner.on(", ").join(Iterables.transform(recommendedCtxs, context2Name));
+		String recommendCtxNames = Joiner.on(", ").join(Iterables.transform(recommendedCtxs, context2Name.toFunction(grammarAccess.getGrammar())));
 		String validTypeNames = Joiner.on(", ").join(Iterables.transform(validTypes, new NamedElement2Name()));
 		StringBuilder msg = new StringBuilder();
 		msg.append("The context '" + contextName + "' is not valid for type '" + semanticType + "'\n");
 		msg.append("Recommended contexts for type '" + semanticType + "': " + recommendCtxNames + "\n");
 		if (!otherValidCtxs.isEmpty())
 			msg.append("Other valid contexts for type '" + semanticType + "': "
-					+ Joiner.on(", ").join(Iterables.transform(otherValidCtxs, context2Name)));
+					+ Joiner.on(", ").join(Iterables.transform(otherValidCtxs, context2Name.toFunction(grammarAccess.getGrammar()))));
 		msg.append("The context '" + contextName + "' is valid for types: " + validTypeNames + "\n");
 		return new SerializationDiagnostic(INVALID_CONTEXT_OR_TYPE, semanticObject, msg.toString());
 	}

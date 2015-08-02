@@ -14,8 +14,10 @@ import com.google.inject.Singleton;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.xtend2.lib.StringConcatenation;
 import org.eclipse.xtext.AbstractElement;
 import org.eclipse.xtext.AbstractRule;
@@ -31,16 +33,17 @@ import org.eclipse.xtext.Group;
 import org.eclipse.xtext.Keyword;
 import org.eclipse.xtext.ParserRule;
 import org.eclipse.xtext.RuleCall;
-import org.eclipse.xtext.TerminalRule;
 import org.eclipse.xtext.UnorderedGroup;
 import org.eclipse.xtext.generator.grammarAccess.GrammarAccess;
 import org.eclipse.xtext.generator.parser.antlr.AntlrGrammarGenUtil;
 import org.eclipse.xtext.generator.parser.antlr.AntlrOptions;
+import org.eclipse.xtext.generator.parser.antlr.AntlrRuleNameAdapter;
 import org.eclipse.xtext.xbase.lib.CollectionLiterals;
 import org.eclipse.xtext.xbase.lib.Extension;
 import org.eclipse.xtext.xbase.lib.Functions.Function1;
 import org.eclipse.xtext.xbase.lib.IterableExtensions;
 import org.eclipse.xtext.xbase.lib.ListExtensions;
+import org.eclipse.xtext.xbase.lib.StringExtensions;
 
 @Singleton
 @SuppressWarnings("all")
@@ -107,29 +110,20 @@ public class GrammarAccessExtensions {
     return _xblockexpression;
   }
   
-  protected String _ruleName(final ParserRule it) {
-    String _name = it.getName();
-    return ("rule" + _name);
+  public String ruleName(final AbstractRule rule) {
+    EList<Adapter> _eAdapters = rule.eAdapters();
+    Adapter _adapter = EcoreUtil.getAdapter(_eAdapters, AntlrRuleNameAdapter.class);
+    final AntlrRuleNameAdapter adapter = ((AntlrRuleNameAdapter) _adapter);
+    return adapter.getName();
   }
   
-  protected String _ruleName(final EnumRule it) {
-    String _name = it.getName();
-    return ("rule" + _name);
-  }
-  
-  protected String _ruleName(final TerminalRule it) {
-    String _name = it.getName();
-    String _upperCase = _name.toUpperCase();
-    return ("RULE_" + _upperCase);
-  }
-  
-  protected String _ruleName(final AbstractRule it) {
-    return "Unsupported";
-  }
-  
-  public String entryRuleName(final ParserRule it) {
-    String _name = it.getName();
-    return ("entryRule" + _name);
+  public String entryRuleName(final ParserRule rule) {
+    EList<Adapter> _eAdapters = rule.eAdapters();
+    Adapter _adapter = EcoreUtil.getAdapter(_eAdapters, AntlrRuleNameAdapter.class);
+    final AntlrRuleNameAdapter adapter = ((AntlrRuleNameAdapter) _adapter);
+    String _name = adapter.getName();
+    String _firstUpper = StringExtensions.toFirstUpper(_name);
+    return ("entry" + _firstUpper);
   }
   
   public boolean isCalled(final AbstractRule rule, final Grammar grammar) {
@@ -464,21 +458,6 @@ public class GrammarAccessExtensions {
       return _grammarElementAccess((AbstractRule)it);
     } else if (it != null) {
       return _grammarElementAccess(it);
-    } else {
-      throw new IllegalArgumentException("Unhandled parameter types: " +
-        Arrays.<Object>asList(it).toString());
-    }
-  }
-  
-  public String ruleName(final AbstractRule it) {
-    if (it instanceof EnumRule) {
-      return _ruleName((EnumRule)it);
-    } else if (it instanceof ParserRule) {
-      return _ruleName((ParserRule)it);
-    } else if (it instanceof TerminalRule) {
-      return _ruleName((TerminalRule)it);
-    } else if (it != null) {
-      return _ruleName(it);
     } else {
       throw new IllegalArgumentException("Unhandled parameter types: " +
         Arrays.<Object>asList(it).toString());

@@ -8,14 +8,11 @@
 package org.eclipse.xtext.idea.generator;
 
 import com.google.common.base.Objects;
-import com.google.common.collect.Iterables;
 import com.google.common.collect.Iterators;
 import com.google.inject.Inject;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
-import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.TreeIterator;
 import org.eclipse.emf.ecore.EEnumLiteral;
 import org.eclipse.emf.ecore.EObject;
@@ -29,7 +26,6 @@ import org.eclipse.xtext.GrammarUtil;
 import org.eclipse.xtext.RuleCall;
 import org.eclipse.xtext.TerminalRule;
 import org.eclipse.xtext.idea.generator.IdeaPluginClassNames;
-import org.eclipse.xtext.xbase.lib.CollectionLiterals;
 import org.eclipse.xtext.xbase.lib.Extension;
 import org.eclipse.xtext.xbase.lib.Functions.Function1;
 import org.eclipse.xtext.xbase.lib.IterableExtensions;
@@ -42,42 +38,15 @@ public class IdeaPluginExtension {
   @Extension
   private IdeaPluginClassNames _ideaPluginClassNames;
   
-  public List<AbstractRule> getAllRules(final Grammar grammar) {
-    ArrayList<AbstractRule> _newArrayList = CollectionLiterals.<AbstractRule>newArrayList();
-    return this.getAllRules(grammar, _newArrayList);
-  }
-  
-  public List<AbstractRule> getAllRules(final Grammar grammar, final List<AbstractRule> rules) {
-    EList<AbstractRule> _rules = grammar.getRules();
+  public Iterable<AbstractRule> getAllNonTerminalRules(final Grammar grammar) {
+    List<AbstractRule> _allRules = GrammarUtil.allRules(grammar);
     final Function1<AbstractRule, Boolean> _function = new Function1<AbstractRule, Boolean>() {
       @Override
-      public Boolean apply(final AbstractRule e) {
-        boolean _and = false;
-        if (!(!(e instanceof TerminalRule))) {
-          _and = false;
-        } else {
-          final Function1<AbstractRule, Boolean> _function = new Function1<AbstractRule, Boolean>() {
-            @Override
-            public Boolean apply(final AbstractRule r) {
-              String _name = r.getName();
-              String _name_1 = e.getName();
-              return Boolean.valueOf(_name.equals(_name_1));
-            }
-          };
-          Iterable<AbstractRule> _filter = IterableExtensions.<AbstractRule>filter(rules, _function);
-          boolean _isEmpty = IterableExtensions.isEmpty(_filter);
-          _and = _isEmpty;
-        }
-        return Boolean.valueOf(_and);
+      public Boolean apply(final AbstractRule it) {
+        return Boolean.valueOf((!(it instanceof TerminalRule)));
       }
     };
-    Iterable<AbstractRule> _filter = IterableExtensions.<AbstractRule>filter(_rules, _function);
-    Iterables.<AbstractRule>addAll(rules, _filter);
-    EList<Grammar> _usedGrammars = grammar.getUsedGrammars();
-    for (final Grammar usedGrammar : _usedGrammars) {
-      this.getAllRules(usedGrammar, rules);
-    }
-    return rules;
+    return IterableExtensions.<AbstractRule>filter(_allRules, _function);
   }
   
   public String getSimpleName(final Grammar grammar) {
@@ -95,11 +64,6 @@ public class IdeaPluginExtension {
   public String getInstanceName(final AbstractRule abstractRule) {
     String _name = abstractRule.getName();
     return _name.toUpperCase();
-  }
-  
-  public String ruleName(final TerminalRule terminalRule) {
-    String _instanceName = this.getInstanceName(terminalRule);
-    return ("RULE_" + _instanceName);
   }
   
   public String getRuleInstanceName(final Assignment assignment) {

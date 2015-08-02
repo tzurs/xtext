@@ -8,6 +8,7 @@
 package org.eclipse.xtext;
 
 import static com.google.common.collect.Iterables.*;
+import static com.google.common.collect.Iterables.filter;
 import static com.google.common.collect.Sets.*;
 import static org.eclipse.emf.ecore.util.EcoreUtil.*;
 import static org.eclipse.xtext.EcoreUtil2.*;
@@ -366,6 +367,42 @@ public class GrammarUtil {
 			result.put(rule, name);
 		}
 		return result;
+	}
+	
+	/**
+	 * @since 2.9
+	 * See also GrammarAccessUtil.installUniqueRuleNameAdapter
+	 */
+	public static String getUniqueRuleName(Grammar context, AbstractRule ruleToFind) {
+		List<AbstractRule> allRules = GrammarUtil.allRules(context);
+		Map<String, AbstractRule> nameToRule = Maps.newHashMap();
+		for(AbstractRule rule: allRules) {
+			String defaultName = rule.getName();
+			if (!nameToRule.containsKey(defaultName)) {
+				nameToRule.put(defaultName, rule);
+				if (rule == ruleToFind) {
+					return defaultName;
+				}
+			} else {
+				String name = getInheritedUniqueName(rule, nameToRule.keySet());
+				nameToRule.put(name, rule);
+				if (rule == ruleToFind) {
+					return name;
+				}
+			}
+		}
+		throw new IllegalArgumentException("Cannot find rule " + getGrammar(ruleToFind).getName() + "." + ruleToFind.getName() + " in " + context.getName());
+	}
+	
+	private static String getInheritedUniqueName(AbstractRule rule, Set<String> usedNames) {
+		String grammarName = GrammarUtil.getName(GrammarUtil.getGrammar(rule));
+		String candidate = grammarName + rule.getName();
+		int i = 1;
+		while(usedNames.contains(candidate)) {
+			candidate = grammarName + i + rule.getName();
+			i++;
+		}
+		return candidate;
 	}
 
 	public static List<ParserRule> allParserRules(Grammar _this) {

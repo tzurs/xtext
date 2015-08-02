@@ -139,7 +139,7 @@ class AbstractSemanticSequencer extends GeneratedFile {
 		«IF contexts.size > 1»
 			«var ctxi = 0»
 			«FOR ctx: contexts /* ITERATOR j-  */»
-				«IF (ctxi = ctxi + 1) > 1 /*!j.firstIteration  */»else «ENDIF»if(«FOR c:ctx.value.sortBy(e|e.contextName) SEPARATOR " ||\n   "»context == grammarAccess.«c.gaAccessor»«ENDFOR») {
+				«IF (ctxi = ctxi + 1) > 1 /*!j.firstIteration  */»else «ENDIF»if(«FOR c:ctx.value.sortBy(e|getContextName(grammar, e)) SEPARATOR " ||\n   "»context == grammarAccess.«c.gaAccessor»«ENDFOR») {
 					«genMethodCreateSequenceCall(file, superConstraints, type, ctx.key)»
 				}
 			«ENDFOR»

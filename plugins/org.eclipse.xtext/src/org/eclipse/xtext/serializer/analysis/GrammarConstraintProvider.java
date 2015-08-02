@@ -490,9 +490,9 @@ public class GrammarConstraintProvider implements IGrammarConstraintProvider {
 			return false;
 		}
 
-		protected String context2Name(EObject context) {
-			return ((Constraint) getContainingConstraint()).provider.context2Name.apply(context);
-		}
+//		protected String context2Name(EObject context) {
+//			return ((Constraint) getContainingConstraint()).provider.context2Name.apply(context);
+//		}
 
 		@Override
 		public boolean equals(Object obj) {
@@ -1256,7 +1256,7 @@ public class GrammarConstraintProvider implements IGrammarConstraintProvider {
 		for (Collection<IConstraint> equal : equalConstraints.values()) {
 			//			Collection<IConstraint> equal = filterConstraintsFromSubGrammars(grammar, allEqual);
 			IConstraint representative = findRepresentativeConstraint(equal);
-			((Constraint) representative).setName(findBestConstraintName(equal));
+			((Constraint) representative).setName(findBestConstraintName(grammar, equal));
 			for (IConstraint constraint : equal)
 				allConstraints.put(constraint, representative);
 		}
@@ -1320,7 +1320,7 @@ public class GrammarConstraintProvider implements IGrammarConstraintProvider {
 				collectElements(e, result);
 	}
 
-	protected String findBestConstraintName(Collection<IConstraint> equalConstraints) {
+	protected String findBestConstraintName(Grammar grammar, Collection<IConstraint> equalConstraints) {
 		Set<ParserRule> relevantRules = Sets.newLinkedHashSet();
 		Set<Action> relevantActions = Sets.newLinkedHashSet();
 		Set<ParserRule> contextRules = Sets.newLinkedHashSet();
@@ -1366,7 +1366,7 @@ public class GrammarConstraintProvider implements IGrammarConstraintProvider {
 		for (Action a : relevantActions)
 			actions.add(context2Name.getUniqueActionName(a));
 		for (ParserRule a : relevantRules)
-			rules.add(context2Name.getContextName(a));
+			rules.add(context2Name.getContextName(grammar, a));
 		Collections.sort(rules);
 		String result = Joiner.on("_").join(rules);
 		if (!actions.isEmpty()) {
@@ -1422,9 +1422,9 @@ public class GrammarConstraintProvider implements IGrammarConstraintProvider {
 		throw new RuntimeException("Unknown Grammar Element: " + EmfFormatter.objPath(ele));
 	}
 
-	protected IConstraintContext getConstraints(Action context) {
+	protected IConstraintContext getConstraints(Grammar grammar, Action context) {
 		AssignedActionConstraintContext result = new AssignedActionConstraintContext(context,
-				context2Name.getContextName(context));
+				context2Name.getContextName(grammar, context));
 		ActionFilterState start = nfaProvider.getNFA(context);
 		Set<EClass> types = contextProvider.getTypesForContext(context);
 		for (EClass type : types) {
@@ -1440,7 +1440,7 @@ public class GrammarConstraintProvider implements IGrammarConstraintProvider {
 					Constraint constraint = new ActionConstraint(context, type, ce, this);
 					result.addConstraint(constraint);
 				} else
-					System.err.println("constraint is " + ce + " for context " + context2Name.getContextName(context)
+					System.err.println("constraint is " + ce + " for context " + context2Name.getContextName(grammar, context)
 							+ " and type " + type.getName());
 			}
 		}
@@ -1454,10 +1454,10 @@ public class GrammarConstraintProvider implements IGrammarConstraintProvider {
 			result = Lists.newArrayList();
 			for (ParserRule parserRule : GrammarUtil.allParserRules(context))
 				if (parserRule.getType().getClassifier() instanceof EClass) {
-					result.add(getConstraints(parserRule));
+					result.add(getConstraints(context, parserRule));
 					for (Action action : GrammarUtil.containedActions(parserRule))
 						if (action.getFeature() != null)
-							result.add(getConstraints(action));
+							result.add(getConstraints(context, action));
 				}
 			filterDuplicateConstraintsAndSetNames(context, result);
 			cache.put(context, result);
@@ -1465,9 +1465,9 @@ public class GrammarConstraintProvider implements IGrammarConstraintProvider {
 		return result;
 	}
 
-	protected IConstraintContext getConstraints(ParserRule context) {
+	protected IConstraintContext getConstraints(Grammar grammar, ParserRule context) {
 		ParserRuleConstraintContext result = new ParserRuleConstraintContext(context,
-				context2Name.getContextName(context));
+				context2Name.getContextName(grammar, context));
 		Set<EClass> types = contextProvider.getTypesForContext(context);
 		for (EClass type : types) {
 			if (type == null) {
@@ -1482,7 +1482,7 @@ public class GrammarConstraintProvider implements IGrammarConstraintProvider {
 					Constraint constraint = new RuleConstraint(context, type, ce, this);
 					result.addConstraint(constraint);
 				} else
-					System.err.println("constraint is " + ce + " for context " + context2Name.getContextName(context)
+					System.err.println("constraint is " + ce + " for context " + context2Name.getContextName(grammar, context)
 							+ " and type " + type.getName());
 			}
 		}

@@ -61,7 +61,6 @@ import org.eclipse.xtext.xbase.lib.Extension;
 import org.eclipse.xtext.xbase.lib.Functions.Function1;
 import org.eclipse.xtext.xbase.lib.IterableExtensions;
 import org.eclipse.xtext.xbase.lib.IteratorExtensions;
-import org.eclipse.xtext.xbase.lib.ListExtensions;
 import org.eclipse.xtext.xbase.lib.Pure;
 import org.eclipse.xtext.xbase.lib.StringExtensions;
 
@@ -1962,8 +1961,8 @@ public class IdeaPluginGenerator extends Xtend2GeneratorFragment {
     _builder.append(".class);");
     _builder.newLineIfNotEmpty();
     {
-      List<AbstractRule> _allRules = this._ideaPluginExtension.getAllRules(grammar);
-      for(final AbstractRule rule : _allRules) {
+      Iterable<AbstractRule> _allNonTerminalRules = this._ideaPluginExtension.getAllNonTerminalRules(grammar);
+      for(final AbstractRule rule : _allNonTerminalRules) {
         _builder.newLine();
         _builder.append("\t");
         _builder.append("private static class ");
@@ -2097,9 +2096,8 @@ public class IdeaPluginGenerator extends Xtend2GeneratorFragment {
     _builder.append("}");
     _builder.newLine();
     {
-      List<AbstractRule> _allRules_1 = this._ideaPluginExtension.getAllRules(grammar);
-      for(final AbstractRule rule_1 : _allRules_1) {
-        _builder.append("\t");
+      Iterable<AbstractRule> _allNonTerminalRules_1 = this._ideaPluginExtension.getAllNonTerminalRules(grammar);
+      for(final AbstractRule rule_1 : _allNonTerminalRules_1) {
         _builder.newLine();
         _builder.append("\t");
         _builder.append("public IGrammarAwareElementType get");
@@ -2122,7 +2120,6 @@ public class IdeaPluginGenerator extends Xtend2GeneratorFragment {
           Iterator<AbstractElement> _filter_2 = Iterators.<AbstractElement>filter(_eAllContents_2, AbstractElement.class);
           Iterable<AbstractElement> _iterable_2 = IteratorExtensions.<AbstractElement>toIterable(_filter_2);
           for(final AbstractElement element_2 : _iterable_2) {
-            _builder.append("\t");
             _builder.newLine();
             _builder.append("\t");
             _builder.append("public IGrammarAwareElementType get");
@@ -2686,7 +2683,7 @@ public class IdeaPluginGenerator extends Xtend2GeneratorFragment {
   }
   
   protected Iterable<CrossReference> getCrossReferences(final Grammar grammar) {
-    List<AbstractRule> _allRules = this._ideaPluginExtension.getAllRules(grammar);
+    Iterable<AbstractRule> _allNonTerminalRules = this._ideaPluginExtension.getAllNonTerminalRules(grammar);
     final Function1<AbstractRule, Iterable<CrossReference>> _function = new Function1<AbstractRule, Iterable<CrossReference>>() {
       @Override
       public Iterable<CrossReference> apply(final AbstractRule it) {
@@ -2702,7 +2699,7 @@ public class IdeaPluginGenerator extends Xtend2GeneratorFragment {
         return IteratorExtensions.<CrossReference>toIterable(_filter_1);
       }
     };
-    List<Iterable<CrossReference>> _map = ListExtensions.<AbstractRule, Iterable<CrossReference>>map(_allRules, _function);
+    Iterable<Iterable<CrossReference>> _map = IterableExtensions.<AbstractRule, Iterable<CrossReference>>map(_allNonTerminalRules, _function);
     return Iterables.<CrossReference>concat(_map);
   }
   
@@ -2737,14 +2734,14 @@ public class IdeaPluginGenerator extends Xtend2GeneratorFragment {
   }
   
   protected Iterable<RuleCall> getRuleCallsWithName(final Grammar grammar, final RuleCall nameRuleCall) {
-    List<AbstractRule> _allRules = this._ideaPluginExtension.getAllRules(grammar);
+    Iterable<AbstractRule> _allNonTerminalRules = this._ideaPluginExtension.getAllNonTerminalRules(grammar);
     final Function1<AbstractRule, Iterable<RuleCall>> _function = new Function1<AbstractRule, Iterable<RuleCall>>() {
       @Override
       public Iterable<RuleCall> apply(final AbstractRule it) {
         return IdeaPluginGenerator.this.getRuleCallsWithName(it, nameRuleCall);
       }
     };
-    List<Iterable<RuleCall>> _map = ListExtensions.<AbstractRule, Iterable<RuleCall>>map(_allRules, _function);
+    Iterable<Iterable<RuleCall>> _map = IterableExtensions.<AbstractRule, Iterable<RuleCall>>map(_allNonTerminalRules, _function);
     return Iterables.<RuleCall>concat(_map);
   }
   
@@ -2770,14 +2767,14 @@ public class IdeaPluginGenerator extends Xtend2GeneratorFragment {
   }
   
   protected Iterable<RuleCall> getNameRuleCalls(final Grammar grammar) {
-    List<AbstractRule> _allRules = this._ideaPluginExtension.getAllRules(grammar);
+    Iterable<AbstractRule> _allNonTerminalRules = this._ideaPluginExtension.getAllNonTerminalRules(grammar);
     final Function1<AbstractRule, Iterable<RuleCall>> _function = new Function1<AbstractRule, Iterable<RuleCall>>() {
       @Override
       public Iterable<RuleCall> apply(final AbstractRule it) {
         return IdeaPluginGenerator.this.getNameRuleCalls(it);
       }
     };
-    List<Iterable<RuleCall>> _map = ListExtensions.<AbstractRule, Iterable<RuleCall>>map(_allRules, _function);
+    Iterable<Iterable<RuleCall>> _map = IterableExtensions.<AbstractRule, Iterable<RuleCall>>map(_allNonTerminalRules, _function);
     return Iterables.<RuleCall>concat(_map);
   }
   
@@ -3121,6 +3118,7 @@ public class IdeaPluginGenerator extends Xtend2GeneratorFragment {
     _builder.append("}");
     _builder.newLine();
     _builder.append("}");
+    _builder.newLine();
     return _builder;
   }
   
@@ -3143,6 +3141,7 @@ public class IdeaPluginGenerator extends Xtend2GeneratorFragment {
     _builder.append(" {");
     _builder.newLineIfNotEmpty();
     _builder.append("}");
+    _builder.newLine();
     return _builder;
   }
   

@@ -16,6 +16,7 @@ import java.util.ArrayList
 import java.util.List
 import java.util.Map
 import org.eclipse.emf.ecore.EObject
+import org.eclipse.emf.ecore.util.EcoreUtil
 import org.eclipse.xtend.lib.annotations.FinalFieldsConstructor
 import org.eclipse.xtend2.lib.StringConcatenationClient
 import org.eclipse.xtext.AbstractElement
@@ -137,9 +138,18 @@ class GrammarAccessExtensions {
 		
 	/** 
 	 * Creates an identifier for a Rule which is a valid Java identifier and unique within 
-	 * the Rule's grammar.
+	 * the Rule's grammar and its super grammars.
 	 */
 	def String gaRuleIdentifier(AbstractRule rule) {
+		val adapter = EcoreUtil.getAdapter(rule.eAdapters(), UniqueRuleNameAdapter) as UniqueRuleNameAdapter
+		return adapter.name
+	}
+	
+	/** 
+	 * Creates an identifier for a Rule which is a valid Java identifier and unique within 
+	 * the grammar that defines the rule.
+	 */
+	def String gaBaseRuleIdentifier(AbstractRule rule) {
 		rule.name.toJavaIdentifier(true)
 	}
 		
@@ -223,12 +233,26 @@ class GrammarAccessExtensions {
 	def String gaRuleAccessMethodName(AbstractRule rule) {
 		'get' + rule.gaRuleIdentifier + 'Rule'
 	}
+	
+	/**
+	 * Returns the method name for accessing a rule via a GrammarAccess implementation.
+	 */
+	def String gaBaseRuleAccessMethodName(AbstractRule rule) {
+		'get' + rule.gaBaseRuleIdentifier + 'Rule'
+	}
 		
 	/**
 	 * Returns the method name for accessing a rule's content via a ParserRuleAccess implementation.
 	 */
 	def String gaRuleElementsMethodName(AbstractRule rule) {
 		'get' + rule.gaRuleIdentifier + 'Access'
+	}
+	
+	/**
+	 * Returns the method name for accessing a rule's content via a ParserRuleAccess implementation.
+	 */
+	def String gaBaseRuleElementsMethodName(AbstractRule rule) {
+		'get' + rule.gaBaseRuleIdentifier + 'Access'
 	}
 	
 	/**
@@ -245,6 +269,14 @@ class GrammarAccessExtensions {
 	def String gaRuleAccessorClassName(AbstractRule rule) {
 		rule.gaRuleIdentifier + 'Elements'
 	}
+	
+	/**
+	 * Returns the simple class name of a rule's facade. A GrammarAccess implementation has
+	 * a facade for each parser rule, which contains the methods for accessing the rule's elements.
+	 */	
+	def String gaBaseRuleAccessorClassName(AbstractRule rule) {
+		rule.gaBaseRuleIdentifier + 'Elements'
+	}
 		
 	/**
 	 * Returns the invocation of the rule accessor method as Java statement.
@@ -254,10 +286,24 @@ class GrammarAccessExtensions {
 	}
 	
 	/**
+	 * Returns the invocation of the rule accessor method as Java statement.
+	 */	
+	def String gaBaseRuleAccessor(AbstractRule rule) {
+		rule.gaBaseRuleAccessMethodName + '()'
+	}
+	
+	/**
 	 * Returns the invocation of the rule's content accessor method as Java statement.
 	 */	
 	def String gaElementsAccessor(AbstractRule rule) {
 		rule.gaRuleElementsMethodName + '()'
+	}
+	
+	/**
+	 * Returns the invocation of the rule's content accessor method as Java statement.
+	 */	
+	def String gaBaseElementsAccessor(AbstractRule rule) {
+		rule.gaBaseRuleElementsMethodName + '()'
 	}
 		
 	/**

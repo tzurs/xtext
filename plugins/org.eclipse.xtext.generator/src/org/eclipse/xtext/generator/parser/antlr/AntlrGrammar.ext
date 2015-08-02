@@ -14,15 +14,13 @@ extension org::eclipse::xtext::Extensions reexport;
 extension org::eclipse::xtext::GrammarUtil reexport;
 extension org::eclipse::xtext::EcoreUtils;
 
-ruleName(ParserRule this) : 'rule'+name;
-ruleName(EnumRule this) : 'rule'+name;
-ruleName(TerminalRule this) : 'RULE_'+name.toUpperCase();
-ruleName(AbstractRule this) : "Unsupported";
+ruleName(AbstractRule this) : 
+	JAVA org.eclipse.xtext.generator.parser.antlr.AntlrGrammarGenUtil.getRuleName(org.eclipse.xtext.AbstractRule)
+;
 
 List[AbstractElement] firstSet(AbstractElement this):
   JAVA org.eclipse.xtext.generator.parser.antlr.AntlrGrammarGenUtil.getFirstSet(org.eclipse.xtext.AbstractElement)
 ;
-
 
 predicated(AbstractElement this):
   this.predicated
@@ -48,7 +46,7 @@ predicatedElement(RuleCall this):
   if predicated then this else ((Group)this.rule.alternatives).elements.first().predicatedElement()
 ;
 
-entryRuleName(ParserRule this) : 'entryRule'+name;
+entryRuleName(ParserRule this) : 'entry' + this.ruleName().toFirstUpper();
 
 setOrAdd(Action this) : if operator=='+=' then 'add' else 'set';
 
@@ -90,6 +88,7 @@ String toJavaStringImpl(String this):
 	
 toStringLiteral(RuleCall this) :
 	rule!=null ? '"'+this.rule.name+'"' :  "null";
+//	rule!=null ? '"'+this.rule.getGrammar().name + "." + this.rule.name+'"' :  "null";
 
 toStringLiteral(Keyword this) :
 	'"'+this.value.toJavaStringImpl()+'"';

@@ -46,7 +46,7 @@ public class NodeModelSemanticSequencer extends AbstractSemanticSequencer {
 					acceptSemantic(semanticObject, rc, semanticObject.eGet(feature), node.getFirst());
 				} else {
 					String strVal = NodeModelUtils.getTokenText(node.getFirst());
-					Object val = valueConverter.toValue(strVal, rc.getRule().getName(), node.getFirst());
+					Object val = valueConverter.toValue(strVal, GrammarUtil.getGrammar(rc.getRule()) + "." + rc.getRule().getName(), node.getFirst());
 					acceptSemantic(semanticObject, rc, val, node.getFirst());
 				}
 			} else if (node.getSecond() instanceof Keyword)

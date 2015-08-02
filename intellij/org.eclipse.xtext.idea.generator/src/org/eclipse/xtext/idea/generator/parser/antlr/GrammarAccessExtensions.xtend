@@ -11,20 +11,19 @@ import com.google.inject.Inject
 import com.google.inject.Singleton
 import java.util.List
 import org.eclipse.emf.ecore.EObject
+import org.eclipse.emf.ecore.util.EcoreUtil
 import org.eclipse.xtext.AbstractElement
 import org.eclipse.xtext.AbstractRule
 import org.eclipse.xtext.Action
 import org.eclipse.xtext.Assignment
 import org.eclipse.xtext.CompoundElement
 import org.eclipse.xtext.EnumLiteralDeclaration
-import org.eclipse.xtext.EnumRule
 import org.eclipse.xtext.Grammar
 import org.eclipse.xtext.GrammarUtil
 import org.eclipse.xtext.Group
 import org.eclipse.xtext.Keyword
 import org.eclipse.xtext.ParserRule
 import org.eclipse.xtext.RuleCall
-import org.eclipse.xtext.TerminalRule
 import org.eclipse.xtext.UnorderedGroup
 import org.eclipse.xtext.generator.grammarAccess.GrammarAccess
 import org.eclipse.xtext.generator.parser.antlr.AntlrOptions
@@ -32,6 +31,7 @@ import org.eclipse.xtext.generator.parser.antlr.AntlrOptions
 import static extension org.eclipse.xtext.EcoreUtil2.*
 import static extension org.eclipse.xtext.GrammarUtil.*
 import static extension org.eclipse.xtext.generator.parser.antlr.AntlrGrammarGenUtil.*
+import org.eclipse.xtext.generator.parser.antlr.AntlrRuleNameAdapter
 
 @Singleton
 class GrammarAccessExtensions {
@@ -73,15 +73,15 @@ class GrammarAccessExtensions {
 		emptyList
 	}
 
-	dispatch def ruleName(ParserRule it) { 'rule' + name }
+	def ruleName(AbstractRule rule) {
+		val adapter = EcoreUtil.getAdapter(rule.eAdapters(), AntlrRuleNameAdapter) as AntlrRuleNameAdapter
+		return adapter.getName();
+	}
 
-	dispatch def ruleName(EnumRule it) { 'rule' + name }
-
-	dispatch def ruleName(TerminalRule it) { 'RULE_' + name.toUpperCase() }
-
-	dispatch def ruleName(AbstractRule it) { 'Unsupported' }
-
-	def entryRuleName(ParserRule it) { 'entryRule' + name }
+	def entryRuleName(ParserRule rule) {
+		val adapter = EcoreUtil.getAdapter(rule.eAdapters(), AntlrRuleNameAdapter) as AntlrRuleNameAdapter
+		return 'entry' + adapter.getName().toFirstUpper;
+	}
 
 	def isCalled(AbstractRule rule, Grammar grammar) {
 		val allRules = grammar.allRules

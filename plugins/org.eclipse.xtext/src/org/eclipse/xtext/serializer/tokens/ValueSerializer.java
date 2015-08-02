@@ -8,6 +8,7 @@
 package org.eclipse.xtext.serializer.tokens;
 
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.xtext.GrammarUtil;
 import org.eclipse.xtext.RuleCall;
 import org.eclipse.xtext.conversion.IValueConverterService;
 import org.eclipse.xtext.nodemodel.INode;
@@ -35,7 +36,7 @@ public class ValueSerializer implements IValueSerializer {
 	@Override
 	public boolean isValid(EObject context, RuleCall ruleCall, Object value, Acceptor errors) {
 		try {
-			String str = converter.toString(value, ruleCall.getRule().getName());
+			String str = converter.toString(value, GrammarUtil.getGrammar(ruleCall.getRule()) + "." + ruleCall.getRule().getName());
 			if (str != null)
 				return true;
 			if (errors != null)
@@ -51,12 +52,12 @@ public class ValueSerializer implements IValueSerializer {
 	@Override
 	public String serializeAssignedValue(EObject context, RuleCall ruleCall, Object value, INode node, Acceptor errors) {
 		if (node != null) {
-			Object converted = converter.toValue(NodeModelUtils.getTokenText(node), ruleCall.getRule().getName(), node);
+			Object converted = converter.toValue(NodeModelUtils.getTokenText(node), GrammarUtil.getGrammar(ruleCall.getRule()) + "." + ruleCall.getRule().getName(), node);
 			if (converted != null && converted.equals(value))
 				return tokenUtil.serializeNode(node);
 		}
 		try {
-			String str = converter.toString(value, ruleCall.getRule().getName());
+			String str = converter.toString(value, GrammarUtil.getGrammar(ruleCall.getRule()) + "." + ruleCall.getRule().getName());
 			if (str != null)
 				return str;
 			if (errors != null)

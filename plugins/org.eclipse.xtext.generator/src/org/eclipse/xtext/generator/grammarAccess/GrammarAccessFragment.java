@@ -80,6 +80,7 @@ public class GrammarAccessFragment extends AbstractGeneratorFragment {
 
 	@Override
 	public void generate(Grammar grammar, XpandExecutionContext ctx) {
+		GrammarAccessUtil.installUniqueNameAdapter(grammar);
 		super.generate(grammar, ctx);
 
 		final ResourceSaveIndicator isSaving = new ResourceSaveIndicator();
@@ -116,7 +117,7 @@ public class GrammarAccessFragment extends AbstractGeneratorFragment {
 			isSaving.set(Boolean.FALSE);
 		}
 	}
-
+	
 	public Grammar deepCopy(Grammar grammar, ResourceSaveIndicator isSaving) {
 		ResourceSet cloneInto = new ResourceSetImpl();
 		// substitute the resource factory for ecore-files

@@ -1,8 +1,11 @@
 package org.eclipse.xtext.generator.grammarAccess;
 
 import com.google.inject.Inject;
+import org.eclipse.emf.common.notify.Adapter;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.xtext.AbstractElement;
 import org.eclipse.xtext.AbstractRule;
 import org.eclipse.xtext.Grammar;
@@ -10,6 +13,7 @@ import org.eclipse.xtext.GrammarUtil;
 import org.eclipse.xtext.TypeRef;
 import org.eclipse.xtext.generator.Naming;
 import org.eclipse.xtext.generator.grammarAccess.GrammarAccessUtil;
+import org.eclipse.xtext.xtext.generator.grammarAccess.UniqueRuleNameAdapter;
 
 /**
  * This API can be used by other templates to generate code
@@ -55,7 +59,10 @@ public class GrammarAccess {
    * @return the identifier
    */
   public String gaRuleIdentifyer(final AbstractRule rule) {
-    String _name = rule.getName();
+    EList<Adapter> _eAdapters = rule.eAdapters();
+    Adapter _adapter = EcoreUtil.getAdapter(_eAdapters, UniqueRuleNameAdapter.class);
+    final UniqueRuleNameAdapter adapter = ((UniqueRuleNameAdapter) _adapter);
+    String _name = adapter.getName();
     return this.toJavaIdentifier(_name, true);
   }
   

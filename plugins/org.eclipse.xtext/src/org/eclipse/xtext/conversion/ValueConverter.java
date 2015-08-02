@@ -26,9 +26,8 @@ public @interface ValueConverter {
 	/**
 	 * The name of the rule that is converted by this value converter.
 	 * May be a qualified name, e.g. {@code com.acme.MySuperLang.MyDataTypeRule} to
-	 * provide value converters for inherited rules that are still called with
-	 * the {@code super::MyDataTypeRule} or {@code com::acme::MySuperLang::MyDataTypeRule} 
-	 * notation.
+	 * provide value converters for inherited rules that are called with the explicit
+	 * notation {@code super::MyDataTypeRule} or {@code com::acme::MySuperLang::MyDataTypeRule}.
 	 */
 	String rule();
 }

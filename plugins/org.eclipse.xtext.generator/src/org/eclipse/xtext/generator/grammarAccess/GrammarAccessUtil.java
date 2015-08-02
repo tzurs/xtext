@@ -12,8 +12,10 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.xtext.AbstractElement;
 import org.eclipse.xtext.AbstractRule;
 import org.eclipse.xtext.Action;
@@ -30,6 +32,7 @@ import org.eclipse.xtext.generator.Naming;
 import org.eclipse.xtext.resource.SaveOptions;
 import org.eclipse.xtext.serializer.ISerializer;
 import org.eclipse.xtext.util.Strings;
+import org.eclipse.xtext.xtext.generator.grammarAccess.UniqueRuleNameAdapter;
 
 import com.google.common.collect.Maps;
 import com.google.inject.Binder;
@@ -62,6 +65,40 @@ public class GrammarAccessUtil {
 		public ILineSeparatorInformation bindILineSeparatorInformation() {
 			return lineSeparatorInformation;
 		}
+	}
+	
+	/**
+	 * @since 2.9
+	 */
+	public static void installUniqueNameAdapter(Grammar grammar) {
+		List<AbstractRule> allRules = GrammarUtil.allRules(grammar);
+		Map<String, AbstractRule> nameToRule = Maps.newHashMap();
+		for(AbstractRule rule: allRules) {
+			String defaultName = rule.getName();
+			if (!nameToRule.containsKey(defaultName)) {
+				nameToRule.put(defaultName, rule);
+				if (EcoreUtil.getAdapter(rule.eAdapters(), UniqueRuleNameAdapter.class) == null) {
+					new UniqueRuleNameAdapter(defaultName, rule);
+				}
+			} else {
+				String name = getInheritedUniqueName(rule, nameToRule.keySet());
+				nameToRule.put(name, rule);
+				if (EcoreUtil.getAdapter(rule.eAdapters(), UniqueRuleNameAdapter.class) == null) {
+					new UniqueRuleNameAdapter(name, rule);
+				}
+			}
+		}
+	}
+	
+	private static String getInheritedUniqueName(AbstractRule rule, Set<String> usedNames) {
+		String grammarName = GrammarUtil.getName(GrammarUtil.getGrammar(rule));
+		String candidate = grammarName + rule.getName();
+		int i = 1;
+		while(usedNames.contains(candidate)) {
+			candidate = grammarName + i + rule.getName();
+			i++;
+		}
+		return candidate;
 	}
 
 	public static String getClassName(EObject obj) {
@@ -169,6 +206,14 @@ public class GrammarAccessUtil {
 
 	public static String getGrammarAccessFQName(Grammar grammar, Naming naming) {
 		return naming.basePackageRuntime(grammar) + ".services." +GrammarUtil.getName(grammar) + "GrammarAccess";
+	}
+	
+	/**
+	 * @since 2.9
+	 */
+	public static String getUniqueRuleName(AbstractRule rule) {
+		UniqueRuleNameAdapter adapter = (UniqueRuleNameAdapter) EcoreUtil.getAdapter(rule.eAdapters(), UniqueRuleNameAdapter.class);
+		return toJavaIdentifier(adapter.getName(), true);
 	}
 
 	public static String getUniqueElementName(AbstractElement ele) {
