@@ -2813,12 +2813,12 @@ protected class Alternatives_ElementsAssignment_1_1_1 extends AssignmentToken  {
 /************ begin Rule ConditionalBranch ****************
  *
  * ConditionalBranch returns AbstractElement:
- * 	UnorderedGroup | {ConditionalBranch} "[" filtered?=InverseLiteralValue parameter=[Parameter] "]"
+ * 	UnorderedGroup | {ConditionalBranch} "[" filtered=InverseLiteralValue parameter=[Parameter] "]"
  * 	guardedElement=UnorderedGroup;
  *
  **/
 
-// UnorderedGroup | {ConditionalBranch} "[" filtered?=InverseLiteralValue parameter=[Parameter] "]"
+// UnorderedGroup | {ConditionalBranch} "[" filtered=InverseLiteralValue parameter=[Parameter] "]"
 // guardedElement=UnorderedGroup
 protected class ConditionalBranch_Alternatives extends AlternativesToken {
 
@@ -2890,7 +2890,7 @@ protected class ConditionalBranch_UnorderedGroupParserRuleCall_0 extends RuleCal
 	}	
 }
 
-// {ConditionalBranch} "[" filtered?=InverseLiteralValue parameter=[Parameter] "]" guardedElement=UnorderedGroup
+// {ConditionalBranch} "[" filtered=InverseLiteralValue parameter=[Parameter] "]" guardedElement=UnorderedGroup
 protected class ConditionalBranch_Group_1 extends GroupToken {
 	
 	public ConditionalBranch_Group_1(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -2967,7 +2967,7 @@ protected class ConditionalBranch_LeftSquareBracketKeyword_1_1 extends KeywordTo
 
 }
 
-// filtered?=InverseLiteralValue
+// filtered=InverseLiteralValue
 protected class ConditionalBranch_FilteredAssignment_1_2 extends AssignmentToken  {
 	
 	public ConditionalBranch_FilteredAssignment_1_2(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {

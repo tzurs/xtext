@@ -85,5 +85,35 @@ public class XtextValueConverters extends DefaultTerminalConverters {
 			}
 		};
 	}
+	
+	@ValueConverter(rule = "LiteralValue")
+	public IValueConverter<Boolean> LiteralValue() {
+		return new AbstractNullSafeConverter<Boolean>() {
+			@Override
+			protected Boolean internalToValue(String string, INode node) throws ValueConverterException {
+				return "+".equals(string);
+			}
+
+			@Override
+			protected String internalToString(Boolean value) {
+				return value.booleanValue() ? "+" : "!";
+			}
+		};
+	}
+	
+	@ValueConverter(rule = "InverseLiteralValue")
+	public IValueConverter<Boolean> InverseLiteralValue() {
+		return new AbstractNullSafeConverter<Boolean>() {
+			@Override
+			protected Boolean internalToValue(String string, INode node) throws ValueConverterException {
+				return "!".equals(string);
+			}
+			
+			@Override
+			protected String internalToString(Boolean value) {
+				return value.booleanValue() ? "!" : "+";
+			}
+		};
+	}
 
 }

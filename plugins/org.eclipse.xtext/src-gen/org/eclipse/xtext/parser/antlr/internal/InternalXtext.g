@@ -967,7 +967,7 @@ ruleConditionalBranch returns [EObject current=null]
        		set(
        			$current, 
        			"filtered",
-        		true, 
+        		lv_filtered_3_0, 
         		"org.eclipse.xtext.Xtext.InverseLiteralValue");
 	        afterParserOrEnumRuleCall();
 	    }

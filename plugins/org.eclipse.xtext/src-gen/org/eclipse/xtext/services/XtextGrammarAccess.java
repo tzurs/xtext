@@ -661,18 +661,18 @@ public class XtextGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cGuardedElementUnorderedGroupParserRuleCall_1_5_0 = (RuleCall)cGuardedElementAssignment_1_5.eContents().get(0);
 		
 		//ConditionalBranch returns AbstractElement:
-		//	UnorderedGroup | {ConditionalBranch} "[" filtered?=InverseLiteralValue parameter=[Parameter] "]"
+		//	UnorderedGroup | {ConditionalBranch} "[" filtered=InverseLiteralValue parameter=[Parameter] "]"
 		//	guardedElement=UnorderedGroup;
 		@Override public ParserRule getRule() { return rule; }
 
-		//UnorderedGroup | {ConditionalBranch} "[" filtered?=InverseLiteralValue parameter=[Parameter] "]"
+		//UnorderedGroup | {ConditionalBranch} "[" filtered=InverseLiteralValue parameter=[Parameter] "]"
 		//guardedElement=UnorderedGroup
 		public Alternatives getAlternatives() { return cAlternatives; }
 
 		//UnorderedGroup
 		public RuleCall getUnorderedGroupParserRuleCall_0() { return cUnorderedGroupParserRuleCall_0; }
 
-		//{ConditionalBranch} "[" filtered?=InverseLiteralValue parameter=[Parameter] "]" guardedElement=UnorderedGroup
+		//{ConditionalBranch} "[" filtered=InverseLiteralValue parameter=[Parameter] "]" guardedElement=UnorderedGroup
 		public Group getGroup_1() { return cGroup_1; }
 
 		//{ConditionalBranch}
@@ -681,7 +681,7 @@ public class XtextGrammarAccess extends AbstractGrammarElementFinder {
 		//"["
 		public Keyword getLeftSquareBracketKeyword_1_1() { return cLeftSquareBracketKeyword_1_1; }
 
-		//filtered?=InverseLiteralValue
+		//filtered=InverseLiteralValue
 		public Assignment getFilteredAssignment_1_2() { return cFilteredAssignment_1_2; }
 
 		//InverseLiteralValue
@@ -2368,7 +2368,7 @@ public class XtextGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//ConditionalBranch returns AbstractElement:
-	//	UnorderedGroup | {ConditionalBranch} "[" filtered?=InverseLiteralValue parameter=[Parameter] "]"
+	//	UnorderedGroup | {ConditionalBranch} "[" filtered=InverseLiteralValue parameter=[Parameter] "]"
 	//	guardedElement=UnorderedGroup;
 	public ConditionalBranchElements getConditionalBranchAccess() {
 		return pConditionalBranch;

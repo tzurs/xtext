@@ -63,7 +63,7 @@ Alternatives returns AbstractElement:
 
 ConditionalBranch returns AbstractElement:
 	  UnorderedGroup
-	| {ConditionalBranch} '[' filtered?=InverseLiteralValue parameter=[Parameter|ID] ']' guardedElement=UnorderedGroup
+	| {ConditionalBranch} '[' filtered=InverseLiteralValue parameter=[Parameter|ID] ']' guardedElement=UnorderedGroup
 ;
 
 UnorderedGroup returns AbstractElement:

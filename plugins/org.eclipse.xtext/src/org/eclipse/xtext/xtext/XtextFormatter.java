@@ -15,6 +15,7 @@ import org.eclipse.xtext.services.XtextGrammarAccess.AbstractTokenWithCardinalit
 import org.eclipse.xtext.services.XtextGrammarAccess.ActionElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.AssignmentElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.CharacterRangeElements;
+import org.eclipse.xtext.services.XtextGrammarAccess.ConditionalBranchElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.CrossReferenceElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.EnumLiteralDeclarationElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.GrammarElements;
@@ -44,6 +45,10 @@ public class XtextFormatter extends AbstractDeclarativeFormatter {
 
 		// general keywords
 		for (Pair<Keyword, Keyword> pair : g.findKeywordPairs("(", ")")) {
+			cfg.setNoSpace().after(pair.getFirst());
+			cfg.setNoSpace().before(pair.getSecond());
+		}
+		for (Pair<Keyword, Keyword> pair : g.findKeywordPairs("[", "]")) {
 			cfg.setNoSpace().after(pair.getFirst());
 			cfg.setNoSpace().before(pair.getSecond());
 		}
@@ -101,8 +106,6 @@ public class XtextFormatter extends AbstractDeclarativeFormatter {
 
 		// CrossReference
 		CrossReferenceElements cr = g.getCrossReferenceAccess();
-		cfg.setNoSpace().after(cr.getLeftSquareBracketKeyword_0());
-		cfg.setNoSpace().before(cr.getRightSquareBracketKeyword_3());
 		cfg.setNoSpace().around(cr.getVerticalLineKeyword_2_0());
 
 		// TerminalToken
@@ -124,6 +127,10 @@ public class XtextFormatter extends AbstractDeclarativeFormatter {
 		// EnumLiteralDeclaration
 		EnumLiteralDeclarationElements eld = g.getEnumLiteralDeclarationAccess();
 		cfg.setNoSpace().around(eld.getEqualsSignKeyword_1_0());
+		
+		// EnumLiteralDeclaration
+		ConditionalBranchElements cba = g.getConditionalBranchAccess();
+		cfg.setNoSpace().around(cba.getFilteredAssignment_1_2());
 
 		//saveDebugGraphvizDiagram("XtextFormatting.dot");
 	}

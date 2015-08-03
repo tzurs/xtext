@@ -2488,7 +2488,7 @@ public class InternalXtextParser extends AbstractInternalAntlrParser {
                            		set(
                            			current, 
                            			"filtered",
-                            		true, 
+                            		lv_filtered_3_0, 
                             		"org.eclipse.xtext.Xtext.InverseLiteralValue");
                     	        afterParserOrEnumRuleCall();
                     	    

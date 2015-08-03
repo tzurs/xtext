@@ -29,6 +29,7 @@ import org.eclipse.xtext.AbstractMetamodelDeclaration;
 import org.eclipse.xtext.EnumRule;
 import org.eclipse.xtext.Grammar;
 import org.eclipse.xtext.GrammarUtil;
+import org.eclipse.xtext.ParserRule;
 import org.eclipse.xtext.TypeRef;
 import org.eclipse.xtext.XtextPackage;
 import org.eclipse.xtext.naming.QualifiedName;
@@ -37,6 +38,7 @@ import org.eclipse.xtext.resource.IEObjectDescription;
 import org.eclipse.xtext.resource.IResourceDescription;
 import org.eclipse.xtext.scoping.IGlobalScopeProvider;
 import org.eclipse.xtext.scoping.IScope;
+import org.eclipse.xtext.scoping.Scopes;
 import org.eclipse.xtext.scoping.impl.AbstractScopeProvider;
 import org.eclipse.xtext.scoping.impl.GlobalResourceDescriptionProvider;
 import org.eclipse.xtext.scoping.impl.SelectableBasedScope;
@@ -95,6 +97,13 @@ public class XtextScopeProvider extends AbstractScopeProvider {
 		}
 		if(reference == XtextPackage.eINSTANCE.getRuleCall_Rule()) {
 			return createScope(context.eResource(), reference.getEReferenceType(), new SuperCallScope(context));
+		}
+		if (reference == XtextPackage.eINSTANCE.getConditionalBranch_Parameter()) {
+			ParserRule rule = GrammarUtil.containingParserRule(context);
+			if (rule == null) {
+				return IScope.NULLSCOPE;
+			}
+			return Scopes.scopeFor(rule.getParameters());
 		}
 		return createScope(context.eResource(), reference.getEReferenceType(), IScope.NULLSCOPE);
 	}
