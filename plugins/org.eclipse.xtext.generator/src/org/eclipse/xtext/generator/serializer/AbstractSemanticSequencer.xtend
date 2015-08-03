@@ -89,7 +89,7 @@ class AbstractSemanticSequencer extends GeneratedFile {
 		
 		val localConstraints = grammar.grammarConstraints
 		val superConstraints = grammar.superGrammar.grammarConstraints
-		
+		val newLocalConstraints = localConstraints.filter(e|e.type!=null && !superConstraints.contains(e)).toList
 		val superGrammar = if(localConstraints.exists[superConstraints.contains(it)]) 
 				file.imported(names.semanticSequencer.getQualifiedName(grammar.usedGrammars.head))
 			else
@@ -104,7 +104,7 @@ class AbstractSemanticSequencer extends GeneratedFile {
 				
 				«file.genMethodCreateSequence()»
 				
-				«localConstraints.filter(e|e.type!=null && !superConstraints.contains(e)).sort.join("\n\n",[e|file.genMethodSequence(e)])»
+				«newLocalConstraints.sort.join("\n\n",[e|file.genMethodSequence(e)])»
 			}
 		'''.toString; 
 		file.toString 
