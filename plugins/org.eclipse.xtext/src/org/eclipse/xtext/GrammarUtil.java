@@ -394,8 +394,13 @@ public class GrammarUtil {
 			final BidiIterator<INode> leafNodes = node.getAsTreeIterable().iterator();
 			while (leafNodes.hasPrevious()) {
 				INode previous = leafNodes.previous();
-				if (previous instanceof ILeafNode && !((ILeafNode) previous).isHidden())
-					return previous.getText();
+				if (previous instanceof ILeafNode && !((ILeafNode) previous).isHidden()) {
+					String result = previous.getText();
+					if (result != null && result.startsWith("^")) {
+						result = result.substring(1);
+					}
+					return result;
+				}
 			}
 		}
 		return null;

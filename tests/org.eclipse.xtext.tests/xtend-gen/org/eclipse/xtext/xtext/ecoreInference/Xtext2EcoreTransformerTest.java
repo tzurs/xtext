@@ -238,6 +238,54 @@ public class Xtext2EcoreTransformerTest extends AbstractXtextTests {
   }
   
   @Test
+  public void testEscapeChar_01() throws Exception {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("grammar test with org.eclipse.xtext.common.Terminals");
+    _builder.newLine();
+    _builder.append("generate test \'http://test\'");
+    _builder.newLine();
+    _builder.append("^MyRule: name=^ID;");
+    _builder.newLine();
+    final String grammar = _builder.toString();
+    EPackage ePackage = this.getEPackageFromGrammar(grammar);
+    final EList<EClassifier> classifiers = ePackage.getEClassifiers();
+    int _size = classifiers.size();
+    Assert.assertEquals(1, _size);
+    final EClassifier myRuleType = IterableExtensions.<EClassifier>head(classifiers);
+    String _name = myRuleType.getName();
+    Assert.assertEquals("MyRule", _name);
+  }
+  
+  @Test
+  public void testEscapeChar_02() throws Exception {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("grammar test with org.eclipse.xtext.common.Terminals");
+    _builder.newLine();
+    _builder.append("generate test \'http://test\'");
+    _builder.newLine();
+    _builder.append("^RootRule: ^Sub1 | ^Sub2;");
+    _builder.newLine();
+    _builder.append("^Sub1: {^Sub1} \'sub1\';");
+    _builder.newLine();
+    _builder.append("^Sub2: {^Sub2} \'sub2\';");
+    _builder.newLine();
+    final String grammar = _builder.toString();
+    EPackage ePackage = this.getEPackageFromGrammar(grammar);
+    final EList<EClassifier> classifiers = ePackage.getEClassifiers();
+    int _size = classifiers.size();
+    Assert.assertEquals(3, _size);
+    EClassifier _get = classifiers.get(0);
+    String _name = _get.getName();
+    Assert.assertEquals("RootRule", _name);
+    EClassifier _get_1 = classifiers.get(1);
+    String _name_1 = _get_1.getName();
+    Assert.assertEquals("Sub1", _name_1);
+    EClassifier _get_2 = classifiers.get(2);
+    String _name_2 = _get_2.getName();
+    Assert.assertEquals("Sub2", _name_2);
+  }
+  
+  @Test
   public void testParserRuleFragment_01() throws Exception {
     StringConcatenation _builder = new StringConcatenation();
     _builder.append("grammar test with org.eclipse.xtext.common.Terminals");

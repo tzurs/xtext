@@ -168,6 +168,37 @@ class Xtext2EcoreTransformerTest extends AbstractXtextTests {
 		return reference
 	}
 	
+	@Test def void testEscapeChar_01() throws Exception {
+		val grammar = '''
+			grammar test with org.eclipse.xtext.common.Terminals
+			generate test 'http://test'
+			^MyRule: name=^ID;
+		'''
+		var ePackage = getEPackageFromGrammar(grammar)
+		val classifiers = ePackage.EClassifiers
+		assertEquals(1, classifiers.size)
+		val myRuleType = classifiers.head
+		assertEquals("MyRule", myRuleType.name)
+	}
+	
+	
+	@Test def void testEscapeChar_02() throws Exception {
+		val grammar = '''
+			grammar test with org.eclipse.xtext.common.Terminals
+			generate test 'http://test'
+			^RootRule: ^Sub1 | ^Sub2;
+			^Sub1: {^Sub1} 'sub1';
+			^Sub2: {^Sub2} 'sub2';
+		'''
+		var ePackage = getEPackageFromGrammar(grammar)
+		val classifiers = ePackage.EClassifiers
+		assertEquals(3, classifiers.size)
+		assertEquals("RootRule", classifiers.get(0).name)
+		assertEquals("Sub1", classifiers.get(1).name)
+		assertEquals("Sub2", classifiers.get(2).name)
+		
+	}
+	
 	@Test def void testParserRuleFragment_01() throws Exception {
 		val grammar = '''
 			grammar test with org.eclipse.xtext.common.Terminals

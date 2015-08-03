@@ -964,8 +964,7 @@ public class Xtext2EcoreTransformer {
 					+ typeRef.getClassifier().getName());
 		//					+ GrammarUtil.getQualifiedName(typeRef));
 
-		String classifierName = null;
-		classifierName = GrammarUtil.getTypeRefName(typeRef);
+		String classifierName = GrammarUtil.getTypeRefName(typeRef);
 		if (classifierName == null)
 			classifierName = name;
 		if (classifierName == null)
