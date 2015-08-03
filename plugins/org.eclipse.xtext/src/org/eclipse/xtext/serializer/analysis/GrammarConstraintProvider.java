@@ -1456,13 +1456,14 @@ public class GrammarConstraintProvider implements IGrammarConstraintProvider {
 		List<IConstraintContext> result = cache.get(context);
 		if (result == null) {
 			result = Lists.newArrayList();
-			for (ParserRule parserRule : GrammarUtil.allParserRules(context))
-				if (parserRule.getType().getClassifier() instanceof EClass) {
+			for (ParserRule parserRule : GrammarUtil.allParserRules(context)) {
+				if (parserRule.getType() != null && parserRule.getType().getClassifier() instanceof EClass) {
 					result.add(getConstraints(context, parserRule));
 					for (Action action : GrammarUtil.containedActions(parserRule))
 						if (action.getFeature() != null)
 							result.add(getConstraints(context, action));
 				}
+			}
 			filterDuplicateConstraintsAndSetNames(context, result);
 			cache.put(context, result);
 		}

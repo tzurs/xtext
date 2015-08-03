@@ -193,6 +193,7 @@ public class GrammarUtil {
 	 */
 	public static boolean isEObjectRule(EObject grammarElement) {
 		return grammarElement instanceof ParserRule
+				&& !((ParserRule) grammarElement).isFragment()
 				&& ((ParserRule) grammarElement).getType().getClassifier() instanceof EClass;
 	}
 	
@@ -227,7 +228,7 @@ public class GrammarUtil {
 		if (grammarElement instanceof RuleCall) {
 			AbstractRule calledRule = ((RuleCall) grammarElement).getRule();
 			return calledRule != null && calledRule instanceof ParserRule
-					&& calledRule.getType().getClassifier() instanceof EDataType;
+					&& calledRule.getType() != null && calledRule.getType().getClassifier() instanceof EDataType;
 		}
 		return false;
 	}

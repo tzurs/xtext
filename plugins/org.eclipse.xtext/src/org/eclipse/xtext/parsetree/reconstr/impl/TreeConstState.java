@@ -272,7 +272,7 @@ public class TreeConstState extends AbstractNFAState<TreeConstState, TreeConstTr
 
 	protected boolean isConsumingElement() {
 		return element instanceof Assignment
-				|| (element instanceof RuleCall && ((RuleCall) element).getRule().getType().getClassifier() instanceof EClass)
+				|| GrammarUtil.isEObjectRuleCall(element)
 				|| element instanceof Action;
 	}
 

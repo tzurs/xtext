@@ -116,7 +116,7 @@ public class ContextPDAProvider implements IContextPDAProvider {
 		@Override
 		public AbstractElement getCall(AbstractElement ele) {
 			if (ele instanceof RuleCall && !GrammarUtil.isAssigned(ele)
-					&& ((RuleCall) ele).getRule().getType().getClassifier() instanceof EClass)
+					&& GrammarUtil.isEObjectRuleCall(ele))
 				return ((RuleCall) ele).getRule().getAlternatives();
 			return null;
 		}

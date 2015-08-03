@@ -144,8 +144,7 @@ public class AbstractNFAState<S extends INFAState<S, T>, T extends INFATransitio
 			addOutgoing(((Assignment) element).getTerminal(), visited, isRuleCall, loopCenter);
 		else if (element instanceof CrossReference)
 			addOutgoing(((CrossReference) element).getTerminal(), visited, isRuleCall, loopCenter);
-		else if (element instanceof RuleCall
-				&& ((RuleCall) element).getRule().getType().getClassifier() instanceof EClass) {
+		else if (GrammarUtil.isEObjectRuleCall(element)) {
 			addOutgoing(((RuleCall) element).getRule().getAlternatives(), visited, true, loopCenter);
 			collectOutgoingByContainer(element, visited, isRuleCall, loopCenter);
 		} else {
@@ -213,7 +212,7 @@ public class AbstractNFAState<S extends INFAState<S, T>, T extends INFATransitio
 
 	protected boolean filter(AbstractElement ele) {
 		AbstractRule rule = GrammarUtil.containingRule(ele);
-		if (rule == null || !(rule.getType().getClassifier() instanceof EClass))
+		if (rule == null || !GrammarUtil.isEObjectRule(rule))
 			return true;
 		return builder.filter(ele);
 	}
