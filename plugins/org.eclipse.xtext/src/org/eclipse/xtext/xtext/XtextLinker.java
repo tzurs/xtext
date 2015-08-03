@@ -393,7 +393,7 @@ public class XtextLinker extends Linker {
 		}
 		final List<RuleCall> allRuleCalls = EcoreUtil2.getAllContentsOfType(grammar, RuleCall.class);
 		for (RuleCall call : allRuleCalls) {
-			if (call.getRule() != null) {
+			if (call.getRule() != null && call.isExplicitlyCalled()) {
 				AbstractRule rule = rulePerName.get(call.getRule().getName());
 				if (rule != null)
 					call.setRule(rule);
