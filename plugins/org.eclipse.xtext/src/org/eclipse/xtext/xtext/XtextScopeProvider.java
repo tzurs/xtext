@@ -26,10 +26,13 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.xtext.AbstractMetamodelDeclaration;
+import org.eclipse.xtext.AbstractRule;
+import org.eclipse.xtext.EcoreUtil2;
 import org.eclipse.xtext.EnumRule;
 import org.eclipse.xtext.Grammar;
 import org.eclipse.xtext.GrammarUtil;
 import org.eclipse.xtext.ParserRule;
+import org.eclipse.xtext.RuleCall;
 import org.eclipse.xtext.TypeRef;
 import org.eclipse.xtext.XtextPackage;
 import org.eclipse.xtext.naming.QualifiedName;
@@ -98,12 +101,23 @@ public class XtextScopeProvider extends AbstractScopeProvider {
 		if(reference == XtextPackage.eINSTANCE.getRuleCall_Rule()) {
 			return createScope(context.eResource(), reference.getEReferenceType(), new SuperCallScope(context));
 		}
-		if (reference == XtextPackage.eINSTANCE.getConditionalBranch_Parameter()) {
+		if (reference == XtextPackage.eINSTANCE.getConditionalBranch_Parameter() || reference == XtextPackage.eINSTANCE.getNamedArgument_Value()) {
 			ParserRule rule = GrammarUtil.containingParserRule(context);
 			if (rule == null) {
 				return IScope.NULLSCOPE;
 			}
 			return Scopes.scopeFor(rule.getParameters());
+		}
+		if (reference == XtextPackage.eINSTANCE.getNamedArgument_Parameter()) {
+			RuleCall ruleCall = EcoreUtil2.getContainerOfType(context, RuleCall.class);
+			if (ruleCall == null) {
+				return IScope.NULLSCOPE;
+			}
+			AbstractRule referencedRule = ruleCall.getRule();
+			if (referencedRule instanceof ParserRule) {
+				return Scopes.scopeFor(((ParserRule) referencedRule).getParameters());	
+			}
+			return IScope.NULLSCOPE;
 		}
 		return createScope(context.eResource(), reference.getEReferenceType(), IScope.NULLSCOPE);
 	}

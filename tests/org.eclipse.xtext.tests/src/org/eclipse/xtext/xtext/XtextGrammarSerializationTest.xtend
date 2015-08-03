@@ -43,6 +43,34 @@ class XtextGrammarSerializationTest extends AbstractXtextTests {
 				| name='name';'''
 		doTestSerialization(model, expectedModel)
 	}
+	
+	@Test def void testSerializationArguments() throws Exception {
+		val String model = '''
+			grammar foo with org.eclipse.xtext.common.Terminals
+			generate mm "http://bar"
+			MyRule[host]:
+				value1=MyParameterizedRule[+arg]
+				value2=MyParameterizedRule[!arg]
+				value3=MyParameterizedRule[arg=host]
+			;
+			MyParameterizedRule[arg]:
+				name=ID
+			;
+		'''
+		val String expectedModel = '''
+			grammar foo with org.eclipse.xtext.common.Terminals
+			
+			generate mm "http://bar"
+			
+			MyRule [host]:
+				value1=MyParameterizedRule[+arg]
+				value2=MyParameterizedRule[arg]
+				value3=MyParameterizedRule[arg=host];
+			
+			MyParameterizedRule [arg]:
+				name=ID;'''
+		doTestSerialization(model, expectedModel)
+	}
 
 	@Test def void testSimpleSerialization() throws Exception {
 		val String model = '''

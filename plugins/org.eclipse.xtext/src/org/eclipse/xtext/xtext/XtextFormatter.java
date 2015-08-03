@@ -19,8 +19,10 @@ import org.eclipse.xtext.services.XtextGrammarAccess.ConditionalBranchElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.CrossReferenceElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.EnumLiteralDeclarationElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.GrammarElements;
+import org.eclipse.xtext.services.XtextGrammarAccess.NamedArgumentElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.NegatedTokenElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.ParserRuleElements;
+import org.eclipse.xtext.services.XtextGrammarAccess.RuleCallElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.TerminalTokenElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.TypeRefElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.UnorderedGroupElements;
@@ -128,9 +130,18 @@ public class XtextFormatter extends AbstractDeclarativeFormatter {
 		EnumLiteralDeclarationElements eld = g.getEnumLiteralDeclarationAccess();
 		cfg.setNoSpace().around(eld.getEqualsSignKeyword_1_0());
 		
-		// EnumLiteralDeclaration
+		// ConditionalBranch
 		ConditionalBranchElements cba = g.getConditionalBranchAccess();
 		cfg.setNoSpace().around(cba.getFilteredAssignment_1_2());
+		
+		// RuleCall
+		RuleCallElements rca = g.getRuleCallAccess();
+		cfg.setNoSpace().before(rca.getLeftSquareBracketKeyword_2_0());
+		
+		// RuleCall
+		NamedArgumentElements naa = g.getNamedArgumentAccess();
+		cfg.setNoSpace().around(naa.getLiteralValueAssignment_1_0_0());
+		cfg.setNoSpace().around(naa.getEqualsSignKeyword_1_1_1());
 
 		//saveDebugGraphvizDiagram("XtextFormatting.dot");
 	}

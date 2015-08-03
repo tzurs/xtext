@@ -73,6 +73,61 @@ public class XtextGrammarSerializationTest extends AbstractXtextTests {
   }
   
   @Test
+  public void testSerializationArguments() throws Exception {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("grammar foo with org.eclipse.xtext.common.Terminals");
+    _builder.newLine();
+    _builder.append("generate mm \"http://bar\"");
+    _builder.newLine();
+    _builder.append("MyRule[host]:");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("value1=MyParameterizedRule[+arg]");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("value2=MyParameterizedRule[!arg]");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("value3=MyParameterizedRule[arg=host]");
+    _builder.newLine();
+    _builder.append(";");
+    _builder.newLine();
+    _builder.append("MyParameterizedRule[arg]:");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("name=ID");
+    _builder.newLine();
+    _builder.append(";");
+    _builder.newLine();
+    final String model = _builder.toString();
+    StringConcatenation _builder_1 = new StringConcatenation();
+    _builder_1.append("grammar foo with org.eclipse.xtext.common.Terminals");
+    _builder_1.newLine();
+    _builder_1.newLine();
+    _builder_1.append("generate mm \"http://bar\"");
+    _builder_1.newLine();
+    _builder_1.newLine();
+    _builder_1.append("MyRule [host]:");
+    _builder_1.newLine();
+    _builder_1.append("\t");
+    _builder_1.append("value1=MyParameterizedRule[+arg]");
+    _builder_1.newLine();
+    _builder_1.append("\t");
+    _builder_1.append("value2=MyParameterizedRule[arg]");
+    _builder_1.newLine();
+    _builder_1.append("\t");
+    _builder_1.append("value3=MyParameterizedRule[arg=host];");
+    _builder_1.newLine();
+    _builder_1.newLine();
+    _builder_1.append("MyParameterizedRule [arg]:");
+    _builder_1.newLine();
+    _builder_1.append("\t");
+    _builder_1.append("name=ID;");
+    final String expectedModel = _builder_1.toString();
+    this.doTestSerialization(model, expectedModel);
+  }
+  
+  @Test
   public void testSimpleSerialization() throws Exception {
     StringConcatenation _builder = new StringConcatenation();
     _builder.append("grammar foo with org.eclipse.xtext.common.Terminals");
