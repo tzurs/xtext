@@ -15,6 +15,7 @@ import static org.eclipse.xtext.EcoreUtil2.*;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
@@ -326,12 +327,15 @@ public class GrammarUtil {
 			// to the set of all rules even though it may 
 			// have been specialized in the sub grammar
 			if (!seenNames.contains(rule.getName()) || explicitlyCalled.contains(rule)) {
-				TreeIterator<EObject> contents = eAll(rule.getAlternatives());
-				while(contents.hasNext()) {
-					EObject content = contents.next();
-					if (content instanceof RuleCall) {
-						AbstractRule calledRule = ((RuleCall) content).getRule();
-						explicitlyCalled.add(calledRule);
+				AbstractElement body = rule.getAlternatives();
+				if (body != null) {
+					Iterator<EObject> contents = eAll(body);
+					while(contents.hasNext()) {
+						EObject content = contents.next();
+						if (content instanceof RuleCall) {
+							AbstractRule calledRule = ((RuleCall) content).getRule();
+							explicitlyCalled.add(calledRule);
+						}
 					}
 				}
 			}
