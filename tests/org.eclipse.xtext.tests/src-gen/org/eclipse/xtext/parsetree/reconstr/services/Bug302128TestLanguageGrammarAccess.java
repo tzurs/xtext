@@ -117,8 +117,8 @@ public class Bug302128TestLanguageGrammarAccess extends AbstractGrammarElementFi
 		this.pModel = new ModelElements();
 		this.pElement = new ElementElements();
 		this.pVariable = new VariableElements();
-		this.tValue = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "Value");
-		this.tSL_COMMENT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "SL_COMMENT");
+		this.tValue = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.Bug302128TestLanguage.Value");
+		this.tSL_COMMENT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.Bug302128TestLanguage.SL_COMMENT");
 	}
 	
 	protected Grammar internalFindGrammar(GrammarProvider grammarProvider) {

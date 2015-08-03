@@ -22,6 +22,8 @@ import org.eclipse.xtext.xtextTest.XtextTestPackage;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link org.eclipse.xtext.xtextTest.impl.AssignmentImpl#isPredicated <em>Predicated</em>}</li>
+ *   <li>{@link org.eclipse.xtext.xtextTest.impl.AssignmentImpl#isFirstSetPredicated <em>First Set Predicated</em>}</li>
  *   <li>{@link org.eclipse.xtext.xtextTest.impl.AssignmentImpl#getFeature <em>Feature</em>}</li>
  *   <li>{@link org.eclipse.xtext.xtextTest.impl.AssignmentImpl#getOperator <em>Operator</em>}</li>
  *   <li>{@link org.eclipse.xtext.xtextTest.impl.AssignmentImpl#getTerminal <em>Terminal</em>}</li>
@@ -31,6 +33,46 @@ import org.eclipse.xtext.xtextTest.XtextTestPackage;
  */
 public class AssignmentImpl extends AbstractElementImpl implements Assignment
 {
+  /**
+   * The default value of the '{@link #isPredicated() <em>Predicated</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #isPredicated()
+   * @generated
+   * @ordered
+   */
+  protected static final boolean PREDICATED_EDEFAULT = false;
+
+  /**
+   * The cached value of the '{@link #isPredicated() <em>Predicated</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #isPredicated()
+   * @generated
+   * @ordered
+   */
+  protected boolean predicated = PREDICATED_EDEFAULT;
+
+  /**
+   * The default value of the '{@link #isFirstSetPredicated() <em>First Set Predicated</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #isFirstSetPredicated()
+   * @generated
+   * @ordered
+   */
+  protected static final boolean FIRST_SET_PREDICATED_EDEFAULT = false;
+
+  /**
+   * The cached value of the '{@link #isFirstSetPredicated() <em>First Set Predicated</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #isFirstSetPredicated()
+   * @generated
+   * @ordered
+   */
+  protected boolean firstSetPredicated = FIRST_SET_PREDICATED_EDEFAULT;
+
   /**
    * The default value of the '{@link #getFeature() <em>Feature</em>}' attribute.
    * <!-- begin-user-doc -->
@@ -100,6 +142,52 @@ public class AssignmentImpl extends AbstractElementImpl implements Assignment
   protected EClass eStaticClass()
   {
     return XtextTestPackage.Literals.ASSIGNMENT;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean isPredicated()
+  {
+    return predicated;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setPredicated(boolean newPredicated)
+  {
+    boolean oldPredicated = predicated;
+    predicated = newPredicated;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, XtextTestPackage.ASSIGNMENT__PREDICATED, oldPredicated, predicated));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean isFirstSetPredicated()
+  {
+    return firstSetPredicated;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setFirstSetPredicated(boolean newFirstSetPredicated)
+  {
+    boolean oldFirstSetPredicated = firstSetPredicated;
+    firstSetPredicated = newFirstSetPredicated;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, XtextTestPackage.ASSIGNMENT__FIRST_SET_PREDICATED, oldFirstSetPredicated, firstSetPredicated));
   }
 
   /**
@@ -222,6 +310,10 @@ public class AssignmentImpl extends AbstractElementImpl implements Assignment
   {
     switch (featureID)
     {
+      case XtextTestPackage.ASSIGNMENT__PREDICATED:
+        return isPredicated();
+      case XtextTestPackage.ASSIGNMENT__FIRST_SET_PREDICATED:
+        return isFirstSetPredicated();
       case XtextTestPackage.ASSIGNMENT__FEATURE:
         return getFeature();
       case XtextTestPackage.ASSIGNMENT__OPERATOR:
@@ -242,6 +334,12 @@ public class AssignmentImpl extends AbstractElementImpl implements Assignment
   {
     switch (featureID)
     {
+      case XtextTestPackage.ASSIGNMENT__PREDICATED:
+        setPredicated((Boolean)newValue);
+        return;
+      case XtextTestPackage.ASSIGNMENT__FIRST_SET_PREDICATED:
+        setFirstSetPredicated((Boolean)newValue);
+        return;
       case XtextTestPackage.ASSIGNMENT__FEATURE:
         setFeature((String)newValue);
         return;
@@ -265,6 +363,12 @@ public class AssignmentImpl extends AbstractElementImpl implements Assignment
   {
     switch (featureID)
     {
+      case XtextTestPackage.ASSIGNMENT__PREDICATED:
+        setPredicated(PREDICATED_EDEFAULT);
+        return;
+      case XtextTestPackage.ASSIGNMENT__FIRST_SET_PREDICATED:
+        setFirstSetPredicated(FIRST_SET_PREDICATED_EDEFAULT);
+        return;
       case XtextTestPackage.ASSIGNMENT__FEATURE:
         setFeature(FEATURE_EDEFAULT);
         return;
@@ -288,6 +392,10 @@ public class AssignmentImpl extends AbstractElementImpl implements Assignment
   {
     switch (featureID)
     {
+      case XtextTestPackage.ASSIGNMENT__PREDICATED:
+        return predicated != PREDICATED_EDEFAULT;
+      case XtextTestPackage.ASSIGNMENT__FIRST_SET_PREDICATED:
+        return firstSetPredicated != FIRST_SET_PREDICATED_EDEFAULT;
       case XtextTestPackage.ASSIGNMENT__FEATURE:
         return FEATURE_EDEFAULT == null ? feature != null : !FEATURE_EDEFAULT.equals(feature);
       case XtextTestPackage.ASSIGNMENT__OPERATOR:
@@ -309,7 +417,11 @@ public class AssignmentImpl extends AbstractElementImpl implements Assignment
     if (eIsProxy()) return super.toString();
 
     StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (feature: ");
+    result.append(" (predicated: ");
+    result.append(predicated);
+    result.append(", firstSetPredicated: ");
+    result.append(firstSetPredicated);
+    result.append(", feature: ");
     result.append(feature);
     result.append(", operator: ");
     result.append(operator);

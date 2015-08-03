@@ -63,9 +63,9 @@ public class EncodingTestLanguageGrammarAccess extends AbstractGrammarElementFin
 		this.grammar = internalFindGrammar(grammarProvider);
 		this.pModel = new ModelElements();
 		this.pWord = new WordElements();
-		this.tLEXEME = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "LEXEME");
-		this.tWS = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "WS");
-		this.tANY_OTHER = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "ANY_OTHER");
+		this.tLEXEME = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.encoding.EncodingTestLanguage.LEXEME");
+		this.tWS = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.encoding.EncodingTestLanguage.WS");
+		this.tANY_OTHER = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.encoding.EncodingTestLanguage.ANY_OTHER");
 	}
 	
 	protected Grammar internalFindGrammar(GrammarProvider grammarProvider) {

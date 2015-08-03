@@ -126,10 +126,10 @@ public class IndentationAwareTestLanguageGrammarAccess extends AbstractGrammarEl
 		this.pNodeList = new NodeListElements();
 		this.pNode = new NodeElements();
 		this.pString = new StringElements();
-		this.tNL = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "NL");
-		this.tBEGIN = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "BEGIN");
-		this.tEND = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "END");
-		this.tOTHER = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "OTHER");
+		this.tNL = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.indent.IndentationAwareTestLanguage.NL");
+		this.tBEGIN = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.indent.IndentationAwareTestLanguage.BEGIN");
+		this.tEND = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.indent.IndentationAwareTestLanguage.END");
+		this.tOTHER = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.testlanguages.indent.IndentationAwareTestLanguage.OTHER");
 	}
 	
 	protected Grammar internalFindGrammar(GrammarProvider grammarProvider) {

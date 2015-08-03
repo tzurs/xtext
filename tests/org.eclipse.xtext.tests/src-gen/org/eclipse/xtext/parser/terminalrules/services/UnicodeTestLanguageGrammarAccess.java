@@ -106,7 +106,7 @@ public class UnicodeTestLanguageGrammarAccess extends AbstractGrammarElementFind
 		this.pAbstractString = new AbstractStringElements();
 		this.pGString = new GStringElements();
 		this.pQuotedString = new QuotedStringElements();
-		this.tGERMAN_STRING = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "GERMAN_STRING");
+		this.tGERMAN_STRING = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.UnicodeTestLanguage.GERMAN_STRING");
 	}
 	
 	protected Grammar internalFindGrammar(GrammarProvider grammarProvider) {

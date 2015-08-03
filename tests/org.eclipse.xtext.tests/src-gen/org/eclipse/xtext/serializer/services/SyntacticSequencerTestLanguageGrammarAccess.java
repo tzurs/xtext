@@ -1106,10 +1106,10 @@ public class SyntacticSequencerTestLanguageGrammarAccess extends AbstractGrammar
 		private final RuleCall cIDTerminalRuleCall_5 = (RuleCall)cGroup.eContents().get(5);
 		
 		//ActionOnly:
-		//	"#14" "kw1"? ID? {ActionOnly} "kw2"? ID?;
+		//	"#14" "kw1"? => ID? {ActionOnly} "kw2"? ID?;
 		@Override public ParserRule getRule() { return rule; }
 
-		//"#14" "kw1"? ID? {ActionOnly} "kw2"? ID?
+		//"#14" "kw1"? => ID? {ActionOnly} "kw2"? ID?
 		public Group getGroup() { return cGroup; }
 
 		//"#14"
@@ -1118,7 +1118,7 @@ public class SyntacticSequencerTestLanguageGrammarAccess extends AbstractGrammar
 		//"kw1"?
 		public Keyword getKw1Keyword_1() { return cKw1Keyword_1; }
 
-		//ID?
+		//=> ID?
 		public RuleCall getIDTerminalRuleCall_2() { return cIDTerminalRuleCall_2; }
 
 		//{ActionOnly}
@@ -1182,7 +1182,7 @@ public class SyntacticSequencerTestLanguageGrammarAccess extends AbstractGrammar
 		this.pAddition2 = new Addition2Elements();
 		this.pMultiplication2 = new Multiplication2Elements();
 		this.pPrim2 = new Prim2Elements();
-		this.tTERMINAL_ID = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "TERMINAL_ID");
+		this.tTERMINAL_ID = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.SyntacticSequencerTestLanguage.TERMINAL_ID");
 		this.pDatatypeID = new DatatypeIDElements();
 		this.pSingleCrossReference = new SingleCrossReferenceElements();
 		this.pBooleanAlternative = new BooleanAlternativeElements();
@@ -1193,7 +1193,7 @@ public class SyntacticSequencerTestLanguageGrammarAccess extends AbstractGrammar
 		this.pOptionalManyTransition = new OptionalManyTransitionElements();
 		this.pMandatoryManyTransition = new MandatoryManyTransitionElements();
 		this.pAlternativeTransition = new AlternativeTransitionElements();
-		this.tBOOLEAN_TERMINAL_ID = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "BOOLEAN_TERMINAL_ID");
+		this.tBOOLEAN_TERMINAL_ID = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.SyntacticSequencerTestLanguage.BOOLEAN_TERMINAL_ID");
 		this.pBooleanDatatypeID = new BooleanDatatypeIDElements();
 		this.pBooleanValues = new BooleanValuesElements();
 		this.pLongAlternative = new LongAlternativeElements();
@@ -1494,7 +1494,7 @@ public class SyntacticSequencerTestLanguageGrammarAccess extends AbstractGrammar
 	}
 
 	//ActionOnly:
-	//	"#14" "kw1"? ID? {ActionOnly} "kw2"? ID?;
+	//	"#14" "kw1"? => ID? {ActionOnly} "kw2"? ID?;
 	public ActionOnlyElements getActionOnlyAccess() {
 		return pActionOnly;
 	}

@@ -3925,7 +3925,7 @@ public class InternalUnorderedGroupsTestLanguageParser extends AbstractInternalA
                            			current, 
                            			"value",
                             		lv_value_73_0, 
-                            		"UnorderedDatatype");
+                            		"org.eclipse.xtext.parser.unorderedGroups.UnorderedGroupsTestLanguage.UnorderedDatatype");
                     	        afterParserOrEnumRuleCall();
                     	    
 
@@ -3972,7 +3972,7 @@ public class InternalUnorderedGroupsTestLanguageParser extends AbstractInternalA
                            			current, 
                            			"serialized",
                             		lv_serialized_75_0, 
-                            		"UnorderedSerialization");
+                            		"org.eclipse.xtext.parser.unorderedGroups.UnorderedGroupsTestLanguage.UnorderedSerialization");
                     	        afterParserOrEnumRuleCall();
                     	    
 
@@ -4031,7 +4031,7 @@ public class InternalUnorderedGroupsTestLanguageParser extends AbstractInternalA
                     	           			current, 
                     	           			"nestedModel",
                     	            		lv_nestedModel_77_0, 
-                    	            		"NestedModel");
+                    	            		"org.eclipse.xtext.parser.unorderedGroups.UnorderedGroupsTestLanguage.NestedModel");
                     	    	        afterParserOrEnumRuleCall();
                     	    	    
 

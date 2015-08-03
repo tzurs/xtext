@@ -24,7 +24,8 @@ Require-Bundle: org.eclipse.xtext,
  org.eclipse.xtext.idea.generator,
  org.eclipse.xtext.xbase.lib
 Bundle-ActivationPolicy: lazy
-Bundle-ClassPath: lib/simple.jar,.
+Bundle-ClassPath: lib/simple.jar,
+ .
 Import-Package: com.ibm.icu.text;version="4.0.0",
  org.apache.log4j;version="1.2.15",
  org.junit;version="4.5.0",

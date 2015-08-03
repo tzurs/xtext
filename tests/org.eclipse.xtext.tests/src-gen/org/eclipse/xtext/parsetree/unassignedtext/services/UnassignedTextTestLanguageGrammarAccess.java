@@ -263,12 +263,12 @@ public class UnassignedTextTestLanguageGrammarAccess extends AbstractGrammarElem
 		this.gaTerminals = gaTerminals;
 		this.pModel = new ModelElements();
 		this.pCaseInsensitiveKeywordRule = new CaseInsensitiveKeywordRuleElements();
-		this.tCaseInsensitiveKeyword = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "CaseInsensitiveKeyword");
+		this.tCaseInsensitiveKeyword = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.unassignedtext.UnassignedTextTestLanguage.CaseInsensitiveKeyword");
 		this.pPluralRule = new PluralRuleElements();
-		this.tPlural = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "Plural");
+		this.tPlural = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.unassignedtext.UnassignedTextTestLanguage.Plural");
 		this.pMultiRule = new MultiRuleElements();
-		this.tMulti = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "Multi");
-		this.tMulti2 = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "Multi2");
+		this.tMulti = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.unassignedtext.UnassignedTextTestLanguage.Multi");
+		this.tMulti2 = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.unassignedtext.UnassignedTextTestLanguage.Multi2");
 		this.pDatatypeRule = new DatatypeRuleElements();
 		this.pDatatype = new DatatypeElements();
 		this.pDatatype2 = new Datatype2Elements();

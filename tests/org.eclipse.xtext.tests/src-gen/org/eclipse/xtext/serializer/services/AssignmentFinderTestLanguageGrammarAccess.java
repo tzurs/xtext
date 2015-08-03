@@ -600,7 +600,7 @@ public class AssignmentFinderTestLanguageGrammarAccess extends AbstractGrammarEl
 	
 	
 	public class Enum1Elements extends AbstractEnumRuleElementFinder {
-		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "Enum1");
+		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.AssignmentFinderTestLanguage.Enum1");
 		private final EnumLiteralDeclaration cLit1EnumLiteralDeclaration = (EnumLiteralDeclaration)rule.eContents().get(1);
 		private final Keyword cLit1Lit1Keyword_0 = (Keyword)cLit1EnumLiteralDeclaration.eContents().get(0);
 		
@@ -616,7 +616,7 @@ public class AssignmentFinderTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class Enum2Elements extends AbstractEnumRuleElementFinder {
-		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "Enum2");
+		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.AssignmentFinderTestLanguage.Enum2");
 		private final EnumLiteralDeclaration cLit2EnumLiteralDeclaration = (EnumLiteralDeclaration)rule.eContents().get(1);
 		private final Keyword cLit2Lit2Keyword_0 = (Keyword)cLit2EnumLiteralDeclaration.eContents().get(0);
 		
@@ -632,7 +632,7 @@ public class AssignmentFinderTestLanguageGrammarAccess extends AbstractGrammarEl
 	}
 
 	public class Enum3Elements extends AbstractEnumRuleElementFinder {
-		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "Enum3");
+		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.AssignmentFinderTestLanguage.Enum3");
 		private final EnumLiteralDeclaration cLit3EnumLiteralDeclaration = (EnumLiteralDeclaration)rule.eContents().get(1);
 		private final Keyword cLit3Lit3Keyword_0 = (Keyword)cLit3EnumLiteralDeclaration.eContents().get(0);
 		
@@ -680,8 +680,8 @@ public class AssignmentFinderTestLanguageGrammarAccess extends AbstractGrammarEl
 		this.pModel = new ModelElements();
 		this.pKeywordVal = new KeywordValElements();
 		this.pTerminalVal = new TerminalValElements();
-		this.tTerminal1 = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "Terminal1");
-		this.tTerminal2 = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "Terminal2");
+		this.tTerminal1 = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.AssignmentFinderTestLanguage.Terminal1");
+		this.tTerminal2 = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.AssignmentFinderTestLanguage.Terminal2");
 		this.pEnumVal = new EnumValElements();
 		this.unknownRuleEnum1 = new Enum1Elements();
 		this.unknownRuleEnum2 = new Enum2Elements();

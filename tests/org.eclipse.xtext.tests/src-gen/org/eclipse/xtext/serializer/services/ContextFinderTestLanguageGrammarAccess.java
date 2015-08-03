@@ -778,7 +778,7 @@ public class ContextFinderTestLanguageGrammarAccess extends AbstractGrammarEleme
 	
 	
 	public class ValueExclusionTestEn0Elements extends AbstractEnumRuleElementFinder {
-		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "ValueExclusionTestEn0");
+		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.ContextFinderTestLanguage.ValueExclusionTestEn0");
 		private final EnumLiteralDeclaration cLit0EnumLiteralDeclaration = (EnumLiteralDeclaration)rule.eContents().get(1);
 		private final Keyword cLit0Lit0Keyword_0 = (Keyword)cLit0EnumLiteralDeclaration.eContents().get(0);
 		
@@ -794,7 +794,7 @@ public class ContextFinderTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class ValueExclusionTestEn1Elements extends AbstractEnumRuleElementFinder {
-		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "ValueExclusionTestEn1");
+		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.ContextFinderTestLanguage.ValueExclusionTestEn1");
 		private final EnumLiteralDeclaration cLit1EnumLiteralDeclaration = (EnumLiteralDeclaration)rule.eContents().get(1);
 		private final Keyword cLit1Lit1Keyword_0 = (Keyword)cLit1EnumLiteralDeclaration.eContents().get(0);
 		
@@ -810,7 +810,7 @@ public class ContextFinderTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class ValueExclusionTestEn2Elements extends AbstractEnumRuleElementFinder {
-		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "ValueExclusionTestEn2");
+		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.ContextFinderTestLanguage.ValueExclusionTestEn2");
 		private final EnumLiteralDeclaration cLit2EnumLiteralDeclaration = (EnumLiteralDeclaration)rule.eContents().get(1);
 		private final Keyword cLit2Lit2Keyword_0 = (Keyword)cLit2EnumLiteralDeclaration.eContents().get(0);
 		

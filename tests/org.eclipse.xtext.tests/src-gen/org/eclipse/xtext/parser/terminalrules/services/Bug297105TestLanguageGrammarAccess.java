@@ -202,7 +202,7 @@ public class Bug297105TestLanguageGrammarAccess extends AbstractGrammarElementFi
 		this.pIntValue = new IntValueElements();
 		this.pRealValue = new RealValueElements();
 		this.pReal = new RealElements();
-		this.tEXT_INT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "EXT_INT");
+		this.tEXT_INT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.Bug297105TestLanguage.EXT_INT");
 	}
 	
 	protected Grammar internalFindGrammar(GrammarProvider grammarProvider) {

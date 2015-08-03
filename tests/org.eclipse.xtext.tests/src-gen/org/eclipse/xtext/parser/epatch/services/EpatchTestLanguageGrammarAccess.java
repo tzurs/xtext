@@ -1556,7 +1556,7 @@ public class EpatchTestLanguageGrammarAccess extends AbstractGrammarElementFinde
 		this.pCreatedObject = new CreatedObjectElements();
 		this.pObjectNew = new ObjectNewElements();
 		this.pObjectCopy = new ObjectCopyElements();
-		this.tFRAGMENT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "FRAGMENT");
+		this.tFRAGMENT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.epatch.EpatchTestLanguage.FRAGMENT");
 		this.pMigration = new MigrationElements();
 		this.pExecutable = new ExecutableElements();
 		this.pJavaExecutable = new JavaExecutableElements();

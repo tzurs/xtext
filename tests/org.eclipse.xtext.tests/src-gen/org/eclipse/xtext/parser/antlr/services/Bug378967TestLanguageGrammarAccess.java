@@ -280,7 +280,7 @@ public class Bug378967TestLanguageGrammarAccess extends AbstractGrammarElementFi
 	
 	
 	public class FirstEnumElements extends AbstractEnumRuleElementFinder {
-		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "FirstEnum");
+		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.antlr.Bug378967TestLanguage.FirstEnum");
 		private final EnumLiteralDeclaration cValueEnumLiteralDeclaration = (EnumLiteralDeclaration)rule.eContents().get(1);
 		private final Keyword cValueAfterKeyword_0 = (Keyword)cValueEnumLiteralDeclaration.eContents().get(0);
 		
@@ -296,7 +296,7 @@ public class Bug378967TestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class SecondEnumElements extends AbstractEnumRuleElementFinder {
-		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "SecondEnum");
+		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.antlr.Bug378967TestLanguage.SecondEnum");
 		private final EnumLiteralDeclaration cValueEnumLiteralDeclaration = (EnumLiteralDeclaration)rule.eContents().get(1);
 		private final Keyword cValueSKeyword_0 = (Keyword)cValueEnumLiteralDeclaration.eContents().get(0);
 		

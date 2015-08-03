@@ -60,7 +60,7 @@ public class MultiRuleEnumTestLanguageGrammarAccess extends AbstractGrammarEleme
 	
 	
 	public class EnumRuleAElements extends AbstractEnumRuleElementFinder {
-		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "EnumRuleA");
+		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.enumrules.MultiRuleEnumTestLanguage.EnumRuleA");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final EnumLiteralDeclaration cAEnumLiteralDeclaration_0 = (EnumLiteralDeclaration)cAlternatives.eContents().get(0);
 		private final Keyword cAAKeyword_0_0 = (Keyword)cAEnumLiteralDeclaration_0.eContents().get(0);
@@ -96,7 +96,7 @@ public class MultiRuleEnumTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class EnumRuleBElements extends AbstractEnumRuleElementFinder {
-		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "EnumRuleB");
+		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.enumrules.MultiRuleEnumTestLanguage.EnumRuleB");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final EnumLiteralDeclaration cCEnumLiteralDeclaration_0 = (EnumLiteralDeclaration)cAlternatives.eContents().get(0);
 		private final Keyword cCCKeyword_0_0 = (Keyword)cCEnumLiteralDeclaration_0.eContents().get(0);
@@ -132,7 +132,7 @@ public class MultiRuleEnumTestLanguageGrammarAccess extends AbstractGrammarEleme
 	}
 
 	public class EnumRuleCElements extends AbstractEnumRuleElementFinder {
-		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "EnumRuleC");
+		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.enumrules.MultiRuleEnumTestLanguage.EnumRuleC");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final EnumLiteralDeclaration cAEnumLiteralDeclaration_0 = (EnumLiteralDeclaration)cAlternatives.eContents().get(0);
 		private final Keyword cAAKeyword_0_0 = (Keyword)cAEnumLiteralDeclaration_0.eContents().get(0);

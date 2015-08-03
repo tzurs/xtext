@@ -1692,7 +1692,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	
 	
 	public class EnumBug310435Lit1Elements extends AbstractEnumRuleElementFinder {
-		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "EnumBug310435Lit1");
+		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.EnumBug310435Lit1");
 		private final EnumLiteralDeclaration cLit1EnumLiteralDeclaration = (EnumLiteralDeclaration)rule.eContents().get(1);
 		private final Keyword cLit1Lit1Keyword_0 = (Keyword)cLit1EnumLiteralDeclaration.eContents().get(0);
 		
@@ -1708,7 +1708,7 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 	}
 
 	public class EnumBug310435Lit2Elements extends AbstractEnumRuleElementFinder {
-		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "EnumBug310435Lit2");
+		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.EnumBug310435Lit2");
 		private final EnumLiteralDeclaration cLit2EnumLiteralDeclaration = (EnumLiteralDeclaration)rule.eContents().get(1);
 		private final Keyword cLit2Lit2Keyword_0 = (Keyword)cLit2EnumLiteralDeclaration.eContents().get(0);
 		
@@ -1821,8 +1821,8 @@ public class SimpleReconstrTestLanguageGrammarAccess extends AbstractGrammarElem
 		this.unknownRuleEnumBug310435Lit2 = new EnumBug310435Lit2Elements();
 		this.pCrossRefNameTest = new CrossRefNameTestElements();
 		this.pCrossRefNamed = new CrossRefNamedElements();
-		this.tID1 = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "ID1");
-		this.tID2 = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "ID2");
+		this.tID1 = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.ID1");
+		this.tID2 = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.SimpleReconstrTestLanguage.ID2");
 	}
 	
 	protected Grammar internalFindGrammar(GrammarProvider grammarProvider) {

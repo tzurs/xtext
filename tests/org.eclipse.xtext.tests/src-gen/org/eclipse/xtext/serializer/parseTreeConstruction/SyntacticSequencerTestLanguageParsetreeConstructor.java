@@ -4926,11 +4926,11 @@ protected class LongAlternative_ExclamationMarkKeyword_3 extends KeywordToken  {
 /************ begin Rule ActionOnly ****************
  *
  * ActionOnly:
- * 	"#14" "kw1"? ID? {ActionOnly} "kw2"? ID?;
+ * 	"#14" "kw1"? => ID? {ActionOnly} "kw2"? ID?;
  *
  **/
 
-// "#14" "kw1"? ID? {ActionOnly} "kw2"? ID?
+// "#14" "kw1"? => ID? {ActionOnly} "kw2"? ID?
 protected class ActionOnly_Group extends GroupToken {
 	
 	public ActionOnly_Group(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {

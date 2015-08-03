@@ -310,6 +310,16 @@ Workflow {
 			fragment = @TestLanguagesFragments {}
 		}
 		language = {
+			uri = "classpath:/org/eclipse/xtext/parser/fragments/FragmentTestLanguage.xtext"
+			fragment = @TestLanguagesFragments auto-inject {}
+			fragment = junit.Junit4Fragment {}
+		}
+		language = {
+			uri = "classpath:/org/eclipse/xtext/parser/fragments/FragmentTestLanguageEx.xtext"
+			fragment = @TestLanguagesFragmentsEx auto-inject {}
+			fragment = junit.Junit4Fragment {}
+		}
+		language = {
 			uri = "classpath:/org/eclipse/xtext/parser/indentation/IndentationAwareTestLanguage.xtext"
 			fragment = @TestLanguagesFragmentsEx auto-inject {
 				srcGenOnly = false

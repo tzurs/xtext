@@ -1,59 +1,61 @@
 <idea-plugin version="2">
 	<extensions defaultExtensionNs="org.eclipse.xtext.idea">
-		<resourceFactory type="inheritancetest3language"
+		<package uri="http://example.xtext.org/IndentationAwareTestLanguage"
+				 class="org.eclipse.xtext.testlanguages.indent.indentLang.IndentLangPackage"/>
+		<resourceFactory type="indentationawaretestlanguage"
 						 class="org.eclipse.xtext.resource.IResourceFactory"
-						 factoryClass="org.eclipse.xtext.grammarinheritance.idea.InheritanceTest3LanguageExtensionFactory"/>
-		<resourceServiceProvider uriExtension="inheritancetest3language"
+						 factoryClass="org.eclipse.xtext.testlanguages.indent.idea.IndentationAwareTestLanguageExtensionFactory"/>
+		<resourceServiceProvider uriExtension="indentationawaretestlanguage"
 								 class="org.eclipse.xtext.idea.resource.IResourceIdeaServiceProvider"
-								 factoryClass="org.eclipse.xtext.grammarinheritance.idea.InheritanceTest3LanguageExtensionFactory"/>
+								 factoryClass="org.eclipse.xtext.testlanguages.indent.idea.IndentationAwareTestLanguageExtensionFactory"/>
 
-		<lang.setup language="org.eclipse.xtext.grammarinheritance.InheritanceTest3Language"
-					implementationClass="org.eclipse.xtext.grammarinheritance.idea.InheritanceTest3LanguageIdeaSetup"/>
+		<lang.setup language="org.eclipse.xtext.testlanguages.indent.IndentationAwareTestLanguage"
+					implementationClass="org.eclipse.xtext.testlanguages.indent.idea.IndentationAwareTestLanguageIdeaSetup"/>
 	</extensions>
 
 	<extensions defaultExtensionNs="com.intellij">
-		<psi.treeChangePreprocessor implementation="org.eclipse.xtext.grammarinheritance.idea.lang.psi.InheritanceTest3LanguageCodeBlockModificationListener"/>
+		<psi.treeChangePreprocessor implementation="org.eclipse.xtext.testlanguages.indent.idea.lang.psi.IndentationAwareTestLanguageCodeBlockModificationListener"/>
 
-		<fileTypeFactory implementation="org.eclipse.xtext.grammarinheritance.idea.lang.InheritanceTest3LanguageFileTypeFactory"/>
-		<stubElementTypeHolder class="org.eclipse.xtext.grammarinheritance.idea.lang.InheritanceTest3LanguageElementTypeProvider"/>
-		<lang.ast.factory language="org.eclipse.xtext.grammarinheritance.InheritanceTest3Language"
-								factoryClass="org.eclipse.xtext.grammarinheritance.idea.InheritanceTest3LanguageExtensionFactory"
+		<fileTypeFactory implementation="org.eclipse.xtext.testlanguages.indent.idea.lang.IndentationAwareTestLanguageFileTypeFactory"/>
+		<stubElementTypeHolder class="org.eclipse.xtext.testlanguages.indent.idea.lang.IndentationAwareTestLanguageElementTypeProvider"/>
+		<lang.ast.factory language="org.eclipse.xtext.testlanguages.indent.IndentationAwareTestLanguage"
+								factoryClass="org.eclipse.xtext.testlanguages.indent.idea.IndentationAwareTestLanguageExtensionFactory"
 								implementationClass="org.eclipse.xtext.idea.lang.BaseXtextASTFactory"/>
-		<lang.parserDefinition language="org.eclipse.xtext.grammarinheritance.InheritanceTest3Language"
-								factoryClass="org.eclipse.xtext.grammarinheritance.idea.InheritanceTest3LanguageExtensionFactory"
-								implementationClass="org.eclipse.xtext.grammarinheritance.idea.lang.parser.InheritanceTest3LanguageParserDefinition"/>
-		<lang.findUsagesProvider language="org.eclipse.xtext.grammarinheritance.InheritanceTest3Language"
-								factoryClass="org.eclipse.xtext.grammarinheritance.idea.InheritanceTest3LanguageExtensionFactory"
+		<lang.parserDefinition language="org.eclipse.xtext.testlanguages.indent.IndentationAwareTestLanguage"
+								factoryClass="org.eclipse.xtext.testlanguages.indent.idea.IndentationAwareTestLanguageExtensionFactory"
+								implementationClass="org.eclipse.xtext.testlanguages.indent.idea.lang.parser.IndentationAwareTestLanguageParserDefinition"/>
+		<lang.findUsagesProvider language="org.eclipse.xtext.testlanguages.indent.IndentationAwareTestLanguage"
+								factoryClass="org.eclipse.xtext.testlanguages.indent.idea.IndentationAwareTestLanguageExtensionFactory"
 								implementationClass="org.eclipse.xtext.idea.findusages.BaseXtextFindUsageProvider"/>
-		<lang.refactoringSupport language="org.eclipse.xtext.grammarinheritance.InheritanceTest3Language"
-								factoryClass="org.eclipse.xtext.grammarinheritance.idea.InheritanceTest3LanguageExtensionFactory"
+		<lang.refactoringSupport language="org.eclipse.xtext.testlanguages.indent.IndentationAwareTestLanguage"
+								factoryClass="org.eclipse.xtext.testlanguages.indent.idea.IndentationAwareTestLanguageExtensionFactory"
 								implementationClass="org.eclipse.xtext.idea.refactoring.BaseXtextRefactoringSupportProvider"/>
-		<lang.namesValidator language="org.eclipse.xtext.grammarinheritance.InheritanceTest3Language"
-								factoryClass="org.eclipse.xtext.grammarinheritance.idea.InheritanceTest3LanguageExtensionFactory"
+		<lang.namesValidator language="org.eclipse.xtext.testlanguages.indent.IndentationAwareTestLanguage"
+								factoryClass="org.eclipse.xtext.testlanguages.indent.idea.IndentationAwareTestLanguageExtensionFactory"
 								implementationClass="com.intellij.lang.refactoring.NamesValidator"/>
-      	<lang.syntaxHighlighterFactory key="org.eclipse.xtext.grammarinheritance.InheritanceTest3Language" implementationClass="org.eclipse.xtext.grammarinheritance.idea.highlighting.InheritanceTest3LanguageSyntaxHighlighterFactory" />
-		<lang.braceMatcher language="org.eclipse.xtext.grammarinheritance.InheritanceTest3Language"
-								factoryClass="org.eclipse.xtext.grammarinheritance.idea.InheritanceTest3LanguageExtensionFactory"
+      	<lang.syntaxHighlighterFactory key="org.eclipse.xtext.testlanguages.indent.IndentationAwareTestLanguage" implementationClass="org.eclipse.xtext.testlanguages.indent.idea.highlighting.IndentationAwareTestLanguageSyntaxHighlighterFactory" />
+		<lang.braceMatcher language="org.eclipse.xtext.testlanguages.indent.IndentationAwareTestLanguage"
+								factoryClass="org.eclipse.xtext.testlanguages.indent.idea.IndentationAwareTestLanguageExtensionFactory"
 								implementationClass="com.intellij.lang.PairedBraceMatcher"/>
-      	<annotator language="org.eclipse.xtext.grammarinheritance.InheritanceTest3Language"
-      							factoryClass="org.eclipse.xtext.grammarinheritance.idea.InheritanceTest3LanguageExtensionFactory"
+      	<annotator language="org.eclipse.xtext.testlanguages.indent.IndentationAwareTestLanguage"
+      							factoryClass="org.eclipse.xtext.testlanguages.indent.idea.IndentationAwareTestLanguageExtensionFactory"
       							implementationClass="org.eclipse.xtext.idea.annotation.IssueAnnotator"/>
-      	<completion.contributor language="org.eclipse.xtext.grammarinheritance.InheritanceTest3Language" implementationClass="org.eclipse.xtext.grammarinheritance.idea.completion.InheritanceTest3LanguageCompletionContributor"/>
-      	<elementDescriptionProvider implementation="org.eclipse.xtext.grammarinheritance.idea.lang.psi.InheritanceTest3LanguageElementDescriptionProvider" order="first"/>
-      	<pom.declarationSearcher implementation="org.eclipse.xtext.grammarinheritance.idea.lang.pom.InheritanceTest3LanguagePomDeclarationSearcher"/>
+      	<completion.contributor language="org.eclipse.xtext.testlanguages.indent.IndentationAwareTestLanguage" implementationClass="org.eclipse.xtext.testlanguages.indent.idea.completion.IndentationAwareTestLanguageCompletionContributor"/>
+      	<elementDescriptionProvider implementation="org.eclipse.xtext.testlanguages.indent.idea.lang.psi.IndentationAwareTestLanguageElementDescriptionProvider" order="first"/>
+      	<pom.declarationSearcher implementation="org.eclipse.xtext.testlanguages.indent.idea.lang.pom.IndentationAwareTestLanguagePomDeclarationSearcher"/>
 
-      	<lang.psiStructureViewFactory language="org.eclipse.xtext.grammarinheritance.InheritanceTest3Language"
-      							factoryClass="org.eclipse.xtext.grammarinheritance.idea.InheritanceTest3LanguageExtensionFactory"
+      	<lang.psiStructureViewFactory language="org.eclipse.xtext.testlanguages.indent.IndentationAwareTestLanguage"
+      							factoryClass="org.eclipse.xtext.testlanguages.indent.idea.IndentationAwareTestLanguageExtensionFactory"
       							implementationClass="com.intellij.lang.PsiStructureViewFactory"/>
-		<facetType implementation="org.eclipse.xtext.grammarinheritance.idea.facet.InheritanceTest3LanguageFacetType"/>
-		<colorSettingsPage implementation="org.eclipse.xtext.grammarinheritance.idea.highlighting.InheritanceTest3LanguageColorSettingsPage"/>
-		<highlightVisitor implementation="org.eclipse.xtext.grammarinheritance.idea.highlighting.InheritanceTest3LanguageSemanticHighlightVisitor"/>
+		<facetType implementation="org.eclipse.xtext.testlanguages.indent.idea.facet.IndentationAwareTestLanguageFacetType"/>
+		<colorSettingsPage implementation="org.eclipse.xtext.testlanguages.indent.idea.highlighting.IndentationAwareTestLanguageColorSettingsPage"/>
+		<highlightVisitor implementation="org.eclipse.xtext.testlanguages.indent.idea.highlighting.IndentationAwareTestLanguageSemanticHighlightVisitor"/>
 
-		<lang.formatter language="org.eclipse.xtext.grammarinheritance.InheritanceTest3Language"
-								factoryClass="org.eclipse.xtext.grammarinheritance.idea.InheritanceTest3LanguageExtensionFactory"
+		<lang.formatter language="org.eclipse.xtext.testlanguages.indent.IndentationAwareTestLanguage"
+								factoryClass="org.eclipse.xtext.testlanguages.indent.idea.IndentationAwareTestLanguageExtensionFactory"
 								implementationClass="com.intellij.formatting.FormattingModelBuilder"/>
-		<lang.commenter language="org.eclipse.xtext.grammarinheritance.InheritanceTest3Language"
-								factoryClass="org.eclipse.xtext.grammarinheritance.idea.InheritanceTest3LanguageExtensionFactory"
+		<lang.commenter language="org.eclipse.xtext.testlanguages.indent.IndentationAwareTestLanguage"
+								factoryClass="org.eclipse.xtext.testlanguages.indent.idea.IndentationAwareTestLanguageExtensionFactory"
 								implementationClass="com.intellij.lang.CodeDocumentationAwareCommenter"/>
 	</extensions>
 </idea-plugin>

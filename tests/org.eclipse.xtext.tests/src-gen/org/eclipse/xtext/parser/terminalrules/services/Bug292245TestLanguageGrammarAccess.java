@@ -194,11 +194,11 @@ public class Bug292245TestLanguageGrammarAccess extends AbstractGrammarElementFi
 		this.pError = new ErrorElements();
 		this.pFix = new FixElements();
 		this.pApostrophe = new ApostropheElements();
-		this.tAPOSTROPHE_CHAR = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "APOSTROPHE_CHAR");
+		this.tAPOSTROPHE_CHAR = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.Bug292245TestLanguage.APOSTROPHE_CHAR");
 		this.pRehide = new RehideElements();
 		this.pGraphical = new GraphicalElements();
-		this.tCHAR = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "CHAR");
-		this.tWS = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "WS");
+		this.tCHAR = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.Bug292245TestLanguage.CHAR");
+		this.tWS = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.Bug292245TestLanguage.WS");
 	}
 	
 	protected Grammar internalFindGrammar(GrammarProvider grammarProvider) {

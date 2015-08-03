@@ -2169,7 +2169,7 @@ public class SequencerTestLanguageGrammarAccess extends AbstractGrammarElementFi
 	
 	
 	public class DefEnum1Elements extends AbstractEnumRuleElementFinder {
-		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "DefEnum1");
+		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.SequencerTestLanguage.DefEnum1");
 		private final EnumLiteralDeclaration cKw1EnumLiteralDeclaration = (EnumLiteralDeclaration)rule.eContents().get(1);
 		private final Keyword cKw1Kw1Keyword_0 = (Keyword)cKw1EnumLiteralDeclaration.eContents().get(0);
 		
@@ -2185,7 +2185,7 @@ public class SequencerTestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class DefEnum2Elements extends AbstractEnumRuleElementFinder {
-		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "DefEnum2");
+		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.SequencerTestLanguage.DefEnum2");
 		private final EnumLiteralDeclaration cKw2EnumLiteralDeclaration = (EnumLiteralDeclaration)rule.eContents().get(1);
 		private final Keyword cKw2Kw2Keyword_0 = (Keyword)cKw2EnumLiteralDeclaration.eContents().get(0);
 		
@@ -2201,7 +2201,7 @@ public class SequencerTestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class DefEnum3Elements extends AbstractEnumRuleElementFinder {
-		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "DefEnum3");
+		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.SequencerTestLanguage.DefEnum3");
 		private final EnumLiteralDeclaration cKw3EnumLiteralDeclaration = (EnumLiteralDeclaration)rule.eContents().get(1);
 		private final Keyword cKw3Kw3Keyword_0 = (Keyword)cKw3EnumLiteralDeclaration.eContents().get(0);
 		
@@ -2289,9 +2289,9 @@ public class SequencerTestLanguageGrammarAccess extends AbstractGrammarElementFi
 		this.pSingleKeywords = new SingleKeywordsElements();
 		this.pSingleKeywordsOrID = new SingleKeywordsOrIDElements();
 		this.pSingleTerminals = new SingleTerminalsElements();
-		this.tID1 = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "ID1");
-		this.tID2 = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "ID2");
-		this.tID3 = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "ID3");
+		this.tID1 = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.SequencerTestLanguage.ID1");
+		this.tID2 = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.SequencerTestLanguage.ID2");
+		this.tID3 = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.serializer.SequencerTestLanguage.ID3");
 		this.pSingleEnum = new SingleEnumElements();
 		this.unknownRuleDefEnum1 = new DefEnum1Elements();
 		this.unknownRuleDefEnum2 = new DefEnum2Elements();

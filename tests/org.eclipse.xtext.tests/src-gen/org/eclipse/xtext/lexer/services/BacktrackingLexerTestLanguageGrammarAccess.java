@@ -135,7 +135,7 @@ public class BacktrackingLexerTestLanguageGrammarAccess extends AbstractGrammarE
 	
 	
 	public class EnumNameElements extends AbstractEnumRuleElementFinder {
-		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "EnumName");
+		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.lexer.BacktrackingLexerTestLanguage.EnumName");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final EnumLiteralDeclaration cAbcEnumLiteralDeclaration_0 = (EnumLiteralDeclaration)cAlternatives.eContents().get(0);
 		private final Keyword cAbcAbcKeyword_0_0 = (Keyword)cAbcEnumLiteralDeclaration_0.eContents().get(0);
@@ -183,15 +183,15 @@ public class BacktrackingLexerTestLanguageGrammarAccess extends AbstractGrammarE
 		this.pModel = new ModelElements();
 		this.pAb = new AbElements();
 		this.pXb = new XbElements();
-		this.tCharA = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "CharA");
-		this.tCharb = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "Charb");
-		this.tCharX = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "CharX");
-		this.tYc = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "Yc");
-		this.tCharY = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "CharY");
-		this.tCharC = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "CharC");
+		this.tCharA = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.lexer.BacktrackingLexerTestLanguage.CharA");
+		this.tCharb = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.lexer.BacktrackingLexerTestLanguage.Charb");
+		this.tCharX = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.lexer.BacktrackingLexerTestLanguage.CharX");
+		this.tYc = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.lexer.BacktrackingLexerTestLanguage.Yc");
+		this.tCharY = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.lexer.BacktrackingLexerTestLanguage.CharY");
+		this.tCharC = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.lexer.BacktrackingLexerTestLanguage.CharC");
 		this.unknownRuleEnumName = new EnumNameElements();
-		this.tWS = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "WS");
-		this.tSL_COMMENT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "SL_COMMENT");
+		this.tWS = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.lexer.BacktrackingLexerTestLanguage.WS");
+		this.tSL_COMMENT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.lexer.BacktrackingLexerTestLanguage.SL_COMMENT");
 	}
 	
 	protected Grammar internalFindGrammar(GrammarProvider grammarProvider) {

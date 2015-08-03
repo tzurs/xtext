@@ -568,7 +568,7 @@ RULE_ID
 ruleActionOnly :
 (	'#14' 
 (	'kw1' 
-)?(	RULE_ID)?(
+)?((	RULE_ID)=>	RULE_ID)?(
 )(	'kw2' 
 )?(	RULE_ID)?)
 ;

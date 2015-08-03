@@ -481,7 +481,7 @@ public class HiddenTokensMergerTestLanguageGrammarAccess extends AbstractGrammar
 	
 	
 	public class EnumBugEnumElements extends AbstractEnumRuleElementFinder {
-		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "EnumBugEnum");
+		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parsetree.reconstr.HiddenTokensMergerTestLanguage.EnumBugEnum");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final EnumLiteralDeclaration cArrayEnumLiteralDeclaration_0 = (EnumLiteralDeclaration)cAlternatives.eContents().get(0);
 		private final Keyword cArrayArrayKeyword_0_0 = (Keyword)cArrayEnumLiteralDeclaration_0.eContents().get(0);

@@ -100,9 +100,9 @@ public class IndentationAwareTestLanguageGrammarAccess extends AbstractGrammarEl
 		this.gaTerminals = gaTerminals;
 		this.pTree = new TreeElements();
 		this.pTreeNode = new TreeNodeElements();
-		this.tSL_COMMENT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "SL_COMMENT");
-		this.tINDENT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "INDENT");
-		this.tDEDENT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "DEDENT");
+		this.tSL_COMMENT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.indentation.IndentationAwareTestLanguage.SL_COMMENT");
+		this.tINDENT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.indentation.IndentationAwareTestLanguage.INDENT");
+		this.tDEDENT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.indentation.IndentationAwareTestLanguage.DEDENT");
 	}
 	
 	protected Grammar internalFindGrammar(GrammarProvider grammarProvider) {

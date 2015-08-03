@@ -54,15 +54,34 @@ ruleReferencedMetamodel :
 
 // Rule ParserRule
 ruleParserRule :
-	RULE_ID (
-		'returns' ruleTypeRef
-	)? (
+	(
+		'fragment' ruleRuleNameAndParams '*' |
+		'fragment'? ruleRuleNameAndParams (
+			'returns' ruleTypeRef
+		)?
+	) (
 		'hidden' '(' (
 			RULE_ID (
 				',' RULE_ID
 			)*
 		)? ')'
 	)? ':' ruleAlternatives ';'
+;
+
+// Rule RuleNameAndParams
+ruleRuleNameAndParams :
+	RULE_ID (
+		'[' (
+			ruleParameter (
+				',' ruleParameter
+			)*
+		)? ']'
+	)?
+;
+
+// Rule Parameter
+ruleParameter :
+	RULE_ID
 ;
 
 // Rule TypeRef
@@ -74,9 +93,24 @@ ruleTypeRef :
 
 // Rule Alternatives
 ruleAlternatives :
+	ruleConditionalBranch (
+		(
+			'|' ruleConditionalBranch
+		)+
+	)?
+;
+
+// Rule ConditionalBranch
+ruleConditionalBranch :
+	ruleUnorderedGroup |
+	'[' '!' RULE_ID ']' ruleUnorderedGroup
+;
+
+// Rule UnorderedGroup
+ruleUnorderedGroup :
 	ruleGroup (
 		(
-			'|' ruleGroup
+			'&' ruleGroup
 		)+
 	)?
 ;
@@ -120,7 +154,10 @@ ruleAction :
 ruleAbstractTerminal :
 	ruleKeyword |
 	ruleRuleCall |
-	ruleParenthesizedElement
+	ruleParenthesizedElement |
+	rulePredicatedKeyword |
+	rulePredicatedRuleCall |
+	rulePredicatedGroup
 ;
 
 // Rule Keyword
@@ -130,12 +167,59 @@ ruleKeyword :
 
 // Rule RuleCall
 ruleRuleCall :
-	RULE_ID
+	ruleRuleID (
+		'[' ruleNamedArgument (
+			',' ruleNamedArgument
+		)* ']'
+	)?
+;
+
+// Rule LiteralValue
+ruleLiteralValue :
+	'!' |
+	'+'
+;
+
+// Rule NamedArgument
+ruleNamedArgument :
+	ruleLiteralValue? RULE_ID |
+	RULE_ID '=' RULE_ID
+;
+
+// Rule TerminalRuleCall
+ruleTerminalRuleCall :
+	ruleRuleID
+;
+
+// Rule RuleID
+ruleRuleID :
+	RULE_ID (
+		'::' RULE_ID
+	)*
+;
+
+// Rule PredicatedKeyword
+rulePredicatedKeyword :
+	(
+		'=>' |
+		'->'
+	) RULE_STRING
+;
+
+// Rule PredicatedRuleCall
+rulePredicatedRuleCall :
+	(
+		'=>' |
+		'->'
+	) RULE_ID
 ;
 
 // Rule Assignment
 ruleAssignment :
-	RULE_ID (
+	(
+		'=>' |
+		'->'
+	)? RULE_ID (
 		'+=' |
 		'=' |
 		'?='
@@ -174,22 +258,7 @@ ruleCrossReference :
 // Rule CrossReferenceableTerminal
 ruleCrossReferenceableTerminal :
 	ruleKeyword |
-	ruleRuleCall |
-	ruleParenthesizedCrossReferenceableElement
-;
-
-// Rule ParenthesizedCrossReferenceableElement
-ruleParenthesizedCrossReferenceableElement :
-	'(' ruleCrossReferenceableAlternatives ')'
-;
-
-// Rule CrossReferenceableAlternatives
-ruleCrossReferenceableAlternatives :
-	ruleCrossReferenceableTerminal (
-		(
-			'|' ruleCrossReferenceableTerminal
-		)+
-	)?
+	ruleRuleCall
 ;
 
 // Rule ParenthesizedElement
@@ -197,11 +266,22 @@ ruleParenthesizedElement :
 	'(' ruleAlternatives ')'
 ;
 
+// Rule PredicatedGroup
+rulePredicatedGroup :
+	(
+		'=>' |
+		'->'
+	) '(' ruleAlternatives ')'
+;
+
 // Rule TerminalRule
 ruleTerminalRule :
-	'terminal' RULE_ID (
-		'returns' ruleTypeRef
-	)? ':' ruleTerminalAlternatives ';'
+	'terminal' (
+		'fragment' RULE_ID |
+		RULE_ID (
+			'returns' ruleTypeRef
+		)?
+	) ':' ruleTerminalAlternatives ';'
 ;
 
 // Rule TerminalAlternatives
@@ -232,10 +312,11 @@ ruleTerminalToken :
 // Rule TerminalTokenElement
 ruleTerminalTokenElement :
 	ruleCharacterRange |
-	ruleRuleCall |
+	ruleTerminalRuleCall |
 	ruleParenthesizedTerminalElement |
 	ruleAbstractNegatedToken |
-	ruleWildcard
+	ruleWildcard |
+	ruleEOF
 ;
 
 // Rule ParenthesizedTerminalElement
@@ -262,6 +343,11 @@ ruleUntilToken :
 // Rule Wildcard
 ruleWildcard :
 	'.'
+;
+
+// Rule EOF
+ruleEOF :
+	'EOF'
 ;
 
 // Rule CharacterRange

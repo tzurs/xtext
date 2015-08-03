@@ -80,7 +80,7 @@ public class EnumRulesTestLanguageGrammarAccess extends AbstractGrammarElementFi
 	
 	
 	public class ExistingEnumElements extends AbstractEnumRuleElementFinder {
-		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "ExistingEnum");
+		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.enumrules.EnumRulesTestLanguage.ExistingEnum");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final EnumLiteralDeclaration cSameNameEnumLiteralDeclaration_0 = (EnumLiteralDeclaration)cAlternatives.eContents().get(0);
 		private final Keyword cSameNameSameNameKeyword_0_0 = (Keyword)cSameNameEnumLiteralDeclaration_0.eContents().get(0);
@@ -116,7 +116,7 @@ public class EnumRulesTestLanguageGrammarAccess extends AbstractGrammarElementFi
 	}
 
 	public class GeneratedEnumElements extends AbstractEnumRuleElementFinder {
-		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "GeneratedEnum");
+		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.enumrules.EnumRulesTestLanguage.GeneratedEnum");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final EnumLiteralDeclaration cSameNameEnumLiteralDeclaration_0 = (EnumLiteralDeclaration)cAlternatives.eContents().get(0);
 		private final Keyword cSameNameSameNameKeyword_0_0 = (Keyword)cSameNameEnumLiteralDeclaration_0.eContents().get(0);

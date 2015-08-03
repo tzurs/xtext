@@ -254,7 +254,7 @@ public class InternalFragmentTestLanguageParser extends AbstractInternalAntlrPar
                            			current, 
                            			"element",
                             		lv_element_2_0, 
-                            		"PRFNamed");
+                            		"org.eclipse.xtext.parser.fragments.FragmentTestLanguage.PRFNamed");
                     	        afterParserOrEnumRuleCall();
                     	    
 
@@ -301,7 +301,7 @@ public class InternalFragmentTestLanguageParser extends AbstractInternalAntlrPar
                            			current, 
                            			"element",
                             		lv_element_4_0, 
-                            		"PRFNamed");
+                            		"org.eclipse.xtext.parser.fragments.FragmentTestLanguage.PRFNamed");
                     	        afterParserOrEnumRuleCall();
                     	    
 
@@ -373,7 +373,7 @@ public class InternalFragmentTestLanguageParser extends AbstractInternalAntlrPar
                            			current, 
                            			"element",
                             		lv_element_8_0, 
-                            		"PRFNamedRefFirst");
+                            		"org.eclipse.xtext.parser.fragments.FragmentTestLanguage.PRFNamedRefFirst");
                     	        afterParserOrEnumRuleCall();
                     	    
 
@@ -420,7 +420,7 @@ public class InternalFragmentTestLanguageParser extends AbstractInternalAntlrPar
                            			current, 
                            			"element",
                             		lv_element_10_0, 
-                            		"PRFNamedWithAction");
+                            		"org.eclipse.xtext.parser.fragments.FragmentTestLanguage.PRFNamedWithAction");
                     	        afterParserOrEnumRuleCall();
                     	    
 
@@ -467,7 +467,7 @@ public class InternalFragmentTestLanguageParser extends AbstractInternalAntlrPar
                            			current, 
                            			"element",
                             		lv_element_12_0, 
-                            		"PRFNamedWithActionInFragment");
+                            		"org.eclipse.xtext.parser.fragments.FragmentTestLanguage.PRFNamedWithActionInFragment");
                     	        afterParserOrEnumRuleCall();
                     	    
 
@@ -514,7 +514,7 @@ public class InternalFragmentTestLanguageParser extends AbstractInternalAntlrPar
                            			current, 
                            			"element",
                             		lv_element_14_0, 
-                            		"PRFNamedWithActionInFragment2");
+                            		"org.eclipse.xtext.parser.fragments.FragmentTestLanguage.PRFNamedWithActionInFragment2");
                     	        afterParserOrEnumRuleCall();
                     	    
 
@@ -561,7 +561,7 @@ public class InternalFragmentTestLanguageParser extends AbstractInternalAntlrPar
                            			current, 
                            			"element",
                             		lv_element_16_0, 
-                            		"PRFNamedWithActionInFragment3");
+                            		"org.eclipse.xtext.parser.fragments.FragmentTestLanguage.PRFNamedWithActionInFragment3");
                     	        afterParserOrEnumRuleCall();
                     	    
 
@@ -608,7 +608,7 @@ public class InternalFragmentTestLanguageParser extends AbstractInternalAntlrPar
                            			current, 
                            			"element",
                             		lv_element_18_0, 
-                            		"PRFNamedWithFQN");
+                            		"org.eclipse.xtext.parser.fragments.FragmentTestLanguage.PRFNamedWithFQN");
                     	        afterParserOrEnumRuleCall();
                     	    
 
@@ -1033,7 +1033,7 @@ public class InternalFragmentTestLanguageParser extends AbstractInternalAntlrPar
                    			current, 
                    			"name",
                     		lv_name_2_0, 
-                    		"ID");
+                    		"org.eclipse.xtext.common.Terminals.ID");
             	    
 
             }
@@ -1326,7 +1326,7 @@ public class InternalFragmentTestLanguageParser extends AbstractInternalAntlrPar
                    			current, 
                    			"name",
                     		lv_name_0_0, 
-                    		"ID");
+                    		"org.eclipse.xtext.common.Terminals.ID");
             	    
 
             }
@@ -1619,7 +1619,7 @@ public class InternalFragmentTestLanguageParser extends AbstractInternalAntlrPar
                    			current, 
                    			"name",
                     		lv_name_0_0, 
-                    		"FQN");
+                    		"org.eclipse.xtext.parser.fragments.FragmentTestLanguage.FQN");
             	        afterParserOrEnumRuleCall();
             	    
 
@@ -2095,7 +2095,7 @@ public class InternalFragmentTestLanguageParser extends AbstractInternalAntlrPar
                    			current, 
                    			"name",
                     		lv_name_0_0, 
-                    		"ID");
+                    		"org.eclipse.xtext.common.Terminals.ID");
             	    
 
             }
@@ -2132,7 +2132,7 @@ public class InternalFragmentTestLanguageParser extends AbstractInternalAntlrPar
                    			current, 
                    			"name",
                     		lv_name_2_0, 
-                    		"ID");
+                    		"org.eclipse.xtext.common.Terminals.ID");
             	    
 
             }
@@ -2238,7 +2238,7 @@ public class InternalFragmentTestLanguageParser extends AbstractInternalAntlrPar
                    			current, 
                    			"name",
                     		lv_name_1_0, 
-                    		"ID");
+                    		"org.eclipse.xtext.common.Terminals.ID");
             	    
 
             }
@@ -2335,7 +2335,7 @@ public class InternalFragmentTestLanguageParser extends AbstractInternalAntlrPar
                    			current, 
                    			"name",
                     		lv_name_0_0, 
-                    		"ID");
+                    		"org.eclipse.xtext.common.Terminals.ID");
             	    
 
             }
@@ -2391,7 +2391,7 @@ public class InternalFragmentTestLanguageParser extends AbstractInternalAntlrPar
             	           			current, 
             	           			"name",
             	            		lv_name_3_0, 
-            	            		"ID");
+            	            		"org.eclipse.xtext.common.Terminals.ID");
             	    	    
 
             	    }
@@ -2491,7 +2491,7 @@ public class InternalFragmentTestLanguageParser extends AbstractInternalAntlrPar
                    			current, 
                    			"name",
                     		lv_name_0_0, 
-                    		"ID");
+                    		"org.eclipse.xtext.common.Terminals.ID");
             	    
 
             }

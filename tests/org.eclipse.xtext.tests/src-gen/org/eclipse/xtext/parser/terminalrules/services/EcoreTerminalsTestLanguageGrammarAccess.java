@@ -90,10 +90,10 @@ public class EcoreTerminalsTestLanguageGrammarAccess extends AbstractGrammarElem
 	public EcoreTerminalsTestLanguageGrammarAccess(GrammarProvider grammarProvider) {
 		this.grammar = internalFindGrammar(grammarProvider);
 		this.pModel = new ModelElements();
-		this.tEDOUBLE = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "EDOUBLE");
-		this.tEDATE = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "EDATE");
-		this.tEINT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "EINT");
-		this.tWS = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "WS");
+		this.tEDOUBLE = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.EcoreTerminalsTestLanguage.EDOUBLE");
+		this.tEDATE = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.EcoreTerminalsTestLanguage.EDATE");
+		this.tEINT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.EcoreTerminalsTestLanguage.EINT");
+		this.tWS = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.parser.terminalrules.EcoreTerminalsTestLanguage.WS");
 	}
 	
 	protected Grammar internalFindGrammar(GrammarProvider grammarProvider) {
