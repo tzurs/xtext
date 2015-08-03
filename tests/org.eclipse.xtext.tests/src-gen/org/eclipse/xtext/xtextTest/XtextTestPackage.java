@@ -140,22 +140,13 @@ public interface XtextTestPackage extends EPackage
   int ABSTRACT_RULE = 1;
 
   /**
-   * The feature id for the '<em><b>Type</b></em>' containment reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int ABSTRACT_RULE__TYPE = 0;
-
-  /**
    * The feature id for the '<em><b>Alternatives</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int ABSTRACT_RULE__ALTERNATIVES = 1;
+  int ABSTRACT_RULE__ALTERNATIVES = 0;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -164,7 +155,16 @@ public interface XtextTestPackage extends EPackage
    * @generated
    * @ordered
    */
-  int ABSTRACT_RULE__NAME = 2;
+  int ABSTRACT_RULE__NAME = 1;
+
+  /**
+   * The feature id for the '<em><b>Type</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ABSTRACT_RULE__TYPE = 2;
 
   /**
    * The number of structural features of the '<em>Abstract Rule</em>' class.
@@ -306,15 +306,6 @@ public interface XtextTestPackage extends EPackage
   int PARSER_RULE = 5;
 
   /**
-   * The feature id for the '<em><b>Type</b></em>' containment reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int PARSER_RULE__TYPE = ABSTRACT_RULE__TYPE;
-
-  /**
    * The feature id for the '<em><b>Alternatives</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -331,6 +322,15 @@ public interface XtextTestPackage extends EPackage
    * @ordered
    */
   int PARSER_RULE__NAME = ABSTRACT_RULE__NAME;
+
+  /**
+   * The feature id for the '<em><b>Type</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PARSER_RULE__TYPE = ABSTRACT_RULE__TYPE;
 
   /**
    * The feature id for the '<em><b>Fragment</b></em>' attribute.
@@ -884,15 +884,6 @@ public interface XtextTestPackage extends EPackage
   int TERMINAL_RULE = 16;
 
   /**
-   * The feature id for the '<em><b>Type</b></em>' containment reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int TERMINAL_RULE__TYPE = ABSTRACT_RULE__TYPE;
-
-  /**
    * The feature id for the '<em><b>Alternatives</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -909,6 +900,15 @@ public interface XtextTestPackage extends EPackage
    * @ordered
    */
   int TERMINAL_RULE__NAME = ABSTRACT_RULE__NAME;
+
+  /**
+   * The feature id for the '<em><b>Type</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int TERMINAL_RULE__TYPE = ABSTRACT_RULE__TYPE;
 
   /**
    * The feature id for the '<em><b>Fragment</b></em>' attribute.
@@ -1106,15 +1106,6 @@ public interface XtextTestPackage extends EPackage
   int ENUM_RULE = 22;
 
   /**
-   * The feature id for the '<em><b>Type</b></em>' containment reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int ENUM_RULE__TYPE = ABSTRACT_RULE__TYPE;
-
-  /**
    * The feature id for the '<em><b>Alternatives</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -1131,6 +1122,15 @@ public interface XtextTestPackage extends EPackage
    * @ordered
    */
   int ENUM_RULE__NAME = ABSTRACT_RULE__NAME;
+
+  /**
+   * The feature id for the '<em><b>Type</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ENUM_RULE__TYPE = ABSTRACT_RULE__TYPE;
 
   /**
    * The number of structural features of the '<em>Enum Rule</em>' class.
@@ -1450,17 +1450,6 @@ public interface XtextTestPackage extends EPackage
   EClass getAbstractRule();
 
   /**
-   * Returns the meta object for the containment reference '{@link org.eclipse.xtext.xtextTest.AbstractRule#getType <em>Type</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the containment reference '<em>Type</em>'.
-   * @see org.eclipse.xtext.xtextTest.AbstractRule#getType()
-   * @see #getAbstractRule()
-   * @generated
-   */
-  EReference getAbstractRule_Type();
-
-  /**
    * Returns the meta object for the containment reference '{@link org.eclipse.xtext.xtextTest.AbstractRule#getAlternatives <em>Alternatives</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -1481,6 +1470,17 @@ public interface XtextTestPackage extends EPackage
    * @generated
    */
   EAttribute getAbstractRule_Name();
+
+  /**
+   * Returns the meta object for the containment reference '{@link org.eclipse.xtext.xtextTest.AbstractRule#getType <em>Type</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference '<em>Type</em>'.
+   * @see org.eclipse.xtext.xtextTest.AbstractRule#getType()
+   * @see #getAbstractRule()
+   * @generated
+   */
+  EReference getAbstractRule_Type();
 
   /**
    * Returns the meta object for class '{@link org.eclipse.xtext.xtextTest.AbstractMetamodelDeclaration <em>Abstract Metamodel Declaration</em>}'.
@@ -2340,14 +2340,6 @@ public interface XtextTestPackage extends EPackage
     EClass ABSTRACT_RULE = eINSTANCE.getAbstractRule();
 
     /**
-     * The meta object literal for the '<em><b>Type</b></em>' containment reference feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference ABSTRACT_RULE__TYPE = eINSTANCE.getAbstractRule_Type();
-
-    /**
      * The meta object literal for the '<em><b>Alternatives</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -2362,6 +2354,14 @@ public interface XtextTestPackage extends EPackage
      * @generated
      */
     EAttribute ABSTRACT_RULE__NAME = eINSTANCE.getAbstractRule_Name();
+
+    /**
+     * The meta object literal for the '<em><b>Type</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference ABSTRACT_RULE__TYPE = eINSTANCE.getAbstractRule_Type();
 
     /**
      * The meta object literal for the '{@link org.eclipse.xtext.xtextTest.impl.AbstractMetamodelDeclarationImpl <em>Abstract Metamodel Declaration</em>}' class.

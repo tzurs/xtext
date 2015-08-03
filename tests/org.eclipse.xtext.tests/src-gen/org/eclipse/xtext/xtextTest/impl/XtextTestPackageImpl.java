@@ -395,7 +395,7 @@ public class XtextTestPackageImpl extends EPackageImpl implements XtextTestPacka
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getAbstractRule_Type()
+  public EReference getAbstractRule_Alternatives()
   {
     return (EReference)abstractRuleEClass.getEStructuralFeatures().get(0);
   }
@@ -405,9 +405,9 @@ public class XtextTestPackageImpl extends EPackageImpl implements XtextTestPacka
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getAbstractRule_Alternatives()
+  public EAttribute getAbstractRule_Name()
   {
-    return (EReference)abstractRuleEClass.getEStructuralFeatures().get(1);
+    return (EAttribute)abstractRuleEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -415,9 +415,9 @@ public class XtextTestPackageImpl extends EPackageImpl implements XtextTestPacka
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getAbstractRule_Name()
+  public EReference getAbstractRule_Type()
   {
-    return (EAttribute)abstractRuleEClass.getEStructuralFeatures().get(2);
+    return (EReference)abstractRuleEClass.getEStructuralFeatures().get(2);
   }
 
   /**
@@ -1179,9 +1179,9 @@ public class XtextTestPackageImpl extends EPackageImpl implements XtextTestPacka
     createEReference(grammarEClass, GRAMMAR__RULES);
 
     abstractRuleEClass = createEClass(ABSTRACT_RULE);
-    createEReference(abstractRuleEClass, ABSTRACT_RULE__TYPE);
     createEReference(abstractRuleEClass, ABSTRACT_RULE__ALTERNATIVES);
     createEAttribute(abstractRuleEClass, ABSTRACT_RULE__NAME);
+    createEReference(abstractRuleEClass, ABSTRACT_RULE__TYPE);
 
     abstractMetamodelDeclarationEClass = createEClass(ABSTRACT_METAMODEL_DECLARATION);
     createEReference(abstractMetamodelDeclarationEClass, ABSTRACT_METAMODEL_DECLARATION__EPACKAGE);
@@ -1346,9 +1346,9 @@ public class XtextTestPackageImpl extends EPackageImpl implements XtextTestPacka
     initEReference(getGrammar_Rules(), this.getAbstractRule(), null, "rules", null, 0, -1, Grammar.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(abstractRuleEClass, AbstractRule.class, "AbstractRule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getAbstractRule_Type(), this.getTypeRef(), null, "type", null, 0, 1, AbstractRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getAbstractRule_Alternatives(), this.getAbstractElement(), null, "alternatives", null, 0, 1, AbstractRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getAbstractRule_Name(), theEcorePackage.getEString(), "name", null, 0, 1, AbstractRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getAbstractRule_Type(), this.getTypeRef(), null, "type", null, 0, 1, AbstractRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(abstractMetamodelDeclarationEClass, AbstractMetamodelDeclaration.class, "AbstractMetamodelDeclaration", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getAbstractMetamodelDeclaration_EPackage(), theEcorePackage.getEPackage(), null, "ePackage", null, 0, 1, AbstractMetamodelDeclaration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

@@ -37,7 +37,7 @@ public class XtextGrammarTestLanguageParserDefinition extends AbstractXtextParse
 				elementTypeProvider.getRuleNameAndParams_NameIDTerminalRuleCall_0_0ElementType()
 			);
 		}
-		if (elementType == elementTypeProvider.getParserRule_RuleNameAndParamsParserRuleCall_0_1_1ElementType()) {
+		if (elementType == elementTypeProvider.getParserRule_RuleNameAndParamsParserRuleCall_0_1_0ElementType()) {
 			return new PsiNamedEObjectImpl(node,
 				elementTypeProvider.getRuleNameAndParams_NameIDTerminalRuleCall_0_0ElementType()
 			);
@@ -69,22 +69,16 @@ public class XtextGrammarTestLanguageParserDefinition extends AbstractXtextParse
 		if (elementType == elementTypeProvider.getGrammar_UsedGrammarsGrammarCrossReference_2_2_1_0ElementType()) {
 			return new PsiEObjectReference(node);
 		}
-		if (elementType == elementTypeProvider.getGrammar_HiddenTokensAbstractRuleCrossReference_3_2_0_0ElementType()) {
+		if (elementType == elementTypeProvider.getHiddenClause_HiddenTokensAbstractRuleCrossReference_2_0_0ElementType()) {
 			return new PsiEObjectReference(node);
 		}
-		if (elementType == elementTypeProvider.getGrammar_HiddenTokensAbstractRuleCrossReference_3_2_1_1_0ElementType()) {
+		if (elementType == elementTypeProvider.getHiddenClause_HiddenTokensAbstractRuleCrossReference_2_1_1_0ElementType()) {
 			return new PsiEObjectReference(node);
 		}
 		if (elementType == elementTypeProvider.getGeneratedMetamodel_EPackageEPackageCrossReference_2_0ElementType()) {
 			return new PsiEObjectReference(node);
 		}
 		if (elementType == elementTypeProvider.getReferencedMetamodel_EPackageEPackageCrossReference_1_0ElementType()) {
-			return new PsiEObjectReference(node);
-		}
-		if (elementType == elementTypeProvider.getParserRule_HiddenTokensAbstractRuleCrossReference_1_2_0_0ElementType()) {
-			return new PsiEObjectReference(node);
-		}
-		if (elementType == elementTypeProvider.getParserRule_HiddenTokensAbstractRuleCrossReference_1_2_1_1_0ElementType()) {
 			return new PsiEObjectReference(node);
 		}
 		if (elementType == elementTypeProvider.getTypeRef_MetamodelAbstractMetamodelDeclarationCrossReference_0_0_0ElementType()) {

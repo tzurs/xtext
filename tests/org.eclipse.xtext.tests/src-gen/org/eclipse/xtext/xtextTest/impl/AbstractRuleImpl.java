@@ -24,25 +24,15 @@ import org.eclipse.xtext.xtextTest.XtextTestPackage;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.eclipse.xtext.xtextTest.impl.AbstractRuleImpl#getType <em>Type</em>}</li>
  *   <li>{@link org.eclipse.xtext.xtextTest.impl.AbstractRuleImpl#getAlternatives <em>Alternatives</em>}</li>
  *   <li>{@link org.eclipse.xtext.xtextTest.impl.AbstractRuleImpl#getName <em>Name</em>}</li>
+ *   <li>{@link org.eclipse.xtext.xtextTest.impl.AbstractRuleImpl#getType <em>Type</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class AbstractRuleImpl extends MinimalEObjectImpl.Container implements AbstractRule
 {
-  /**
-   * The cached value of the '{@link #getType() <em>Type</em>}' containment reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getType()
-   * @generated
-   * @ordered
-   */
-  protected TypeRef type;
-
   /**
    * The cached value of the '{@link #getAlternatives() <em>Alternatives</em>}' containment reference.
    * <!-- begin-user-doc -->
@@ -74,6 +64,16 @@ public class AbstractRuleImpl extends MinimalEObjectImpl.Container implements Ab
   protected String name = NAME_EDEFAULT;
 
   /**
+   * The cached value of the '{@link #getType() <em>Type</em>}' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getType()
+   * @generated
+   * @ordered
+   */
+  protected TypeRef type;
+
+  /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -92,54 +92,6 @@ public class AbstractRuleImpl extends MinimalEObjectImpl.Container implements Ab
   protected EClass eStaticClass()
   {
     return XtextTestPackage.Literals.ABSTRACT_RULE;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public TypeRef getType()
-  {
-    return type;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public NotificationChain basicSetType(TypeRef newType, NotificationChain msgs)
-  {
-    TypeRef oldType = type;
-    type = newType;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XtextTestPackage.ABSTRACT_RULE__TYPE, oldType, newType);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void setType(TypeRef newType)
-  {
-    if (newType != type)
-    {
-      NotificationChain msgs = null;
-      if (type != null)
-        msgs = ((InternalEObject)type).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - XtextTestPackage.ABSTRACT_RULE__TYPE, null, msgs);
-      if (newType != null)
-        msgs = ((InternalEObject)newType).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - XtextTestPackage.ABSTRACT_RULE__TYPE, null, msgs);
-      msgs = basicSetType(newType, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, XtextTestPackage.ABSTRACT_RULE__TYPE, newType, newType));
   }
 
   /**
@@ -218,15 +170,63 @@ public class AbstractRuleImpl extends MinimalEObjectImpl.Container implements Ab
    * <!-- end-user-doc -->
    * @generated
    */
+  public TypeRef getType()
+  {
+    return type;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public NotificationChain basicSetType(TypeRef newType, NotificationChain msgs)
+  {
+    TypeRef oldType = type;
+    type = newType;
+    if (eNotificationRequired())
+    {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XtextTestPackage.ABSTRACT_RULE__TYPE, oldType, newType);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setType(TypeRef newType)
+  {
+    if (newType != type)
+    {
+      NotificationChain msgs = null;
+      if (type != null)
+        msgs = ((InternalEObject)type).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - XtextTestPackage.ABSTRACT_RULE__TYPE, null, msgs);
+      if (newType != null)
+        msgs = ((InternalEObject)newType).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - XtextTestPackage.ABSTRACT_RULE__TYPE, null, msgs);
+      msgs = basicSetType(newType, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, XtextTestPackage.ABSTRACT_RULE__TYPE, newType, newType));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
     switch (featureID)
     {
-      case XtextTestPackage.ABSTRACT_RULE__TYPE:
-        return basicSetType(null, msgs);
       case XtextTestPackage.ABSTRACT_RULE__ALTERNATIVES:
         return basicSetAlternatives(null, msgs);
+      case XtextTestPackage.ABSTRACT_RULE__TYPE:
+        return basicSetType(null, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -241,12 +241,12 @@ public class AbstractRuleImpl extends MinimalEObjectImpl.Container implements Ab
   {
     switch (featureID)
     {
-      case XtextTestPackage.ABSTRACT_RULE__TYPE:
-        return getType();
       case XtextTestPackage.ABSTRACT_RULE__ALTERNATIVES:
         return getAlternatives();
       case XtextTestPackage.ABSTRACT_RULE__NAME:
         return getName();
+      case XtextTestPackage.ABSTRACT_RULE__TYPE:
+        return getType();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -261,14 +261,14 @@ public class AbstractRuleImpl extends MinimalEObjectImpl.Container implements Ab
   {
     switch (featureID)
     {
-      case XtextTestPackage.ABSTRACT_RULE__TYPE:
-        setType((TypeRef)newValue);
-        return;
       case XtextTestPackage.ABSTRACT_RULE__ALTERNATIVES:
         setAlternatives((AbstractElement)newValue);
         return;
       case XtextTestPackage.ABSTRACT_RULE__NAME:
         setName((String)newValue);
+        return;
+      case XtextTestPackage.ABSTRACT_RULE__TYPE:
+        setType((TypeRef)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -284,14 +284,14 @@ public class AbstractRuleImpl extends MinimalEObjectImpl.Container implements Ab
   {
     switch (featureID)
     {
-      case XtextTestPackage.ABSTRACT_RULE__TYPE:
-        setType((TypeRef)null);
-        return;
       case XtextTestPackage.ABSTRACT_RULE__ALTERNATIVES:
         setAlternatives((AbstractElement)null);
         return;
       case XtextTestPackage.ABSTRACT_RULE__NAME:
         setName(NAME_EDEFAULT);
+        return;
+      case XtextTestPackage.ABSTRACT_RULE__TYPE:
+        setType((TypeRef)null);
         return;
     }
     super.eUnset(featureID);
@@ -307,12 +307,12 @@ public class AbstractRuleImpl extends MinimalEObjectImpl.Container implements Ab
   {
     switch (featureID)
     {
-      case XtextTestPackage.ABSTRACT_RULE__TYPE:
-        return type != null;
       case XtextTestPackage.ABSTRACT_RULE__ALTERNATIVES:
         return alternatives != null;
       case XtextTestPackage.ABSTRACT_RULE__NAME:
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+      case XtextTestPackage.ABSTRACT_RULE__TYPE:
+        return type != null;
     }
     return super.eIsSet(featureID);
   }

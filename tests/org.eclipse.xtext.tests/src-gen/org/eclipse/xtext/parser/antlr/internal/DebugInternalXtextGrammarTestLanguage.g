@@ -9,13 +9,16 @@ ruleGrammar :
 		'with' ruleGrammarID (
 			',' ruleGrammarID
 		)*
-	)? (
-		'hidden' '(' (
-			RULE_ID (
-				',' RULE_ID
-			)*
-		)? ')'
-	)? ruleAbstractMetamodelDeclaration* ruleAbstractRule+
+	)? ruleHiddenClause? ruleAbstractMetamodelDeclaration* ruleAbstractRule+
+;
+
+// Rule HiddenClause
+ruleHiddenClause :
+	'hidden' '(' (
+		RULE_ID (
+			',' RULE_ID
+		)*
+	)? ')'
 ;
 
 // Rule GrammarID
@@ -55,17 +58,12 @@ ruleReferencedMetamodel :
 // Rule ParserRule
 ruleParserRule :
 	(
-		'fragment' ruleRuleNameAndParams '*' |
-		'fragment'? ruleRuleNameAndParams (
-			'returns' ruleTypeRef
-		)?
-	) (
-		'hidden' '(' (
-			RULE_ID (
-				',' RULE_ID
-			)*
-		)? ')'
-	)? ':' ruleAlternatives ';'
+		'fragment' ruleRuleNameAndParams (
+			'*' |
+			ruleReturnsClause?
+		) |
+		ruleRuleNameAndParams ruleReturnsClause?
+	) ruleHiddenClause? ':' ruleAlternatives ';'
 ;
 
 // Rule RuleNameAndParams
@@ -77,6 +75,11 @@ ruleRuleNameAndParams :
 			)*
 		)? ']'
 	)?
+;
+
+// Rule ReturnsClause
+ruleReturnsClause :
+	'returns' ruleTypeRef
 ;
 
 // Rule Parameter

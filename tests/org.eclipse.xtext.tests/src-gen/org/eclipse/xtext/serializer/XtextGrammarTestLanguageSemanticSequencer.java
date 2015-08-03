@@ -308,16 +308,8 @@ public class XtextGrammarTestLanguageSemanticSequencer extends AbstractDelegatin
 				sequence_Parameter(context, (Parameter) semanticObject); 
 				return; 
 			case XtextTestPackage.PARSER_RULE:
-				if(context == grammarAccess.getAbstractRuleRule() ||
-				   context == grammarAccess.getParserRuleRule()) {
-					sequence_ParserRule_RuleNameAndParams(context, (ParserRule) semanticObject); 
-					return; 
-				}
-				else if(context == grammarAccess.getRuleNameAndParamsRule()) {
-					sequence_RuleNameAndParams(context, (ParserRule) semanticObject); 
-					return; 
-				}
-				else break;
+				sequence_ParserRule(context, (ParserRule) semanticObject); 
+				return; 
 			case XtextTestPackage.REFERENCED_METAMODEL:
 				sequence_ReferencedMetamodel(context, (ReferencedMetamodel) semanticObject); 
 				return; 
@@ -680,7 +672,6 @@ public class XtextGrammarTestLanguageSemanticSequencer extends AbstractDelegatin
 	 *     (
 	 *         name=GrammarID 
 	 *         (usedGrammars+=[Grammar|GrammarID] usedGrammars+=[Grammar|GrammarID]*)? 
-	 *         (definesHiddenTokens?='hidden' (hiddenTokens+=[AbstractRule|ID] hiddenTokens+=[AbstractRule|ID]*)?)? 
 	 *         metamodelDeclarations+=AbstractMetamodelDeclaration* 
 	 *         rules+=AbstractRule+
 	 *     )
@@ -753,16 +744,9 @@ public class XtextGrammarTestLanguageSemanticSequencer extends AbstractDelegatin
 	
 	/**
 	 * Constraint:
-	 *     (
-	 *         fragment?='fragment' 
-	 *         name=ID 
-	 *         (parameters+=Parameter parameters+=Parameter*)? 
-	 *         wildcard?='*' 
-	 *         (definesHiddenTokens?='hidden' (hiddenTokens+=[AbstractRule|ID] hiddenTokens+=[AbstractRule|ID]*)?)? 
-	 *         alternatives=Alternatives
-	 *     )
+	 *     ((fragment?='fragment' wildcard?='*'?)? alternatives=Alternatives)
 	 */
-	protected void sequence_ParserRule_RuleNameAndParams(EObject context, ParserRule semanticObject) {
+	protected void sequence_ParserRule(EObject context, ParserRule semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
@@ -808,15 +792,6 @@ public class XtextGrammarTestLanguageSemanticSequencer extends AbstractDelegatin
 	 *     (rule=[AbstractRule|RuleID] (arguments+=NamedArgument arguments+=NamedArgument*)?)
 	 */
 	protected void sequence_RuleCall(EObject context, RuleCall semanticObject) {
-		genericSequencer.createSequence(context, semanticObject);
-	}
-	
-	
-	/**
-	 * Constraint:
-	 *     (name=ID (parameters+=Parameter parameters+=Parameter*)?)
-	 */
-	protected void sequence_RuleNameAndParams(EObject context, ParserRule semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	

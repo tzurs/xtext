@@ -13,9 +13,9 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.eclipse.xtext.xtextTest.AbstractRule#getType <em>Type</em>}</li>
  *   <li>{@link org.eclipse.xtext.xtextTest.AbstractRule#getAlternatives <em>Alternatives</em>}</li>
  *   <li>{@link org.eclipse.xtext.xtextTest.AbstractRule#getName <em>Name</em>}</li>
+ *   <li>{@link org.eclipse.xtext.xtextTest.AbstractRule#getType <em>Type</em>}</li>
  * </ul>
  *
  * @see org.eclipse.xtext.xtextTest.XtextTestPackage#getAbstractRule()
@@ -24,32 +24,6 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface AbstractRule extends EObject
 {
-  /**
-   * Returns the value of the '<em><b>Type</b></em>' containment reference.
-   * <!-- begin-user-doc -->
-   * <p>
-   * If the meaning of the '<em>Type</em>' containment reference isn't clear,
-   * there really should be more of a description here...
-   * </p>
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Type</em>' containment reference.
-   * @see #setType(TypeRef)
-   * @see org.eclipse.xtext.xtextTest.XtextTestPackage#getAbstractRule_Type()
-   * @model containment="true"
-   * @generated
-   */
-  TypeRef getType();
-
-  /**
-   * Sets the value of the '{@link org.eclipse.xtext.xtextTest.AbstractRule#getType <em>Type</em>}' containment reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Type</em>' containment reference.
-   * @see #getType()
-   * @generated
-   */
-  void setType(TypeRef value);
-
   /**
    * Returns the value of the '<em><b>Alternatives</b></em>' containment reference.
    * <!-- begin-user-doc -->
@@ -101,5 +75,31 @@ public interface AbstractRule extends EObject
    * @generated
    */
   void setName(String value);
+
+  /**
+   * Returns the value of the '<em><b>Type</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Type</em>' containment reference isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Type</em>' containment reference.
+   * @see #setType(TypeRef)
+   * @see org.eclipse.xtext.xtextTest.XtextTestPackage#getAbstractRule_Type()
+   * @model containment="true"
+   * @generated
+   */
+  TypeRef getType();
+
+  /**
+   * Sets the value of the '{@link org.eclipse.xtext.xtextTest.AbstractRule#getType <em>Type</em>}' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Type</em>' containment reference.
+   * @see #getType()
+   * @generated
+   */
+  void setType(TypeRef value);
 
 } // AbstractRule
