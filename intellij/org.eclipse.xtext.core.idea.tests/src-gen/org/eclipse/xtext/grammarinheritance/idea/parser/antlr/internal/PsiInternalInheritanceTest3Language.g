@@ -83,42 +83,54 @@ ruleElement:
 		}
 		    |
 		(
+			(
+				{
+					precedeComposite(elementTypeProvider.getElement_ElementAction_1_0ElementType());
+					doneComposite();
+				}
+			)
 			{
-				markLeaf(elementTypeProvider.getElement_ElementKeyword_1_0ElementType());
+				markLeaf(elementTypeProvider.getElement_ElementKeyword_1_1ElementType());
 			}
-			otherlv_1='element'
+			otherlv_2='element'
 			{
-				doneLeaf(otherlv_1);
+				doneLeaf(otherlv_2);
 			}
 			(
 				(
 					{
-						markLeaf(elementTypeProvider.getElement_NameIDTerminalRuleCall_1_1_0ElementType());
+						markLeaf(elementTypeProvider.getElement_NameIDTerminalRuleCall_1_2_0ElementType());
 					}
-					lv_name_2_0=SUPER_ID
+					lv_name_3_0=SUPER_ID
 					{
-						doneLeaf(lv_name_2_0);
+						doneLeaf(lv_name_3_0);
 					}
 				)
 			)
 		)
 		    |
 		(
+			(
+				{
+					precedeComposite(elementTypeProvider.getElement_ElementAction_2_0ElementType());
+					doneComposite();
+				}
+			)
 			{
-				markLeaf(elementTypeProvider.getElement_ElementKeyword_2_0ElementType());
+				markLeaf(elementTypeProvider.getElement_ElementKeyword_2_1ElementType());
 			}
-			otherlv_3='element'
+			otherlv_5='element'
 			{
-				doneLeaf(otherlv_3);
+				doneLeaf(otherlv_5);
 			}
 			(
 				(
 					{
-						markLeaf(elementTypeProvider.getElement_NameSTRINGTerminalRuleCall_2_1_0ElementType());
+						markLeaf(elementTypeProvider.getElement_NameSTRINGTerminalRuleCall_2_2_0ElementType());
 					}
-					lv_name_4_0=RULE_STRING
+					lv_name_6_0=RULE_STRING
 					{
-						doneLeaf(lv_name_4_0);
+						doneLeaf(lv_name_6_0);
 					}
 				)
 			)

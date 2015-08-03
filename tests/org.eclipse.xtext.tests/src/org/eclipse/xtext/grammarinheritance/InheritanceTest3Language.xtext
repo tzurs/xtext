@@ -16,8 +16,8 @@ Model:
 
 Element :
 	  super::Element
-	| "element" name=super::ID
-	| "element" name=super::STRING
+	| {Element} "element" name=super::ID
+	| {Element} "element" name=super::STRING
 ;
 
 terminal ID: 'id';

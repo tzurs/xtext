@@ -8,7 +8,6 @@
 package org.eclipse.xtext.serializer.tokens;
 
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.xtext.GrammarUtil;
 import org.eclipse.xtext.RuleCall;
 import org.eclipse.xtext.RuleNames;
 import org.eclipse.xtext.conversion.IValueConverterService;
@@ -40,7 +39,7 @@ public class ValueSerializer implements IValueSerializer {
 	@Override
 	public boolean isValid(EObject context, RuleCall ruleCall, Object value, Acceptor errors) {
 		try {
-			String str = converter.toString(value, GrammarUtil.getGrammar(ruleCall.getRule()) + "." + ruleCall.getRule().getName());
+			String str = converter.toString(value, ruleNames.getQualifiedName(ruleCall.getRule()));
 			if (str != null)
 				return true;
 			if (errors != null)
@@ -61,7 +60,7 @@ public class ValueSerializer implements IValueSerializer {
 				return tokenUtil.serializeNode(node);
 		}
 		try {
-			String str = converter.toString(value, GrammarUtil.getGrammar(ruleCall.getRule()) + "." + ruleCall.getRule().getName());
+			String str = converter.toString(value, ruleNames.getQualifiedName(ruleCall.getRule()));
 			if (str != null)
 				return str;
 			if (errors != null)

@@ -28,8 +28,15 @@ public class InheritanceTest3LanguageSemanticSequencer extends InheritanceTestLa
 	public void createSequence(EObject context, EObject semanticObject) {
 		if(semanticObject.eClass().getEPackage() == InheritanceTestPackage.eINSTANCE) switch(semanticObject.eClass().getClassifierID()) {
 			case InheritanceTestPackage.ELEMENT:
-				sequence_Element(context, (Element) semanticObject); 
-				return; 
+				if(context == grammarAccess.getElementRule()) {
+					sequence_Element_InheritanceTestLanguageElement(context, (Element) semanticObject); 
+					return; 
+				}
+				else if(context == grammarAccess.getInheritanceTestLanguageElementRule()) {
+					sequence_Element(context, (Element) semanticObject); 
+					return; 
+				}
+				else break;
 			case InheritanceTestPackage.MODEL:
 				sequence_Model(context, (Model) semanticObject); 
 				return; 
@@ -37,4 +44,11 @@ public class InheritanceTest3LanguageSemanticSequencer extends InheritanceTestLa
 		if (errorAcceptor != null) errorAcceptor.accept(diagnosticProvider.createInvalidContextOrTypeDiagnostic(semanticObject, context));
 	}
 	
+	/**
+	 * Constraint:
+	 *     (name=ID | name=ID | name=STRING)
+	 */
+	protected void sequence_Element_InheritanceTestLanguageElement(EObject context, Element semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
 }

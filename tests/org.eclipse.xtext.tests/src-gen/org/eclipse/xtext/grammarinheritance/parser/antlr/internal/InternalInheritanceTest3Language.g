@@ -117,15 +117,21 @@ ruleElement returns [EObject current=null]
         afterParserOrEnumRuleCall();
     }
 
-    |(	otherlv_1='element' 
+    |((
     {
-    	newLeafNode(otherlv_1, grammarAccess.getElementAccess().getElementKeyword_1_0());
+        $current = forceCreateModelElement(
+            grammarAccess.getElementAccess().getElementAction_1_0(),
+            $current);
+    }
+)	otherlv_2='element' 
+    {
+    	newLeafNode(otherlv_2, grammarAccess.getElementAccess().getElementKeyword_1_1());
     }
 (
 (
-		lv_name_2_0=SUPER_ID
+		lv_name_3_0=SUPER_ID
 		{
-			newLeafNode(lv_name_2_0, grammarAccess.getElementAccess().getNameIDTerminalRuleCall_1_1_0()); 
+			newLeafNode(lv_name_3_0, grammarAccess.getElementAccess().getNameIDTerminalRuleCall_1_2_0()); 
 		}
 		{
 	        if ($current==null) {
@@ -134,21 +140,27 @@ ruleElement returns [EObject current=null]
        		setWithLastConsumed(
        			$current, 
        			"name",
-        		lv_name_2_0, 
+        		lv_name_3_0, 
         		"org.eclipse.xtext.common.Terminals.ID");
 	    }
 
 )
 ))
-    |(	otherlv_3='element' 
+    |((
     {
-    	newLeafNode(otherlv_3, grammarAccess.getElementAccess().getElementKeyword_2_0());
+        $current = forceCreateModelElement(
+            grammarAccess.getElementAccess().getElementAction_2_0(),
+            $current);
+    }
+)	otherlv_5='element' 
+    {
+    	newLeafNode(otherlv_5, grammarAccess.getElementAccess().getElementKeyword_2_1());
     }
 (
 (
-		lv_name_4_0=RULE_STRING
+		lv_name_6_0=RULE_STRING
 		{
-			newLeafNode(lv_name_4_0, grammarAccess.getElementAccess().getNameSTRINGTerminalRuleCall_2_1_0()); 
+			newLeafNode(lv_name_6_0, grammarAccess.getElementAccess().getNameSTRINGTerminalRuleCall_2_2_0()); 
 		}
 		{
 	        if ($current==null) {
@@ -157,7 +169,7 @@ ruleElement returns [EObject current=null]
        		setWithLastConsumed(
        			$current, 
        			"name",
-        		lv_name_4_0, 
+        		lv_name_6_0, 
         		"org.eclipse.xtext.common.Terminals.STRING");
 	    }
 

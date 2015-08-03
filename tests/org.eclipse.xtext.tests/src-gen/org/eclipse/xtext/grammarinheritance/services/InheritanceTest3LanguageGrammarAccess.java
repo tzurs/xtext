@@ -36,47 +36,55 @@ public class InheritanceTest3LanguageGrammarAccess extends AbstractGrammarElemen
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cElementParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final Group cGroup_1 = (Group)cAlternatives.eContents().get(1);
-		private final Keyword cElementKeyword_1_0 = (Keyword)cGroup_1.eContents().get(0);
-		private final Assignment cNameAssignment_1_1 = (Assignment)cGroup_1.eContents().get(1);
-		private final RuleCall cNameIDTerminalRuleCall_1_1_0 = (RuleCall)cNameAssignment_1_1.eContents().get(0);
+		private final Action cElementAction_1_0 = (Action)cGroup_1.eContents().get(0);
+		private final Keyword cElementKeyword_1_1 = (Keyword)cGroup_1.eContents().get(1);
+		private final Assignment cNameAssignment_1_2 = (Assignment)cGroup_1.eContents().get(2);
+		private final RuleCall cNameIDTerminalRuleCall_1_2_0 = (RuleCall)cNameAssignment_1_2.eContents().get(0);
 		private final Group cGroup_2 = (Group)cAlternatives.eContents().get(2);
-		private final Keyword cElementKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
-		private final Assignment cNameAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
-		private final RuleCall cNameSTRINGTerminalRuleCall_2_1_0 = (RuleCall)cNameAssignment_2_1.eContents().get(0);
+		private final Action cElementAction_2_0 = (Action)cGroup_2.eContents().get(0);
+		private final Keyword cElementKeyword_2_1 = (Keyword)cGroup_2.eContents().get(1);
+		private final Assignment cNameAssignment_2_2 = (Assignment)cGroup_2.eContents().get(2);
+		private final RuleCall cNameSTRINGTerminalRuleCall_2_2_0 = (RuleCall)cNameAssignment_2_2.eContents().get(0);
 		
 		//Element:
-		//	super | "element" name=super::ID | "element" name=STRING;
+		//	super | {Element} "element" name=super::ID | {Element} "element" name=STRING;
 		@Override public ParserRule getRule() { return rule; }
 
-		//super | "element" name=super::ID | "element" name=STRING
+		//super | {Element} "element" name=super::ID | {Element} "element" name=STRING
 		public Alternatives getAlternatives() { return cAlternatives; }
 
 		//super
 		public RuleCall getElementParserRuleCall_0() { return cElementParserRuleCall_0; }
 
-		//"element" name=super::ID
+		//{Element} "element" name=super::ID
 		public Group getGroup_1() { return cGroup_1; }
 
+		//{Element}
+		public Action getElementAction_1_0() { return cElementAction_1_0; }
+
 		//"element"
-		public Keyword getElementKeyword_1_0() { return cElementKeyword_1_0; }
+		public Keyword getElementKeyword_1_1() { return cElementKeyword_1_1; }
 
 		//name=super::ID
-		public Assignment getNameAssignment_1_1() { return cNameAssignment_1_1; }
+		public Assignment getNameAssignment_1_2() { return cNameAssignment_1_2; }
 
 		//super::ID
-		public RuleCall getNameIDTerminalRuleCall_1_1_0() { return cNameIDTerminalRuleCall_1_1_0; }
+		public RuleCall getNameIDTerminalRuleCall_1_2_0() { return cNameIDTerminalRuleCall_1_2_0; }
 
-		//"element" name=STRING
+		//{Element} "element" name=STRING
 		public Group getGroup_2() { return cGroup_2; }
 
+		//{Element}
+		public Action getElementAction_2_0() { return cElementAction_2_0; }
+
 		//"element"
-		public Keyword getElementKeyword_2_0() { return cElementKeyword_2_0; }
+		public Keyword getElementKeyword_2_1() { return cElementKeyword_2_1; }
 
 		//name=STRING
-		public Assignment getNameAssignment_2_1() { return cNameAssignment_2_1; }
+		public Assignment getNameAssignment_2_2() { return cNameAssignment_2_2; }
 
 		//STRING
-		public RuleCall getNameSTRINGTerminalRuleCall_2_1_0() { return cNameSTRINGTerminalRuleCall_2_1_0; }
+		public RuleCall getNameSTRINGTerminalRuleCall_2_2_0() { return cNameSTRINGTerminalRuleCall_2_2_0; }
 	}
 	
 	
@@ -136,7 +144,7 @@ public class InheritanceTest3LanguageGrammarAccess extends AbstractGrammarElemen
 	}
 
 	//Element:
-	//	super | "element" name=super::ID | "element" name=STRING;
+	//	super | {Element} "element" name=super::ID | {Element} "element" name=STRING;
 	public ElementElements getElementAccess() {
 		return pElement;
 	}

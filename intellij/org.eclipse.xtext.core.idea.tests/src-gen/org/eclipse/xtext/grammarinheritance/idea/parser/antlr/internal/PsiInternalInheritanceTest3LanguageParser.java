@@ -163,18 +163,18 @@ public class PsiInternalInheritanceTest3LanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleElement"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:75:1: ruleElement : ( superElement | (otherlv_1= 'element' ( (lv_name_2_0= SUPER_ID ) ) ) | (otherlv_3= 'element' ( (lv_name_4_0= RULE_STRING ) ) ) ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:75:1: ruleElement : ( superElement | ( () otherlv_2= 'element' ( (lv_name_3_0= SUPER_ID ) ) ) | ( () otherlv_5= 'element' ( (lv_name_6_0= RULE_STRING ) ) ) ) ;
     public final void ruleElement() throws RecognitionException {
-        Token otherlv_1=null;
-        Token lv_name_2_0=null;
-        Token otherlv_3=null;
-        Token lv_name_4_0=null;
+        Token otherlv_2=null;
+        Token lv_name_3_0=null;
+        Token otherlv_5=null;
+        Token lv_name_6_0=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:75:12: ( ( superElement | (otherlv_1= 'element' ( (lv_name_2_0= SUPER_ID ) ) ) | (otherlv_3= 'element' ( (lv_name_4_0= RULE_STRING ) ) ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:76:2: ( superElement | (otherlv_1= 'element' ( (lv_name_2_0= SUPER_ID ) ) ) | (otherlv_3= 'element' ( (lv_name_4_0= RULE_STRING ) ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:75:12: ( ( superElement | ( () otherlv_2= 'element' ( (lv_name_3_0= SUPER_ID ) ) ) | ( () otherlv_5= 'element' ( (lv_name_6_0= RULE_STRING ) ) ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:76:2: ( superElement | ( () otherlv_2= 'element' ( (lv_name_3_0= SUPER_ID ) ) ) | ( () otherlv_5= 'element' ( (lv_name_6_0= RULE_STRING ) ) ) )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:76:2: ( superElement | (otherlv_1= 'element' ( (lv_name_2_0= SUPER_ID ) ) ) | (otherlv_3= 'element' ( (lv_name_4_0= RULE_STRING ) ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:76:2: ( superElement | ( () otherlv_2= 'element' ( (lv_name_3_0= SUPER_ID ) ) ) | ( () otherlv_5= 'element' ( (lv_name_6_0= RULE_STRING ) ) ) )
             int alt1=3;
             int LA1_0 = input.LA(1);
 
@@ -228,30 +228,40 @@ public class PsiInternalInheritanceTest3LanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:85:3: (otherlv_1= 'element' ( (lv_name_2_0= SUPER_ID ) ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:85:3: ( () otherlv_2= 'element' ( (lv_name_3_0= SUPER_ID ) ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:85:3: (otherlv_1= 'element' ( (lv_name_2_0= SUPER_ID ) ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:86:4: otherlv_1= 'element' ( (lv_name_2_0= SUPER_ID ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:85:3: ( () otherlv_2= 'element' ( (lv_name_3_0= SUPER_ID ) ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:86:4: () otherlv_2= 'element' ( (lv_name_3_0= SUPER_ID ) )
+                    {
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:86:4: ()
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:87:5: 
                     {
 
-                    				markLeaf(elementTypeProvider.getElement_ElementKeyword_1_0ElementType());
+                    					precedeComposite(elementTypeProvider.getElement_ElementAction_1_0ElementType());
+                    					doneComposite();
+                    				
+
+                    }
+
+
+                    				markLeaf(elementTypeProvider.getElement_ElementKeyword_1_1ElementType());
                     			
-                    otherlv_1=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleElement133); 
+                    otherlv_2=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleElement149); 
 
-                    				doneLeaf(otherlv_1);
+                    				doneLeaf(otherlv_2);
                     			
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:93:4: ( (lv_name_2_0= SUPER_ID ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:94:5: (lv_name_2_0= SUPER_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:99:4: ( (lv_name_3_0= SUPER_ID ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:100:5: (lv_name_3_0= SUPER_ID )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:94:5: (lv_name_2_0= SUPER_ID )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:95:6: lv_name_2_0= SUPER_ID
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:100:5: (lv_name_3_0= SUPER_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:101:6: lv_name_3_0= SUPER_ID
                     {
 
-                    						markLeaf(elementTypeProvider.getElement_NameIDTerminalRuleCall_1_1_0ElementType());
+                    						markLeaf(elementTypeProvider.getElement_NameIDTerminalRuleCall_1_2_0ElementType());
                     					
-                    lv_name_2_0=(Token)match(input,SUPER_ID,FollowSets000.FOLLOW_SUPER_ID_in_ruleElement165); 
+                    lv_name_3_0=(Token)match(input,SUPER_ID,FollowSets000.FOLLOW_SUPER_ID_in_ruleElement181); 
 
-                    						doneLeaf(lv_name_2_0);
+                    						doneLeaf(lv_name_3_0);
                     					
 
                     }
@@ -266,30 +276,40 @@ public class PsiInternalInheritanceTest3LanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 3 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:106:3: (otherlv_3= 'element' ( (lv_name_4_0= RULE_STRING ) ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:112:3: ( () otherlv_5= 'element' ( (lv_name_6_0= RULE_STRING ) ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:106:3: (otherlv_3= 'element' ( (lv_name_4_0= RULE_STRING ) ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:107:4: otherlv_3= 'element' ( (lv_name_4_0= RULE_STRING ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:112:3: ( () otherlv_5= 'element' ( (lv_name_6_0= RULE_STRING ) ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:113:4: () otherlv_5= 'element' ( (lv_name_6_0= RULE_STRING ) )
+                    {
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:113:4: ()
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:114:5: 
                     {
 
-                    				markLeaf(elementTypeProvider.getElement_ElementKeyword_2_0ElementType());
+                    					precedeComposite(elementTypeProvider.getElement_ElementAction_2_0ElementType());
+                    					doneComposite();
+                    				
+
+                    }
+
+
+                    				markLeaf(elementTypeProvider.getElement_ElementKeyword_2_1ElementType());
                     			
-                    otherlv_3=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleElement211); 
+                    otherlv_5=(Token)match(input,12,FollowSets000.FOLLOW_12_in_ruleElement243); 
 
-                    				doneLeaf(otherlv_3);
+                    				doneLeaf(otherlv_5);
                     			
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:114:4: ( (lv_name_4_0= RULE_STRING ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:115:5: (lv_name_4_0= RULE_STRING )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:126:4: ( (lv_name_6_0= RULE_STRING ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:127:5: (lv_name_6_0= RULE_STRING )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:115:5: (lv_name_4_0= RULE_STRING )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:116:6: lv_name_4_0= RULE_STRING
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:127:5: (lv_name_6_0= RULE_STRING )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:128:6: lv_name_6_0= RULE_STRING
                     {
 
-                    						markLeaf(elementTypeProvider.getElement_NameSTRINGTerminalRuleCall_2_1_0ElementType());
+                    						markLeaf(elementTypeProvider.getElement_NameSTRINGTerminalRuleCall_2_2_0ElementType());
                     					
-                    lv_name_4_0=(Token)match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_ruleElement243); 
+                    lv_name_6_0=(Token)match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_ruleElement275); 
 
-                    						doneLeaf(lv_name_4_0);
+                    						doneLeaf(lv_name_6_0);
                     					
 
                     }
@@ -322,19 +342,19 @@ public class PsiInternalInheritanceTest3LanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entrySuperModel"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:130:1: entrySuperModel : superModel EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:142:1: entrySuperModel : superModel EOF ;
     public final void entrySuperModel() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:130:16: ( superModel EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:131:2: superModel EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:142:16: ( superModel EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:143:2: superModel EOF
             {
              markComposite(elementTypeProvider.getInheritanceTestLanguageModelElementType()); 
-            pushFollow(FollowSets000.FOLLOW_superModel_in_entrySuperModel281);
+            pushFollow(FollowSets000.FOLLOW_superModel_in_entrySuperModel313);
             superModel();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entrySuperModel284); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entrySuperModel316); 
 
             }
 
@@ -351,7 +371,7 @@ public class PsiInternalInheritanceTest3LanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "superModel"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:136:1: superModel : (otherlv_0= 'model' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleElement ) )* otherlv_4= '}' ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:148:1: superModel : (otherlv_0= 'model' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleElement ) )* otherlv_4= '}' ) ;
     public final void superModel() throws RecognitionException {
         Token otherlv_0=null;
         Token lv_name_1_0=null;
@@ -359,29 +379,29 @@ public class PsiInternalInheritanceTest3LanguageParser extends AbstractPsiAntlrP
         Token otherlv_4=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:136:11: ( (otherlv_0= 'model' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleElement ) )* otherlv_4= '}' ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:137:2: (otherlv_0= 'model' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleElement ) )* otherlv_4= '}' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:148:11: ( (otherlv_0= 'model' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleElement ) )* otherlv_4= '}' ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:149:2: (otherlv_0= 'model' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleElement ) )* otherlv_4= '}' )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:137:2: (otherlv_0= 'model' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleElement ) )* otherlv_4= '}' )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:138:3: otherlv_0= 'model' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleElement ) )* otherlv_4= '}'
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:149:2: (otherlv_0= 'model' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleElement ) )* otherlv_4= '}' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:150:3: otherlv_0= 'model' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleElement ) )* otherlv_4= '}'
             {
 
             			markLeaf(elementTypeProvider.getInheritanceTestLanguageModel_ModelKeyword_0ElementType());
             		
-            otherlv_0=(Token)match(input,13,FollowSets000.FOLLOW_13_in_superModel303); 
+            otherlv_0=(Token)match(input,13,FollowSets000.FOLLOW_13_in_superModel335); 
 
             			doneLeaf(otherlv_0);
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:145:3: ( (lv_name_1_0= RULE_ID ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:146:4: (lv_name_1_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:157:3: ( (lv_name_1_0= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:158:4: (lv_name_1_0= RULE_ID )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:146:4: (lv_name_1_0= RULE_ID )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:147:5: lv_name_1_0= RULE_ID
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:158:4: (lv_name_1_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:159:5: lv_name_1_0= RULE_ID
             {
 
             					markLeaf(elementTypeProvider.getInheritanceTestLanguageModel_NameIDTerminalRuleCall_1_0ElementType());
             				
-            lv_name_1_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_superModel330); 
+            lv_name_1_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_superModel362); 
 
             					doneLeaf(lv_name_1_0);
             				
@@ -394,11 +414,11 @@ public class PsiInternalInheritanceTest3LanguageParser extends AbstractPsiAntlrP
 
             			markLeaf(elementTypeProvider.getInheritanceTestLanguageModel_LeftCurlyBracketKeyword_2ElementType());
             		
-            otherlv_2=(Token)match(input,14,FollowSets000.FOLLOW_14_in_superModel355); 
+            otherlv_2=(Token)match(input,14,FollowSets000.FOLLOW_14_in_superModel387); 
 
             			doneLeaf(otherlv_2);
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:163:3: ( (lv_elements_3_0= ruleElement ) )*
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:175:3: ( (lv_elements_3_0= ruleElement ) )*
             loop2:
             do {
                 int alt2=2;
@@ -411,15 +431,15 @@ public class PsiInternalInheritanceTest3LanguageParser extends AbstractPsiAntlrP
 
                 switch (alt2) {
             	case 1 :
-            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:164:4: (lv_elements_3_0= ruleElement )
+            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:176:4: (lv_elements_3_0= ruleElement )
             	    {
-            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:164:4: (lv_elements_3_0= ruleElement )
-            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:165:5: lv_elements_3_0= ruleElement
+            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:176:4: (lv_elements_3_0= ruleElement )
+            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:177:5: lv_elements_3_0= ruleElement
             	    {
 
             	    					markComposite(elementTypeProvider.getInheritanceTestLanguageModel_ElementsElementParserRuleCall_3_0ElementType());
             	    				
-            	    pushFollow(FollowSets000.FOLLOW_ruleElement_in_superModel382);
+            	    pushFollow(FollowSets000.FOLLOW_ruleElement_in_superModel414);
             	    ruleElement();
 
             	    state._fsp--;
@@ -442,7 +462,7 @@ public class PsiInternalInheritanceTest3LanguageParser extends AbstractPsiAntlrP
 
             			markLeaf(elementTypeProvider.getInheritanceTestLanguageModel_RightCurlyBracketKeyword_4ElementType());
             		
-            otherlv_4=(Token)match(input,15,FollowSets000.FOLLOW_15_in_superModel408); 
+            otherlv_4=(Token)match(input,15,FollowSets000.FOLLOW_15_in_superModel440); 
 
             			doneLeaf(otherlv_4);
             		
@@ -465,19 +485,19 @@ public class PsiInternalInheritanceTest3LanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entrySuperElement"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:185:1: entrySuperElement : superElement EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:197:1: entrySuperElement : superElement EOF ;
     public final void entrySuperElement() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:185:18: ( superElement EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:186:2: superElement EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:197:18: ( superElement EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:198:2: superElement EOF
             {
              markComposite(elementTypeProvider.getInheritanceTestLanguageElementElementType()); 
-            pushFollow(FollowSets000.FOLLOW_superElement_in_entrySuperElement428);
+            pushFollow(FollowSets000.FOLLOW_superElement_in_entrySuperElement460);
             superElement();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entrySuperElement431); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entrySuperElement463); 
 
             }
 
@@ -494,35 +514,35 @@ public class PsiInternalInheritanceTest3LanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "superElement"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:191:1: superElement : (otherlv_0= 'element' ( (lv_name_1_0= RULE_ID ) ) ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:203:1: superElement : (otherlv_0= 'element' ( (lv_name_1_0= RULE_ID ) ) ) ;
     public final void superElement() throws RecognitionException {
         Token otherlv_0=null;
         Token lv_name_1_0=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:191:13: ( (otherlv_0= 'element' ( (lv_name_1_0= RULE_ID ) ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:192:2: (otherlv_0= 'element' ( (lv_name_1_0= RULE_ID ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:203:13: ( (otherlv_0= 'element' ( (lv_name_1_0= RULE_ID ) ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:204:2: (otherlv_0= 'element' ( (lv_name_1_0= RULE_ID ) ) )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:192:2: (otherlv_0= 'element' ( (lv_name_1_0= RULE_ID ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:193:3: otherlv_0= 'element' ( (lv_name_1_0= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:204:2: (otherlv_0= 'element' ( (lv_name_1_0= RULE_ID ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:205:3: otherlv_0= 'element' ( (lv_name_1_0= RULE_ID ) )
             {
 
             			markLeaf(elementTypeProvider.getInheritanceTestLanguageElement_ElementKeyword_0ElementType());
             		
-            otherlv_0=(Token)match(input,12,FollowSets000.FOLLOW_12_in_superElement450); 
+            otherlv_0=(Token)match(input,12,FollowSets000.FOLLOW_12_in_superElement482); 
 
             			doneLeaf(otherlv_0);
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:200:3: ( (lv_name_1_0= RULE_ID ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:201:4: (lv_name_1_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:212:3: ( (lv_name_1_0= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:213:4: (lv_name_1_0= RULE_ID )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:201:4: (lv_name_1_0= RULE_ID )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:202:5: lv_name_1_0= RULE_ID
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:213:4: (lv_name_1_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/grammarinheritance/idea/parser/antlr/internal/PsiInternalInheritanceTest3Language.g:214:5: lv_name_1_0= RULE_ID
             {
 
             					markLeaf(elementTypeProvider.getInheritanceTestLanguageElement_NameIDTerminalRuleCall_1_0ElementType());
             				
-            lv_name_1_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_superElement477); 
+            lv_name_1_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_superElement509); 
 
             					doneLeaf(lv_name_1_0);
             				
@@ -562,21 +582,21 @@ public class PsiInternalInheritanceTest3LanguageParser extends AbstractPsiAntlrP
         public static final BitSet FOLLOW_ruleElement_in_entryRuleElement85 = new BitSet(new long[]{0x0000000000000000L});
         public static final BitSet FOLLOW_EOF_in_entryRuleElement88 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_superElement_in_ruleElement105 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_12_in_ruleElement133 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_SUPER_ID_in_ruleElement165 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_12_in_ruleElement211 = new BitSet(new long[]{0x0000000000000020L});
-        public static final BitSet FOLLOW_RULE_STRING_in_ruleElement243 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_superModel_in_entrySuperModel281 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entrySuperModel284 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_13_in_superModel303 = new BitSet(new long[]{0x0000000000000040L});
-        public static final BitSet FOLLOW_RULE_ID_in_superModel330 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_14_in_superModel355 = new BitSet(new long[]{0x0000000000009000L});
-        public static final BitSet FOLLOW_ruleElement_in_superModel382 = new BitSet(new long[]{0x0000000000009000L});
-        public static final BitSet FOLLOW_15_in_superModel408 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_superElement_in_entrySuperElement428 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entrySuperElement431 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_12_in_superElement450 = new BitSet(new long[]{0x0000000000000040L});
-        public static final BitSet FOLLOW_RULE_ID_in_superElement477 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_12_in_ruleElement149 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_SUPER_ID_in_ruleElement181 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_12_in_ruleElement243 = new BitSet(new long[]{0x0000000000000020L});
+        public static final BitSet FOLLOW_RULE_STRING_in_ruleElement275 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_superModel_in_entrySuperModel313 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entrySuperModel316 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_13_in_superModel335 = new BitSet(new long[]{0x0000000000000040L});
+        public static final BitSet FOLLOW_RULE_ID_in_superModel362 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_14_in_superModel387 = new BitSet(new long[]{0x0000000000009000L});
+        public static final BitSet FOLLOW_ruleElement_in_superModel414 = new BitSet(new long[]{0x0000000000009000L});
+        public static final BitSet FOLLOW_15_in_superModel440 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_superElement_in_entrySuperElement460 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entrySuperElement463 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_12_in_superElement482 = new BitSet(new long[]{0x0000000000000040L});
+        public static final BitSet FOLLOW_RULE_ID_in_superElement509 = new BitSet(new long[]{0x0000000000000002L});
     }
 
 

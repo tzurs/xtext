@@ -61,6 +61,16 @@ public class ParserTest extends AbstractXtextTests {
 		assertEquals("string", element.getName());
 		List<INode> nodesForFeature = NodeModelUtils.findNodesForFeature(element, InheritanceTestPackage.Literals.ELEMENT__NAME);
 		assertTrue(nodesForFeature.size() == 1);
-		assertEquals("string", nodesForFeature.get(0).getText());
+		assertEquals("'string'", nodesForFeature.get(0).getText());
+	}
+	
+	@Test public void test_04() throws Exception {
+		Model model = (Model) getModel("model id { element 'with spaces' }");
+		assertEquals("id", model.getName());
+		Element element = model.getElements().get(0);
+		assertEquals("with spaces", element.getName());
+		List<INode> nodesForFeature = NodeModelUtils.findNodesForFeature(element, InheritanceTestPackage.Literals.ELEMENT__NAME);
+		assertTrue(nodesForFeature.size() == 1);
+		assertEquals("'with spaces'", nodesForFeature.get(0).getText());
 	}
 }

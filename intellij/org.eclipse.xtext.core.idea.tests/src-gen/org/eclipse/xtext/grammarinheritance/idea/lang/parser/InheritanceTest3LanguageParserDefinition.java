@@ -28,8 +28,20 @@ public class InheritanceTest3LanguageParserDefinition extends AbstractXtextParse
 		IElementType elementType = node.getElementType();
 		if (elementType == elementTypeProvider.getInheritanceTestLanguageModel_ElementsElementParserRuleCall_3_0ElementType()) {
 			return new PsiNamedEObjectImpl(node,
-				elementTypeProvider.getElement_NameIDTerminalRuleCall_1_1_0ElementType(),
-				elementTypeProvider.getElement_NameSTRINGTerminalRuleCall_2_1_0ElementType()
+				elementTypeProvider.getElement_NameIDTerminalRuleCall_1_2_0ElementType(),
+				elementTypeProvider.getElement_NameSTRINGTerminalRuleCall_2_2_0ElementType()
+			);
+		}
+		if (elementType == elementTypeProvider.getElement_ElementAction_1_0ElementType()) {
+			return new PsiNamedEObjectImpl(node,
+				elementTypeProvider.getElement_NameIDTerminalRuleCall_1_2_0ElementType(),
+				elementTypeProvider.getElement_NameSTRINGTerminalRuleCall_2_2_0ElementType()
+			);
+		}
+		if (elementType == elementTypeProvider.getElement_ElementAction_2_0ElementType()) {
+			return new PsiNamedEObjectImpl(node,
+				elementTypeProvider.getElement_NameIDTerminalRuleCall_1_2_0ElementType(),
+				elementTypeProvider.getElement_NameSTRINGTerminalRuleCall_2_2_0ElementType()
 			);
 		}
 		if (elementType == elementTypeProvider.getModel_ModelParserRuleCallElementType()) {
