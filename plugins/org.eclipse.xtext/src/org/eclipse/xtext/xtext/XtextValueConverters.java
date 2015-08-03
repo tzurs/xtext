@@ -16,9 +16,12 @@ import org.eclipse.xtext.conversion.impl.AbstractNullSafeConverter;
 import org.eclipse.xtext.nodemodel.ILeafNode;
 import org.eclipse.xtext.nodemodel.INode;
 
+import com.google.inject.Singleton;
+
 /**
  * @author Sebastian Zarnekow - Initial contribution and API
  */
+@Singleton
 public class XtextValueConverters extends DefaultTerminalConverters {
 
 	@ValueConverter(rule = "GrammarID")
