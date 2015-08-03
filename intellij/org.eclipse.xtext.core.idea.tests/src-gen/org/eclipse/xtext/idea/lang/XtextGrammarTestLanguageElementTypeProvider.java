@@ -786,8 +786,8 @@ public class XtextGrammarTestLanguageElementTypeProvider implements IElementType
 		public static IGrammarAwareElementType createConditionalBranch_FilteredAssignment_1_2ElementType() {
 			return new IGrammarAwareElementType("ConditionalBranch_FilteredAssignment_1_2_ELEMENT_TYPE", XtextGrammarTestLanguageLanguage.INSTANCE, GRAMMAR_ACCESS.getConditionalBranchAccess().getFilteredAssignment_1_2());
 		}
-		public static IGrammarAwareElementType createConditionalBranch_FilteredExclamationMarkKeyword_1_2_0ElementType() {
-			return new IGrammarAwareElementType("ConditionalBranch_FilteredExclamationMarkKeyword_1_2_0_ELEMENT_TYPE", XtextGrammarTestLanguageLanguage.INSTANCE, GRAMMAR_ACCESS.getConditionalBranchAccess().getFilteredExclamationMarkKeyword_1_2_0());
+		public static IGrammarAwareElementType createConditionalBranch_FilteredInverseLiteralValueParserRuleCall_1_2_0ElementType() {
+			return new IGrammarAwareElementType("ConditionalBranch_FilteredInverseLiteralValueParserRuleCall_1_2_0_ELEMENT_TYPE", XtextGrammarTestLanguageLanguage.INSTANCE, GRAMMAR_ACCESS.getConditionalBranchAccess().getFilteredInverseLiteralValueParserRuleCall_1_2_0());
 		}
 		public static IGrammarAwareElementType createConditionalBranch_ParameterAssignment_1_3ElementType() {
 			return new IGrammarAwareElementType("ConditionalBranch_ParameterAssignment_1_3_ELEMENT_TYPE", XtextGrammarTestLanguageLanguage.INSTANCE, GRAMMAR_ACCESS.getConditionalBranchAccess().getParameterAssignment_1_3());
@@ -823,7 +823,7 @@ public class XtextGrammarTestLanguageElementTypeProvider implements IElementType
 
 	public static final IGrammarAwareElementType ConditionalBranch_FilteredAssignment_1_2_ELEMENT_TYPE = associate(ConditionalBranchFactory.createConditionalBranch_FilteredAssignment_1_2ElementType());
 
-	public static final IGrammarAwareElementType ConditionalBranch_FilteredExclamationMarkKeyword_1_2_0_ELEMENT_TYPE = associate(ConditionalBranchFactory.createConditionalBranch_FilteredExclamationMarkKeyword_1_2_0ElementType());
+	public static final IGrammarAwareElementType ConditionalBranch_FilteredInverseLiteralValueParserRuleCall_1_2_0_ELEMENT_TYPE = associate(ConditionalBranchFactory.createConditionalBranch_FilteredInverseLiteralValueParserRuleCall_1_2_0ElementType());
 
 	public static final IGrammarAwareElementType ConditionalBranch_ParameterAssignment_1_3_ELEMENT_TYPE = associate(ConditionalBranchFactory.createConditionalBranch_ParameterAssignment_1_3ElementType());
 
@@ -1238,6 +1238,19 @@ public class XtextGrammarTestLanguageElementTypeProvider implements IElementType
 	public static final IGrammarAwareElementType LiteralValue_ExclamationMarkKeyword_0_ELEMENT_TYPE = associate(LiteralValueFactory.createLiteralValue_ExclamationMarkKeyword_0ElementType());
 
 	public static final IGrammarAwareElementType LiteralValue_PlusSignKeyword_1_ELEMENT_TYPE = associate(LiteralValueFactory.createLiteralValue_PlusSignKeyword_1ElementType());
+
+	private static class InverseLiteralValueFactory {
+		public static IGrammarAwareElementType createInverseLiteralValueElementType() {
+			return new IGrammarAwareElementType("InverseLiteralValue_ELEMENT_TYPE", XtextGrammarTestLanguageLanguage.INSTANCE, GRAMMAR_ACCESS.getInverseLiteralValueRule());
+		}
+		public static IGrammarAwareElementType createInverseLiteralValue_LiteralValueParserRuleCallElementType() {
+			return new IGrammarAwareElementType("InverseLiteralValue_LiteralValueParserRuleCall_ELEMENT_TYPE", XtextGrammarTestLanguageLanguage.INSTANCE, GRAMMAR_ACCESS.getInverseLiteralValueAccess().getLiteralValueParserRuleCall());
+		}
+	}
+
+	public static final IGrammarAwareElementType InverseLiteralValue_ELEMENT_TYPE = associate(InverseLiteralValueFactory.createInverseLiteralValueElementType());
+
+	public static final IGrammarAwareElementType InverseLiteralValue_LiteralValueParserRuleCall_ELEMENT_TYPE = associate(InverseLiteralValueFactory.createInverseLiteralValue_LiteralValueParserRuleCallElementType());
 
 	private static class NamedArgumentFactory {
 		public static IGrammarAwareElementType createNamedArgumentElementType() {
@@ -3080,8 +3093,8 @@ public class XtextGrammarTestLanguageElementTypeProvider implements IElementType
 		return ConditionalBranch_FilteredAssignment_1_2_ELEMENT_TYPE;
 	}
 
-	public IGrammarAwareElementType getConditionalBranch_FilteredExclamationMarkKeyword_1_2_0ElementType() {
-		return ConditionalBranch_FilteredExclamationMarkKeyword_1_2_0_ELEMENT_TYPE;
+	public IGrammarAwareElementType getConditionalBranch_FilteredInverseLiteralValueParserRuleCall_1_2_0ElementType() {
+		return ConditionalBranch_FilteredInverseLiteralValueParserRuleCall_1_2_0_ELEMENT_TYPE;
 	}
 
 	public IGrammarAwareElementType getConditionalBranch_ParameterAssignment_1_3ElementType() {
@@ -3406,6 +3419,14 @@ public class XtextGrammarTestLanguageElementTypeProvider implements IElementType
 
 	public IGrammarAwareElementType getLiteralValue_PlusSignKeyword_1ElementType() {
 		return LiteralValue_PlusSignKeyword_1_ELEMENT_TYPE;
+	}
+
+	public IGrammarAwareElementType getInverseLiteralValueElementType() {
+		return InverseLiteralValue_ELEMENT_TYPE;
+	}
+
+	public IGrammarAwareElementType getInverseLiteralValue_LiteralValueParserRuleCallElementType() {
+		return InverseLiteralValue_LiteralValueParserRuleCall_ELEMENT_TYPE;
 	}
 
 	public IGrammarAwareElementType getNamedArgumentElementType() {

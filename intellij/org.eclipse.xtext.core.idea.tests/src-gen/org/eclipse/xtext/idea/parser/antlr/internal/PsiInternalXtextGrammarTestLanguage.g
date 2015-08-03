@@ -796,11 +796,11 @@ ruleConditionalBranch:
 			(
 				(
 					{
-						markLeaf(elementTypeProvider.getConditionalBranch_FilteredExclamationMarkKeyword_1_2_0ElementType());
+						markComposite(elementTypeProvider.getConditionalBranch_FilteredInverseLiteralValueParserRuleCall_1_2_0ElementType());
 					}
-					lv_filtered_3_0='!'
+					lv_filtered_3_0=ruleInverseLiteralValue
 					{
-						doneLeaf(lv_filtered_3_0);
+						doneComposite();
 					}
 				)
 			)
@@ -1273,6 +1273,23 @@ ruleLiteralValue:
 			doneLeaf(kw);
 		}
 	)
+;
+
+//Entry rule entryRuleInverseLiteralValue
+entryRuleInverseLiteralValue:
+	{ markComposite(elementTypeProvider.getInverseLiteralValueElementType()); }
+	ruleInverseLiteralValue
+	EOF;
+
+// Rule InverseLiteralValue
+ruleInverseLiteralValue:
+	{
+		markComposite(elementTypeProvider.getInverseLiteralValue_LiteralValueParserRuleCallElementType());
+	}
+	ruleLiteralValue
+	{
+		doneComposite();
+	}
 ;
 
 //Entry rule entryRuleNamedArgument

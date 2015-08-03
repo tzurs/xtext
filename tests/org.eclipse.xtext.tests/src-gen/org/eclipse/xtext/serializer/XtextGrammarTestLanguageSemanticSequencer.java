@@ -530,7 +530,7 @@ public class XtextGrammarTestLanguageSemanticSequencer extends AbstractDelegatin
 	
 	/**
 	 * Constraint:
-	 *     (filtered?='!' parameter=[Parameter|ID] guardedElement=UnorderedGroup (cardinality='?' | cardinality='*' | cardinality='+')?)
+	 *     (filtered=InverseLiteralValue parameter=[Parameter|ID] guardedElement=UnorderedGroup (cardinality='?' | cardinality='*' | cardinality='+')?)
 	 */
 	protected void sequence_AbstractTokenWithCardinality_ConditionalBranch(EObject context, ConditionalBranch semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -614,7 +614,7 @@ public class XtextGrammarTestLanguageSemanticSequencer extends AbstractDelegatin
 	
 	/**
 	 * Constraint:
-	 *     (filtered?='!' parameter=[Parameter|ID] guardedElement=UnorderedGroup)
+	 *     (filtered=InverseLiteralValue parameter=[Parameter|ID] guardedElement=UnorderedGroup)
 	 */
 	protected void sequence_ConditionalBranch(EObject context, ConditionalBranch semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

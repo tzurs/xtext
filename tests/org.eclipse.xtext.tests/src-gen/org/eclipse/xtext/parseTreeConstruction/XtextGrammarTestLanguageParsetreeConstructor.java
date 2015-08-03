@@ -2813,11 +2813,13 @@ protected class Alternatives_ElementsAssignment_1_1_1 extends AssignmentToken  {
 /************ begin Rule ConditionalBranch ****************
  *
  * ConditionalBranch returns AbstractElement:
- * 	UnorderedGroup | {ConditionalBranch} "[" filtered?="!" parameter=[Parameter] "]" guardedElement=UnorderedGroup;
+ * 	UnorderedGroup | {ConditionalBranch} "[" filtered=InverseLiteralValue parameter=[Parameter] "]"
+ * 	guardedElement=UnorderedGroup;
  *
  **/
 
-// UnorderedGroup | {ConditionalBranch} "[" filtered?="!" parameter=[Parameter] "]" guardedElement=UnorderedGroup
+// UnorderedGroup | {ConditionalBranch} "[" filtered=InverseLiteralValue parameter=[Parameter] "]"
+// guardedElement=UnorderedGroup
 protected class ConditionalBranch_Alternatives extends AlternativesToken {
 
 	public ConditionalBranch_Alternatives(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -2888,7 +2890,7 @@ protected class ConditionalBranch_UnorderedGroupParserRuleCall_0 extends RuleCal
 	}	
 }
 
-// {ConditionalBranch} "[" filtered?="!" parameter=[Parameter] "]" guardedElement=UnorderedGroup
+// {ConditionalBranch} "[" filtered=InverseLiteralValue parameter=[Parameter] "]" guardedElement=UnorderedGroup
 protected class ConditionalBranch_Group_1 extends GroupToken {
 	
 	public ConditionalBranch_Group_1(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -2965,7 +2967,7 @@ protected class ConditionalBranch_LeftSquareBracketKeyword_1_1 extends KeywordTo
 
 }
 
-// filtered?="!"
+// filtered=InverseLiteralValue
 protected class ConditionalBranch_FilteredAssignment_1_2 extends AssignmentToken  {
 	
 	public ConditionalBranch_FilteredAssignment_1_2(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -2989,9 +2991,9 @@ protected class ConditionalBranch_FilteredAssignment_1_2 extends AssignmentToken
 	public IEObjectConsumer tryConsume() {
 		if((value = eObjectConsumer.getConsumable("filtered",true)) == null) return null;
 		IEObjectConsumer obj = eObjectConsumer.cloneAndConsume("filtered");
-		if(Boolean.TRUE.equals(value)) { // org::eclipse::xtext::impl::KeywordImpl
-			type = AssignmentType.KEYWORD;
-			element = grammarAccess.getConditionalBranchAccess().getFilteredExclamationMarkKeyword_1_2_0();
+		if(valueSerializer.isValid(obj.getEObject(), grammarAccess.getConditionalBranchAccess().getFilteredInverseLiteralValueParserRuleCall_1_2_0(), value, null)) {
+			type = AssignmentType.DATATYPE_RULE_CALL;
+			element = grammarAccess.getConditionalBranchAccess().getFilteredInverseLiteralValueParserRuleCall_1_2_0();
 			return obj;
 		}
 		return null;
@@ -4739,6 +4741,7 @@ protected class RuleCall_RightSquareBracketKeyword_2_3 extends KeywordToken  {
 
 
 /************ end Rule RuleCall ****************/
+
 
 
 

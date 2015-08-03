@@ -104,7 +104,7 @@ public class XtextGrammarTestLanguageSyntacticSequencer extends AbstractSyntacti
 	 *     '('*
 	 *
 	 * This ambiguous syntax occurs at:
-	 *     (rule start) (ambiguity) '[' filtered?='!'
+	 *     (rule start) (ambiguity) '[' filtered=InverseLiteralValue
 	 *     (rule start) (ambiguity) '{' type=TypeRef
 	 *     (rule start) (ambiguity) feature=ID
 	 *     (rule start) (ambiguity) firstSetPredicated?='->'
@@ -124,7 +124,7 @@ public class XtextGrammarTestLanguageSyntacticSequencer extends AbstractSyntacti
 	 *     '('+
 	 *
 	 * This ambiguous syntax occurs at:
-	 *     (rule start) (ambiguity) '[' filtered?='!'
+	 *     (rule start) (ambiguity) '[' filtered=InverseLiteralValue
 	 *     (rule start) (ambiguity) '{' type=TypeRef
 	 *     (rule start) (ambiguity) feature=ID
 	 *     (rule start) (ambiguity) firstSetPredicated?='->'

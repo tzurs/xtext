@@ -957,16 +957,19 @@ ruleConditionalBranch returns [EObject current=null]
     }
 (
 (
-		lv_filtered_3_0=	'!' 
-    {
-        newLeafNode(lv_filtered_3_0, grammarAccess.getConditionalBranchAccess().getFilteredExclamationMarkKeyword_1_2_0());
-    }
- 
-	    {
+		{ 
+	        newCompositeNode(grammarAccess.getConditionalBranchAccess().getFilteredInverseLiteralValueParserRuleCall_1_2_0()); 
+	    }
+		lv_filtered_3_0=ruleInverseLiteralValue		{
 	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getConditionalBranchRule());
+	            $current = createModelElementForParent(grammarAccess.getConditionalBranchRule());
 	        }
-       		setWithLastConsumed($current, "filtered", true, "!");
+       		set(
+       			$current, 
+       			"filtered",
+        		lv_filtered_3_0, 
+        		"org.eclipse.xtext.XtextGrammarTestLanguage.InverseLiteralValue");
+	        afterParserOrEnumRuleCall();
 	    }
 
 )
@@ -1586,6 +1589,38 @@ ruleLiteralValue returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleTo
         newLeafNode(kw, grammarAccess.getLiteralValueAccess().getPlusSignKeyword_1()); 
     }
 )
+    ;
+
+
+
+
+
+// Entry rule entryRuleInverseLiteralValue
+entryRuleInverseLiteralValue returns [String current=null] 
+	:
+	{ newCompositeNode(grammarAccess.getInverseLiteralValueRule()); } 
+	 iv_ruleInverseLiteralValue=ruleInverseLiteralValue 
+	 { $current=$iv_ruleInverseLiteralValue.current.getText(); }  
+	 EOF 
+;
+
+// Rule InverseLiteralValue
+ruleInverseLiteralValue returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+
+    { 
+        newCompositeNode(grammarAccess.getInverseLiteralValueAccess().getLiteralValueParserRuleCall()); 
+    }
+    this_LiteralValue_0=ruleLiteralValue    {
+		$current.merge(this_LiteralValue_0);
+    }
+
+    { 
+        afterParserOrEnumRuleCall();
+    }
+
     ;
 
 

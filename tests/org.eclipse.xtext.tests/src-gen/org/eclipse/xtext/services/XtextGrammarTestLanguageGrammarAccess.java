@@ -652,7 +652,7 @@ public class XtextGrammarTestLanguageGrammarAccess extends AbstractGrammarElemen
 		private final Action cConditionalBranchAction_1_0 = (Action)cGroup_1.eContents().get(0);
 		private final Keyword cLeftSquareBracketKeyword_1_1 = (Keyword)cGroup_1.eContents().get(1);
 		private final Assignment cFilteredAssignment_1_2 = (Assignment)cGroup_1.eContents().get(2);
-		private final Keyword cFilteredExclamationMarkKeyword_1_2_0 = (Keyword)cFilteredAssignment_1_2.eContents().get(0);
+		private final RuleCall cFilteredInverseLiteralValueParserRuleCall_1_2_0 = (RuleCall)cFilteredAssignment_1_2.eContents().get(0);
 		private final Assignment cParameterAssignment_1_3 = (Assignment)cGroup_1.eContents().get(3);
 		private final CrossReference cParameterParameterCrossReference_1_3_0 = (CrossReference)cParameterAssignment_1_3.eContents().get(0);
 		private final RuleCall cParameterParameterIDTerminalRuleCall_1_3_0_1 = (RuleCall)cParameterParameterCrossReference_1_3_0.eContents().get(1);
@@ -661,16 +661,18 @@ public class XtextGrammarTestLanguageGrammarAccess extends AbstractGrammarElemen
 		private final RuleCall cGuardedElementUnorderedGroupParserRuleCall_1_5_0 = (RuleCall)cGuardedElementAssignment_1_5.eContents().get(0);
 		
 		//ConditionalBranch returns AbstractElement:
-		//	UnorderedGroup | {ConditionalBranch} "[" filtered?="!" parameter=[Parameter] "]" guardedElement=UnorderedGroup;
+		//	UnorderedGroup | {ConditionalBranch} "[" filtered=InverseLiteralValue parameter=[Parameter] "]"
+		//	guardedElement=UnorderedGroup;
 		@Override public ParserRule getRule() { return rule; }
 
-		//UnorderedGroup | {ConditionalBranch} "[" filtered?="!" parameter=[Parameter] "]" guardedElement=UnorderedGroup
+		//UnorderedGroup | {ConditionalBranch} "[" filtered=InverseLiteralValue parameter=[Parameter] "]"
+		//guardedElement=UnorderedGroup
 		public Alternatives getAlternatives() { return cAlternatives; }
 
 		//UnorderedGroup
 		public RuleCall getUnorderedGroupParserRuleCall_0() { return cUnorderedGroupParserRuleCall_0; }
 
-		//{ConditionalBranch} "[" filtered?="!" parameter=[Parameter] "]" guardedElement=UnorderedGroup
+		//{ConditionalBranch} "[" filtered=InverseLiteralValue parameter=[Parameter] "]" guardedElement=UnorderedGroup
 		public Group getGroup_1() { return cGroup_1; }
 
 		//{ConditionalBranch}
@@ -679,11 +681,11 @@ public class XtextGrammarTestLanguageGrammarAccess extends AbstractGrammarElemen
 		//"["
 		public Keyword getLeftSquareBracketKeyword_1_1() { return cLeftSquareBracketKeyword_1_1; }
 
-		//filtered?="!"
+		//filtered=InverseLiteralValue
 		public Assignment getFilteredAssignment_1_2() { return cFilteredAssignment_1_2; }
 
-		//"!"
-		public Keyword getFilteredExclamationMarkKeyword_1_2_0() { return cFilteredExclamationMarkKeyword_1_2_0; }
+		//InverseLiteralValue
+		public RuleCall getFilteredInverseLiteralValueParserRuleCall_1_2_0() { return cFilteredInverseLiteralValueParserRuleCall_1_2_0; }
 
 		//parameter=[Parameter]
 		public Assignment getParameterAssignment_1_3() { return cParameterAssignment_1_3; }
@@ -1054,6 +1056,18 @@ public class XtextGrammarTestLanguageGrammarAccess extends AbstractGrammarElemen
 
 		//"+"
 		public Keyword getPlusSignKeyword_1() { return cPlusSignKeyword_1; }
+	}
+
+	public class InverseLiteralValueElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.XtextGrammarTestLanguage.InverseLiteralValue");
+		private final RuleCall cLiteralValueParserRuleCall = (RuleCall)rule.eContents().get(1);
+		
+		//InverseLiteralValue returns ecore::EBoolean:
+		//	LiteralValue;
+		@Override public ParserRule getRule() { return rule; }
+
+		//LiteralValue
+		public RuleCall getLiteralValueParserRuleCall() { return cLiteralValueParserRuleCall; }
 	}
 
 	public class NamedArgumentElements extends AbstractParserRuleElementFinder {
@@ -2116,6 +2130,7 @@ public class XtextGrammarTestLanguageGrammarAccess extends AbstractGrammarElemen
 	private final KeywordElements pKeyword;
 	private final RuleCallElements pRuleCall;
 	private final LiteralValueElements pLiteralValue;
+	private final InverseLiteralValueElements pInverseLiteralValue;
 	private final NamedArgumentElements pNamedArgument;
 	private final TerminalRuleCallElements pTerminalRuleCall;
 	private final RuleIDElements pRuleID;
@@ -2175,6 +2190,7 @@ public class XtextGrammarTestLanguageGrammarAccess extends AbstractGrammarElemen
 		this.pKeyword = new KeywordElements();
 		this.pRuleCall = new RuleCallElements();
 		this.pLiteralValue = new LiteralValueElements();
+		this.pInverseLiteralValue = new InverseLiteralValueElements();
 		this.pNamedArgument = new NamedArgumentElements();
 		this.pTerminalRuleCall = new TerminalRuleCallElements();
 		this.pRuleID = new RuleIDElements();
@@ -2352,7 +2368,8 @@ public class XtextGrammarTestLanguageGrammarAccess extends AbstractGrammarElemen
 	}
 
 	//ConditionalBranch returns AbstractElement:
-	//	UnorderedGroup | {ConditionalBranch} "[" filtered?="!" parameter=[Parameter] "]" guardedElement=UnorderedGroup;
+	//	UnorderedGroup | {ConditionalBranch} "[" filtered=InverseLiteralValue parameter=[Parameter] "]"
+	//	guardedElement=UnorderedGroup;
 	public ConditionalBranchElements getConditionalBranchAccess() {
 		return pConditionalBranch;
 	}
@@ -2455,6 +2472,16 @@ public class XtextGrammarTestLanguageGrammarAccess extends AbstractGrammarElemen
 	
 	public ParserRule getLiteralValueRule() {
 		return getLiteralValueAccess().getRule();
+	}
+
+	//InverseLiteralValue returns ecore::EBoolean:
+	//	LiteralValue;
+	public InverseLiteralValueElements getInverseLiteralValueAccess() {
+		return pInverseLiteralValue;
+	}
+	
+	public ParserRule getInverseLiteralValueRule() {
+		return getInverseLiteralValueAccess().getRule();
 	}
 
 	//NamedArgument:

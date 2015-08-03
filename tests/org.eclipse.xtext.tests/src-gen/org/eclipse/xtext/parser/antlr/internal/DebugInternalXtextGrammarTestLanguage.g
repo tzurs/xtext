@@ -103,7 +103,7 @@ ruleAlternatives :
 // Rule ConditionalBranch
 ruleConditionalBranch :
 	ruleUnorderedGroup |
-	'[' '!' RULE_ID ']' ruleUnorderedGroup
+	'[' ruleInverseLiteralValue RULE_ID ']' ruleUnorderedGroup
 ;
 
 // Rule UnorderedGroup
@@ -178,6 +178,11 @@ ruleRuleCall :
 ruleLiteralValue :
 	'!' |
 	'+'
+;
+
+// Rule InverseLiteralValue
+ruleInverseLiteralValue :
+	ruleLiteralValue
 ;
 
 // Rule NamedArgument
