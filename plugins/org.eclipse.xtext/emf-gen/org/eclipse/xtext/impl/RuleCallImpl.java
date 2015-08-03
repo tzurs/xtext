@@ -6,6 +6,7 @@ import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
@@ -13,8 +14,10 @@ import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 
+import org.eclipse.emf.ecore.util.InternalEList;
 import org.eclipse.xtext.AbstractRule;
 import org.eclipse.xtext.NamedArgument;
 import org.eclipse.xtext.RuleCall;
@@ -47,7 +50,7 @@ public class RuleCallImpl extends AbstractElementImpl implements RuleCall {
 	protected AbstractRule rule;
 
 	/**
-	 * The cached value of the '{@link #getArguments() <em>Arguments</em>}' reference list.
+	 * The cached value of the '{@link #getArguments() <em>Arguments</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * @since 2.9
 	 * <!-- end-user-doc -->
@@ -144,7 +147,7 @@ public class RuleCallImpl extends AbstractElementImpl implements RuleCall {
 	 */
 	public EList<NamedArgument> getArguments() {
 		if (arguments == null) {
-			arguments = new EObjectResolvingEList<NamedArgument>(NamedArgument.class, this, XtextPackage.RULE_CALL__ARGUMENTS);
+			arguments = new EObjectContainmentEList<NamedArgument>(NamedArgument.class, this, XtextPackage.RULE_CALL__ARGUMENTS);
 		}
 		return arguments;
 	}
@@ -170,6 +173,20 @@ public class RuleCallImpl extends AbstractElementImpl implements RuleCall {
 		explicitlyCalled = newExplicitlyCalled;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, XtextPackage.RULE_CALL__EXPLICITLY_CALLED, oldExplicitlyCalled, explicitlyCalled));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case XtextPackage.RULE_CALL__ARGUMENTS:
+				return ((InternalEList<?>)getArguments()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**

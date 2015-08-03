@@ -36,10 +36,21 @@ ReferencedMetamodel :
 	'import' ePackage=[ecore::EPackage|STRING] ('as' alias=ID)?;
 
 ParserRule :
-	(^fragment?='fragment' name=ID wildcard?='*' | ^fragment?='fragment'? name=ID ('returns' type=TypeRef)?)
+	(
+		^fragment?='fragment' RuleNameAndParams wildcard?='*' // wildcard fragment 
+		| ^fragment?='fragment'? RuleNameAndParams ('returns' type=TypeRef)? // normal rule
+	)
 	(definesHiddenTokens?='hidden' '(' (hiddenTokens+=[AbstractRule] (',' hiddenTokens+=[AbstractRule])*)? ')')? ':'
     	alternatives=Alternatives   
     ';'
+;
+
+fragment RuleNameAndParams returns ParserRule:
+	name=ID ('[' (parameters+=Parameter (',' parameters+=Parameter)*)? ']')?
+;
+
+Parameter:
+	name=ID
 ;
 
 TypeRef :
@@ -47,7 +58,12 @@ TypeRef :
 ;
 
 Alternatives returns AbstractElement:
-    UnorderedGroup ({Alternatives.elements+=current} ('|' elements+=UnorderedGroup)+)?
+      ConditionalBranch ({Alternatives.elements+=current} ('|' elements+=ConditionalBranch)+)?
+;
+
+ConditionalBranch returns AbstractElement:
+	  UnorderedGroup
+	| {ConditionalBranch} '[' filtered?=InverseLiteralValue parameter=[Parameter|ID] ']' guardedElement=UnorderedGroup
 ;
 
 UnorderedGroup returns AbstractElement:
@@ -91,6 +107,27 @@ Keyword :
 ;
 
 RuleCall :
+   {RuleCall}
+   rule=[AbstractRule|RuleID] ('[' arguments+=NamedArgument (',' arguments+=NamedArgument)* ']')?
+   
+;
+
+LiteralValue returns ecore::EBoolean:
+	'!'|'+'
+;
+
+InverseLiteralValue returns ecore::EBoolean:
+	LiteralValue
+;
+
+NamedArgument:
+	{NamedArgument} 
+	( literalValue=LiteralValue? parameter=[Parameter|ID]
+	| parameter=[Parameter|ID] '=' value=[Parameter|ID]
+	)
+;
+
+TerminalRuleCall returns RuleCall:
    rule=[AbstractRule|RuleID]
 ;
 
@@ -158,7 +195,7 @@ TerminalToken returns AbstractElement:
 ;
 
 TerminalTokenElement returns AbstractElement: 
-   CharacterRange | RuleCall | ParenthesizedTerminalElement | AbstractNegatedToken | Wildcard | ^EOF
+   CharacterRange | TerminalRuleCall | ParenthesizedTerminalElement | AbstractNegatedToken | Wildcard | ^EOF
 ;
 
 ParenthesizedTerminalElement returns AbstractElement:

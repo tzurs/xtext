@@ -52,7 +52,7 @@ public interface RuleCall extends AbstractElement {
 	void setRule(AbstractRule value);
 
 	/**
-	 * Returns the value of the '<em><b>Arguments</b></em>' reference list.
+	 * Returns the value of the '<em><b>Arguments</b></em>' containment reference list.
 	 * The list contents are of type {@link org.eclipse.xtext.NamedArgument}.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -61,9 +61,9 @@ public interface RuleCall extends AbstractElement {
 	 * </p>
 	 * @since 2.9
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Arguments</em>' reference list.
+	 * @return the value of the '<em>Arguments</em>' containment reference list.
 	 * @see org.eclipse.xtext.XtextPackage#getRuleCall_Arguments()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<NamedArgument> getArguments();

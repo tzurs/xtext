@@ -689,7 +689,6 @@ public class XtextSwitch<T> extends Switch<T> {
 	 * @return the result of interpreting the object as an instance of '<em>Conditional Branch</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
-	 * 
 	 */
 	public T caseConditionalBranch(ConditionalBranch object) {
 		return null;
@@ -706,7 +705,6 @@ public class XtextSwitch<T> extends Switch<T> {
 	 * @return the result of interpreting the object as an instance of '<em>Named Argument</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
-	 * 
 	 */
 	public T caseNamedArgument(NamedArgument object) {
 		return null;

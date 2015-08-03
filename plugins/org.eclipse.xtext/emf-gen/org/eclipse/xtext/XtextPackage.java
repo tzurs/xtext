@@ -653,7 +653,7 @@ public interface XtextPackage extends EPackage {
 	int RULE_CALL__RULE = ABSTRACT_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Arguments</b></em>' reference list.
+	 * The feature id for the '<em><b>Arguments</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * @since 2.9
 	 * <!-- end-user-doc -->
@@ -1631,6 +1631,16 @@ public interface XtextPackage extends EPackage {
 	int CONDITIONAL_BRANCH__FILTERED = ABSTRACT_ELEMENT_FEATURE_COUNT + 1;
 
 	/**
+	 * The feature id for the '<em><b>Guarded Element</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_BRANCH__GUARDED_ELEMENT = ABSTRACT_ELEMENT_FEATURE_COUNT + 2;
+
+	/**
 	 * The number of structural features of the '<em>Conditional Branch</em>' class.
 	 * <!-- begin-user-doc -->
 	 * @since 2.9
@@ -1638,7 +1648,7 @@ public interface XtextPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONDITIONAL_BRANCH_FEATURE_COUNT = ABSTRACT_ELEMENT_FEATURE_COUNT + 2;
+	int CONDITIONAL_BRANCH_FEATURE_COUNT = ABSTRACT_ELEMENT_FEATURE_COUNT + 3;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.xtext.impl.NamedArgumentImpl <em>Named Argument</em>}' class.
@@ -2104,11 +2114,11 @@ public interface XtextPackage extends EPackage {
 	EReference getRuleCall_Rule();
 
 	/**
-	 * Returns the meta object for the reference list '{@link org.eclipse.xtext.RuleCall#getArguments <em>Arguments</em>}'.
+	 * Returns the meta object for the containment reference list '{@link org.eclipse.xtext.RuleCall#getArguments <em>Arguments</em>}'.
 	 * <!-- begin-user-doc -->
 	 * @since 2.9
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Arguments</em>'.
+	 * @return the meta object for the containment reference list '<em>Arguments</em>'.
 	 * @see org.eclipse.xtext.RuleCall#getArguments()
 	 * @see #getRuleCall()
 	 * @generated
@@ -2466,6 +2476,18 @@ public interface XtextPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getConditionalBranch_Filtered();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link org.eclipse.xtext.ConditionalBranch#getGuardedElement <em>Guarded Element</em>}'.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Guarded Element</em>'.
+	 * @see org.eclipse.xtext.ConditionalBranch#getGuardedElement()
+	 * @see #getConditionalBranch()
+	 * @generated
+	 */
+	EReference getConditionalBranch_GuardedElement();
 
 	/**
 	 * Returns the meta object for class '{@link org.eclipse.xtext.NamedArgument <em>Named Argument</em>}'.
@@ -2869,7 +2891,7 @@ public interface XtextPackage extends EPackage {
 		EReference RULE_CALL__RULE = eINSTANCE.getRuleCall_Rule();
 
 		/**
-		 * The meta object literal for the '<em><b>Arguments</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Arguments</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * @since 2.9
 		 * <!-- end-user-doc -->
@@ -3180,6 +3202,15 @@ public interface XtextPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute CONDITIONAL_BRANCH__FILTERED = eINSTANCE.getConditionalBranch_Filtered();
+
+		/**
+		 * The meta object literal for the '<em><b>Guarded Element</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * @since 2.9
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CONDITIONAL_BRANCH__GUARDED_ELEMENT = eINSTANCE.getConditionalBranch_GuardedElement();
 
 		/**
 		 * The meta object literal for the '{@link org.eclipse.xtext.impl.NamedArgumentImpl <em>Named Argument</em>}' class.

@@ -4,11 +4,13 @@ package org.eclipse.xtext.impl;
 
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
+import org.eclipse.xtext.AbstractElement;
 import org.eclipse.xtext.ConditionalBranch;
 import org.eclipse.xtext.Parameter;
 import org.eclipse.xtext.XtextPackage;
@@ -23,6 +25,7 @@ import org.eclipse.xtext.XtextPackage;
  * <ul>
  *   <li>{@link org.eclipse.xtext.impl.ConditionalBranchImpl#getParameter <em>Parameter</em>}</li>
  *   <li>{@link org.eclipse.xtext.impl.ConditionalBranchImpl#isFiltered <em>Filtered</em>}</li>
+ *   <li>{@link org.eclipse.xtext.impl.ConditionalBranchImpl#getGuardedElement <em>Guarded Element</em>}</li>
  * </ul>
  *
  * @generated
@@ -58,6 +61,16 @@ public class ConditionalBranchImpl extends AbstractElementImpl implements Condit
 	 * @ordered
 	 */
 	protected boolean filtered = FILTERED_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getGuardedElement() <em>Guarded Element</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getGuardedElement()
+	 * @generated
+	 * @ordered
+	 */
+	protected AbstractElement guardedElement;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -142,6 +155,63 @@ public class ConditionalBranchImpl extends AbstractElementImpl implements Condit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public AbstractElement getGuardedElement() {
+		return guardedElement;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetGuardedElement(AbstractElement newGuardedElement, NotificationChain msgs) {
+		AbstractElement oldGuardedElement = guardedElement;
+		guardedElement = newGuardedElement;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, XtextPackage.CONDITIONAL_BRANCH__GUARDED_ELEMENT, oldGuardedElement, newGuardedElement);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setGuardedElement(AbstractElement newGuardedElement) {
+		if (newGuardedElement != guardedElement) {
+			NotificationChain msgs = null;
+			if (guardedElement != null)
+				msgs = ((InternalEObject)guardedElement).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - XtextPackage.CONDITIONAL_BRANCH__GUARDED_ELEMENT, null, msgs);
+			if (newGuardedElement != null)
+				msgs = ((InternalEObject)newGuardedElement).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - XtextPackage.CONDITIONAL_BRANCH__GUARDED_ELEMENT, null, msgs);
+			msgs = basicSetGuardedElement(newGuardedElement, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, XtextPackage.CONDITIONAL_BRANCH__GUARDED_ELEMENT, newGuardedElement, newGuardedElement));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case XtextPackage.CONDITIONAL_BRANCH__GUARDED_ELEMENT:
+				return basicSetGuardedElement(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -150,6 +220,8 @@ public class ConditionalBranchImpl extends AbstractElementImpl implements Condit
 				return basicGetParameter();
 			case XtextPackage.CONDITIONAL_BRANCH__FILTERED:
 				return isFiltered();
+			case XtextPackage.CONDITIONAL_BRANCH__GUARDED_ELEMENT:
+				return getGuardedElement();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -167,6 +239,9 @@ public class ConditionalBranchImpl extends AbstractElementImpl implements Condit
 				return;
 			case XtextPackage.CONDITIONAL_BRANCH__FILTERED:
 				setFiltered((Boolean)newValue);
+				return;
+			case XtextPackage.CONDITIONAL_BRANCH__GUARDED_ELEMENT:
+				setGuardedElement((AbstractElement)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -186,6 +261,9 @@ public class ConditionalBranchImpl extends AbstractElementImpl implements Condit
 			case XtextPackage.CONDITIONAL_BRANCH__FILTERED:
 				setFiltered(FILTERED_EDEFAULT);
 				return;
+			case XtextPackage.CONDITIONAL_BRANCH__GUARDED_ELEMENT:
+				setGuardedElement((AbstractElement)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -202,6 +280,8 @@ public class ConditionalBranchImpl extends AbstractElementImpl implements Condit
 				return parameter != null;
 			case XtextPackage.CONDITIONAL_BRANCH__FILTERED:
 				return filtered != FILTERED_EDEFAULT;
+			case XtextPackage.CONDITIONAL_BRANCH__GUARDED_ELEMENT:
+				return guardedElement != null;
 		}
 		return super.eIsSet(featureID);
 	}

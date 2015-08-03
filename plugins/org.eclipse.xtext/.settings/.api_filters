@@ -24,35 +24,15 @@
             </message_arguments>
         </filter>
     </resource>
-    <resource path="emf-gen/org/eclipse/xtext/XtextFactory.java" type="org.eclipse.xtext.XtextFactory">
-        <filter id="403804204">
-            <message_arguments>
-                <message_argument value="org.eclipse.xtext.XtextFactory"/>
-                <message_argument value="createConditionalBranch()"/>
-            </message_arguments>
-        </filter>
-        <filter id="403804204">
-            <message_arguments>
-                <message_argument value="org.eclipse.xtext.XtextFactory"/>
-                <message_argument value="createNamedArgument()"/>
-            </message_arguments>
-        </filter>
-        <filter id="403804204">
-            <message_arguments>
-                <message_argument value="org.eclipse.xtext.XtextFactory"/>
-                <message_argument value="createParameter()"/>
-            </message_arguments>
-        </filter>
-    </resource>
     <resource path="emf-gen/org/eclipse/xtext/XtextPackage.java" type="org.eclipse.xtext.XtextPackage">
-        <filter comment="Number of features changed but no changed feature id" id="388194388">
+        <filter id="388194388">
             <message_arguments>
                 <message_argument value="org.eclipse.xtext.XtextPackage"/>
                 <message_argument value="PARSER_RULE_FEATURE_COUNT"/>
                 <message_argument value="5"/>
             </message_arguments>
         </filter>
-        <filter comment="Number of features changed but no changed feature id" id="388194388">
+        <filter id="388194388">
             <message_arguments>
                 <message_argument value="org.eclipse.xtext.XtextPackage"/>
                 <message_argument value="RULE_CALL_FEATURE_COUNT"/>
@@ -71,6 +51,12 @@
             <message_arguments>
                 <message_argument value="org.eclipse.xtext.XtextPackage.Literals"/>
                 <message_argument value="CONDITIONAL_BRANCH__FILTERED"/>
+            </message_arguments>
+        </filter>
+        <filter id="403767336">
+            <message_arguments>
+                <message_argument value="org.eclipse.xtext.XtextPackage.Literals"/>
+                <message_argument value="CONDITIONAL_BRANCH__GUARDED_ELEMENT"/>
             </message_arguments>
         </filter>
         <filter id="403767336">
@@ -143,6 +129,13 @@
             <message_arguments>
                 <message_argument value="org.eclipse.xtext.XtextPackage.Literals"/>
                 <message_argument value="RULE_CALL__EXPLICITLY_CALLED"/>
+            </message_arguments>
+        </filter>
+    </resource>
+    <resource path="emf-gen/org/eclipse/xtext/impl/XtextPackageImpl.java" type="org.eclipse.xtext.impl.XtextPackageImpl">
+        <filter id="1143996420">
+            <message_arguments>
+                <message_argument value="getConditionalBranch_GuardedElement()"/>
             </message_arguments>
         </filter>
     </resource>

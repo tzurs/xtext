@@ -630,10 +630,10 @@ public class XtextProposalProvider extends AbstractXtextProposalProvider {
 	}
 
 	@Override
-	public void completeParserRule_Name(EObject model, Assignment assignment, ContentAssistContext context,
+	public void completeRuleNameAndParams_Name(EObject model, Assignment assignment, ContentAssistContext context,
 			ICompletionProposalAcceptor acceptor) {
 		completeParserRule(model, context, acceptor);
-		super.completeParserRule_Name(model, assignment, context, acceptor);
+		super.completeRuleNameAndParams_Name(model, assignment, context, acceptor);
 	}
 
 	private void completeParserRule(EObject model, final ContentAssistContext context,

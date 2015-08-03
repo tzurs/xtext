@@ -14,6 +14,7 @@ package org.eclipse.xtext;
  * <ul>
  *   <li>{@link org.eclipse.xtext.ConditionalBranch#getParameter <em>Parameter</em>}</li>
  *   <li>{@link org.eclipse.xtext.ConditionalBranch#isFiltered <em>Filtered</em>}</li>
+ *   <li>{@link org.eclipse.xtext.ConditionalBranch#getGuardedElement <em>Guarded Element</em>}</li>
  * </ul>
  *
  * @see org.eclipse.xtext.XtextPackage#getConditionalBranch()
@@ -73,5 +74,31 @@ public interface ConditionalBranch extends AbstractElement {
 	 * @generated
 	 */
 	void setFiltered(boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Guarded Element</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Guarded Element</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Guarded Element</em>' containment reference.
+	 * @see #setGuardedElement(AbstractElement)
+	 * @see org.eclipse.xtext.XtextPackage#getConditionalBranch_GuardedElement()
+	 * @model containment="true"
+	 * @generated
+	 */
+	AbstractElement getGuardedElement();
+
+	/**
+	 * Sets the value of the '{@link org.eclipse.xtext.ConditionalBranch#getGuardedElement <em>Guarded Element</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Guarded Element</em>' containment reference.
+	 * @see #getGuardedElement()
+	 * @generated
+	 */
+	void setGuardedElement(AbstractElement value);
 
 } // ConditionalBranch
