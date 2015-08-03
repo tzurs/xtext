@@ -31,13 +31,17 @@ public class ParserTest extends AbstractXtextTests {
 	
 	@Override
 	protected boolean shouldTestSerializer(XtextResource resource) {
-		return false;
+		return true;
 	}
 
 	@Test public void test_01() throws Exception {
 		Model model = (Model) getModel("model id { element id }");
 		assertEquals("id", model.getName());
-		assertEquals("id", model.getElements().get(0).getName());
+		Element element = model.getElements().get(0);
+		assertEquals("id", element.getName());
+		List<INode> nodesForFeature = NodeModelUtils.findNodesForFeature(element, InheritanceTestPackage.Literals.ELEMENT__NAME);
+		assertTrue(nodesForFeature.size() == 1);
+		assertEquals("id", nodesForFeature.get(0).getText());
 	}
 	
 	@Test public void test_02() throws Exception {
@@ -48,5 +52,15 @@ public class ParserTest extends AbstractXtextTests {
 		List<INode> nodesForFeature = NodeModelUtils.findNodesForFeature(element, InheritanceTestPackage.Literals.ELEMENT__NAME);
 		assertTrue(nodesForFeature.size() == 1);
 		assertEquals("inheritedIdSyntax", nodesForFeature.get(0).getText());
+	}
+	
+	@Test public void test_03() throws Exception {
+		Model model = (Model) getModel("model id { element 'string' }");
+		assertEquals("id", model.getName());
+		Element element = model.getElements().get(0);
+		assertEquals("string", element.getName());
+		List<INode> nodesForFeature = NodeModelUtils.findNodesForFeature(element, InheritanceTestPackage.Literals.ELEMENT__NAME);
+		assertTrue(nodesForFeature.size() == 1);
+		assertEquals("string", nodesForFeature.get(0).getText());
 	}
 }

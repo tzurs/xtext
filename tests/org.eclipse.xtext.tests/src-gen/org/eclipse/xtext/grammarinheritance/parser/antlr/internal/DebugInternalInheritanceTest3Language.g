@@ -10,8 +10,9 @@ ruleModel :
 
 // Rule Element
 ruleElement :
+	superElement |
 	'element' SUPER_ID |
-	superElement
+	'element' RULE_STRING
 ;
 
 // Rule Model

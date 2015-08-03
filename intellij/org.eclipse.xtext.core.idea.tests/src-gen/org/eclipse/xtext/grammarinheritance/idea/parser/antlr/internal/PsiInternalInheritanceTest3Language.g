@@ -74,34 +74,55 @@ entryRuleElement:
 // Rule Element
 ruleElement:
 	(
-		(
-			{
-				markLeaf(elementTypeProvider.getElement_ElementKeyword_0_0ElementType());
-			}
-			otherlv_0='element'
-			{
-				doneLeaf(otherlv_0);
-			}
-			(
-				(
-					{
-						markLeaf(elementTypeProvider.getElement_NameIDTerminalRuleCall_0_1_0ElementType());
-					}
-					lv_name_1_0=SUPER_ID
-					{
-						doneLeaf(lv_name_1_0);
-					}
-				)
-			)
-		)
-		    |
 		{
-			markComposite(elementTypeProvider.getElement_ElementParserRuleCall_1ElementType());
+			markComposite(elementTypeProvider.getElement_ElementParserRuleCall_0ElementType());
 		}
 		superElement
 		{
 			doneComposite();
 		}
+		    |
+		(
+			{
+				markLeaf(elementTypeProvider.getElement_ElementKeyword_1_0ElementType());
+			}
+			otherlv_1='element'
+			{
+				doneLeaf(otherlv_1);
+			}
+			(
+				(
+					{
+						markLeaf(elementTypeProvider.getElement_NameIDTerminalRuleCall_1_1_0ElementType());
+					}
+					lv_name_2_0=SUPER_ID
+					{
+						doneLeaf(lv_name_2_0);
+					}
+				)
+			)
+		)
+		    |
+		(
+			{
+				markLeaf(elementTypeProvider.getElement_ElementKeyword_2_0ElementType());
+			}
+			otherlv_3='element'
+			{
+				doneLeaf(otherlv_3);
+			}
+			(
+				(
+					{
+						markLeaf(elementTypeProvider.getElement_NameSTRINGTerminalRuleCall_2_1_0ElementType());
+					}
+					lv_name_4_0=RULE_STRING
+					{
+						doneLeaf(lv_name_4_0);
+					}
+				)
+			)
+		)
 	)
 ;
 

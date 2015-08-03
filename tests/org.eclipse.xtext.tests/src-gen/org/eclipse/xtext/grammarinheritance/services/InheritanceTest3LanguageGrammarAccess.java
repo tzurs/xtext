@@ -34,33 +34,49 @@ public class InheritanceTest3LanguageGrammarAccess extends AbstractGrammarElemen
 	public class ElementElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.grammarinheritance.InheritanceTest3Language.Element");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final Group cGroup_0 = (Group)cAlternatives.eContents().get(0);
-		private final Keyword cElementKeyword_0_0 = (Keyword)cGroup_0.eContents().get(0);
-		private final Assignment cNameAssignment_0_1 = (Assignment)cGroup_0.eContents().get(1);
-		private final RuleCall cNameIDTerminalRuleCall_0_1_0 = (RuleCall)cNameAssignment_0_1.eContents().get(0);
-		private final RuleCall cElementParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
+		private final RuleCall cElementParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final Group cGroup_1 = (Group)cAlternatives.eContents().get(1);
+		private final Keyword cElementKeyword_1_0 = (Keyword)cGroup_1.eContents().get(0);
+		private final Assignment cNameAssignment_1_1 = (Assignment)cGroup_1.eContents().get(1);
+		private final RuleCall cNameIDTerminalRuleCall_1_1_0 = (RuleCall)cNameAssignment_1_1.eContents().get(0);
+		private final Group cGroup_2 = (Group)cAlternatives.eContents().get(2);
+		private final Keyword cElementKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
+		private final Assignment cNameAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
+		private final RuleCall cNameSTRINGTerminalRuleCall_2_1_0 = (RuleCall)cNameAssignment_2_1.eContents().get(0);
 		
 		//Element:
-		//	"element" name=super::ID | super;
+		//	super | "element" name=super::ID | "element" name=STRING;
 		@Override public ParserRule getRule() { return rule; }
 
-		//"element" name=super::ID | super
+		//super | "element" name=super::ID | "element" name=STRING
 		public Alternatives getAlternatives() { return cAlternatives; }
 
+		//super
+		public RuleCall getElementParserRuleCall_0() { return cElementParserRuleCall_0; }
+
 		//"element" name=super::ID
-		public Group getGroup_0() { return cGroup_0; }
+		public Group getGroup_1() { return cGroup_1; }
 
 		//"element"
-		public Keyword getElementKeyword_0_0() { return cElementKeyword_0_0; }
+		public Keyword getElementKeyword_1_0() { return cElementKeyword_1_0; }
 
 		//name=super::ID
-		public Assignment getNameAssignment_0_1() { return cNameAssignment_0_1; }
+		public Assignment getNameAssignment_1_1() { return cNameAssignment_1_1; }
 
 		//super::ID
-		public RuleCall getNameIDTerminalRuleCall_0_1_0() { return cNameIDTerminalRuleCall_0_1_0; }
+		public RuleCall getNameIDTerminalRuleCall_1_1_0() { return cNameIDTerminalRuleCall_1_1_0; }
 
-		//super
-		public RuleCall getElementParserRuleCall_1() { return cElementParserRuleCall_1; }
+		//"element" name=STRING
+		public Group getGroup_2() { return cGroup_2; }
+
+		//"element"
+		public Keyword getElementKeyword_2_0() { return cElementKeyword_2_0; }
+
+		//name=STRING
+		public Assignment getNameAssignment_2_1() { return cNameAssignment_2_1; }
+
+		//STRING
+		public RuleCall getNameSTRINGTerminalRuleCall_2_1_0() { return cNameSTRINGTerminalRuleCall_2_1_0; }
 	}
 	
 	
@@ -79,7 +95,7 @@ public class InheritanceTest3LanguageGrammarAccess extends AbstractGrammarElemen
 		this.gaInheritanceTestLanguage = gaInheritanceTestLanguage;
 		this.pModel = new ModelElements();
 		this.pElement = new ElementElements();
-		this.tID = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "ID");
+		this.tID = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.grammarinheritance.InheritanceTest3Language.ID");
 	}
 	
 	protected Grammar internalFindGrammar(GrammarProvider grammarProvider) {
@@ -120,7 +136,7 @@ public class InheritanceTest3LanguageGrammarAccess extends AbstractGrammarElemen
 	}
 
 	//Element:
-	//	"element" name=super::ID | super;
+	//	super | "element" name=super::ID | "element" name=STRING;
 	public ElementElements getElementAccess() {
 		return pElement;
 	}

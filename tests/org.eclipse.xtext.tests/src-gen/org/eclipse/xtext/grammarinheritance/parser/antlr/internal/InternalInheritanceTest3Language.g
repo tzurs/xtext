@@ -107,15 +107,25 @@ ruleElement returns [EObject current=null]
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-((	otherlv_0='element' 
+(
+    { 
+        newCompositeNode(grammarAccess.getElementAccess().getElementParserRuleCall_0()); 
+    }
+    this_Element_0=superElement
+    { 
+        $current = $this_Element_0.current; 
+        afterParserOrEnumRuleCall();
+    }
+
+    |(	otherlv_1='element' 
     {
-    	newLeafNode(otherlv_0, grammarAccess.getElementAccess().getElementKeyword_0_0());
+    	newLeafNode(otherlv_1, grammarAccess.getElementAccess().getElementKeyword_1_0());
     }
 (
 (
-		lv_name_1_0=SUPER_ID
+		lv_name_2_0=SUPER_ID
 		{
-			newLeafNode(lv_name_1_0, grammarAccess.getElementAccess().getNameIDTerminalRuleCall_0_1_0()); 
+			newLeafNode(lv_name_2_0, grammarAccess.getElementAccess().getNameIDTerminalRuleCall_1_1_0()); 
 		}
 		{
 	        if ($current==null) {
@@ -124,22 +134,35 @@ ruleElement returns [EObject current=null]
        		setWithLastConsumed(
        			$current, 
        			"name",
-        		lv_name_1_0, 
+        		lv_name_2_0, 
         		"org.eclipse.xtext.common.Terminals.ID");
 	    }
 
 )
 ))
-    |
-    { 
-        newCompositeNode(grammarAccess.getElementAccess().getElementParserRuleCall_1()); 
+    |(	otherlv_3='element' 
+    {
+    	newLeafNode(otherlv_3, grammarAccess.getElementAccess().getElementKeyword_2_0());
     }
-    this_Element_2=superElement
-    { 
-        $current = $this_Element_2.current; 
-        afterParserOrEnumRuleCall();
-    }
+(
+(
+		lv_name_4_0=RULE_STRING
+		{
+			newLeafNode(lv_name_4_0, grammarAccess.getElementAccess().getNameSTRINGTerminalRuleCall_2_1_0()); 
+		}
+		{
+	        if ($current==null) {
+	            $current = createModelElement(grammarAccess.getElementRule());
+	        }
+       		setWithLastConsumed(
+       			$current, 
+       			"name",
+        		lv_name_4_0, 
+        		"org.eclipse.xtext.common.Terminals.STRING");
+	    }
+
 )
+)))
 ;
 
 

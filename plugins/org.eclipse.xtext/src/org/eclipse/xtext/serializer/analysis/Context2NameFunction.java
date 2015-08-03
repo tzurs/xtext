@@ -30,9 +30,6 @@ import com.google.inject.Inject;
  */
 public class Context2NameFunction {
 
-	@Inject
-	private RuleNames ruleNames;
-	
 	public Function<EObject, String> toFunction(final Grammar grammar) {
 		return new Function<EObject, String>() {
 			@Override
@@ -59,7 +56,7 @@ public class Context2NameFunction {
 		if (grammar == null) {
 			return ctx.getName();	
 		}
-		return (ruleNames == null ? RuleNames.getRuleNames(grammar, false) : ruleNames).getUniqueRuleName(ctx);
+		return RuleNames.getRuleNames(grammar, false).getUniqueRuleName(ctx);
 	}
 
 	public String getUniqueActionName(Action action) {

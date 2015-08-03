@@ -187,8 +187,8 @@ public class AbstractTestLanguageGrammarAccess extends AbstractGrammarElementFin
 		this.pOverridableParserRule2 = new OverridableParserRule2Elements();
 		this.pAbstractCallExtendedParserRule = new AbstractCallExtendedParserRuleElements();
 		this.pExtendableParserRule = new ExtendableParserRuleElements();
-		this.tREAL = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "REAL");
-		this.tID = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "ID");
+		this.tREAL = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.grammarinheritance.AbstractTestLanguage.REAL");
+		this.tID = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.grammarinheritance.AbstractTestLanguage.ID");
 	}
 	
 	protected Grammar internalFindGrammar(GrammarProvider grammarProvider) {
