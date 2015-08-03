@@ -12,21 +12,17 @@ import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
 import org.eclipse.emf.mwe.core.issues.Issues;
 import org.eclipse.xpand2.XpandExecutionContext;
 import org.eclipse.xtext.AbstractRule;
-import org.eclipse.xtext.EnumRule;
 import org.eclipse.xtext.Grammar;
 import org.eclipse.xtext.GrammarUtil;
 import org.eclipse.xtext.ParserRule;
-import org.eclipse.xtext.TerminalRule;
+import org.eclipse.xtext.RuleNames;
 import org.eclipse.xtext.UnorderedGroup;
 import org.eclipse.xtext.generator.AbstractGeneratorFragment;
 import org.eclipse.xtext.generator.NewlineNormalizer;
-import org.eclipse.xtext.generator.grammarAccess.GrammarAccessUtil;
 import org.eclipse.xtext.generator.parser.antlr.postProcessing.SuppressWarningsProcessor;
 import org.eclipse.xtext.generator.parser.antlr.splitting.AntlrLexerSplitter;
 import org.eclipse.xtext.generator.parser.antlr.splitting.AntlrParserSplitter;
@@ -38,7 +34,6 @@ import org.eclipse.xtext.util.Strings;
 
 import com.google.common.collect.Iterators;
 import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
 
 /**
  * @author Sebastian Zarnekow - Initial contribution and API
@@ -109,53 +104,8 @@ public abstract class AbstractAntlrGeneratorFragment extends AbstractGeneratorFr
 	@Override
 	public void generate(Grammar grammar, XpandExecutionContext ctx) {
 		checkGrammar(grammar);
-		List<AbstractRule> allRules = GrammarUtil.allRules(grammar);
-		Map<String, AbstractRule> nameToRule = Maps.newHashMap();
-		for(AbstractRule rule: allRules) {
-			String defaultName = getDefaultRuleName(rule);
-			if (!nameToRule.containsKey(defaultName)) {
-				nameToRule.put(defaultName, rule);
-				new AntlrRuleNameAdapter(defaultName, rule);
-			} else {
-				String name = getInheritedRuleName(rule, nameToRule.keySet());
-				nameToRule.put(name, rule);
-				new AntlrRuleNameAdapter(name, rule);
-			}
-		}
-		GrammarAccessUtil.installUniqueNameAdapter(grammar);
+		RuleNames.ensureAdapterInstalled(grammar);
 		super.generate(grammar, ctx);
-	}
-	
-	private String getInheritedRuleName(AbstractRule rule, Set<String> usedNames) {
-		if (rule instanceof ParserRule || rule instanceof EnumRule) {
-			String candidate = "super" + rule.getName();
-			int i = 1;
-			while(usedNames.contains(candidate)) {
-				candidate = "super" + i + rule.getName();
-				i++;
-			}
-			return candidate;
-		}
-		if (rule instanceof TerminalRule) {
-			String candidate = "SUPER_" + rule.getName();
-			int i = 1;
-			while(usedNames.contains(candidate)) {
-				candidate = "SUPER_" + i + "_" + rule.getName();
-				i++;
-			}
-			return candidate;
-		}
-		throw new IllegalArgumentException(rule.eClass().getName());
-	}
-	
-	private String getDefaultRuleName(AbstractRule rule) {
-		if (rule instanceof ParserRule || rule instanceof EnumRule) {
-			return "rule" + rule.getName();
-		}
-		if (rule instanceof TerminalRule) {
-			return "RULE_" + rule.getName().toUpperCase();
-		}
-		throw new IllegalArgumentException(rule.eClass().getName());
 	}
 
 	/**

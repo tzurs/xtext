@@ -116,6 +116,14 @@ public class GrammarAccessFragment2 extends AbstractGeneratorFragment2 {
     this.writeGrammar(language);
   }
   
+  protected String getQualifiedName(final AbstractRule rule) {
+    Grammar _grammar = GrammarUtil.getGrammar(rule);
+    String _name = _grammar.getName();
+    String _plus = (_name + ".");
+    String _name_1 = rule.getName();
+    return (_plus + _name_1);
+  }
+  
   protected void writeGrammar(final LanguageConfig2 language) {
     final Wrapper<Boolean> isSaving = Wrapper.<Boolean>wrap(Boolean.valueOf(false));
     final ResourceSet cloneInto = new ResourceSetImpl();
@@ -580,8 +588,8 @@ public class GrammarAccessFragment2 extends AbstractGeneratorFragment2 {
         _builder.append(") ");
         _builder.append(GrammarUtil.class, "\t");
         _builder.append(".findRuleForName(getGrammar(), \"");
-        String _name = it.getName();
-        _builder.append(_name, "\t");
+        String _qualifiedName = GrammarAccessFragment2.this.getQualifiedName(it);
+        _builder.append(_qualifiedName, "\t");
         _builder.append("\");");
         _builder.newLineIfNotEmpty();
         {
@@ -661,8 +669,8 @@ public class GrammarAccessFragment2 extends AbstractGeneratorFragment2 {
         _builder.append(") ");
         _builder.append(GrammarUtil.class, "\t");
         _builder.append(".findRuleForName(getGrammar(), \"");
-        String _name = it.getName();
-        _builder.append(_name, "\t");
+        String _qualifiedName = GrammarAccessFragment2.this.getQualifiedName(it);
+        _builder.append(_qualifiedName, "\t");
         _builder.append("\");");
         _builder.newLineIfNotEmpty();
         {
@@ -817,8 +825,8 @@ public class GrammarAccessFragment2 extends AbstractGeneratorFragment2 {
         _builder.append(") ");
         _builder.append(GrammarUtil.class, "");
         _builder.append(".findRuleForName(getGrammar(), \"");
-        String _name = it.getName();
-        _builder.append(_name, "");
+        String _qualifiedName = GrammarAccessFragment2.this.getQualifiedName(it);
+        _builder.append(_qualifiedName, "");
         _builder.append("\");");
         _builder.newLineIfNotEmpty();
       }

@@ -18,13 +18,11 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EEnumLiteral;
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.xtend.lib.annotations.FinalFieldsConstructor;
 import org.eclipse.xtend2.lib.StringConcatenationClient;
 import org.eclipse.xtext.AbstractElement;
@@ -37,6 +35,7 @@ import org.eclipse.xtext.Grammar;
 import org.eclipse.xtext.GrammarUtil;
 import org.eclipse.xtext.Keyword;
 import org.eclipse.xtext.RuleCall;
+import org.eclipse.xtext.RuleNames;
 import org.eclipse.xtext.TypeRef;
 import org.eclipse.xtext.XtextRuntimeModule;
 import org.eclipse.xtext.formatting.ILineSeparatorInformation;
@@ -47,7 +46,6 @@ import org.eclipse.xtext.xbase.lib.Exceptions;
 import org.eclipse.xtext.xbase.lib.StringExtensions;
 import org.eclipse.xtext.xtext.generator.CodeConfig;
 import org.eclipse.xtext.xtext.generator.XtextGeneratorNaming;
-import org.eclipse.xtext.xtext.generator.grammarAccess.UniqueRuleNameAdapter;
 import org.eclipse.xtext.xtext.generator.model.TypeReference;
 
 /**
@@ -235,10 +233,9 @@ public class GrammarAccessExtensions {
    * the Rule's grammar and its super grammars.
    */
   public String gaRuleIdentifier(final AbstractRule rule) {
-    EList<Adapter> _eAdapters = rule.eAdapters();
-    Adapter _adapter = EcoreUtil.getAdapter(_eAdapters, UniqueRuleNameAdapter.class);
-    final UniqueRuleNameAdapter adapter = ((UniqueRuleNameAdapter) _adapter);
-    return adapter.getName();
+    RuleNames _ruleNames = RuleNames.getRuleNames(rule);
+    final String plainName = _ruleNames.getUniqueRuleName(rule);
+    return this.toJavaIdentifier(plainName, true);
   }
   
   /**

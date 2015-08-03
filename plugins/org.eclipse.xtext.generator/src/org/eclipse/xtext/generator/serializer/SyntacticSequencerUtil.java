@@ -48,6 +48,9 @@ public class SyntacticSequencerUtil {
 
 	@Inject
 	protected Grammar grammar;
+	
+	@Inject
+	private InjectableRuleNames ruleNames;
 
 	protected List<ISynAbsorberState> getAllPDAs() {
 		List<ISynAbsorberState> result = Lists.newArrayList();
@@ -107,7 +110,7 @@ public class SyntacticSequencerUtil {
 			card = "q";
 		if (alias instanceof TokenAlias) {
 			TokenAlias ele = (TokenAlias) alias;
-			rules.add(GrammarUtil.getUniqueRuleName(grammar, GrammarUtil.containingRule(ele.getToken())));
+			rules.add(ruleNames.getUniqueRuleName(GrammarUtil.containingRule(ele.getToken())));
 			card = card == null ? "" : "_" + card;
 			return GrammarAccessUtil.getUniqueElementName(ele.getToken()) + card;
 		} else if (alias instanceof GroupAlias) {

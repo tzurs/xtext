@@ -14,6 +14,8 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.xtext.AbstractElement;
 import org.eclipse.xtext.AbstractRule;
 import org.eclipse.xtext.Grammar;
+import org.eclipse.xtext.RuleCall;
+import org.eclipse.xtext.RuleNames;
 import org.eclipse.xtext.util.Strings;
 
 /**
@@ -29,8 +31,17 @@ public class AntlrGrammarGenUtil {
 	 * @since 2.9
 	 */
 	public static String getRuleName(AbstractRule rule) {
-		AntlrRuleNameAdapter adapter = (AntlrRuleNameAdapter) EcoreUtil.getAdapter(rule.eAdapters(), AntlrRuleNameAdapter.class);
-		return adapter.getName();
+		String result = RuleNames.getRuleNames(rule).getAntlrRuleName(rule);
+		return result;
+	}
+	
+	/**
+	 * @since 2.9
+	 */
+	public static String getQualifiedNameAsString(RuleCall ruleCall) {
+		AbstractRule rule = ruleCall.getRule();
+		String result = RuleNames.getRuleNames(rule).getQualifiedName(rule);
+		return '"' + result + '"';
 	}
 
 	public static String toAntlrString(String string) {

@@ -125,7 +125,7 @@ ruleElement returns [EObject current=null]
        			$current, 
        			"name",
         		lv_name_1_0, 
-        		"ID");
+        		"org.eclipse.xtext.common.Terminals.ID");
 	    }
 
 )
@@ -178,7 +178,7 @@ superModel returns [EObject current=null]
        			$current, 
        			"name",
         		lv_name_1_0, 
-        		"ID");
+        		"org.eclipse.xtext.grammarinheritance.InheritanceTest3Language.ID");
 	    }
 
 )
@@ -199,7 +199,7 @@ superModel returns [EObject current=null]
        			$current, 
        			"elements",
         		lv_elements_3_0, 
-        		"Element");
+        		"org.eclipse.xtext.grammarinheritance.InheritanceTest3Language.Element");
 	        afterParserOrEnumRuleCall();
 	    }
 
@@ -247,7 +247,7 @@ superElement returns [EObject current=null]
        			$current, 
        			"name",
         		lv_name_1_0, 
-        		"ID");
+        		"org.eclipse.xtext.grammarinheritance.InheritanceTest3Language.ID");
 	    }
 
 )

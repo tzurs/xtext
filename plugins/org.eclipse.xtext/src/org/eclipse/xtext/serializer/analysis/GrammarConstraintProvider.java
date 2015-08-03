@@ -32,6 +32,7 @@ import org.eclipse.xtext.Group;
 import org.eclipse.xtext.Keyword;
 import org.eclipse.xtext.ParserRule;
 import org.eclipse.xtext.RuleCall;
+import org.eclipse.xtext.RuleNames;
 import org.eclipse.xtext.TerminalRule;
 import org.eclipse.xtext.UnorderedGroup;
 import org.eclipse.xtext.grammaranalysis.impl.GrammarElementTitleSwitch;
@@ -1016,6 +1017,9 @@ public class GrammarConstraintProvider implements IGrammarConstraintProvider {
 
 	@Inject
 	protected Context2NameFunction context2Name;
+	
+	@Inject
+	protected RuleNames ruleNames;
 
 	@Inject
 	protected IContextProvider contextProvider;
@@ -1452,7 +1456,7 @@ public class GrammarConstraintProvider implements IGrammarConstraintProvider {
 		List<IConstraintContext> result = cache.get(context);
 		if (result == null) {
 			result = Lists.newArrayList();
-			for (ParserRule parserRule : GrammarUtil.allParserRules(context))
+			for (ParserRule parserRule : ruleNames.getAllParserRules())
 				if (parserRule.getType().getClassifier() instanceof EClass) {
 					result.add(getConstraints(context, parserRule));
 					for (Action action : GrammarUtil.containedActions(parserRule))

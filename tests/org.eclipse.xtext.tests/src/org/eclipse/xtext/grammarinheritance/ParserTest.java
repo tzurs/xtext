@@ -7,8 +7,14 @@
  *******************************************************************************/
 package org.eclipse.xtext.grammarinheritance;
 
+import java.util.List;
+
+import org.eclipse.xtext.grammarinheritance.inheritanceTest.Element;
+import org.eclipse.xtext.grammarinheritance.inheritanceTest.InheritanceTestPackage;
 import org.eclipse.xtext.grammarinheritance.inheritanceTest.Model;
 import org.eclipse.xtext.junit4.AbstractXtextTests;
+import org.eclipse.xtext.nodemodel.INode;
+import org.eclipse.xtext.nodemodel.util.NodeModelUtils;
 import org.eclipse.xtext.resource.XtextResource;
 import org.junit.Test;
 
@@ -37,6 +43,10 @@ public class ParserTest extends AbstractXtextTests {
 	@Test public void test_02() throws Exception {
 		Model model = (Model) getModel("model id { element inheritedIdSyntax }");
 		assertEquals("id", model.getName());
-		assertEquals("inheritedIdSyntax", model.getElements().get(0).getName());
+		Element element = model.getElements().get(0);
+		assertEquals("inheritedIdSyntax", element.getName());
+		List<INode> nodesForFeature = NodeModelUtils.findNodesForFeature(element, InheritanceTestPackage.Literals.ELEMENT__NAME);
+		assertTrue(nodesForFeature.size() == 1);
+		assertEquals("inheritedIdSyntax", nodesForFeature.get(0).getText());
 	}
 }

@@ -14,10 +14,8 @@ import com.google.inject.Singleton;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.xtend2.lib.StringConcatenation;
 import org.eclipse.xtext.AbstractElement;
 import org.eclipse.xtext.AbstractRule;
@@ -33,11 +31,11 @@ import org.eclipse.xtext.Group;
 import org.eclipse.xtext.Keyword;
 import org.eclipse.xtext.ParserRule;
 import org.eclipse.xtext.RuleCall;
+import org.eclipse.xtext.RuleNames;
 import org.eclipse.xtext.UnorderedGroup;
 import org.eclipse.xtext.generator.grammarAccess.GrammarAccess;
 import org.eclipse.xtext.generator.parser.antlr.AntlrGrammarGenUtil;
 import org.eclipse.xtext.generator.parser.antlr.AntlrOptions;
-import org.eclipse.xtext.generator.parser.antlr.AntlrRuleNameAdapter;
 import org.eclipse.xtext.xbase.lib.CollectionLiterals;
 import org.eclipse.xtext.xbase.lib.Extension;
 import org.eclipse.xtext.xbase.lib.Functions.Function1;
@@ -111,18 +109,15 @@ public class GrammarAccessExtensions {
   }
   
   public String ruleName(final AbstractRule rule) {
-    EList<Adapter> _eAdapters = rule.eAdapters();
-    Adapter _adapter = EcoreUtil.getAdapter(_eAdapters, AntlrRuleNameAdapter.class);
-    final AntlrRuleNameAdapter adapter = ((AntlrRuleNameAdapter) _adapter);
-    return adapter.getName();
+    RuleNames _ruleNames = RuleNames.getRuleNames(rule);
+    final String result = _ruleNames.getAntlrRuleName(rule);
+    return result;
   }
   
   public String entryRuleName(final ParserRule rule) {
-    EList<Adapter> _eAdapters = rule.eAdapters();
-    Adapter _adapter = EcoreUtil.getAdapter(_eAdapters, AntlrRuleNameAdapter.class);
-    final AntlrRuleNameAdapter adapter = ((AntlrRuleNameAdapter) _adapter);
-    String _name = adapter.getName();
-    String _firstUpper = StringExtensions.toFirstUpper(_name);
+    RuleNames _ruleNames = RuleNames.getRuleNames(rule);
+    final String result = _ruleNames.getAntlrRuleName(rule);
+    String _firstUpper = StringExtensions.toFirstUpper(result);
     return ("entry" + _firstUpper);
   }
   

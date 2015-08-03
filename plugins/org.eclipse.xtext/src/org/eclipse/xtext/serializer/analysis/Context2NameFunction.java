@@ -17,17 +17,22 @@ import org.eclipse.xtext.EcoreUtil2;
 import org.eclipse.xtext.Grammar;
 import org.eclipse.xtext.GrammarUtil;
 import org.eclipse.xtext.ParserRule;
+import org.eclipse.xtext.RuleNames;
 import org.eclipse.xtext.util.EmfFormatter;
 
 import com.google.common.base.Function;
 import com.google.common.base.Joiner;
 import com.google.common.collect.Lists;
+import com.google.inject.Inject;
 
 /**
  * @author Moritz Eysholdt - Initial contribution and API
  */
 public class Context2NameFunction {
 
+	@Inject
+	private RuleNames ruleNames;
+	
 	public Function<EObject, String> toFunction(final Grammar grammar) {
 		return new Function<EObject, String>() {
 			@Override
@@ -54,7 +59,7 @@ public class Context2NameFunction {
 		if (grammar == null) {
 			return ctx.getName();	
 		}
-		return GrammarUtil.getUniqueRuleName(grammar, ctx);
+		return (ruleNames == null ? RuleNames.getRuleNames(grammar, false) : ruleNames).getUniqueRuleName(ctx);
 	}
 
 	public String getUniqueActionName(Action action) {

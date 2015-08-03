@@ -5,31 +5,23 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  *******************************************************************************/
-package org.eclipse.xtext.generator.parser.antlr;
+package org.eclipse.xtext.generator.serializer;
 
-import org.eclipse.emf.common.notify.impl.AdapterImpl;
-import org.eclipse.xtext.AbstractRule;
+import org.eclipse.xtext.Grammar;
+import org.eclipse.xtext.RuleNames;
+
+import com.google.inject.Inject;
+import com.google.inject.Singleton;
 
 /**
  * @author Sebastian Zarnekow - Initial contribution and API
- * @since 2.9
  */
-public class AntlrRuleNameAdapter extends AdapterImpl {
+@Singleton
+public class InjectableRuleNames extends RuleNames {
 
-	private final String name;
-
-	public AntlrRuleNameAdapter(String name, AbstractRule rule) {
-		this.name = name;
-		rule.eAdapters().add(this);
-	}
-	
-	@Override
-	public boolean isAdapterForType(Object type) {
-		return AntlrRuleNameAdapter.class.equals(type);
-	}
-	
-	public String getName() {
-		return name;
+	@Inject
+	public InjectableRuleNames(Grammar grammar) {
+		super(grammar, false);
 	}
 	
 }

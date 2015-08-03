@@ -16,7 +16,6 @@ import java.util.ArrayList
 import java.util.List
 import java.util.Map
 import org.eclipse.emf.ecore.EObject
-import org.eclipse.emf.ecore.util.EcoreUtil
 import org.eclipse.xtend.lib.annotations.FinalFieldsConstructor
 import org.eclipse.xtend2.lib.StringConcatenationClient
 import org.eclipse.xtext.AbstractElement
@@ -29,6 +28,7 @@ import org.eclipse.xtext.Grammar
 import org.eclipse.xtext.GrammarUtil
 import org.eclipse.xtext.Keyword
 import org.eclipse.xtext.RuleCall
+import org.eclipse.xtext.RuleNames
 import org.eclipse.xtext.TypeRef
 import org.eclipse.xtext.XtextRuntimeModule
 import org.eclipse.xtext.formatting.ILineSeparatorInformation
@@ -141,8 +141,8 @@ class GrammarAccessExtensions {
 	 * the Rule's grammar and its super grammars.
 	 */
 	def String gaRuleIdentifier(AbstractRule rule) {
-		val adapter = EcoreUtil.getAdapter(rule.eAdapters(), UniqueRuleNameAdapter) as UniqueRuleNameAdapter
-		return adapter.name
+		val plainName = RuleNames.getRuleNames(rule).getUniqueRuleName(rule);
+		return toJavaIdentifier(plainName, true);
 	}
 	
 	/** 

@@ -11,7 +11,6 @@ import com.google.inject.Inject
 import com.google.inject.Singleton
 import java.util.List
 import org.eclipse.emf.ecore.EObject
-import org.eclipse.emf.ecore.util.EcoreUtil
 import org.eclipse.xtext.AbstractElement
 import org.eclipse.xtext.AbstractRule
 import org.eclipse.xtext.Action
@@ -24,6 +23,7 @@ import org.eclipse.xtext.Group
 import org.eclipse.xtext.Keyword
 import org.eclipse.xtext.ParserRule
 import org.eclipse.xtext.RuleCall
+import org.eclipse.xtext.RuleNames
 import org.eclipse.xtext.UnorderedGroup
 import org.eclipse.xtext.generator.grammarAccess.GrammarAccess
 import org.eclipse.xtext.generator.parser.antlr.AntlrOptions
@@ -31,7 +31,6 @@ import org.eclipse.xtext.generator.parser.antlr.AntlrOptions
 import static extension org.eclipse.xtext.EcoreUtil2.*
 import static extension org.eclipse.xtext.GrammarUtil.*
 import static extension org.eclipse.xtext.generator.parser.antlr.AntlrGrammarGenUtil.*
-import org.eclipse.xtext.generator.parser.antlr.AntlrRuleNameAdapter
 
 @Singleton
 class GrammarAccessExtensions {
@@ -74,13 +73,13 @@ class GrammarAccessExtensions {
 	}
 
 	def ruleName(AbstractRule rule) {
-		val adapter = EcoreUtil.getAdapter(rule.eAdapters(), AntlrRuleNameAdapter) as AntlrRuleNameAdapter
-		return adapter.getName();
+		val result = RuleNames.getRuleNames(rule).getAntlrRuleName(rule);
+		return result;
 	}
 
 	def entryRuleName(ParserRule rule) {
-		val adapter = EcoreUtil.getAdapter(rule.eAdapters(), AntlrRuleNameAdapter) as AntlrRuleNameAdapter
-		return 'entry' + adapter.getName().toFirstUpper;
+		val result = RuleNames.getRuleNames(rule).getAntlrRuleName(rule);
+		return 'entry' + result.toFirstUpper;
 	}
 
 	def isCalled(AbstractRule rule, Grammar grammar) {

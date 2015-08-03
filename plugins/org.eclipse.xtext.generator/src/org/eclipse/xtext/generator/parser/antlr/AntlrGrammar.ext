@@ -87,8 +87,7 @@ String toJavaStringImpl(String this):
 	JAVA org.eclipse.xtext.generator.parser.antlr.AntlrGrammarGenUtil.toStringInAntlrAction(java.lang.String);
 	
 toStringLiteral(RuleCall this) :
-	rule!=null ? '"'+this.rule.name+'"' :  "null";
-//	rule!=null ? '"'+this.rule.getGrammar().name + "." + this.rule.name+'"' :  "null";
+	JAVA org.eclipse.xtext.generator.parser.antlr.AntlrGrammarGenUtil.getQualifiedNameAsString(org.eclipse.xtext.RuleCall);
 
 toStringLiteral(Keyword this) :
 	'"'+this.value.toJavaStringImpl()+'"';

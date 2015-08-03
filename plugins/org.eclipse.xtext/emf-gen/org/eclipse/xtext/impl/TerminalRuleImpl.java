@@ -72,6 +72,12 @@ public class TerminalRuleImpl extends AbstractRuleImpl implements TerminalRule {
 	public boolean isFragment() {
 		return fragment;
 	}
+	
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return super.getName();
+	}
 
 	/**
 	 * <!-- begin-user-doc -->

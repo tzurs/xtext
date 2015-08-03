@@ -10,6 +10,7 @@ package org.eclipse.xtext.serializer.tokens;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.xtext.GrammarUtil;
 import org.eclipse.xtext.RuleCall;
+import org.eclipse.xtext.RuleNames;
 import org.eclipse.xtext.conversion.IValueConverterService;
 import org.eclipse.xtext.nodemodel.INode;
 import org.eclipse.xtext.nodemodel.util.NodeModelUtils;
@@ -26,6 +27,9 @@ public class ValueSerializer implements IValueSerializer {
 
 	@Inject
 	private IValueConverterService converter;
+	
+	@Inject
+	private RuleNames ruleNames;
 
 	@Inject
 	protected ITokenDiagnosticProvider diagnostics;
@@ -52,7 +56,7 @@ public class ValueSerializer implements IValueSerializer {
 	@Override
 	public String serializeAssignedValue(EObject context, RuleCall ruleCall, Object value, INode node, Acceptor errors) {
 		if (node != null) {
-			Object converted = converter.toValue(NodeModelUtils.getTokenText(node), GrammarUtil.getGrammar(ruleCall.getRule()) + "." + ruleCall.getRule().getName(), node);
+			Object converted = converter.toValue(NodeModelUtils.getTokenText(node), ruleNames.getQualifiedName(ruleCall.getRule()), node);
 			if (converted != null && converted.equals(value))
 				return tokenUtil.serializeNode(node);
 		}

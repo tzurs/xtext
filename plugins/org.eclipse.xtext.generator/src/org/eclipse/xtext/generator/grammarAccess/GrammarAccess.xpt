@@ -119,7 +119,7 @@ import «usedGrammar.gaFQName()»;
 
 «DEFINE parseRuleClasses(String lineDelimiter) FOR EnumRule»
 	public class «gaRuleAccessorClassName()» extends AbstractEnumRuleElementFinder {
-		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "«name»");
+		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "«containingGrammar().name».«name»");
 «FOREACH containedAbstractElements() AS e-»
 		private final «e.getClassName()» «e.gaElementAccessorLocalVarName()» = «e.loadElementStatement()»;
 «ENDFOREACH-»
@@ -162,7 +162,7 @@ import «usedGrammar.gaFQName()»;
 «ENDDEFINE»
 
 «DEFINE initializer FOR TerminalRule-»
-		this.«gaRuleAccessorLocalVarName()» = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "«name»");
+		this.«gaRuleAccessorLocalVarName()» = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "«containingGrammar().name».«name»");
 «ENDDEFINE»
 
 «DEFINE getter(Grammar original, String lineDelimiter) FOR AbstractRule»

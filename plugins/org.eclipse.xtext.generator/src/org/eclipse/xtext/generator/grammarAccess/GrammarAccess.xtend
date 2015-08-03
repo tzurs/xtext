@@ -2,13 +2,12 @@ package org.eclipse.xtext.generator.grammarAccess
 
 import com.google.inject.Inject
 import org.eclipse.emf.ecore.EObject
-import org.eclipse.emf.ecore.util.EcoreUtil
 import org.eclipse.xtext.AbstractElement
 import org.eclipse.xtext.AbstractRule
 import org.eclipse.xtext.Grammar
+import org.eclipse.xtext.RuleNames
 import org.eclipse.xtext.TypeRef
 import org.eclipse.xtext.generator.Naming
-import org.eclipse.xtext.xtext.generator.grammarAccess.UniqueRuleNameAdapter
 
 import static extension org.eclipse.xtext.GrammarUtil.*
 
@@ -51,8 +50,8 @@ class GrammarAccess {
 	 * @return the identifier
 	 */
 	def String gaRuleIdentifyer(AbstractRule rule) {
-		val adapter = EcoreUtil.getAdapter(rule.eAdapters(), UniqueRuleNameAdapter) as UniqueRuleNameAdapter
-		return toJavaIdentifier(adapter.getName(), true);
+		val plainName = RuleNames.getRuleNames(rule).getUniqueRuleName(rule);
+		return toJavaIdentifier(plainName, true);
 	}
 		
 	/**

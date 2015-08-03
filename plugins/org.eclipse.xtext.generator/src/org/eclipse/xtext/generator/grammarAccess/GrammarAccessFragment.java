@@ -31,6 +31,7 @@ import org.eclipse.xtext.EcoreUtil2;
 import org.eclipse.xtext.Grammar;
 import org.eclipse.xtext.GrammarUtil;
 import org.eclipse.xtext.IGrammarAccess;
+import org.eclipse.xtext.RuleNames;
 import org.eclipse.xtext.generator.AbstractGeneratorFragment;
 import org.eclipse.xtext.generator.BindFactory;
 import org.eclipse.xtext.generator.Binding;
@@ -80,7 +81,7 @@ public class GrammarAccessFragment extends AbstractGeneratorFragment {
 
 	@Override
 	public void generate(Grammar grammar, XpandExecutionContext ctx) {
-		GrammarAccessUtil.installUniqueNameAdapter(grammar);
+		RuleNames.ensureAdapterInstalled(grammar);
 		super.generate(grammar, ctx);
 
 		final ResourceSaveIndicator isSaving = new ResourceSaveIndicator();
