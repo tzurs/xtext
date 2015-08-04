@@ -652,11 +652,6 @@ ruleFQN2:
 	)
 ;
 
-//Entry rule entryRuleSuffix
-entryRuleSuffix:
-	{ markComposite(elementTypeProvider.getSuffixElementType()); }
-	ruleSuffix
-	EOF;
 
 // Rule Suffix
 ruleSuffix:
@@ -687,11 +682,6 @@ ruleSuffix:
 	)
 ;
 
-//Entry rule entryRuleSuffix2
-entryRuleSuffix2:
-	{ markComposite(elementTypeProvider.getSuffix2ElementType()); }
-	ruleSuffix2
-	EOF;
 
 // Rule Suffix2
 ruleSuffix2:
@@ -713,11 +703,6 @@ ruleSuffix2:
 	)
 ;
 
-//Entry rule entryRuleFragmentWithAction
-entryRuleFragmentWithAction:
-	{ markComposite(elementTypeProvider.getFragmentWithActionElementType()); }
-	ruleFragmentWithAction
-	EOF;
 
 // Rule FragmentWithAction
 ruleFragmentWithAction:
@@ -764,11 +749,6 @@ ruleFragmentWithAction:
 	)
 ;
 
-//Entry rule entryRuleFragmentWithAction2
-entryRuleFragmentWithAction2:
-	{ markComposite(elementTypeProvider.getFragmentWithAction2ElementType()); }
-	ruleFragmentWithAction2
-	EOF;
 
 // Rule FragmentWithAction2
 ruleFragmentWithAction2:
@@ -804,11 +784,6 @@ ruleFragmentWithAction2:
 	)
 ;
 
-//Entry rule entryRuleFragmentWithAction3
-entryRuleFragmentWithAction3:
-	{ markComposite(elementTypeProvider.getFragmentWithAction3ElementType()); }
-	ruleFragmentWithAction3
-	EOF;
 
 // Rule FragmentWithAction3
 ruleFragmentWithAction3:
@@ -864,11 +839,6 @@ ruleFragmentWithAction3:
 	)
 ;
 
-//Entry rule entryRulePRFNamedFragment
-entryRulePRFNamedFragment:
-	{ markComposite(elementTypeProvider.getPRFNamedFragmentElementType()); }
-	rulePRFNamedFragment
-	EOF;
 
 // Rule PRFNamedFragment
 rulePRFNamedFragment:
@@ -885,11 +855,6 @@ rulePRFNamedFragment:
 	)
 ;
 
-//Entry rule entryRulePRFNamedRef
-entryRulePRFNamedRef:
-	{ markComposite(elementTypeProvider.getPRFNamedRefElementType()); }
-	rulePRFNamedRef
-	EOF;
 
 // Rule PRFNamedRef
 rulePRFNamedRef:

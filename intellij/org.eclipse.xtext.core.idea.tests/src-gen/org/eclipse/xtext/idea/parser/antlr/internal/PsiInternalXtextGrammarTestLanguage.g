@@ -149,11 +149,6 @@ ruleGrammar:
 	)
 ;
 
-//Entry rule entryRuleHiddenClause
-entryRuleHiddenClause:
-	{ markComposite(elementTypeProvider.getHiddenClauseElementType()); }
-	ruleHiddenClause
-	EOF;
 
 // Rule HiddenClause
 ruleHiddenClause:
@@ -537,11 +532,6 @@ ruleParserRule:
 	)
 ;
 
-//Entry rule entryRuleRuleNameAndParams
-entryRuleRuleNameAndParams:
-	{ markComposite(elementTypeProvider.getRuleNameAndParamsElementType()); }
-	ruleRuleNameAndParams
-	EOF;
 
 // Rule RuleNameAndParams
 ruleRuleNameAndParams:
@@ -609,11 +599,6 @@ ruleRuleNameAndParams:
 	)
 ;
 
-//Entry rule entryRuleReturnsClause
-entryRuleReturnsClause:
-	{ markComposite(elementTypeProvider.getReturnsClauseElementType()); }
-	ruleReturnsClause
-	EOF;
 
 // Rule ReturnsClause
 ruleReturnsClause:
@@ -975,11 +960,6 @@ ruleAbstractTokenWithCardinality:
 	)
 ;
 
-//Entry rule entryRuleCardinalities
-entryRuleCardinalities:
-	{ markComposite(elementTypeProvider.getCardinalitiesElementType()); }
-	ruleCardinalities
-	EOF;
 
 // Rule Cardinalities
 ruleCardinalities:
@@ -1563,11 +1543,6 @@ ruleAssignment:
 	)
 ;
 
-//Entry rule entryRulePredicate
-entryRulePredicate:
-	{ markComposite(elementTypeProvider.getPredicateElementType()); }
-	rulePredicate
-	EOF;
 
 // Rule Predicate
 rulePredicate:

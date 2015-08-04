@@ -4,15 +4,12 @@ package org.eclipse.xtext.xtextTest.impl;
 
 import java.util.Collection;
 
-import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
@@ -30,8 +27,6 @@ import org.eclipse.xtext.xtextTest.XtextTestPackage;
  * </p>
  * <ul>
  *   <li>{@link org.eclipse.xtext.xtextTest.impl.GroupImpl#getElements <em>Elements</em>}</li>
- *   <li>{@link org.eclipse.xtext.xtextTest.impl.GroupImpl#isPredicated <em>Predicated</em>}</li>
- *   <li>{@link org.eclipse.xtext.xtextTest.impl.GroupImpl#isFirstSetPredicated <em>First Set Predicated</em>}</li>
  * </ul>
  *
  * @generated
@@ -47,46 +42,6 @@ public class GroupImpl extends AbstractElementImpl implements Group
    * @ordered
    */
   protected EList<AbstractElement> elements;
-
-  /**
-   * The default value of the '{@link #isPredicated() <em>Predicated</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #isPredicated()
-   * @generated
-   * @ordered
-   */
-  protected static final boolean PREDICATED_EDEFAULT = false;
-
-  /**
-   * The cached value of the '{@link #isPredicated() <em>Predicated</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #isPredicated()
-   * @generated
-   * @ordered
-   */
-  protected boolean predicated = PREDICATED_EDEFAULT;
-
-  /**
-   * The default value of the '{@link #isFirstSetPredicated() <em>First Set Predicated</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #isFirstSetPredicated()
-   * @generated
-   * @ordered
-   */
-  protected static final boolean FIRST_SET_PREDICATED_EDEFAULT = false;
-
-  /**
-   * The cached value of the '{@link #isFirstSetPredicated() <em>First Set Predicated</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #isFirstSetPredicated()
-   * @generated
-   * @ordered
-   */
-  protected boolean firstSetPredicated = FIRST_SET_PREDICATED_EDEFAULT;
 
   /**
    * <!-- begin-user-doc -->
@@ -128,52 +83,6 @@ public class GroupImpl extends AbstractElementImpl implements Group
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean isPredicated()
-  {
-    return predicated;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void setPredicated(boolean newPredicated)
-  {
-    boolean oldPredicated = predicated;
-    predicated = newPredicated;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, XtextTestPackage.GROUP__PREDICATED, oldPredicated, predicated));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean isFirstSetPredicated()
-  {
-    return firstSetPredicated;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void setFirstSetPredicated(boolean newFirstSetPredicated)
-  {
-    boolean oldFirstSetPredicated = firstSetPredicated;
-    firstSetPredicated = newFirstSetPredicated;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, XtextTestPackage.GROUP__FIRST_SET_PREDICATED, oldFirstSetPredicated, firstSetPredicated));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
@@ -197,10 +106,6 @@ public class GroupImpl extends AbstractElementImpl implements Group
     {
       case XtextTestPackage.GROUP__ELEMENTS:
         return getElements();
-      case XtextTestPackage.GROUP__PREDICATED:
-        return isPredicated();
-      case XtextTestPackage.GROUP__FIRST_SET_PREDICATED:
-        return isFirstSetPredicated();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -220,12 +125,6 @@ public class GroupImpl extends AbstractElementImpl implements Group
         getElements().clear();
         getElements().addAll((Collection<? extends AbstractElement>)newValue);
         return;
-      case XtextTestPackage.GROUP__PREDICATED:
-        setPredicated((Boolean)newValue);
-        return;
-      case XtextTestPackage.GROUP__FIRST_SET_PREDICATED:
-        setFirstSetPredicated((Boolean)newValue);
-        return;
     }
     super.eSet(featureID, newValue);
   }
@@ -243,12 +142,6 @@ public class GroupImpl extends AbstractElementImpl implements Group
       case XtextTestPackage.GROUP__ELEMENTS:
         getElements().clear();
         return;
-      case XtextTestPackage.GROUP__PREDICATED:
-        setPredicated(PREDICATED_EDEFAULT);
-        return;
-      case XtextTestPackage.GROUP__FIRST_SET_PREDICATED:
-        setFirstSetPredicated(FIRST_SET_PREDICATED_EDEFAULT);
-        return;
     }
     super.eUnset(featureID);
   }
@@ -265,31 +158,8 @@ public class GroupImpl extends AbstractElementImpl implements Group
     {
       case XtextTestPackage.GROUP__ELEMENTS:
         return elements != null && !elements.isEmpty();
-      case XtextTestPackage.GROUP__PREDICATED:
-        return predicated != PREDICATED_EDEFAULT;
-      case XtextTestPackage.GROUP__FIRST_SET_PREDICATED:
-        return firstSetPredicated != FIRST_SET_PREDICATED_EDEFAULT;
     }
     return super.eIsSet(featureID);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public String toString()
-  {
-    if (eIsProxy()) return super.toString();
-
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (predicated: ");
-    result.append(predicated);
-    result.append(", firstSetPredicated: ");
-    result.append(firstSetPredicated);
-    result.append(')');
-    return result.toString();
   }
 
 } //GroupImpl

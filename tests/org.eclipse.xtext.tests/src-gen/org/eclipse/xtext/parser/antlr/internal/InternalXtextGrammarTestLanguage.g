@@ -1208,48 +1208,73 @@ ruleAbstractTokenWithCardinality returns [EObject current=null]
         afterParserOrEnumRuleCall();
     }
 )(
-(
-(
-		lv_cardinality_2_1=	'?' 
-    {
-        newLeafNode(lv_cardinality_2_1, grammarAccess.getAbstractTokenWithCardinalityAccess().getCardinalityQuestionMarkKeyword_1_0_0());
+    { 
+		if ($current==null) {
+			$current = createModelElement(grammarAccess.getAbstractTokenWithCardinalityRule());
+		}
+        newCompositeNode(grammarAccess.getAbstractTokenWithCardinalityAccess().getCardinalitiesParserRuleCall_1()); 
     }
- 
-	    {
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getAbstractTokenWithCardinalityRule());
-	        }
-       		setWithLastConsumed($current, "cardinality", lv_cardinality_2_1, null);
-	    }
-
-    |		lv_cardinality_2_2=	'*' 
-    {
-        newLeafNode(lv_cardinality_2_2, grammarAccess.getAbstractTokenWithCardinalityAccess().getCardinalityAsteriskKeyword_1_0_1());
+    this_Cardinalities_2=ruleCardinalities[$current]
+    { 
+        $current = $this_Cardinalities_2.current; 
+        afterParserOrEnumRuleCall();
     }
- 
-	    {
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getAbstractTokenWithCardinalityRule());
-	        }
-       		setWithLastConsumed($current, "cardinality", lv_cardinality_2_2, null);
-	    }
-
-    |		lv_cardinality_2_3=	'+' 
-    {
-        newLeafNode(lv_cardinality_2_3, grammarAccess.getAbstractTokenWithCardinalityAccess().getCardinalityPlusSignKeyword_1_0_2());
-    }
- 
-	    {
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getAbstractTokenWithCardinalityRule());
-	        }
-       		setWithLastConsumed($current, "cardinality", lv_cardinality_2_3, null);
-	    }
-
-)
-
-)
 )?)
+;
+
+
+
+
+
+
+// Rule Cardinalities
+ruleCardinalities [EObject in_current] returns [EObject current=in_current] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+(
+(
+(
+		lv_cardinality_0_1=	'?' 
+    {
+        newLeafNode(lv_cardinality_0_1, grammarAccess.getCardinalitiesAccess().getCardinalityQuestionMarkKeyword_0_0());
+    }
+ 
+	    {
+	        if ($current==null) {
+	            $current = createModelElement(grammarAccess.getCardinalitiesRule());
+	        }
+       		setWithLastConsumed($current, "cardinality", lv_cardinality_0_1, null);
+	    }
+
+    |		lv_cardinality_0_2=	'*' 
+    {
+        newLeafNode(lv_cardinality_0_2, grammarAccess.getCardinalitiesAccess().getCardinalityAsteriskKeyword_0_1());
+    }
+ 
+	    {
+	        if ($current==null) {
+	            $current = createModelElement(grammarAccess.getCardinalitiesRule());
+	        }
+       		setWithLastConsumed($current, "cardinality", lv_cardinality_0_2, null);
+	    }
+
+    |		lv_cardinality_0_3=	'+' 
+    {
+        newLeafNode(lv_cardinality_0_3, grammarAccess.getCardinalitiesAccess().getCardinalityPlusSignKeyword_0_2());
+    }
+ 
+	    {
+	        if ($current==null) {
+	            $current = createModelElement(grammarAccess.getCardinalitiesRule());
+	        }
+       		setWithLastConsumed($current, "cardinality", lv_cardinality_0_3, null);
+	    }
+
+)
+
+)
+)
 ;
 
 
@@ -1814,42 +1839,23 @@ rulePredicatedKeyword returns [EObject current=null]
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-(((
 (
-		lv_predicated_0_0=	'=>' 
-    {
-        newLeafNode(lv_predicated_0_0, grammarAccess.getPredicatedKeywordAccess().getPredicatedEqualsSignGreaterThanSignKeyword_0_0_0());
+    { 
+		if ($current==null) {
+			$current = createModelElement(grammarAccess.getPredicatedKeywordRule());
+		}
+        newCompositeNode(grammarAccess.getPredicatedKeywordAccess().getPredicateParserRuleCall_0()); 
     }
- 
-	    {
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getPredicatedKeywordRule());
-	        }
-       		setWithLastConsumed($current, "predicated", true, "=>");
-	    }
-
-)
-)
-    |(
-(
-		lv_firstSetPredicated_1_0=	'->' 
-    {
-        newLeafNode(lv_firstSetPredicated_1_0, grammarAccess.getPredicatedKeywordAccess().getFirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0());
+    this_Predicate_0=rulePredicate[$current]
+    { 
+        $current = $this_Predicate_0.current; 
+        afterParserOrEnumRuleCall();
     }
- 
-	    {
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getPredicatedKeywordRule());
-	        }
-       		setWithLastConsumed($current, "firstSetPredicated", true, "->");
-	    }
-
-)
-))(
 (
-		lv_value_2_0=RULE_STRING
+(
+		lv_value_1_0=RULE_STRING
 		{
-			newLeafNode(lv_value_2_0, grammarAccess.getPredicatedKeywordAccess().getValueSTRINGTerminalRuleCall_1_0()); 
+			newLeafNode(lv_value_1_0, grammarAccess.getPredicatedKeywordAccess().getValueSTRINGTerminalRuleCall_1_0()); 
 		}
 		{
 	        if ($current==null) {
@@ -1858,7 +1864,7 @@ rulePredicatedKeyword returns [EObject current=null]
        		setWithLastConsumed(
        			$current, 
        			"value",
-        		lv_value_2_0, 
+        		lv_value_1_0, 
         		"org.eclipse.xtext.common.Terminals.STRING");
 	    }
 
@@ -1884,47 +1890,28 @@ rulePredicatedRuleCall returns [EObject current=null]
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-(((
 (
-		lv_predicated_0_0=	'=>' 
-    {
-        newLeafNode(lv_predicated_0_0, grammarAccess.getPredicatedRuleCallAccess().getPredicatedEqualsSignGreaterThanSignKeyword_0_0_0());
+    { 
+		if ($current==null) {
+			$current = createModelElement(grammarAccess.getPredicatedRuleCallRule());
+		}
+        newCompositeNode(grammarAccess.getPredicatedRuleCallAccess().getPredicateParserRuleCall_0()); 
     }
- 
-	    {
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getPredicatedRuleCallRule());
-	        }
-       		setWithLastConsumed($current, "predicated", true, "=>");
-	    }
-
-)
-)
-    |(
+    this_Predicate_0=rulePredicate[$current]
+    { 
+        $current = $this_Predicate_0.current; 
+        afterParserOrEnumRuleCall();
+    }
 (
-		lv_firstSetPredicated_1_0=	'->' 
-    {
-        newLeafNode(lv_firstSetPredicated_1_0, grammarAccess.getPredicatedRuleCallAccess().getFirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0());
-    }
- 
-	    {
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getPredicatedRuleCallRule());
-	        }
-       		setWithLastConsumed($current, "firstSetPredicated", true, "->");
-	    }
-
-)
-))(
 (
 		{
 			if ($current==null) {
 	            $current = createModelElement(grammarAccess.getPredicatedRuleCallRule());
 	        }
         }
-	otherlv_2=RULE_ID
+	otherlv_1=RULE_ID
 	{
-		newLeafNode(otherlv_2, grammarAccess.getPredicatedRuleCallAccess().getRuleAbstractRuleCrossReference_1_0()); 
+		newLeafNode(otherlv_1, grammarAccess.getPredicatedRuleCallAccess().getRuleAbstractRuleCrossReference_1_0()); 
 	}
 
 )
@@ -1949,42 +1936,23 @@ ruleAssignment returns [EObject current=null]
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-(((
-(
-		lv_predicated_0_0=	'=>' 
-    {
-        newLeafNode(lv_predicated_0_0, grammarAccess.getAssignmentAccess().getPredicatedEqualsSignGreaterThanSignKeyword_0_0_0());
+((
+    { 
+		if ($current==null) {
+			$current = createModelElement(grammarAccess.getAssignmentRule());
+		}
+        newCompositeNode(grammarAccess.getAssignmentAccess().getPredicateParserRuleCall_0()); 
     }
- 
-	    {
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getAssignmentRule());
-	        }
-       		setWithLastConsumed($current, "predicated", true, "=>");
-	    }
-
-)
-)
-    |(
-(
-		lv_firstSetPredicated_1_0=	'->' 
-    {
-        newLeafNode(lv_firstSetPredicated_1_0, grammarAccess.getAssignmentAccess().getFirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0());
+    this_Predicate_0=rulePredicate[$current]
+    { 
+        $current = $this_Predicate_0.current; 
+        afterParserOrEnumRuleCall();
     }
- 
-	    {
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getAssignmentRule());
-	        }
-       		setWithLastConsumed($current, "firstSetPredicated", true, "->");
-	    }
-
-)
-))?(
+)?(
 (
-		lv_feature_2_0=RULE_ID
+		lv_feature_1_0=RULE_ID
 		{
-			newLeafNode(lv_feature_2_0, grammarAccess.getAssignmentAccess().getFeatureIDTerminalRuleCall_1_0()); 
+			newLeafNode(lv_feature_1_0, grammarAccess.getAssignmentAccess().getFeatureIDTerminalRuleCall_1_0()); 
 		}
 		{
 	        if ($current==null) {
@@ -1993,7 +1961,7 @@ ruleAssignment returns [EObject current=null]
        		setWithLastConsumed(
        			$current, 
        			"feature",
-        		lv_feature_2_0, 
+        		lv_feature_1_0, 
         		"org.eclipse.xtext.common.Terminals.ID");
 	    }
 
@@ -2001,40 +1969,40 @@ ruleAssignment returns [EObject current=null]
 )(
 (
 (
-		lv_operator_3_1=	'+=' 
+		lv_operator_2_1=	'+=' 
     {
-        newLeafNode(lv_operator_3_1, grammarAccess.getAssignmentAccess().getOperatorPlusSignEqualsSignKeyword_2_0_0());
+        newLeafNode(lv_operator_2_1, grammarAccess.getAssignmentAccess().getOperatorPlusSignEqualsSignKeyword_2_0_0());
     }
  
 	    {
 	        if ($current==null) {
 	            $current = createModelElement(grammarAccess.getAssignmentRule());
 	        }
-       		setWithLastConsumed($current, "operator", lv_operator_3_1, null);
+       		setWithLastConsumed($current, "operator", lv_operator_2_1, null);
 	    }
 
-    |		lv_operator_3_2=	'=' 
+    |		lv_operator_2_2=	'=' 
     {
-        newLeafNode(lv_operator_3_2, grammarAccess.getAssignmentAccess().getOperatorEqualsSignKeyword_2_0_1());
+        newLeafNode(lv_operator_2_2, grammarAccess.getAssignmentAccess().getOperatorEqualsSignKeyword_2_0_1());
     }
  
 	    {
 	        if ($current==null) {
 	            $current = createModelElement(grammarAccess.getAssignmentRule());
 	        }
-       		setWithLastConsumed($current, "operator", lv_operator_3_2, null);
+       		setWithLastConsumed($current, "operator", lv_operator_2_2, null);
 	    }
 
-    |		lv_operator_3_3=	'?=' 
+    |		lv_operator_2_3=	'?=' 
     {
-        newLeafNode(lv_operator_3_3, grammarAccess.getAssignmentAccess().getOperatorQuestionMarkEqualsSignKeyword_2_0_2());
+        newLeafNode(lv_operator_2_3, grammarAccess.getAssignmentAccess().getOperatorQuestionMarkEqualsSignKeyword_2_0_2());
     }
  
 	    {
 	        if ($current==null) {
 	            $current = createModelElement(grammarAccess.getAssignmentRule());
 	        }
-       		setWithLastConsumed($current, "operator", lv_operator_3_3, null);
+       		setWithLastConsumed($current, "operator", lv_operator_2_3, null);
 	    }
 
 )
@@ -2045,16 +2013,60 @@ ruleAssignment returns [EObject current=null]
 		{ 
 	        newCompositeNode(grammarAccess.getAssignmentAccess().getTerminalAssignableTerminalParserRuleCall_3_0()); 
 	    }
-		lv_terminal_4_0=ruleAssignableTerminal		{
+		lv_terminal_3_0=ruleAssignableTerminal		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getAssignmentRule());
 	        }
        		set(
        			$current, 
        			"terminal",
-        		lv_terminal_4_0, 
+        		lv_terminal_3_0, 
         		"org.eclipse.xtext.XtextGrammarTestLanguage.AssignableTerminal");
 	        afterParserOrEnumRuleCall();
+	    }
+
+)
+))
+;
+
+
+
+
+
+
+// Rule Predicate
+rulePredicate [EObject in_current] returns [EObject current=in_current] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+((
+(
+		lv_predicated_0_0=	'=>' 
+    {
+        newLeafNode(lv_predicated_0_0, grammarAccess.getPredicateAccess().getPredicatedEqualsSignGreaterThanSignKeyword_0_0());
+    }
+ 
+	    {
+	        if ($current==null) {
+	            $current = createModelElement(grammarAccess.getPredicateRule());
+	        }
+       		setWithLastConsumed($current, "predicated", true, "=>");
+	    }
+
+)
+)
+    |(
+(
+		lv_firstSetPredicated_1_0=	'->' 
+    {
+        newLeafNode(lv_firstSetPredicated_1_0, grammarAccess.getPredicateAccess().getFirstSetPredicatedHyphenMinusGreaterThanSignKeyword_1_0());
+    }
+ 
+	    {
+	        if ($current==null) {
+	            $current = createModelElement(grammarAccess.getPredicateRule());
+	        }
+       		setWithLastConsumed($current, "firstSetPredicated", true, "->");
 	    }
 
 )
@@ -2382,62 +2394,43 @@ rulePredicatedGroup returns [EObject current=null]
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-(((
 (
-		lv_predicated_0_0=	'=>' 
-    {
-        newLeafNode(lv_predicated_0_0, grammarAccess.getPredicatedGroupAccess().getPredicatedEqualsSignGreaterThanSignKeyword_0_0_0());
+    { 
+		if ($current==null) {
+			$current = createModelElement(grammarAccess.getPredicatedGroupRule());
+		}
+        newCompositeNode(grammarAccess.getPredicatedGroupAccess().getPredicateParserRuleCall_0()); 
     }
- 
-	    {
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getPredicatedGroupRule());
-	        }
-       		setWithLastConsumed($current, "predicated", true, "=>");
-	    }
-
-)
-)
-    |(
-(
-		lv_firstSetPredicated_1_0=	'->' 
-    {
-        newLeafNode(lv_firstSetPredicated_1_0, grammarAccess.getPredicatedGroupAccess().getFirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0());
+    this_Predicate_0=rulePredicate[$current]
+    { 
+        $current = $this_Predicate_0.current; 
+        afterParserOrEnumRuleCall();
     }
- 
-	    {
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getPredicatedGroupRule());
-	        }
-       		setWithLastConsumed($current, "firstSetPredicated", true, "->");
-	    }
-
-)
-))	otherlv_2='(' 
+	otherlv_1='(' 
     {
-    	newLeafNode(otherlv_2, grammarAccess.getPredicatedGroupAccess().getLeftParenthesisKeyword_1());
+    	newLeafNode(otherlv_1, grammarAccess.getPredicatedGroupAccess().getLeftParenthesisKeyword_1());
     }
 (
 (
 		{ 
 	        newCompositeNode(grammarAccess.getPredicatedGroupAccess().getElementsAlternativesParserRuleCall_2_0()); 
 	    }
-		lv_elements_3_0=ruleAlternatives		{
+		lv_elements_2_0=ruleAlternatives		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getPredicatedGroupRule());
 	        }
        		add(
        			$current, 
        			"elements",
-        		lv_elements_3_0, 
+        		lv_elements_2_0, 
         		"org.eclipse.xtext.XtextGrammarTestLanguage.Alternatives");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-)	otherlv_4=')' 
+)	otherlv_3=')' 
     {
-    	newLeafNode(otherlv_4, grammarAccess.getPredicatedGroupAccess().getRightParenthesisKeyword_3());
+    	newLeafNode(otherlv_3, grammarAccess.getPredicatedGroupAccess().getRightParenthesisKeyword_3());
     }
 )
 ;
@@ -2516,53 +2509,43 @@ ruleTerminalRule returns [EObject current=null]
 	    }
 
 )
-)(	otherlv_4='returns' 
-    {
-    	newLeafNode(otherlv_4, grammarAccess.getTerminalRuleAccess().getReturnsKeyword_1_1_1_0());
+)(
+    { 
+		if ($current==null) {
+			$current = createModelElement(grammarAccess.getTerminalRuleRule());
+		}
+        newCompositeNode(grammarAccess.getTerminalRuleAccess().getReturnsClauseParserRuleCall_1_1_1()); 
     }
-(
-(
-		{ 
-	        newCompositeNode(grammarAccess.getTerminalRuleAccess().getTypeTypeRefParserRuleCall_1_1_1_1_0()); 
-	    }
-		lv_type_5_0=ruleTypeRef		{
-	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getTerminalRuleRule());
-	        }
-       		set(
-       			$current, 
-       			"type",
-        		lv_type_5_0, 
-        		"org.eclipse.xtext.XtextGrammarTestLanguage.TypeRef");
-	        afterParserOrEnumRuleCall();
-	    }
-
-)
-))?))	otherlv_6=':' 
+    this_ReturnsClause_4=ruleReturnsClause[$current]
+    { 
+        $current = $this_ReturnsClause_4.current; 
+        afterParserOrEnumRuleCall();
+    }
+)?))	otherlv_5=':' 
     {
-    	newLeafNode(otherlv_6, grammarAccess.getTerminalRuleAccess().getColonKeyword_2());
+    	newLeafNode(otherlv_5, grammarAccess.getTerminalRuleAccess().getColonKeyword_2());
     }
 (
 (
 		{ 
 	        newCompositeNode(grammarAccess.getTerminalRuleAccess().getAlternativesTerminalAlternativesParserRuleCall_3_0()); 
 	    }
-		lv_alternatives_7_0=ruleTerminalAlternatives		{
+		lv_alternatives_6_0=ruleTerminalAlternatives		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getTerminalRuleRule());
 	        }
        		set(
        			$current, 
        			"alternatives",
-        		lv_alternatives_7_0, 
+        		lv_alternatives_6_0, 
         		"org.eclipse.xtext.XtextGrammarTestLanguage.TerminalAlternatives");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-)	otherlv_8=';' 
+)	otherlv_7=';' 
     {
-    	newLeafNode(otherlv_8, grammarAccess.getTerminalRuleAccess().getSemicolonKeyword_4());
+    	newLeafNode(otherlv_7, grammarAccess.getTerminalRuleAccess().getSemicolonKeyword_4());
     }
 )
 ;
@@ -2707,47 +2690,17 @@ ruleTerminalToken returns [EObject current=null]
         afterParserOrEnumRuleCall();
     }
 (
-(
-(
-		lv_cardinality_1_1=	'?' 
-    {
-        newLeafNode(lv_cardinality_1_1, grammarAccess.getTerminalTokenAccess().getCardinalityQuestionMarkKeyword_1_0_0());
+    { 
+		if ($current==null) {
+			$current = createModelElement(grammarAccess.getTerminalTokenRule());
+		}
+        newCompositeNode(grammarAccess.getTerminalTokenAccess().getCardinalitiesParserRuleCall_1()); 
     }
- 
-	    {
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getTerminalTokenRule());
-	        }
-       		setWithLastConsumed($current, "cardinality", lv_cardinality_1_1, null);
-	    }
-
-    |		lv_cardinality_1_2=	'*' 
-    {
-        newLeafNode(lv_cardinality_1_2, grammarAccess.getTerminalTokenAccess().getCardinalityAsteriskKeyword_1_0_1());
+    this_Cardinalities_1=ruleCardinalities[$current]
+    { 
+        $current = $this_Cardinalities_1.current; 
+        afterParserOrEnumRuleCall();
     }
- 
-	    {
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getTerminalTokenRule());
-	        }
-       		setWithLastConsumed($current, "cardinality", lv_cardinality_1_2, null);
-	    }
-
-    |		lv_cardinality_1_3=	'+' 
-    {
-        newLeafNode(lv_cardinality_1_3, grammarAccess.getTerminalTokenAccess().getCardinalityPlusSignKeyword_1_0_2());
-    }
- 
-	    {
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getTerminalTokenRule());
-	        }
-       		setWithLastConsumed($current, "cardinality", lv_cardinality_1_3, null);
-	    }
-
-)
-
-)
 )?)
 ;
 
@@ -3155,53 +3108,43 @@ ruleEnumRule returns [EObject current=null]
 	    }
 
 )
-)(	otherlv_2='returns' 
-    {
-    	newLeafNode(otherlv_2, grammarAccess.getEnumRuleAccess().getReturnsKeyword_2_0());
+)(
+    { 
+		if ($current==null) {
+			$current = createModelElement(grammarAccess.getEnumRuleRule());
+		}
+        newCompositeNode(grammarAccess.getEnumRuleAccess().getReturnsClauseParserRuleCall_2()); 
     }
-(
-(
-		{ 
-	        newCompositeNode(grammarAccess.getEnumRuleAccess().getTypeTypeRefParserRuleCall_2_1_0()); 
-	    }
-		lv_type_3_0=ruleTypeRef		{
-	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getEnumRuleRule());
-	        }
-       		set(
-       			$current, 
-       			"type",
-        		lv_type_3_0, 
-        		"org.eclipse.xtext.XtextGrammarTestLanguage.TypeRef");
-	        afterParserOrEnumRuleCall();
-	    }
-
-)
-))?	otherlv_4=':' 
+    this_ReturnsClause_2=ruleReturnsClause[$current]
+    { 
+        $current = $this_ReturnsClause_2.current; 
+        afterParserOrEnumRuleCall();
+    }
+)?	otherlv_3=':' 
     {
-    	newLeafNode(otherlv_4, grammarAccess.getEnumRuleAccess().getColonKeyword_3());
+    	newLeafNode(otherlv_3, grammarAccess.getEnumRuleAccess().getColonKeyword_3());
     }
 (
 (
 		{ 
 	        newCompositeNode(grammarAccess.getEnumRuleAccess().getAlternativesEnumLiteralsParserRuleCall_4_0()); 
 	    }
-		lv_alternatives_5_0=ruleEnumLiterals		{
+		lv_alternatives_4_0=ruleEnumLiterals		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getEnumRuleRule());
 	        }
        		set(
        			$current, 
        			"alternatives",
-        		lv_alternatives_5_0, 
+        		lv_alternatives_4_0, 
         		"org.eclipse.xtext.XtextGrammarTestLanguage.EnumLiterals");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-)	otherlv_6=';' 
+)	otherlv_5=';' 
     {
-    	newLeafNode(otherlv_6, grammarAccess.getEnumRuleAccess().getSemicolonKeyword_5());
+    	newLeafNode(otherlv_5, grammarAccess.getEnumRuleAccess().getSemicolonKeyword_5());
     }
 )
 ;

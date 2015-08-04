@@ -1666,63 +1666,34 @@ public class PsiInternalFragmentTestLanguageParser extends AbstractPsiAntlrParse
     // $ANTLR end "ruleFQN2"
 
 
-    // $ANTLR start "entryRuleSuffix"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:639:1: entryRuleSuffix : ruleSuffix EOF ;
-    public final void entryRuleSuffix() throws RecognitionException {
-        try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:639:16: ( ruleSuffix EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:640:2: ruleSuffix EOF
-            {
-             markComposite(elementTypeProvider.getSuffixElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleSuffix_in_entryRuleSuffix2002);
-            ruleSuffix();
-
-            state._fsp--;
-
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleSuffix2005); 
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-        }
-        return ;
-    }
-    // $ANTLR end "entryRuleSuffix"
-
-
     // $ANTLR start "ruleSuffix"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:645:1: ruleSuffix : (kw= '.' this_ID_1= RULE_ID ( ruleSuffix )? ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:640:1: ruleSuffix : (kw= '.' this_ID_1= RULE_ID ( ruleSuffix )? ) ;
     public final void ruleSuffix() throws RecognitionException {
         Token kw=null;
         Token this_ID_1=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:645:11: ( (kw= '.' this_ID_1= RULE_ID ( ruleSuffix )? ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:646:2: (kw= '.' this_ID_1= RULE_ID ( ruleSuffix )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:640:11: ( (kw= '.' this_ID_1= RULE_ID ( ruleSuffix )? ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:641:2: (kw= '.' this_ID_1= RULE_ID ( ruleSuffix )? )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:646:2: (kw= '.' this_ID_1= RULE_ID ( ruleSuffix )? )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:647:3: kw= '.' this_ID_1= RULE_ID ( ruleSuffix )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:641:2: (kw= '.' this_ID_1= RULE_ID ( ruleSuffix )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:642:3: kw= '.' this_ID_1= RULE_ID ( ruleSuffix )?
             {
 
             			markLeaf(elementTypeProvider.getSuffix_FullStopKeyword_0ElementType());
             		
-            kw=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleSuffix2024); 
+            kw=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleSuffix2010); 
 
             			doneLeaf(kw);
             		
 
             			markLeaf(elementTypeProvider.getSuffix_IDTerminalRuleCall_1ElementType());
             		
-            this_ID_1=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleSuffix2038); 
+            this_ID_1=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleSuffix2024); 
 
             			doneLeaf(this_ID_1);
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:661:3: ( ruleSuffix )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:656:3: ( ruleSuffix )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -1731,12 +1702,12 @@ public class PsiInternalFragmentTestLanguageParser extends AbstractPsiAntlrParse
             }
             switch (alt10) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:662:4: ruleSuffix
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:657:4: ruleSuffix
                     {
 
                     				markComposite(elementTypeProvider.getSuffix_SuffixParserRuleCall_2ElementType());
                     			
-                    pushFollow(FollowSets000.FOLLOW_ruleSuffix_in_ruleSuffix2056);
+                    pushFollow(FollowSets000.FOLLOW_ruleSuffix_in_ruleSuffix2042);
                     ruleSuffix();
 
                     state._fsp--;
@@ -1768,59 +1739,30 @@ public class PsiInternalFragmentTestLanguageParser extends AbstractPsiAntlrParse
     // $ANTLR end "ruleSuffix"
 
 
-    // $ANTLR start "entryRuleSuffix2"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:674:1: entryRuleSuffix2 : ruleSuffix2 EOF ;
-    public final void entryRuleSuffix2() throws RecognitionException {
-        try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:674:17: ( ruleSuffix2 EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:675:2: ruleSuffix2 EOF
-            {
-             markComposite(elementTypeProvider.getSuffix2ElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleSuffix2_in_entryRuleSuffix22082);
-            ruleSuffix2();
-
-            state._fsp--;
-
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleSuffix22085); 
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-        }
-        return ;
-    }
-    // $ANTLR end "entryRuleSuffix2"
-
-
     // $ANTLR start "ruleSuffix2"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:680:1: ruleSuffix2 : (kw= '.' this_ID_1= RULE_ID ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:670:1: ruleSuffix2 : (kw= '.' this_ID_1= RULE_ID ) ;
     public final void ruleSuffix2() throws RecognitionException {
         Token kw=null;
         Token this_ID_1=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:680:12: ( (kw= '.' this_ID_1= RULE_ID ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:681:2: (kw= '.' this_ID_1= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:670:12: ( (kw= '.' this_ID_1= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:671:2: (kw= '.' this_ID_1= RULE_ID )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:681:2: (kw= '.' this_ID_1= RULE_ID )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:682:3: kw= '.' this_ID_1= RULE_ID
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:671:2: (kw= '.' this_ID_1= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:672:3: kw= '.' this_ID_1= RULE_ID
             {
 
             			markLeaf(elementTypeProvider.getSuffix2_FullStopKeyword_0ElementType());
             		
-            kw=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleSuffix22104); 
+            kw=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleSuffix22076); 
 
             			doneLeaf(kw);
             		
 
             			markLeaf(elementTypeProvider.getSuffix2_IDTerminalRuleCall_1ElementType());
             		
-            this_ID_1=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleSuffix22118); 
+            this_ID_1=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleSuffix22090); 
 
             			doneLeaf(this_ID_1);
             		
@@ -1842,59 +1784,30 @@ public class PsiInternalFragmentTestLanguageParser extends AbstractPsiAntlrParse
     // $ANTLR end "ruleSuffix2"
 
 
-    // $ANTLR start "entryRuleFragmentWithAction"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:700:1: entryRuleFragmentWithAction : ruleFragmentWithAction EOF ;
-    public final void entryRuleFragmentWithAction() throws RecognitionException {
-        try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:700:28: ( ruleFragmentWithAction EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:701:2: ruleFragmentWithAction EOF
-            {
-             markComposite(elementTypeProvider.getFragmentWithActionElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleFragmentWithAction_in_entryRuleFragmentWithAction2138);
-            ruleFragmentWithAction();
-
-            state._fsp--;
-
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleFragmentWithAction2141); 
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-        }
-        return ;
-    }
-    // $ANTLR end "entryRuleFragmentWithAction"
-
-
     // $ANTLR start "ruleFragmentWithAction"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:706:1: ruleFragmentWithAction : ( ( (lv_name_0_0= RULE_ID ) ) () ( (lv_name_2_0= RULE_ID ) ) ( (otherlv_3= RULE_ID ) )? ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:691:1: ruleFragmentWithAction : ( ( (lv_name_0_0= RULE_ID ) ) () ( (lv_name_2_0= RULE_ID ) ) ( (otherlv_3= RULE_ID ) )? ) ;
     public final void ruleFragmentWithAction() throws RecognitionException {
         Token lv_name_0_0=null;
         Token lv_name_2_0=null;
         Token otherlv_3=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:706:23: ( ( ( (lv_name_0_0= RULE_ID ) ) () ( (lv_name_2_0= RULE_ID ) ) ( (otherlv_3= RULE_ID ) )? ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:707:2: ( ( (lv_name_0_0= RULE_ID ) ) () ( (lv_name_2_0= RULE_ID ) ) ( (otherlv_3= RULE_ID ) )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:691:23: ( ( ( (lv_name_0_0= RULE_ID ) ) () ( (lv_name_2_0= RULE_ID ) ) ( (otherlv_3= RULE_ID ) )? ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:692:2: ( ( (lv_name_0_0= RULE_ID ) ) () ( (lv_name_2_0= RULE_ID ) ) ( (otherlv_3= RULE_ID ) )? )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:707:2: ( ( (lv_name_0_0= RULE_ID ) ) () ( (lv_name_2_0= RULE_ID ) ) ( (otherlv_3= RULE_ID ) )? )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:708:3: ( (lv_name_0_0= RULE_ID ) ) () ( (lv_name_2_0= RULE_ID ) ) ( (otherlv_3= RULE_ID ) )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:692:2: ( ( (lv_name_0_0= RULE_ID ) ) () ( (lv_name_2_0= RULE_ID ) ) ( (otherlv_3= RULE_ID ) )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:693:3: ( (lv_name_0_0= RULE_ID ) ) () ( (lv_name_2_0= RULE_ID ) ) ( (otherlv_3= RULE_ID ) )?
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:708:3: ( (lv_name_0_0= RULE_ID ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:709:4: (lv_name_0_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:693:3: ( (lv_name_0_0= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:694:4: (lv_name_0_0= RULE_ID )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:709:4: (lv_name_0_0= RULE_ID )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:710:5: lv_name_0_0= RULE_ID
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:694:4: (lv_name_0_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:695:5: lv_name_0_0= RULE_ID
             {
 
             					markLeaf(elementTypeProvider.getFragmentWithAction_NameIDTerminalRuleCall_0_0ElementType());
             				
-            lv_name_0_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleFragmentWithAction2173); 
+            lv_name_0_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleFragmentWithAction2131); 
 
             					doneLeaf(lv_name_0_0);
             				
@@ -1904,8 +1817,8 @@ public class PsiInternalFragmentTestLanguageParser extends AbstractPsiAntlrParse
 
             }
 
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:719:3: ()
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:720:4: 
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:704:3: ()
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:705:4: 
             {
 
             				precedeComposite(elementTypeProvider.getFragmentWithAction_PRFNamedWithActionPrevAction_1ElementType());
@@ -1914,16 +1827,16 @@ public class PsiInternalFragmentTestLanguageParser extends AbstractPsiAntlrParse
 
             }
 
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:725:3: ( (lv_name_2_0= RULE_ID ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:726:4: (lv_name_2_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:710:3: ( (lv_name_2_0= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:711:4: (lv_name_2_0= RULE_ID )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:726:4: (lv_name_2_0= RULE_ID )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:727:5: lv_name_2_0= RULE_ID
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:711:4: (lv_name_2_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:712:5: lv_name_2_0= RULE_ID
             {
 
             					markLeaf(elementTypeProvider.getFragmentWithAction_NameIDTerminalRuleCall_2_0ElementType());
             				
-            lv_name_2_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleFragmentWithAction2224); 
+            lv_name_2_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleFragmentWithAction2182); 
 
             					doneLeaf(lv_name_2_0);
             				
@@ -1933,7 +1846,7 @@ public class PsiInternalFragmentTestLanguageParser extends AbstractPsiAntlrParse
 
             }
 
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:736:3: ( (otherlv_3= RULE_ID ) )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:721:3: ( (otherlv_3= RULE_ID ) )?
             int alt11=2;
             int LA11_0 = input.LA(1);
 
@@ -1942,15 +1855,15 @@ public class PsiInternalFragmentTestLanguageParser extends AbstractPsiAntlrParse
             }
             switch (alt11) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:737:4: (otherlv_3= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:722:4: (otherlv_3= RULE_ID )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:737:4: (otherlv_3= RULE_ID )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:738:5: otherlv_3= RULE_ID
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:722:4: (otherlv_3= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:723:5: otherlv_3= RULE_ID
                     {
 
                     					markLeaf(elementTypeProvider.getFragmentWithAction_Ref2PRFNamedCrossReference_3_0ElementType());
                     				
-                    otherlv_3=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleFragmentWithAction2262); 
+                    otherlv_3=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleFragmentWithAction2220); 
 
                     					doneLeaf(otherlv_3);
                     				
@@ -1981,50 +1894,21 @@ public class PsiInternalFragmentTestLanguageParser extends AbstractPsiAntlrParse
     // $ANTLR end "ruleFragmentWithAction"
 
 
-    // $ANTLR start "entryRuleFragmentWithAction2"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:751:1: entryRuleFragmentWithAction2 : ruleFragmentWithAction2 EOF ;
-    public final void entryRuleFragmentWithAction2() throws RecognitionException {
-        try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:751:29: ( ruleFragmentWithAction2 EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:752:2: ruleFragmentWithAction2 EOF
-            {
-             markComposite(elementTypeProvider.getFragmentWithAction2ElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleFragmentWithAction2_in_entryRuleFragmentWithAction22294);
-            ruleFragmentWithAction2();
-
-            state._fsp--;
-
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleFragmentWithAction22297); 
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-        }
-        return ;
-    }
-    // $ANTLR end "entryRuleFragmentWithAction2"
-
-
     // $ANTLR start "ruleFragmentWithAction2"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:757:1: ruleFragmentWithAction2 : ( () ( (lv_name_1_0= RULE_ID ) ) ( (otherlv_2= RULE_ID ) )? ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:737:1: ruleFragmentWithAction2 : ( () ( (lv_name_1_0= RULE_ID ) ) ( (otherlv_2= RULE_ID ) )? ) ;
     public final void ruleFragmentWithAction2() throws RecognitionException {
         Token lv_name_1_0=null;
         Token otherlv_2=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:757:24: ( ( () ( (lv_name_1_0= RULE_ID ) ) ( (otherlv_2= RULE_ID ) )? ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:758:2: ( () ( (lv_name_1_0= RULE_ID ) ) ( (otherlv_2= RULE_ID ) )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:737:24: ( ( () ( (lv_name_1_0= RULE_ID ) ) ( (otherlv_2= RULE_ID ) )? ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:738:2: ( () ( (lv_name_1_0= RULE_ID ) ) ( (otherlv_2= RULE_ID ) )? )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:758:2: ( () ( (lv_name_1_0= RULE_ID ) ) ( (otherlv_2= RULE_ID ) )? )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:759:3: () ( (lv_name_1_0= RULE_ID ) ) ( (otherlv_2= RULE_ID ) )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:738:2: ( () ( (lv_name_1_0= RULE_ID ) ) ( (otherlv_2= RULE_ID ) )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:739:3: () ( (lv_name_1_0= RULE_ID ) ) ( (otherlv_2= RULE_ID ) )?
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:759:3: ()
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:760:4: 
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:739:3: ()
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:740:4: 
             {
 
             				precedeComposite(elementTypeProvider.getFragmentWithAction2_PRFNamedWithActionPrevAction_0ElementType());
@@ -2033,16 +1917,16 @@ public class PsiInternalFragmentTestLanguageParser extends AbstractPsiAntlrParse
 
             }
 
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:765:3: ( (lv_name_1_0= RULE_ID ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:766:4: (lv_name_1_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:745:3: ( (lv_name_1_0= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:746:4: (lv_name_1_0= RULE_ID )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:766:4: (lv_name_1_0= RULE_ID )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:767:5: lv_name_1_0= RULE_ID
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:746:4: (lv_name_1_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:747:5: lv_name_1_0= RULE_ID
             {
 
             					markLeaf(elementTypeProvider.getFragmentWithAction2_NameIDTerminalRuleCall_1_0ElementType());
             				
-            lv_name_1_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleFragmentWithAction22342); 
+            lv_name_1_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleFragmentWithAction22286); 
 
             					doneLeaf(lv_name_1_0);
             				
@@ -2052,7 +1936,7 @@ public class PsiInternalFragmentTestLanguageParser extends AbstractPsiAntlrParse
 
             }
 
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:776:3: ( (otherlv_2= RULE_ID ) )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:756:3: ( (otherlv_2= RULE_ID ) )?
             int alt12=2;
             int LA12_0 = input.LA(1);
 
@@ -2061,15 +1945,15 @@ public class PsiInternalFragmentTestLanguageParser extends AbstractPsiAntlrParse
             }
             switch (alt12) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:777:4: (otherlv_2= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:757:4: (otherlv_2= RULE_ID )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:777:4: (otherlv_2= RULE_ID )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:778:5: otherlv_2= RULE_ID
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:757:4: (otherlv_2= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:758:5: otherlv_2= RULE_ID
                     {
 
                     					markLeaf(elementTypeProvider.getFragmentWithAction2_Ref2PRFNamedCrossReference_2_0ElementType());
                     				
-                    otherlv_2=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleFragmentWithAction22380); 
+                    otherlv_2=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleFragmentWithAction22324); 
 
                     					doneLeaf(otherlv_2);
                     				
@@ -2100,37 +1984,8 @@ public class PsiInternalFragmentTestLanguageParser extends AbstractPsiAntlrParse
     // $ANTLR end "ruleFragmentWithAction2"
 
 
-    // $ANTLR start "entryRuleFragmentWithAction3"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:791:1: entryRuleFragmentWithAction3 : ruleFragmentWithAction3 EOF ;
-    public final void entryRuleFragmentWithAction3() throws RecognitionException {
-        try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:791:29: ( ruleFragmentWithAction3 EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:792:2: ruleFragmentWithAction3 EOF
-            {
-             markComposite(elementTypeProvider.getFragmentWithAction3ElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleFragmentWithAction3_in_entryRuleFragmentWithAction32412);
-            ruleFragmentWithAction3();
-
-            state._fsp--;
-
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleFragmentWithAction32415); 
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-        }
-        return ;
-    }
-    // $ANTLR end "entryRuleFragmentWithAction3"
-
-
     // $ANTLR start "ruleFragmentWithAction3"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:797:1: ruleFragmentWithAction3 : ( ( (lv_name_0_0= RULE_ID ) ) ( () otherlv_2= '->' ( (lv_name_3_0= RULE_ID ) ) ( (otherlv_4= RULE_ID ) )? )* ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:772:1: ruleFragmentWithAction3 : ( ( (lv_name_0_0= RULE_ID ) ) ( () otherlv_2= '->' ( (lv_name_3_0= RULE_ID ) ) ( (otherlv_4= RULE_ID ) )? )* ) ;
     public final void ruleFragmentWithAction3() throws RecognitionException {
         Token lv_name_0_0=null;
         Token otherlv_2=null;
@@ -2138,22 +1993,22 @@ public class PsiInternalFragmentTestLanguageParser extends AbstractPsiAntlrParse
         Token otherlv_4=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:797:24: ( ( ( (lv_name_0_0= RULE_ID ) ) ( () otherlv_2= '->' ( (lv_name_3_0= RULE_ID ) ) ( (otherlv_4= RULE_ID ) )? )* ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:798:2: ( ( (lv_name_0_0= RULE_ID ) ) ( () otherlv_2= '->' ( (lv_name_3_0= RULE_ID ) ) ( (otherlv_4= RULE_ID ) )? )* )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:772:24: ( ( ( (lv_name_0_0= RULE_ID ) ) ( () otherlv_2= '->' ( (lv_name_3_0= RULE_ID ) ) ( (otherlv_4= RULE_ID ) )? )* ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:773:2: ( ( (lv_name_0_0= RULE_ID ) ) ( () otherlv_2= '->' ( (lv_name_3_0= RULE_ID ) ) ( (otherlv_4= RULE_ID ) )? )* )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:798:2: ( ( (lv_name_0_0= RULE_ID ) ) ( () otherlv_2= '->' ( (lv_name_3_0= RULE_ID ) ) ( (otherlv_4= RULE_ID ) )? )* )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:799:3: ( (lv_name_0_0= RULE_ID ) ) ( () otherlv_2= '->' ( (lv_name_3_0= RULE_ID ) ) ( (otherlv_4= RULE_ID ) )? )*
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:773:2: ( ( (lv_name_0_0= RULE_ID ) ) ( () otherlv_2= '->' ( (lv_name_3_0= RULE_ID ) ) ( (otherlv_4= RULE_ID ) )? )* )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:774:3: ( (lv_name_0_0= RULE_ID ) ) ( () otherlv_2= '->' ( (lv_name_3_0= RULE_ID ) ) ( (otherlv_4= RULE_ID ) )? )*
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:799:3: ( (lv_name_0_0= RULE_ID ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:800:4: (lv_name_0_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:774:3: ( (lv_name_0_0= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:775:4: (lv_name_0_0= RULE_ID )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:800:4: (lv_name_0_0= RULE_ID )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:801:5: lv_name_0_0= RULE_ID
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:775:4: (lv_name_0_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:776:5: lv_name_0_0= RULE_ID
             {
 
             					markLeaf(elementTypeProvider.getFragmentWithAction3_NameIDTerminalRuleCall_0_0ElementType());
             				
-            lv_name_0_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleFragmentWithAction32447); 
+            lv_name_0_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleFragmentWithAction32377); 
 
             					doneLeaf(lv_name_0_0);
             				
@@ -2163,7 +2018,7 @@ public class PsiInternalFragmentTestLanguageParser extends AbstractPsiAntlrParse
 
             }
 
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:810:3: ( () otherlv_2= '->' ( (lv_name_3_0= RULE_ID ) ) ( (otherlv_4= RULE_ID ) )? )*
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:785:3: ( () otherlv_2= '->' ( (lv_name_3_0= RULE_ID ) ) ( (otherlv_4= RULE_ID ) )? )*
             loop14:
             do {
                 int alt14=2;
@@ -2176,10 +2031,10 @@ public class PsiInternalFragmentTestLanguageParser extends AbstractPsiAntlrParse
 
                 switch (alt14) {
             	case 1 :
-            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:811:4: () otherlv_2= '->' ( (lv_name_3_0= RULE_ID ) ) ( (otherlv_4= RULE_ID ) )?
+            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:786:4: () otherlv_2= '->' ( (lv_name_3_0= RULE_ID ) ) ( (otherlv_4= RULE_ID ) )?
             	    {
-            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:811:4: ()
-            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:812:5: 
+            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:786:4: ()
+            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:787:5: 
             	    {
 
             	    					precedeComposite(elementTypeProvider.getFragmentWithAction3_PRFNamedWithActionPrevAction_1_0ElementType());
@@ -2191,20 +2046,20 @@ public class PsiInternalFragmentTestLanguageParser extends AbstractPsiAntlrParse
 
             	    				markLeaf(elementTypeProvider.getFragmentWithAction3_HyphenMinusGreaterThanSignKeyword_1_1ElementType());
             	    			
-            	    otherlv_2=(Token)match(input,13,FollowSets000.FOLLOW_13_in_ruleFragmentWithAction32494); 
+            	    otherlv_2=(Token)match(input,13,FollowSets000.FOLLOW_13_in_ruleFragmentWithAction32424); 
 
             	    				doneLeaf(otherlv_2);
             	    			
-            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:824:4: ( (lv_name_3_0= RULE_ID ) )
-            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:825:5: (lv_name_3_0= RULE_ID )
+            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:799:4: ( (lv_name_3_0= RULE_ID ) )
+            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:800:5: (lv_name_3_0= RULE_ID )
             	    {
-            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:825:5: (lv_name_3_0= RULE_ID )
-            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:826:6: lv_name_3_0= RULE_ID
+            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:800:5: (lv_name_3_0= RULE_ID )
+            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:801:6: lv_name_3_0= RULE_ID
             	    {
 
             	    						markLeaf(elementTypeProvider.getFragmentWithAction3_NameIDTerminalRuleCall_1_2_0ElementType());
             	    					
-            	    lv_name_3_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleFragmentWithAction32526); 
+            	    lv_name_3_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleFragmentWithAction32456); 
 
             	    						doneLeaf(lv_name_3_0);
             	    					
@@ -2214,7 +2069,7 @@ public class PsiInternalFragmentTestLanguageParser extends AbstractPsiAntlrParse
 
             	    }
 
-            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:835:4: ( (otherlv_4= RULE_ID ) )?
+            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:810:4: ( (otherlv_4= RULE_ID ) )?
             	    int alt13=2;
             	    int LA13_0 = input.LA(1);
 
@@ -2223,15 +2078,15 @@ public class PsiInternalFragmentTestLanguageParser extends AbstractPsiAntlrParse
             	    }
             	    switch (alt13) {
             	        case 1 :
-            	            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:836:5: (otherlv_4= RULE_ID )
+            	            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:811:5: (otherlv_4= RULE_ID )
             	            {
-            	            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:836:5: (otherlv_4= RULE_ID )
-            	            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:837:6: otherlv_4= RULE_ID
+            	            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:811:5: (otherlv_4= RULE_ID )
+            	            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:812:6: otherlv_4= RULE_ID
             	            {
 
             	            						markLeaf(elementTypeProvider.getFragmentWithAction3_Ref2PRFNamedCrossReference_1_3_0ElementType());
             	            					
-            	            otherlv_4=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleFragmentWithAction32571); 
+            	            otherlv_4=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleFragmentWithAction32501); 
 
             	            						doneLeaf(otherlv_4);
             	            					
@@ -2271,54 +2126,25 @@ public class PsiInternalFragmentTestLanguageParser extends AbstractPsiAntlrParse
     // $ANTLR end "ruleFragmentWithAction3"
 
 
-    // $ANTLR start "entryRulePRFNamedFragment"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:851:1: entryRulePRFNamedFragment : rulePRFNamedFragment EOF ;
-    public final void entryRulePRFNamedFragment() throws RecognitionException {
-        try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:851:26: ( rulePRFNamedFragment EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:852:2: rulePRFNamedFragment EOF
-            {
-             markComposite(elementTypeProvider.getPRFNamedFragmentElementType()); 
-            pushFollow(FollowSets000.FOLLOW_rulePRFNamedFragment_in_entryRulePRFNamedFragment2611);
-            rulePRFNamedFragment();
-
-            state._fsp--;
-
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRulePRFNamedFragment2614); 
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-        }
-        return ;
-    }
-    // $ANTLR end "entryRulePRFNamedFragment"
-
-
     // $ANTLR start "rulePRFNamedFragment"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:857:1: rulePRFNamedFragment : ( (lv_name_0_0= RULE_ID ) ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:827:1: rulePRFNamedFragment : ( (lv_name_0_0= RULE_ID ) ) ;
     public final void rulePRFNamedFragment() throws RecognitionException {
         Token lv_name_0_0=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:857:21: ( ( (lv_name_0_0= RULE_ID ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:858:2: ( (lv_name_0_0= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:827:21: ( ( (lv_name_0_0= RULE_ID ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:828:2: ( (lv_name_0_0= RULE_ID ) )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:858:2: ( (lv_name_0_0= RULE_ID ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:859:3: (lv_name_0_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:828:2: ( (lv_name_0_0= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:829:3: (lv_name_0_0= RULE_ID )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:859:3: (lv_name_0_0= RULE_ID )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:860:4: lv_name_0_0= RULE_ID
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:829:3: (lv_name_0_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:830:4: lv_name_0_0= RULE_ID
             {
 
             				markLeaf(elementTypeProvider.getPRFNamedFragment_NameIDTerminalRuleCall_0ElementType());
             			
-            lv_name_0_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rulePRFNamedFragment2639); 
+            lv_name_0_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rulePRFNamedFragment2555); 
 
             				doneLeaf(lv_name_0_0);
             			
@@ -2343,54 +2169,25 @@ public class PsiInternalFragmentTestLanguageParser extends AbstractPsiAntlrParse
     // $ANTLR end "rulePRFNamedFragment"
 
 
-    // $ANTLR start "entryRulePRFNamedRef"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:872:1: entryRulePRFNamedRef : rulePRFNamedRef EOF ;
-    public final void entryRulePRFNamedRef() throws RecognitionException {
-        try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:872:21: ( rulePRFNamedRef EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:873:2: rulePRFNamedRef EOF
-            {
-             markComposite(elementTypeProvider.getPRFNamedRefElementType()); 
-            pushFollow(FollowSets000.FOLLOW_rulePRFNamedRef_in_entryRulePRFNamedRef2664);
-            rulePRFNamedRef();
-
-            state._fsp--;
-
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRulePRFNamedRef2667); 
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-        }
-        return ;
-    }
-    // $ANTLR end "entryRulePRFNamedRef"
-
-
     // $ANTLR start "rulePRFNamedRef"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:878:1: rulePRFNamedRef : ( (otherlv_0= RULE_ID ) ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:843:1: rulePRFNamedRef : ( (otherlv_0= RULE_ID ) ) ;
     public final void rulePRFNamedRef() throws RecognitionException {
         Token otherlv_0=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:878:16: ( ( (otherlv_0= RULE_ID ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:879:2: ( (otherlv_0= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:843:16: ( ( (otherlv_0= RULE_ID ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:844:2: ( (otherlv_0= RULE_ID ) )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:879:2: ( (otherlv_0= RULE_ID ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:880:3: (otherlv_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:844:2: ( (otherlv_0= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:845:3: (otherlv_0= RULE_ID )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:880:3: (otherlv_0= RULE_ID )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:881:4: otherlv_0= RULE_ID
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:845:3: (otherlv_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/parser/fragments/idea/parser/antlr/internal/PsiInternalFragmentTestLanguage.g:846:4: otherlv_0= RULE_ID
             {
 
             				markLeaf(elementTypeProvider.getPRFNamedRef_RefPRFNamedCrossReference_0ElementType());
             			
-            otherlv_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rulePRFNamedRef2692); 
+            otherlv_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rulePRFNamedRef2594); 
 
             				doneLeaf(otherlv_0);
             			
@@ -2488,36 +2285,22 @@ public class PsiInternalFragmentTestLanguageParser extends AbstractPsiAntlrParse
         public static final BitSet FOLLOW_EOF_in_entryRuleFQN21939 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_RULE_ID_in_ruleFQN21958 = new BitSet(new long[]{0x0000000000800002L});
         public static final BitSet FOLLOW_ruleSuffix2_in_ruleFQN21976 = new BitSet(new long[]{0x0000000000800002L});
-        public static final BitSet FOLLOW_ruleSuffix_in_entryRuleSuffix2002 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleSuffix2005 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_23_in_ruleSuffix2024 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleSuffix2038 = new BitSet(new long[]{0x0000000000800002L});
-        public static final BitSet FOLLOW_ruleSuffix_in_ruleSuffix2056 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleSuffix2_in_entryRuleSuffix22082 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleSuffix22085 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_23_in_ruleSuffix22104 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleSuffix22118 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleFragmentWithAction_in_entryRuleFragmentWithAction2138 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleFragmentWithAction2141 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleFragmentWithAction2173 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleFragmentWithAction2224 = new BitSet(new long[]{0x0000000000000012L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleFragmentWithAction2262 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleFragmentWithAction2_in_entryRuleFragmentWithAction22294 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleFragmentWithAction22297 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleFragmentWithAction22342 = new BitSet(new long[]{0x0000000000000012L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleFragmentWithAction22380 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleFragmentWithAction3_in_entryRuleFragmentWithAction32412 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleFragmentWithAction32415 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleFragmentWithAction32447 = new BitSet(new long[]{0x0000000000002002L});
-        public static final BitSet FOLLOW_13_in_ruleFragmentWithAction32494 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleFragmentWithAction32526 = new BitSet(new long[]{0x0000000000002012L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleFragmentWithAction32571 = new BitSet(new long[]{0x0000000000002002L});
-        public static final BitSet FOLLOW_rulePRFNamedFragment_in_entryRulePRFNamedFragment2611 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRulePRFNamedFragment2614 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_rulePRFNamedFragment2639 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rulePRFNamedRef_in_entryRulePRFNamedRef2664 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRulePRFNamedRef2667 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_rulePRFNamedRef2692 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_23_in_ruleSuffix2010 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleSuffix2024 = new BitSet(new long[]{0x0000000000800002L});
+        public static final BitSet FOLLOW_ruleSuffix_in_ruleSuffix2042 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_23_in_ruleSuffix22076 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleSuffix22090 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleFragmentWithAction2131 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleFragmentWithAction2182 = new BitSet(new long[]{0x0000000000000012L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleFragmentWithAction2220 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleFragmentWithAction22286 = new BitSet(new long[]{0x0000000000000012L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleFragmentWithAction22324 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleFragmentWithAction32377 = new BitSet(new long[]{0x0000000000002002L});
+        public static final BitSet FOLLOW_13_in_ruleFragmentWithAction32424 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleFragmentWithAction32456 = new BitSet(new long[]{0x0000000000002012L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleFragmentWithAction32501 = new BitSet(new long[]{0x0000000000002002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rulePRFNamedFragment2555 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rulePRFNamedRef2594 = new BitSet(new long[]{0x0000000000000002L});
     }
 
 

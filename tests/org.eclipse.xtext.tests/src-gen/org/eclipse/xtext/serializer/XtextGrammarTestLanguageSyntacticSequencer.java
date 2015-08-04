@@ -10,6 +10,7 @@ import org.eclipse.xtext.IGrammarAccess;
 import org.eclipse.xtext.RuleCall;
 import org.eclipse.xtext.nodemodel.INode;
 import org.eclipse.xtext.serializer.analysis.GrammarAlias.AbstractElementAlias;
+import org.eclipse.xtext.serializer.analysis.GrammarAlias.GroupAlias;
 import org.eclipse.xtext.serializer.analysis.GrammarAlias.TokenAlias;
 import org.eclipse.xtext.serializer.analysis.ISyntacticSequencerPDAProvider.ISynNavigable;
 import org.eclipse.xtext.serializer.analysis.ISyntacticSequencerPDAProvider.ISynTransition;
@@ -26,6 +27,7 @@ public class XtextGrammarTestLanguageSyntacticSequencer extends AbstractSyntacti
 	protected AbstractElementAlias match_ParenthesizedElement_LeftParenthesisKeyword_0_p;
 	protected AbstractElementAlias match_ParenthesizedTerminalElement_LeftParenthesisKeyword_0_a;
 	protected AbstractElementAlias match_ParenthesizedTerminalElement_LeftParenthesisKeyword_0_p;
+	protected AbstractElementAlias match_RuleNameAndParams___LeftSquareBracketKeyword_1_0_RightSquareBracketKeyword_1_2__q;
 	
 	@Inject
 	protected void init(IGrammarAccess access) {
@@ -36,51 +38,14 @@ public class XtextGrammarTestLanguageSyntacticSequencer extends AbstractSyntacti
 		match_ParenthesizedElement_LeftParenthesisKeyword_0_p = new TokenAlias(true, false, grammarAccess.getParenthesizedElementAccess().getLeftParenthesisKeyword_0());
 		match_ParenthesizedTerminalElement_LeftParenthesisKeyword_0_a = new TokenAlias(true, true, grammarAccess.getParenthesizedTerminalElementAccess().getLeftParenthesisKeyword_0());
 		match_ParenthesizedTerminalElement_LeftParenthesisKeyword_0_p = new TokenAlias(true, false, grammarAccess.getParenthesizedTerminalElementAccess().getLeftParenthesisKeyword_0());
+		match_RuleNameAndParams___LeftSquareBracketKeyword_1_0_RightSquareBracketKeyword_1_2__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getRuleNameAndParamsAccess().getLeftSquareBracketKeyword_1_0()), new TokenAlias(false, false, grammarAccess.getRuleNameAndParamsAccess().getRightSquareBracketKeyword_1_2()));
 	}
 	
 	@Override
 	protected String getUnassignedRuleCallToken(EObject semanticObject, RuleCall ruleCall, INode node) {
-		if(ruleCall.getRule() == grammarAccess.getHiddenClauseRule())
-			return getHiddenClauseToken(semanticObject, ruleCall, node);
-		else if(ruleCall.getRule() == grammarAccess.getReturnsClauseRule())
-			return getReturnsClauseToken(semanticObject, ruleCall, node);
-		else if(ruleCall.getRule() == grammarAccess.getRuleNameAndParamsRule())
-			return getRuleNameAndParamsToken(semanticObject, ruleCall, node);
 		return "";
 	}
 	
-	/**
-	 * fragment HiddenClause *:
-	 * 	(definesHiddenTokens?='hidden' '(' (hiddenTokens+=[AbstractRule] (',' hiddenTokens+=[AbstractRule])*)? ')')
-	 * ;
-	 */
-	protected String getHiddenClauseToken(EObject semanticObject, RuleCall ruleCall, INode node) {
-		if (node != null)
-			return getTokenText(node);
-		return "()";
-	}
-	
-	/**
-	 * fragment ReturnsClause returns ParserRule:
-	 * 	'returns' type=TypeRef
-	 * ;
-	 */
-	protected String getReturnsClauseToken(EObject semanticObject, RuleCall ruleCall, INode node) {
-		if (node != null)
-			return getTokenText(node);
-		return "returns";
-	}
-	
-	/**
-	 * fragment RuleNameAndParams returns ParserRule:
-	 * 	name=ID ('[' (parameters+=Parameter (',' parameters+=Parameter)*)? ']')?
-	 * ;
-	 */
-	protected String getRuleNameAndParamsToken(EObject semanticObject, RuleCall ruleCall, INode node) {
-		if (node != null)
-			return getTokenText(node);
-		return "";
-	}
 	
 	@Override
 	protected void emitUnassignedTokens(EObject semanticObject, ISynTransition transition, INode fromNode, INode toNode) {
@@ -100,6 +65,8 @@ public class XtextGrammarTestLanguageSyntacticSequencer extends AbstractSyntacti
 				emit_ParenthesizedTerminalElement_LeftParenthesisKeyword_0_a(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if(match_ParenthesizedTerminalElement_LeftParenthesisKeyword_0_p.equals(syntax))
 				emit_ParenthesizedTerminalElement_LeftParenthesisKeyword_0_p(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if(match_RuleNameAndParams___LeftSquareBracketKeyword_1_0_RightSquareBracketKeyword_1_2__q.equals(syntax))
+				emit_RuleNameAndParams___LeftSquareBracketKeyword_1_0_RightSquareBracketKeyword_1_2__q(semanticObject, getLastNavigableState(), syntaxNodes);
 			else acceptNodes(getLastNavigableState(), syntaxNodes);
 		}
 	}
@@ -140,8 +107,6 @@ public class XtextGrammarTestLanguageSyntacticSequencer extends AbstractSyntacti
 	 *     (rule start) (ambiguity) '[' filtered=InverseLiteralValue
 	 *     (rule start) (ambiguity) '{' type=TypeRef
 	 *     (rule start) (ambiguity) feature=ID
-	 *     (rule start) (ambiguity) firstSetPredicated?='->'
-	 *     (rule start) (ambiguity) predicated?='=>'
 	 *     (rule start) (ambiguity) rule=[AbstractRule|RuleID]
 	 *     (rule start) (ambiguity) value=STRING
 	 *     (rule start) (ambiguity) {Alternatives.elements+=}
@@ -160,8 +125,6 @@ public class XtextGrammarTestLanguageSyntacticSequencer extends AbstractSyntacti
 	 *     (rule start) (ambiguity) '[' filtered=InverseLiteralValue
 	 *     (rule start) (ambiguity) '{' type=TypeRef
 	 *     (rule start) (ambiguity) feature=ID
-	 *     (rule start) (ambiguity) firstSetPredicated?='->'
-	 *     (rule start) (ambiguity) predicated?='=>'
 	 *     (rule start) (ambiguity) rule=[AbstractRule|RuleID]
 	 *     (rule start) (ambiguity) value=STRING
 	 *     (rule start) (ambiguity) {Alternatives.elements+=}
@@ -180,13 +143,7 @@ public class XtextGrammarTestLanguageSyntacticSequencer extends AbstractSyntacti
 	 *     (rule start) (ambiguity) '!' terminal=TerminalTokenElement
 	 *     (rule start) (ambiguity) '->' terminal=TerminalTokenElement
 	 *     (rule start) (ambiguity) '.' (rule start)
-	 *     (rule start) (ambiguity) '.' cardinality='*'
-	 *     (rule start) (ambiguity) '.' cardinality='+'
-	 *     (rule start) (ambiguity) '.' cardinality='?'
 	 *     (rule start) (ambiguity) 'EOF' (rule start)
-	 *     (rule start) (ambiguity) 'EOF' cardinality='*'
-	 *     (rule start) (ambiguity) 'EOF' cardinality='+'
-	 *     (rule start) (ambiguity) 'EOF' cardinality='?'
 	 *     (rule start) (ambiguity) rule=[AbstractRule|RuleID]
 	 *     (rule start) (ambiguity) value=STRING
 	 *     (rule start) (ambiguity) {Alternatives.elements+=}
@@ -205,13 +162,7 @@ public class XtextGrammarTestLanguageSyntacticSequencer extends AbstractSyntacti
 	 *     (rule start) (ambiguity) '!' terminal=TerminalTokenElement
 	 *     (rule start) (ambiguity) '->' terminal=TerminalTokenElement
 	 *     (rule start) (ambiguity) '.' ')' (rule start)
-	 *     (rule start) (ambiguity) '.' cardinality='*'
-	 *     (rule start) (ambiguity) '.' cardinality='+'
-	 *     (rule start) (ambiguity) '.' cardinality='?'
 	 *     (rule start) (ambiguity) 'EOF' ')' (rule start)
-	 *     (rule start) (ambiguity) 'EOF' cardinality='*'
-	 *     (rule start) (ambiguity) 'EOF' cardinality='+'
-	 *     (rule start) (ambiguity) 'EOF' cardinality='?'
 	 *     (rule start) (ambiguity) rule=[AbstractRule|RuleID]
 	 *     (rule start) (ambiguity) value=STRING
 	 *     (rule start) (ambiguity) {Alternatives.elements+=}
@@ -219,6 +170,17 @@ public class XtextGrammarTestLanguageSyntacticSequencer extends AbstractSyntacti
 	 *     (rule start) (ambiguity) {Group.elements+=}
 	 */
 	protected void emit_ParenthesizedTerminalElement_LeftParenthesisKeyword_0_p(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+		acceptNodes(transition, nodes);
+	}
+	
+	/**
+	 * Ambiguous syntax:
+	 *     ('[' ']')?
+	 *
+	 * This ambiguous syntax occurs at:
+	 *     name=ID (ambiguity) wildcard?='*'
+	 */
+	protected void emit_RuleNameAndParams___LeftSquareBracketKeyword_1_0_RightSquareBracketKeyword_1_2__q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	

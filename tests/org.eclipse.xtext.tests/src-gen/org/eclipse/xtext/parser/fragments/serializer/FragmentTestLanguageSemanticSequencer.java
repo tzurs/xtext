@@ -12,12 +12,15 @@ import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamedWithActio
 import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.ParserRuleFragments;
 import org.eclipse.xtext.parser.fragments.services.FragmentTestLanguageGrammarAccess;
 import org.eclipse.xtext.serializer.acceptor.ISemanticSequenceAcceptor;
+import org.eclipse.xtext.serializer.acceptor.SequenceFeeder;
 import org.eclipse.xtext.serializer.diagnostic.ISemanticSequencerDiagnosticProvider;
 import org.eclipse.xtext.serializer.diagnostic.ISerializationDiagnostic.Acceptor;
 import org.eclipse.xtext.serializer.sequencer.AbstractDelegatingSemanticSequencer;
 import org.eclipse.xtext.serializer.sequencer.GenericSequencer;
+import org.eclipse.xtext.serializer.sequencer.ISemanticNodeProvider.INodesForEObjectProvider;
 import org.eclipse.xtext.serializer.sequencer.ISemanticSequencer;
 import org.eclipse.xtext.serializer.sequencer.ITransientValueService;
+import org.eclipse.xtext.serializer.sequencer.ITransientValueService.ValueTransient;
 
 @SuppressWarnings("all")
 public class FragmentTestLanguageSemanticSequencer extends AbstractDelegatingSemanticSequencer {
@@ -29,35 +32,50 @@ public class FragmentTestLanguageSemanticSequencer extends AbstractDelegatingSem
 	public void createSequence(EObject context, EObject semanticObject) {
 		if(semanticObject.eClass().getEPackage() == FragmentTestLanguagePackage.eINSTANCE) switch(semanticObject.eClass().getClassifierID()) {
 			case FragmentTestLanguagePackage.PRF_NAMED:
-				if(context == grammarAccess.getPRFNamedRefFirstRule()) {
-					sequence_PRFNamedRefFirst(context, (PRFNamed) semanticObject); 
+				if(context == grammarAccess.getPRFNamedWithActionInFragment2Rule()) {
+					sequence_FragmentWithAction2_PRFNamedWithActionInFragment2(context, (PRFNamed) semanticObject); 
 					return; 
 				}
-				else if(context == grammarAccess.getPRFNamedWithActionInFragment2Rule()) {
-					sequence_PRFNamedWithActionInFragment2(context, (PRFNamed) semanticObject); 
-					return; 
-				}
-				else if(context == grammarAccess.getPRFNamedWithActionInFragment3Rule()) {
-					sequence_PRFNamedWithActionInFragment3(context, (PRFNamed) semanticObject); 
-					return; 
-				}
-				else if(context == grammarAccess.getPRFNamedWithActionInFragmentRule()) {
-					sequence_PRFNamedWithActionInFragment(context, (PRFNamed) semanticObject); 
+				else if(context == grammarAccess.getPRFNamedRefFirstRule()) {
+					sequence_PRFNamedFragment_PRFNamedRefFirst(context, (PRFNamed) semanticObject); 
 					return; 
 				}
 				else if(context == grammarAccess.getPRFNamedWithFQNRule()) {
 					sequence_PRFNamedWithFQN(context, (PRFNamed) semanticObject); 
 					return; 
 				}
-				else if(context == grammarAccess.getPRFNamedRule() ||
-				   context == grammarAccess.getPRFNamedWithActionAccess().getPRFNamedWithActionPrevAction_1()) {
-					sequence_PRFNamed(context, (PRFNamed) semanticObject); 
+				else break;
+			case FragmentTestLanguagePackage.PRF_NAMED_WITH_ACTION:
+				if(context == grammarAccess.getFragmentWithAction2Rule()) {
+					sequence_FragmentWithAction2(context, (PRFNamedWithAction) semanticObject); 
+					return; 
+				}
+				else if(context == grammarAccess.getPRFNamedWithActionInFragment2Rule()) {
+					sequence_FragmentWithAction2_PRFNamedWithActionInFragment2(context, (PRFNamedWithAction) semanticObject); 
+					return; 
+				}
+				else if(context == grammarAccess.getFragmentWithAction3Rule() ||
+				   context == grammarAccess.getFragmentWithAction3Access().getPRFNamedWithActionPrevAction_1_0()) {
+					sequence_FragmentWithAction3(context, (PRFNamedWithAction) semanticObject); 
+					return; 
+				}
+				else if(context == grammarAccess.getPRFNamedWithActionInFragment3Rule()) {
+					sequence_FragmentWithAction3_PRFNamedWithActionInFragment3(context, (PRFNamedWithAction) semanticObject); 
+					return; 
+				}
+				else if(context == grammarAccess.getFragmentWithActionRule()) {
+					sequence_FragmentWithAction(context, (PRFNamedWithAction) semanticObject); 
+					return; 
+				}
+				else if(context == grammarAccess.getPRFNamedWithActionInFragmentRule()) {
+					sequence_FragmentWithAction_PRFNamedWithActionInFragment(context, (PRFNamedWithAction) semanticObject); 
+					return; 
+				}
+				else if(context == grammarAccess.getPRFNamedWithActionRule()) {
+					sequence_PRFNamedWithAction(context, (PRFNamedWithAction) semanticObject); 
 					return; 
 				}
 				else break;
-			case FragmentTestLanguagePackage.PRF_NAMED_WITH_ACTION:
-				sequence_PRFNamedWithAction(context, (PRFNamedWithAction) semanticObject); 
-				return; 
 			case FragmentTestLanguagePackage.PARSER_RULE_FRAGMENTS:
 				sequence_ParserRuleFragments(context, (ParserRuleFragments) semanticObject); 
 				return; 
@@ -67,37 +85,83 @@ public class FragmentTestLanguageSemanticSequencer extends AbstractDelegatingSem
 	
 	/**
 	 * Constraint:
-	 *     ref=[PRFNamed|ID]
+	 *     (prev=FragmentWithAction2_PRFNamedWithAction_0 name=ID ref2=[PRFNamed|ID]?)
 	 */
-	protected void sequence_PRFNamedRefFirst(EObject context, PRFNamed semanticObject) {
+	protected void sequence_FragmentWithAction2(EObject context, PRFNamedWithAction semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
 	
 	/**
 	 * Constraint:
-	 *     (name=ID ref=[PRFNamed|ID]?)
+	 *     (name=ID name=ID ref2=[PRFNamed|ID]? ref=[PRFNamed|ID]?)
 	 */
-	protected void sequence_PRFNamedWithActionInFragment2(EObject context, PRFNamed semanticObject) {
+	protected void sequence_FragmentWithAction2_PRFNamedWithActionInFragment2(EObject context, PRFNamed semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
 	
 	/**
 	 * Constraint:
-	 *     ref=[PRFNamed|ID]?
+	 *     (name=ID name=ID ref2=[PRFNamed|ID]? ref=[PRFNamed|ID]?)
 	 */
-	protected void sequence_PRFNamedWithActionInFragment3(EObject context, PRFNamed semanticObject) {
+	protected void sequence_FragmentWithAction2_PRFNamedWithActionInFragment2(EObject context, PRFNamedWithAction semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
 	
 	/**
 	 * Constraint:
-	 *     ref=[PRFNamed|ID]?
+	 *     (prev=FragmentWithAction3_PRFNamedWithAction_1_0 name=ID ref2=[PRFNamed|ID]?)
 	 */
-	protected void sequence_PRFNamedWithActionInFragment(EObject context, PRFNamed semanticObject) {
+	protected void sequence_FragmentWithAction3(EObject context, PRFNamedWithAction semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (name=ID (name=ID ref2=[PRFNamed|ID]?)* ref=[PRFNamed|ID]?)
+	 */
+	protected void sequence_FragmentWithAction3_PRFNamedWithActionInFragment3(EObject context, PRFNamedWithAction semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (prev=FragmentWithAction_PRFNamedWithAction_1 name=ID ref2=[PRFNamed|ID]?)
+	 */
+	protected void sequence_FragmentWithAction(EObject context, PRFNamedWithAction semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (name=ID name=ID ref2=[PRFNamed|ID]? ref=[PRFNamed|ID]?)
+	 */
+	protected void sequence_FragmentWithAction_PRFNamedWithActionInFragment(EObject context, PRFNamedWithAction semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (ref=[PRFNamed|ID] name=ID)
+	 */
+	protected void sequence_PRFNamedFragment_PRFNamedRefFirst(EObject context, PRFNamed semanticObject) {
+		if(errorAcceptor != null) {
+			if(transientValues.isValueTransient(semanticObject, FragmentTestLanguagePackage.Literals.PRF_NAMED__REF) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, FragmentTestLanguagePackage.Literals.PRF_NAMED__REF));
+			if(transientValues.isValueTransient(semanticObject, FragmentTestLanguagePackage.Literals.PRF_NAMED__NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, FragmentTestLanguagePackage.Literals.PRF_NAMED__NAME));
+		}
+		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
+		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
+		feeder.accept(grammarAccess.getPRFNamedRefFirstAccess().getRefPRFNamedIDTerminalRuleCall_0_0_1(), semanticObject.getRef());
+		feeder.accept(grammarAccess.getPRFNamedFragmentAccess().getNameIDTerminalRuleCall_0(), semanticObject.getName());
+		feeder.finish();
 	}
 	
 	
@@ -115,15 +179,6 @@ public class FragmentTestLanguageSemanticSequencer extends AbstractDelegatingSem
 	 *     (name=FQN ref=[PRFNamed|FQN2]?)
 	 */
 	protected void sequence_PRFNamedWithFQN(EObject context, PRFNamed semanticObject) {
-		genericSequencer.createSequence(context, semanticObject);
-	}
-	
-	
-	/**
-	 * Constraint:
-	 *     ref=[PRFNamed|ID]?
-	 */
-	protected void sequence_PRFNamed(EObject context, PRFNamed semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	

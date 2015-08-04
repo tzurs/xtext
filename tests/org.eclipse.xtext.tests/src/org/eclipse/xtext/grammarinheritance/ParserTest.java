@@ -15,7 +15,6 @@ import org.eclipse.xtext.grammarinheritance.inheritanceTest.Model;
 import org.eclipse.xtext.junit4.AbstractXtextTests;
 import org.eclipse.xtext.nodemodel.INode;
 import org.eclipse.xtext.nodemodel.util.NodeModelUtils;
-import org.eclipse.xtext.resource.XtextResource;
 import org.junit.Test;
 
 /**

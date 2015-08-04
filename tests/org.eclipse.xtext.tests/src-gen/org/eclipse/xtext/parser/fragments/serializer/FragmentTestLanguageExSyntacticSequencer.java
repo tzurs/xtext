@@ -11,8 +11,6 @@ import org.eclipse.xtext.RuleCall;
 import org.eclipse.xtext.nodemodel.INode;
 import org.eclipse.xtext.parser.fragments.services.FragmentTestLanguageExGrammarAccess;
 import org.eclipse.xtext.serializer.analysis.GrammarAlias.AbstractElementAlias;
-import org.eclipse.xtext.serializer.analysis.GrammarAlias.TokenAlias;
-import org.eclipse.xtext.serializer.analysis.ISyntacticSequencerPDAProvider.ISynNavigable;
 import org.eclipse.xtext.serializer.analysis.ISyntacticSequencerPDAProvider.ISynTransition;
 import org.eclipse.xtext.serializer.sequencer.AbstractSyntacticSequencer;
 
@@ -20,83 +18,17 @@ import org.eclipse.xtext.serializer.sequencer.AbstractSyntacticSequencer;
 public class FragmentTestLanguageExSyntacticSequencer extends AbstractSyntacticSequencer {
 
 	protected FragmentTestLanguageExGrammarAccess grammarAccess;
-	protected AbstractElementAlias match_PRFNamed_HyphenMinusKeyword_1_1_0_q;
 	
 	@Inject
 	protected void init(IGrammarAccess access) {
 		grammarAccess = (FragmentTestLanguageExGrammarAccess) access;
-		match_PRFNamed_HyphenMinusKeyword_1_1_0_q = new TokenAlias(false, true, grammarAccess.getPRFNamedAccess().getHyphenMinusKeyword_1_1_0());
 	}
 	
 	@Override
 	protected String getUnassignedRuleCallToken(EObject semanticObject, RuleCall ruleCall, INode node) {
-		if(ruleCall.getRule() == grammarAccess.getFragmentWithActionRule())
-			return getFragmentWithActionToken(semanticObject, ruleCall, node);
-		else if(ruleCall.getRule() == grammarAccess.getFragmentWithAction2Rule())
-			return getFragmentWithAction2Token(semanticObject, ruleCall, node);
-		else if(ruleCall.getRule() == grammarAccess.getFragmentWithAction3Rule())
-			return getFragmentWithAction3Token(semanticObject, ruleCall, node);
-		else if(ruleCall.getRule() == grammarAccess.getPRFNamedFragmentRule())
-			return getPRFNamedFragmentToken(semanticObject, ruleCall, node);
-		else if(ruleCall.getRule() == grammarAccess.getPRFNamedRefRule())
-			return getPRFNamedRefToken(semanticObject, ruleCall, node);
 		return "";
 	}
 	
-	/**
-	 * fragment FragmentWithAction returns PRFNamed:
-	 * 	name=ID {PRFNamedWithAction.prev=current} name=ID (ref2=[PRFNamed])?
-	 * ;
-	 */
-	protected String getFragmentWithActionToken(EObject semanticObject, RuleCall ruleCall, INode node) {
-		if (node != null)
-			return getTokenText(node);
-		return "";
-	}
-	
-	/**
-	 * fragment FragmentWithAction2 returns PRFNamed:
-	 * 	{PRFNamedWithAction.prev=current} name=ID (ref2=[PRFNamed])?
-	 * ;
-	 */
-	protected String getFragmentWithAction2Token(EObject semanticObject, RuleCall ruleCall, INode node) {
-		if (node != null)
-			return getTokenText(node);
-		return "";
-	}
-	
-	/**
-	 * fragment FragmentWithAction3 returns PRFNamed:
-	 * 	name=ID ({PRFNamedWithAction.prev=current} '->' name=ID (ref2=[PRFNamed])?)* 
-	 * ;
-	 */
-	protected String getFragmentWithAction3Token(EObject semanticObject, RuleCall ruleCall, INode node) {
-		if (node != null)
-			return getTokenText(node);
-		return "";
-	}
-	
-	/**
-	 * fragment PRFNamedFragment returns PRFNamed:
-	 * 	name=ID
-	 * ;
-	 */
-	protected String getPRFNamedFragmentToken(EObject semanticObject, RuleCall ruleCall, INode node) {
-		if (node != null)
-			return getTokenText(node);
-		return "";
-	}
-	
-	/**
-	 * fragment PRFNamedRef returns PRFNamed:
-	 * 	ref=[PRFNamed]
-	 * ;
-	 */
-	protected String getPRFNamedRefToken(EObject semanticObject, RuleCall ruleCall, INode node) {
-		if (node != null)
-			return getTokenText(node);
-		return "";
-	}
 	
 	@Override
 	protected void emitUnassignedTokens(EObject semanticObject, ISynTransition transition, INode fromNode, INode toNode) {
@@ -104,21 +36,8 @@ public class FragmentTestLanguageExSyntacticSequencer extends AbstractSyntacticS
 		List<INode> transitionNodes = collectNodes(fromNode, toNode);
 		for (AbstractElementAlias syntax : transition.getAmbiguousSyntaxes()) {
 			List<INode> syntaxNodes = getNodesFor(transitionNodes, syntax);
-			if(match_PRFNamed_HyphenMinusKeyword_1_1_0_q.equals(syntax))
-				emit_PRFNamed_HyphenMinusKeyword_1_1_0_q(semanticObject, getLastNavigableState(), syntaxNodes);
-			else acceptNodes(getLastNavigableState(), syntaxNodes);
+			acceptNodes(getLastNavigableState(), syntaxNodes);
 		}
 	}
 
-	/**
-	 * Ambiguous syntax:
-	 *     '-'?
-	 *
-	 * This ambiguous syntax occurs at:
-	 *     (rule start) (ambiguity) (rule start)
-	 */
-	protected void emit_PRFNamed_HyphenMinusKeyword_1_1_0_q(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
-		acceptNodes(transition, nodes);
-	}
-	
 }

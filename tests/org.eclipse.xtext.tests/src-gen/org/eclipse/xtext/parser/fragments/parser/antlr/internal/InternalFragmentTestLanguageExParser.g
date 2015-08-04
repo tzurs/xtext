@@ -339,9 +339,12 @@ rulePRFNamed returns [EObject current=null]
     @after { leaveRule(); }:
 (
     { 
+		if ($current==null) {
+			$current = createModelElement(grammarAccess.getPRFNamedRule());
+		}
         newCompositeNode(grammarAccess.getPRFNamedAccess().getPRFNamedFragmentParserRuleCall_0()); 
     }
-    this_PRFNamedFragment_0=rulePRFNamedFragment
+    this_PRFNamedFragment_0=rulePRFNamedFragment[$current]
     {
         $current = $this_PRFNamedFragment_0.current;
         afterParserOrEnumRuleCall();
@@ -372,9 +375,12 @@ rulePRFNamed returns [EObject current=null]
     }
 
     { 
+		if ($current==null) {
+			$current = createModelElement(grammarAccess.getPRFNamedRule());
+		}
         newCompositeNode(grammarAccess.getPRFNamedAccess().getPRFNamedRefParserRuleCall_1_1_1()); 
     }
-    this_PRFNamedRef_4=rulePRFNamedRef
+    this_PRFNamedRef_4=rulePRFNamedRef[$current]
     {
         $current = $this_PRFNamedRef_4.current;
         afterParserOrEnumRuleCall();
@@ -420,9 +426,12 @@ rulePRFNamedRefFirst returns [EObject current=null]
     }
 
     { 
+		if ($current==null) {
+			$current = createModelElement(grammarAccess.getPRFNamedRefFirstRule());
+		}
         newCompositeNode(grammarAccess.getPRFNamedRefFirstAccess().getPRFNamedFragmentParserRuleCall_2()); 
     }
-    this_PRFNamedFragment_2=rulePRFNamedFragment
+    this_PRFNamedFragment_2=rulePRFNamedFragment[$current]
     {
         $current = $this_PRFNamedFragment_2.current;
         afterParserOrEnumRuleCall();
@@ -530,9 +539,12 @@ rulePRFNamedWithActionInFragment returns [EObject current=null]
     @after { leaveRule(); }:
 (
     { 
+		if ($current==null) {
+			$current = createModelElement(grammarAccess.getPRFNamedWithActionInFragmentRule());
+		}
         newCompositeNode(grammarAccess.getPRFNamedWithActionInFragmentAccess().getFragmentWithActionParserRuleCall_0()); 
     }
-    this_FragmentWithAction_0=ruleFragmentWithAction
+    this_FragmentWithAction_0=ruleFragmentWithAction[$current]
     {
         $current = $this_FragmentWithAction_0.current;
         afterParserOrEnumRuleCall();
@@ -596,9 +608,12 @@ rulePRFNamedWithActionInFragment2 returns [EObject current=null]
 )
 )
     { 
+		if ($current==null) {
+			$current = createModelElement(grammarAccess.getPRFNamedWithActionInFragment2Rule());
+		}
         newCompositeNode(grammarAccess.getPRFNamedWithActionInFragment2Access().getFragmentWithAction2ParserRuleCall_1()); 
     }
-    this_FragmentWithAction2_1=ruleFragmentWithAction2
+    this_FragmentWithAction2_1=ruleFragmentWithAction2[$current]
     {
         $current = $this_FragmentWithAction2_1.current;
         afterParserOrEnumRuleCall();
@@ -644,9 +659,12 @@ rulePRFNamedWithActionInFragment3 returns [EObject current=null]
     @after { leaveRule(); }:
 (
     { 
+		if ($current==null) {
+			$current = createModelElement(grammarAccess.getPRFNamedWithActionInFragment3Rule());
+		}
         newCompositeNode(grammarAccess.getPRFNamedWithActionInFragment3Access().getFragmentWithAction3ParserRuleCall_0()); 
     }
-    this_FragmentWithAction3_0=ruleFragmentWithAction3
+    this_FragmentWithAction3_0=ruleFragmentWithAction3[$current]
     {
         $current = $this_FragmentWithAction3_0.current;
         afterParserOrEnumRuleCall();
@@ -815,14 +833,6 @@ ruleFQN2 returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
 
 
 
-// Entry rule entryRuleSuffix
-entryRuleSuffix returns [String current=null] 
-:
-	{ newCompositeNode(grammarAccess.getSuffixRule()); } 
-	 iv_ruleSuffix=ruleSuffix 
-	 { $current=$iv_ruleSuffix.current.getText(); }  
-	 EOF 
-;
 
 // Rule Suffix
 ruleSuffix returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] 
@@ -861,14 +871,6 @@ ruleSuffix returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
 
 
 
-// Entry rule entryRuleSuffix2
-entryRuleSuffix2 returns [String current=null] 
-:
-	{ newCompositeNode(grammarAccess.getSuffix2Rule()); } 
-	 iv_ruleSuffix2=ruleSuffix2 
-	 { $current=$iv_ruleSuffix2.current.getText(); }  
-	 EOF 
-;
 
 // Rule Suffix2
 ruleSuffix2 returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] 
@@ -896,17 +898,9 @@ ruleSuffix2 returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()
 
 
 
-// Entry rule entryRuleFragmentWithAction
-entryRuleFragmentWithAction returns [EObject current=null]
-	:
-	{ newCompositeNode(grammarAccess.getFragmentWithActionRule()); }
-	 iv_ruleFragmentWithAction=ruleFragmentWithAction 
-	 { $current=$iv_ruleFragmentWithAction.current; } 
-	 EOF 
-;
 
 // Rule FragmentWithAction
-ruleFragmentWithAction returns [EObject current=null] 
+ruleFragmentWithAction [EObject in_current] returns [EObject current=in_current] 
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
@@ -972,17 +966,9 @@ ruleFragmentWithAction returns [EObject current=null]
 
 
 
-// Entry rule entryRuleFragmentWithAction2
-entryRuleFragmentWithAction2 returns [EObject current=null]
-	:
-	{ newCompositeNode(grammarAccess.getFragmentWithAction2Rule()); }
-	 iv_ruleFragmentWithAction2=ruleFragmentWithAction2 
-	 { $current=$iv_ruleFragmentWithAction2.current; } 
-	 EOF 
-;
 
 // Rule FragmentWithAction2
-ruleFragmentWithAction2 returns [EObject current=null] 
+ruleFragmentWithAction2 [EObject in_current] returns [EObject current=in_current] 
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
@@ -1030,17 +1016,9 @@ ruleFragmentWithAction2 returns [EObject current=null]
 
 
 
-// Entry rule entryRuleFragmentWithAction3
-entryRuleFragmentWithAction3 returns [EObject current=null]
-	:
-	{ newCompositeNode(grammarAccess.getFragmentWithAction3Rule()); }
-	 iv_ruleFragmentWithAction3=ruleFragmentWithAction3 
-	 { $current=$iv_ruleFragmentWithAction3.current; } 
-	 EOF 
-;
 
 // Rule FragmentWithAction3
-ruleFragmentWithAction3 returns [EObject current=null] 
+ruleFragmentWithAction3 [EObject in_current] returns [EObject current=in_current] 
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
@@ -1111,17 +1089,9 @@ ruleFragmentWithAction3 returns [EObject current=null]
 
 
 
-// Entry rule entryRulePRFNamedFragment
-entryRulePRFNamedFragment returns [EObject current=null]
-	:
-	{ newCompositeNode(grammarAccess.getPRFNamedFragmentRule()); }
-	 iv_rulePRFNamedFragment=rulePRFNamedFragment 
-	 { $current=$iv_rulePRFNamedFragment.current; } 
-	 EOF 
-;
 
 // Rule PRFNamedFragment
-rulePRFNamedFragment returns [EObject current=null] 
+rulePRFNamedFragment [EObject in_current] returns [EObject current=in_current] 
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
@@ -1150,17 +1120,9 @@ rulePRFNamedFragment returns [EObject current=null]
 
 
 
-// Entry rule entryRulePRFNamedRef
-entryRulePRFNamedRef returns [EObject current=null]
-	:
-	{ newCompositeNode(grammarAccess.getPRFNamedRefRule()); }
-	 iv_rulePRFNamedRef=rulePRFNamedRef 
-	 { $current=$iv_rulePRFNamedRef.current; } 
-	 EOF 
-;
 
 // Rule PRFNamedRef
-rulePRFNamedRef returns [EObject current=null] 
+rulePRFNamedRef [EObject in_current] returns [EObject current=in_current] 
     @init { enterRule(); 
     }
     @after { leaveRule(); }:

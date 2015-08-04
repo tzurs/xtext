@@ -136,11 +136,14 @@ ruleAbstractTokenWithCardinality :
 	(
 		ruleAssignment |
 		ruleAbstractTerminal
-	) (
-		'?' |
-		'*' |
-		'+'
-	)?
+	) ruleCardinalities?
+;
+
+// Rule Cardinalities
+ruleCardinalities :
+	'?' |
+	'*' |
+	'+'
 ;
 
 // Rule Action
@@ -208,30 +211,27 @@ ruleRuleID :
 
 // Rule PredicatedKeyword
 rulePredicatedKeyword :
-	(
-		'=>' |
-		'->'
-	) RULE_STRING
+	rulePredicate RULE_STRING
 ;
 
 // Rule PredicatedRuleCall
 rulePredicatedRuleCall :
-	(
-		'=>' |
-		'->'
-	) RULE_ID
+	rulePredicate RULE_ID
 ;
 
 // Rule Assignment
 ruleAssignment :
-	(
-		'=>' |
-		'->'
-	)? RULE_ID (
+	rulePredicate? RULE_ID (
 		'+=' |
 		'=' |
 		'?='
 	) ruleAssignableTerminal
+;
+
+// Rule Predicate
+rulePredicate :
+	'=>' |
+	'->'
 ;
 
 // Rule AssignableTerminal
@@ -276,19 +276,14 @@ ruleParenthesizedElement :
 
 // Rule PredicatedGroup
 rulePredicatedGroup :
-	(
-		'=>' |
-		'->'
-	) '(' ruleAlternatives ')'
+	rulePredicate '(' ruleAlternatives ')'
 ;
 
 // Rule TerminalRule
 ruleTerminalRule :
 	'terminal' (
 		'fragment' RULE_ID |
-		RULE_ID (
-			'returns' ruleTypeRef
-		)?
+		RULE_ID ruleReturnsClause?
 	) ':' ruleTerminalAlternatives ';'
 ;
 
@@ -310,11 +305,7 @@ ruleTerminalGroup :
 
 // Rule TerminalToken
 ruleTerminalToken :
-	ruleTerminalTokenElement (
-		'?' |
-		'*' |
-		'+'
-	)?
+	ruleTerminalTokenElement ruleCardinalities?
 ;
 
 // Rule TerminalTokenElement
@@ -367,9 +358,7 @@ ruleCharacterRange :
 
 // Rule EnumRule
 ruleEnumRule :
-	'enum' RULE_ID (
-		'returns' ruleTypeRef
-	)? ':' ruleEnumLiterals ';'
+	'enum' RULE_ID ruleReturnsClause? ':' ruleEnumLiterals ';'
 ;
 
 // Rule EnumLiterals

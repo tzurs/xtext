@@ -408,37 +408,8 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
     // $ANTLR end "ruleGrammar"
 
 
-    // $ANTLR start "entryRuleHiddenClause"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:153:1: entryRuleHiddenClause : ruleHiddenClause EOF ;
-    public final void entryRuleHiddenClause() throws RecognitionException {
-        try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:153:22: ( ruleHiddenClause EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:154:2: ruleHiddenClause EOF
-            {
-             markComposite(elementTypeProvider.getHiddenClauseElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleHiddenClause_in_entryRuleHiddenClause386);
-            ruleHiddenClause();
-
-            state._fsp--;
-
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleHiddenClause389); 
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-        }
-        return ;
-    }
-    // $ANTLR end "entryRuleHiddenClause"
-
-
     // $ANTLR start "ruleHiddenClause"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:159:1: ruleHiddenClause : ( ( (lv_definesHiddenTokens_0_0= 'hidden' ) ) otherlv_1= '(' ( ( (otherlv_2= RULE_ID ) ) (otherlv_3= ',' ( (otherlv_4= RULE_ID ) ) )* )? otherlv_5= ')' ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:154:1: ruleHiddenClause : ( ( (lv_definesHiddenTokens_0_0= 'hidden' ) ) otherlv_1= '(' ( ( (otherlv_2= RULE_ID ) ) (otherlv_3= ',' ( (otherlv_4= RULE_ID ) ) )* )? otherlv_5= ')' ) ;
     public final void ruleHiddenClause() throws RecognitionException {
         Token lv_definesHiddenTokens_0_0=null;
         Token otherlv_1=null;
@@ -448,22 +419,22 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
         Token otherlv_5=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:159:17: ( ( ( (lv_definesHiddenTokens_0_0= 'hidden' ) ) otherlv_1= '(' ( ( (otherlv_2= RULE_ID ) ) (otherlv_3= ',' ( (otherlv_4= RULE_ID ) ) )* )? otherlv_5= ')' ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:160:2: ( ( (lv_definesHiddenTokens_0_0= 'hidden' ) ) otherlv_1= '(' ( ( (otherlv_2= RULE_ID ) ) (otherlv_3= ',' ( (otherlv_4= RULE_ID ) ) )* )? otherlv_5= ')' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:154:17: ( ( ( (lv_definesHiddenTokens_0_0= 'hidden' ) ) otherlv_1= '(' ( ( (otherlv_2= RULE_ID ) ) (otherlv_3= ',' ( (otherlv_4= RULE_ID ) ) )* )? otherlv_5= ')' ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:155:2: ( ( (lv_definesHiddenTokens_0_0= 'hidden' ) ) otherlv_1= '(' ( ( (otherlv_2= RULE_ID ) ) (otherlv_3= ',' ( (otherlv_4= RULE_ID ) ) )* )? otherlv_5= ')' )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:160:2: ( ( (lv_definesHiddenTokens_0_0= 'hidden' ) ) otherlv_1= '(' ( ( (otherlv_2= RULE_ID ) ) (otherlv_3= ',' ( (otherlv_4= RULE_ID ) ) )* )? otherlv_5= ')' )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:161:3: ( (lv_definesHiddenTokens_0_0= 'hidden' ) ) otherlv_1= '(' ( ( (otherlv_2= RULE_ID ) ) (otherlv_3= ',' ( (otherlv_4= RULE_ID ) ) )* )? otherlv_5= ')'
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:155:2: ( ( (lv_definesHiddenTokens_0_0= 'hidden' ) ) otherlv_1= '(' ( ( (otherlv_2= RULE_ID ) ) (otherlv_3= ',' ( (otherlv_4= RULE_ID ) ) )* )? otherlv_5= ')' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:156:3: ( (lv_definesHiddenTokens_0_0= 'hidden' ) ) otherlv_1= '(' ( ( (otherlv_2= RULE_ID ) ) (otherlv_3= ',' ( (otherlv_4= RULE_ID ) ) )* )? otherlv_5= ')'
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:161:3: ( (lv_definesHiddenTokens_0_0= 'hidden' ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:162:4: (lv_definesHiddenTokens_0_0= 'hidden' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:156:3: ( (lv_definesHiddenTokens_0_0= 'hidden' ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:157:4: (lv_definesHiddenTokens_0_0= 'hidden' )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:162:4: (lv_definesHiddenTokens_0_0= 'hidden' )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:163:5: lv_definesHiddenTokens_0_0= 'hidden'
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:157:4: (lv_definesHiddenTokens_0_0= 'hidden' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:158:5: lv_definesHiddenTokens_0_0= 'hidden'
             {
 
             					markLeaf(elementTypeProvider.getHiddenClause_DefinesHiddenTokensHiddenKeyword_0_0ElementType());
             				
-            lv_definesHiddenTokens_0_0=(Token)match(input,14,FollowSets000.FOLLOW_14_in_ruleHiddenClause421); 
+            lv_definesHiddenTokens_0_0=(Token)match(input,14,FollowSets000.FOLLOW_14_in_ruleHiddenClause407); 
 
             					doneLeaf(lv_definesHiddenTokens_0_0);
             				
@@ -476,11 +447,11 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			markLeaf(elementTypeProvider.getHiddenClause_LeftParenthesisKeyword_1ElementType());
             		
-            otherlv_1=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleHiddenClause446); 
+            otherlv_1=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleHiddenClause432); 
 
             			doneLeaf(otherlv_1);
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:179:3: ( ( (otherlv_2= RULE_ID ) ) (otherlv_3= ',' ( (otherlv_4= RULE_ID ) ) )* )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:174:3: ( ( (otherlv_2= RULE_ID ) ) (otherlv_3= ',' ( (otherlv_4= RULE_ID ) ) )* )?
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -489,18 +460,18 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt7) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:180:4: ( (otherlv_2= RULE_ID ) ) (otherlv_3= ',' ( (otherlv_4= RULE_ID ) ) )*
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:175:4: ( (otherlv_2= RULE_ID ) ) (otherlv_3= ',' ( (otherlv_4= RULE_ID ) ) )*
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:180:4: ( (otherlv_2= RULE_ID ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:181:5: (otherlv_2= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:175:4: ( (otherlv_2= RULE_ID ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:176:5: (otherlv_2= RULE_ID )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:181:5: (otherlv_2= RULE_ID )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:182:6: otherlv_2= RULE_ID
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:176:5: (otherlv_2= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:177:6: otherlv_2= RULE_ID
                     {
 
                     						markLeaf(elementTypeProvider.getHiddenClause_HiddenTokensAbstractRuleCrossReference_2_0_0ElementType());
                     					
-                    otherlv_2=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleHiddenClause481); 
+                    otherlv_2=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleHiddenClause467); 
 
                     						doneLeaf(otherlv_2);
                     					
@@ -510,7 +481,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                     }
 
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:191:4: (otherlv_3= ',' ( (otherlv_4= RULE_ID ) ) )*
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:186:4: (otherlv_3= ',' ( (otherlv_4= RULE_ID ) ) )*
                     loop6:
                     do {
                         int alt6=2;
@@ -523,25 +494,25 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                         switch (alt6) {
                     	case 1 :
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:192:5: otherlv_3= ',' ( (otherlv_4= RULE_ID ) )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:187:5: otherlv_3= ',' ( (otherlv_4= RULE_ID ) )
                     	    {
 
                     	    					markLeaf(elementTypeProvider.getHiddenClause_CommaKeyword_2_1_0ElementType());
                     	    				
-                    	    otherlv_3=(Token)match(input,13,FollowSets000.FOLLOW_13_in_ruleHiddenClause518); 
+                    	    otherlv_3=(Token)match(input,13,FollowSets000.FOLLOW_13_in_ruleHiddenClause504); 
 
                     	    					doneLeaf(otherlv_3);
                     	    				
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:199:5: ( (otherlv_4= RULE_ID ) )
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:200:6: (otherlv_4= RULE_ID )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:194:5: ( (otherlv_4= RULE_ID ) )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:195:6: (otherlv_4= RULE_ID )
                     	    {
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:200:6: (otherlv_4= RULE_ID )
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:201:7: otherlv_4= RULE_ID
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:195:6: (otherlv_4= RULE_ID )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:196:7: otherlv_4= RULE_ID
                     	    {
 
                     	    							markLeaf(elementTypeProvider.getHiddenClause_HiddenTokensAbstractRuleCrossReference_2_1_1_0ElementType());
                     	    						
-                    	    otherlv_4=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleHiddenClause555); 
+                    	    otherlv_4=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleHiddenClause541); 
 
                     	    							doneLeaf(otherlv_4);
                     	    						
@@ -569,7 +540,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			markLeaf(elementTypeProvider.getHiddenClause_RightParenthesisKeyword_3ElementType());
             		
-            otherlv_5=(Token)match(input,16,FollowSets000.FOLLOW_16_in_ruleHiddenClause597); 
+            otherlv_5=(Token)match(input,16,FollowSets000.FOLLOW_16_in_ruleHiddenClause583); 
 
             			doneLeaf(otherlv_5);
             		
@@ -592,19 +563,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleGrammarID"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:223:1: entryRuleGrammarID : ruleGrammarID EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:218:1: entryRuleGrammarID : ruleGrammarID EOF ;
     public final void entryRuleGrammarID() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:223:19: ( ruleGrammarID EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:224:2: ruleGrammarID EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:218:19: ( ruleGrammarID EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:219:2: ruleGrammarID EOF
             {
              markComposite(elementTypeProvider.getGrammarIDElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleGrammarID_in_entryRuleGrammarID617);
+            pushFollow(FollowSets000.FOLLOW_ruleGrammarID_in_entryRuleGrammarID603);
             ruleGrammarID();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleGrammarID620); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleGrammarID606); 
 
             }
 
@@ -621,27 +592,27 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleGrammarID"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:229:1: ruleGrammarID : (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:224:1: ruleGrammarID : (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* ) ;
     public final void ruleGrammarID() throws RecognitionException {
         Token this_ID_0=null;
         Token kw=null;
         Token this_ID_2=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:229:14: ( (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:230:2: (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:224:14: ( (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:225:2: (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:230:2: (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:231:3: this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )*
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:225:2: (this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )* )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:226:3: this_ID_0= RULE_ID (kw= '.' this_ID_2= RULE_ID )*
             {
 
             			markLeaf(elementTypeProvider.getGrammarID_IDTerminalRuleCall_0ElementType());
             		
-            this_ID_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleGrammarID639); 
+            this_ID_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleGrammarID625); 
 
             			doneLeaf(this_ID_0);
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:238:3: (kw= '.' this_ID_2= RULE_ID )*
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:233:3: (kw= '.' this_ID_2= RULE_ID )*
             loop8:
             do {
                 int alt8=2;
@@ -654,19 +625,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                 switch (alt8) {
             	case 1 :
-            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:239:4: kw= '.' this_ID_2= RULE_ID
+            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:234:4: kw= '.' this_ID_2= RULE_ID
             	    {
 
             	    				markLeaf(elementTypeProvider.getGrammarID_FullStopKeyword_1_0ElementType());
             	    			
-            	    kw=(Token)match(input,17,FollowSets000.FOLLOW_17_in_ruleGrammarID659); 
+            	    kw=(Token)match(input,17,FollowSets000.FOLLOW_17_in_ruleGrammarID645); 
 
             	    				doneLeaf(kw);
             	    			
 
             	    				markLeaf(elementTypeProvider.getGrammarID_IDTerminalRuleCall_1_1ElementType());
             	    			
-            	    this_ID_2=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleGrammarID676); 
+            	    this_ID_2=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleGrammarID662); 
 
             	    				doneLeaf(this_ID_2);
             	    			
@@ -698,19 +669,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleAbstractRule"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:258:1: entryRuleAbstractRule : ruleAbstractRule EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:253:1: entryRuleAbstractRule : ruleAbstractRule EOF ;
     public final void entryRuleAbstractRule() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:258:22: ( ruleAbstractRule EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:259:2: ruleAbstractRule EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:253:22: ( ruleAbstractRule EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:254:2: ruleAbstractRule EOF
             {
              markComposite(elementTypeProvider.getAbstractRuleElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAbstractRule_in_entryRuleAbstractRule702);
+            pushFollow(FollowSets000.FOLLOW_ruleAbstractRule_in_entryRuleAbstractRule688);
             ruleAbstractRule();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAbstractRule705); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAbstractRule691); 
 
             }
 
@@ -727,13 +698,13 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleAbstractRule"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:264:1: ruleAbstractRule : ( ruleParserRule | ruleTerminalRule | ruleEnumRule ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:259:1: ruleAbstractRule : ( ruleParserRule | ruleTerminalRule | ruleEnumRule ) ;
     public final void ruleAbstractRule() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:264:17: ( ( ruleParserRule | ruleTerminalRule | ruleEnumRule ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:265:2: ( ruleParserRule | ruleTerminalRule | ruleEnumRule )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:259:17: ( ( ruleParserRule | ruleTerminalRule | ruleEnumRule ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:260:2: ( ruleParserRule | ruleTerminalRule | ruleEnumRule )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:265:2: ( ruleParserRule | ruleTerminalRule | ruleEnumRule )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:260:2: ( ruleParserRule | ruleTerminalRule | ruleEnumRule )
             int alt9=3;
             switch ( input.LA(1) ) {
             case RULE_ID:
@@ -761,12 +732,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             switch (alt9) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:266:3: ruleParserRule
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:261:3: ruleParserRule
                     {
 
                     			markComposite(elementTypeProvider.getAbstractRule_ParserRuleParserRuleCall_0ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleParserRule_in_ruleAbstractRule722);
+                    pushFollow(FollowSets000.FOLLOW_ruleParserRule_in_ruleAbstractRule708);
                     ruleParserRule();
 
                     state._fsp--;
@@ -778,12 +749,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:274:3: ruleTerminalRule
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:269:3: ruleTerminalRule
                     {
 
                     			markComposite(elementTypeProvider.getAbstractRule_TerminalRuleParserRuleCall_1ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleTerminalRule_in_ruleAbstractRule742);
+                    pushFollow(FollowSets000.FOLLOW_ruleTerminalRule_in_ruleAbstractRule728);
                     ruleTerminalRule();
 
                     state._fsp--;
@@ -795,12 +766,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 3 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:282:3: ruleEnumRule
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:277:3: ruleEnumRule
                     {
 
                     			markComposite(elementTypeProvider.getAbstractRule_EnumRuleParserRuleCall_2ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleEnumRule_in_ruleAbstractRule762);
+                    pushFollow(FollowSets000.FOLLOW_ruleEnumRule_in_ruleAbstractRule748);
                     ruleEnumRule();
 
                     state._fsp--;
@@ -830,19 +801,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleAbstractMetamodelDeclaration"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:293:1: entryRuleAbstractMetamodelDeclaration : ruleAbstractMetamodelDeclaration EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:288:1: entryRuleAbstractMetamodelDeclaration : ruleAbstractMetamodelDeclaration EOF ;
     public final void entryRuleAbstractMetamodelDeclaration() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:293:38: ( ruleAbstractMetamodelDeclaration EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:294:2: ruleAbstractMetamodelDeclaration EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:288:38: ( ruleAbstractMetamodelDeclaration EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:289:2: ruleAbstractMetamodelDeclaration EOF
             {
              markComposite(elementTypeProvider.getAbstractMetamodelDeclarationElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAbstractMetamodelDeclaration_in_entryRuleAbstractMetamodelDeclaration782);
+            pushFollow(FollowSets000.FOLLOW_ruleAbstractMetamodelDeclaration_in_entryRuleAbstractMetamodelDeclaration768);
             ruleAbstractMetamodelDeclaration();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAbstractMetamodelDeclaration785); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAbstractMetamodelDeclaration771); 
 
             }
 
@@ -859,13 +830,13 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleAbstractMetamodelDeclaration"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:299:1: ruleAbstractMetamodelDeclaration : ( ruleGeneratedMetamodel | ruleReferencedMetamodel ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:294:1: ruleAbstractMetamodelDeclaration : ( ruleGeneratedMetamodel | ruleReferencedMetamodel ) ;
     public final void ruleAbstractMetamodelDeclaration() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:299:33: ( ( ruleGeneratedMetamodel | ruleReferencedMetamodel ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:300:2: ( ruleGeneratedMetamodel | ruleReferencedMetamodel )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:294:33: ( ( ruleGeneratedMetamodel | ruleReferencedMetamodel ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:295:2: ( ruleGeneratedMetamodel | ruleReferencedMetamodel )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:300:2: ( ruleGeneratedMetamodel | ruleReferencedMetamodel )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:295:2: ( ruleGeneratedMetamodel | ruleReferencedMetamodel )
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -883,12 +854,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt10) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:301:3: ruleGeneratedMetamodel
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:296:3: ruleGeneratedMetamodel
                     {
 
                     			markComposite(elementTypeProvider.getAbstractMetamodelDeclaration_GeneratedMetamodelParserRuleCall_0ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleGeneratedMetamodel_in_ruleAbstractMetamodelDeclaration802);
+                    pushFollow(FollowSets000.FOLLOW_ruleGeneratedMetamodel_in_ruleAbstractMetamodelDeclaration788);
                     ruleGeneratedMetamodel();
 
                     state._fsp--;
@@ -900,12 +871,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:309:3: ruleReferencedMetamodel
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:304:3: ruleReferencedMetamodel
                     {
 
                     			markComposite(elementTypeProvider.getAbstractMetamodelDeclaration_ReferencedMetamodelParserRuleCall_1ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleReferencedMetamodel_in_ruleAbstractMetamodelDeclaration822);
+                    pushFollow(FollowSets000.FOLLOW_ruleReferencedMetamodel_in_ruleAbstractMetamodelDeclaration808);
                     ruleReferencedMetamodel();
 
                     state._fsp--;
@@ -935,19 +906,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleGeneratedMetamodel"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:320:1: entryRuleGeneratedMetamodel : ruleGeneratedMetamodel EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:315:1: entryRuleGeneratedMetamodel : ruleGeneratedMetamodel EOF ;
     public final void entryRuleGeneratedMetamodel() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:320:28: ( ruleGeneratedMetamodel EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:321:2: ruleGeneratedMetamodel EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:315:28: ( ruleGeneratedMetamodel EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:316:2: ruleGeneratedMetamodel EOF
             {
              markComposite(elementTypeProvider.getGeneratedMetamodelElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleGeneratedMetamodel_in_entryRuleGeneratedMetamodel842);
+            pushFollow(FollowSets000.FOLLOW_ruleGeneratedMetamodel_in_entryRuleGeneratedMetamodel828);
             ruleGeneratedMetamodel();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleGeneratedMetamodel845); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleGeneratedMetamodel831); 
 
             }
 
@@ -964,7 +935,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleGeneratedMetamodel"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:326:1: ruleGeneratedMetamodel : (otherlv_0= 'generate' ( (lv_name_1_0= RULE_ID ) ) ( (otherlv_2= RULE_STRING ) ) (otherlv_3= 'as' ( (lv_alias_4_0= RULE_ID ) ) )? ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:321:1: ruleGeneratedMetamodel : (otherlv_0= 'generate' ( (lv_name_1_0= RULE_ID ) ) ( (otherlv_2= RULE_STRING ) ) (otherlv_3= 'as' ( (lv_alias_4_0= RULE_ID ) ) )? ) ;
     public final void ruleGeneratedMetamodel() throws RecognitionException {
         Token otherlv_0=null;
         Token lv_name_1_0=null;
@@ -973,29 +944,29 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
         Token lv_alias_4_0=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:326:23: ( (otherlv_0= 'generate' ( (lv_name_1_0= RULE_ID ) ) ( (otherlv_2= RULE_STRING ) ) (otherlv_3= 'as' ( (lv_alias_4_0= RULE_ID ) ) )? ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:327:2: (otherlv_0= 'generate' ( (lv_name_1_0= RULE_ID ) ) ( (otherlv_2= RULE_STRING ) ) (otherlv_3= 'as' ( (lv_alias_4_0= RULE_ID ) ) )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:321:23: ( (otherlv_0= 'generate' ( (lv_name_1_0= RULE_ID ) ) ( (otherlv_2= RULE_STRING ) ) (otherlv_3= 'as' ( (lv_alias_4_0= RULE_ID ) ) )? ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:322:2: (otherlv_0= 'generate' ( (lv_name_1_0= RULE_ID ) ) ( (otherlv_2= RULE_STRING ) ) (otherlv_3= 'as' ( (lv_alias_4_0= RULE_ID ) ) )? )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:327:2: (otherlv_0= 'generate' ( (lv_name_1_0= RULE_ID ) ) ( (otherlv_2= RULE_STRING ) ) (otherlv_3= 'as' ( (lv_alias_4_0= RULE_ID ) ) )? )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:328:3: otherlv_0= 'generate' ( (lv_name_1_0= RULE_ID ) ) ( (otherlv_2= RULE_STRING ) ) (otherlv_3= 'as' ( (lv_alias_4_0= RULE_ID ) ) )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:322:2: (otherlv_0= 'generate' ( (lv_name_1_0= RULE_ID ) ) ( (otherlv_2= RULE_STRING ) ) (otherlv_3= 'as' ( (lv_alias_4_0= RULE_ID ) ) )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:323:3: otherlv_0= 'generate' ( (lv_name_1_0= RULE_ID ) ) ( (otherlv_2= RULE_STRING ) ) (otherlv_3= 'as' ( (lv_alias_4_0= RULE_ID ) ) )?
             {
 
             			markLeaf(elementTypeProvider.getGeneratedMetamodel_GenerateKeyword_0ElementType());
             		
-            otherlv_0=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleGeneratedMetamodel864); 
+            otherlv_0=(Token)match(input,18,FollowSets000.FOLLOW_18_in_ruleGeneratedMetamodel850); 
 
             			doneLeaf(otherlv_0);
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:335:3: ( (lv_name_1_0= RULE_ID ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:336:4: (lv_name_1_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:330:3: ( (lv_name_1_0= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:331:4: (lv_name_1_0= RULE_ID )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:336:4: (lv_name_1_0= RULE_ID )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:337:5: lv_name_1_0= RULE_ID
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:331:4: (lv_name_1_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:332:5: lv_name_1_0= RULE_ID
             {
 
             					markLeaf(elementTypeProvider.getGeneratedMetamodel_NameIDTerminalRuleCall_1_0ElementType());
             				
-            lv_name_1_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleGeneratedMetamodel891); 
+            lv_name_1_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleGeneratedMetamodel877); 
 
             					doneLeaf(lv_name_1_0);
             				
@@ -1005,16 +976,16 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             }
 
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:346:3: ( (otherlv_2= RULE_STRING ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:347:4: (otherlv_2= RULE_STRING )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:341:3: ( (otherlv_2= RULE_STRING ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:342:4: (otherlv_2= RULE_STRING )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:347:4: (otherlv_2= RULE_STRING )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:348:5: otherlv_2= RULE_STRING
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:342:4: (otherlv_2= RULE_STRING )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:343:5: otherlv_2= RULE_STRING
             {
 
             					markLeaf(elementTypeProvider.getGeneratedMetamodel_EPackageEPackageCrossReference_2_0ElementType());
             				
-            otherlv_2=(Token)match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_ruleGeneratedMetamodel929); 
+            otherlv_2=(Token)match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_ruleGeneratedMetamodel915); 
 
             					doneLeaf(otherlv_2);
             				
@@ -1024,7 +995,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             }
 
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:357:3: (otherlv_3= 'as' ( (lv_alias_4_0= RULE_ID ) ) )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:352:3: (otherlv_3= 'as' ( (lv_alias_4_0= RULE_ID ) ) )?
             int alt11=2;
             int LA11_0 = input.LA(1);
 
@@ -1033,25 +1004,25 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt11) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:358:4: otherlv_3= 'as' ( (lv_alias_4_0= RULE_ID ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:353:4: otherlv_3= 'as' ( (lv_alias_4_0= RULE_ID ) )
                     {
 
                     				markLeaf(elementTypeProvider.getGeneratedMetamodel_AsKeyword_3_0ElementType());
                     			
-                    otherlv_3=(Token)match(input,19,FollowSets000.FOLLOW_19_in_ruleGeneratedMetamodel960); 
+                    otherlv_3=(Token)match(input,19,FollowSets000.FOLLOW_19_in_ruleGeneratedMetamodel946); 
 
                     				doneLeaf(otherlv_3);
                     			
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:365:4: ( (lv_alias_4_0= RULE_ID ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:366:5: (lv_alias_4_0= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:360:4: ( (lv_alias_4_0= RULE_ID ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:361:5: (lv_alias_4_0= RULE_ID )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:366:5: (lv_alias_4_0= RULE_ID )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:367:6: lv_alias_4_0= RULE_ID
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:361:5: (lv_alias_4_0= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:362:6: lv_alias_4_0= RULE_ID
                     {
 
                     						markLeaf(elementTypeProvider.getGeneratedMetamodel_AliasIDTerminalRuleCall_3_1_0ElementType());
                     					
-                    lv_alias_4_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleGeneratedMetamodel992); 
+                    lv_alias_4_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleGeneratedMetamodel978); 
 
                     						doneLeaf(lv_alias_4_0);
                     					
@@ -1086,19 +1057,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleReferencedMetamodel"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:381:1: entryRuleReferencedMetamodel : ruleReferencedMetamodel EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:376:1: entryRuleReferencedMetamodel : ruleReferencedMetamodel EOF ;
     public final void entryRuleReferencedMetamodel() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:381:29: ( ruleReferencedMetamodel EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:382:2: ruleReferencedMetamodel EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:376:29: ( ruleReferencedMetamodel EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:377:2: ruleReferencedMetamodel EOF
             {
              markComposite(elementTypeProvider.getReferencedMetamodelElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleReferencedMetamodel_in_entryRuleReferencedMetamodel1031);
+            pushFollow(FollowSets000.FOLLOW_ruleReferencedMetamodel_in_entryRuleReferencedMetamodel1017);
             ruleReferencedMetamodel();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleReferencedMetamodel1034); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleReferencedMetamodel1020); 
 
             }
 
@@ -1115,7 +1086,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleReferencedMetamodel"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:387:1: ruleReferencedMetamodel : (otherlv_0= 'import' ( (otherlv_1= RULE_STRING ) ) (otherlv_2= 'as' ( (lv_alias_3_0= RULE_ID ) ) )? ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:382:1: ruleReferencedMetamodel : (otherlv_0= 'import' ( (otherlv_1= RULE_STRING ) ) (otherlv_2= 'as' ( (lv_alias_3_0= RULE_ID ) ) )? ) ;
     public final void ruleReferencedMetamodel() throws RecognitionException {
         Token otherlv_0=null;
         Token otherlv_1=null;
@@ -1123,29 +1094,29 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
         Token lv_alias_3_0=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:387:24: ( (otherlv_0= 'import' ( (otherlv_1= RULE_STRING ) ) (otherlv_2= 'as' ( (lv_alias_3_0= RULE_ID ) ) )? ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:388:2: (otherlv_0= 'import' ( (otherlv_1= RULE_STRING ) ) (otherlv_2= 'as' ( (lv_alias_3_0= RULE_ID ) ) )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:382:24: ( (otherlv_0= 'import' ( (otherlv_1= RULE_STRING ) ) (otherlv_2= 'as' ( (lv_alias_3_0= RULE_ID ) ) )? ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:383:2: (otherlv_0= 'import' ( (otherlv_1= RULE_STRING ) ) (otherlv_2= 'as' ( (lv_alias_3_0= RULE_ID ) ) )? )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:388:2: (otherlv_0= 'import' ( (otherlv_1= RULE_STRING ) ) (otherlv_2= 'as' ( (lv_alias_3_0= RULE_ID ) ) )? )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:389:3: otherlv_0= 'import' ( (otherlv_1= RULE_STRING ) ) (otherlv_2= 'as' ( (lv_alias_3_0= RULE_ID ) ) )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:383:2: (otherlv_0= 'import' ( (otherlv_1= RULE_STRING ) ) (otherlv_2= 'as' ( (lv_alias_3_0= RULE_ID ) ) )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:384:3: otherlv_0= 'import' ( (otherlv_1= RULE_STRING ) ) (otherlv_2= 'as' ( (lv_alias_3_0= RULE_ID ) ) )?
             {
 
             			markLeaf(elementTypeProvider.getReferencedMetamodel_ImportKeyword_0ElementType());
             		
-            otherlv_0=(Token)match(input,20,FollowSets000.FOLLOW_20_in_ruleReferencedMetamodel1053); 
+            otherlv_0=(Token)match(input,20,FollowSets000.FOLLOW_20_in_ruleReferencedMetamodel1039); 
 
             			doneLeaf(otherlv_0);
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:396:3: ( (otherlv_1= RULE_STRING ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:397:4: (otherlv_1= RULE_STRING )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:391:3: ( (otherlv_1= RULE_STRING ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:392:4: (otherlv_1= RULE_STRING )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:397:4: (otherlv_1= RULE_STRING )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:398:5: otherlv_1= RULE_STRING
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:392:4: (otherlv_1= RULE_STRING )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:393:5: otherlv_1= RULE_STRING
             {
 
             					markLeaf(elementTypeProvider.getReferencedMetamodel_EPackageEPackageCrossReference_1_0ElementType());
             				
-            otherlv_1=(Token)match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_ruleReferencedMetamodel1080); 
+            otherlv_1=(Token)match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_ruleReferencedMetamodel1066); 
 
             					doneLeaf(otherlv_1);
             				
@@ -1155,7 +1126,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             }
 
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:407:3: (otherlv_2= 'as' ( (lv_alias_3_0= RULE_ID ) ) )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:402:3: (otherlv_2= 'as' ( (lv_alias_3_0= RULE_ID ) ) )?
             int alt12=2;
             int LA12_0 = input.LA(1);
 
@@ -1164,25 +1135,25 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt12) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:408:4: otherlv_2= 'as' ( (lv_alias_3_0= RULE_ID ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:403:4: otherlv_2= 'as' ( (lv_alias_3_0= RULE_ID ) )
                     {
 
                     				markLeaf(elementTypeProvider.getReferencedMetamodel_AsKeyword_2_0ElementType());
                     			
-                    otherlv_2=(Token)match(input,19,FollowSets000.FOLLOW_19_in_ruleReferencedMetamodel1111); 
+                    otherlv_2=(Token)match(input,19,FollowSets000.FOLLOW_19_in_ruleReferencedMetamodel1097); 
 
                     				doneLeaf(otherlv_2);
                     			
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:415:4: ( (lv_alias_3_0= RULE_ID ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:416:5: (lv_alias_3_0= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:410:4: ( (lv_alias_3_0= RULE_ID ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:411:5: (lv_alias_3_0= RULE_ID )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:416:5: (lv_alias_3_0= RULE_ID )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:417:6: lv_alias_3_0= RULE_ID
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:411:5: (lv_alias_3_0= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:412:6: lv_alias_3_0= RULE_ID
                     {
 
                     						markLeaf(elementTypeProvider.getReferencedMetamodel_AliasIDTerminalRuleCall_2_1_0ElementType());
                     					
-                    lv_alias_3_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleReferencedMetamodel1143); 
+                    lv_alias_3_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleReferencedMetamodel1129); 
 
                     						doneLeaf(lv_alias_3_0);
                     					
@@ -1217,19 +1188,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleParserRule"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:431:1: entryRuleParserRule : ruleParserRule EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:426:1: entryRuleParserRule : ruleParserRule EOF ;
     public final void entryRuleParserRule() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:431:20: ( ruleParserRule EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:432:2: ruleParserRule EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:426:20: ( ruleParserRule EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:427:2: ruleParserRule EOF
             {
              markComposite(elementTypeProvider.getParserRuleElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleParserRule_in_entryRuleParserRule1182);
+            pushFollow(FollowSets000.FOLLOW_ruleParserRule_in_entryRuleParserRule1168);
             ruleParserRule();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleParserRule1185); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleParserRule1171); 
 
             }
 
@@ -1246,7 +1217,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleParserRule"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:437:1: ruleParserRule : ( ( ( ( (lv_fragment_0_0= 'fragment' ) ) ruleRuleNameAndParams ( ( (lv_wildcard_2_0= '*' ) ) | ( ruleReturnsClause )? ) ) | ( ruleRuleNameAndParams ( ruleReturnsClause )? ) ) ( ruleHiddenClause )? otherlv_7= ':' ( (lv_alternatives_8_0= ruleAlternatives ) ) otherlv_9= ';' ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:432:1: ruleParserRule : ( ( ( ( (lv_fragment_0_0= 'fragment' ) ) ruleRuleNameAndParams ( ( (lv_wildcard_2_0= '*' ) ) | ( ruleReturnsClause )? ) ) | ( ruleRuleNameAndParams ( ruleReturnsClause )? ) ) ( ruleHiddenClause )? otherlv_7= ':' ( (lv_alternatives_8_0= ruleAlternatives ) ) otherlv_9= ';' ) ;
     public final void ruleParserRule() throws RecognitionException {
         Token lv_fragment_0_0=null;
         Token lv_wildcard_2_0=null;
@@ -1254,13 +1225,13 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
         Token otherlv_9=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:437:15: ( ( ( ( ( (lv_fragment_0_0= 'fragment' ) ) ruleRuleNameAndParams ( ( (lv_wildcard_2_0= '*' ) ) | ( ruleReturnsClause )? ) ) | ( ruleRuleNameAndParams ( ruleReturnsClause )? ) ) ( ruleHiddenClause )? otherlv_7= ':' ( (lv_alternatives_8_0= ruleAlternatives ) ) otherlv_9= ';' ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:438:2: ( ( ( ( (lv_fragment_0_0= 'fragment' ) ) ruleRuleNameAndParams ( ( (lv_wildcard_2_0= '*' ) ) | ( ruleReturnsClause )? ) ) | ( ruleRuleNameAndParams ( ruleReturnsClause )? ) ) ( ruleHiddenClause )? otherlv_7= ':' ( (lv_alternatives_8_0= ruleAlternatives ) ) otherlv_9= ';' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:432:15: ( ( ( ( ( (lv_fragment_0_0= 'fragment' ) ) ruleRuleNameAndParams ( ( (lv_wildcard_2_0= '*' ) ) | ( ruleReturnsClause )? ) ) | ( ruleRuleNameAndParams ( ruleReturnsClause )? ) ) ( ruleHiddenClause )? otherlv_7= ':' ( (lv_alternatives_8_0= ruleAlternatives ) ) otherlv_9= ';' ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:433:2: ( ( ( ( (lv_fragment_0_0= 'fragment' ) ) ruleRuleNameAndParams ( ( (lv_wildcard_2_0= '*' ) ) | ( ruleReturnsClause )? ) ) | ( ruleRuleNameAndParams ( ruleReturnsClause )? ) ) ( ruleHiddenClause )? otherlv_7= ':' ( (lv_alternatives_8_0= ruleAlternatives ) ) otherlv_9= ';' )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:438:2: ( ( ( ( (lv_fragment_0_0= 'fragment' ) ) ruleRuleNameAndParams ( ( (lv_wildcard_2_0= '*' ) ) | ( ruleReturnsClause )? ) ) | ( ruleRuleNameAndParams ( ruleReturnsClause )? ) ) ( ruleHiddenClause )? otherlv_7= ':' ( (lv_alternatives_8_0= ruleAlternatives ) ) otherlv_9= ';' )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:439:3: ( ( ( (lv_fragment_0_0= 'fragment' ) ) ruleRuleNameAndParams ( ( (lv_wildcard_2_0= '*' ) ) | ( ruleReturnsClause )? ) ) | ( ruleRuleNameAndParams ( ruleReturnsClause )? ) ) ( ruleHiddenClause )? otherlv_7= ':' ( (lv_alternatives_8_0= ruleAlternatives ) ) otherlv_9= ';'
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:433:2: ( ( ( ( (lv_fragment_0_0= 'fragment' ) ) ruleRuleNameAndParams ( ( (lv_wildcard_2_0= '*' ) ) | ( ruleReturnsClause )? ) ) | ( ruleRuleNameAndParams ( ruleReturnsClause )? ) ) ( ruleHiddenClause )? otherlv_7= ':' ( (lv_alternatives_8_0= ruleAlternatives ) ) otherlv_9= ';' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:434:3: ( ( ( (lv_fragment_0_0= 'fragment' ) ) ruleRuleNameAndParams ( ( (lv_wildcard_2_0= '*' ) ) | ( ruleReturnsClause )? ) ) | ( ruleRuleNameAndParams ( ruleReturnsClause )? ) ) ( ruleHiddenClause )? otherlv_7= ':' ( (lv_alternatives_8_0= ruleAlternatives ) ) otherlv_9= ';'
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:439:3: ( ( ( (lv_fragment_0_0= 'fragment' ) ) ruleRuleNameAndParams ( ( (lv_wildcard_2_0= '*' ) ) | ( ruleReturnsClause )? ) ) | ( ruleRuleNameAndParams ( ruleReturnsClause )? ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:434:3: ( ( ( (lv_fragment_0_0= 'fragment' ) ) ruleRuleNameAndParams ( ( (lv_wildcard_2_0= '*' ) ) | ( ruleReturnsClause )? ) ) | ( ruleRuleNameAndParams ( ruleReturnsClause )? ) )
             int alt16=2;
             int LA16_0 = input.LA(1);
 
@@ -1278,21 +1249,21 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt16) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:440:4: ( ( (lv_fragment_0_0= 'fragment' ) ) ruleRuleNameAndParams ( ( (lv_wildcard_2_0= '*' ) ) | ( ruleReturnsClause )? ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:435:4: ( ( (lv_fragment_0_0= 'fragment' ) ) ruleRuleNameAndParams ( ( (lv_wildcard_2_0= '*' ) ) | ( ruleReturnsClause )? ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:440:4: ( ( (lv_fragment_0_0= 'fragment' ) ) ruleRuleNameAndParams ( ( (lv_wildcard_2_0= '*' ) ) | ( ruleReturnsClause )? ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:441:5: ( (lv_fragment_0_0= 'fragment' ) ) ruleRuleNameAndParams ( ( (lv_wildcard_2_0= '*' ) ) | ( ruleReturnsClause )? )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:435:4: ( ( (lv_fragment_0_0= 'fragment' ) ) ruleRuleNameAndParams ( ( (lv_wildcard_2_0= '*' ) ) | ( ruleReturnsClause )? ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:436:5: ( (lv_fragment_0_0= 'fragment' ) ) ruleRuleNameAndParams ( ( (lv_wildcard_2_0= '*' ) ) | ( ruleReturnsClause )? )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:441:5: ( (lv_fragment_0_0= 'fragment' ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:442:6: (lv_fragment_0_0= 'fragment' )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:436:5: ( (lv_fragment_0_0= 'fragment' ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:437:6: (lv_fragment_0_0= 'fragment' )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:442:6: (lv_fragment_0_0= 'fragment' )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:443:7: lv_fragment_0_0= 'fragment'
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:437:6: (lv_fragment_0_0= 'fragment' )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:438:7: lv_fragment_0_0= 'fragment'
                     {
 
                     							markLeaf(elementTypeProvider.getParserRule_FragmentFragmentKeyword_0_0_0_0ElementType());
                     						
-                    lv_fragment_0_0=(Token)match(input,21,FollowSets000.FOLLOW_21_in_ruleParserRule1234); 
+                    lv_fragment_0_0=(Token)match(input,21,FollowSets000.FOLLOW_21_in_ruleParserRule1220); 
 
                     							doneLeaf(lv_fragment_0_0);
                     						
@@ -1305,7 +1276,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                     					markComposite(elementTypeProvider.getParserRule_RuleNameAndParamsParserRuleCall_0_0_1ElementType());
                     				
-                    pushFollow(FollowSets000.FOLLOW_ruleRuleNameAndParams_in_ruleParserRule1267);
+                    pushFollow(FollowSets000.FOLLOW_ruleRuleNameAndParams_in_ruleParserRule1253);
                     ruleRuleNameAndParams();
 
                     state._fsp--;
@@ -1313,7 +1284,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                     					doneComposite();
                     				
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:459:5: ( ( (lv_wildcard_2_0= '*' ) ) | ( ruleReturnsClause )? )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:454:5: ( ( (lv_wildcard_2_0= '*' ) ) | ( ruleReturnsClause )? )
                     int alt14=2;
                     int LA14_0 = input.LA(1);
 
@@ -1331,18 +1302,18 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     switch (alt14) {
                         case 1 :
-                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:460:6: ( (lv_wildcard_2_0= '*' ) )
+                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:455:6: ( (lv_wildcard_2_0= '*' ) )
                             {
-                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:460:6: ( (lv_wildcard_2_0= '*' ) )
-                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:461:7: (lv_wildcard_2_0= '*' )
+                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:455:6: ( (lv_wildcard_2_0= '*' ) )
+                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:456:7: (lv_wildcard_2_0= '*' )
                             {
-                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:461:7: (lv_wildcard_2_0= '*' )
-                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:462:8: lv_wildcard_2_0= '*'
+                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:456:7: (lv_wildcard_2_0= '*' )
+                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:457:8: lv_wildcard_2_0= '*'
                             {
 
                             								markLeaf(elementTypeProvider.getParserRule_WildcardAsteriskKeyword_0_0_2_0_0ElementType());
                             							
-                            lv_wildcard_2_0=(Token)match(input,22,FollowSets000.FOLLOW_22_in_ruleParserRule1314); 
+                            lv_wildcard_2_0=(Token)match(input,22,FollowSets000.FOLLOW_22_in_ruleParserRule1300); 
 
                             								doneLeaf(lv_wildcard_2_0);
                             							
@@ -1356,9 +1327,9 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                             }
                             break;
                         case 2 :
-                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:472:6: ( ruleReturnsClause )?
+                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:467:6: ( ruleReturnsClause )?
                             {
-                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:472:6: ( ruleReturnsClause )?
+                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:467:6: ( ruleReturnsClause )?
                             int alt13=2;
                             int LA13_0 = input.LA(1);
 
@@ -1367,12 +1338,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                             }
                             switch (alt13) {
                                 case 1 :
-                                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:473:7: ruleReturnsClause
+                                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:468:7: ruleReturnsClause
                                     {
 
                                     							markComposite(elementTypeProvider.getParserRule_ReturnsClauseParserRuleCall_0_0_2_1ElementType());
                                     						
-                                    pushFollow(FollowSets000.FOLLOW_ruleReturnsClause_in_ruleParserRule1372);
+                                    pushFollow(FollowSets000.FOLLOW_ruleReturnsClause_in_ruleParserRule1358);
                                     ruleReturnsClause();
 
                                     state._fsp--;
@@ -1399,15 +1370,15 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:484:4: ( ruleRuleNameAndParams ( ruleReturnsClause )? )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:479:4: ( ruleRuleNameAndParams ( ruleReturnsClause )? )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:484:4: ( ruleRuleNameAndParams ( ruleReturnsClause )? )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:485:5: ruleRuleNameAndParams ( ruleReturnsClause )?
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:479:4: ( ruleRuleNameAndParams ( ruleReturnsClause )? )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:480:5: ruleRuleNameAndParams ( ruleReturnsClause )?
                     {
 
                     					markComposite(elementTypeProvider.getParserRule_RuleNameAndParamsParserRuleCall_0_1_0ElementType());
                     				
-                    pushFollow(FollowSets000.FOLLOW_ruleRuleNameAndParams_in_ruleParserRule1425);
+                    pushFollow(FollowSets000.FOLLOW_ruleRuleNameAndParams_in_ruleParserRule1411);
                     ruleRuleNameAndParams();
 
                     state._fsp--;
@@ -1415,7 +1386,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                     					doneComposite();
                     				
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:492:5: ( ruleReturnsClause )?
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:487:5: ( ruleReturnsClause )?
                     int alt15=2;
                     int LA15_0 = input.LA(1);
 
@@ -1424,12 +1395,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     switch (alt15) {
                         case 1 :
-                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:493:6: ruleReturnsClause
+                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:488:6: ruleReturnsClause
                             {
 
                             						markComposite(elementTypeProvider.getParserRule_ReturnsClauseParserRuleCall_0_1_1ElementType());
                             					
-                            pushFollow(FollowSets000.FOLLOW_ruleReturnsClause_in_ruleParserRule1451);
+                            pushFollow(FollowSets000.FOLLOW_ruleReturnsClause_in_ruleParserRule1437);
                             ruleReturnsClause();
 
                             state._fsp--;
@@ -1452,7 +1423,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             }
 
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:503:3: ( ruleHiddenClause )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:498:3: ( ruleHiddenClause )?
             int alt17=2;
             int LA17_0 = input.LA(1);
 
@@ -1461,12 +1432,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt17) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:504:4: ruleHiddenClause
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:499:4: ruleHiddenClause
                     {
 
                     				markComposite(elementTypeProvider.getParserRule_HiddenClauseParserRuleCall_1ElementType());
                     			
-                    pushFollow(FollowSets000.FOLLOW_ruleHiddenClause_in_ruleParserRule1488);
+                    pushFollow(FollowSets000.FOLLOW_ruleHiddenClause_in_ruleParserRule1474);
                     ruleHiddenClause();
 
                     state._fsp--;
@@ -1483,20 +1454,20 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			markLeaf(elementTypeProvider.getParserRule_ColonKeyword_2ElementType());
             		
-            otherlv_7=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleParserRule1508); 
+            otherlv_7=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleParserRule1494); 
 
             			doneLeaf(otherlv_7);
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:519:3: ( (lv_alternatives_8_0= ruleAlternatives ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:520:4: (lv_alternatives_8_0= ruleAlternatives )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:514:3: ( (lv_alternatives_8_0= ruleAlternatives ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:515:4: (lv_alternatives_8_0= ruleAlternatives )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:520:4: (lv_alternatives_8_0= ruleAlternatives )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:521:5: lv_alternatives_8_0= ruleAlternatives
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:515:4: (lv_alternatives_8_0= ruleAlternatives )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:516:5: lv_alternatives_8_0= ruleAlternatives
             {
 
             					markComposite(elementTypeProvider.getParserRule_AlternativesAlternativesParserRuleCall_3_0ElementType());
             				
-            pushFollow(FollowSets000.FOLLOW_ruleAlternatives_in_ruleParserRule1535);
+            pushFollow(FollowSets000.FOLLOW_ruleAlternatives_in_ruleParserRule1521);
             ruleAlternatives();
 
             state._fsp--;
@@ -1513,7 +1484,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			markLeaf(elementTypeProvider.getParserRule_SemicolonKeyword_4ElementType());
             		
-            otherlv_9=(Token)match(input,24,FollowSets000.FOLLOW_24_in_ruleParserRule1560); 
+            otherlv_9=(Token)match(input,24,FollowSets000.FOLLOW_24_in_ruleParserRule1546); 
 
             			doneLeaf(otherlv_9);
             		
@@ -1535,37 +1506,8 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
     // $ANTLR end "ruleParserRule"
 
 
-    // $ANTLR start "entryRuleRuleNameAndParams"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:541:1: entryRuleRuleNameAndParams : ruleRuleNameAndParams EOF ;
-    public final void entryRuleRuleNameAndParams() throws RecognitionException {
-        try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:541:27: ( ruleRuleNameAndParams EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:542:2: ruleRuleNameAndParams EOF
-            {
-             markComposite(elementTypeProvider.getRuleNameAndParamsElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleRuleNameAndParams_in_entryRuleRuleNameAndParams1580);
-            ruleRuleNameAndParams();
-
-            state._fsp--;
-
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleRuleNameAndParams1583); 
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-        }
-        return ;
-    }
-    // $ANTLR end "entryRuleRuleNameAndParams"
-
-
     // $ANTLR start "ruleRuleNameAndParams"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:547:1: ruleRuleNameAndParams : ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '[' ( ( (lv_parameters_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameters_4_0= ruleParameter ) ) )* )? otherlv_5= ']' )? ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:537:1: ruleRuleNameAndParams : ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '[' ( ( (lv_parameters_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameters_4_0= ruleParameter ) ) )* )? otherlv_5= ']' )? ) ;
     public final void ruleRuleNameAndParams() throws RecognitionException {
         Token lv_name_0_0=null;
         Token otherlv_1=null;
@@ -1573,22 +1515,22 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
         Token otherlv_5=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:547:22: ( ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '[' ( ( (lv_parameters_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameters_4_0= ruleParameter ) ) )* )? otherlv_5= ']' )? ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:548:2: ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '[' ( ( (lv_parameters_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameters_4_0= ruleParameter ) ) )* )? otherlv_5= ']' )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:537:22: ( ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '[' ( ( (lv_parameters_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameters_4_0= ruleParameter ) ) )* )? otherlv_5= ']' )? ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:538:2: ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '[' ( ( (lv_parameters_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameters_4_0= ruleParameter ) ) )* )? otherlv_5= ']' )? )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:548:2: ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '[' ( ( (lv_parameters_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameters_4_0= ruleParameter ) ) )* )? otherlv_5= ']' )? )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:549:3: ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '[' ( ( (lv_parameters_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameters_4_0= ruleParameter ) ) )* )? otherlv_5= ']' )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:538:2: ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '[' ( ( (lv_parameters_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameters_4_0= ruleParameter ) ) )* )? otherlv_5= ']' )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:539:3: ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '[' ( ( (lv_parameters_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameters_4_0= ruleParameter ) ) )* )? otherlv_5= ']' )?
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:549:3: ( (lv_name_0_0= RULE_ID ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:550:4: (lv_name_0_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:539:3: ( (lv_name_0_0= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:540:4: (lv_name_0_0= RULE_ID )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:550:4: (lv_name_0_0= RULE_ID )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:551:5: lv_name_0_0= RULE_ID
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:540:4: (lv_name_0_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:541:5: lv_name_0_0= RULE_ID
             {
 
             					markLeaf(elementTypeProvider.getRuleNameAndParams_NameIDTerminalRuleCall_0_0ElementType());
             				
-            lv_name_0_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleRuleNameAndParams1615); 
+            lv_name_0_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleRuleNameAndParams1587); 
 
             					doneLeaf(lv_name_0_0);
             				
@@ -1598,7 +1540,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             }
 
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:560:3: (otherlv_1= '[' ( ( (lv_parameters_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameters_4_0= ruleParameter ) ) )* )? otherlv_5= ']' )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:550:3: (otherlv_1= '[' ( ( (lv_parameters_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameters_4_0= ruleParameter ) ) )* )? otherlv_5= ']' )?
             int alt20=2;
             int LA20_0 = input.LA(1);
 
@@ -1607,16 +1549,16 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt20) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:561:4: otherlv_1= '[' ( ( (lv_parameters_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameters_4_0= ruleParameter ) ) )* )? otherlv_5= ']'
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:551:4: otherlv_1= '[' ( ( (lv_parameters_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameters_4_0= ruleParameter ) ) )* )? otherlv_5= ']'
                     {
 
                     				markLeaf(elementTypeProvider.getRuleNameAndParams_LeftSquareBracketKeyword_1_0ElementType());
                     			
-                    otherlv_1=(Token)match(input,25,FollowSets000.FOLLOW_25_in_ruleRuleNameAndParams1646); 
+                    otherlv_1=(Token)match(input,25,FollowSets000.FOLLOW_25_in_ruleRuleNameAndParams1618); 
 
                     				doneLeaf(otherlv_1);
                     			
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:568:4: ( ( (lv_parameters_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameters_4_0= ruleParameter ) ) )* )?
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:558:4: ( ( (lv_parameters_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameters_4_0= ruleParameter ) ) )* )?
                     int alt19=2;
                     int LA19_0 = input.LA(1);
 
@@ -1625,18 +1567,18 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     switch (alt19) {
                         case 1 :
-                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:569:5: ( (lv_parameters_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameters_4_0= ruleParameter ) ) )*
+                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:559:5: ( (lv_parameters_2_0= ruleParameter ) ) (otherlv_3= ',' ( (lv_parameters_4_0= ruleParameter ) ) )*
                             {
-                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:569:5: ( (lv_parameters_2_0= ruleParameter ) )
-                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:570:6: (lv_parameters_2_0= ruleParameter )
+                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:559:5: ( (lv_parameters_2_0= ruleParameter ) )
+                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:560:6: (lv_parameters_2_0= ruleParameter )
                             {
-                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:570:6: (lv_parameters_2_0= ruleParameter )
-                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:571:7: lv_parameters_2_0= ruleParameter
+                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:560:6: (lv_parameters_2_0= ruleParameter )
+                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:561:7: lv_parameters_2_0= ruleParameter
                             {
 
                             							markComposite(elementTypeProvider.getRuleNameAndParams_ParametersParameterParserRuleCall_1_1_0_0ElementType());
                             						
-                            pushFollow(FollowSets000.FOLLOW_ruleParameter_in_ruleRuleNameAndParams1687);
+                            pushFollow(FollowSets000.FOLLOW_ruleParameter_in_ruleRuleNameAndParams1659);
                             ruleParameter();
 
                             state._fsp--;
@@ -1650,7 +1592,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                             }
 
-                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:580:5: (otherlv_3= ',' ( (lv_parameters_4_0= ruleParameter ) ) )*
+                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:570:5: (otherlv_3= ',' ( (lv_parameters_4_0= ruleParameter ) ) )*
                             loop18:
                             do {
                                 int alt18=2;
@@ -1663,25 +1605,25 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                                 switch (alt18) {
                             	case 1 :
-                            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:581:6: otherlv_3= ',' ( (lv_parameters_4_0= ruleParameter ) )
+                            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:571:6: otherlv_3= ',' ( (lv_parameters_4_0= ruleParameter ) )
                             	    {
 
                             	    						markLeaf(elementTypeProvider.getRuleNameAndParams_CommaKeyword_1_1_1_0ElementType());
                             	    					
-                            	    otherlv_3=(Token)match(input,13,FollowSets000.FOLLOW_13_in_ruleRuleNameAndParams1730); 
+                            	    otherlv_3=(Token)match(input,13,FollowSets000.FOLLOW_13_in_ruleRuleNameAndParams1702); 
 
                             	    						doneLeaf(otherlv_3);
                             	    					
-                            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:588:6: ( (lv_parameters_4_0= ruleParameter ) )
-                            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:589:7: (lv_parameters_4_0= ruleParameter )
+                            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:578:6: ( (lv_parameters_4_0= ruleParameter ) )
+                            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:579:7: (lv_parameters_4_0= ruleParameter )
                             	    {
-                            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:589:7: (lv_parameters_4_0= ruleParameter )
-                            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:590:8: lv_parameters_4_0= ruleParameter
+                            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:579:7: (lv_parameters_4_0= ruleParameter )
+                            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:580:8: lv_parameters_4_0= ruleParameter
                             	    {
 
                             	    								markComposite(elementTypeProvider.getRuleNameAndParams_ParametersParameterParserRuleCall_1_1_1_1_0ElementType());
                             	    							
-                            	    pushFollow(FollowSets000.FOLLOW_ruleParameter_in_ruleRuleNameAndParams1772);
+                            	    pushFollow(FollowSets000.FOLLOW_ruleParameter_in_ruleRuleNameAndParams1744);
                             	    ruleParameter();
 
                             	    state._fsp--;
@@ -1713,7 +1655,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                     				markLeaf(elementTypeProvider.getRuleNameAndParams_RightSquareBracketKeyword_1_2ElementType());
                     			
-                    otherlv_5=(Token)match(input,26,FollowSets000.FOLLOW_26_in_ruleRuleNameAndParams1821); 
+                    otherlv_5=(Token)match(input,26,FollowSets000.FOLLOW_26_in_ruleRuleNameAndParams1793); 
 
                     				doneLeaf(otherlv_5);
                     			
@@ -1741,64 +1683,35 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
     // $ANTLR end "ruleRuleNameAndParams"
 
 
-    // $ANTLR start "entryRuleReturnsClause"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:613:1: entryRuleReturnsClause : ruleReturnsClause EOF ;
-    public final void entryRuleReturnsClause() throws RecognitionException {
-        try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:613:23: ( ruleReturnsClause EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:614:2: ruleReturnsClause EOF
-            {
-             markComposite(elementTypeProvider.getReturnsClauseElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleReturnsClause_in_entryRuleReturnsClause1847);
-            ruleReturnsClause();
-
-            state._fsp--;
-
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleReturnsClause1850); 
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-        }
-        return ;
-    }
-    // $ANTLR end "entryRuleReturnsClause"
-
-
     // $ANTLR start "ruleReturnsClause"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:619:1: ruleReturnsClause : (otherlv_0= 'returns' ( (lv_type_1_0= ruleTypeRef ) ) ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:604:1: ruleReturnsClause : (otherlv_0= 'returns' ( (lv_type_1_0= ruleTypeRef ) ) ) ;
     public final void ruleReturnsClause() throws RecognitionException {
         Token otherlv_0=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:619:18: ( (otherlv_0= 'returns' ( (lv_type_1_0= ruleTypeRef ) ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:620:2: (otherlv_0= 'returns' ( (lv_type_1_0= ruleTypeRef ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:604:18: ( (otherlv_0= 'returns' ( (lv_type_1_0= ruleTypeRef ) ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:605:2: (otherlv_0= 'returns' ( (lv_type_1_0= ruleTypeRef ) ) )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:620:2: (otherlv_0= 'returns' ( (lv_type_1_0= ruleTypeRef ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:621:3: otherlv_0= 'returns' ( (lv_type_1_0= ruleTypeRef ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:605:2: (otherlv_0= 'returns' ( (lv_type_1_0= ruleTypeRef ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:606:3: otherlv_0= 'returns' ( (lv_type_1_0= ruleTypeRef ) )
             {
 
             			markLeaf(elementTypeProvider.getReturnsClause_ReturnsKeyword_0ElementType());
             		
-            otherlv_0=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleReturnsClause1869); 
+            otherlv_0=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleReturnsClause1827); 
 
             			doneLeaf(otherlv_0);
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:628:3: ( (lv_type_1_0= ruleTypeRef ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:629:4: (lv_type_1_0= ruleTypeRef )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:613:3: ( (lv_type_1_0= ruleTypeRef ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:614:4: (lv_type_1_0= ruleTypeRef )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:629:4: (lv_type_1_0= ruleTypeRef )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:630:5: lv_type_1_0= ruleTypeRef
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:614:4: (lv_type_1_0= ruleTypeRef )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:615:5: lv_type_1_0= ruleTypeRef
             {
 
             					markComposite(elementTypeProvider.getReturnsClause_TypeTypeRefParserRuleCall_1_0ElementType());
             				
-            pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_ruleReturnsClause1896);
+            pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_ruleReturnsClause1854);
             ruleTypeRef();
 
             state._fsp--;
@@ -1831,19 +1744,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleParameter"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:643:1: entryRuleParameter : ruleParameter EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:628:1: entryRuleParameter : ruleParameter EOF ;
     public final void entryRuleParameter() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:643:19: ( ruleParameter EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:644:2: ruleParameter EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:628:19: ( ruleParameter EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:629:2: ruleParameter EOF
             {
              markComposite(elementTypeProvider.getParameterElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleParameter_in_entryRuleParameter1927);
+            pushFollow(FollowSets000.FOLLOW_ruleParameter_in_entryRuleParameter1885);
             ruleParameter();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleParameter1930); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleParameter1888); 
 
             }
 
@@ -1860,24 +1773,24 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleParameter"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:649:1: ruleParameter : ( (lv_name_0_0= RULE_ID ) ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:634:1: ruleParameter : ( (lv_name_0_0= RULE_ID ) ) ;
     public final void ruleParameter() throws RecognitionException {
         Token lv_name_0_0=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:649:14: ( ( (lv_name_0_0= RULE_ID ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:650:2: ( (lv_name_0_0= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:634:14: ( ( (lv_name_0_0= RULE_ID ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:635:2: ( (lv_name_0_0= RULE_ID ) )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:650:2: ( (lv_name_0_0= RULE_ID ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:651:3: (lv_name_0_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:635:2: ( (lv_name_0_0= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:636:3: (lv_name_0_0= RULE_ID )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:651:3: (lv_name_0_0= RULE_ID )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:652:4: lv_name_0_0= RULE_ID
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:636:3: (lv_name_0_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:637:4: lv_name_0_0= RULE_ID
             {
 
             				markLeaf(elementTypeProvider.getParameter_NameIDTerminalRuleCall_0ElementType());
             			
-            lv_name_0_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleParameter1955); 
+            lv_name_0_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleParameter1913); 
 
             				doneLeaf(lv_name_0_0);
             			
@@ -1903,19 +1816,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleTypeRef"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:664:1: entryRuleTypeRef : ruleTypeRef EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:649:1: entryRuleTypeRef : ruleTypeRef EOF ;
     public final void entryRuleTypeRef() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:664:17: ( ruleTypeRef EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:665:2: ruleTypeRef EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:649:17: ( ruleTypeRef EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:650:2: ruleTypeRef EOF
             {
              markComposite(elementTypeProvider.getTypeRefElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_entryRuleTypeRef1980);
+            pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_entryRuleTypeRef1938);
             ruleTypeRef();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTypeRef1983); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTypeRef1941); 
 
             }
 
@@ -1932,20 +1845,20 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleTypeRef"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:670:1: ruleTypeRef : ( ( ( (otherlv_0= RULE_ID ) ) otherlv_1= '::' )? ( (otherlv_2= RULE_ID ) ) ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:655:1: ruleTypeRef : ( ( ( (otherlv_0= RULE_ID ) ) otherlv_1= '::' )? ( (otherlv_2= RULE_ID ) ) ) ;
     public final void ruleTypeRef() throws RecognitionException {
         Token otherlv_0=null;
         Token otherlv_1=null;
         Token otherlv_2=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:670:12: ( ( ( ( (otherlv_0= RULE_ID ) ) otherlv_1= '::' )? ( (otherlv_2= RULE_ID ) ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:671:2: ( ( ( (otherlv_0= RULE_ID ) ) otherlv_1= '::' )? ( (otherlv_2= RULE_ID ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:655:12: ( ( ( ( (otherlv_0= RULE_ID ) ) otherlv_1= '::' )? ( (otherlv_2= RULE_ID ) ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:656:2: ( ( ( (otherlv_0= RULE_ID ) ) otherlv_1= '::' )? ( (otherlv_2= RULE_ID ) ) )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:671:2: ( ( ( (otherlv_0= RULE_ID ) ) otherlv_1= '::' )? ( (otherlv_2= RULE_ID ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:672:3: ( ( (otherlv_0= RULE_ID ) ) otherlv_1= '::' )? ( (otherlv_2= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:656:2: ( ( ( (otherlv_0= RULE_ID ) ) otherlv_1= '::' )? ( (otherlv_2= RULE_ID ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:657:3: ( ( (otherlv_0= RULE_ID ) ) otherlv_1= '::' )? ( (otherlv_2= RULE_ID ) )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:672:3: ( ( (otherlv_0= RULE_ID ) ) otherlv_1= '::' )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:657:3: ( ( (otherlv_0= RULE_ID ) ) otherlv_1= '::' )?
             int alt21=2;
             int LA21_0 = input.LA(1);
 
@@ -1958,18 +1871,18 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt21) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:673:4: ( (otherlv_0= RULE_ID ) ) otherlv_1= '::'
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:658:4: ( (otherlv_0= RULE_ID ) ) otherlv_1= '::'
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:673:4: ( (otherlv_0= RULE_ID ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:674:5: (otherlv_0= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:658:4: ( (otherlv_0= RULE_ID ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:659:5: (otherlv_0= RULE_ID )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:674:5: (otherlv_0= RULE_ID )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:675:6: otherlv_0= RULE_ID
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:659:5: (otherlv_0= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:660:6: otherlv_0= RULE_ID
                     {
 
                     						markLeaf(elementTypeProvider.getTypeRef_MetamodelAbstractMetamodelDeclarationCrossReference_0_0_0ElementType());
                     					
-                    otherlv_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleTypeRef2023); 
+                    otherlv_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleTypeRef1981); 
 
                     						doneLeaf(otherlv_0);
                     					
@@ -1982,7 +1895,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                     				markLeaf(elementTypeProvider.getTypeRef_ColonColonKeyword_0_1ElementType());
                     			
-                    otherlv_1=(Token)match(input,28,FollowSets000.FOLLOW_28_in_ruleTypeRef2053); 
+                    otherlv_1=(Token)match(input,28,FollowSets000.FOLLOW_28_in_ruleTypeRef2011); 
 
                     				doneLeaf(otherlv_1);
                     			
@@ -1992,16 +1905,16 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             }
 
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:692:3: ( (otherlv_2= RULE_ID ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:693:4: (otherlv_2= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:677:3: ( (otherlv_2= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:678:4: (otherlv_2= RULE_ID )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:693:4: (otherlv_2= RULE_ID )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:694:5: otherlv_2= RULE_ID
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:678:4: (otherlv_2= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:679:5: otherlv_2= RULE_ID
             {
 
             					markLeaf(elementTypeProvider.getTypeRef_ClassifierEClassifierCrossReference_1_0ElementType());
             				
-            otherlv_2=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleTypeRef2086); 
+            otherlv_2=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleTypeRef2044); 
 
             					doneLeaf(otherlv_2);
             				
@@ -2030,19 +1943,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleAlternatives"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:707:1: entryRuleAlternatives : ruleAlternatives EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:692:1: entryRuleAlternatives : ruleAlternatives EOF ;
     public final void entryRuleAlternatives() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:707:22: ( ruleAlternatives EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:708:2: ruleAlternatives EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:692:22: ( ruleAlternatives EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:693:2: ruleAlternatives EOF
             {
              markComposite(elementTypeProvider.getAlternativesElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAlternatives_in_entryRuleAlternatives2117);
+            pushFollow(FollowSets000.FOLLOW_ruleAlternatives_in_entryRuleAlternatives2075);
             ruleAlternatives();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAlternatives2120); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAlternatives2078); 
 
             }
 
@@ -2059,21 +1972,21 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleAlternatives"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:713:1: ruleAlternatives : ( ruleConditionalBranch ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleConditionalBranch ) ) )+ )? ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:698:1: ruleAlternatives : ( ruleConditionalBranch ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleConditionalBranch ) ) )+ )? ) ;
     public final void ruleAlternatives() throws RecognitionException {
         Token otherlv_2=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:713:17: ( ( ruleConditionalBranch ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleConditionalBranch ) ) )+ )? ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:714:2: ( ruleConditionalBranch ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleConditionalBranch ) ) )+ )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:698:17: ( ( ruleConditionalBranch ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleConditionalBranch ) ) )+ )? ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:699:2: ( ruleConditionalBranch ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleConditionalBranch ) ) )+ )? )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:714:2: ( ruleConditionalBranch ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleConditionalBranch ) ) )+ )? )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:715:3: ruleConditionalBranch ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleConditionalBranch ) ) )+ )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:699:2: ( ruleConditionalBranch ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleConditionalBranch ) ) )+ )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:700:3: ruleConditionalBranch ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleConditionalBranch ) ) )+ )?
             {
 
             			markComposite(elementTypeProvider.getAlternatives_ConditionalBranchParserRuleCall_0ElementType());
             		
-            pushFollow(FollowSets000.FOLLOW_ruleConditionalBranch_in_ruleAlternatives2137);
+            pushFollow(FollowSets000.FOLLOW_ruleConditionalBranch_in_ruleAlternatives2095);
             ruleConditionalBranch();
 
             state._fsp--;
@@ -2081,7 +1994,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			doneComposite();
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:722:3: ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleConditionalBranch ) ) )+ )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:707:3: ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleConditionalBranch ) ) )+ )?
             int alt23=2;
             int LA23_0 = input.LA(1);
 
@@ -2090,10 +2003,10 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt23) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:723:4: () (otherlv_2= '|' ( (lv_elements_3_0= ruleConditionalBranch ) ) )+
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:708:4: () (otherlv_2= '|' ( (lv_elements_3_0= ruleConditionalBranch ) ) )+
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:723:4: ()
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:724:5: 
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:708:4: ()
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:709:5: 
                     {
 
                     					precedeComposite(elementTypeProvider.getAlternatives_AlternativesElementsAction_1_0ElementType());
@@ -2102,7 +2015,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                     }
 
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:729:4: (otherlv_2= '|' ( (lv_elements_3_0= ruleConditionalBranch ) ) )+
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:714:4: (otherlv_2= '|' ( (lv_elements_3_0= ruleConditionalBranch ) ) )+
                     int cnt22=0;
                     loop22:
                     do {
@@ -2116,25 +2029,25 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                         switch (alt22) {
                     	case 1 :
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:730:5: otherlv_2= '|' ( (lv_elements_3_0= ruleConditionalBranch ) )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:715:5: otherlv_2= '|' ( (lv_elements_3_0= ruleConditionalBranch ) )
                     	    {
 
                     	    					markLeaf(elementTypeProvider.getAlternatives_VerticalLineKeyword_1_1_0ElementType());
                     	    				
-                    	    otherlv_2=(Token)match(input,29,FollowSets000.FOLLOW_29_in_ruleAlternatives2180); 
+                    	    otherlv_2=(Token)match(input,29,FollowSets000.FOLLOW_29_in_ruleAlternatives2138); 
 
                     	    					doneLeaf(otherlv_2);
                     	    				
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:737:5: ( (lv_elements_3_0= ruleConditionalBranch ) )
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:738:6: (lv_elements_3_0= ruleConditionalBranch )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:722:5: ( (lv_elements_3_0= ruleConditionalBranch ) )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:723:6: (lv_elements_3_0= ruleConditionalBranch )
                     	    {
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:738:6: (lv_elements_3_0= ruleConditionalBranch )
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:739:7: lv_elements_3_0= ruleConditionalBranch
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:723:6: (lv_elements_3_0= ruleConditionalBranch )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:724:7: lv_elements_3_0= ruleConditionalBranch
                     	    {
 
                     	    							markComposite(elementTypeProvider.getAlternatives_ElementsConditionalBranchParserRuleCall_1_1_1_0ElementType());
                     	    						
-                    	    pushFollow(FollowSets000.FOLLOW_ruleConditionalBranch_in_ruleAlternatives2217);
+                    	    pushFollow(FollowSets000.FOLLOW_ruleConditionalBranch_in_ruleAlternatives2175);
                     	    ruleConditionalBranch();
 
                     	    state._fsp--;
@@ -2186,19 +2099,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleConditionalBranch"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:754:1: entryRuleConditionalBranch : ruleConditionalBranch EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:739:1: entryRuleConditionalBranch : ruleConditionalBranch EOF ;
     public final void entryRuleConditionalBranch() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:754:27: ( ruleConditionalBranch EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:755:2: ruleConditionalBranch EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:739:27: ( ruleConditionalBranch EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:740:2: ruleConditionalBranch EOF
             {
              markComposite(elementTypeProvider.getConditionalBranchElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleConditionalBranch_in_entryRuleConditionalBranch2265);
+            pushFollow(FollowSets000.FOLLOW_ruleConditionalBranch_in_entryRuleConditionalBranch2223);
             ruleConditionalBranch();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleConditionalBranch2268); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleConditionalBranch2226); 
 
             }
 
@@ -2215,17 +2128,17 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleConditionalBranch"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:760:1: ruleConditionalBranch : ( ruleUnorderedGroup | ( () otherlv_2= '[' ( (lv_filtered_3_0= ruleInverseLiteralValue ) ) ( (otherlv_4= RULE_ID ) ) otherlv_5= ']' ( (lv_guardedElement_6_0= ruleUnorderedGroup ) ) ) ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:745:1: ruleConditionalBranch : ( ruleUnorderedGroup | ( () otherlv_2= '[' ( (lv_filtered_3_0= ruleInverseLiteralValue ) ) ( (otherlv_4= RULE_ID ) ) otherlv_5= ']' ( (lv_guardedElement_6_0= ruleUnorderedGroup ) ) ) ) ;
     public final void ruleConditionalBranch() throws RecognitionException {
         Token otherlv_2=null;
         Token otherlv_4=null;
         Token otherlv_5=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:760:22: ( ( ruleUnorderedGroup | ( () otherlv_2= '[' ( (lv_filtered_3_0= ruleInverseLiteralValue ) ) ( (otherlv_4= RULE_ID ) ) otherlv_5= ']' ( (lv_guardedElement_6_0= ruleUnorderedGroup ) ) ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:761:2: ( ruleUnorderedGroup | ( () otherlv_2= '[' ( (lv_filtered_3_0= ruleInverseLiteralValue ) ) ( (otherlv_4= RULE_ID ) ) otherlv_5= ']' ( (lv_guardedElement_6_0= ruleUnorderedGroup ) ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:745:22: ( ( ruleUnorderedGroup | ( () otherlv_2= '[' ( (lv_filtered_3_0= ruleInverseLiteralValue ) ) ( (otherlv_4= RULE_ID ) ) otherlv_5= ']' ( (lv_guardedElement_6_0= ruleUnorderedGroup ) ) ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:746:2: ( ruleUnorderedGroup | ( () otherlv_2= '[' ( (lv_filtered_3_0= ruleInverseLiteralValue ) ) ( (otherlv_4= RULE_ID ) ) otherlv_5= ']' ( (lv_guardedElement_6_0= ruleUnorderedGroup ) ) ) )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:761:2: ( ruleUnorderedGroup | ( () otherlv_2= '[' ( (lv_filtered_3_0= ruleInverseLiteralValue ) ) ( (otherlv_4= RULE_ID ) ) otherlv_5= ']' ( (lv_guardedElement_6_0= ruleUnorderedGroup ) ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:746:2: ( ruleUnorderedGroup | ( () otherlv_2= '[' ( (lv_filtered_3_0= ruleInverseLiteralValue ) ) ( (otherlv_4= RULE_ID ) ) otherlv_5= ']' ( (lv_guardedElement_6_0= ruleUnorderedGroup ) ) ) )
             int alt24=2;
             int LA24_0 = input.LA(1);
 
@@ -2243,12 +2156,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt24) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:762:3: ruleUnorderedGroup
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:747:3: ruleUnorderedGroup
                     {
 
                     			markComposite(elementTypeProvider.getConditionalBranch_UnorderedGroupParserRuleCall_0ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleUnorderedGroup_in_ruleConditionalBranch2285);
+                    pushFollow(FollowSets000.FOLLOW_ruleUnorderedGroup_in_ruleConditionalBranch2243);
                     ruleUnorderedGroup();
 
                     state._fsp--;
@@ -2260,13 +2173,13 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:770:3: ( () otherlv_2= '[' ( (lv_filtered_3_0= ruleInverseLiteralValue ) ) ( (otherlv_4= RULE_ID ) ) otherlv_5= ']' ( (lv_guardedElement_6_0= ruleUnorderedGroup ) ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:755:3: ( () otherlv_2= '[' ( (lv_filtered_3_0= ruleInverseLiteralValue ) ) ( (otherlv_4= RULE_ID ) ) otherlv_5= ']' ( (lv_guardedElement_6_0= ruleUnorderedGroup ) ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:770:3: ( () otherlv_2= '[' ( (lv_filtered_3_0= ruleInverseLiteralValue ) ) ( (otherlv_4= RULE_ID ) ) otherlv_5= ']' ( (lv_guardedElement_6_0= ruleUnorderedGroup ) ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:771:4: () otherlv_2= '[' ( (lv_filtered_3_0= ruleInverseLiteralValue ) ) ( (otherlv_4= RULE_ID ) ) otherlv_5= ']' ( (lv_guardedElement_6_0= ruleUnorderedGroup ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:755:3: ( () otherlv_2= '[' ( (lv_filtered_3_0= ruleInverseLiteralValue ) ) ( (otherlv_4= RULE_ID ) ) otherlv_5= ']' ( (lv_guardedElement_6_0= ruleUnorderedGroup ) ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:756:4: () otherlv_2= '[' ( (lv_filtered_3_0= ruleInverseLiteralValue ) ) ( (otherlv_4= RULE_ID ) ) otherlv_5= ']' ( (lv_guardedElement_6_0= ruleUnorderedGroup ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:771:4: ()
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:772:5: 
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:756:4: ()
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:757:5: 
                     {
 
                     					precedeComposite(elementTypeProvider.getConditionalBranch_ConditionalBranchAction_1_0ElementType());
@@ -2278,20 +2191,20 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                     				markLeaf(elementTypeProvider.getConditionalBranch_LeftSquareBracketKeyword_1_1ElementType());
                     			
-                    otherlv_2=(Token)match(input,25,FollowSets000.FOLLOW_25_in_ruleConditionalBranch2329); 
+                    otherlv_2=(Token)match(input,25,FollowSets000.FOLLOW_25_in_ruleConditionalBranch2287); 
 
                     				doneLeaf(otherlv_2);
                     			
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:784:4: ( (lv_filtered_3_0= ruleInverseLiteralValue ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:785:5: (lv_filtered_3_0= ruleInverseLiteralValue )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:769:4: ( (lv_filtered_3_0= ruleInverseLiteralValue ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:770:5: (lv_filtered_3_0= ruleInverseLiteralValue )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:785:5: (lv_filtered_3_0= ruleInverseLiteralValue )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:786:6: lv_filtered_3_0= ruleInverseLiteralValue
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:770:5: (lv_filtered_3_0= ruleInverseLiteralValue )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:771:6: lv_filtered_3_0= ruleInverseLiteralValue
                     {
 
                     						markComposite(elementTypeProvider.getConditionalBranch_FilteredInverseLiteralValueParserRuleCall_1_2_0ElementType());
                     					
-                    pushFollow(FollowSets000.FOLLOW_ruleInverseLiteralValue_in_ruleConditionalBranch2361);
+                    pushFollow(FollowSets000.FOLLOW_ruleInverseLiteralValue_in_ruleConditionalBranch2319);
                     ruleInverseLiteralValue();
 
                     state._fsp--;
@@ -2305,16 +2218,16 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                     }
 
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:795:4: ( (otherlv_4= RULE_ID ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:796:5: (otherlv_4= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:780:4: ( (otherlv_4= RULE_ID ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:781:5: (otherlv_4= RULE_ID )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:796:5: (otherlv_4= RULE_ID )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:797:6: otherlv_4= RULE_ID
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:781:5: (otherlv_4= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:782:6: otherlv_4= RULE_ID
                     {
 
                     						markLeaf(elementTypeProvider.getConditionalBranch_ParameterParameterCrossReference_1_3_0ElementType());
                     					
-                    otherlv_4=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleConditionalBranch2406); 
+                    otherlv_4=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleConditionalBranch2364); 
 
                     						doneLeaf(otherlv_4);
                     					
@@ -2327,20 +2240,20 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                     				markLeaf(elementTypeProvider.getConditionalBranch_RightSquareBracketKeyword_1_4ElementType());
                     			
-                    otherlv_5=(Token)match(input,26,FollowSets000.FOLLOW_26_in_ruleConditionalBranch2436); 
+                    otherlv_5=(Token)match(input,26,FollowSets000.FOLLOW_26_in_ruleConditionalBranch2394); 
 
                     				doneLeaf(otherlv_5);
                     			
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:813:4: ( (lv_guardedElement_6_0= ruleUnorderedGroup ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:814:5: (lv_guardedElement_6_0= ruleUnorderedGroup )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:798:4: ( (lv_guardedElement_6_0= ruleUnorderedGroup ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:799:5: (lv_guardedElement_6_0= ruleUnorderedGroup )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:814:5: (lv_guardedElement_6_0= ruleUnorderedGroup )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:815:6: lv_guardedElement_6_0= ruleUnorderedGroup
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:799:5: (lv_guardedElement_6_0= ruleUnorderedGroup )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:800:6: lv_guardedElement_6_0= ruleUnorderedGroup
                     {
 
                     						markComposite(elementTypeProvider.getConditionalBranch_GuardedElementUnorderedGroupParserRuleCall_1_5_0ElementType());
                     					
-                    pushFollow(FollowSets000.FOLLOW_ruleUnorderedGroup_in_ruleConditionalBranch2468);
+                    pushFollow(FollowSets000.FOLLOW_ruleUnorderedGroup_in_ruleConditionalBranch2426);
                     ruleUnorderedGroup();
 
                     state._fsp--;
@@ -2379,19 +2292,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleUnorderedGroup"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:829:1: entryRuleUnorderedGroup : ruleUnorderedGroup EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:814:1: entryRuleUnorderedGroup : ruleUnorderedGroup EOF ;
     public final void entryRuleUnorderedGroup() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:829:24: ( ruleUnorderedGroup EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:830:2: ruleUnorderedGroup EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:814:24: ( ruleUnorderedGroup EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:815:2: ruleUnorderedGroup EOF
             {
              markComposite(elementTypeProvider.getUnorderedGroupElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleUnorderedGroup_in_entryRuleUnorderedGroup2506);
+            pushFollow(FollowSets000.FOLLOW_ruleUnorderedGroup_in_entryRuleUnorderedGroup2464);
             ruleUnorderedGroup();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleUnorderedGroup2509); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleUnorderedGroup2467); 
 
             }
 
@@ -2408,21 +2321,21 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleUnorderedGroup"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:835:1: ruleUnorderedGroup : ( ruleGroup ( () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+ )? ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:820:1: ruleUnorderedGroup : ( ruleGroup ( () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+ )? ) ;
     public final void ruleUnorderedGroup() throws RecognitionException {
         Token otherlv_2=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:835:19: ( ( ruleGroup ( () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+ )? ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:836:2: ( ruleGroup ( () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+ )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:820:19: ( ( ruleGroup ( () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+ )? ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:821:2: ( ruleGroup ( () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+ )? )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:836:2: ( ruleGroup ( () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+ )? )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:837:3: ruleGroup ( () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+ )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:821:2: ( ruleGroup ( () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+ )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:822:3: ruleGroup ( () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+ )?
             {
 
             			markComposite(elementTypeProvider.getUnorderedGroup_GroupParserRuleCall_0ElementType());
             		
-            pushFollow(FollowSets000.FOLLOW_ruleGroup_in_ruleUnorderedGroup2526);
+            pushFollow(FollowSets000.FOLLOW_ruleGroup_in_ruleUnorderedGroup2484);
             ruleGroup();
 
             state._fsp--;
@@ -2430,7 +2343,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			doneComposite();
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:844:3: ( () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+ )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:829:3: ( () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+ )?
             int alt26=2;
             int LA26_0 = input.LA(1);
 
@@ -2439,10 +2352,10 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt26) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:845:4: () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:830:4: () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:845:4: ()
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:846:5: 
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:830:4: ()
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:831:5: 
                     {
 
                     					precedeComposite(elementTypeProvider.getUnorderedGroup_UnorderedGroupElementsAction_1_0ElementType());
@@ -2451,7 +2364,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                     }
 
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:851:4: (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:836:4: (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+
                     int cnt25=0;
                     loop25:
                     do {
@@ -2465,25 +2378,25 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                         switch (alt25) {
                     	case 1 :
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:852:5: otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:837:5: otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) )
                     	    {
 
                     	    					markLeaf(elementTypeProvider.getUnorderedGroup_AmpersandKeyword_1_1_0ElementType());
                     	    				
-                    	    otherlv_2=(Token)match(input,30,FollowSets000.FOLLOW_30_in_ruleUnorderedGroup2569); 
+                    	    otherlv_2=(Token)match(input,30,FollowSets000.FOLLOW_30_in_ruleUnorderedGroup2527); 
 
                     	    					doneLeaf(otherlv_2);
                     	    				
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:859:5: ( (lv_elements_3_0= ruleGroup ) )
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:860:6: (lv_elements_3_0= ruleGroup )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:844:5: ( (lv_elements_3_0= ruleGroup ) )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:845:6: (lv_elements_3_0= ruleGroup )
                     	    {
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:860:6: (lv_elements_3_0= ruleGroup )
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:861:7: lv_elements_3_0= ruleGroup
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:845:6: (lv_elements_3_0= ruleGroup )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:846:7: lv_elements_3_0= ruleGroup
                     	    {
 
                     	    							markComposite(elementTypeProvider.getUnorderedGroup_ElementsGroupParserRuleCall_1_1_1_0ElementType());
                     	    						
-                    	    pushFollow(FollowSets000.FOLLOW_ruleGroup_in_ruleUnorderedGroup2606);
+                    	    pushFollow(FollowSets000.FOLLOW_ruleGroup_in_ruleUnorderedGroup2564);
                     	    ruleGroup();
 
                     	    state._fsp--;
@@ -2535,19 +2448,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleGroup"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:876:1: entryRuleGroup : ruleGroup EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:861:1: entryRuleGroup : ruleGroup EOF ;
     public final void entryRuleGroup() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:876:15: ( ruleGroup EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:877:2: ruleGroup EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:861:15: ( ruleGroup EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:862:2: ruleGroup EOF
             {
              markComposite(elementTypeProvider.getGroupElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleGroup_in_entryRuleGroup2654);
+            pushFollow(FollowSets000.FOLLOW_ruleGroup_in_entryRuleGroup2612);
             ruleGroup();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleGroup2657); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleGroup2615); 
 
             }
 
@@ -2564,19 +2477,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleGroup"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:882:1: ruleGroup : ( ruleAbstractToken ( () ( (lv_elements_2_0= ruleAbstractToken ) )+ )? ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:867:1: ruleGroup : ( ruleAbstractToken ( () ( (lv_elements_2_0= ruleAbstractToken ) )+ )? ) ;
     public final void ruleGroup() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:882:10: ( ( ruleAbstractToken ( () ( (lv_elements_2_0= ruleAbstractToken ) )+ )? ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:883:2: ( ruleAbstractToken ( () ( (lv_elements_2_0= ruleAbstractToken ) )+ )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:867:10: ( ( ruleAbstractToken ( () ( (lv_elements_2_0= ruleAbstractToken ) )+ )? ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:868:2: ( ruleAbstractToken ( () ( (lv_elements_2_0= ruleAbstractToken ) )+ )? )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:883:2: ( ruleAbstractToken ( () ( (lv_elements_2_0= ruleAbstractToken ) )+ )? )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:884:3: ruleAbstractToken ( () ( (lv_elements_2_0= ruleAbstractToken ) )+ )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:868:2: ( ruleAbstractToken ( () ( (lv_elements_2_0= ruleAbstractToken ) )+ )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:869:3: ruleAbstractToken ( () ( (lv_elements_2_0= ruleAbstractToken ) )+ )?
             {
 
             			markComposite(elementTypeProvider.getGroup_AbstractTokenParserRuleCall_0ElementType());
             		
-            pushFollow(FollowSets000.FOLLOW_ruleAbstractToken_in_ruleGroup2674);
+            pushFollow(FollowSets000.FOLLOW_ruleAbstractToken_in_ruleGroup2632);
             ruleAbstractToken();
 
             state._fsp--;
@@ -2584,7 +2497,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			doneComposite();
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:891:3: ( () ( (lv_elements_2_0= ruleAbstractToken ) )+ )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:876:3: ( () ( (lv_elements_2_0= ruleAbstractToken ) )+ )?
             int alt28=2;
             int LA28_0 = input.LA(1);
 
@@ -2593,10 +2506,10 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt28) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:892:4: () ( (lv_elements_2_0= ruleAbstractToken ) )+
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:877:4: () ( (lv_elements_2_0= ruleAbstractToken ) )+
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:892:4: ()
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:893:5: 
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:877:4: ()
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:878:5: 
                     {
 
                     					precedeComposite(elementTypeProvider.getGroup_GroupElementsAction_1_0ElementType());
@@ -2605,7 +2518,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                     }
 
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:898:4: ( (lv_elements_2_0= ruleAbstractToken ) )+
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:883:4: ( (lv_elements_2_0= ruleAbstractToken ) )+
                     int cnt27=0;
                     loop27:
                     do {
@@ -2619,15 +2532,15 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                         switch (alt27) {
                     	case 1 :
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:899:5: (lv_elements_2_0= ruleAbstractToken )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:884:5: (lv_elements_2_0= ruleAbstractToken )
                     	    {
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:899:5: (lv_elements_2_0= ruleAbstractToken )
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:900:6: lv_elements_2_0= ruleAbstractToken
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:884:5: (lv_elements_2_0= ruleAbstractToken )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:885:6: lv_elements_2_0= ruleAbstractToken
                     	    {
 
                     	    						markComposite(elementTypeProvider.getGroup_ElementsAbstractTokenParserRuleCall_1_1_0ElementType());
                     	    					
-                    	    pushFollow(FollowSets000.FOLLOW_ruleAbstractToken_in_ruleGroup2725);
+                    	    pushFollow(FollowSets000.FOLLOW_ruleAbstractToken_in_ruleGroup2683);
                     	    ruleAbstractToken();
 
                     	    state._fsp--;
@@ -2676,19 +2589,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleAbstractToken"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:914:1: entryRuleAbstractToken : ruleAbstractToken EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:899:1: entryRuleAbstractToken : ruleAbstractToken EOF ;
     public final void entryRuleAbstractToken() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:914:23: ( ruleAbstractToken EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:915:2: ruleAbstractToken EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:899:23: ( ruleAbstractToken EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:900:2: ruleAbstractToken EOF
             {
              markComposite(elementTypeProvider.getAbstractTokenElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAbstractToken_in_entryRuleAbstractToken2765);
+            pushFollow(FollowSets000.FOLLOW_ruleAbstractToken_in_entryRuleAbstractToken2723);
             ruleAbstractToken();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAbstractToken2768); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAbstractToken2726); 
 
             }
 
@@ -2705,13 +2618,13 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleAbstractToken"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:920:1: ruleAbstractToken : ( ruleAbstractTokenWithCardinality | ruleAction ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:905:1: ruleAbstractToken : ( ruleAbstractTokenWithCardinality | ruleAction ) ;
     public final void ruleAbstractToken() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:920:18: ( ( ruleAbstractTokenWithCardinality | ruleAction ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:921:2: ( ruleAbstractTokenWithCardinality | ruleAction )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:905:18: ( ( ruleAbstractTokenWithCardinality | ruleAction ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:906:2: ( ruleAbstractTokenWithCardinality | ruleAction )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:921:2: ( ruleAbstractTokenWithCardinality | ruleAction )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:906:2: ( ruleAbstractTokenWithCardinality | ruleAction )
             int alt29=2;
             int LA29_0 = input.LA(1);
 
@@ -2729,12 +2642,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt29) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:922:3: ruleAbstractTokenWithCardinality
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:907:3: ruleAbstractTokenWithCardinality
                     {
 
                     			markComposite(elementTypeProvider.getAbstractToken_AbstractTokenWithCardinalityParserRuleCall_0ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleAbstractTokenWithCardinality_in_ruleAbstractToken2785);
+                    pushFollow(FollowSets000.FOLLOW_ruleAbstractTokenWithCardinality_in_ruleAbstractToken2743);
                     ruleAbstractTokenWithCardinality();
 
                     state._fsp--;
@@ -2746,12 +2659,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:930:3: ruleAction
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:915:3: ruleAction
                     {
 
                     			markComposite(elementTypeProvider.getAbstractToken_ActionParserRuleCall_1ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleAction_in_ruleAbstractToken2805);
+                    pushFollow(FollowSets000.FOLLOW_ruleAction_in_ruleAbstractToken2763);
                     ruleAction();
 
                     state._fsp--;
@@ -2781,19 +2694,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleAbstractTokenWithCardinality"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:941:1: entryRuleAbstractTokenWithCardinality : ruleAbstractTokenWithCardinality EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:926:1: entryRuleAbstractTokenWithCardinality : ruleAbstractTokenWithCardinality EOF ;
     public final void entryRuleAbstractTokenWithCardinality() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:941:38: ( ruleAbstractTokenWithCardinality EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:942:2: ruleAbstractTokenWithCardinality EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:926:38: ( ruleAbstractTokenWithCardinality EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:927:2: ruleAbstractTokenWithCardinality EOF
             {
              markComposite(elementTypeProvider.getAbstractTokenWithCardinalityElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAbstractTokenWithCardinality_in_entryRuleAbstractTokenWithCardinality2825);
+            pushFollow(FollowSets000.FOLLOW_ruleAbstractTokenWithCardinality_in_entryRuleAbstractTokenWithCardinality2783);
             ruleAbstractTokenWithCardinality();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAbstractTokenWithCardinality2828); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAbstractTokenWithCardinality2786); 
 
             }
 
@@ -2810,30 +2723,33 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleAbstractTokenWithCardinality"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:947:1: ruleAbstractTokenWithCardinality : ( ( ruleAssignment | ruleAbstractTerminal ) ( ruleCardinalities )? ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:932:1: ruleAbstractTokenWithCardinality : ( ( ruleAssignment | ruleAbstractTerminal ) ( ruleCardinalities )? ) ;
     public final void ruleAbstractTokenWithCardinality() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:947:33: ( ( ( ruleAssignment | ruleAbstractTerminal ) ( ruleCardinalities )? ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:948:2: ( ( ruleAssignment | ruleAbstractTerminal ) ( ruleCardinalities )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:932:33: ( ( ( ruleAssignment | ruleAbstractTerminal ) ( ruleCardinalities )? ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:933:2: ( ( ruleAssignment | ruleAbstractTerminal ) ( ruleCardinalities )? )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:948:2: ( ( ruleAssignment | ruleAbstractTerminal ) ( ruleCardinalities )? )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:949:3: ( ruleAssignment | ruleAbstractTerminal ) ( ruleCardinalities )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:933:2: ( ( ruleAssignment | ruleAbstractTerminal ) ( ruleCardinalities )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:934:3: ( ruleAssignment | ruleAbstractTerminal ) ( ruleCardinalities )?
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:949:3: ( ruleAssignment | ruleAbstractTerminal )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:934:3: ( ruleAssignment | ruleAbstractTerminal )
             int alt30=2;
             switch ( input.LA(1) ) {
             case 40:
                 {
                 int LA30_1 = input.LA(2);
 
-                if ( (LA30_1==RULE_ID) ) {
+                if ( (LA30_1==RULE_STRING||LA30_1==15) ) {
+                    alt30=2;
+                }
+                else if ( (LA30_1==RULE_ID) ) {
                     int LA30_5 = input.LA(3);
 
-                    if ( ((LA30_5>=34 && LA30_5<=35)||LA30_5==39) ) {
-                        alt30=1;
-                    }
-                    else if ( (LA30_5==EOF||(LA30_5>=RULE_ID && LA30_5<=RULE_STRING)||(LA30_5>=15 && LA30_5<=16)||LA30_5==22||LA30_5==24||(LA30_5>=29 && LA30_5<=33)||(LA30_5>=40 && LA30_5<=41)) ) {
+                    if ( (LA30_5==EOF||(LA30_5>=RULE_ID && LA30_5<=RULE_STRING)||(LA30_5>=15 && LA30_5<=16)||LA30_5==22||LA30_5==24||(LA30_5>=29 && LA30_5<=33)||(LA30_5>=40 && LA30_5<=41)) ) {
                         alt30=2;
+                    }
+                    else if ( ((LA30_5>=34 && LA30_5<=35)||LA30_5==39) ) {
+                        alt30=1;
                     }
                     else {
                         NoViableAltException nvae =
@@ -2841,9 +2757,6 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                         throw nvae;
                     }
-                }
-                else if ( (LA30_1==RULE_STRING||LA30_1==15) ) {
-                    alt30=2;
                 }
                 else {
                     NoViableAltException nvae =
@@ -2863,11 +2776,11 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                 else if ( (LA30_2==RULE_ID) ) {
                     int LA30_5 = input.LA(3);
 
-                    if ( ((LA30_5>=34 && LA30_5<=35)||LA30_5==39) ) {
-                        alt30=1;
-                    }
-                    else if ( (LA30_5==EOF||(LA30_5>=RULE_ID && LA30_5<=RULE_STRING)||(LA30_5>=15 && LA30_5<=16)||LA30_5==22||LA30_5==24||(LA30_5>=29 && LA30_5<=33)||(LA30_5>=40 && LA30_5<=41)) ) {
+                    if ( (LA30_5==EOF||(LA30_5>=RULE_ID && LA30_5<=RULE_STRING)||(LA30_5>=15 && LA30_5<=16)||LA30_5==22||LA30_5==24||(LA30_5>=29 && LA30_5<=33)||(LA30_5>=40 && LA30_5<=41)) ) {
                         alt30=2;
+                    }
+                    else if ( ((LA30_5>=34 && LA30_5<=35)||LA30_5==39) ) {
+                        alt30=1;
                     }
                     else {
                         NoViableAltException nvae =
@@ -2888,11 +2801,11 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                 {
                 int LA30_3 = input.LA(2);
 
-                if ( ((LA30_3>=34 && LA30_3<=35)||LA30_3==39) ) {
-                    alt30=1;
-                }
-                else if ( (LA30_3==EOF||(LA30_3>=RULE_ID && LA30_3<=RULE_STRING)||(LA30_3>=15 && LA30_3<=16)||LA30_3==22||(LA30_3>=24 && LA30_3<=25)||(LA30_3>=28 && LA30_3<=33)||(LA30_3>=40 && LA30_3<=41)) ) {
+                if ( (LA30_3==EOF||(LA30_3>=RULE_ID && LA30_3<=RULE_STRING)||(LA30_3>=15 && LA30_3<=16)||LA30_3==22||(LA30_3>=24 && LA30_3<=25)||(LA30_3>=28 && LA30_3<=33)||(LA30_3>=40 && LA30_3<=41)) ) {
                     alt30=2;
+                }
+                else if ( ((LA30_3>=34 && LA30_3<=35)||LA30_3==39) ) {
+                    alt30=1;
                 }
                 else {
                     NoViableAltException nvae =
@@ -2917,12 +2830,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             switch (alt30) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:950:4: ruleAssignment
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:935:4: ruleAssignment
                     {
 
                     				markComposite(elementTypeProvider.getAbstractTokenWithCardinality_AssignmentParserRuleCall_0_0ElementType());
                     			
-                    pushFollow(FollowSets000.FOLLOW_ruleAssignment_in_ruleAbstractTokenWithCardinality2851);
+                    pushFollow(FollowSets000.FOLLOW_ruleAssignment_in_ruleAbstractTokenWithCardinality2809);
                     ruleAssignment();
 
                     state._fsp--;
@@ -2934,12 +2847,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:958:4: ruleAbstractTerminal
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:943:4: ruleAbstractTerminal
                     {
 
                     				markComposite(elementTypeProvider.getAbstractTokenWithCardinality_AbstractTerminalParserRuleCall_0_1ElementType());
                     			
-                    pushFollow(FollowSets000.FOLLOW_ruleAbstractTerminal_in_ruleAbstractTokenWithCardinality2875);
+                    pushFollow(FollowSets000.FOLLOW_ruleAbstractTerminal_in_ruleAbstractTokenWithCardinality2833);
                     ruleAbstractTerminal();
 
                     state._fsp--;
@@ -2953,7 +2866,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             }
 
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:966:3: ( ruleCardinalities )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:951:3: ( ruleCardinalities )?
             int alt31=2;
             int LA31_0 = input.LA(1);
 
@@ -2962,12 +2875,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt31) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:967:4: ruleCardinalities
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:952:4: ruleCardinalities
                     {
 
                     				markComposite(elementTypeProvider.getAbstractTokenWithCardinality_CardinalitiesParserRuleCall_1ElementType());
                     			
-                    pushFollow(FollowSets000.FOLLOW_ruleCardinalities_in_ruleAbstractTokenWithCardinality2898);
+                    pushFollow(FollowSets000.FOLLOW_ruleCardinalities_in_ruleAbstractTokenWithCardinality2856);
                     ruleCardinalities();
 
                     state._fsp--;
@@ -2999,53 +2912,24 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
     // $ANTLR end "ruleAbstractTokenWithCardinality"
 
 
-    // $ANTLR start "entryRuleCardinalities"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:979:1: entryRuleCardinalities : ruleCardinalities EOF ;
-    public final void entryRuleCardinalities() throws RecognitionException {
-        try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:979:23: ( ruleCardinalities EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:980:2: ruleCardinalities EOF
-            {
-             markComposite(elementTypeProvider.getCardinalitiesElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleCardinalities_in_entryRuleCardinalities2924);
-            ruleCardinalities();
-
-            state._fsp--;
-
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleCardinalities2927); 
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-        }
-        return ;
-    }
-    // $ANTLR end "entryRuleCardinalities"
-
-
     // $ANTLR start "ruleCardinalities"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:985:1: ruleCardinalities : ( ( (lv_cardinality_0_1= '?' | lv_cardinality_0_2= '*' | lv_cardinality_0_3= '+' ) ) ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:965:1: ruleCardinalities : ( ( (lv_cardinality_0_1= '?' | lv_cardinality_0_2= '*' | lv_cardinality_0_3= '+' ) ) ) ;
     public final void ruleCardinalities() throws RecognitionException {
         Token lv_cardinality_0_1=null;
         Token lv_cardinality_0_2=null;
         Token lv_cardinality_0_3=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:985:18: ( ( ( (lv_cardinality_0_1= '?' | lv_cardinality_0_2= '*' | lv_cardinality_0_3= '+' ) ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:986:2: ( ( (lv_cardinality_0_1= '?' | lv_cardinality_0_2= '*' | lv_cardinality_0_3= '+' ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:965:18: ( ( ( (lv_cardinality_0_1= '?' | lv_cardinality_0_2= '*' | lv_cardinality_0_3= '+' ) ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:966:2: ( ( (lv_cardinality_0_1= '?' | lv_cardinality_0_2= '*' | lv_cardinality_0_3= '+' ) ) )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:986:2: ( ( (lv_cardinality_0_1= '?' | lv_cardinality_0_2= '*' | lv_cardinality_0_3= '+' ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:987:3: ( (lv_cardinality_0_1= '?' | lv_cardinality_0_2= '*' | lv_cardinality_0_3= '+' ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:966:2: ( ( (lv_cardinality_0_1= '?' | lv_cardinality_0_2= '*' | lv_cardinality_0_3= '+' ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:967:3: ( (lv_cardinality_0_1= '?' | lv_cardinality_0_2= '*' | lv_cardinality_0_3= '+' ) )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:987:3: ( (lv_cardinality_0_1= '?' | lv_cardinality_0_2= '*' | lv_cardinality_0_3= '+' ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:988:4: (lv_cardinality_0_1= '?' | lv_cardinality_0_2= '*' | lv_cardinality_0_3= '+' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:967:3: ( (lv_cardinality_0_1= '?' | lv_cardinality_0_2= '*' | lv_cardinality_0_3= '+' ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:968:4: (lv_cardinality_0_1= '?' | lv_cardinality_0_2= '*' | lv_cardinality_0_3= '+' )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:988:4: (lv_cardinality_0_1= '?' | lv_cardinality_0_2= '*' | lv_cardinality_0_3= '+' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:968:4: (lv_cardinality_0_1= '?' | lv_cardinality_0_2= '*' | lv_cardinality_0_3= '+' )
             int alt32=3;
             switch ( input.LA(1) ) {
             case 31:
@@ -3072,12 +2956,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             switch (alt32) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:989:5: lv_cardinality_0_1= '?'
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:969:5: lv_cardinality_0_1= '?'
                     {
 
                     					markLeaf(elementTypeProvider.getCardinalities_CardinalityQuestionMarkKeyword_0_0ElementType());
                     				
-                    lv_cardinality_0_1=(Token)match(input,31,FollowSets000.FOLLOW_31_in_ruleCardinalities2959); 
+                    lv_cardinality_0_1=(Token)match(input,31,FollowSets000.FOLLOW_31_in_ruleCardinalities2903); 
 
                     					doneLeaf(lv_cardinality_0_1);
                     				
@@ -3085,12 +2969,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:997:5: lv_cardinality_0_2= '*'
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:977:5: lv_cardinality_0_2= '*'
                     {
 
                     					markLeaf(elementTypeProvider.getCardinalities_CardinalityAsteriskKeyword_0_1ElementType());
                     				
-                    lv_cardinality_0_2=(Token)match(input,22,FollowSets000.FOLLOW_22_in_ruleCardinalities2989); 
+                    lv_cardinality_0_2=(Token)match(input,22,FollowSets000.FOLLOW_22_in_ruleCardinalities2933); 
 
                     					doneLeaf(lv_cardinality_0_2);
                     				
@@ -3098,12 +2982,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 3 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1005:5: lv_cardinality_0_3= '+'
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:985:5: lv_cardinality_0_3= '+'
                     {
 
                     					markLeaf(elementTypeProvider.getCardinalities_CardinalityPlusSignKeyword_0_2ElementType());
                     				
-                    lv_cardinality_0_3=(Token)match(input,32,FollowSets000.FOLLOW_32_in_ruleCardinalities3019); 
+                    lv_cardinality_0_3=(Token)match(input,32,FollowSets000.FOLLOW_32_in_ruleCardinalities2963); 
 
                     					doneLeaf(lv_cardinality_0_3);
                     				
@@ -3135,19 +3019,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleAction"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1018:1: entryRuleAction : ruleAction EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:998:1: entryRuleAction : ruleAction EOF ;
     public final void entryRuleAction() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1018:16: ( ruleAction EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1019:2: ruleAction EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:998:16: ( ruleAction EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:999:2: ruleAction EOF
             {
              markComposite(elementTypeProvider.getActionElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAction_in_entryRuleAction3050);
+            pushFollow(FollowSets000.FOLLOW_ruleAction_in_entryRuleAction2994);
             ruleAction();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAction3053); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAction2997); 
 
             }
 
@@ -3164,7 +3048,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleAction"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1024:1: ruleAction : (otherlv_0= '{' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current' )? otherlv_6= '}' ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1004:1: ruleAction : (otherlv_0= '{' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current' )? otherlv_6= '}' ) ;
     public final void ruleAction() throws RecognitionException {
         Token otherlv_0=null;
         Token otherlv_2=null;
@@ -3175,29 +3059,29 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
         Token otherlv_6=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1024:11: ( (otherlv_0= '{' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current' )? otherlv_6= '}' ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1025:2: (otherlv_0= '{' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current' )? otherlv_6= '}' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1004:11: ( (otherlv_0= '{' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current' )? otherlv_6= '}' ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1005:2: (otherlv_0= '{' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current' )? otherlv_6= '}' )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1025:2: (otherlv_0= '{' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current' )? otherlv_6= '}' )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1026:3: otherlv_0= '{' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current' )? otherlv_6= '}'
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1005:2: (otherlv_0= '{' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current' )? otherlv_6= '}' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1006:3: otherlv_0= '{' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current' )? otherlv_6= '}'
             {
 
             			markLeaf(elementTypeProvider.getAction_LeftCurlyBracketKeyword_0ElementType());
             		
-            otherlv_0=(Token)match(input,33,FollowSets000.FOLLOW_33_in_ruleAction3072); 
+            otherlv_0=(Token)match(input,33,FollowSets000.FOLLOW_33_in_ruleAction3016); 
 
             			doneLeaf(otherlv_0);
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1033:3: ( (lv_type_1_0= ruleTypeRef ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1034:4: (lv_type_1_0= ruleTypeRef )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1013:3: ( (lv_type_1_0= ruleTypeRef ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1014:4: (lv_type_1_0= ruleTypeRef )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1034:4: (lv_type_1_0= ruleTypeRef )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1035:5: lv_type_1_0= ruleTypeRef
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1014:4: (lv_type_1_0= ruleTypeRef )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1015:5: lv_type_1_0= ruleTypeRef
             {
 
             					markComposite(elementTypeProvider.getAction_TypeTypeRefParserRuleCall_1_0ElementType());
             				
-            pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_ruleAction3099);
+            pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_ruleAction3043);
             ruleTypeRef();
 
             state._fsp--;
@@ -3211,7 +3095,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             }
 
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1044:3: (otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current' )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1024:3: (otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current' )?
             int alt34=2;
             int LA34_0 = input.LA(1);
 
@@ -3220,25 +3104,25 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt34) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1045:4: otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current'
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1025:4: otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current'
                     {
 
                     				markLeaf(elementTypeProvider.getAction_FullStopKeyword_2_0ElementType());
                     			
-                    otherlv_2=(Token)match(input,17,FollowSets000.FOLLOW_17_in_ruleAction3130); 
+                    otherlv_2=(Token)match(input,17,FollowSets000.FOLLOW_17_in_ruleAction3074); 
 
                     				doneLeaf(otherlv_2);
                     			
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1052:4: ( (lv_feature_3_0= RULE_ID ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1053:5: (lv_feature_3_0= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1032:4: ( (lv_feature_3_0= RULE_ID ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1033:5: (lv_feature_3_0= RULE_ID )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1053:5: (lv_feature_3_0= RULE_ID )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1054:6: lv_feature_3_0= RULE_ID
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1033:5: (lv_feature_3_0= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1034:6: lv_feature_3_0= RULE_ID
                     {
 
                     						markLeaf(elementTypeProvider.getAction_FeatureIDTerminalRuleCall_2_1_0ElementType());
                     					
-                    lv_feature_3_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleAction3162); 
+                    lv_feature_3_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleAction3106); 
 
                     						doneLeaf(lv_feature_3_0);
                     					
@@ -3248,13 +3132,13 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                     }
 
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1063:4: ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1064:5: ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1043:4: ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1044:5: ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1064:5: ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1065:6: (lv_operator_4_1= '=' | lv_operator_4_2= '+=' )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1044:5: ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1045:6: (lv_operator_4_1= '=' | lv_operator_4_2= '+=' )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1065:6: (lv_operator_4_1= '=' | lv_operator_4_2= '+=' )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1045:6: (lv_operator_4_1= '=' | lv_operator_4_2= '+=' )
                     int alt33=2;
                     int LA33_0 = input.LA(1);
 
@@ -3272,12 +3156,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     switch (alt33) {
                         case 1 :
-                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1066:7: lv_operator_4_1= '='
+                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1046:7: lv_operator_4_1= '='
                             {
 
                             							markLeaf(elementTypeProvider.getAction_OperatorEqualsSignKeyword_2_2_0_0ElementType());
                             						
-                            lv_operator_4_1=(Token)match(input,34,FollowSets000.FOLLOW_34_in_ruleAction3216); 
+                            lv_operator_4_1=(Token)match(input,34,FollowSets000.FOLLOW_34_in_ruleAction3160); 
 
                             							doneLeaf(lv_operator_4_1);
                             						
@@ -3285,12 +3169,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                             }
                             break;
                         case 2 :
-                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1074:7: lv_operator_4_2= '+='
+                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1054:7: lv_operator_4_2= '+='
                             {
 
                             							markLeaf(elementTypeProvider.getAction_OperatorPlusSignEqualsSignKeyword_2_2_0_1ElementType());
                             						
-                            lv_operator_4_2=(Token)match(input,35,FollowSets000.FOLLOW_35_in_ruleAction3254); 
+                            lv_operator_4_2=(Token)match(input,35,FollowSets000.FOLLOW_35_in_ruleAction3198); 
 
                             							doneLeaf(lv_operator_4_2);
                             						
@@ -3309,7 +3193,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                     				markLeaf(elementTypeProvider.getAction_CurrentKeyword_2_3ElementType());
                     			
-                    otherlv_5=(Token)match(input,36,FollowSets000.FOLLOW_36_in_ruleAction3292); 
+                    otherlv_5=(Token)match(input,36,FollowSets000.FOLLOW_36_in_ruleAction3236); 
 
                     				doneLeaf(otherlv_5);
                     			
@@ -3322,7 +3206,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			markLeaf(elementTypeProvider.getAction_RightCurlyBracketKeyword_3ElementType());
             		
-            otherlv_6=(Token)match(input,37,FollowSets000.FOLLOW_37_in_ruleAction3312); 
+            otherlv_6=(Token)match(input,37,FollowSets000.FOLLOW_37_in_ruleAction3256); 
 
             			doneLeaf(otherlv_6);
             		
@@ -3345,19 +3229,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleAbstractTerminal"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1103:1: entryRuleAbstractTerminal : ruleAbstractTerminal EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1083:1: entryRuleAbstractTerminal : ruleAbstractTerminal EOF ;
     public final void entryRuleAbstractTerminal() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1103:26: ( ruleAbstractTerminal EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1104:2: ruleAbstractTerminal EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1083:26: ( ruleAbstractTerminal EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1084:2: ruleAbstractTerminal EOF
             {
              markComposite(elementTypeProvider.getAbstractTerminalElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAbstractTerminal_in_entryRuleAbstractTerminal3332);
+            pushFollow(FollowSets000.FOLLOW_ruleAbstractTerminal_in_entryRuleAbstractTerminal3276);
             ruleAbstractTerminal();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAbstractTerminal3335); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAbstractTerminal3279); 
 
             }
 
@@ -3374,13 +3258,13 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleAbstractTerminal"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1109:1: ruleAbstractTerminal : ( ruleKeyword | ruleRuleCall | ruleParenthesizedElement | rulePredicatedKeyword | rulePredicatedRuleCall | rulePredicatedGroup ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1089:1: ruleAbstractTerminal : ( ruleKeyword | ruleRuleCall | ruleParenthesizedElement | rulePredicatedKeyword | rulePredicatedRuleCall | rulePredicatedGroup ) ;
     public final void ruleAbstractTerminal() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1109:21: ( ( ruleKeyword | ruleRuleCall | ruleParenthesizedElement | rulePredicatedKeyword | rulePredicatedRuleCall | rulePredicatedGroup ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1110:2: ( ruleKeyword | ruleRuleCall | ruleParenthesizedElement | rulePredicatedKeyword | rulePredicatedRuleCall | rulePredicatedGroup )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1089:21: ( ( ruleKeyword | ruleRuleCall | ruleParenthesizedElement | rulePredicatedKeyword | rulePredicatedRuleCall | rulePredicatedGroup ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1090:2: ( ruleKeyword | ruleRuleCall | ruleParenthesizedElement | rulePredicatedKeyword | rulePredicatedRuleCall | rulePredicatedGroup )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1110:2: ( ruleKeyword | ruleRuleCall | ruleParenthesizedElement | rulePredicatedKeyword | rulePredicatedRuleCall | rulePredicatedGroup )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1090:2: ( ruleKeyword | ruleRuleCall | ruleParenthesizedElement | rulePredicatedKeyword | rulePredicatedRuleCall | rulePredicatedGroup )
             int alt35=6;
             switch ( input.LA(1) ) {
             case RULE_STRING:
@@ -3401,14 +3285,14 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             case 40:
                 {
                 switch ( input.LA(2) ) {
-                case RULE_STRING:
-                    {
-                    alt35=4;
-                    }
-                    break;
                 case RULE_ID:
                     {
                     alt35=5;
+                    }
+                    break;
+                case RULE_STRING:
+                    {
+                    alt35=4;
                     }
                     break;
                 case 15:
@@ -3433,14 +3317,14 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     alt35=6;
                     }
                     break;
-                case RULE_STRING:
-                    {
-                    alt35=4;
-                    }
-                    break;
                 case RULE_ID:
                     {
                     alt35=5;
+                    }
+                    break;
+                case RULE_STRING:
+                    {
+                    alt35=4;
                     }
                     break;
                 default:
@@ -3461,12 +3345,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             switch (alt35) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1111:3: ruleKeyword
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1091:3: ruleKeyword
                     {
 
                     			markComposite(elementTypeProvider.getAbstractTerminal_KeywordParserRuleCall_0ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_ruleAbstractTerminal3352);
+                    pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_ruleAbstractTerminal3296);
                     ruleKeyword();
 
                     state._fsp--;
@@ -3478,12 +3362,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1119:3: ruleRuleCall
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1099:3: ruleRuleCall
                     {
 
                     			markComposite(elementTypeProvider.getAbstractTerminal_RuleCallParserRuleCall_1ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleRuleCall_in_ruleAbstractTerminal3372);
+                    pushFollow(FollowSets000.FOLLOW_ruleRuleCall_in_ruleAbstractTerminal3316);
                     ruleRuleCall();
 
                     state._fsp--;
@@ -3495,12 +3379,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 3 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1127:3: ruleParenthesizedElement
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1107:3: ruleParenthesizedElement
                     {
 
                     			markComposite(elementTypeProvider.getAbstractTerminal_ParenthesizedElementParserRuleCall_2ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleParenthesizedElement_in_ruleAbstractTerminal3392);
+                    pushFollow(FollowSets000.FOLLOW_ruleParenthesizedElement_in_ruleAbstractTerminal3336);
                     ruleParenthesizedElement();
 
                     state._fsp--;
@@ -3512,12 +3396,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 4 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1135:3: rulePredicatedKeyword
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1115:3: rulePredicatedKeyword
                     {
 
                     			markComposite(elementTypeProvider.getAbstractTerminal_PredicatedKeywordParserRuleCall_3ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_rulePredicatedKeyword_in_ruleAbstractTerminal3412);
+                    pushFollow(FollowSets000.FOLLOW_rulePredicatedKeyword_in_ruleAbstractTerminal3356);
                     rulePredicatedKeyword();
 
                     state._fsp--;
@@ -3529,12 +3413,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 5 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1143:3: rulePredicatedRuleCall
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1123:3: rulePredicatedRuleCall
                     {
 
                     			markComposite(elementTypeProvider.getAbstractTerminal_PredicatedRuleCallParserRuleCall_4ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_rulePredicatedRuleCall_in_ruleAbstractTerminal3432);
+                    pushFollow(FollowSets000.FOLLOW_rulePredicatedRuleCall_in_ruleAbstractTerminal3376);
                     rulePredicatedRuleCall();
 
                     state._fsp--;
@@ -3546,12 +3430,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 6 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1151:3: rulePredicatedGroup
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1131:3: rulePredicatedGroup
                     {
 
                     			markComposite(elementTypeProvider.getAbstractTerminal_PredicatedGroupParserRuleCall_5ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_rulePredicatedGroup_in_ruleAbstractTerminal3452);
+                    pushFollow(FollowSets000.FOLLOW_rulePredicatedGroup_in_ruleAbstractTerminal3396);
                     rulePredicatedGroup();
 
                     state._fsp--;
@@ -3581,19 +3465,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleKeyword"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1162:1: entryRuleKeyword : ruleKeyword EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1142:1: entryRuleKeyword : ruleKeyword EOF ;
     public final void entryRuleKeyword() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1162:17: ( ruleKeyword EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1163:2: ruleKeyword EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1142:17: ( ruleKeyword EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1143:2: ruleKeyword EOF
             {
              markComposite(elementTypeProvider.getKeywordElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_entryRuleKeyword3472);
+            pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_entryRuleKeyword3416);
             ruleKeyword();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleKeyword3475); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleKeyword3419); 
 
             }
 
@@ -3610,24 +3494,24 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleKeyword"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1168:1: ruleKeyword : ( (lv_value_0_0= RULE_STRING ) ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1148:1: ruleKeyword : ( (lv_value_0_0= RULE_STRING ) ) ;
     public final void ruleKeyword() throws RecognitionException {
         Token lv_value_0_0=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1168:12: ( ( (lv_value_0_0= RULE_STRING ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1169:2: ( (lv_value_0_0= RULE_STRING ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1148:12: ( ( (lv_value_0_0= RULE_STRING ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1149:2: ( (lv_value_0_0= RULE_STRING ) )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1169:2: ( (lv_value_0_0= RULE_STRING ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1170:3: (lv_value_0_0= RULE_STRING )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1149:2: ( (lv_value_0_0= RULE_STRING ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1150:3: (lv_value_0_0= RULE_STRING )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1170:3: (lv_value_0_0= RULE_STRING )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1171:4: lv_value_0_0= RULE_STRING
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1150:3: (lv_value_0_0= RULE_STRING )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1151:4: lv_value_0_0= RULE_STRING
             {
 
             				markLeaf(elementTypeProvider.getKeyword_ValueSTRINGTerminalRuleCall_0ElementType());
             			
-            lv_value_0_0=(Token)match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_ruleKeyword3500); 
+            lv_value_0_0=(Token)match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_ruleKeyword3444); 
 
             				doneLeaf(lv_value_0_0);
             			
@@ -3653,19 +3537,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleRuleCall"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1183:1: entryRuleRuleCall : ruleRuleCall EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1163:1: entryRuleRuleCall : ruleRuleCall EOF ;
     public final void entryRuleRuleCall() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1183:18: ( ruleRuleCall EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1184:2: ruleRuleCall EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1163:18: ( ruleRuleCall EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1164:2: ruleRuleCall EOF
             {
              markComposite(elementTypeProvider.getRuleCallElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleRuleCall_in_entryRuleRuleCall3525);
+            pushFollow(FollowSets000.FOLLOW_ruleRuleCall_in_entryRuleRuleCall3469);
             ruleRuleCall();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleRuleCall3528); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleRuleCall3472); 
 
             }
 
@@ -3682,21 +3566,21 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleRuleCall"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1189:1: ruleRuleCall : ( () ( ( ruleRuleID ) ) (otherlv_2= '[' ( (lv_arguments_3_0= ruleNamedArgument ) ) (otherlv_4= ',' ( (lv_arguments_5_0= ruleNamedArgument ) ) )* otherlv_6= ']' )? ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1169:1: ruleRuleCall : ( () ( ( ruleRuleID ) ) (otherlv_2= '[' ( (lv_arguments_3_0= ruleNamedArgument ) ) (otherlv_4= ',' ( (lv_arguments_5_0= ruleNamedArgument ) ) )* otherlv_6= ']' )? ) ;
     public final void ruleRuleCall() throws RecognitionException {
         Token otherlv_2=null;
         Token otherlv_4=null;
         Token otherlv_6=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1189:13: ( ( () ( ( ruleRuleID ) ) (otherlv_2= '[' ( (lv_arguments_3_0= ruleNamedArgument ) ) (otherlv_4= ',' ( (lv_arguments_5_0= ruleNamedArgument ) ) )* otherlv_6= ']' )? ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1190:2: ( () ( ( ruleRuleID ) ) (otherlv_2= '[' ( (lv_arguments_3_0= ruleNamedArgument ) ) (otherlv_4= ',' ( (lv_arguments_5_0= ruleNamedArgument ) ) )* otherlv_6= ']' )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1169:13: ( ( () ( ( ruleRuleID ) ) (otherlv_2= '[' ( (lv_arguments_3_0= ruleNamedArgument ) ) (otherlv_4= ',' ( (lv_arguments_5_0= ruleNamedArgument ) ) )* otherlv_6= ']' )? ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1170:2: ( () ( ( ruleRuleID ) ) (otherlv_2= '[' ( (lv_arguments_3_0= ruleNamedArgument ) ) (otherlv_4= ',' ( (lv_arguments_5_0= ruleNamedArgument ) ) )* otherlv_6= ']' )? )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1190:2: ( () ( ( ruleRuleID ) ) (otherlv_2= '[' ( (lv_arguments_3_0= ruleNamedArgument ) ) (otherlv_4= ',' ( (lv_arguments_5_0= ruleNamedArgument ) ) )* otherlv_6= ']' )? )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1191:3: () ( ( ruleRuleID ) ) (otherlv_2= '[' ( (lv_arguments_3_0= ruleNamedArgument ) ) (otherlv_4= ',' ( (lv_arguments_5_0= ruleNamedArgument ) ) )* otherlv_6= ']' )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1170:2: ( () ( ( ruleRuleID ) ) (otherlv_2= '[' ( (lv_arguments_3_0= ruleNamedArgument ) ) (otherlv_4= ',' ( (lv_arguments_5_0= ruleNamedArgument ) ) )* otherlv_6= ']' )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1171:3: () ( ( ruleRuleID ) ) (otherlv_2= '[' ( (lv_arguments_3_0= ruleNamedArgument ) ) (otherlv_4= ',' ( (lv_arguments_5_0= ruleNamedArgument ) ) )* otherlv_6= ']' )?
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1191:3: ()
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1192:4: 
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1171:3: ()
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1172:4: 
             {
 
             				precedeComposite(elementTypeProvider.getRuleCall_RuleCallAction_0ElementType());
@@ -3705,16 +3589,16 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             }
 
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1197:3: ( ( ruleRuleID ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1198:4: ( ruleRuleID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1177:3: ( ( ruleRuleID ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1178:4: ( ruleRuleID )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1198:4: ( ruleRuleID )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1199:5: ruleRuleID
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1178:4: ( ruleRuleID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1179:5: ruleRuleID
             {
 
             					markComposite(elementTypeProvider.getRuleCall_RuleAbstractRuleCrossReference_1_0ElementType());
             				
-            pushFollow(FollowSets000.FOLLOW_ruleRuleID_in_ruleRuleCall3571);
+            pushFollow(FollowSets000.FOLLOW_ruleRuleID_in_ruleRuleCall3515);
             ruleRuleID();
 
             state._fsp--;
@@ -3728,7 +3612,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             }
 
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1208:3: (otherlv_2= '[' ( (lv_arguments_3_0= ruleNamedArgument ) ) (otherlv_4= ',' ( (lv_arguments_5_0= ruleNamedArgument ) ) )* otherlv_6= ']' )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1188:3: (otherlv_2= '[' ( (lv_arguments_3_0= ruleNamedArgument ) ) (otherlv_4= ',' ( (lv_arguments_5_0= ruleNamedArgument ) ) )* otherlv_6= ']' )?
             int alt37=2;
             int LA37_0 = input.LA(1);
 
@@ -3737,25 +3621,25 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt37) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1209:4: otherlv_2= '[' ( (lv_arguments_3_0= ruleNamedArgument ) ) (otherlv_4= ',' ( (lv_arguments_5_0= ruleNamedArgument ) ) )* otherlv_6= ']'
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1189:4: otherlv_2= '[' ( (lv_arguments_3_0= ruleNamedArgument ) ) (otherlv_4= ',' ( (lv_arguments_5_0= ruleNamedArgument ) ) )* otherlv_6= ']'
                     {
 
                     				markLeaf(elementTypeProvider.getRuleCall_LeftSquareBracketKeyword_2_0ElementType());
                     			
-                    otherlv_2=(Token)match(input,25,FollowSets000.FOLLOW_25_in_ruleRuleCall3602); 
+                    otherlv_2=(Token)match(input,25,FollowSets000.FOLLOW_25_in_ruleRuleCall3546); 
 
                     				doneLeaf(otherlv_2);
                     			
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1216:4: ( (lv_arguments_3_0= ruleNamedArgument ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1217:5: (lv_arguments_3_0= ruleNamedArgument )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1196:4: ( (lv_arguments_3_0= ruleNamedArgument ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1197:5: (lv_arguments_3_0= ruleNamedArgument )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1217:5: (lv_arguments_3_0= ruleNamedArgument )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1218:6: lv_arguments_3_0= ruleNamedArgument
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1197:5: (lv_arguments_3_0= ruleNamedArgument )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1198:6: lv_arguments_3_0= ruleNamedArgument
                     {
 
                     						markComposite(elementTypeProvider.getRuleCall_ArgumentsNamedArgumentParserRuleCall_2_1_0ElementType());
                     					
-                    pushFollow(FollowSets000.FOLLOW_ruleNamedArgument_in_ruleRuleCall3634);
+                    pushFollow(FollowSets000.FOLLOW_ruleNamedArgument_in_ruleRuleCall3578);
                     ruleNamedArgument();
 
                     state._fsp--;
@@ -3769,7 +3653,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                     }
 
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1227:4: (otherlv_4= ',' ( (lv_arguments_5_0= ruleNamedArgument ) ) )*
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1207:4: (otherlv_4= ',' ( (lv_arguments_5_0= ruleNamedArgument ) ) )*
                     loop36:
                     do {
                         int alt36=2;
@@ -3782,25 +3666,25 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                         switch (alt36) {
                     	case 1 :
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1228:5: otherlv_4= ',' ( (lv_arguments_5_0= ruleNamedArgument ) )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1208:5: otherlv_4= ',' ( (lv_arguments_5_0= ruleNamedArgument ) )
                     	    {
 
                     	    					markLeaf(elementTypeProvider.getRuleCall_CommaKeyword_2_2_0ElementType());
                     	    				
-                    	    otherlv_4=(Token)match(input,13,FollowSets000.FOLLOW_13_in_ruleRuleCall3671); 
+                    	    otherlv_4=(Token)match(input,13,FollowSets000.FOLLOW_13_in_ruleRuleCall3615); 
 
                     	    					doneLeaf(otherlv_4);
                     	    				
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1235:5: ( (lv_arguments_5_0= ruleNamedArgument ) )
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1236:6: (lv_arguments_5_0= ruleNamedArgument )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1215:5: ( (lv_arguments_5_0= ruleNamedArgument ) )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1216:6: (lv_arguments_5_0= ruleNamedArgument )
                     	    {
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1236:6: (lv_arguments_5_0= ruleNamedArgument )
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1237:7: lv_arguments_5_0= ruleNamedArgument
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1216:6: (lv_arguments_5_0= ruleNamedArgument )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1217:7: lv_arguments_5_0= ruleNamedArgument
                     	    {
 
                     	    							markComposite(elementTypeProvider.getRuleCall_ArgumentsNamedArgumentParserRuleCall_2_2_1_0ElementType());
                     	    						
-                    	    pushFollow(FollowSets000.FOLLOW_ruleNamedArgument_in_ruleRuleCall3708);
+                    	    pushFollow(FollowSets000.FOLLOW_ruleNamedArgument_in_ruleRuleCall3652);
                     	    ruleNamedArgument();
 
                     	    state._fsp--;
@@ -3826,7 +3710,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                     				markLeaf(elementTypeProvider.getRuleCall_RightSquareBracketKeyword_2_3ElementType());
                     			
-                    otherlv_6=(Token)match(input,26,FollowSets000.FOLLOW_26_in_ruleRuleCall3747); 
+                    otherlv_6=(Token)match(input,26,FollowSets000.FOLLOW_26_in_ruleRuleCall3691); 
 
                     				doneLeaf(otherlv_6);
                     			
@@ -3855,19 +3739,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleLiteralValue"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1259:1: entryRuleLiteralValue : ruleLiteralValue EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1239:1: entryRuleLiteralValue : ruleLiteralValue EOF ;
     public final void entryRuleLiteralValue() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1259:22: ( ruleLiteralValue EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1260:2: ruleLiteralValue EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1239:22: ( ruleLiteralValue EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1240:2: ruleLiteralValue EOF
             {
              markComposite(elementTypeProvider.getLiteralValueElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleLiteralValue_in_entryRuleLiteralValue3773);
+            pushFollow(FollowSets000.FOLLOW_ruleLiteralValue_in_entryRuleLiteralValue3717);
             ruleLiteralValue();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleLiteralValue3776); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleLiteralValue3720); 
 
             }
 
@@ -3884,15 +3768,15 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleLiteralValue"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1265:1: ruleLiteralValue : (kw= '!' | kw= '+' ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1245:1: ruleLiteralValue : (kw= '!' | kw= '+' ) ;
     public final void ruleLiteralValue() throws RecognitionException {
         Token kw=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1265:17: ( (kw= '!' | kw= '+' ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1266:2: (kw= '!' | kw= '+' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1245:17: ( (kw= '!' | kw= '+' ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1246:2: (kw= '!' | kw= '+' )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1266:2: (kw= '!' | kw= '+' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1246:2: (kw= '!' | kw= '+' )
             int alt38=2;
             int LA38_0 = input.LA(1);
 
@@ -3910,12 +3794,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt38) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1267:3: kw= '!'
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1247:3: kw= '!'
                     {
 
                     			markLeaf(elementTypeProvider.getLiteralValue_ExclamationMarkKeyword_0ElementType());
                     		
-                    kw=(Token)match(input,38,FollowSets000.FOLLOW_38_in_ruleLiteralValue3795); 
+                    kw=(Token)match(input,38,FollowSets000.FOLLOW_38_in_ruleLiteralValue3739); 
 
                     			doneLeaf(kw);
                     		
@@ -3923,12 +3807,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1275:3: kw= '+'
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1255:3: kw= '+'
                     {
 
                     			markLeaf(elementTypeProvider.getLiteralValue_PlusSignKeyword_1ElementType());
                     		
-                    kw=(Token)match(input,32,FollowSets000.FOLLOW_32_in_ruleLiteralValue3817); 
+                    kw=(Token)match(input,32,FollowSets000.FOLLOW_32_in_ruleLiteralValue3761); 
 
                     			doneLeaf(kw);
                     		
@@ -3954,19 +3838,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleInverseLiteralValue"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1286:1: entryRuleInverseLiteralValue : ruleInverseLiteralValue EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1266:1: entryRuleInverseLiteralValue : ruleInverseLiteralValue EOF ;
     public final void entryRuleInverseLiteralValue() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1286:29: ( ruleInverseLiteralValue EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1287:2: ruleInverseLiteralValue EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1266:29: ( ruleInverseLiteralValue EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1267:2: ruleInverseLiteralValue EOF
             {
              markComposite(elementTypeProvider.getInverseLiteralValueElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleInverseLiteralValue_in_entryRuleInverseLiteralValue3837);
+            pushFollow(FollowSets000.FOLLOW_ruleInverseLiteralValue_in_entryRuleInverseLiteralValue3781);
             ruleInverseLiteralValue();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleInverseLiteralValue3840); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleInverseLiteralValue3784); 
 
             }
 
@@ -3983,16 +3867,16 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleInverseLiteralValue"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1292:1: ruleInverseLiteralValue : ruleLiteralValue ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1272:1: ruleInverseLiteralValue : ruleLiteralValue ;
     public final void ruleInverseLiteralValue() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1292:24: ( ruleLiteralValue )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1293:2: ruleLiteralValue
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1272:24: ( ruleLiteralValue )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1273:2: ruleLiteralValue
             {
 
             		markComposite(elementTypeProvider.getInverseLiteralValue_LiteralValueParserRuleCallElementType());
             	
-            pushFollow(FollowSets000.FOLLOW_ruleLiteralValue_in_ruleInverseLiteralValue3852);
+            pushFollow(FollowSets000.FOLLOW_ruleLiteralValue_in_ruleInverseLiteralValue3796);
             ruleLiteralValue();
 
             state._fsp--;
@@ -4016,19 +3900,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleNamedArgument"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1303:1: entryRuleNamedArgument : ruleNamedArgument EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1283:1: entryRuleNamedArgument : ruleNamedArgument EOF ;
     public final void entryRuleNamedArgument() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1303:23: ( ruleNamedArgument EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1304:2: ruleNamedArgument EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1283:23: ( ruleNamedArgument EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1284:2: ruleNamedArgument EOF
             {
              markComposite(elementTypeProvider.getNamedArgumentElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleNamedArgument_in_entryRuleNamedArgument3868);
+            pushFollow(FollowSets000.FOLLOW_ruleNamedArgument_in_entryRuleNamedArgument3812);
             ruleNamedArgument();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleNamedArgument3871); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleNamedArgument3815); 
 
             }
 
@@ -4045,7 +3929,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleNamedArgument"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1309:1: ruleNamedArgument : ( () ( ( ( (lv_literalValue_1_0= ruleLiteralValue ) )? ( (otherlv_2= RULE_ID ) ) ) | ( ( (otherlv_3= RULE_ID ) ) otherlv_4= '=' ( (otherlv_5= RULE_ID ) ) ) ) ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1289:1: ruleNamedArgument : ( () ( ( ( (lv_literalValue_1_0= ruleLiteralValue ) )? ( (otherlv_2= RULE_ID ) ) ) | ( ( (otherlv_3= RULE_ID ) ) otherlv_4= '=' ( (otherlv_5= RULE_ID ) ) ) ) ) ;
     public final void ruleNamedArgument() throws RecognitionException {
         Token otherlv_2=null;
         Token otherlv_3=null;
@@ -4053,14 +3937,14 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
         Token otherlv_5=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1309:18: ( ( () ( ( ( (lv_literalValue_1_0= ruleLiteralValue ) )? ( (otherlv_2= RULE_ID ) ) ) | ( ( (otherlv_3= RULE_ID ) ) otherlv_4= '=' ( (otherlv_5= RULE_ID ) ) ) ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1310:2: ( () ( ( ( (lv_literalValue_1_0= ruleLiteralValue ) )? ( (otherlv_2= RULE_ID ) ) ) | ( ( (otherlv_3= RULE_ID ) ) otherlv_4= '=' ( (otherlv_5= RULE_ID ) ) ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1289:18: ( ( () ( ( ( (lv_literalValue_1_0= ruleLiteralValue ) )? ( (otherlv_2= RULE_ID ) ) ) | ( ( (otherlv_3= RULE_ID ) ) otherlv_4= '=' ( (otherlv_5= RULE_ID ) ) ) ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1290:2: ( () ( ( ( (lv_literalValue_1_0= ruleLiteralValue ) )? ( (otherlv_2= RULE_ID ) ) ) | ( ( (otherlv_3= RULE_ID ) ) otherlv_4= '=' ( (otherlv_5= RULE_ID ) ) ) ) )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1310:2: ( () ( ( ( (lv_literalValue_1_0= ruleLiteralValue ) )? ( (otherlv_2= RULE_ID ) ) ) | ( ( (otherlv_3= RULE_ID ) ) otherlv_4= '=' ( (otherlv_5= RULE_ID ) ) ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1311:3: () ( ( ( (lv_literalValue_1_0= ruleLiteralValue ) )? ( (otherlv_2= RULE_ID ) ) ) | ( ( (otherlv_3= RULE_ID ) ) otherlv_4= '=' ( (otherlv_5= RULE_ID ) ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1290:2: ( () ( ( ( (lv_literalValue_1_0= ruleLiteralValue ) )? ( (otherlv_2= RULE_ID ) ) ) | ( ( (otherlv_3= RULE_ID ) ) otherlv_4= '=' ( (otherlv_5= RULE_ID ) ) ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1291:3: () ( ( ( (lv_literalValue_1_0= ruleLiteralValue ) )? ( (otherlv_2= RULE_ID ) ) ) | ( ( (otherlv_3= RULE_ID ) ) otherlv_4= '=' ( (otherlv_5= RULE_ID ) ) ) )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1311:3: ()
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1312:4: 
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1291:3: ()
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1292:4: 
             {
 
             				precedeComposite(elementTypeProvider.getNamedArgument_NamedArgumentAction_0ElementType());
@@ -4069,7 +3953,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             }
 
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1317:3: ( ( ( (lv_literalValue_1_0= ruleLiteralValue ) )? ( (otherlv_2= RULE_ID ) ) ) | ( ( (otherlv_3= RULE_ID ) ) otherlv_4= '=' ( (otherlv_5= RULE_ID ) ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1297:3: ( ( ( (lv_literalValue_1_0= ruleLiteralValue ) )? ( (otherlv_2= RULE_ID ) ) ) | ( ( (otherlv_3= RULE_ID ) ) otherlv_4= '=' ( (otherlv_5= RULE_ID ) ) ) )
             int alt40=2;
             int LA40_0 = input.LA(1);
 
@@ -4100,12 +3984,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt40) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1318:4: ( ( (lv_literalValue_1_0= ruleLiteralValue ) )? ( (otherlv_2= RULE_ID ) ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1298:4: ( ( (lv_literalValue_1_0= ruleLiteralValue ) )? ( (otherlv_2= RULE_ID ) ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1318:4: ( ( (lv_literalValue_1_0= ruleLiteralValue ) )? ( (otherlv_2= RULE_ID ) ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1319:5: ( (lv_literalValue_1_0= ruleLiteralValue ) )? ( (otherlv_2= RULE_ID ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1298:4: ( ( (lv_literalValue_1_0= ruleLiteralValue ) )? ( (otherlv_2= RULE_ID ) ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1299:5: ( (lv_literalValue_1_0= ruleLiteralValue ) )? ( (otherlv_2= RULE_ID ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1319:5: ( (lv_literalValue_1_0= ruleLiteralValue ) )?
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1299:5: ( (lv_literalValue_1_0= ruleLiteralValue ) )?
                     int alt39=2;
                     int LA39_0 = input.LA(1);
 
@@ -4114,15 +3998,15 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     switch (alt39) {
                         case 1 :
-                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1320:6: (lv_literalValue_1_0= ruleLiteralValue )
+                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1300:6: (lv_literalValue_1_0= ruleLiteralValue )
                             {
-                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1320:6: (lv_literalValue_1_0= ruleLiteralValue )
-                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1321:7: lv_literalValue_1_0= ruleLiteralValue
+                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1300:6: (lv_literalValue_1_0= ruleLiteralValue )
+                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1301:7: lv_literalValue_1_0= ruleLiteralValue
                             {
 
                             							markComposite(elementTypeProvider.getNamedArgument_LiteralValueLiteralValueParserRuleCall_1_0_0_0ElementType());
                             						
-                            pushFollow(FollowSets000.FOLLOW_ruleLiteralValue_in_ruleNamedArgument3933);
+                            pushFollow(FollowSets000.FOLLOW_ruleLiteralValue_in_ruleNamedArgument3877);
                             ruleLiteralValue();
 
                             state._fsp--;
@@ -4139,16 +4023,16 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                     }
 
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1330:5: ( (otherlv_2= RULE_ID ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1331:6: (otherlv_2= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1310:5: ( (otherlv_2= RULE_ID ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1311:6: (otherlv_2= RULE_ID )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1331:6: (otherlv_2= RULE_ID )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1332:7: otherlv_2= RULE_ID
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1311:6: (otherlv_2= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1312:7: otherlv_2= RULE_ID
                     {
 
                     							markLeaf(elementTypeProvider.getNamedArgument_ParameterParameterCrossReference_1_0_1_0ElementType());
                     						
-                    otherlv_2=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleNamedArgument3986); 
+                    otherlv_2=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleNamedArgument3930); 
 
                     							doneLeaf(otherlv_2);
                     						
@@ -4165,21 +4049,21 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1343:4: ( ( (otherlv_3= RULE_ID ) ) otherlv_4= '=' ( (otherlv_5= RULE_ID ) ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1323:4: ( ( (otherlv_3= RULE_ID ) ) otherlv_4= '=' ( (otherlv_5= RULE_ID ) ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1343:4: ( ( (otherlv_3= RULE_ID ) ) otherlv_4= '=' ( (otherlv_5= RULE_ID ) ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1344:5: ( (otherlv_3= RULE_ID ) ) otherlv_4= '=' ( (otherlv_5= RULE_ID ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1323:4: ( ( (otherlv_3= RULE_ID ) ) otherlv_4= '=' ( (otherlv_5= RULE_ID ) ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1324:5: ( (otherlv_3= RULE_ID ) ) otherlv_4= '=' ( (otherlv_5= RULE_ID ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1344:5: ( (otherlv_3= RULE_ID ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1345:6: (otherlv_3= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1324:5: ( (otherlv_3= RULE_ID ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1325:6: (otherlv_3= RULE_ID )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1345:6: (otherlv_3= RULE_ID )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1346:7: otherlv_3= RULE_ID
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1325:6: (otherlv_3= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1326:7: otherlv_3= RULE_ID
                     {
 
                     							markLeaf(elementTypeProvider.getNamedArgument_ParameterParameterCrossReference_1_1_0_0ElementType());
                     						
-                    otherlv_3=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleNamedArgument4057); 
+                    otherlv_3=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleNamedArgument4001); 
 
                     							doneLeaf(otherlv_3);
                     						
@@ -4192,20 +4076,20 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                     					markLeaf(elementTypeProvider.getNamedArgument_EqualsSignKeyword_1_1_1ElementType());
                     				
-                    otherlv_4=(Token)match(input,34,FollowSets000.FOLLOW_34_in_ruleNamedArgument4092); 
+                    otherlv_4=(Token)match(input,34,FollowSets000.FOLLOW_34_in_ruleNamedArgument4036); 
 
                     					doneLeaf(otherlv_4);
                     				
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1362:5: ( (otherlv_5= RULE_ID ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1363:6: (otherlv_5= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1342:5: ( (otherlv_5= RULE_ID ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1343:6: (otherlv_5= RULE_ID )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1363:6: (otherlv_5= RULE_ID )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1364:7: otherlv_5= RULE_ID
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1343:6: (otherlv_5= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1344:7: otherlv_5= RULE_ID
                     {
 
                     							markLeaf(elementTypeProvider.getNamedArgument_ValueParameterCrossReference_1_1_2_0ElementType());
                     						
-                    otherlv_5=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleNamedArgument4129); 
+                    otherlv_5=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleNamedArgument4073); 
 
                     							doneLeaf(otherlv_5);
                     						
@@ -4243,19 +4127,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleTerminalRuleCall"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1379:1: entryRuleTerminalRuleCall : ruleTerminalRuleCall EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1359:1: entryRuleTerminalRuleCall : ruleTerminalRuleCall EOF ;
     public final void entryRuleTerminalRuleCall() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1379:26: ( ruleTerminalRuleCall EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1380:2: ruleTerminalRuleCall EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1359:26: ( ruleTerminalRuleCall EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1360:2: ruleTerminalRuleCall EOF
             {
              markComposite(elementTypeProvider.getTerminalRuleCallElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalRuleCall_in_entryRuleTerminalRuleCall4175);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalRuleCall_in_entryRuleTerminalRuleCall4119);
             ruleTerminalRuleCall();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTerminalRuleCall4178); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTerminalRuleCall4122); 
 
             }
 
@@ -4272,22 +4156,22 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleTerminalRuleCall"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1385:1: ruleTerminalRuleCall : ( ( ruleRuleID ) ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1365:1: ruleTerminalRuleCall : ( ( ruleRuleID ) ) ;
     public final void ruleTerminalRuleCall() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1385:21: ( ( ( ruleRuleID ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1386:2: ( ( ruleRuleID ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1365:21: ( ( ( ruleRuleID ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1366:2: ( ( ruleRuleID ) )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1386:2: ( ( ruleRuleID ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1387:3: ( ruleRuleID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1366:2: ( ( ruleRuleID ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1367:3: ( ruleRuleID )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1387:3: ( ruleRuleID )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1388:4: ruleRuleID
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1367:3: ( ruleRuleID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1368:4: ruleRuleID
             {
 
             				markComposite(elementTypeProvider.getTerminalRuleCall_RuleAbstractRuleCrossReference_0ElementType());
             			
-            pushFollow(FollowSets000.FOLLOW_ruleRuleID_in_ruleTerminalRuleCall4201);
+            pushFollow(FollowSets000.FOLLOW_ruleRuleID_in_ruleTerminalRuleCall4145);
             ruleRuleID();
 
             state._fsp--;
@@ -4317,19 +4201,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleRuleID"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1400:1: entryRuleRuleID : ruleRuleID EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1380:1: entryRuleRuleID : ruleRuleID EOF ;
     public final void entryRuleRuleID() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1400:16: ( ruleRuleID EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1401:2: ruleRuleID EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1380:16: ( ruleRuleID EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1381:2: ruleRuleID EOF
             {
              markComposite(elementTypeProvider.getRuleIDElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleRuleID_in_entryRuleRuleID4226);
+            pushFollow(FollowSets000.FOLLOW_ruleRuleID_in_entryRuleRuleID4170);
             ruleRuleID();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleRuleID4229); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleRuleID4173); 
 
             }
 
@@ -4346,27 +4230,27 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleRuleID"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1406:1: ruleRuleID : (this_ID_0= RULE_ID (kw= '::' this_ID_2= RULE_ID )* ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1386:1: ruleRuleID : (this_ID_0= RULE_ID (kw= '::' this_ID_2= RULE_ID )* ) ;
     public final void ruleRuleID() throws RecognitionException {
         Token this_ID_0=null;
         Token kw=null;
         Token this_ID_2=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1406:11: ( (this_ID_0= RULE_ID (kw= '::' this_ID_2= RULE_ID )* ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1407:2: (this_ID_0= RULE_ID (kw= '::' this_ID_2= RULE_ID )* )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1386:11: ( (this_ID_0= RULE_ID (kw= '::' this_ID_2= RULE_ID )* ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1387:2: (this_ID_0= RULE_ID (kw= '::' this_ID_2= RULE_ID )* )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1407:2: (this_ID_0= RULE_ID (kw= '::' this_ID_2= RULE_ID )* )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1408:3: this_ID_0= RULE_ID (kw= '::' this_ID_2= RULE_ID )*
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1387:2: (this_ID_0= RULE_ID (kw= '::' this_ID_2= RULE_ID )* )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1388:3: this_ID_0= RULE_ID (kw= '::' this_ID_2= RULE_ID )*
             {
 
             			markLeaf(elementTypeProvider.getRuleID_IDTerminalRuleCall_0ElementType());
             		
-            this_ID_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleRuleID4248); 
+            this_ID_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleRuleID4192); 
 
             			doneLeaf(this_ID_0);
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1415:3: (kw= '::' this_ID_2= RULE_ID )*
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1395:3: (kw= '::' this_ID_2= RULE_ID )*
             loop41:
             do {
                 int alt41=2;
@@ -4379,19 +4263,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                 switch (alt41) {
             	case 1 :
-            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1416:4: kw= '::' this_ID_2= RULE_ID
+            	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1396:4: kw= '::' this_ID_2= RULE_ID
             	    {
 
             	    				markLeaf(elementTypeProvider.getRuleID_ColonColonKeyword_1_0ElementType());
             	    			
-            	    kw=(Token)match(input,28,FollowSets000.FOLLOW_28_in_ruleRuleID4268); 
+            	    kw=(Token)match(input,28,FollowSets000.FOLLOW_28_in_ruleRuleID4212); 
 
             	    				doneLeaf(kw);
             	    			
 
             	    				markLeaf(elementTypeProvider.getRuleID_IDTerminalRuleCall_1_1ElementType());
             	    			
-            	    this_ID_2=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleRuleID4285); 
+            	    this_ID_2=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleRuleID4229); 
 
             	    				doneLeaf(this_ID_2);
             	    			
@@ -4423,19 +4307,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRulePredicatedKeyword"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1435:1: entryRulePredicatedKeyword : rulePredicatedKeyword EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1415:1: entryRulePredicatedKeyword : rulePredicatedKeyword EOF ;
     public final void entryRulePredicatedKeyword() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1435:27: ( rulePredicatedKeyword EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1436:2: rulePredicatedKeyword EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1415:27: ( rulePredicatedKeyword EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1416:2: rulePredicatedKeyword EOF
             {
              markComposite(elementTypeProvider.getPredicatedKeywordElementType()); 
-            pushFollow(FollowSets000.FOLLOW_rulePredicatedKeyword_in_entryRulePredicatedKeyword4311);
+            pushFollow(FollowSets000.FOLLOW_rulePredicatedKeyword_in_entryRulePredicatedKeyword4255);
             rulePredicatedKeyword();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRulePredicatedKeyword4314); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRulePredicatedKeyword4258); 
 
             }
 
@@ -4452,21 +4336,21 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "rulePredicatedKeyword"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1441:1: rulePredicatedKeyword : ( rulePredicate ( (lv_value_1_0= RULE_STRING ) ) ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1421:1: rulePredicatedKeyword : ( rulePredicate ( (lv_value_1_0= RULE_STRING ) ) ) ;
     public final void rulePredicatedKeyword() throws RecognitionException {
         Token lv_value_1_0=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1441:22: ( ( rulePredicate ( (lv_value_1_0= RULE_STRING ) ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1442:2: ( rulePredicate ( (lv_value_1_0= RULE_STRING ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1421:22: ( ( rulePredicate ( (lv_value_1_0= RULE_STRING ) ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1422:2: ( rulePredicate ( (lv_value_1_0= RULE_STRING ) ) )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1442:2: ( rulePredicate ( (lv_value_1_0= RULE_STRING ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1443:3: rulePredicate ( (lv_value_1_0= RULE_STRING ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1422:2: ( rulePredicate ( (lv_value_1_0= RULE_STRING ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1423:3: rulePredicate ( (lv_value_1_0= RULE_STRING ) )
             {
 
             			markComposite(elementTypeProvider.getPredicatedKeyword_PredicateParserRuleCall_0ElementType());
             		
-            pushFollow(FollowSets000.FOLLOW_rulePredicate_in_rulePredicatedKeyword4331);
+            pushFollow(FollowSets000.FOLLOW_rulePredicate_in_rulePredicatedKeyword4275);
             rulePredicate();
 
             state._fsp--;
@@ -4474,16 +4358,16 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			doneComposite();
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1450:3: ( (lv_value_1_0= RULE_STRING ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1451:4: (lv_value_1_0= RULE_STRING )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1430:3: ( (lv_value_1_0= RULE_STRING ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1431:4: (lv_value_1_0= RULE_STRING )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1451:4: (lv_value_1_0= RULE_STRING )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1452:5: lv_value_1_0= RULE_STRING
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1431:4: (lv_value_1_0= RULE_STRING )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1432:5: lv_value_1_0= RULE_STRING
             {
 
             					markLeaf(elementTypeProvider.getPredicatedKeyword_ValueSTRINGTerminalRuleCall_1_0ElementType());
             				
-            lv_value_1_0=(Token)match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_rulePredicatedKeyword4358); 
+            lv_value_1_0=(Token)match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_rulePredicatedKeyword4302); 
 
             					doneLeaf(lv_value_1_0);
             				
@@ -4512,19 +4396,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRulePredicatedRuleCall"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1465:1: entryRulePredicatedRuleCall : rulePredicatedRuleCall EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1445:1: entryRulePredicatedRuleCall : rulePredicatedRuleCall EOF ;
     public final void entryRulePredicatedRuleCall() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1465:28: ( rulePredicatedRuleCall EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1466:2: rulePredicatedRuleCall EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1445:28: ( rulePredicatedRuleCall EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1446:2: rulePredicatedRuleCall EOF
             {
              markComposite(elementTypeProvider.getPredicatedRuleCallElementType()); 
-            pushFollow(FollowSets000.FOLLOW_rulePredicatedRuleCall_in_entryRulePredicatedRuleCall4389);
+            pushFollow(FollowSets000.FOLLOW_rulePredicatedRuleCall_in_entryRulePredicatedRuleCall4333);
             rulePredicatedRuleCall();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRulePredicatedRuleCall4392); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRulePredicatedRuleCall4336); 
 
             }
 
@@ -4541,21 +4425,21 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "rulePredicatedRuleCall"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1471:1: rulePredicatedRuleCall : ( rulePredicate ( (otherlv_1= RULE_ID ) ) ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1451:1: rulePredicatedRuleCall : ( rulePredicate ( (otherlv_1= RULE_ID ) ) ) ;
     public final void rulePredicatedRuleCall() throws RecognitionException {
         Token otherlv_1=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1471:23: ( ( rulePredicate ( (otherlv_1= RULE_ID ) ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1472:2: ( rulePredicate ( (otherlv_1= RULE_ID ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1451:23: ( ( rulePredicate ( (otherlv_1= RULE_ID ) ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1452:2: ( rulePredicate ( (otherlv_1= RULE_ID ) ) )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1472:2: ( rulePredicate ( (otherlv_1= RULE_ID ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1473:3: rulePredicate ( (otherlv_1= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1452:2: ( rulePredicate ( (otherlv_1= RULE_ID ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1453:3: rulePredicate ( (otherlv_1= RULE_ID ) )
             {
 
             			markComposite(elementTypeProvider.getPredicatedRuleCall_PredicateParserRuleCall_0ElementType());
             		
-            pushFollow(FollowSets000.FOLLOW_rulePredicate_in_rulePredicatedRuleCall4409);
+            pushFollow(FollowSets000.FOLLOW_rulePredicate_in_rulePredicatedRuleCall4353);
             rulePredicate();
 
             state._fsp--;
@@ -4563,16 +4447,16 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			doneComposite();
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1480:3: ( (otherlv_1= RULE_ID ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1481:4: (otherlv_1= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1460:3: ( (otherlv_1= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1461:4: (otherlv_1= RULE_ID )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1481:4: (otherlv_1= RULE_ID )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1482:5: otherlv_1= RULE_ID
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1461:4: (otherlv_1= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1462:5: otherlv_1= RULE_ID
             {
 
             					markLeaf(elementTypeProvider.getPredicatedRuleCall_RuleAbstractRuleCrossReference_1_0ElementType());
             				
-            otherlv_1=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rulePredicatedRuleCall4436); 
+            otherlv_1=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rulePredicatedRuleCall4380); 
 
             					doneLeaf(otherlv_1);
             				
@@ -4601,19 +4485,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleAssignment"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1495:1: entryRuleAssignment : ruleAssignment EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1475:1: entryRuleAssignment : ruleAssignment EOF ;
     public final void entryRuleAssignment() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1495:20: ( ruleAssignment EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1496:2: ruleAssignment EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1475:20: ( ruleAssignment EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1476:2: ruleAssignment EOF
             {
              markComposite(elementTypeProvider.getAssignmentElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAssignment_in_entryRuleAssignment4467);
+            pushFollow(FollowSets000.FOLLOW_ruleAssignment_in_entryRuleAssignment4411);
             ruleAssignment();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAssignment4470); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAssignment4414); 
 
             }
 
@@ -4630,7 +4514,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleAssignment"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1501:1: ruleAssignment : ( ( rulePredicate )? ( (lv_feature_1_0= RULE_ID ) ) ( ( (lv_operator_2_1= '+=' | lv_operator_2_2= '=' | lv_operator_2_3= '?=' ) ) ) ( (lv_terminal_3_0= ruleAssignableTerminal ) ) ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1481:1: ruleAssignment : ( ( rulePredicate )? ( (lv_feature_1_0= RULE_ID ) ) ( ( (lv_operator_2_1= '+=' | lv_operator_2_2= '=' | lv_operator_2_3= '?=' ) ) ) ( (lv_terminal_3_0= ruleAssignableTerminal ) ) ) ;
     public final void ruleAssignment() throws RecognitionException {
         Token lv_feature_1_0=null;
         Token lv_operator_2_1=null;
@@ -4638,13 +4522,13 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
         Token lv_operator_2_3=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1501:15: ( ( ( rulePredicate )? ( (lv_feature_1_0= RULE_ID ) ) ( ( (lv_operator_2_1= '+=' | lv_operator_2_2= '=' | lv_operator_2_3= '?=' ) ) ) ( (lv_terminal_3_0= ruleAssignableTerminal ) ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1502:2: ( ( rulePredicate )? ( (lv_feature_1_0= RULE_ID ) ) ( ( (lv_operator_2_1= '+=' | lv_operator_2_2= '=' | lv_operator_2_3= '?=' ) ) ) ( (lv_terminal_3_0= ruleAssignableTerminal ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1481:15: ( ( ( rulePredicate )? ( (lv_feature_1_0= RULE_ID ) ) ( ( (lv_operator_2_1= '+=' | lv_operator_2_2= '=' | lv_operator_2_3= '?=' ) ) ) ( (lv_terminal_3_0= ruleAssignableTerminal ) ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1482:2: ( ( rulePredicate )? ( (lv_feature_1_0= RULE_ID ) ) ( ( (lv_operator_2_1= '+=' | lv_operator_2_2= '=' | lv_operator_2_3= '?=' ) ) ) ( (lv_terminal_3_0= ruleAssignableTerminal ) ) )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1502:2: ( ( rulePredicate )? ( (lv_feature_1_0= RULE_ID ) ) ( ( (lv_operator_2_1= '+=' | lv_operator_2_2= '=' | lv_operator_2_3= '?=' ) ) ) ( (lv_terminal_3_0= ruleAssignableTerminal ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1503:3: ( rulePredicate )? ( (lv_feature_1_0= RULE_ID ) ) ( ( (lv_operator_2_1= '+=' | lv_operator_2_2= '=' | lv_operator_2_3= '?=' ) ) ) ( (lv_terminal_3_0= ruleAssignableTerminal ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1482:2: ( ( rulePredicate )? ( (lv_feature_1_0= RULE_ID ) ) ( ( (lv_operator_2_1= '+=' | lv_operator_2_2= '=' | lv_operator_2_3= '?=' ) ) ) ( (lv_terminal_3_0= ruleAssignableTerminal ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1483:3: ( rulePredicate )? ( (lv_feature_1_0= RULE_ID ) ) ( ( (lv_operator_2_1= '+=' | lv_operator_2_2= '=' | lv_operator_2_3= '?=' ) ) ) ( (lv_terminal_3_0= ruleAssignableTerminal ) )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1503:3: ( rulePredicate )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1483:3: ( rulePredicate )?
             int alt42=2;
             int LA42_0 = input.LA(1);
 
@@ -4653,12 +4537,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt42) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1504:4: rulePredicate
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1484:4: rulePredicate
                     {
 
                     				markComposite(elementTypeProvider.getAssignment_PredicateParserRuleCall_0ElementType());
                     			
-                    pushFollow(FollowSets000.FOLLOW_rulePredicate_in_ruleAssignment4493);
+                    pushFollow(FollowSets000.FOLLOW_rulePredicate_in_ruleAssignment4437);
                     rulePredicate();
 
                     state._fsp--;
@@ -4672,16 +4556,16 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             }
 
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1512:3: ( (lv_feature_1_0= RULE_ID ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1513:4: (lv_feature_1_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1492:3: ( (lv_feature_1_0= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1493:4: (lv_feature_1_0= RULE_ID )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1513:4: (lv_feature_1_0= RULE_ID )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1514:5: lv_feature_1_0= RULE_ID
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1493:4: (lv_feature_1_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1494:5: lv_feature_1_0= RULE_ID
             {
 
             					markLeaf(elementTypeProvider.getAssignment_FeatureIDTerminalRuleCall_1_0ElementType());
             				
-            lv_feature_1_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleAssignment4526); 
+            lv_feature_1_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleAssignment4470); 
 
             					doneLeaf(lv_feature_1_0);
             				
@@ -4691,13 +4575,13 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             }
 
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1523:3: ( ( (lv_operator_2_1= '+=' | lv_operator_2_2= '=' | lv_operator_2_3= '?=' ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1524:4: ( (lv_operator_2_1= '+=' | lv_operator_2_2= '=' | lv_operator_2_3= '?=' ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1503:3: ( ( (lv_operator_2_1= '+=' | lv_operator_2_2= '=' | lv_operator_2_3= '?=' ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1504:4: ( (lv_operator_2_1= '+=' | lv_operator_2_2= '=' | lv_operator_2_3= '?=' ) )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1524:4: ( (lv_operator_2_1= '+=' | lv_operator_2_2= '=' | lv_operator_2_3= '?=' ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1525:5: (lv_operator_2_1= '+=' | lv_operator_2_2= '=' | lv_operator_2_3= '?=' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1504:4: ( (lv_operator_2_1= '+=' | lv_operator_2_2= '=' | lv_operator_2_3= '?=' ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1505:5: (lv_operator_2_1= '+=' | lv_operator_2_2= '=' | lv_operator_2_3= '?=' )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1525:5: (lv_operator_2_1= '+=' | lv_operator_2_2= '=' | lv_operator_2_3= '?=' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1505:5: (lv_operator_2_1= '+=' | lv_operator_2_2= '=' | lv_operator_2_3= '?=' )
             int alt43=3;
             switch ( input.LA(1) ) {
             case 35:
@@ -4724,12 +4608,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             switch (alt43) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1526:6: lv_operator_2_1= '+='
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1506:6: lv_operator_2_1= '+='
                     {
 
                     						markLeaf(elementTypeProvider.getAssignment_OperatorPlusSignEqualsSignKeyword_2_0_0ElementType());
                     					
-                    lv_operator_2_1=(Token)match(input,35,FollowSets000.FOLLOW_35_in_ruleAssignment4572); 
+                    lv_operator_2_1=(Token)match(input,35,FollowSets000.FOLLOW_35_in_ruleAssignment4516); 
 
                     						doneLeaf(lv_operator_2_1);
                     					
@@ -4737,12 +4621,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1534:6: lv_operator_2_2= '='
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1514:6: lv_operator_2_2= '='
                     {
 
                     						markLeaf(elementTypeProvider.getAssignment_OperatorEqualsSignKeyword_2_0_1ElementType());
                     					
-                    lv_operator_2_2=(Token)match(input,34,FollowSets000.FOLLOW_34_in_ruleAssignment4606); 
+                    lv_operator_2_2=(Token)match(input,34,FollowSets000.FOLLOW_34_in_ruleAssignment4550); 
 
                     						doneLeaf(lv_operator_2_2);
                     					
@@ -4750,12 +4634,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 3 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1542:6: lv_operator_2_3= '?='
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1522:6: lv_operator_2_3= '?='
                     {
 
                     						markLeaf(elementTypeProvider.getAssignment_OperatorQuestionMarkEqualsSignKeyword_2_0_2ElementType());
                     					
-                    lv_operator_2_3=(Token)match(input,39,FollowSets000.FOLLOW_39_in_ruleAssignment4640); 
+                    lv_operator_2_3=(Token)match(input,39,FollowSets000.FOLLOW_39_in_ruleAssignment4584); 
 
                     						doneLeaf(lv_operator_2_3);
                     					
@@ -4771,16 +4655,16 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             }
 
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1552:3: ( (lv_terminal_3_0= ruleAssignableTerminal ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1553:4: (lv_terminal_3_0= ruleAssignableTerminal )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1532:3: ( (lv_terminal_3_0= ruleAssignableTerminal ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1533:4: (lv_terminal_3_0= ruleAssignableTerminal )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1553:4: (lv_terminal_3_0= ruleAssignableTerminal )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1554:5: lv_terminal_3_0= ruleAssignableTerminal
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1533:4: (lv_terminal_3_0= ruleAssignableTerminal )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1534:5: lv_terminal_3_0= ruleAssignableTerminal
             {
 
             					markComposite(elementTypeProvider.getAssignment_TerminalAssignableTerminalParserRuleCall_3_0ElementType());
             				
-            pushFollow(FollowSets000.FOLLOW_ruleAssignableTerminal_in_ruleAssignment4685);
+            pushFollow(FollowSets000.FOLLOW_ruleAssignableTerminal_in_ruleAssignment4629);
             ruleAssignableTerminal();
 
             state._fsp--;
@@ -4812,46 +4696,17 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
     // $ANTLR end "ruleAssignment"
 
 
-    // $ANTLR start "entryRulePredicate"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1567:1: entryRulePredicate : rulePredicate EOF ;
-    public final void entryRulePredicate() throws RecognitionException {
-        try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1567:19: ( rulePredicate EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1568:2: rulePredicate EOF
-            {
-             markComposite(elementTypeProvider.getPredicateElementType()); 
-            pushFollow(FollowSets000.FOLLOW_rulePredicate_in_entryRulePredicate4716);
-            rulePredicate();
-
-            state._fsp--;
-
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRulePredicate4719); 
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-        }
-        return ;
-    }
-    // $ANTLR end "entryRulePredicate"
-
-
     // $ANTLR start "rulePredicate"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1573:1: rulePredicate : ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1548:1: rulePredicate : ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) ;
     public final void rulePredicate() throws RecognitionException {
         Token lv_predicated_0_0=null;
         Token lv_firstSetPredicated_1_0=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1573:14: ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1574:2: ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1548:14: ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1549:2: ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1574:2: ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1549:2: ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) )
             int alt44=2;
             int LA44_0 = input.LA(1);
 
@@ -4869,18 +4724,18 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt44) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1575:3: ( (lv_predicated_0_0= '=>' ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1550:3: ( (lv_predicated_0_0= '=>' ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1575:3: ( (lv_predicated_0_0= '=>' ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1576:4: (lv_predicated_0_0= '=>' )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1550:3: ( (lv_predicated_0_0= '=>' ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1551:4: (lv_predicated_0_0= '=>' )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1576:4: (lv_predicated_0_0= '=>' )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1577:5: lv_predicated_0_0= '=>'
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1551:4: (lv_predicated_0_0= '=>' )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1552:5: lv_predicated_0_0= '=>'
                     {
 
                     					markLeaf(elementTypeProvider.getPredicate_PredicatedEqualsSignGreaterThanSignKeyword_0_0ElementType());
                     				
-                    lv_predicated_0_0=(Token)match(input,40,FollowSets000.FOLLOW_40_in_rulePredicate4751); 
+                    lv_predicated_0_0=(Token)match(input,40,FollowSets000.FOLLOW_40_in_rulePredicate4681); 
 
                     					doneLeaf(lv_predicated_0_0);
                     				
@@ -4894,18 +4749,18 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1587:3: ( (lv_firstSetPredicated_1_0= '->' ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1562:3: ( (lv_firstSetPredicated_1_0= '->' ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1587:3: ( (lv_firstSetPredicated_1_0= '->' ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1588:4: (lv_firstSetPredicated_1_0= '->' )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1562:3: ( (lv_firstSetPredicated_1_0= '->' ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1563:4: (lv_firstSetPredicated_1_0= '->' )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1588:4: (lv_firstSetPredicated_1_0= '->' )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1589:5: lv_firstSetPredicated_1_0= '->'
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1563:4: (lv_firstSetPredicated_1_0= '->' )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1564:5: lv_firstSetPredicated_1_0= '->'
                     {
 
                     					markLeaf(elementTypeProvider.getPredicate_FirstSetPredicatedHyphenMinusGreaterThanSignKeyword_1_0ElementType());
                     				
-                    lv_firstSetPredicated_1_0=(Token)match(input,41,FollowSets000.FOLLOW_41_in_rulePredicate4797); 
+                    lv_firstSetPredicated_1_0=(Token)match(input,41,FollowSets000.FOLLOW_41_in_rulePredicate4727); 
 
                     					doneLeaf(lv_firstSetPredicated_1_0);
                     				
@@ -4937,19 +4792,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleAssignableTerminal"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1602:1: entryRuleAssignableTerminal : ruleAssignableTerminal EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1577:1: entryRuleAssignableTerminal : ruleAssignableTerminal EOF ;
     public final void entryRuleAssignableTerminal() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1602:28: ( ruleAssignableTerminal EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1603:2: ruleAssignableTerminal EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1577:28: ( ruleAssignableTerminal EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1578:2: ruleAssignableTerminal EOF
             {
              markComposite(elementTypeProvider.getAssignableTerminalElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAssignableTerminal_in_entryRuleAssignableTerminal4828);
+            pushFollow(FollowSets000.FOLLOW_ruleAssignableTerminal_in_entryRuleAssignableTerminal4758);
             ruleAssignableTerminal();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAssignableTerminal4831); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAssignableTerminal4761); 
 
             }
 
@@ -4966,13 +4821,13 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleAssignableTerminal"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1608:1: ruleAssignableTerminal : ( ruleKeyword | ruleRuleCall | ruleParenthesizedAssignableElement | ruleCrossReference ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1583:1: ruleAssignableTerminal : ( ruleKeyword | ruleRuleCall | ruleParenthesizedAssignableElement | ruleCrossReference ) ;
     public final void ruleAssignableTerminal() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1608:23: ( ( ruleKeyword | ruleRuleCall | ruleParenthesizedAssignableElement | ruleCrossReference ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1609:2: ( ruleKeyword | ruleRuleCall | ruleParenthesizedAssignableElement | ruleCrossReference )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1583:23: ( ( ruleKeyword | ruleRuleCall | ruleParenthesizedAssignableElement | ruleCrossReference ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1584:2: ( ruleKeyword | ruleRuleCall | ruleParenthesizedAssignableElement | ruleCrossReference )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1609:2: ( ruleKeyword | ruleRuleCall | ruleParenthesizedAssignableElement | ruleCrossReference )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1584:2: ( ruleKeyword | ruleRuleCall | ruleParenthesizedAssignableElement | ruleCrossReference )
             int alt45=4;
             switch ( input.LA(1) ) {
             case RULE_STRING:
@@ -5004,12 +4859,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             switch (alt45) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1610:3: ruleKeyword
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1585:3: ruleKeyword
                     {
 
                     			markComposite(elementTypeProvider.getAssignableTerminal_KeywordParserRuleCall_0ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_ruleAssignableTerminal4848);
+                    pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_ruleAssignableTerminal4778);
                     ruleKeyword();
 
                     state._fsp--;
@@ -5021,12 +4876,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1618:3: ruleRuleCall
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1593:3: ruleRuleCall
                     {
 
                     			markComposite(elementTypeProvider.getAssignableTerminal_RuleCallParserRuleCall_1ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleRuleCall_in_ruleAssignableTerminal4868);
+                    pushFollow(FollowSets000.FOLLOW_ruleRuleCall_in_ruleAssignableTerminal4798);
                     ruleRuleCall();
 
                     state._fsp--;
@@ -5038,12 +4893,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 3 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1626:3: ruleParenthesizedAssignableElement
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1601:3: ruleParenthesizedAssignableElement
                     {
 
                     			markComposite(elementTypeProvider.getAssignableTerminal_ParenthesizedAssignableElementParserRuleCall_2ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleParenthesizedAssignableElement_in_ruleAssignableTerminal4888);
+                    pushFollow(FollowSets000.FOLLOW_ruleParenthesizedAssignableElement_in_ruleAssignableTerminal4818);
                     ruleParenthesizedAssignableElement();
 
                     state._fsp--;
@@ -5055,12 +4910,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 4 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1634:3: ruleCrossReference
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1609:3: ruleCrossReference
                     {
 
                     			markComposite(elementTypeProvider.getAssignableTerminal_CrossReferenceParserRuleCall_3ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleCrossReference_in_ruleAssignableTerminal4908);
+                    pushFollow(FollowSets000.FOLLOW_ruleCrossReference_in_ruleAssignableTerminal4838);
                     ruleCrossReference();
 
                     state._fsp--;
@@ -5090,19 +4945,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleParenthesizedAssignableElement"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1645:1: entryRuleParenthesizedAssignableElement : ruleParenthesizedAssignableElement EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1620:1: entryRuleParenthesizedAssignableElement : ruleParenthesizedAssignableElement EOF ;
     public final void entryRuleParenthesizedAssignableElement() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1645:40: ( ruleParenthesizedAssignableElement EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1646:2: ruleParenthesizedAssignableElement EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1620:40: ( ruleParenthesizedAssignableElement EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1621:2: ruleParenthesizedAssignableElement EOF
             {
              markComposite(elementTypeProvider.getParenthesizedAssignableElementElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleParenthesizedAssignableElement_in_entryRuleParenthesizedAssignableElement4928);
+            pushFollow(FollowSets000.FOLLOW_ruleParenthesizedAssignableElement_in_entryRuleParenthesizedAssignableElement4858);
             ruleParenthesizedAssignableElement();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleParenthesizedAssignableElement4931); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleParenthesizedAssignableElement4861); 
 
             }
 
@@ -5119,29 +4974,29 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleParenthesizedAssignableElement"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1651:1: ruleParenthesizedAssignableElement : (otherlv_0= '(' ruleAssignableAlternatives otherlv_2= ')' ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1626:1: ruleParenthesizedAssignableElement : (otherlv_0= '(' ruleAssignableAlternatives otherlv_2= ')' ) ;
     public final void ruleParenthesizedAssignableElement() throws RecognitionException {
         Token otherlv_0=null;
         Token otherlv_2=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1651:35: ( (otherlv_0= '(' ruleAssignableAlternatives otherlv_2= ')' ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1652:2: (otherlv_0= '(' ruleAssignableAlternatives otherlv_2= ')' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1626:35: ( (otherlv_0= '(' ruleAssignableAlternatives otherlv_2= ')' ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1627:2: (otherlv_0= '(' ruleAssignableAlternatives otherlv_2= ')' )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1652:2: (otherlv_0= '(' ruleAssignableAlternatives otherlv_2= ')' )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1653:3: otherlv_0= '(' ruleAssignableAlternatives otherlv_2= ')'
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1627:2: (otherlv_0= '(' ruleAssignableAlternatives otherlv_2= ')' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1628:3: otherlv_0= '(' ruleAssignableAlternatives otherlv_2= ')'
             {
 
             			markLeaf(elementTypeProvider.getParenthesizedAssignableElement_LeftParenthesisKeyword_0ElementType());
             		
-            otherlv_0=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleParenthesizedAssignableElement4950); 
+            otherlv_0=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleParenthesizedAssignableElement4880); 
 
             			doneLeaf(otherlv_0);
             		
 
             			markComposite(elementTypeProvider.getParenthesizedAssignableElement_AssignableAlternativesParserRuleCall_1ElementType());
             		
-            pushFollow(FollowSets000.FOLLOW_ruleAssignableAlternatives_in_ruleParenthesizedAssignableElement4962);
+            pushFollow(FollowSets000.FOLLOW_ruleAssignableAlternatives_in_ruleParenthesizedAssignableElement4892);
             ruleAssignableAlternatives();
 
             state._fsp--;
@@ -5152,7 +5007,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			markLeaf(elementTypeProvider.getParenthesizedAssignableElement_RightParenthesisKeyword_2ElementType());
             		
-            otherlv_2=(Token)match(input,16,FollowSets000.FOLLOW_16_in_ruleParenthesizedAssignableElement4976); 
+            otherlv_2=(Token)match(input,16,FollowSets000.FOLLOW_16_in_ruleParenthesizedAssignableElement4906); 
 
             			doneLeaf(otherlv_2);
             		
@@ -5175,19 +5030,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleAssignableAlternatives"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1678:1: entryRuleAssignableAlternatives : ruleAssignableAlternatives EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1653:1: entryRuleAssignableAlternatives : ruleAssignableAlternatives EOF ;
     public final void entryRuleAssignableAlternatives() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1678:32: ( ruleAssignableAlternatives EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1679:2: ruleAssignableAlternatives EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1653:32: ( ruleAssignableAlternatives EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1654:2: ruleAssignableAlternatives EOF
             {
              markComposite(elementTypeProvider.getAssignableAlternativesElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAssignableAlternatives_in_entryRuleAssignableAlternatives4996);
+            pushFollow(FollowSets000.FOLLOW_ruleAssignableAlternatives_in_entryRuleAssignableAlternatives4926);
             ruleAssignableAlternatives();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAssignableAlternatives4999); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAssignableAlternatives4929); 
 
             }
 
@@ -5204,21 +5059,21 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleAssignableAlternatives"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1684:1: ruleAssignableAlternatives : ( ruleAssignableTerminal ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+ )? ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1659:1: ruleAssignableAlternatives : ( ruleAssignableTerminal ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+ )? ) ;
     public final void ruleAssignableAlternatives() throws RecognitionException {
         Token otherlv_2=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1684:27: ( ( ruleAssignableTerminal ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+ )? ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1685:2: ( ruleAssignableTerminal ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+ )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1659:27: ( ( ruleAssignableTerminal ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+ )? ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1660:2: ( ruleAssignableTerminal ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+ )? )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1685:2: ( ruleAssignableTerminal ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+ )? )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1686:3: ruleAssignableTerminal ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+ )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1660:2: ( ruleAssignableTerminal ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+ )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1661:3: ruleAssignableTerminal ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+ )?
             {
 
             			markComposite(elementTypeProvider.getAssignableAlternatives_AssignableTerminalParserRuleCall_0ElementType());
             		
-            pushFollow(FollowSets000.FOLLOW_ruleAssignableTerminal_in_ruleAssignableAlternatives5016);
+            pushFollow(FollowSets000.FOLLOW_ruleAssignableTerminal_in_ruleAssignableAlternatives4946);
             ruleAssignableTerminal();
 
             state._fsp--;
@@ -5226,7 +5081,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			doneComposite();
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1693:3: ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+ )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1668:3: ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+ )?
             int alt47=2;
             int LA47_0 = input.LA(1);
 
@@ -5235,10 +5090,10 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt47) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1694:4: () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1669:4: () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1694:4: ()
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1695:5: 
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1669:4: ()
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1670:5: 
                     {
 
                     					precedeComposite(elementTypeProvider.getAssignableAlternatives_AlternativesElementsAction_1_0ElementType());
@@ -5247,7 +5102,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                     }
 
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1700:4: (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1675:4: (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+
                     int cnt46=0;
                     loop46:
                     do {
@@ -5261,25 +5116,25 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                         switch (alt46) {
                     	case 1 :
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1701:5: otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1676:5: otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) )
                     	    {
 
                     	    					markLeaf(elementTypeProvider.getAssignableAlternatives_VerticalLineKeyword_1_1_0ElementType());
                     	    				
-                    	    otherlv_2=(Token)match(input,29,FollowSets000.FOLLOW_29_in_ruleAssignableAlternatives5059); 
+                    	    otherlv_2=(Token)match(input,29,FollowSets000.FOLLOW_29_in_ruleAssignableAlternatives4989); 
 
                     	    					doneLeaf(otherlv_2);
                     	    				
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1708:5: ( (lv_elements_3_0= ruleAssignableTerminal ) )
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1709:6: (lv_elements_3_0= ruleAssignableTerminal )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1683:5: ( (lv_elements_3_0= ruleAssignableTerminal ) )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1684:6: (lv_elements_3_0= ruleAssignableTerminal )
                     	    {
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1709:6: (lv_elements_3_0= ruleAssignableTerminal )
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1710:7: lv_elements_3_0= ruleAssignableTerminal
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1684:6: (lv_elements_3_0= ruleAssignableTerminal )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1685:7: lv_elements_3_0= ruleAssignableTerminal
                     	    {
 
                     	    							markComposite(elementTypeProvider.getAssignableAlternatives_ElementsAssignableTerminalParserRuleCall_1_1_1_0ElementType());
                     	    						
-                    	    pushFollow(FollowSets000.FOLLOW_ruleAssignableTerminal_in_ruleAssignableAlternatives5096);
+                    	    pushFollow(FollowSets000.FOLLOW_ruleAssignableTerminal_in_ruleAssignableAlternatives5026);
                     	    ruleAssignableTerminal();
 
                     	    state._fsp--;
@@ -5331,19 +5186,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleCrossReference"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1725:1: entryRuleCrossReference : ruleCrossReference EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1700:1: entryRuleCrossReference : ruleCrossReference EOF ;
     public final void entryRuleCrossReference() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1725:24: ( ruleCrossReference EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1726:2: ruleCrossReference EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1700:24: ( ruleCrossReference EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1701:2: ruleCrossReference EOF
             {
              markComposite(elementTypeProvider.getCrossReferenceElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleCrossReference_in_entryRuleCrossReference5144);
+            pushFollow(FollowSets000.FOLLOW_ruleCrossReference_in_entryRuleCrossReference5074);
             ruleCrossReference();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleCrossReference5147); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleCrossReference5077); 
 
             }
 
@@ -5360,36 +5215,36 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleCrossReference"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1731:1: ruleCrossReference : (otherlv_0= '[' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) ) )? otherlv_4= ']' ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1706:1: ruleCrossReference : (otherlv_0= '[' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) ) )? otherlv_4= ']' ) ;
     public final void ruleCrossReference() throws RecognitionException {
         Token otherlv_0=null;
         Token otherlv_2=null;
         Token otherlv_4=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1731:19: ( (otherlv_0= '[' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) ) )? otherlv_4= ']' ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1732:2: (otherlv_0= '[' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) ) )? otherlv_4= ']' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1706:19: ( (otherlv_0= '[' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) ) )? otherlv_4= ']' ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1707:2: (otherlv_0= '[' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) ) )? otherlv_4= ']' )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1732:2: (otherlv_0= '[' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) ) )? otherlv_4= ']' )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1733:3: otherlv_0= '[' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) ) )? otherlv_4= ']'
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1707:2: (otherlv_0= '[' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) ) )? otherlv_4= ']' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1708:3: otherlv_0= '[' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) ) )? otherlv_4= ']'
             {
 
             			markLeaf(elementTypeProvider.getCrossReference_LeftSquareBracketKeyword_0ElementType());
             		
-            otherlv_0=(Token)match(input,25,FollowSets000.FOLLOW_25_in_ruleCrossReference5166); 
+            otherlv_0=(Token)match(input,25,FollowSets000.FOLLOW_25_in_ruleCrossReference5096); 
 
             			doneLeaf(otherlv_0);
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1740:3: ( (lv_type_1_0= ruleTypeRef ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1741:4: (lv_type_1_0= ruleTypeRef )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1715:3: ( (lv_type_1_0= ruleTypeRef ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1716:4: (lv_type_1_0= ruleTypeRef )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1741:4: (lv_type_1_0= ruleTypeRef )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1742:5: lv_type_1_0= ruleTypeRef
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1716:4: (lv_type_1_0= ruleTypeRef )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1717:5: lv_type_1_0= ruleTypeRef
             {
 
             					markComposite(elementTypeProvider.getCrossReference_TypeTypeRefParserRuleCall_1_0ElementType());
             				
-            pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_ruleCrossReference5193);
+            pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_ruleCrossReference5123);
             ruleTypeRef();
 
             state._fsp--;
@@ -5403,7 +5258,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             }
 
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1751:3: (otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) ) )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1726:3: (otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) ) )?
             int alt48=2;
             int LA48_0 = input.LA(1);
 
@@ -5412,25 +5267,25 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt48) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1752:4: otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1727:4: otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) )
                     {
 
                     				markLeaf(elementTypeProvider.getCrossReference_VerticalLineKeyword_2_0ElementType());
                     			
-                    otherlv_2=(Token)match(input,29,FollowSets000.FOLLOW_29_in_ruleCrossReference5224); 
+                    otherlv_2=(Token)match(input,29,FollowSets000.FOLLOW_29_in_ruleCrossReference5154); 
 
                     				doneLeaf(otherlv_2);
                     			
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1759:4: ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1760:5: (lv_terminal_3_0= ruleCrossReferenceableTerminal )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1734:4: ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1735:5: (lv_terminal_3_0= ruleCrossReferenceableTerminal )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1760:5: (lv_terminal_3_0= ruleCrossReferenceableTerminal )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1761:6: lv_terminal_3_0= ruleCrossReferenceableTerminal
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1735:5: (lv_terminal_3_0= ruleCrossReferenceableTerminal )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1736:6: lv_terminal_3_0= ruleCrossReferenceableTerminal
                     {
 
                     						markComposite(elementTypeProvider.getCrossReference_TerminalCrossReferenceableTerminalParserRuleCall_2_1_0ElementType());
                     					
-                    pushFollow(FollowSets000.FOLLOW_ruleCrossReferenceableTerminal_in_ruleCrossReference5256);
+                    pushFollow(FollowSets000.FOLLOW_ruleCrossReferenceableTerminal_in_ruleCrossReference5186);
                     ruleCrossReferenceableTerminal();
 
                     state._fsp--;
@@ -5453,7 +5308,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			markLeaf(elementTypeProvider.getCrossReference_RightSquareBracketKeyword_3ElementType());
             		
-            otherlv_4=(Token)match(input,26,FollowSets000.FOLLOW_26_in_ruleCrossReference5289); 
+            otherlv_4=(Token)match(input,26,FollowSets000.FOLLOW_26_in_ruleCrossReference5219); 
 
             			doneLeaf(otherlv_4);
             		
@@ -5476,19 +5331,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleCrossReferenceableTerminal"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1782:1: entryRuleCrossReferenceableTerminal : ruleCrossReferenceableTerminal EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1757:1: entryRuleCrossReferenceableTerminal : ruleCrossReferenceableTerminal EOF ;
     public final void entryRuleCrossReferenceableTerminal() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1782:36: ( ruleCrossReferenceableTerminal EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1783:2: ruleCrossReferenceableTerminal EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1757:36: ( ruleCrossReferenceableTerminal EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1758:2: ruleCrossReferenceableTerminal EOF
             {
              markComposite(elementTypeProvider.getCrossReferenceableTerminalElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleCrossReferenceableTerminal_in_entryRuleCrossReferenceableTerminal5309);
+            pushFollow(FollowSets000.FOLLOW_ruleCrossReferenceableTerminal_in_entryRuleCrossReferenceableTerminal5239);
             ruleCrossReferenceableTerminal();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleCrossReferenceableTerminal5312); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleCrossReferenceableTerminal5242); 
 
             }
 
@@ -5505,13 +5360,13 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleCrossReferenceableTerminal"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1788:1: ruleCrossReferenceableTerminal : ( ruleKeyword | ruleRuleCall ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1763:1: ruleCrossReferenceableTerminal : ( ruleKeyword | ruleRuleCall ) ;
     public final void ruleCrossReferenceableTerminal() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1788:31: ( ( ruleKeyword | ruleRuleCall ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1789:2: ( ruleKeyword | ruleRuleCall )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1763:31: ( ( ruleKeyword | ruleRuleCall ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1764:2: ( ruleKeyword | ruleRuleCall )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1789:2: ( ruleKeyword | ruleRuleCall )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1764:2: ( ruleKeyword | ruleRuleCall )
             int alt49=2;
             int LA49_0 = input.LA(1);
 
@@ -5529,12 +5384,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt49) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1790:3: ruleKeyword
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1765:3: ruleKeyword
                     {
 
                     			markComposite(elementTypeProvider.getCrossReferenceableTerminal_KeywordParserRuleCall_0ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_ruleCrossReferenceableTerminal5329);
+                    pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_ruleCrossReferenceableTerminal5259);
                     ruleKeyword();
 
                     state._fsp--;
@@ -5546,12 +5401,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1798:3: ruleRuleCall
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1773:3: ruleRuleCall
                     {
 
                     			markComposite(elementTypeProvider.getCrossReferenceableTerminal_RuleCallParserRuleCall_1ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleRuleCall_in_ruleCrossReferenceableTerminal5349);
+                    pushFollow(FollowSets000.FOLLOW_ruleRuleCall_in_ruleCrossReferenceableTerminal5279);
                     ruleRuleCall();
 
                     state._fsp--;
@@ -5581,19 +5436,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleParenthesizedElement"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1809:1: entryRuleParenthesizedElement : ruleParenthesizedElement EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1784:1: entryRuleParenthesizedElement : ruleParenthesizedElement EOF ;
     public final void entryRuleParenthesizedElement() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1809:30: ( ruleParenthesizedElement EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1810:2: ruleParenthesizedElement EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1784:30: ( ruleParenthesizedElement EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1785:2: ruleParenthesizedElement EOF
             {
              markComposite(elementTypeProvider.getParenthesizedElementElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleParenthesizedElement_in_entryRuleParenthesizedElement5369);
+            pushFollow(FollowSets000.FOLLOW_ruleParenthesizedElement_in_entryRuleParenthesizedElement5299);
             ruleParenthesizedElement();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleParenthesizedElement5372); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleParenthesizedElement5302); 
 
             }
 
@@ -5610,29 +5465,29 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleParenthesizedElement"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1815:1: ruleParenthesizedElement : (otherlv_0= '(' ruleAlternatives otherlv_2= ')' ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1790:1: ruleParenthesizedElement : (otherlv_0= '(' ruleAlternatives otherlv_2= ')' ) ;
     public final void ruleParenthesizedElement() throws RecognitionException {
         Token otherlv_0=null;
         Token otherlv_2=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1815:25: ( (otherlv_0= '(' ruleAlternatives otherlv_2= ')' ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1816:2: (otherlv_0= '(' ruleAlternatives otherlv_2= ')' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1790:25: ( (otherlv_0= '(' ruleAlternatives otherlv_2= ')' ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1791:2: (otherlv_0= '(' ruleAlternatives otherlv_2= ')' )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1816:2: (otherlv_0= '(' ruleAlternatives otherlv_2= ')' )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1817:3: otherlv_0= '(' ruleAlternatives otherlv_2= ')'
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1791:2: (otherlv_0= '(' ruleAlternatives otherlv_2= ')' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1792:3: otherlv_0= '(' ruleAlternatives otherlv_2= ')'
             {
 
             			markLeaf(elementTypeProvider.getParenthesizedElement_LeftParenthesisKeyword_0ElementType());
             		
-            otherlv_0=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleParenthesizedElement5391); 
+            otherlv_0=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleParenthesizedElement5321); 
 
             			doneLeaf(otherlv_0);
             		
 
             			markComposite(elementTypeProvider.getParenthesizedElement_AlternativesParserRuleCall_1ElementType());
             		
-            pushFollow(FollowSets000.FOLLOW_ruleAlternatives_in_ruleParenthesizedElement5403);
+            pushFollow(FollowSets000.FOLLOW_ruleAlternatives_in_ruleParenthesizedElement5333);
             ruleAlternatives();
 
             state._fsp--;
@@ -5643,7 +5498,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			markLeaf(elementTypeProvider.getParenthesizedElement_RightParenthesisKeyword_2ElementType());
             		
-            otherlv_2=(Token)match(input,16,FollowSets000.FOLLOW_16_in_ruleParenthesizedElement5417); 
+            otherlv_2=(Token)match(input,16,FollowSets000.FOLLOW_16_in_ruleParenthesizedElement5347); 
 
             			doneLeaf(otherlv_2);
             		
@@ -5666,19 +5521,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRulePredicatedGroup"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1842:1: entryRulePredicatedGroup : rulePredicatedGroup EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1817:1: entryRulePredicatedGroup : rulePredicatedGroup EOF ;
     public final void entryRulePredicatedGroup() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1842:25: ( rulePredicatedGroup EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1843:2: rulePredicatedGroup EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1817:25: ( rulePredicatedGroup EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1818:2: rulePredicatedGroup EOF
             {
              markComposite(elementTypeProvider.getPredicatedGroupElementType()); 
-            pushFollow(FollowSets000.FOLLOW_rulePredicatedGroup_in_entryRulePredicatedGroup5437);
+            pushFollow(FollowSets000.FOLLOW_rulePredicatedGroup_in_entryRulePredicatedGroup5367);
             rulePredicatedGroup();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRulePredicatedGroup5440); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRulePredicatedGroup5370); 
 
             }
 
@@ -5695,22 +5550,22 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "rulePredicatedGroup"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1848:1: rulePredicatedGroup : ( rulePredicate otherlv_1= '(' ( (lv_elements_2_0= ruleAlternatives ) ) otherlv_3= ')' ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1823:1: rulePredicatedGroup : ( rulePredicate otherlv_1= '(' ( (lv_elements_2_0= ruleAlternatives ) ) otherlv_3= ')' ) ;
     public final void rulePredicatedGroup() throws RecognitionException {
         Token otherlv_1=null;
         Token otherlv_3=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1848:20: ( ( rulePredicate otherlv_1= '(' ( (lv_elements_2_0= ruleAlternatives ) ) otherlv_3= ')' ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1849:2: ( rulePredicate otherlv_1= '(' ( (lv_elements_2_0= ruleAlternatives ) ) otherlv_3= ')' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1823:20: ( ( rulePredicate otherlv_1= '(' ( (lv_elements_2_0= ruleAlternatives ) ) otherlv_3= ')' ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1824:2: ( rulePredicate otherlv_1= '(' ( (lv_elements_2_0= ruleAlternatives ) ) otherlv_3= ')' )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1849:2: ( rulePredicate otherlv_1= '(' ( (lv_elements_2_0= ruleAlternatives ) ) otherlv_3= ')' )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1850:3: rulePredicate otherlv_1= '(' ( (lv_elements_2_0= ruleAlternatives ) ) otherlv_3= ')'
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1824:2: ( rulePredicate otherlv_1= '(' ( (lv_elements_2_0= ruleAlternatives ) ) otherlv_3= ')' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1825:3: rulePredicate otherlv_1= '(' ( (lv_elements_2_0= ruleAlternatives ) ) otherlv_3= ')'
             {
 
             			markComposite(elementTypeProvider.getPredicatedGroup_PredicateParserRuleCall_0ElementType());
             		
-            pushFollow(FollowSets000.FOLLOW_rulePredicate_in_rulePredicatedGroup5457);
+            pushFollow(FollowSets000.FOLLOW_rulePredicate_in_rulePredicatedGroup5387);
             rulePredicate();
 
             state._fsp--;
@@ -5721,20 +5576,20 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			markLeaf(elementTypeProvider.getPredicatedGroup_LeftParenthesisKeyword_1ElementType());
             		
-            otherlv_1=(Token)match(input,15,FollowSets000.FOLLOW_15_in_rulePredicatedGroup5471); 
+            otherlv_1=(Token)match(input,15,FollowSets000.FOLLOW_15_in_rulePredicatedGroup5401); 
 
             			doneLeaf(otherlv_1);
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1864:3: ( (lv_elements_2_0= ruleAlternatives ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1865:4: (lv_elements_2_0= ruleAlternatives )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1839:3: ( (lv_elements_2_0= ruleAlternatives ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1840:4: (lv_elements_2_0= ruleAlternatives )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1865:4: (lv_elements_2_0= ruleAlternatives )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1866:5: lv_elements_2_0= ruleAlternatives
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1840:4: (lv_elements_2_0= ruleAlternatives )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1841:5: lv_elements_2_0= ruleAlternatives
             {
 
             					markComposite(elementTypeProvider.getPredicatedGroup_ElementsAlternativesParserRuleCall_2_0ElementType());
             				
-            pushFollow(FollowSets000.FOLLOW_ruleAlternatives_in_rulePredicatedGroup5498);
+            pushFollow(FollowSets000.FOLLOW_ruleAlternatives_in_rulePredicatedGroup5428);
             ruleAlternatives();
 
             state._fsp--;
@@ -5751,7 +5606,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			markLeaf(elementTypeProvider.getPredicatedGroup_RightParenthesisKeyword_3ElementType());
             		
-            otherlv_3=(Token)match(input,16,FollowSets000.FOLLOW_16_in_rulePredicatedGroup5523); 
+            otherlv_3=(Token)match(input,16,FollowSets000.FOLLOW_16_in_rulePredicatedGroup5453); 
 
             			doneLeaf(otherlv_3);
             		
@@ -5774,19 +5629,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleTerminalRule"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1886:1: entryRuleTerminalRule : ruleTerminalRule EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1861:1: entryRuleTerminalRule : ruleTerminalRule EOF ;
     public final void entryRuleTerminalRule() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1886:22: ( ruleTerminalRule EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1887:2: ruleTerminalRule EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1861:22: ( ruleTerminalRule EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1862:2: ruleTerminalRule EOF
             {
              markComposite(elementTypeProvider.getTerminalRuleElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalRule_in_entryRuleTerminalRule5543);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalRule_in_entryRuleTerminalRule5473);
             ruleTerminalRule();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTerminalRule5546); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTerminalRule5476); 
 
             }
 
@@ -5803,7 +5658,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleTerminalRule"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1892:1: ruleTerminalRule : (otherlv_0= 'terminal' ( ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) ) | ( ( (lv_name_3_0= RULE_ID ) ) ( ruleReturnsClause )? ) ) otherlv_5= ':' ( (lv_alternatives_6_0= ruleTerminalAlternatives ) ) otherlv_7= ';' ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1867:1: ruleTerminalRule : (otherlv_0= 'terminal' ( ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) ) | ( ( (lv_name_3_0= RULE_ID ) ) ( ruleReturnsClause )? ) ) otherlv_5= ':' ( (lv_alternatives_6_0= ruleTerminalAlternatives ) ) otherlv_7= ';' ) ;
     public final void ruleTerminalRule() throws RecognitionException {
         Token otherlv_0=null;
         Token lv_fragment_1_0=null;
@@ -5813,20 +5668,20 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
         Token otherlv_7=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1892:17: ( (otherlv_0= 'terminal' ( ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) ) | ( ( (lv_name_3_0= RULE_ID ) ) ( ruleReturnsClause )? ) ) otherlv_5= ':' ( (lv_alternatives_6_0= ruleTerminalAlternatives ) ) otherlv_7= ';' ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1893:2: (otherlv_0= 'terminal' ( ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) ) | ( ( (lv_name_3_0= RULE_ID ) ) ( ruleReturnsClause )? ) ) otherlv_5= ':' ( (lv_alternatives_6_0= ruleTerminalAlternatives ) ) otherlv_7= ';' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1867:17: ( (otherlv_0= 'terminal' ( ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) ) | ( ( (lv_name_3_0= RULE_ID ) ) ( ruleReturnsClause )? ) ) otherlv_5= ':' ( (lv_alternatives_6_0= ruleTerminalAlternatives ) ) otherlv_7= ';' ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1868:2: (otherlv_0= 'terminal' ( ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) ) | ( ( (lv_name_3_0= RULE_ID ) ) ( ruleReturnsClause )? ) ) otherlv_5= ':' ( (lv_alternatives_6_0= ruleTerminalAlternatives ) ) otherlv_7= ';' )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1893:2: (otherlv_0= 'terminal' ( ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) ) | ( ( (lv_name_3_0= RULE_ID ) ) ( ruleReturnsClause )? ) ) otherlv_5= ':' ( (lv_alternatives_6_0= ruleTerminalAlternatives ) ) otherlv_7= ';' )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1894:3: otherlv_0= 'terminal' ( ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) ) | ( ( (lv_name_3_0= RULE_ID ) ) ( ruleReturnsClause )? ) ) otherlv_5= ':' ( (lv_alternatives_6_0= ruleTerminalAlternatives ) ) otherlv_7= ';'
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1868:2: (otherlv_0= 'terminal' ( ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) ) | ( ( (lv_name_3_0= RULE_ID ) ) ( ruleReturnsClause )? ) ) otherlv_5= ':' ( (lv_alternatives_6_0= ruleTerminalAlternatives ) ) otherlv_7= ';' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1869:3: otherlv_0= 'terminal' ( ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) ) | ( ( (lv_name_3_0= RULE_ID ) ) ( ruleReturnsClause )? ) ) otherlv_5= ':' ( (lv_alternatives_6_0= ruleTerminalAlternatives ) ) otherlv_7= ';'
             {
 
             			markLeaf(elementTypeProvider.getTerminalRule_TerminalKeyword_0ElementType());
             		
-            otherlv_0=(Token)match(input,42,FollowSets000.FOLLOW_42_in_ruleTerminalRule5565); 
+            otherlv_0=(Token)match(input,42,FollowSets000.FOLLOW_42_in_ruleTerminalRule5495); 
 
             			doneLeaf(otherlv_0);
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1901:3: ( ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) ) | ( ( (lv_name_3_0= RULE_ID ) ) ( ruleReturnsClause )? ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1876:3: ( ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) ) | ( ( (lv_name_3_0= RULE_ID ) ) ( ruleReturnsClause )? ) )
             int alt51=2;
             int LA51_0 = input.LA(1);
 
@@ -5844,21 +5699,21 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt51) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1902:4: ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1877:4: ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1902:4: ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1903:5: ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1877:4: ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1878:5: ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1903:5: ( (lv_fragment_1_0= 'fragment' ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1904:6: (lv_fragment_1_0= 'fragment' )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1878:5: ( (lv_fragment_1_0= 'fragment' ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1879:6: (lv_fragment_1_0= 'fragment' )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1904:6: (lv_fragment_1_0= 'fragment' )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1905:7: lv_fragment_1_0= 'fragment'
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1879:6: (lv_fragment_1_0= 'fragment' )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1880:7: lv_fragment_1_0= 'fragment'
                     {
 
                     							markLeaf(elementTypeProvider.getTerminalRule_FragmentFragmentKeyword_1_0_0_0ElementType());
                     						
-                    lv_fragment_1_0=(Token)match(input,21,FollowSets000.FOLLOW_21_in_ruleTerminalRule5609); 
+                    lv_fragment_1_0=(Token)match(input,21,FollowSets000.FOLLOW_21_in_ruleTerminalRule5539); 
 
                     							doneLeaf(lv_fragment_1_0);
                     						
@@ -5868,16 +5723,16 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                     }
 
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1914:5: ( (lv_name_2_0= RULE_ID ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1915:6: (lv_name_2_0= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1889:5: ( (lv_name_2_0= RULE_ID ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1890:6: (lv_name_2_0= RULE_ID )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1915:6: (lv_name_2_0= RULE_ID )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1916:7: lv_name_2_0= RULE_ID
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1890:6: (lv_name_2_0= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1891:7: lv_name_2_0= RULE_ID
                     {
 
                     							markLeaf(elementTypeProvider.getTerminalRule_NameIDTerminalRuleCall_1_0_1_0ElementType());
                     						
-                    lv_name_2_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleTerminalRule5661); 
+                    lv_name_2_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleTerminalRule5591); 
 
                     							doneLeaf(lv_name_2_0);
                     						
@@ -5894,21 +5749,21 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1927:4: ( ( (lv_name_3_0= RULE_ID ) ) ( ruleReturnsClause )? )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1902:4: ( ( (lv_name_3_0= RULE_ID ) ) ( ruleReturnsClause )? )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1927:4: ( ( (lv_name_3_0= RULE_ID ) ) ( ruleReturnsClause )? )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1928:5: ( (lv_name_3_0= RULE_ID ) ) ( ruleReturnsClause )?
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1902:4: ( ( (lv_name_3_0= RULE_ID ) ) ( ruleReturnsClause )? )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1903:5: ( (lv_name_3_0= RULE_ID ) ) ( ruleReturnsClause )?
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1928:5: ( (lv_name_3_0= RULE_ID ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1929:6: (lv_name_3_0= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1903:5: ( (lv_name_3_0= RULE_ID ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1904:6: (lv_name_3_0= RULE_ID )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1929:6: (lv_name_3_0= RULE_ID )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1930:7: lv_name_3_0= RULE_ID
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1904:6: (lv_name_3_0= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1905:7: lv_name_3_0= RULE_ID
                     {
 
                     							markLeaf(elementTypeProvider.getTerminalRule_NameIDTerminalRuleCall_1_1_0_0ElementType());
                     						
-                    lv_name_3_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleTerminalRule5732); 
+                    lv_name_3_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleTerminalRule5662); 
 
                     							doneLeaf(lv_name_3_0);
                     						
@@ -5918,7 +5773,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                     }
 
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1939:5: ( ruleReturnsClause )?
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1914:5: ( ruleReturnsClause )?
                     int alt50=2;
                     int LA50_0 = input.LA(1);
 
@@ -5927,12 +5782,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     switch (alt50) {
                         case 1 :
-                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1940:6: ruleReturnsClause
+                            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1915:6: ruleReturnsClause
                             {
 
                             						markComposite(elementTypeProvider.getTerminalRule_ReturnsClauseParserRuleCall_1_1_1ElementType());
                             					
-                            pushFollow(FollowSets000.FOLLOW_ruleReturnsClause_in_ruleTerminalRule5773);
+                            pushFollow(FollowSets000.FOLLOW_ruleReturnsClause_in_ruleTerminalRule5703);
                             ruleReturnsClause();
 
                             state._fsp--;
@@ -5958,20 +5813,20 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			markLeaf(elementTypeProvider.getTerminalRule_ColonKeyword_2ElementType());
             		
-            otherlv_5=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleTerminalRule5806); 
+            otherlv_5=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleTerminalRule5736); 
 
             			doneLeaf(otherlv_5);
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1957:3: ( (lv_alternatives_6_0= ruleTerminalAlternatives ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1958:4: (lv_alternatives_6_0= ruleTerminalAlternatives )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1932:3: ( (lv_alternatives_6_0= ruleTerminalAlternatives ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1933:4: (lv_alternatives_6_0= ruleTerminalAlternatives )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1958:4: (lv_alternatives_6_0= ruleTerminalAlternatives )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1959:5: lv_alternatives_6_0= ruleTerminalAlternatives
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1933:4: (lv_alternatives_6_0= ruleTerminalAlternatives )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1934:5: lv_alternatives_6_0= ruleTerminalAlternatives
             {
 
             					markComposite(elementTypeProvider.getTerminalRule_AlternativesTerminalAlternativesParserRuleCall_3_0ElementType());
             				
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalAlternatives_in_ruleTerminalRule5833);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalAlternatives_in_ruleTerminalRule5763);
             ruleTerminalAlternatives();
 
             state._fsp--;
@@ -5988,7 +5843,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			markLeaf(elementTypeProvider.getTerminalRule_SemicolonKeyword_4ElementType());
             		
-            otherlv_7=(Token)match(input,24,FollowSets000.FOLLOW_24_in_ruleTerminalRule5858); 
+            otherlv_7=(Token)match(input,24,FollowSets000.FOLLOW_24_in_ruleTerminalRule5788); 
 
             			doneLeaf(otherlv_7);
             		
@@ -6011,19 +5866,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleTerminalAlternatives"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1979:1: entryRuleTerminalAlternatives : ruleTerminalAlternatives EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1954:1: entryRuleTerminalAlternatives : ruleTerminalAlternatives EOF ;
     public final void entryRuleTerminalAlternatives() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1979:30: ( ruleTerminalAlternatives EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1980:2: ruleTerminalAlternatives EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1954:30: ( ruleTerminalAlternatives EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1955:2: ruleTerminalAlternatives EOF
             {
              markComposite(elementTypeProvider.getTerminalAlternativesElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalAlternatives_in_entryRuleTerminalAlternatives5878);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalAlternatives_in_entryRuleTerminalAlternatives5808);
             ruleTerminalAlternatives();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTerminalAlternatives5881); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTerminalAlternatives5811); 
 
             }
 
@@ -6040,21 +5895,21 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleTerminalAlternatives"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1985:1: ruleTerminalAlternatives : ( ruleTerminalGroup ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+ )? ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1960:1: ruleTerminalAlternatives : ( ruleTerminalGroup ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+ )? ) ;
     public final void ruleTerminalAlternatives() throws RecognitionException {
         Token otherlv_2=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1985:25: ( ( ruleTerminalGroup ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+ )? ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1986:2: ( ruleTerminalGroup ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+ )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1960:25: ( ( ruleTerminalGroup ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+ )? ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1961:2: ( ruleTerminalGroup ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+ )? )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1986:2: ( ruleTerminalGroup ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+ )? )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1987:3: ruleTerminalGroup ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+ )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1961:2: ( ruleTerminalGroup ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+ )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1962:3: ruleTerminalGroup ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+ )?
             {
 
             			markComposite(elementTypeProvider.getTerminalAlternatives_TerminalGroupParserRuleCall_0ElementType());
             		
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalGroup_in_ruleTerminalAlternatives5898);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalGroup_in_ruleTerminalAlternatives5828);
             ruleTerminalGroup();
 
             state._fsp--;
@@ -6062,7 +5917,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			doneComposite();
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1994:3: ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+ )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1969:3: ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+ )?
             int alt53=2;
             int LA53_0 = input.LA(1);
 
@@ -6071,10 +5926,10 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt53) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1995:4: () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1970:4: () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1995:4: ()
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1996:5: 
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1970:4: ()
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1971:5: 
                     {
 
                     					precedeComposite(elementTypeProvider.getTerminalAlternatives_AlternativesElementsAction_1_0ElementType());
@@ -6083,7 +5938,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                     }
 
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2001:4: (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1976:4: (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+
                     int cnt52=0;
                     loop52:
                     do {
@@ -6097,25 +5952,25 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                         switch (alt52) {
                     	case 1 :
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2002:5: otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1977:5: otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) )
                     	    {
 
                     	    					markLeaf(elementTypeProvider.getTerminalAlternatives_VerticalLineKeyword_1_1_0ElementType());
                     	    				
-                    	    otherlv_2=(Token)match(input,29,FollowSets000.FOLLOW_29_in_ruleTerminalAlternatives5941); 
+                    	    otherlv_2=(Token)match(input,29,FollowSets000.FOLLOW_29_in_ruleTerminalAlternatives5871); 
 
                     	    					doneLeaf(otherlv_2);
                     	    				
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2009:5: ( (lv_elements_3_0= ruleTerminalGroup ) )
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2010:6: (lv_elements_3_0= ruleTerminalGroup )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1984:5: ( (lv_elements_3_0= ruleTerminalGroup ) )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1985:6: (lv_elements_3_0= ruleTerminalGroup )
                     	    {
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2010:6: (lv_elements_3_0= ruleTerminalGroup )
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2011:7: lv_elements_3_0= ruleTerminalGroup
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1985:6: (lv_elements_3_0= ruleTerminalGroup )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:1986:7: lv_elements_3_0= ruleTerminalGroup
                     	    {
 
                     	    							markComposite(elementTypeProvider.getTerminalAlternatives_ElementsTerminalGroupParserRuleCall_1_1_1_0ElementType());
                     	    						
-                    	    pushFollow(FollowSets000.FOLLOW_ruleTerminalGroup_in_ruleTerminalAlternatives5978);
+                    	    pushFollow(FollowSets000.FOLLOW_ruleTerminalGroup_in_ruleTerminalAlternatives5908);
                     	    ruleTerminalGroup();
 
                     	    state._fsp--;
@@ -6167,19 +6022,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleTerminalGroup"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2026:1: entryRuleTerminalGroup : ruleTerminalGroup EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2001:1: entryRuleTerminalGroup : ruleTerminalGroup EOF ;
     public final void entryRuleTerminalGroup() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2026:23: ( ruleTerminalGroup EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2027:2: ruleTerminalGroup EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2001:23: ( ruleTerminalGroup EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2002:2: ruleTerminalGroup EOF
             {
              markComposite(elementTypeProvider.getTerminalGroupElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalGroup_in_entryRuleTerminalGroup6026);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalGroup_in_entryRuleTerminalGroup5956);
             ruleTerminalGroup();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTerminalGroup6029); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTerminalGroup5959); 
 
             }
 
@@ -6196,19 +6051,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleTerminalGroup"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2032:1: ruleTerminalGroup : ( ruleTerminalToken ( () ( (lv_elements_2_0= ruleTerminalToken ) )+ )? ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2007:1: ruleTerminalGroup : ( ruleTerminalToken ( () ( (lv_elements_2_0= ruleTerminalToken ) )+ )? ) ;
     public final void ruleTerminalGroup() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2032:18: ( ( ruleTerminalToken ( () ( (lv_elements_2_0= ruleTerminalToken ) )+ )? ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2033:2: ( ruleTerminalToken ( () ( (lv_elements_2_0= ruleTerminalToken ) )+ )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2007:18: ( ( ruleTerminalToken ( () ( (lv_elements_2_0= ruleTerminalToken ) )+ )? ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2008:2: ( ruleTerminalToken ( () ( (lv_elements_2_0= ruleTerminalToken ) )+ )? )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2033:2: ( ruleTerminalToken ( () ( (lv_elements_2_0= ruleTerminalToken ) )+ )? )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2034:3: ruleTerminalToken ( () ( (lv_elements_2_0= ruleTerminalToken ) )+ )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2008:2: ( ruleTerminalToken ( () ( (lv_elements_2_0= ruleTerminalToken ) )+ )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2009:3: ruleTerminalToken ( () ( (lv_elements_2_0= ruleTerminalToken ) )+ )?
             {
 
             			markComposite(elementTypeProvider.getTerminalGroup_TerminalTokenParserRuleCall_0ElementType());
             		
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalToken_in_ruleTerminalGroup6046);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalToken_in_ruleTerminalGroup5976);
             ruleTerminalToken();
 
             state._fsp--;
@@ -6216,7 +6071,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			doneComposite();
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2041:3: ( () ( (lv_elements_2_0= ruleTerminalToken ) )+ )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2016:3: ( () ( (lv_elements_2_0= ruleTerminalToken ) )+ )?
             int alt55=2;
             int LA55_0 = input.LA(1);
 
@@ -6225,10 +6080,10 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt55) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2042:4: () ( (lv_elements_2_0= ruleTerminalToken ) )+
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2017:4: () ( (lv_elements_2_0= ruleTerminalToken ) )+
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2042:4: ()
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2043:5: 
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2017:4: ()
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2018:5: 
                     {
 
                     					precedeComposite(elementTypeProvider.getTerminalGroup_GroupElementsAction_1_0ElementType());
@@ -6237,7 +6092,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                     }
 
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2048:4: ( (lv_elements_2_0= ruleTerminalToken ) )+
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2023:4: ( (lv_elements_2_0= ruleTerminalToken ) )+
                     int cnt54=0;
                     loop54:
                     do {
@@ -6251,15 +6106,15 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                         switch (alt54) {
                     	case 1 :
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2049:5: (lv_elements_2_0= ruleTerminalToken )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2024:5: (lv_elements_2_0= ruleTerminalToken )
                     	    {
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2049:5: (lv_elements_2_0= ruleTerminalToken )
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2050:6: lv_elements_2_0= ruleTerminalToken
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2024:5: (lv_elements_2_0= ruleTerminalToken )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2025:6: lv_elements_2_0= ruleTerminalToken
                     	    {
 
                     	    						markComposite(elementTypeProvider.getTerminalGroup_ElementsTerminalTokenParserRuleCall_1_1_0ElementType());
                     	    					
-                    	    pushFollow(FollowSets000.FOLLOW_ruleTerminalToken_in_ruleTerminalGroup6097);
+                    	    pushFollow(FollowSets000.FOLLOW_ruleTerminalToken_in_ruleTerminalGroup6027);
                     	    ruleTerminalToken();
 
                     	    state._fsp--;
@@ -6308,19 +6163,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleTerminalToken"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2064:1: entryRuleTerminalToken : ruleTerminalToken EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2039:1: entryRuleTerminalToken : ruleTerminalToken EOF ;
     public final void entryRuleTerminalToken() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2064:23: ( ruleTerminalToken EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2065:2: ruleTerminalToken EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2039:23: ( ruleTerminalToken EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2040:2: ruleTerminalToken EOF
             {
              markComposite(elementTypeProvider.getTerminalTokenElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalToken_in_entryRuleTerminalToken6137);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalToken_in_entryRuleTerminalToken6067);
             ruleTerminalToken();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTerminalToken6140); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTerminalToken6070); 
 
             }
 
@@ -6337,19 +6192,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleTerminalToken"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2070:1: ruleTerminalToken : ( ruleTerminalTokenElement ( ruleCardinalities )? ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2045:1: ruleTerminalToken : ( ruleTerminalTokenElement ( ruleCardinalities )? ) ;
     public final void ruleTerminalToken() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2070:18: ( ( ruleTerminalTokenElement ( ruleCardinalities )? ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2071:2: ( ruleTerminalTokenElement ( ruleCardinalities )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2045:18: ( ( ruleTerminalTokenElement ( ruleCardinalities )? ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2046:2: ( ruleTerminalTokenElement ( ruleCardinalities )? )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2071:2: ( ruleTerminalTokenElement ( ruleCardinalities )? )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2072:3: ruleTerminalTokenElement ( ruleCardinalities )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2046:2: ( ruleTerminalTokenElement ( ruleCardinalities )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2047:3: ruleTerminalTokenElement ( ruleCardinalities )?
             {
 
             			markComposite(elementTypeProvider.getTerminalToken_TerminalTokenElementParserRuleCall_0ElementType());
             		
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalTokenElement_in_ruleTerminalToken6157);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalTokenElement_in_ruleTerminalToken6087);
             ruleTerminalTokenElement();
 
             state._fsp--;
@@ -6357,7 +6212,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			doneComposite();
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2079:3: ( ruleCardinalities )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2054:3: ( ruleCardinalities )?
             int alt56=2;
             int LA56_0 = input.LA(1);
 
@@ -6366,12 +6221,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt56) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2080:4: ruleCardinalities
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2055:4: ruleCardinalities
                     {
 
                     				markComposite(elementTypeProvider.getTerminalToken_CardinalitiesParserRuleCall_1ElementType());
                     			
-                    pushFollow(FollowSets000.FOLLOW_ruleCardinalities_in_ruleTerminalToken6175);
+                    pushFollow(FollowSets000.FOLLOW_ruleCardinalities_in_ruleTerminalToken6105);
                     ruleCardinalities();
 
                     state._fsp--;
@@ -6404,19 +6259,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleTerminalTokenElement"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2092:1: entryRuleTerminalTokenElement : ruleTerminalTokenElement EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2067:1: entryRuleTerminalTokenElement : ruleTerminalTokenElement EOF ;
     public final void entryRuleTerminalTokenElement() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2092:30: ( ruleTerminalTokenElement EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2093:2: ruleTerminalTokenElement EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2067:30: ( ruleTerminalTokenElement EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2068:2: ruleTerminalTokenElement EOF
             {
              markComposite(elementTypeProvider.getTerminalTokenElementElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalTokenElement_in_entryRuleTerminalTokenElement6201);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalTokenElement_in_entryRuleTerminalTokenElement6131);
             ruleTerminalTokenElement();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTerminalTokenElement6204); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTerminalTokenElement6134); 
 
             }
 
@@ -6433,13 +6288,13 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleTerminalTokenElement"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2098:1: ruleTerminalTokenElement : ( ruleCharacterRange | ruleTerminalRuleCall | ruleParenthesizedTerminalElement | ruleAbstractNegatedToken | ruleWildcard | ruleEOF ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2073:1: ruleTerminalTokenElement : ( ruleCharacterRange | ruleTerminalRuleCall | ruleParenthesizedTerminalElement | ruleAbstractNegatedToken | ruleWildcard | ruleEOF ) ;
     public final void ruleTerminalTokenElement() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2098:25: ( ( ruleCharacterRange | ruleTerminalRuleCall | ruleParenthesizedTerminalElement | ruleAbstractNegatedToken | ruleWildcard | ruleEOF ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2099:2: ( ruleCharacterRange | ruleTerminalRuleCall | ruleParenthesizedTerminalElement | ruleAbstractNegatedToken | ruleWildcard | ruleEOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2073:25: ( ( ruleCharacterRange | ruleTerminalRuleCall | ruleParenthesizedTerminalElement | ruleAbstractNegatedToken | ruleWildcard | ruleEOF ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2074:2: ( ruleCharacterRange | ruleTerminalRuleCall | ruleParenthesizedTerminalElement | ruleAbstractNegatedToken | ruleWildcard | ruleEOF )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2099:2: ( ruleCharacterRange | ruleTerminalRuleCall | ruleParenthesizedTerminalElement | ruleAbstractNegatedToken | ruleWildcard | ruleEOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2074:2: ( ruleCharacterRange | ruleTerminalRuleCall | ruleParenthesizedTerminalElement | ruleAbstractNegatedToken | ruleWildcard | ruleEOF )
             int alt57=6;
             switch ( input.LA(1) ) {
             case RULE_STRING:
@@ -6482,12 +6337,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             switch (alt57) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2100:3: ruleCharacterRange
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2075:3: ruleCharacterRange
                     {
 
                     			markComposite(elementTypeProvider.getTerminalTokenElement_CharacterRangeParserRuleCall_0ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleCharacterRange_in_ruleTerminalTokenElement6221);
+                    pushFollow(FollowSets000.FOLLOW_ruleCharacterRange_in_ruleTerminalTokenElement6151);
                     ruleCharacterRange();
 
                     state._fsp--;
@@ -6499,12 +6354,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2108:3: ruleTerminalRuleCall
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2083:3: ruleTerminalRuleCall
                     {
 
                     			markComposite(elementTypeProvider.getTerminalTokenElement_TerminalRuleCallParserRuleCall_1ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleTerminalRuleCall_in_ruleTerminalTokenElement6241);
+                    pushFollow(FollowSets000.FOLLOW_ruleTerminalRuleCall_in_ruleTerminalTokenElement6171);
                     ruleTerminalRuleCall();
 
                     state._fsp--;
@@ -6516,12 +6371,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 3 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2116:3: ruleParenthesizedTerminalElement
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2091:3: ruleParenthesizedTerminalElement
                     {
 
                     			markComposite(elementTypeProvider.getTerminalTokenElement_ParenthesizedTerminalElementParserRuleCall_2ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleParenthesizedTerminalElement_in_ruleTerminalTokenElement6261);
+                    pushFollow(FollowSets000.FOLLOW_ruleParenthesizedTerminalElement_in_ruleTerminalTokenElement6191);
                     ruleParenthesizedTerminalElement();
 
                     state._fsp--;
@@ -6533,12 +6388,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 4 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2124:3: ruleAbstractNegatedToken
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2099:3: ruleAbstractNegatedToken
                     {
 
                     			markComposite(elementTypeProvider.getTerminalTokenElement_AbstractNegatedTokenParserRuleCall_3ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleAbstractNegatedToken_in_ruleTerminalTokenElement6281);
+                    pushFollow(FollowSets000.FOLLOW_ruleAbstractNegatedToken_in_ruleTerminalTokenElement6211);
                     ruleAbstractNegatedToken();
 
                     state._fsp--;
@@ -6550,12 +6405,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 5 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2132:3: ruleWildcard
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2107:3: ruleWildcard
                     {
 
                     			markComposite(elementTypeProvider.getTerminalTokenElement_WildcardParserRuleCall_4ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleWildcard_in_ruleTerminalTokenElement6301);
+                    pushFollow(FollowSets000.FOLLOW_ruleWildcard_in_ruleTerminalTokenElement6231);
                     ruleWildcard();
 
                     state._fsp--;
@@ -6567,12 +6422,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 6 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2140:3: ruleEOF
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2115:3: ruleEOF
                     {
 
                     			markComposite(elementTypeProvider.getTerminalTokenElement_EOFParserRuleCall_5ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleEOF_in_ruleTerminalTokenElement6321);
+                    pushFollow(FollowSets000.FOLLOW_ruleEOF_in_ruleTerminalTokenElement6251);
                     ruleEOF();
 
                     state._fsp--;
@@ -6602,19 +6457,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleParenthesizedTerminalElement"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2151:1: entryRuleParenthesizedTerminalElement : ruleParenthesizedTerminalElement EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2126:1: entryRuleParenthesizedTerminalElement : ruleParenthesizedTerminalElement EOF ;
     public final void entryRuleParenthesizedTerminalElement() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2151:38: ( ruleParenthesizedTerminalElement EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2152:2: ruleParenthesizedTerminalElement EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2126:38: ( ruleParenthesizedTerminalElement EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2127:2: ruleParenthesizedTerminalElement EOF
             {
              markComposite(elementTypeProvider.getParenthesizedTerminalElementElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleParenthesizedTerminalElement_in_entryRuleParenthesizedTerminalElement6341);
+            pushFollow(FollowSets000.FOLLOW_ruleParenthesizedTerminalElement_in_entryRuleParenthesizedTerminalElement6271);
             ruleParenthesizedTerminalElement();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleParenthesizedTerminalElement6344); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleParenthesizedTerminalElement6274); 
 
             }
 
@@ -6631,29 +6486,29 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleParenthesizedTerminalElement"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2157:1: ruleParenthesizedTerminalElement : (otherlv_0= '(' ruleTerminalAlternatives otherlv_2= ')' ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2132:1: ruleParenthesizedTerminalElement : (otherlv_0= '(' ruleTerminalAlternatives otherlv_2= ')' ) ;
     public final void ruleParenthesizedTerminalElement() throws RecognitionException {
         Token otherlv_0=null;
         Token otherlv_2=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2157:33: ( (otherlv_0= '(' ruleTerminalAlternatives otherlv_2= ')' ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2158:2: (otherlv_0= '(' ruleTerminalAlternatives otherlv_2= ')' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2132:33: ( (otherlv_0= '(' ruleTerminalAlternatives otherlv_2= ')' ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2133:2: (otherlv_0= '(' ruleTerminalAlternatives otherlv_2= ')' )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2158:2: (otherlv_0= '(' ruleTerminalAlternatives otherlv_2= ')' )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2159:3: otherlv_0= '(' ruleTerminalAlternatives otherlv_2= ')'
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2133:2: (otherlv_0= '(' ruleTerminalAlternatives otherlv_2= ')' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2134:3: otherlv_0= '(' ruleTerminalAlternatives otherlv_2= ')'
             {
 
             			markLeaf(elementTypeProvider.getParenthesizedTerminalElement_LeftParenthesisKeyword_0ElementType());
             		
-            otherlv_0=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleParenthesizedTerminalElement6363); 
+            otherlv_0=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleParenthesizedTerminalElement6293); 
 
             			doneLeaf(otherlv_0);
             		
 
             			markComposite(elementTypeProvider.getParenthesizedTerminalElement_TerminalAlternativesParserRuleCall_1ElementType());
             		
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalAlternatives_in_ruleParenthesizedTerminalElement6375);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalAlternatives_in_ruleParenthesizedTerminalElement6305);
             ruleTerminalAlternatives();
 
             state._fsp--;
@@ -6664,7 +6519,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			markLeaf(elementTypeProvider.getParenthesizedTerminalElement_RightParenthesisKeyword_2ElementType());
             		
-            otherlv_2=(Token)match(input,16,FollowSets000.FOLLOW_16_in_ruleParenthesizedTerminalElement6389); 
+            otherlv_2=(Token)match(input,16,FollowSets000.FOLLOW_16_in_ruleParenthesizedTerminalElement6319); 
 
             			doneLeaf(otherlv_2);
             		
@@ -6687,19 +6542,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleAbstractNegatedToken"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2184:1: entryRuleAbstractNegatedToken : ruleAbstractNegatedToken EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2159:1: entryRuleAbstractNegatedToken : ruleAbstractNegatedToken EOF ;
     public final void entryRuleAbstractNegatedToken() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2184:30: ( ruleAbstractNegatedToken EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2185:2: ruleAbstractNegatedToken EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2159:30: ( ruleAbstractNegatedToken EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2160:2: ruleAbstractNegatedToken EOF
             {
              markComposite(elementTypeProvider.getAbstractNegatedTokenElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAbstractNegatedToken_in_entryRuleAbstractNegatedToken6409);
+            pushFollow(FollowSets000.FOLLOW_ruleAbstractNegatedToken_in_entryRuleAbstractNegatedToken6339);
             ruleAbstractNegatedToken();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAbstractNegatedToken6412); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAbstractNegatedToken6342); 
 
             }
 
@@ -6716,13 +6571,13 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleAbstractNegatedToken"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2190:1: ruleAbstractNegatedToken : ( ruleNegatedToken | ruleUntilToken ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2165:1: ruleAbstractNegatedToken : ( ruleNegatedToken | ruleUntilToken ) ;
     public final void ruleAbstractNegatedToken() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2190:25: ( ( ruleNegatedToken | ruleUntilToken ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2191:2: ( ruleNegatedToken | ruleUntilToken )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2165:25: ( ( ruleNegatedToken | ruleUntilToken ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2166:2: ( ruleNegatedToken | ruleUntilToken )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2191:2: ( ruleNegatedToken | ruleUntilToken )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2166:2: ( ruleNegatedToken | ruleUntilToken )
             int alt58=2;
             int LA58_0 = input.LA(1);
 
@@ -6740,12 +6595,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt58) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2192:3: ruleNegatedToken
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2167:3: ruleNegatedToken
                     {
 
                     			markComposite(elementTypeProvider.getAbstractNegatedToken_NegatedTokenParserRuleCall_0ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleNegatedToken_in_ruleAbstractNegatedToken6429);
+                    pushFollow(FollowSets000.FOLLOW_ruleNegatedToken_in_ruleAbstractNegatedToken6359);
                     ruleNegatedToken();
 
                     state._fsp--;
@@ -6757,12 +6612,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2200:3: ruleUntilToken
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2175:3: ruleUntilToken
                     {
 
                     			markComposite(elementTypeProvider.getAbstractNegatedToken_UntilTokenParserRuleCall_1ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleUntilToken_in_ruleAbstractNegatedToken6449);
+                    pushFollow(FollowSets000.FOLLOW_ruleUntilToken_in_ruleAbstractNegatedToken6379);
                     ruleUntilToken();
 
                     state._fsp--;
@@ -6792,19 +6647,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleNegatedToken"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2211:1: entryRuleNegatedToken : ruleNegatedToken EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2186:1: entryRuleNegatedToken : ruleNegatedToken EOF ;
     public final void entryRuleNegatedToken() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2211:22: ( ruleNegatedToken EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2212:2: ruleNegatedToken EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2186:22: ( ruleNegatedToken EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2187:2: ruleNegatedToken EOF
             {
              markComposite(elementTypeProvider.getNegatedTokenElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleNegatedToken_in_entryRuleNegatedToken6469);
+            pushFollow(FollowSets000.FOLLOW_ruleNegatedToken_in_entryRuleNegatedToken6399);
             ruleNegatedToken();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleNegatedToken6472); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleNegatedToken6402); 
 
             }
 
@@ -6821,34 +6676,34 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleNegatedToken"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2217:1: ruleNegatedToken : (otherlv_0= '!' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2192:1: ruleNegatedToken : (otherlv_0= '!' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) ) ;
     public final void ruleNegatedToken() throws RecognitionException {
         Token otherlv_0=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2217:17: ( (otherlv_0= '!' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2218:2: (otherlv_0= '!' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2192:17: ( (otherlv_0= '!' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2193:2: (otherlv_0= '!' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2218:2: (otherlv_0= '!' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2219:3: otherlv_0= '!' ( (lv_terminal_1_0= ruleTerminalTokenElement ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2193:2: (otherlv_0= '!' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2194:3: otherlv_0= '!' ( (lv_terminal_1_0= ruleTerminalTokenElement ) )
             {
 
             			markLeaf(elementTypeProvider.getNegatedToken_ExclamationMarkKeyword_0ElementType());
             		
-            otherlv_0=(Token)match(input,38,FollowSets000.FOLLOW_38_in_ruleNegatedToken6491); 
+            otherlv_0=(Token)match(input,38,FollowSets000.FOLLOW_38_in_ruleNegatedToken6421); 
 
             			doneLeaf(otherlv_0);
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2226:3: ( (lv_terminal_1_0= ruleTerminalTokenElement ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2227:4: (lv_terminal_1_0= ruleTerminalTokenElement )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2201:3: ( (lv_terminal_1_0= ruleTerminalTokenElement ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2202:4: (lv_terminal_1_0= ruleTerminalTokenElement )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2227:4: (lv_terminal_1_0= ruleTerminalTokenElement )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2228:5: lv_terminal_1_0= ruleTerminalTokenElement
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2202:4: (lv_terminal_1_0= ruleTerminalTokenElement )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2203:5: lv_terminal_1_0= ruleTerminalTokenElement
             {
 
             					markComposite(elementTypeProvider.getNegatedToken_TerminalTerminalTokenElementParserRuleCall_1_0ElementType());
             				
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalTokenElement_in_ruleNegatedToken6518);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalTokenElement_in_ruleNegatedToken6448);
             ruleTerminalTokenElement();
 
             state._fsp--;
@@ -6881,19 +6736,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleUntilToken"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2241:1: entryRuleUntilToken : ruleUntilToken EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2216:1: entryRuleUntilToken : ruleUntilToken EOF ;
     public final void entryRuleUntilToken() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2241:20: ( ruleUntilToken EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2242:2: ruleUntilToken EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2216:20: ( ruleUntilToken EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2217:2: ruleUntilToken EOF
             {
              markComposite(elementTypeProvider.getUntilTokenElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleUntilToken_in_entryRuleUntilToken6549);
+            pushFollow(FollowSets000.FOLLOW_ruleUntilToken_in_entryRuleUntilToken6479);
             ruleUntilToken();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleUntilToken6552); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleUntilToken6482); 
 
             }
 
@@ -6910,34 +6765,34 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleUntilToken"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2247:1: ruleUntilToken : (otherlv_0= '->' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2222:1: ruleUntilToken : (otherlv_0= '->' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) ) ;
     public final void ruleUntilToken() throws RecognitionException {
         Token otherlv_0=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2247:15: ( (otherlv_0= '->' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2248:2: (otherlv_0= '->' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2222:15: ( (otherlv_0= '->' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2223:2: (otherlv_0= '->' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2248:2: (otherlv_0= '->' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2249:3: otherlv_0= '->' ( (lv_terminal_1_0= ruleTerminalTokenElement ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2223:2: (otherlv_0= '->' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2224:3: otherlv_0= '->' ( (lv_terminal_1_0= ruleTerminalTokenElement ) )
             {
 
             			markLeaf(elementTypeProvider.getUntilToken_HyphenMinusGreaterThanSignKeyword_0ElementType());
             		
-            otherlv_0=(Token)match(input,41,FollowSets000.FOLLOW_41_in_ruleUntilToken6571); 
+            otherlv_0=(Token)match(input,41,FollowSets000.FOLLOW_41_in_ruleUntilToken6501); 
 
             			doneLeaf(otherlv_0);
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2256:3: ( (lv_terminal_1_0= ruleTerminalTokenElement ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2257:4: (lv_terminal_1_0= ruleTerminalTokenElement )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2231:3: ( (lv_terminal_1_0= ruleTerminalTokenElement ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2232:4: (lv_terminal_1_0= ruleTerminalTokenElement )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2257:4: (lv_terminal_1_0= ruleTerminalTokenElement )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2258:5: lv_terminal_1_0= ruleTerminalTokenElement
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2232:4: (lv_terminal_1_0= ruleTerminalTokenElement )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2233:5: lv_terminal_1_0= ruleTerminalTokenElement
             {
 
             					markComposite(elementTypeProvider.getUntilToken_TerminalTerminalTokenElementParserRuleCall_1_0ElementType());
             				
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalTokenElement_in_ruleUntilToken6598);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalTokenElement_in_ruleUntilToken6528);
             ruleTerminalTokenElement();
 
             state._fsp--;
@@ -6970,19 +6825,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleWildcard"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2271:1: entryRuleWildcard : ruleWildcard EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2246:1: entryRuleWildcard : ruleWildcard EOF ;
     public final void entryRuleWildcard() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2271:18: ( ruleWildcard EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2272:2: ruleWildcard EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2246:18: ( ruleWildcard EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2247:2: ruleWildcard EOF
             {
              markComposite(elementTypeProvider.getWildcardElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleWildcard_in_entryRuleWildcard6629);
+            pushFollow(FollowSets000.FOLLOW_ruleWildcard_in_entryRuleWildcard6559);
             ruleWildcard();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleWildcard6632); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleWildcard6562); 
 
             }
 
@@ -6999,19 +6854,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleWildcard"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2277:1: ruleWildcard : ( () otherlv_1= '.' ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2252:1: ruleWildcard : ( () otherlv_1= '.' ) ;
     public final void ruleWildcard() throws RecognitionException {
         Token otherlv_1=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2277:13: ( ( () otherlv_1= '.' ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2278:2: ( () otherlv_1= '.' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2252:13: ( ( () otherlv_1= '.' ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2253:2: ( () otherlv_1= '.' )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2278:2: ( () otherlv_1= '.' )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2279:3: () otherlv_1= '.'
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2253:2: ( () otherlv_1= '.' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2254:3: () otherlv_1= '.'
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2279:3: ()
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2280:4: 
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2254:3: ()
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2255:4: 
             {
 
             				precedeComposite(elementTypeProvider.getWildcard_WildcardAction_0ElementType());
@@ -7023,7 +6878,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			markLeaf(elementTypeProvider.getWildcard_FullStopKeyword_1ElementType());
             		
-            otherlv_1=(Token)match(input,17,FollowSets000.FOLLOW_17_in_ruleWildcard6664); 
+            otherlv_1=(Token)match(input,17,FollowSets000.FOLLOW_17_in_ruleWildcard6594); 
 
             			doneLeaf(otherlv_1);
             		
@@ -7046,19 +6901,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleEOF"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2296:1: entryRuleEOF : ruleEOF EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2271:1: entryRuleEOF : ruleEOF EOF ;
     public final void entryRuleEOF() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2296:13: ( ruleEOF EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2297:2: ruleEOF EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2271:13: ( ruleEOF EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2272:2: ruleEOF EOF
             {
              markComposite(elementTypeProvider.getEOFElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEOF_in_entryRuleEOF6684);
+            pushFollow(FollowSets000.FOLLOW_ruleEOF_in_entryRuleEOF6614);
             ruleEOF();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEOF6687); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEOF6617); 
 
             }
 
@@ -7075,19 +6930,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleEOF"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2302:1: ruleEOF : ( () otherlv_1= 'EOF' ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2277:1: ruleEOF : ( () otherlv_1= 'EOF' ) ;
     public final void ruleEOF() throws RecognitionException {
         Token otherlv_1=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2302:8: ( ( () otherlv_1= 'EOF' ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2303:2: ( () otherlv_1= 'EOF' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2277:8: ( ( () otherlv_1= 'EOF' ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2278:2: ( () otherlv_1= 'EOF' )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2303:2: ( () otherlv_1= 'EOF' )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2304:3: () otherlv_1= 'EOF'
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2278:2: ( () otherlv_1= 'EOF' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2279:3: () otherlv_1= 'EOF'
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2304:3: ()
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2305:4: 
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2279:3: ()
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2280:4: 
             {
 
             				precedeComposite(elementTypeProvider.getEOF_EOFAction_0ElementType());
@@ -7099,7 +6954,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			markLeaf(elementTypeProvider.getEOF_EOFKeyword_1ElementType());
             		
-            otherlv_1=(Token)match(input,43,FollowSets000.FOLLOW_43_in_ruleEOF6719); 
+            otherlv_1=(Token)match(input,43,FollowSets000.FOLLOW_43_in_ruleEOF6649); 
 
             			doneLeaf(otherlv_1);
             		
@@ -7122,19 +6977,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleCharacterRange"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2321:1: entryRuleCharacterRange : ruleCharacterRange EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2296:1: entryRuleCharacterRange : ruleCharacterRange EOF ;
     public final void entryRuleCharacterRange() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2321:24: ( ruleCharacterRange EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2322:2: ruleCharacterRange EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2296:24: ( ruleCharacterRange EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2297:2: ruleCharacterRange EOF
             {
              markComposite(elementTypeProvider.getCharacterRangeElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleCharacterRange_in_entryRuleCharacterRange6739);
+            pushFollow(FollowSets000.FOLLOW_ruleCharacterRange_in_entryRuleCharacterRange6669);
             ruleCharacterRange();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleCharacterRange6742); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleCharacterRange6672); 
 
             }
 
@@ -7151,21 +7006,21 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleCharacterRange"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2327:1: ruleCharacterRange : ( ruleKeyword ( () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) ) )? ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2302:1: ruleCharacterRange : ( ruleKeyword ( () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) ) )? ) ;
     public final void ruleCharacterRange() throws RecognitionException {
         Token otherlv_2=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2327:19: ( ( ruleKeyword ( () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) ) )? ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2328:2: ( ruleKeyword ( () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) ) )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2302:19: ( ( ruleKeyword ( () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) ) )? ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2303:2: ( ruleKeyword ( () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) ) )? )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2328:2: ( ruleKeyword ( () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) ) )? )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2329:3: ruleKeyword ( () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) ) )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2303:2: ( ruleKeyword ( () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) ) )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2304:3: ruleKeyword ( () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) ) )?
             {
 
             			markComposite(elementTypeProvider.getCharacterRange_KeywordParserRuleCall_0ElementType());
             		
-            pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_ruleCharacterRange6759);
+            pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_ruleCharacterRange6689);
             ruleKeyword();
 
             state._fsp--;
@@ -7173,7 +7028,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			doneComposite();
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2336:3: ( () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) ) )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2311:3: ( () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) ) )?
             int alt59=2;
             int LA59_0 = input.LA(1);
 
@@ -7182,10 +7037,10 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt59) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2337:4: () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2312:4: () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2337:4: ()
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2338:5: 
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2312:4: ()
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2313:5: 
                     {
 
                     					precedeComposite(elementTypeProvider.getCharacterRange_CharacterRangeLeftAction_1_0ElementType());
@@ -7197,20 +7052,20 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                     				markLeaf(elementTypeProvider.getCharacterRange_FullStopFullStopKeyword_1_1ElementType());
                     			
-                    otherlv_2=(Token)match(input,44,FollowSets000.FOLLOW_44_in_ruleCharacterRange6795); 
+                    otherlv_2=(Token)match(input,44,FollowSets000.FOLLOW_44_in_ruleCharacterRange6725); 
 
                     				doneLeaf(otherlv_2);
                     			
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2350:4: ( (lv_right_3_0= ruleKeyword ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2351:5: (lv_right_3_0= ruleKeyword )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2325:4: ( (lv_right_3_0= ruleKeyword ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2326:5: (lv_right_3_0= ruleKeyword )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2351:5: (lv_right_3_0= ruleKeyword )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2352:6: lv_right_3_0= ruleKeyword
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2326:5: (lv_right_3_0= ruleKeyword )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2327:6: lv_right_3_0= ruleKeyword
                     {
 
                     						markComposite(elementTypeProvider.getCharacterRange_RightKeywordParserRuleCall_1_2_0ElementType());
                     					
-                    pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_ruleCharacterRange6827);
+                    pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_ruleCharacterRange6757);
                     ruleKeyword();
 
                     state._fsp--;
@@ -7249,19 +7104,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleEnumRule"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2366:1: entryRuleEnumRule : ruleEnumRule EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2341:1: entryRuleEnumRule : ruleEnumRule EOF ;
     public final void entryRuleEnumRule() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2366:18: ( ruleEnumRule EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2367:2: ruleEnumRule EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2341:18: ( ruleEnumRule EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2342:2: ruleEnumRule EOF
             {
              markComposite(elementTypeProvider.getEnumRuleElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEnumRule_in_entryRuleEnumRule6866);
+            pushFollow(FollowSets000.FOLLOW_ruleEnumRule_in_entryRuleEnumRule6796);
             ruleEnumRule();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEnumRule6869); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEnumRule6799); 
 
             }
 
@@ -7278,7 +7133,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleEnumRule"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2372:1: ruleEnumRule : (otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) ( ruleReturnsClause )? otherlv_3= ':' ( (lv_alternatives_4_0= ruleEnumLiterals ) ) otherlv_5= ';' ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2347:1: ruleEnumRule : (otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) ( ruleReturnsClause )? otherlv_3= ':' ( (lv_alternatives_4_0= ruleEnumLiterals ) ) otherlv_5= ';' ) ;
     public final void ruleEnumRule() throws RecognitionException {
         Token otherlv_0=null;
         Token lv_name_1_0=null;
@@ -7286,29 +7141,29 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
         Token otherlv_5=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2372:13: ( (otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) ( ruleReturnsClause )? otherlv_3= ':' ( (lv_alternatives_4_0= ruleEnumLiterals ) ) otherlv_5= ';' ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2373:2: (otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) ( ruleReturnsClause )? otherlv_3= ':' ( (lv_alternatives_4_0= ruleEnumLiterals ) ) otherlv_5= ';' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2347:13: ( (otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) ( ruleReturnsClause )? otherlv_3= ':' ( (lv_alternatives_4_0= ruleEnumLiterals ) ) otherlv_5= ';' ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2348:2: (otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) ( ruleReturnsClause )? otherlv_3= ':' ( (lv_alternatives_4_0= ruleEnumLiterals ) ) otherlv_5= ';' )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2373:2: (otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) ( ruleReturnsClause )? otherlv_3= ':' ( (lv_alternatives_4_0= ruleEnumLiterals ) ) otherlv_5= ';' )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2374:3: otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) ( ruleReturnsClause )? otherlv_3= ':' ( (lv_alternatives_4_0= ruleEnumLiterals ) ) otherlv_5= ';'
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2348:2: (otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) ( ruleReturnsClause )? otherlv_3= ':' ( (lv_alternatives_4_0= ruleEnumLiterals ) ) otherlv_5= ';' )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2349:3: otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) ( ruleReturnsClause )? otherlv_3= ':' ( (lv_alternatives_4_0= ruleEnumLiterals ) ) otherlv_5= ';'
             {
 
             			markLeaf(elementTypeProvider.getEnumRule_EnumKeyword_0ElementType());
             		
-            otherlv_0=(Token)match(input,45,FollowSets000.FOLLOW_45_in_ruleEnumRule6888); 
+            otherlv_0=(Token)match(input,45,FollowSets000.FOLLOW_45_in_ruleEnumRule6818); 
 
             			doneLeaf(otherlv_0);
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2381:3: ( (lv_name_1_0= RULE_ID ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2382:4: (lv_name_1_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2356:3: ( (lv_name_1_0= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2357:4: (lv_name_1_0= RULE_ID )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2382:4: (lv_name_1_0= RULE_ID )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2383:5: lv_name_1_0= RULE_ID
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2357:4: (lv_name_1_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2358:5: lv_name_1_0= RULE_ID
             {
 
             					markLeaf(elementTypeProvider.getEnumRule_NameIDTerminalRuleCall_1_0ElementType());
             				
-            lv_name_1_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleEnumRule6915); 
+            lv_name_1_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleEnumRule6845); 
 
             					doneLeaf(lv_name_1_0);
             				
@@ -7318,7 +7173,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             }
 
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2392:3: ( ruleReturnsClause )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2367:3: ( ruleReturnsClause )?
             int alt60=2;
             int LA60_0 = input.LA(1);
 
@@ -7327,12 +7182,12 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt60) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2393:4: ruleReturnsClause
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2368:4: ruleReturnsClause
                     {
 
                     				markComposite(elementTypeProvider.getEnumRule_ReturnsClauseParserRuleCall_2ElementType());
                     			
-                    pushFollow(FollowSets000.FOLLOW_ruleReturnsClause_in_ruleEnumRule6944);
+                    pushFollow(FollowSets000.FOLLOW_ruleReturnsClause_in_ruleEnumRule6874);
                     ruleReturnsClause();
 
                     state._fsp--;
@@ -7349,20 +7204,20 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			markLeaf(elementTypeProvider.getEnumRule_ColonKeyword_3ElementType());
             		
-            otherlv_3=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleEnumRule6964); 
+            otherlv_3=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleEnumRule6894); 
 
             			doneLeaf(otherlv_3);
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2408:3: ( (lv_alternatives_4_0= ruleEnumLiterals ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2409:4: (lv_alternatives_4_0= ruleEnumLiterals )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2383:3: ( (lv_alternatives_4_0= ruleEnumLiterals ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2384:4: (lv_alternatives_4_0= ruleEnumLiterals )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2409:4: (lv_alternatives_4_0= ruleEnumLiterals )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2410:5: lv_alternatives_4_0= ruleEnumLiterals
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2384:4: (lv_alternatives_4_0= ruleEnumLiterals )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2385:5: lv_alternatives_4_0= ruleEnumLiterals
             {
 
             					markComposite(elementTypeProvider.getEnumRule_AlternativesEnumLiteralsParserRuleCall_4_0ElementType());
             				
-            pushFollow(FollowSets000.FOLLOW_ruleEnumLiterals_in_ruleEnumRule6991);
+            pushFollow(FollowSets000.FOLLOW_ruleEnumLiterals_in_ruleEnumRule6921);
             ruleEnumLiterals();
 
             state._fsp--;
@@ -7379,7 +7234,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			markLeaf(elementTypeProvider.getEnumRule_SemicolonKeyword_5ElementType());
             		
-            otherlv_5=(Token)match(input,24,FollowSets000.FOLLOW_24_in_ruleEnumRule7016); 
+            otherlv_5=(Token)match(input,24,FollowSets000.FOLLOW_24_in_ruleEnumRule6946); 
 
             			doneLeaf(otherlv_5);
             		
@@ -7402,19 +7257,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleEnumLiterals"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2430:1: entryRuleEnumLiterals : ruleEnumLiterals EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2405:1: entryRuleEnumLiterals : ruleEnumLiterals EOF ;
     public final void entryRuleEnumLiterals() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2430:22: ( ruleEnumLiterals EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2431:2: ruleEnumLiterals EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2405:22: ( ruleEnumLiterals EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2406:2: ruleEnumLiterals EOF
             {
              markComposite(elementTypeProvider.getEnumLiteralsElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEnumLiterals_in_entryRuleEnumLiterals7036);
+            pushFollow(FollowSets000.FOLLOW_ruleEnumLiterals_in_entryRuleEnumLiterals6966);
             ruleEnumLiterals();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEnumLiterals7039); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEnumLiterals6969); 
 
             }
 
@@ -7431,21 +7286,21 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleEnumLiterals"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2436:1: ruleEnumLiterals : ( ruleEnumLiteralDeclaration ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+ )? ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2411:1: ruleEnumLiterals : ( ruleEnumLiteralDeclaration ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+ )? ) ;
     public final void ruleEnumLiterals() throws RecognitionException {
         Token otherlv_2=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2436:17: ( ( ruleEnumLiteralDeclaration ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+ )? ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2437:2: ( ruleEnumLiteralDeclaration ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+ )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2411:17: ( ( ruleEnumLiteralDeclaration ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+ )? ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2412:2: ( ruleEnumLiteralDeclaration ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+ )? )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2437:2: ( ruleEnumLiteralDeclaration ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+ )? )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2438:3: ruleEnumLiteralDeclaration ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+ )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2412:2: ( ruleEnumLiteralDeclaration ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+ )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2413:3: ruleEnumLiteralDeclaration ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+ )?
             {
 
             			markComposite(elementTypeProvider.getEnumLiterals_EnumLiteralDeclarationParserRuleCall_0ElementType());
             		
-            pushFollow(FollowSets000.FOLLOW_ruleEnumLiteralDeclaration_in_ruleEnumLiterals7056);
+            pushFollow(FollowSets000.FOLLOW_ruleEnumLiteralDeclaration_in_ruleEnumLiterals6986);
             ruleEnumLiteralDeclaration();
 
             state._fsp--;
@@ -7453,7 +7308,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             			doneComposite();
             		
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2445:3: ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+ )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2420:3: ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+ )?
             int alt62=2;
             int LA62_0 = input.LA(1);
 
@@ -7462,10 +7317,10 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt62) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2446:4: () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2421:4: () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2446:4: ()
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2447:5: 
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2421:4: ()
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2422:5: 
                     {
 
                     					precedeComposite(elementTypeProvider.getEnumLiterals_AlternativesElementsAction_1_0ElementType());
@@ -7474,7 +7329,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                     }
 
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2452:4: (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2427:4: (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+
                     int cnt61=0;
                     loop61:
                     do {
@@ -7488,25 +7343,25 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
                         switch (alt61) {
                     	case 1 :
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2453:5: otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2428:5: otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) )
                     	    {
 
                     	    					markLeaf(elementTypeProvider.getEnumLiterals_VerticalLineKeyword_1_1_0ElementType());
                     	    				
-                    	    otherlv_2=(Token)match(input,29,FollowSets000.FOLLOW_29_in_ruleEnumLiterals7099); 
+                    	    otherlv_2=(Token)match(input,29,FollowSets000.FOLLOW_29_in_ruleEnumLiterals7029); 
 
                     	    					doneLeaf(otherlv_2);
                     	    				
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2460:5: ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) )
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2461:6: (lv_elements_3_0= ruleEnumLiteralDeclaration )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2435:5: ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2436:6: (lv_elements_3_0= ruleEnumLiteralDeclaration )
                     	    {
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2461:6: (lv_elements_3_0= ruleEnumLiteralDeclaration )
-                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2462:7: lv_elements_3_0= ruleEnumLiteralDeclaration
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2436:6: (lv_elements_3_0= ruleEnumLiteralDeclaration )
+                    	    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2437:7: lv_elements_3_0= ruleEnumLiteralDeclaration
                     	    {
 
                     	    							markComposite(elementTypeProvider.getEnumLiterals_ElementsEnumLiteralDeclarationParserRuleCall_1_1_1_0ElementType());
                     	    						
-                    	    pushFollow(FollowSets000.FOLLOW_ruleEnumLiteralDeclaration_in_ruleEnumLiterals7136);
+                    	    pushFollow(FollowSets000.FOLLOW_ruleEnumLiteralDeclaration_in_ruleEnumLiterals7066);
                     	    ruleEnumLiteralDeclaration();
 
                     	    state._fsp--;
@@ -7558,19 +7413,19 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "entryRuleEnumLiteralDeclaration"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2477:1: entryRuleEnumLiteralDeclaration : ruleEnumLiteralDeclaration EOF ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2452:1: entryRuleEnumLiteralDeclaration : ruleEnumLiteralDeclaration EOF ;
     public final void entryRuleEnumLiteralDeclaration() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2477:32: ( ruleEnumLiteralDeclaration EOF )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2478:2: ruleEnumLiteralDeclaration EOF
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2452:32: ( ruleEnumLiteralDeclaration EOF )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2453:2: ruleEnumLiteralDeclaration EOF
             {
              markComposite(elementTypeProvider.getEnumLiteralDeclarationElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEnumLiteralDeclaration_in_entryRuleEnumLiteralDeclaration7184);
+            pushFollow(FollowSets000.FOLLOW_ruleEnumLiteralDeclaration_in_entryRuleEnumLiteralDeclaration7114);
             ruleEnumLiteralDeclaration();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEnumLiteralDeclaration7187); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEnumLiteralDeclaration7117); 
 
             }
 
@@ -7587,28 +7442,28 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
 
     // $ANTLR start "ruleEnumLiteralDeclaration"
-    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2483:1: ruleEnumLiteralDeclaration : ( ( (otherlv_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) ) )? ) ;
+    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2458:1: ruleEnumLiteralDeclaration : ( ( (otherlv_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) ) )? ) ;
     public final void ruleEnumLiteralDeclaration() throws RecognitionException {
         Token otherlv_0=null;
         Token otherlv_1=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2483:27: ( ( ( (otherlv_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) ) )? ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2484:2: ( ( (otherlv_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) ) )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2458:27: ( ( ( (otherlv_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) ) )? ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2459:2: ( ( (otherlv_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) ) )? )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2484:2: ( ( (otherlv_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) ) )? )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2485:3: ( (otherlv_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) ) )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2459:2: ( ( (otherlv_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) ) )? )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2460:3: ( (otherlv_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) ) )?
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2485:3: ( (otherlv_0= RULE_ID ) )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2486:4: (otherlv_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2460:3: ( (otherlv_0= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2461:4: (otherlv_0= RULE_ID )
             {
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2486:4: (otherlv_0= RULE_ID )
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2487:5: otherlv_0= RULE_ID
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2461:4: (otherlv_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2462:5: otherlv_0= RULE_ID
             {
 
             					markLeaf(elementTypeProvider.getEnumLiteralDeclaration_EnumLiteralEEnumLiteralCrossReference_0_0ElementType());
             				
-            otherlv_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleEnumLiteralDeclaration7219); 
+            otherlv_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleEnumLiteralDeclaration7149); 
 
             					doneLeaf(otherlv_0);
             				
@@ -7618,7 +7473,7 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
 
             }
 
-            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2496:3: (otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) ) )?
+            // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2471:3: (otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) ) )?
             int alt63=2;
             int LA63_0 = input.LA(1);
 
@@ -7627,25 +7482,25 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
             }
             switch (alt63) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2497:4: otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2472:4: otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) )
                     {
 
                     				markLeaf(elementTypeProvider.getEnumLiteralDeclaration_EqualsSignKeyword_1_0ElementType());
                     			
-                    otherlv_1=(Token)match(input,34,FollowSets000.FOLLOW_34_in_ruleEnumLiteralDeclaration7250); 
+                    otherlv_1=(Token)match(input,34,FollowSets000.FOLLOW_34_in_ruleEnumLiteralDeclaration7180); 
 
                     				doneLeaf(otherlv_1);
                     			
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2504:4: ( (lv_literal_2_0= ruleKeyword ) )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2505:5: (lv_literal_2_0= ruleKeyword )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2479:4: ( (lv_literal_2_0= ruleKeyword ) )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2480:5: (lv_literal_2_0= ruleKeyword )
                     {
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2505:5: (lv_literal_2_0= ruleKeyword )
-                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2506:6: lv_literal_2_0= ruleKeyword
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2480:5: (lv_literal_2_0= ruleKeyword )
+                    // ../../intellij/org.eclipse.xtext.core.idea.tests/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtextGrammarTestLanguage.g:2481:6: lv_literal_2_0= ruleKeyword
                     {
 
                     						markComposite(elementTypeProvider.getEnumLiteralDeclaration_LiteralKeywordParserRuleCall_1_1_0ElementType());
                     					
-                    pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_ruleEnumLiteralDeclaration7282);
+                    pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_ruleEnumLiteralDeclaration7212);
                     ruleKeyword();
 
                     state._fsp--;
@@ -7700,295 +7555,285 @@ public class PsiInternalXtextGrammarTestLanguageParser extends AbstractPsiAntlrP
         public static final BitSet FOLLOW_ruleHiddenClause_in_ruleGrammar282 = new BitSet(new long[]{0x0000240000345010L});
         public static final BitSet FOLLOW_ruleAbstractMetamodelDeclaration_in_ruleGrammar315 = new BitSet(new long[]{0x0000240000345010L});
         public static final BitSet FOLLOW_ruleAbstractRule_in_ruleGrammar354 = new BitSet(new long[]{0x0000240000345012L});
-        public static final BitSet FOLLOW_ruleHiddenClause_in_entryRuleHiddenClause386 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleHiddenClause389 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_ruleHiddenClause421 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_15_in_ruleHiddenClause446 = new BitSet(new long[]{0x0000000000010010L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleHiddenClause481 = new BitSet(new long[]{0x0000000000012000L});
-        public static final BitSet FOLLOW_13_in_ruleHiddenClause518 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleHiddenClause555 = new BitSet(new long[]{0x0000000000012000L});
-        public static final BitSet FOLLOW_16_in_ruleHiddenClause597 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleGrammarID_in_entryRuleGrammarID617 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleGrammarID620 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleGrammarID639 = new BitSet(new long[]{0x0000000000020002L});
-        public static final BitSet FOLLOW_17_in_ruleGrammarID659 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleGrammarID676 = new BitSet(new long[]{0x0000000000020002L});
-        public static final BitSet FOLLOW_ruleAbstractRule_in_entryRuleAbstractRule702 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleAbstractRule705 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleParserRule_in_ruleAbstractRule722 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTerminalRule_in_ruleAbstractRule742 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEnumRule_in_ruleAbstractRule762 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAbstractMetamodelDeclaration_in_entryRuleAbstractMetamodelDeclaration782 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleAbstractMetamodelDeclaration785 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleGeneratedMetamodel_in_ruleAbstractMetamodelDeclaration802 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleReferencedMetamodel_in_ruleAbstractMetamodelDeclaration822 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleGeneratedMetamodel_in_entryRuleGeneratedMetamodel842 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleGeneratedMetamodel845 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_18_in_ruleGeneratedMetamodel864 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleGeneratedMetamodel891 = new BitSet(new long[]{0x0000000000000020L});
-        public static final BitSet FOLLOW_RULE_STRING_in_ruleGeneratedMetamodel929 = new BitSet(new long[]{0x0000000000080002L});
-        public static final BitSet FOLLOW_19_in_ruleGeneratedMetamodel960 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleGeneratedMetamodel992 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleReferencedMetamodel_in_entryRuleReferencedMetamodel1031 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleReferencedMetamodel1034 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_20_in_ruleReferencedMetamodel1053 = new BitSet(new long[]{0x0000000000000020L});
-        public static final BitSet FOLLOW_RULE_STRING_in_ruleReferencedMetamodel1080 = new BitSet(new long[]{0x0000000000080002L});
-        public static final BitSet FOLLOW_19_in_ruleReferencedMetamodel1111 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleReferencedMetamodel1143 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleParserRule_in_entryRuleParserRule1182 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleParserRule1185 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_21_in_ruleParserRule1234 = new BitSet(new long[]{0x0000000000200010L});
-        public static final BitSet FOLLOW_ruleRuleNameAndParams_in_ruleParserRule1267 = new BitSet(new long[]{0x0000000008C04000L});
-        public static final BitSet FOLLOW_22_in_ruleParserRule1314 = new BitSet(new long[]{0x0000000000804000L});
-        public static final BitSet FOLLOW_ruleReturnsClause_in_ruleParserRule1372 = new BitSet(new long[]{0x0000000000804000L});
-        public static final BitSet FOLLOW_ruleRuleNameAndParams_in_ruleParserRule1425 = new BitSet(new long[]{0x0000000008804000L});
-        public static final BitSet FOLLOW_ruleReturnsClause_in_ruleParserRule1451 = new BitSet(new long[]{0x0000000000804000L});
-        public static final BitSet FOLLOW_ruleHiddenClause_in_ruleParserRule1488 = new BitSet(new long[]{0x0000000000800000L});
-        public static final BitSet FOLLOW_23_in_ruleParserRule1508 = new BitSet(new long[]{0x0000030202008030L});
-        public static final BitSet FOLLOW_ruleAlternatives_in_ruleParserRule1535 = new BitSet(new long[]{0x0000000001000000L});
-        public static final BitSet FOLLOW_24_in_ruleParserRule1560 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleRuleNameAndParams_in_entryRuleRuleNameAndParams1580 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleRuleNameAndParams1583 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleRuleNameAndParams1615 = new BitSet(new long[]{0x0000000002000002L});
-        public static final BitSet FOLLOW_25_in_ruleRuleNameAndParams1646 = new BitSet(new long[]{0x0000000004000010L});
-        public static final BitSet FOLLOW_ruleParameter_in_ruleRuleNameAndParams1687 = new BitSet(new long[]{0x0000000004002000L});
-        public static final BitSet FOLLOW_13_in_ruleRuleNameAndParams1730 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_ruleParameter_in_ruleRuleNameAndParams1772 = new BitSet(new long[]{0x0000000004002000L});
-        public static final BitSet FOLLOW_26_in_ruleRuleNameAndParams1821 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleReturnsClause_in_entryRuleReturnsClause1847 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleReturnsClause1850 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_27_in_ruleReturnsClause1869 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_ruleTypeRef_in_ruleReturnsClause1896 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleParameter_in_entryRuleParameter1927 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleParameter1930 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleParameter1955 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTypeRef_in_entryRuleTypeRef1980 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleTypeRef1983 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleTypeRef2023 = new BitSet(new long[]{0x0000000010000000L});
-        public static final BitSet FOLLOW_28_in_ruleTypeRef2053 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleTypeRef2086 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAlternatives_in_entryRuleAlternatives2117 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleAlternatives2120 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleConditionalBranch_in_ruleAlternatives2137 = new BitSet(new long[]{0x0000000020000002L});
-        public static final BitSet FOLLOW_29_in_ruleAlternatives2180 = new BitSet(new long[]{0x0000030202008030L});
-        public static final BitSet FOLLOW_ruleConditionalBranch_in_ruleAlternatives2217 = new BitSet(new long[]{0x0000000020000002L});
-        public static final BitSet FOLLOW_ruleConditionalBranch_in_entryRuleConditionalBranch2265 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleConditionalBranch2268 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleUnorderedGroup_in_ruleConditionalBranch2285 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_25_in_ruleConditionalBranch2329 = new BitSet(new long[]{0x0000004100000000L});
-        public static final BitSet FOLLOW_ruleInverseLiteralValue_in_ruleConditionalBranch2361 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleConditionalBranch2406 = new BitSet(new long[]{0x0000000004000000L});
-        public static final BitSet FOLLOW_26_in_ruleConditionalBranch2436 = new BitSet(new long[]{0x0000030200008030L});
-        public static final BitSet FOLLOW_ruleUnorderedGroup_in_ruleConditionalBranch2468 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleUnorderedGroup_in_entryRuleUnorderedGroup2506 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleUnorderedGroup2509 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleGroup_in_ruleUnorderedGroup2526 = new BitSet(new long[]{0x0000000040000002L});
-        public static final BitSet FOLLOW_30_in_ruleUnorderedGroup2569 = new BitSet(new long[]{0x0000030200008030L});
-        public static final BitSet FOLLOW_ruleGroup_in_ruleUnorderedGroup2606 = new BitSet(new long[]{0x0000000040000002L});
-        public static final BitSet FOLLOW_ruleGroup_in_entryRuleGroup2654 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleGroup2657 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAbstractToken_in_ruleGroup2674 = new BitSet(new long[]{0x0000030200008032L});
-        public static final BitSet FOLLOW_ruleAbstractToken_in_ruleGroup2725 = new BitSet(new long[]{0x0000030200008032L});
-        public static final BitSet FOLLOW_ruleAbstractToken_in_entryRuleAbstractToken2765 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleAbstractToken2768 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAbstractTokenWithCardinality_in_ruleAbstractToken2785 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAction_in_ruleAbstractToken2805 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAbstractTokenWithCardinality_in_entryRuleAbstractTokenWithCardinality2825 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleAbstractTokenWithCardinality2828 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAssignment_in_ruleAbstractTokenWithCardinality2851 = new BitSet(new long[]{0x0000000180400002L});
-        public static final BitSet FOLLOW_ruleAbstractTerminal_in_ruleAbstractTokenWithCardinality2875 = new BitSet(new long[]{0x0000000180400002L});
-        public static final BitSet FOLLOW_ruleCardinalities_in_ruleAbstractTokenWithCardinality2898 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleCardinalities_in_entryRuleCardinalities2924 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleCardinalities2927 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_31_in_ruleCardinalities2959 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_22_in_ruleCardinalities2989 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_32_in_ruleCardinalities3019 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAction_in_entryRuleAction3050 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleAction3053 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_33_in_ruleAction3072 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_ruleTypeRef_in_ruleAction3099 = new BitSet(new long[]{0x0000002000020000L});
-        public static final BitSet FOLLOW_17_in_ruleAction3130 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleAction3162 = new BitSet(new long[]{0x0000000C00000000L});
-        public static final BitSet FOLLOW_34_in_ruleAction3216 = new BitSet(new long[]{0x0000001000000000L});
-        public static final BitSet FOLLOW_35_in_ruleAction3254 = new BitSet(new long[]{0x0000001000000000L});
-        public static final BitSet FOLLOW_36_in_ruleAction3292 = new BitSet(new long[]{0x0000002000000000L});
-        public static final BitSet FOLLOW_37_in_ruleAction3312 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAbstractTerminal_in_entryRuleAbstractTerminal3332 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleAbstractTerminal3335 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleKeyword_in_ruleAbstractTerminal3352 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleRuleCall_in_ruleAbstractTerminal3372 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleParenthesizedElement_in_ruleAbstractTerminal3392 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rulePredicatedKeyword_in_ruleAbstractTerminal3412 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rulePredicatedRuleCall_in_ruleAbstractTerminal3432 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rulePredicatedGroup_in_ruleAbstractTerminal3452 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleKeyword_in_entryRuleKeyword3472 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleKeyword3475 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_STRING_in_ruleKeyword3500 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleRuleCall_in_entryRuleRuleCall3525 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleRuleCall3528 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleRuleID_in_ruleRuleCall3571 = new BitSet(new long[]{0x0000000002000002L});
-        public static final BitSet FOLLOW_25_in_ruleRuleCall3602 = new BitSet(new long[]{0x0000004100000010L});
-        public static final BitSet FOLLOW_ruleNamedArgument_in_ruleRuleCall3634 = new BitSet(new long[]{0x0000000004002000L});
-        public static final BitSet FOLLOW_13_in_ruleRuleCall3671 = new BitSet(new long[]{0x0000004100000010L});
-        public static final BitSet FOLLOW_ruleNamedArgument_in_ruleRuleCall3708 = new BitSet(new long[]{0x0000000004002000L});
-        public static final BitSet FOLLOW_26_in_ruleRuleCall3747 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleLiteralValue_in_entryRuleLiteralValue3773 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleLiteralValue3776 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_38_in_ruleLiteralValue3795 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_32_in_ruleLiteralValue3817 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleInverseLiteralValue_in_entryRuleInverseLiteralValue3837 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleInverseLiteralValue3840 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleLiteralValue_in_ruleInverseLiteralValue3852 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleNamedArgument_in_entryRuleNamedArgument3868 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleNamedArgument3871 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleLiteralValue_in_ruleNamedArgument3933 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleNamedArgument3986 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleNamedArgument4057 = new BitSet(new long[]{0x0000000400000000L});
-        public static final BitSet FOLLOW_34_in_ruleNamedArgument4092 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleNamedArgument4129 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTerminalRuleCall_in_entryRuleTerminalRuleCall4175 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleTerminalRuleCall4178 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleRuleID_in_ruleTerminalRuleCall4201 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleRuleID_in_entryRuleRuleID4226 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleRuleID4229 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleRuleID4248 = new BitSet(new long[]{0x0000000010000002L});
-        public static final BitSet FOLLOW_28_in_ruleRuleID4268 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleRuleID4285 = new BitSet(new long[]{0x0000000010000002L});
-        public static final BitSet FOLLOW_rulePredicatedKeyword_in_entryRulePredicatedKeyword4311 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRulePredicatedKeyword4314 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rulePredicate_in_rulePredicatedKeyword4331 = new BitSet(new long[]{0x0000000000000020L});
-        public static final BitSet FOLLOW_RULE_STRING_in_rulePredicatedKeyword4358 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rulePredicatedRuleCall_in_entryRulePredicatedRuleCall4389 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRulePredicatedRuleCall4392 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rulePredicate_in_rulePredicatedRuleCall4409 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_rulePredicatedRuleCall4436 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAssignment_in_entryRuleAssignment4467 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleAssignment4470 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rulePredicate_in_ruleAssignment4493 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleAssignment4526 = new BitSet(new long[]{0x0000008C00000000L});
-        public static final BitSet FOLLOW_35_in_ruleAssignment4572 = new BitSet(new long[]{0x0000000002008030L});
-        public static final BitSet FOLLOW_34_in_ruleAssignment4606 = new BitSet(new long[]{0x0000000002008030L});
-        public static final BitSet FOLLOW_39_in_ruleAssignment4640 = new BitSet(new long[]{0x0000000002008030L});
-        public static final BitSet FOLLOW_ruleAssignableTerminal_in_ruleAssignment4685 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rulePredicate_in_entryRulePredicate4716 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRulePredicate4719 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_40_in_rulePredicate4751 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_41_in_rulePredicate4797 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAssignableTerminal_in_entryRuleAssignableTerminal4828 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleAssignableTerminal4831 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleKeyword_in_ruleAssignableTerminal4848 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleRuleCall_in_ruleAssignableTerminal4868 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleParenthesizedAssignableElement_in_ruleAssignableTerminal4888 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleCrossReference_in_ruleAssignableTerminal4908 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleParenthesizedAssignableElement_in_entryRuleParenthesizedAssignableElement4928 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleParenthesizedAssignableElement4931 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_15_in_ruleParenthesizedAssignableElement4950 = new BitSet(new long[]{0x0000000002008030L});
-        public static final BitSet FOLLOW_ruleAssignableAlternatives_in_ruleParenthesizedAssignableElement4962 = new BitSet(new long[]{0x0000000000010000L});
-        public static final BitSet FOLLOW_16_in_ruleParenthesizedAssignableElement4976 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAssignableAlternatives_in_entryRuleAssignableAlternatives4996 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleAssignableAlternatives4999 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAssignableTerminal_in_ruleAssignableAlternatives5016 = new BitSet(new long[]{0x0000000020000002L});
-        public static final BitSet FOLLOW_29_in_ruleAssignableAlternatives5059 = new BitSet(new long[]{0x0000000002008030L});
-        public static final BitSet FOLLOW_ruleAssignableTerminal_in_ruleAssignableAlternatives5096 = new BitSet(new long[]{0x0000000020000002L});
-        public static final BitSet FOLLOW_ruleCrossReference_in_entryRuleCrossReference5144 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleCrossReference5147 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_25_in_ruleCrossReference5166 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_ruleTypeRef_in_ruleCrossReference5193 = new BitSet(new long[]{0x0000000024000000L});
-        public static final BitSet FOLLOW_29_in_ruleCrossReference5224 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleCrossReferenceableTerminal_in_ruleCrossReference5256 = new BitSet(new long[]{0x0000000004000000L});
-        public static final BitSet FOLLOW_26_in_ruleCrossReference5289 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleCrossReferenceableTerminal_in_entryRuleCrossReferenceableTerminal5309 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleCrossReferenceableTerminal5312 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleKeyword_in_ruleCrossReferenceableTerminal5329 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleRuleCall_in_ruleCrossReferenceableTerminal5349 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleParenthesizedElement_in_entryRuleParenthesizedElement5369 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleParenthesizedElement5372 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_15_in_ruleParenthesizedElement5391 = new BitSet(new long[]{0x0000030202008030L});
-        public static final BitSet FOLLOW_ruleAlternatives_in_ruleParenthesizedElement5403 = new BitSet(new long[]{0x0000000000010000L});
-        public static final BitSet FOLLOW_16_in_ruleParenthesizedElement5417 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rulePredicatedGroup_in_entryRulePredicatedGroup5437 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRulePredicatedGroup5440 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rulePredicate_in_rulePredicatedGroup5457 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_15_in_rulePredicatedGroup5471 = new BitSet(new long[]{0x0000030202008030L});
-        public static final BitSet FOLLOW_ruleAlternatives_in_rulePredicatedGroup5498 = new BitSet(new long[]{0x0000000000010000L});
-        public static final BitSet FOLLOW_16_in_rulePredicatedGroup5523 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTerminalRule_in_entryRuleTerminalRule5543 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleTerminalRule5546 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_42_in_ruleTerminalRule5565 = new BitSet(new long[]{0x0000000000200010L});
-        public static final BitSet FOLLOW_21_in_ruleTerminalRule5609 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleTerminalRule5661 = new BitSet(new long[]{0x0000000000800000L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleTerminalRule5732 = new BitSet(new long[]{0x0000000008800000L});
-        public static final BitSet FOLLOW_ruleReturnsClause_in_ruleTerminalRule5773 = new BitSet(new long[]{0x0000000000800000L});
-        public static final BitSet FOLLOW_23_in_ruleTerminalRule5806 = new BitSet(new long[]{0x00000A4000028030L});
-        public static final BitSet FOLLOW_ruleTerminalAlternatives_in_ruleTerminalRule5833 = new BitSet(new long[]{0x0000000001000000L});
-        public static final BitSet FOLLOW_24_in_ruleTerminalRule5858 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTerminalAlternatives_in_entryRuleTerminalAlternatives5878 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleTerminalAlternatives5881 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTerminalGroup_in_ruleTerminalAlternatives5898 = new BitSet(new long[]{0x0000000020000002L});
-        public static final BitSet FOLLOW_29_in_ruleTerminalAlternatives5941 = new BitSet(new long[]{0x00000A4000028030L});
-        public static final BitSet FOLLOW_ruleTerminalGroup_in_ruleTerminalAlternatives5978 = new BitSet(new long[]{0x0000000020000002L});
-        public static final BitSet FOLLOW_ruleTerminalGroup_in_entryRuleTerminalGroup6026 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleTerminalGroup6029 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTerminalToken_in_ruleTerminalGroup6046 = new BitSet(new long[]{0x00000A4000028032L});
-        public static final BitSet FOLLOW_ruleTerminalToken_in_ruleTerminalGroup6097 = new BitSet(new long[]{0x00000A4000028032L});
-        public static final BitSet FOLLOW_ruleTerminalToken_in_entryRuleTerminalToken6137 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleTerminalToken6140 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTerminalTokenElement_in_ruleTerminalToken6157 = new BitSet(new long[]{0x0000000180400002L});
-        public static final BitSet FOLLOW_ruleCardinalities_in_ruleTerminalToken6175 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTerminalTokenElement_in_entryRuleTerminalTokenElement6201 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleTerminalTokenElement6204 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleCharacterRange_in_ruleTerminalTokenElement6221 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTerminalRuleCall_in_ruleTerminalTokenElement6241 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleParenthesizedTerminalElement_in_ruleTerminalTokenElement6261 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAbstractNegatedToken_in_ruleTerminalTokenElement6281 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleWildcard_in_ruleTerminalTokenElement6301 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEOF_in_ruleTerminalTokenElement6321 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleParenthesizedTerminalElement_in_entryRuleParenthesizedTerminalElement6341 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleParenthesizedTerminalElement6344 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_15_in_ruleParenthesizedTerminalElement6363 = new BitSet(new long[]{0x00000A4000028030L});
-        public static final BitSet FOLLOW_ruleTerminalAlternatives_in_ruleParenthesizedTerminalElement6375 = new BitSet(new long[]{0x0000000000010000L});
-        public static final BitSet FOLLOW_16_in_ruleParenthesizedTerminalElement6389 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAbstractNegatedToken_in_entryRuleAbstractNegatedToken6409 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleAbstractNegatedToken6412 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleNegatedToken_in_ruleAbstractNegatedToken6429 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleUntilToken_in_ruleAbstractNegatedToken6449 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleNegatedToken_in_entryRuleNegatedToken6469 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleNegatedToken6472 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_38_in_ruleNegatedToken6491 = new BitSet(new long[]{0x00000A4000028030L});
-        public static final BitSet FOLLOW_ruleTerminalTokenElement_in_ruleNegatedToken6518 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleUntilToken_in_entryRuleUntilToken6549 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleUntilToken6552 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_41_in_ruleUntilToken6571 = new BitSet(new long[]{0x00000A4000028030L});
-        public static final BitSet FOLLOW_ruleTerminalTokenElement_in_ruleUntilToken6598 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleWildcard_in_entryRuleWildcard6629 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleWildcard6632 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_17_in_ruleWildcard6664 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEOF_in_entryRuleEOF6684 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleEOF6687 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_43_in_ruleEOF6719 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleCharacterRange_in_entryRuleCharacterRange6739 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleCharacterRange6742 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleKeyword_in_ruleCharacterRange6759 = new BitSet(new long[]{0x0000100000000002L});
-        public static final BitSet FOLLOW_44_in_ruleCharacterRange6795 = new BitSet(new long[]{0x0000000000000020L});
-        public static final BitSet FOLLOW_ruleKeyword_in_ruleCharacterRange6827 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEnumRule_in_entryRuleEnumRule6866 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleEnumRule6869 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_45_in_ruleEnumRule6888 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleEnumRule6915 = new BitSet(new long[]{0x0000000008800000L});
-        public static final BitSet FOLLOW_ruleReturnsClause_in_ruleEnumRule6944 = new BitSet(new long[]{0x0000000000800000L});
-        public static final BitSet FOLLOW_23_in_ruleEnumRule6964 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_ruleEnumLiterals_in_ruleEnumRule6991 = new BitSet(new long[]{0x0000000001000000L});
-        public static final BitSet FOLLOW_24_in_ruleEnumRule7016 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEnumLiterals_in_entryRuleEnumLiterals7036 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleEnumLiterals7039 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEnumLiteralDeclaration_in_ruleEnumLiterals7056 = new BitSet(new long[]{0x0000000020000002L});
-        public static final BitSet FOLLOW_29_in_ruleEnumLiterals7099 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_ruleEnumLiteralDeclaration_in_ruleEnumLiterals7136 = new BitSet(new long[]{0x0000000020000002L});
-        public static final BitSet FOLLOW_ruleEnumLiteralDeclaration_in_entryRuleEnumLiteralDeclaration7184 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleEnumLiteralDeclaration7187 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleEnumLiteralDeclaration7219 = new BitSet(new long[]{0x0000000400000002L});
-        public static final BitSet FOLLOW_34_in_ruleEnumLiteralDeclaration7250 = new BitSet(new long[]{0x0000000000000020L});
-        public static final BitSet FOLLOW_ruleKeyword_in_ruleEnumLiteralDeclaration7282 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_ruleHiddenClause407 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_15_in_ruleHiddenClause432 = new BitSet(new long[]{0x0000000000010010L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleHiddenClause467 = new BitSet(new long[]{0x0000000000012000L});
+        public static final BitSet FOLLOW_13_in_ruleHiddenClause504 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleHiddenClause541 = new BitSet(new long[]{0x0000000000012000L});
+        public static final BitSet FOLLOW_16_in_ruleHiddenClause583 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleGrammarID_in_entryRuleGrammarID603 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleGrammarID606 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleGrammarID625 = new BitSet(new long[]{0x0000000000020002L});
+        public static final BitSet FOLLOW_17_in_ruleGrammarID645 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleGrammarID662 = new BitSet(new long[]{0x0000000000020002L});
+        public static final BitSet FOLLOW_ruleAbstractRule_in_entryRuleAbstractRule688 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleAbstractRule691 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleParserRule_in_ruleAbstractRule708 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTerminalRule_in_ruleAbstractRule728 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEnumRule_in_ruleAbstractRule748 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAbstractMetamodelDeclaration_in_entryRuleAbstractMetamodelDeclaration768 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleAbstractMetamodelDeclaration771 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleGeneratedMetamodel_in_ruleAbstractMetamodelDeclaration788 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleReferencedMetamodel_in_ruleAbstractMetamodelDeclaration808 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleGeneratedMetamodel_in_entryRuleGeneratedMetamodel828 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleGeneratedMetamodel831 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_18_in_ruleGeneratedMetamodel850 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleGeneratedMetamodel877 = new BitSet(new long[]{0x0000000000000020L});
+        public static final BitSet FOLLOW_RULE_STRING_in_ruleGeneratedMetamodel915 = new BitSet(new long[]{0x0000000000080002L});
+        public static final BitSet FOLLOW_19_in_ruleGeneratedMetamodel946 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleGeneratedMetamodel978 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleReferencedMetamodel_in_entryRuleReferencedMetamodel1017 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleReferencedMetamodel1020 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_20_in_ruleReferencedMetamodel1039 = new BitSet(new long[]{0x0000000000000020L});
+        public static final BitSet FOLLOW_RULE_STRING_in_ruleReferencedMetamodel1066 = new BitSet(new long[]{0x0000000000080002L});
+        public static final BitSet FOLLOW_19_in_ruleReferencedMetamodel1097 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleReferencedMetamodel1129 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleParserRule_in_entryRuleParserRule1168 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleParserRule1171 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_21_in_ruleParserRule1220 = new BitSet(new long[]{0x0000000000200010L});
+        public static final BitSet FOLLOW_ruleRuleNameAndParams_in_ruleParserRule1253 = new BitSet(new long[]{0x0000000008C04000L});
+        public static final BitSet FOLLOW_22_in_ruleParserRule1300 = new BitSet(new long[]{0x0000000000804000L});
+        public static final BitSet FOLLOW_ruleReturnsClause_in_ruleParserRule1358 = new BitSet(new long[]{0x0000000000804000L});
+        public static final BitSet FOLLOW_ruleRuleNameAndParams_in_ruleParserRule1411 = new BitSet(new long[]{0x0000000008804000L});
+        public static final BitSet FOLLOW_ruleReturnsClause_in_ruleParserRule1437 = new BitSet(new long[]{0x0000000000804000L});
+        public static final BitSet FOLLOW_ruleHiddenClause_in_ruleParserRule1474 = new BitSet(new long[]{0x0000000000800000L});
+        public static final BitSet FOLLOW_23_in_ruleParserRule1494 = new BitSet(new long[]{0x0000030202008030L});
+        public static final BitSet FOLLOW_ruleAlternatives_in_ruleParserRule1521 = new BitSet(new long[]{0x0000000001000000L});
+        public static final BitSet FOLLOW_24_in_ruleParserRule1546 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleRuleNameAndParams1587 = new BitSet(new long[]{0x0000000002000002L});
+        public static final BitSet FOLLOW_25_in_ruleRuleNameAndParams1618 = new BitSet(new long[]{0x0000000004000010L});
+        public static final BitSet FOLLOW_ruleParameter_in_ruleRuleNameAndParams1659 = new BitSet(new long[]{0x0000000004002000L});
+        public static final BitSet FOLLOW_13_in_ruleRuleNameAndParams1702 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_ruleParameter_in_ruleRuleNameAndParams1744 = new BitSet(new long[]{0x0000000004002000L});
+        public static final BitSet FOLLOW_26_in_ruleRuleNameAndParams1793 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_27_in_ruleReturnsClause1827 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_ruleTypeRef_in_ruleReturnsClause1854 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleParameter_in_entryRuleParameter1885 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleParameter1888 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleParameter1913 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTypeRef_in_entryRuleTypeRef1938 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleTypeRef1941 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleTypeRef1981 = new BitSet(new long[]{0x0000000010000000L});
+        public static final BitSet FOLLOW_28_in_ruleTypeRef2011 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleTypeRef2044 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAlternatives_in_entryRuleAlternatives2075 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleAlternatives2078 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleConditionalBranch_in_ruleAlternatives2095 = new BitSet(new long[]{0x0000000020000002L});
+        public static final BitSet FOLLOW_29_in_ruleAlternatives2138 = new BitSet(new long[]{0x0000030202008030L});
+        public static final BitSet FOLLOW_ruleConditionalBranch_in_ruleAlternatives2175 = new BitSet(new long[]{0x0000000020000002L});
+        public static final BitSet FOLLOW_ruleConditionalBranch_in_entryRuleConditionalBranch2223 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleConditionalBranch2226 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleUnorderedGroup_in_ruleConditionalBranch2243 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_25_in_ruleConditionalBranch2287 = new BitSet(new long[]{0x0000004100000000L});
+        public static final BitSet FOLLOW_ruleInverseLiteralValue_in_ruleConditionalBranch2319 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleConditionalBranch2364 = new BitSet(new long[]{0x0000000004000000L});
+        public static final BitSet FOLLOW_26_in_ruleConditionalBranch2394 = new BitSet(new long[]{0x0000030200008030L});
+        public static final BitSet FOLLOW_ruleUnorderedGroup_in_ruleConditionalBranch2426 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleUnorderedGroup_in_entryRuleUnorderedGroup2464 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleUnorderedGroup2467 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleGroup_in_ruleUnorderedGroup2484 = new BitSet(new long[]{0x0000000040000002L});
+        public static final BitSet FOLLOW_30_in_ruleUnorderedGroup2527 = new BitSet(new long[]{0x0000030200008030L});
+        public static final BitSet FOLLOW_ruleGroup_in_ruleUnorderedGroup2564 = new BitSet(new long[]{0x0000000040000002L});
+        public static final BitSet FOLLOW_ruleGroup_in_entryRuleGroup2612 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleGroup2615 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAbstractToken_in_ruleGroup2632 = new BitSet(new long[]{0x0000030200008032L});
+        public static final BitSet FOLLOW_ruleAbstractToken_in_ruleGroup2683 = new BitSet(new long[]{0x0000030200008032L});
+        public static final BitSet FOLLOW_ruleAbstractToken_in_entryRuleAbstractToken2723 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleAbstractToken2726 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAbstractTokenWithCardinality_in_ruleAbstractToken2743 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAction_in_ruleAbstractToken2763 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAbstractTokenWithCardinality_in_entryRuleAbstractTokenWithCardinality2783 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleAbstractTokenWithCardinality2786 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAssignment_in_ruleAbstractTokenWithCardinality2809 = new BitSet(new long[]{0x0000000180400002L});
+        public static final BitSet FOLLOW_ruleAbstractTerminal_in_ruleAbstractTokenWithCardinality2833 = new BitSet(new long[]{0x0000000180400002L});
+        public static final BitSet FOLLOW_ruleCardinalities_in_ruleAbstractTokenWithCardinality2856 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_31_in_ruleCardinalities2903 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_22_in_ruleCardinalities2933 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_32_in_ruleCardinalities2963 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAction_in_entryRuleAction2994 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleAction2997 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_33_in_ruleAction3016 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_ruleTypeRef_in_ruleAction3043 = new BitSet(new long[]{0x0000002000020000L});
+        public static final BitSet FOLLOW_17_in_ruleAction3074 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleAction3106 = new BitSet(new long[]{0x0000000C00000000L});
+        public static final BitSet FOLLOW_34_in_ruleAction3160 = new BitSet(new long[]{0x0000001000000000L});
+        public static final BitSet FOLLOW_35_in_ruleAction3198 = new BitSet(new long[]{0x0000001000000000L});
+        public static final BitSet FOLLOW_36_in_ruleAction3236 = new BitSet(new long[]{0x0000002000000000L});
+        public static final BitSet FOLLOW_37_in_ruleAction3256 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAbstractTerminal_in_entryRuleAbstractTerminal3276 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleAbstractTerminal3279 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleKeyword_in_ruleAbstractTerminal3296 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleRuleCall_in_ruleAbstractTerminal3316 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleParenthesizedElement_in_ruleAbstractTerminal3336 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePredicatedKeyword_in_ruleAbstractTerminal3356 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePredicatedRuleCall_in_ruleAbstractTerminal3376 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePredicatedGroup_in_ruleAbstractTerminal3396 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleKeyword_in_entryRuleKeyword3416 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleKeyword3419 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_STRING_in_ruleKeyword3444 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleRuleCall_in_entryRuleRuleCall3469 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleRuleCall3472 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleRuleID_in_ruleRuleCall3515 = new BitSet(new long[]{0x0000000002000002L});
+        public static final BitSet FOLLOW_25_in_ruleRuleCall3546 = new BitSet(new long[]{0x0000004100000010L});
+        public static final BitSet FOLLOW_ruleNamedArgument_in_ruleRuleCall3578 = new BitSet(new long[]{0x0000000004002000L});
+        public static final BitSet FOLLOW_13_in_ruleRuleCall3615 = new BitSet(new long[]{0x0000004100000010L});
+        public static final BitSet FOLLOW_ruleNamedArgument_in_ruleRuleCall3652 = new BitSet(new long[]{0x0000000004002000L});
+        public static final BitSet FOLLOW_26_in_ruleRuleCall3691 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleLiteralValue_in_entryRuleLiteralValue3717 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleLiteralValue3720 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_38_in_ruleLiteralValue3739 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_32_in_ruleLiteralValue3761 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleInverseLiteralValue_in_entryRuleInverseLiteralValue3781 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleInverseLiteralValue3784 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleLiteralValue_in_ruleInverseLiteralValue3796 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleNamedArgument_in_entryRuleNamedArgument3812 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleNamedArgument3815 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleLiteralValue_in_ruleNamedArgument3877 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleNamedArgument3930 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleNamedArgument4001 = new BitSet(new long[]{0x0000000400000000L});
+        public static final BitSet FOLLOW_34_in_ruleNamedArgument4036 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleNamedArgument4073 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTerminalRuleCall_in_entryRuleTerminalRuleCall4119 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleTerminalRuleCall4122 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleRuleID_in_ruleTerminalRuleCall4145 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleRuleID_in_entryRuleRuleID4170 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleRuleID4173 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleRuleID4192 = new BitSet(new long[]{0x0000000010000002L});
+        public static final BitSet FOLLOW_28_in_ruleRuleID4212 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleRuleID4229 = new BitSet(new long[]{0x0000000010000002L});
+        public static final BitSet FOLLOW_rulePredicatedKeyword_in_entryRulePredicatedKeyword4255 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRulePredicatedKeyword4258 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePredicate_in_rulePredicatedKeyword4275 = new BitSet(new long[]{0x0000000000000020L});
+        public static final BitSet FOLLOW_RULE_STRING_in_rulePredicatedKeyword4302 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePredicatedRuleCall_in_entryRulePredicatedRuleCall4333 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRulePredicatedRuleCall4336 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePredicate_in_rulePredicatedRuleCall4353 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_rulePredicatedRuleCall4380 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAssignment_in_entryRuleAssignment4411 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleAssignment4414 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePredicate_in_ruleAssignment4437 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleAssignment4470 = new BitSet(new long[]{0x0000008C00000000L});
+        public static final BitSet FOLLOW_35_in_ruleAssignment4516 = new BitSet(new long[]{0x0000000002008030L});
+        public static final BitSet FOLLOW_34_in_ruleAssignment4550 = new BitSet(new long[]{0x0000000002008030L});
+        public static final BitSet FOLLOW_39_in_ruleAssignment4584 = new BitSet(new long[]{0x0000000002008030L});
+        public static final BitSet FOLLOW_ruleAssignableTerminal_in_ruleAssignment4629 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_40_in_rulePredicate4681 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_41_in_rulePredicate4727 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAssignableTerminal_in_entryRuleAssignableTerminal4758 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleAssignableTerminal4761 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleKeyword_in_ruleAssignableTerminal4778 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleRuleCall_in_ruleAssignableTerminal4798 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleParenthesizedAssignableElement_in_ruleAssignableTerminal4818 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleCrossReference_in_ruleAssignableTerminal4838 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleParenthesizedAssignableElement_in_entryRuleParenthesizedAssignableElement4858 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleParenthesizedAssignableElement4861 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_15_in_ruleParenthesizedAssignableElement4880 = new BitSet(new long[]{0x0000000002008030L});
+        public static final BitSet FOLLOW_ruleAssignableAlternatives_in_ruleParenthesizedAssignableElement4892 = new BitSet(new long[]{0x0000000000010000L});
+        public static final BitSet FOLLOW_16_in_ruleParenthesizedAssignableElement4906 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAssignableAlternatives_in_entryRuleAssignableAlternatives4926 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleAssignableAlternatives4929 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAssignableTerminal_in_ruleAssignableAlternatives4946 = new BitSet(new long[]{0x0000000020000002L});
+        public static final BitSet FOLLOW_29_in_ruleAssignableAlternatives4989 = new BitSet(new long[]{0x0000000002008030L});
+        public static final BitSet FOLLOW_ruleAssignableTerminal_in_ruleAssignableAlternatives5026 = new BitSet(new long[]{0x0000000020000002L});
+        public static final BitSet FOLLOW_ruleCrossReference_in_entryRuleCrossReference5074 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleCrossReference5077 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_25_in_ruleCrossReference5096 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_ruleTypeRef_in_ruleCrossReference5123 = new BitSet(new long[]{0x0000000024000000L});
+        public static final BitSet FOLLOW_29_in_ruleCrossReference5154 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleCrossReferenceableTerminal_in_ruleCrossReference5186 = new BitSet(new long[]{0x0000000004000000L});
+        public static final BitSet FOLLOW_26_in_ruleCrossReference5219 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleCrossReferenceableTerminal_in_entryRuleCrossReferenceableTerminal5239 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleCrossReferenceableTerminal5242 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleKeyword_in_ruleCrossReferenceableTerminal5259 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleRuleCall_in_ruleCrossReferenceableTerminal5279 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleParenthesizedElement_in_entryRuleParenthesizedElement5299 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleParenthesizedElement5302 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_15_in_ruleParenthesizedElement5321 = new BitSet(new long[]{0x0000030202008030L});
+        public static final BitSet FOLLOW_ruleAlternatives_in_ruleParenthesizedElement5333 = new BitSet(new long[]{0x0000000000010000L});
+        public static final BitSet FOLLOW_16_in_ruleParenthesizedElement5347 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePredicatedGroup_in_entryRulePredicatedGroup5367 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRulePredicatedGroup5370 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePredicate_in_rulePredicatedGroup5387 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_15_in_rulePredicatedGroup5401 = new BitSet(new long[]{0x0000030202008030L});
+        public static final BitSet FOLLOW_ruleAlternatives_in_rulePredicatedGroup5428 = new BitSet(new long[]{0x0000000000010000L});
+        public static final BitSet FOLLOW_16_in_rulePredicatedGroup5453 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTerminalRule_in_entryRuleTerminalRule5473 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleTerminalRule5476 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_42_in_ruleTerminalRule5495 = new BitSet(new long[]{0x0000000000200010L});
+        public static final BitSet FOLLOW_21_in_ruleTerminalRule5539 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleTerminalRule5591 = new BitSet(new long[]{0x0000000000800000L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleTerminalRule5662 = new BitSet(new long[]{0x0000000008800000L});
+        public static final BitSet FOLLOW_ruleReturnsClause_in_ruleTerminalRule5703 = new BitSet(new long[]{0x0000000000800000L});
+        public static final BitSet FOLLOW_23_in_ruleTerminalRule5736 = new BitSet(new long[]{0x00000A4000028030L});
+        public static final BitSet FOLLOW_ruleTerminalAlternatives_in_ruleTerminalRule5763 = new BitSet(new long[]{0x0000000001000000L});
+        public static final BitSet FOLLOW_24_in_ruleTerminalRule5788 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTerminalAlternatives_in_entryRuleTerminalAlternatives5808 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleTerminalAlternatives5811 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTerminalGroup_in_ruleTerminalAlternatives5828 = new BitSet(new long[]{0x0000000020000002L});
+        public static final BitSet FOLLOW_29_in_ruleTerminalAlternatives5871 = new BitSet(new long[]{0x00000A4000028030L});
+        public static final BitSet FOLLOW_ruleTerminalGroup_in_ruleTerminalAlternatives5908 = new BitSet(new long[]{0x0000000020000002L});
+        public static final BitSet FOLLOW_ruleTerminalGroup_in_entryRuleTerminalGroup5956 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleTerminalGroup5959 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTerminalToken_in_ruleTerminalGroup5976 = new BitSet(new long[]{0x00000A4000028032L});
+        public static final BitSet FOLLOW_ruleTerminalToken_in_ruleTerminalGroup6027 = new BitSet(new long[]{0x00000A4000028032L});
+        public static final BitSet FOLLOW_ruleTerminalToken_in_entryRuleTerminalToken6067 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleTerminalToken6070 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTerminalTokenElement_in_ruleTerminalToken6087 = new BitSet(new long[]{0x0000000180400002L});
+        public static final BitSet FOLLOW_ruleCardinalities_in_ruleTerminalToken6105 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTerminalTokenElement_in_entryRuleTerminalTokenElement6131 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleTerminalTokenElement6134 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleCharacterRange_in_ruleTerminalTokenElement6151 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTerminalRuleCall_in_ruleTerminalTokenElement6171 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleParenthesizedTerminalElement_in_ruleTerminalTokenElement6191 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAbstractNegatedToken_in_ruleTerminalTokenElement6211 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleWildcard_in_ruleTerminalTokenElement6231 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEOF_in_ruleTerminalTokenElement6251 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleParenthesizedTerminalElement_in_entryRuleParenthesizedTerminalElement6271 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleParenthesizedTerminalElement6274 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_15_in_ruleParenthesizedTerminalElement6293 = new BitSet(new long[]{0x00000A4000028030L});
+        public static final BitSet FOLLOW_ruleTerminalAlternatives_in_ruleParenthesizedTerminalElement6305 = new BitSet(new long[]{0x0000000000010000L});
+        public static final BitSet FOLLOW_16_in_ruleParenthesizedTerminalElement6319 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAbstractNegatedToken_in_entryRuleAbstractNegatedToken6339 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleAbstractNegatedToken6342 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleNegatedToken_in_ruleAbstractNegatedToken6359 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleUntilToken_in_ruleAbstractNegatedToken6379 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleNegatedToken_in_entryRuleNegatedToken6399 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleNegatedToken6402 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_38_in_ruleNegatedToken6421 = new BitSet(new long[]{0x00000A4000028030L});
+        public static final BitSet FOLLOW_ruleTerminalTokenElement_in_ruleNegatedToken6448 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleUntilToken_in_entryRuleUntilToken6479 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleUntilToken6482 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_41_in_ruleUntilToken6501 = new BitSet(new long[]{0x00000A4000028030L});
+        public static final BitSet FOLLOW_ruleTerminalTokenElement_in_ruleUntilToken6528 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleWildcard_in_entryRuleWildcard6559 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleWildcard6562 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_17_in_ruleWildcard6594 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEOF_in_entryRuleEOF6614 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleEOF6617 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_43_in_ruleEOF6649 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleCharacterRange_in_entryRuleCharacterRange6669 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleCharacterRange6672 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleKeyword_in_ruleCharacterRange6689 = new BitSet(new long[]{0x0000100000000002L});
+        public static final BitSet FOLLOW_44_in_ruleCharacterRange6725 = new BitSet(new long[]{0x0000000000000020L});
+        public static final BitSet FOLLOW_ruleKeyword_in_ruleCharacterRange6757 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEnumRule_in_entryRuleEnumRule6796 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleEnumRule6799 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_45_in_ruleEnumRule6818 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleEnumRule6845 = new BitSet(new long[]{0x0000000008800000L});
+        public static final BitSet FOLLOW_ruleReturnsClause_in_ruleEnumRule6874 = new BitSet(new long[]{0x0000000000800000L});
+        public static final BitSet FOLLOW_23_in_ruleEnumRule6894 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_ruleEnumLiterals_in_ruleEnumRule6921 = new BitSet(new long[]{0x0000000001000000L});
+        public static final BitSet FOLLOW_24_in_ruleEnumRule6946 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEnumLiterals_in_entryRuleEnumLiterals6966 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleEnumLiterals6969 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEnumLiteralDeclaration_in_ruleEnumLiterals6986 = new BitSet(new long[]{0x0000000020000002L});
+        public static final BitSet FOLLOW_29_in_ruleEnumLiterals7029 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_ruleEnumLiteralDeclaration_in_ruleEnumLiterals7066 = new BitSet(new long[]{0x0000000020000002L});
+        public static final BitSet FOLLOW_ruleEnumLiteralDeclaration_in_entryRuleEnumLiteralDeclaration7114 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleEnumLiteralDeclaration7117 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleEnumLiteralDeclaration7149 = new BitSet(new long[]{0x0000000400000002L});
+        public static final BitSet FOLLOW_34_in_ruleEnumLiteralDeclaration7180 = new BitSet(new long[]{0x0000000000000020L});
+        public static final BitSet FOLLOW_ruleKeyword_in_ruleEnumLiteralDeclaration7212 = new BitSet(new long[]{0x0000000000000002L});
     }
 
 
