@@ -11,10 +11,12 @@ import org.eclipse.xtext.grammarinheritance.ParserTest;
 import org.eclipse.xtext.grammarinheritance.idea.InheritanceTest3LanguageStandaloneSetupIdea;
 import org.eclipse.xtext.grammarinheritance.idea.lang.InheritanceTest3LanguageFileType;
 import org.eclipse.xtext.grammarinheritance.idea.lang.InheritanceTest3LanguageLanguage;
+import org.eclipse.xtext.idea.tests.TestDecorator;
 import org.eclipse.xtext.idea.tests.parsing.AbstractLanguageParsingTestCase;
 import org.eclipse.xtext.idea.tests.parsing.ModelChecker;
 import org.eclipse.xtext.resource.XtextResource;
 
+@TestDecorator
 @SuppressWarnings("all")
 public class IdeaSuperCallParserTest extends AbstractLanguageParsingTestCase {
   @FinalFieldsConstructor
@@ -63,5 +65,21 @@ public class IdeaSuperCallParserTest extends AbstractLanguageParsingTestCase {
   protected void setUp() throws Exception {
     super.setUp();
     this.delegate.setUp();
+  }
+  
+  public void test_01() throws Exception {
+    delegate.test_01();
+  }
+  
+  public void test_02() throws Exception {
+    delegate.test_02();
+  }
+  
+  public void test_03() throws Exception {
+    delegate.test_03();
+  }
+  
+  public void test_04() throws Exception {
+    delegate.test_04();
   }
 }

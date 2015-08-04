@@ -12,7 +12,9 @@ import org.eclipse.xtext.grammarinheritance.idea.lang.InheritanceTest3LanguageFi
 import org.eclipse.xtext.grammarinheritance.idea.InheritanceTest3LanguageStandaloneSetupIdea
 import org.eclipse.xtext.grammarinheritance.ParserTest
 import org.eclipse.xtext.grammarinheritance.idea.lang.InheritanceTest3LanguageLanguage
+import org.eclipse.xtext.idea.tests.TestDecorator
 
+@TestDecorator
 class IdeaSuperCallParserTest extends AbstractLanguageParsingTestCase {
 	
 	Delegate delegate

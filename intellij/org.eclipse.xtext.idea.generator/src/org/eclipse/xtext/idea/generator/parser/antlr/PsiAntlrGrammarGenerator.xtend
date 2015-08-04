@@ -135,7 +135,7 @@ class PsiAntlrGrammarGenerator extends AbstractActionAwareAntlrGrammarGenerator 
 	
 	override protected _dataTypeEbnf2(RuleCall it, boolean supportActions) {
 		if (supportActions) {
-			switch rule {
+			switch rule: it.getRule {
 				EnumRule case assigned,
 				ParserRule case assigned: 
 					super._dataTypeEbnf2(it, supportActions)

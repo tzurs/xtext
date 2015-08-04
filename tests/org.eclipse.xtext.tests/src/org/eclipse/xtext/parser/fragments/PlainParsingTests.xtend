@@ -5,22 +5,24 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  *******************************************************************************/
-package org.eclipse.xtext.parser.fragments;
-
-import org.junit.runner.RunWith;
-import org.junit.runners.Suite;
-import org.junit.runners.Suite.SuiteClasses;
+package org.eclipse.xtext.parser.fragments
 
 /**
  * @author Sebastian Zarnekow - Initial contribution and API
  */
-@RunWith(Suite.class)
-@SuiteClasses({
-	FragmentsTest.class,
-	FragmentEagerLinkingTest.class,
-	FragmentExsTest.class,
-	FragmentsPlainParsingTest.class,
-	FragmentExsPlainParsingTest.class,
-})
-public class FragmentsSuite {
+class FragmentsPlainParsingTest extends AbstractFragmentsPlainParsingTest {
+	override void setUp() throws Exception {
+		super.setUp();
+		with(new FragmentTestLanguageStandaloneSetup());
+	}
+}
+
+/**
+ * @author Sebastian Zarnekow - Initial contribution and API
+ */
+class FragmentExsPlainParsingTest extends AbstractFragmentsPlainParsingTest {
+	override void setUp() throws Exception {
+		super.setUp();
+		with(new FragmentTestLanguageExStandaloneSetup());
+	}
 }

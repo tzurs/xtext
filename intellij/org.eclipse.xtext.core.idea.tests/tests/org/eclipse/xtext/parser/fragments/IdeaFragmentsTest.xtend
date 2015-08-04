@@ -14,6 +14,7 @@ import org.eclipse.xtext.parser.fragments.idea.lang.FragmentTestLanguageLanguage
 import com.google.inject.Injector
 
 @TestDecorator
+abstract /* @Ignore */ 
 class IdeaFragmentsTest extends AbstractLanguageParsingTestCase {
 	
 	Delegate delegate
@@ -37,7 +38,7 @@ class IdeaFragmentsTest extends AbstractLanguageParsingTestCase {
 	}
 	
 	@FinalFieldsConstructor
-	private static class Delegate extends FragmentsTest {
+	private static class Delegate extends AbstractFragmentsPlainParsingTest {
 		
 		val ModelChecker modelChecker
 		

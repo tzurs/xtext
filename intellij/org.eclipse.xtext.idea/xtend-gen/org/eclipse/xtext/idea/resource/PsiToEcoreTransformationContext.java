@@ -138,6 +138,12 @@ public class PsiToEcoreTransformationContext {
     return _xblockexpression;
   }
   
+  public PsiToEcoreTransformationContext branchAndKeepCurrent() {
+    final PsiToEcoreTransformationContext result = this.branch();
+    result.current = this.current;
+    return result;
+  }
+  
   public PsiToEcoreTransformationContext withDatatypeRule() {
     PsiToEcoreTransformationContext _xblockexpression = null;
     {
@@ -246,17 +252,27 @@ public class PsiToEcoreTransformationContext {
       boolean _isAssigned = GrammarUtil.isAssigned(grammarElement);
       boolean _not = (!_isAssigned);
       if (_not) {
+        boolean _isEObjectFragmentRuleCall = GrammarUtil.isEObjectFragmentRuleCall(grammarElement);
+        if (_isEObjectFragmentRuleCall) {
+          ParserRule _containingParserRule = GrammarUtil.containingParserRule(grammarElement);
+          TypeRef _type_1 = _containingParserRule.getType();
+          final EClassifier classifier = _type_1.getClassifier();
+          EObject _create_1 = this.semanticModelBuilder.create(classifier);
+          this.current = _create_1;
+          this.associateWithSemanticElement(this.currentNode);
+          return true;
+        }
         return false;
       }
       boolean _notEquals = (!Objects.equal(this.current, null));
       if (_notEquals) {
         return true;
       }
-      ParserRule _containingParserRule = GrammarUtil.containingParserRule(grammarElement);
-      TypeRef _type_1 = _containingParserRule.getType();
-      final EClassifier classifier = _type_1.getClassifier();
-      EObject _create_1 = this.semanticModelBuilder.create(classifier);
-      this.current = _create_1;
+      ParserRule _containingParserRule_1 = GrammarUtil.containingParserRule(grammarElement);
+      TypeRef _type_2 = _containingParserRule_1.getType();
+      final EClassifier classifier_1 = _type_2.getClassifier();
+      EObject _create_2 = this.semanticModelBuilder.create(classifier_1);
+      this.current = _create_2;
       ICompositeNode _switchResult = null;
       boolean _matched = false;
       if (!_matched) {

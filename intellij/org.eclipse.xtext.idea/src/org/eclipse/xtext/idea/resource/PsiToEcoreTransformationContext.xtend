@@ -94,6 +94,12 @@ class PsiToEcoreTransformationContext {
 		childTransformationContext.nodeModelBuilder = nodeModelBuilder
 		childTransformationContext
 	}
+	
+	def branchAndKeepCurrent() {
+		val result = branch
+		result.current = current
+		return result
+	}
 
 	def withDatatypeRule() {
 		datatypeRuleToken = new AntlrDatatypeRuleToken
@@ -163,6 +169,12 @@ class PsiToEcoreTransformationContext {
 			return true
 		}
 		if (!grammarElement.assigned) {
+			if (grammarElement.isEObjectFragmentRuleCall) {
+				val classifier = grammarElement.containingParserRule.type.classifier
+				current = semanticModelBuilder.create(classifier)
+				associateWithSemanticElement(currentNode)
+				return true
+			}
 			return false
 		}
 		if (current != null) {

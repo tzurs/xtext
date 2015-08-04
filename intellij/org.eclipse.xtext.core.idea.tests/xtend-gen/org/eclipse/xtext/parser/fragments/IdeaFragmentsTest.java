@@ -10,7 +10,7 @@ import org.eclipse.xtext.ISetup;
 import org.eclipse.xtext.idea.tests.TestDecorator;
 import org.eclipse.xtext.idea.tests.parsing.AbstractLanguageParsingTestCase;
 import org.eclipse.xtext.idea.tests.parsing.ModelChecker;
-import org.eclipse.xtext.parser.fragments.FragmentsTest;
+import org.eclipse.xtext.parser.fragments.AbstractFragmentsPlainParsingTest;
 import org.eclipse.xtext.parser.fragments.idea.FragmentTestLanguageStandaloneSetupIdea;
 import org.eclipse.xtext.parser.fragments.idea.lang.FragmentTestLanguageFileType;
 import org.eclipse.xtext.parser.fragments.idea.lang.FragmentTestLanguageLanguage;
@@ -18,9 +18,9 @@ import org.eclipse.xtext.resource.XtextResource;
 
 @TestDecorator
 @SuppressWarnings("all")
-public class IdeaFragmentsTest extends AbstractLanguageParsingTestCase {
+public abstract class IdeaFragmentsTest extends AbstractLanguageParsingTestCase {
   @FinalFieldsConstructor
-  private static class Delegate extends FragmentsTest {
+  private static class Delegate extends AbstractFragmentsPlainParsingTest {
     private final ModelChecker modelChecker;
     
     @Override

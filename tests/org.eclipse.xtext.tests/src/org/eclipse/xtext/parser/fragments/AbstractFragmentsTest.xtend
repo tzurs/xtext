@@ -187,18 +187,5 @@ abstract class AbstractFragmentsTest extends AbstractXtextTests {
 		node.checkInvariant
 		return result
 	}
-
-//	
-//	private def String asText(Tree tree) '''
-//		«FOR node: tree.nodes»
-//			«node.asText»
-//		«ENDFOR»
-//	'''
-//	
-//	private def StringConcatenation asText(TreeNode treeNode) '''
-//		«treeNode.name»
-//			«FOR node: treeNode.children»
-//				«node.asText»
-//			«ENDFOR»
-//	'''	
+	
 }

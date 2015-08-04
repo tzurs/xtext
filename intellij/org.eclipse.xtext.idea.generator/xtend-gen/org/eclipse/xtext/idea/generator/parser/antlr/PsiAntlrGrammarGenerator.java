@@ -342,16 +342,17 @@ public class PsiAntlrGrammarGenerator extends AbstractActionAwareAntlrGrammarGen
     if (supportActions) {
       String _switchResult = null;
       AbstractRule _rule = it.getRule();
+      final AbstractRule rule = _rule;
       boolean _matched = false;
       if (!_matched) {
-        if (_rule instanceof EnumRule) {
+        if (rule instanceof EnumRule) {
           boolean _isAssigned = GrammarUtil.isAssigned(it);
           if (_isAssigned) {
             _matched=true;
           }
         }
         if (!_matched) {
-          if (_rule instanceof ParserRule) {
+          if (rule instanceof ParserRule) {
             boolean _isAssigned = GrammarUtil.isAssigned(it);
             if (_isAssigned) {
               _matched=true;
@@ -363,11 +364,11 @@ public class PsiAntlrGrammarGenerator extends AbstractActionAwareAntlrGrammarGen
         }
       }
       if (!_matched) {
-        if (_rule instanceof EnumRule) {
+        if (rule instanceof EnumRule) {
           _matched=true;
         }
         if (!_matched) {
-          if (_rule instanceof ParserRule) {
+          if (rule instanceof ParserRule) {
             _matched=true;
           }
         }
@@ -396,7 +397,7 @@ public class PsiAntlrGrammarGenerator extends AbstractActionAwareAntlrGrammarGen
         }
       }
       if (!_matched) {
-        if (_rule instanceof TerminalRule) {
+        if (rule instanceof TerminalRule) {
           _matched=true;
           StringConcatenation _builder_1 = new StringConcatenation();
           _builder_1.append("{");
