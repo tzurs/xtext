@@ -37,7 +37,7 @@ public class XtextParserDefinition extends AbstractXtextParserDefinition {
 				elementTypeProvider.getRuleNameAndParams_NameIDTerminalRuleCall_0_0ElementType()
 			);
 		}
-		if (elementType == elementTypeProvider.getParserRule_RuleNameAndParamsParserRuleCall_0_1_1ElementType()) {
+		if (elementType == elementTypeProvider.getParserRule_RuleNameAndParamsParserRuleCall_0_1_0ElementType()) {
 			return new PsiNamedEObjectImpl(node,
 				elementTypeProvider.getRuleNameAndParams_NameIDTerminalRuleCall_0_0ElementType()
 			);

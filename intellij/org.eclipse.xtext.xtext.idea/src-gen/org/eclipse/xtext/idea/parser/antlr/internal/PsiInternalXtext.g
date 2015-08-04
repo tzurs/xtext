@@ -439,31 +439,43 @@ ruleParserRule:
 				}
 				(
 					(
-						{
-							markLeaf(elementTypeProvider.getParserRule_WildcardAsteriskKeyword_0_0_2_0ElementType());
-						}
-						lv_wildcard_2_0='*'
-						{
-							doneLeaf(lv_wildcard_2_0);
-						}
+						(
+							{
+								markLeaf(elementTypeProvider.getParserRule_WildcardAsteriskKeyword_0_0_2_0_0ElementType());
+							}
+							lv_wildcard_2_0='*'
+							{
+								doneLeaf(lv_wildcard_2_0);
+							}
+						)
 					)
+					    |
+					(
+						{
+							markLeaf(elementTypeProvider.getParserRule_ReturnsKeyword_0_0_2_1_0ElementType());
+						}
+						otherlv_3='returns'
+						{
+							doneLeaf(otherlv_3);
+						}
+						(
+							(
+								{
+									markComposite(elementTypeProvider.getParserRule_TypeTypeRefParserRuleCall_0_0_2_1_1_0ElementType());
+								}
+								lv_type_4_0=ruleTypeRef
+								{
+									doneComposite();
+								}
+							)
+						)
+					)?
 				)
 			)
 			    |
 			(
-				(
-					(
-						{
-							markLeaf(elementTypeProvider.getParserRule_FragmentFragmentKeyword_0_1_0_0ElementType());
-						}
-						lv_fragment_3_0='fragment'
-						{
-							doneLeaf(lv_fragment_3_0);
-						}
-					)
-				)?
 				{
-					markComposite(elementTypeProvider.getParserRule_RuleNameAndParamsParserRuleCall_0_1_1ElementType());
+					markComposite(elementTypeProvider.getParserRule_RuleNameAndParamsParserRuleCall_0_1_0ElementType());
 				}
 				ruleRuleNameAndParams
 				{
@@ -471,18 +483,18 @@ ruleParserRule:
 				}
 				(
 					{
-						markLeaf(elementTypeProvider.getParserRule_ReturnsKeyword_0_1_2_0ElementType());
+						markLeaf(elementTypeProvider.getParserRule_ReturnsKeyword_0_1_1_0ElementType());
 					}
-					otherlv_5='returns'
+					otherlv_6='returns'
 					{
-						doneLeaf(otherlv_5);
+						doneLeaf(otherlv_6);
 					}
 					(
 						(
 							{
-								markComposite(elementTypeProvider.getParserRule_TypeTypeRefParserRuleCall_0_1_2_1_0ElementType());
+								markComposite(elementTypeProvider.getParserRule_TypeTypeRefParserRuleCall_0_1_1_1_0ElementType());
 							}
-							lv_type_6_0=ruleTypeRef
+							lv_type_7_0=ruleTypeRef
 							{
 								doneComposite();
 							}
@@ -497,18 +509,18 @@ ruleParserRule:
 					{
 						markLeaf(elementTypeProvider.getParserRule_DefinesHiddenTokensHiddenKeyword_1_0_0ElementType());
 					}
-					lv_definesHiddenTokens_7_0='hidden'
+					lv_definesHiddenTokens_8_0='hidden'
 					{
-						doneLeaf(lv_definesHiddenTokens_7_0);
+						doneLeaf(lv_definesHiddenTokens_8_0);
 					}
 				)
 			)
 			{
 				markLeaf(elementTypeProvider.getParserRule_LeftParenthesisKeyword_1_1ElementType());
 			}
-			otherlv_8='('
+			otherlv_9='('
 			{
-				doneLeaf(otherlv_8);
+				doneLeaf(otherlv_9);
 			}
 			(
 				(
@@ -516,9 +528,9 @@ ruleParserRule:
 						{
 							markLeaf(elementTypeProvider.getParserRule_HiddenTokensAbstractRuleCrossReference_1_2_0_0ElementType());
 						}
-						otherlv_9=RULE_ID
+						otherlv_10=RULE_ID
 						{
-							doneLeaf(otherlv_9);
+							doneLeaf(otherlv_10);
 						}
 					)
 				)
@@ -526,18 +538,18 @@ ruleParserRule:
 					{
 						markLeaf(elementTypeProvider.getParserRule_CommaKeyword_1_2_1_0ElementType());
 					}
-					otherlv_10=','
+					otherlv_11=','
 					{
-						doneLeaf(otherlv_10);
+						doneLeaf(otherlv_11);
 					}
 					(
 						(
 							{
 								markLeaf(elementTypeProvider.getParserRule_HiddenTokensAbstractRuleCrossReference_1_2_1_1_0ElementType());
 							}
-							otherlv_11=RULE_ID
+							otherlv_12=RULE_ID
 							{
-								doneLeaf(otherlv_11);
+								doneLeaf(otherlv_12);
 							}
 						)
 					)
@@ -546,24 +558,24 @@ ruleParserRule:
 			{
 				markLeaf(elementTypeProvider.getParserRule_RightParenthesisKeyword_1_3ElementType());
 			}
-			otherlv_12=')'
+			otherlv_13=')'
 			{
-				doneLeaf(otherlv_12);
+				doneLeaf(otherlv_13);
 			}
 		)?
 		{
 			markLeaf(elementTypeProvider.getParserRule_ColonKeyword_2ElementType());
 		}
-		otherlv_13=':'
+		otherlv_14=':'
 		{
-			doneLeaf(otherlv_13);
+			doneLeaf(otherlv_14);
 		}
 		(
 			(
 				{
 					markComposite(elementTypeProvider.getParserRule_AlternativesAlternativesParserRuleCall_3_0ElementType());
 				}
-				lv_alternatives_14_0=ruleAlternatives
+				lv_alternatives_15_0=ruleAlternatives
 				{
 					doneComposite();
 				}
@@ -572,9 +584,9 @@ ruleParserRule:
 		{
 			markLeaf(elementTypeProvider.getParserRule_SemicolonKeyword_4ElementType());
 		}
-		otherlv_15=';'
+		otherlv_16=';'
 		{
-			doneLeaf(otherlv_15);
+			doneLeaf(otherlv_16);
 		}
 	)
 ;

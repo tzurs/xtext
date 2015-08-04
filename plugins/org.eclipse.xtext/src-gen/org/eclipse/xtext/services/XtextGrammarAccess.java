@@ -53,10 +53,10 @@ public class XtextGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cRulesAssignment_5 = (Assignment)cGroup.eContents().get(5);
 		private final RuleCall cRulesAbstractRuleParserRuleCall_5_0 = (RuleCall)cRulesAssignment_5.eContents().get(0);
 		
-		//Grammar:
-		//	"grammar" name=GrammarID ("with" usedGrammars+=[Grammar|GrammarID] ("," usedGrammars+=[Grammar|GrammarID])*)?
-		//	(definesHiddenTokens?="hidden" "(" (hiddenTokens+=[AbstractRule] ("," hiddenTokens+=[AbstractRule])*)? ")")?
-		//	metamodelDeclarations+=AbstractMetamodelDeclaration* rules+=AbstractRule+;
+		//Grammar :
+		//	"grammar" name =GrammarID ("with" usedGrammars +=[Grammar |GrammarID ] ("," usedGrammars +=[Grammar |GrammarID ] ) * )
+		//	? (definesHiddenTokens ?="hidden" "(" (hiddenTokens +=[AbstractRule ] ("," hiddenTokens +=[AbstractRule ] ) * ) ? ")"
+		//	) ? metamodelDeclarations +=AbstractMetamodelDeclaration * rules +=AbstractRule + ;
 		@Override public ParserRule getRule() { return rule; }
 
 		//"grammar" name=GrammarID ("with" usedGrammars+=[Grammar|GrammarID] ("," usedGrammars+=[Grammar|GrammarID])*)?
@@ -166,7 +166,7 @@ public class XtextGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cFullStopKeyword_1_0 = (Keyword)cGroup_1.eContents().get(0);
 		private final RuleCall cIDTerminalRuleCall_1_1 = (RuleCall)cGroup_1.eContents().get(1);
 		
-		//GrammarID returns ecore::EString:
+		//GrammarID returns ecore ::EString:
 		//	ID ("." ID)*;
 		@Override public ParserRule getRule() { return rule; }
 
@@ -338,16 +338,19 @@ public class XtextGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cFragmentAssignment_0_0_0 = (Assignment)cGroup_0_0.eContents().get(0);
 		private final Keyword cFragmentFragmentKeyword_0_0_0_0 = (Keyword)cFragmentAssignment_0_0_0.eContents().get(0);
 		private final RuleCall cRuleNameAndParamsParserRuleCall_0_0_1 = (RuleCall)cGroup_0_0.eContents().get(1);
-		private final Assignment cWildcardAssignment_0_0_2 = (Assignment)cGroup_0_0.eContents().get(2);
-		private final Keyword cWildcardAsteriskKeyword_0_0_2_0 = (Keyword)cWildcardAssignment_0_0_2.eContents().get(0);
+		private final Alternatives cAlternatives_0_0_2 = (Alternatives)cGroup_0_0.eContents().get(2);
+		private final Assignment cWildcardAssignment_0_0_2_0 = (Assignment)cAlternatives_0_0_2.eContents().get(0);
+		private final Keyword cWildcardAsteriskKeyword_0_0_2_0_0 = (Keyword)cWildcardAssignment_0_0_2_0.eContents().get(0);
+		private final Group cGroup_0_0_2_1 = (Group)cAlternatives_0_0_2.eContents().get(1);
+		private final Keyword cReturnsKeyword_0_0_2_1_0 = (Keyword)cGroup_0_0_2_1.eContents().get(0);
+		private final Assignment cTypeAssignment_0_0_2_1_1 = (Assignment)cGroup_0_0_2_1.eContents().get(1);
+		private final RuleCall cTypeTypeRefParserRuleCall_0_0_2_1_1_0 = (RuleCall)cTypeAssignment_0_0_2_1_1.eContents().get(0);
 		private final Group cGroup_0_1 = (Group)cAlternatives_0.eContents().get(1);
-		private final Assignment cFragmentAssignment_0_1_0 = (Assignment)cGroup_0_1.eContents().get(0);
-		private final Keyword cFragmentFragmentKeyword_0_1_0_0 = (Keyword)cFragmentAssignment_0_1_0.eContents().get(0);
-		private final RuleCall cRuleNameAndParamsParserRuleCall_0_1_1 = (RuleCall)cGroup_0_1.eContents().get(1);
-		private final Group cGroup_0_1_2 = (Group)cGroup_0_1.eContents().get(2);
-		private final Keyword cReturnsKeyword_0_1_2_0 = (Keyword)cGroup_0_1_2.eContents().get(0);
-		private final Assignment cTypeAssignment_0_1_2_1 = (Assignment)cGroup_0_1_2.eContents().get(1);
-		private final RuleCall cTypeTypeRefParserRuleCall_0_1_2_1_0 = (RuleCall)cTypeAssignment_0_1_2_1.eContents().get(0);
+		private final RuleCall cRuleNameAndParamsParserRuleCall_0_1_0 = (RuleCall)cGroup_0_1.eContents().get(0);
+		private final Group cGroup_0_1_1 = (Group)cGroup_0_1.eContents().get(1);
+		private final Keyword cReturnsKeyword_0_1_1_0 = (Keyword)cGroup_0_1_1.eContents().get(0);
+		private final Assignment cTypeAssignment_0_1_1_1 = (Assignment)cGroup_0_1_1.eContents().get(1);
+		private final RuleCall cTypeTypeRefParserRuleCall_0_1_1_1_0 = (RuleCall)cTypeAssignment_0_1_1_1.eContents().get(0);
 		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
 		private final Assignment cDefinesHiddenTokensAssignment_1_0 = (Assignment)cGroup_1.eContents().get(0);
 		private final Keyword cDefinesHiddenTokensHiddenKeyword_1_0_0 = (Keyword)cDefinesHiddenTokensAssignment_1_0.eContents().get(0);
@@ -368,24 +371,21 @@ public class XtextGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cSemicolonKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		
 		//ParserRule:
-		//	(^fragment?="fragment" RuleNameAndParams wildcard?= // wildcard fragment 
-		//	"*" | ^fragment?="fragment"? RuleNameAndParams ("returns" type=TypeRef)? // normal rule
-		//) (definesHiddenTokens?="hidden" "(" (hiddenTokens+=[AbstractRule] ("," hiddenTokens+=[AbstractRule])*)? ")")? ":"
-		//	alternatives=Alternatives ";";
+		//	(^fragment?="fragment" RuleNameAndParams (wildcard?="*" | ("returns" type=TypeRef)?) | RuleNameAndParams ("returns"
+		//	type=TypeRef)?) (definesHiddenTokens?="hidden" "(" (hiddenTokens+=[AbstractRule] ("," hiddenTokens+=[AbstractRule])*)?
+		//	")")? ":" alternatives=Alternatives ";";
 		@Override public ParserRule getRule() { return rule; }
 
-		//(^fragment?="fragment" RuleNameAndParams wildcard?= // wildcard fragment 
-		//"*" | ^fragment?="fragment"? RuleNameAndParams ("returns" type=TypeRef)? // normal rule
-		//) (definesHiddenTokens?="hidden" "(" (hiddenTokens+=[AbstractRule] ("," hiddenTokens+=[AbstractRule])*)? ")")? ":"
-		//alternatives=Alternatives ";"
+		//(^fragment?="fragment" RuleNameAndParams (wildcard?="*" | ("returns" type=TypeRef)?) | RuleNameAndParams ("returns"
+		//type=TypeRef)?) (definesHiddenTokens?="hidden" "(" (hiddenTokens+=[AbstractRule] ("," hiddenTokens+=[AbstractRule])*)?
+		//")")? ":" alternatives=Alternatives ";"
 		public Group getGroup() { return cGroup; }
 
-		//^fragment?="fragment" RuleNameAndParams wildcard?= // wildcard fragment 
-		//"*" | ^fragment?="fragment"? RuleNameAndParams ("returns" type=TypeRef)? // normal rule
+		//^fragment?="fragment" RuleNameAndParams (wildcard?="*" | ("returns" type=TypeRef)?) | RuleNameAndParams ("returns"
+		//type=TypeRef)?
 		public Alternatives getAlternatives_0() { return cAlternatives_0; }
 
-		//^fragment?="fragment" RuleNameAndParams wildcard?= // wildcard fragment 
-		//"*"
+		//^fragment?="fragment" RuleNameAndParams (wildcard?="*" | ("returns" type=TypeRef)?)
 		public Group getGroup_0_0() { return cGroup_0_0; }
 
 		//^fragment?="fragment"
@@ -397,37 +397,44 @@ public class XtextGrammarAccess extends AbstractGrammarElementFinder {
 		//RuleNameAndParams
 		public RuleCall getRuleNameAndParamsParserRuleCall_0_0_1() { return cRuleNameAndParamsParserRuleCall_0_0_1; }
 
-		//wildcard?= // wildcard fragment 
+		//wildcard?="*" | ("returns" type=TypeRef)?
+		public Alternatives getAlternatives_0_0_2() { return cAlternatives_0_0_2; }
+
+		//wildcard?="*"
+		public Assignment getWildcardAssignment_0_0_2_0() { return cWildcardAssignment_0_0_2_0; }
+
 		//"*"
-		public Assignment getWildcardAssignment_0_0_2() { return cWildcardAssignment_0_0_2; }
-
-		//// wildcard fragment 
-		//"*"
-		public Keyword getWildcardAsteriskKeyword_0_0_2_0() { return cWildcardAsteriskKeyword_0_0_2_0; }
-
-		//^fragment?="fragment"? RuleNameAndParams ("returns" type=TypeRef)? // normal rule
-		public Group getGroup_0_1() { return cGroup_0_1; }
-
-		//^fragment?="fragment"?
-		public Assignment getFragmentAssignment_0_1_0() { return cFragmentAssignment_0_1_0; }
-
-		//"fragment"
-		public Keyword getFragmentFragmentKeyword_0_1_0_0() { return cFragmentFragmentKeyword_0_1_0_0; }
-
-		//RuleNameAndParams
-		public RuleCall getRuleNameAndParamsParserRuleCall_0_1_1() { return cRuleNameAndParamsParserRuleCall_0_1_1; }
+		public Keyword getWildcardAsteriskKeyword_0_0_2_0_0() { return cWildcardAsteriskKeyword_0_0_2_0_0; }
 
 		//("returns" type=TypeRef)?
-		public Group getGroup_0_1_2() { return cGroup_0_1_2; }
+		public Group getGroup_0_0_2_1() { return cGroup_0_0_2_1; }
 
 		//"returns"
-		public Keyword getReturnsKeyword_0_1_2_0() { return cReturnsKeyword_0_1_2_0; }
+		public Keyword getReturnsKeyword_0_0_2_1_0() { return cReturnsKeyword_0_0_2_1_0; }
 
 		//type=TypeRef
-		public Assignment getTypeAssignment_0_1_2_1() { return cTypeAssignment_0_1_2_1; }
+		public Assignment getTypeAssignment_0_0_2_1_1() { return cTypeAssignment_0_0_2_1_1; }
 
 		//TypeRef
-		public RuleCall getTypeTypeRefParserRuleCall_0_1_2_1_0() { return cTypeTypeRefParserRuleCall_0_1_2_1_0; }
+		public RuleCall getTypeTypeRefParserRuleCall_0_0_2_1_1_0() { return cTypeTypeRefParserRuleCall_0_0_2_1_1_0; }
+
+		//RuleNameAndParams ("returns" type=TypeRef)?
+		public Group getGroup_0_1() { return cGroup_0_1; }
+
+		//RuleNameAndParams
+		public RuleCall getRuleNameAndParamsParserRuleCall_0_1_0() { return cRuleNameAndParamsParserRuleCall_0_1_0; }
+
+		//("returns" type=TypeRef)?
+		public Group getGroup_0_1_1() { return cGroup_0_1_1; }
+
+		//"returns"
+		public Keyword getReturnsKeyword_0_1_1_0() { return cReturnsKeyword_0_1_1_0; }
+
+		//type=TypeRef
+		public Assignment getTypeAssignment_0_1_1_1() { return cTypeAssignment_0_1_1_1; }
+
+		//TypeRef
+		public RuleCall getTypeTypeRefParserRuleCall_0_1_1_1_0() { return cTypeTypeRefParserRuleCall_0_1_1_1_0; }
 
 		//(definesHiddenTokens?="hidden" "(" (hiddenTokens+=[AbstractRule] ("," hiddenTokens+=[AbstractRule])*)? ")")?
 		public Group getGroup_1() { return cGroup_1; }
@@ -616,7 +623,7 @@ public class XtextGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cElementsConditionalBranchParserRuleCall_1_1_1_0 = (RuleCall)cElementsAssignment_1_1_1.eContents().get(0);
 		
 		//Alternatives returns AbstractElement:
-		//	ConditionalBranch ({Alternatives.elements+=current} ("|" elements+=ConditionalBranch)+)?;
+		//	ConditionalBranch ({Alternatives .elements +=current } ("|" elements+=ConditionalBranch)+)?;
 		@Override public ParserRule getRule() { return rule; }
 
 		//ConditionalBranch ({Alternatives.elements+=current} ("|" elements+=ConditionalBranch)+)?
@@ -812,7 +819,7 @@ public class XtextGrammarAccess extends AbstractGrammarElementFinder {
 		
 		/// * SuppressWarnings[potentialOverride]: Handled in CardinalityAwareEcoreFactory * / AbstractTokenWithCardinality returns
 		//AbstractElement:
-		//	(Assignment | AbstractTerminal) cardinality=("?" | "*" | "+")?;
+		//	(Assignment | AbstractTerminal) cardinality=("?" | "*" | "+" )?;
 		@Override public ParserRule getRule() { return rule; }
 
 		//(Assignment | AbstractTerminal) cardinality=("?" | "*" | "+")?
@@ -2315,10 +2322,9 @@ public class XtextGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//ParserRule:
-	//	(^fragment?="fragment" RuleNameAndParams wildcard?= // wildcard fragment 
-	//	"*" | ^fragment?="fragment"? RuleNameAndParams ("returns" type=TypeRef)? // normal rule
-	//) (definesHiddenTokens?="hidden" "(" (hiddenTokens+=[AbstractRule] ("," hiddenTokens+=[AbstractRule])*)? ")")? ":"
-	//	alternatives=Alternatives ";";
+	//	(^fragment?="fragment" RuleNameAndParams (wildcard?="*" | ("returns" type=TypeRef)?) | RuleNameAndParams ("returns"
+	//	type=TypeRef)?) (definesHiddenTokens?="hidden" "(" (hiddenTokens+=[AbstractRule] ("," hiddenTokens+=[AbstractRule])*)?
+	//	")")? ":" alternatives=Alternatives ";";
 	public ParserRuleElements getParserRuleAccess() {
 		return pParserRule;
 	}
@@ -2767,7 +2773,7 @@ public class XtextGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//terminal ID:
-	//	"^"? ("a".."z" | "A".."Z" | "_") ("a".."z" | "A".."Z" | "_" | "0".."9")*;
+	//	"^" ? ("a" .."z" | "A" .."Z" | "_" ) ("a" .."z" | "A" .."Z" | "_" | "0" .."9" ) *;
 	public TerminalRule getIDRule() {
 		return gaTerminals.getIDRule();
 	} 

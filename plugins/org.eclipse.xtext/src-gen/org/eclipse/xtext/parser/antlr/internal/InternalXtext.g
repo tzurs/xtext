@@ -543,11 +543,11 @@ ruleParserRule returns [EObject current=null]
         $current = $this_RuleNameAndParams_1.current; 
         afterParserOrEnumRuleCall();
     }
-(
+((
 (
 		lv_wildcard_2_0=	'*' 
     {
-        newLeafNode(lv_wildcard_2_0, grammarAccess.getParserRuleAccess().getWildcardAsteriskKeyword_0_0_2_0());
+        newLeafNode(lv_wildcard_2_0, grammarAccess.getParserRuleAccess().getWildcardAsteriskKeyword_0_0_2_0_0());
     }
  
 	    {
@@ -558,51 +558,59 @@ ruleParserRule returns [EObject current=null]
 	    }
 
 )
-))
-    |((
-(
-		lv_fragment_3_0=	'fragment' 
-    {
-        newLeafNode(lv_fragment_3_0, grammarAccess.getParserRuleAccess().getFragmentFragmentKeyword_0_1_0_0());
-    }
- 
-	    {
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getParserRuleRule());
-	        }
-       		setWithLastConsumed($current, "fragment", true, "fragment");
-	    }
-
 )
-)?
-    { 
-		if ($current==null) {
-			$current = createModelElement(grammarAccess.getParserRuleRule());
-		}
-        newCompositeNode(grammarAccess.getParserRuleAccess().getRuleNameAndParamsParserRuleCall_0_1_1()); 
-    }
-    this_RuleNameAndParams_4=ruleRuleNameAndParams[$current]
-    { 
-        $current = $this_RuleNameAndParams_4.current; 
-        afterParserOrEnumRuleCall();
-    }
-(	otherlv_5='returns' 
+    |(	otherlv_3='returns' 
     {
-    	newLeafNode(otherlv_5, grammarAccess.getParserRuleAccess().getReturnsKeyword_0_1_2_0());
+    	newLeafNode(otherlv_3, grammarAccess.getParserRuleAccess().getReturnsKeyword_0_0_2_1_0());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getParserRuleAccess().getTypeTypeRefParserRuleCall_0_1_2_1_0()); 
+	        newCompositeNode(grammarAccess.getParserRuleAccess().getTypeTypeRefParserRuleCall_0_0_2_1_1_0()); 
 	    }
-		lv_type_6_0=ruleTypeRef		{
+		lv_type_4_0=ruleTypeRef		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getParserRuleRule());
 	        }
        		set(
        			$current, 
        			"type",
-        		lv_type_6_0, 
+        		lv_type_4_0, 
+        		"org.eclipse.xtext.Xtext.TypeRef");
+	        afterParserOrEnumRuleCall();
+	    }
+
+)
+))?))
+    |(
+    { 
+		if ($current==null) {
+			$current = createModelElement(grammarAccess.getParserRuleRule());
+		}
+        newCompositeNode(grammarAccess.getParserRuleAccess().getRuleNameAndParamsParserRuleCall_0_1_0()); 
+    }
+    this_RuleNameAndParams_5=ruleRuleNameAndParams[$current]
+    { 
+        $current = $this_RuleNameAndParams_5.current; 
+        afterParserOrEnumRuleCall();
+    }
+(	otherlv_6='returns' 
+    {
+    	newLeafNode(otherlv_6, grammarAccess.getParserRuleAccess().getReturnsKeyword_0_1_1_0());
+    }
+(
+(
+		{ 
+	        newCompositeNode(grammarAccess.getParserRuleAccess().getTypeTypeRefParserRuleCall_0_1_1_1_0()); 
+	    }
+		lv_type_7_0=ruleTypeRef		{
+	        if ($current==null) {
+	            $current = createModelElementForParent(grammarAccess.getParserRuleRule());
+	        }
+       		set(
+       			$current, 
+       			"type",
+        		lv_type_7_0, 
         		"org.eclipse.xtext.Xtext.TypeRef");
 	        afterParserOrEnumRuleCall();
 	    }
@@ -610,9 +618,9 @@ ruleParserRule returns [EObject current=null]
 )
 ))?))((
 (
-		lv_definesHiddenTokens_7_0=	'hidden' 
+		lv_definesHiddenTokens_8_0=	'hidden' 
     {
-        newLeafNode(lv_definesHiddenTokens_7_0, grammarAccess.getParserRuleAccess().getDefinesHiddenTokensHiddenKeyword_1_0_0());
+        newLeafNode(lv_definesHiddenTokens_8_0, grammarAccess.getParserRuleAccess().getDefinesHiddenTokensHiddenKeyword_1_0_0());
     }
  
 	    {
@@ -623,9 +631,9 @@ ruleParserRule returns [EObject current=null]
 	    }
 
 )
-)	otherlv_8='(' 
+)	otherlv_9='(' 
     {
-    	newLeafNode(otherlv_8, grammarAccess.getParserRuleAccess().getLeftParenthesisKeyword_1_1());
+    	newLeafNode(otherlv_9, grammarAccess.getParserRuleAccess().getLeftParenthesisKeyword_1_1());
     }
 ((
 (
@@ -634,15 +642,15 @@ ruleParserRule returns [EObject current=null]
 	            $current = createModelElement(grammarAccess.getParserRuleRule());
 	        }
         }
-	otherlv_9=RULE_ID
+	otherlv_10=RULE_ID
 	{
-		newLeafNode(otherlv_9, grammarAccess.getParserRuleAccess().getHiddenTokensAbstractRuleCrossReference_1_2_0_0()); 
+		newLeafNode(otherlv_10, grammarAccess.getParserRuleAccess().getHiddenTokensAbstractRuleCrossReference_1_2_0_0()); 
 	}
 
 )
-)(	otherlv_10=',' 
+)(	otherlv_11=',' 
     {
-    	newLeafNode(otherlv_10, grammarAccess.getParserRuleAccess().getCommaKeyword_1_2_1_0());
+    	newLeafNode(otherlv_11, grammarAccess.getParserRuleAccess().getCommaKeyword_1_2_1_0());
     }
 (
 (
@@ -651,41 +659,41 @@ ruleParserRule returns [EObject current=null]
 	            $current = createModelElement(grammarAccess.getParserRuleRule());
 	        }
         }
-	otherlv_11=RULE_ID
+	otherlv_12=RULE_ID
 	{
-		newLeafNode(otherlv_11, grammarAccess.getParserRuleAccess().getHiddenTokensAbstractRuleCrossReference_1_2_1_1_0()); 
+		newLeafNode(otherlv_12, grammarAccess.getParserRuleAccess().getHiddenTokensAbstractRuleCrossReference_1_2_1_1_0()); 
 	}
 
 )
-))*)?	otherlv_12=')' 
+))*)?	otherlv_13=')' 
     {
-    	newLeafNode(otherlv_12, grammarAccess.getParserRuleAccess().getRightParenthesisKeyword_1_3());
+    	newLeafNode(otherlv_13, grammarAccess.getParserRuleAccess().getRightParenthesisKeyword_1_3());
     }
-)?	otherlv_13=':' 
+)?	otherlv_14=':' 
     {
-    	newLeafNode(otherlv_13, grammarAccess.getParserRuleAccess().getColonKeyword_2());
+    	newLeafNode(otherlv_14, grammarAccess.getParserRuleAccess().getColonKeyword_2());
     }
 (
 (
 		{ 
 	        newCompositeNode(grammarAccess.getParserRuleAccess().getAlternativesAlternativesParserRuleCall_3_0()); 
 	    }
-		lv_alternatives_14_0=ruleAlternatives		{
+		lv_alternatives_15_0=ruleAlternatives		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getParserRuleRule());
 	        }
        		set(
        			$current, 
        			"alternatives",
-        		lv_alternatives_14_0, 
+        		lv_alternatives_15_0, 
         		"org.eclipse.xtext.Xtext.Alternatives");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-)	otherlv_15=';' 
+)	otherlv_16=';' 
     {
-    	newLeafNode(otherlv_15, grammarAccess.getParserRuleAccess().getSemicolonKeyword_4());
+    	newLeafNode(otherlv_16, grammarAccess.getParserRuleAccess().getSemicolonKeyword_4());
     }
 )
 ;

@@ -19,9 +19,7 @@ import java.util.Arrays;
  */
 @SuppressWarnings("all")
 public class TerminalsStandaloneSetupGenerated implements ISetup, ISetupExtension {
-	/**
-	 * @since 2.9
-	 */
+
 	@Override
 	public List<String> getFileExtensions() {
 		return Arrays.asList("terminals");

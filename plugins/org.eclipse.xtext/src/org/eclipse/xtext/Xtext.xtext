@@ -37,8 +37,8 @@ ReferencedMetamodel :
 
 ParserRule :
 	(
-		^fragment?='fragment' RuleNameAndParams wildcard?='*' // wildcard fragment 
-		| ^fragment?='fragment'? RuleNameAndParams ('returns' type=TypeRef)? // normal rule
+	  ^fragment?='fragment' RuleNameAndParams (wildcard?='*' | ('returns' type=TypeRef)?) 
+	| RuleNameAndParams ('returns' type=TypeRef)?
 	)
 	(definesHiddenTokens?='hidden' '(' (hiddenTokens+=[AbstractRule] (',' hiddenTokens+=[AbstractRule])*)? ')')? ':'
     	alternatives=Alternatives   
@@ -81,7 +81,7 @@ AbstractToken returns AbstractElement:
 
 /* SuppressWarnings[potentialOverride]: Handled in CardinalityAwareEcoreFactory */
 AbstractTokenWithCardinality returns AbstractElement:
-	(Assignment | AbstractTerminal) (cardinality=('?'|'*'|'+'))?
+	(Assignment | AbstractTerminal) cardinality=('?'|'*'|'+')?
 ;
 
 Action returns Action:
@@ -144,7 +144,8 @@ PredicatedRuleCall returns RuleCall:
 ;
 
 Assignment returns Assignment:
-   (predicated?='=>' | firstSetPredicated?='->')? feature=ID operator=('+='|'='|'?=') ^terminal=AssignableTerminal
+   (predicated?='=>' | firstSetPredicated?='->')? 
+   feature=ID operator=('+='|'='|'?=') ^terminal=AssignableTerminal
 ;
 
 AssignableTerminal returns AbstractElement:
@@ -191,7 +192,7 @@ TerminalGroup returns AbstractElement:
 
 /* SuppressWarnings[potentialOverride]: Handled in CardinalityAwareEcoreFactory */
 TerminalToken returns AbstractElement:
-	TerminalTokenElement (cardinality=('?'|'*'|'+'))?
+	TerminalTokenElement cardinality=('?'|'*'|'+')?
 ;
 
 TerminalTokenElement returns AbstractElement: 
