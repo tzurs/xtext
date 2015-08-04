@@ -53,10 +53,10 @@ public class XtextGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cRulesAssignment_5 = (Assignment)cGroup.eContents().get(5);
 		private final RuleCall cRulesAbstractRuleParserRuleCall_5_0 = (RuleCall)cRulesAssignment_5.eContents().get(0);
 		
-		//Grammar :
-		//	"grammar" name =GrammarID ("with" usedGrammars +=[Grammar |GrammarID ] ("," usedGrammars +=[Grammar |GrammarID ] ) * )
-		//	? (definesHiddenTokens ?="hidden" "(" (hiddenTokens +=[AbstractRule ] ("," hiddenTokens +=[AbstractRule ] ) * ) ? ")"
-		//	) ? metamodelDeclarations +=AbstractMetamodelDeclaration * rules +=AbstractRule + ;
+		//Grammar:
+		//	"grammar" name=GrammarID ("with" usedGrammars+=[Grammar|GrammarID] ("," usedGrammars+=[Grammar|GrammarID])*)?
+		//	(definesHiddenTokens?="hidden" "(" (hiddenTokens+=[AbstractRule] ("," hiddenTokens+=[AbstractRule])*)? ")")?
+		//	metamodelDeclarations+=AbstractMetamodelDeclaration* rules+=AbstractRule+;
 		@Override public ParserRule getRule() { return rule; }
 
 		//"grammar" name=GrammarID ("with" usedGrammars+=[Grammar|GrammarID] ("," usedGrammars+=[Grammar|GrammarID])*)?
@@ -166,7 +166,7 @@ public class XtextGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cFullStopKeyword_1_0 = (Keyword)cGroup_1.eContents().get(0);
 		private final RuleCall cIDTerminalRuleCall_1_1 = (RuleCall)cGroup_1.eContents().get(1);
 		
-		//GrammarID returns ecore ::EString:
+		//GrammarID returns ecore::EString:
 		//	ID ("." ID)*;
 		@Override public ParserRule getRule() { return rule; }
 
@@ -623,7 +623,7 @@ public class XtextGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cElementsConditionalBranchParserRuleCall_1_1_1_0 = (RuleCall)cElementsAssignment_1_1_1.eContents().get(0);
 		
 		//Alternatives returns AbstractElement:
-		//	ConditionalBranch ({Alternatives .elements +=current } ("|" elements+=ConditionalBranch)+)?;
+		//	ConditionalBranch ({Alternatives.elements+=current} ("|" elements+=ConditionalBranch)+)?;
 		@Override public ParserRule getRule() { return rule; }
 
 		//ConditionalBranch ({Alternatives.elements+=current} ("|" elements+=ConditionalBranch)+)?
@@ -819,7 +819,7 @@ public class XtextGrammarAccess extends AbstractGrammarElementFinder {
 		
 		/// * SuppressWarnings[potentialOverride]: Handled in CardinalityAwareEcoreFactory * / AbstractTokenWithCardinality returns
 		//AbstractElement:
-		//	(Assignment | AbstractTerminal) cardinality=("?" | "*" | "+" )?;
+		//	(Assignment | AbstractTerminal) cardinality=("?" | "*" | "+")?;
 		@Override public ParserRule getRule() { return rule; }
 
 		//(Assignment | AbstractTerminal) cardinality=("?" | "*" | "+")?
@@ -2761,7 +2761,7 @@ public class XtextGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//terminal ID:
-	//	"^" ? ("a" .."z" | "A" .."Z" | "_" ) ("a" .."z" | "A" .."Z" | "_" | "0" .."9" ) *;
+	//	"^"? ("a".."z" | "A".."Z" | "_") ("a".."z" | "A".."Z" | "_" | "0".."9")*;
 	public TerminalRule getIDRule() {
 		return gaTerminals.getIDRule();
 	} 
