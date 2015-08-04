@@ -491,10 +491,6 @@ public class GrammarConstraintProvider implements IGrammarConstraintProvider {
 			return false;
 		}
 
-//		protected String context2Name(EObject context) {
-//			return ((Constraint) getContainingConstraint()).provider.context2Name.apply(context);
-//		}
-
 		@Override
 		public boolean equals(Object obj) {
 			if (!(obj instanceof ConstraintElement))
@@ -1054,10 +1050,11 @@ public class GrammarConstraintProvider implements IGrammarConstraintProvider {
 						return result;
 				}
 				return isOptional ? null : INVALID;
-			} else if (GrammarUtil.containingAssignment(ele) != null)
+			} else if (GrammarUtil.containingAssignment(ele) != null) {
 				return new ConstraintElement(context, getConstraintElementType(ele), ele);
-			else
+			} else {
 				return null;
+			}
 		} else if (ele instanceof Keyword) {
 			if (GrammarUtil.containingAssignment(ele) != null)
 				return new ConstraintElement(context, getConstraintElementType(ele), ele);

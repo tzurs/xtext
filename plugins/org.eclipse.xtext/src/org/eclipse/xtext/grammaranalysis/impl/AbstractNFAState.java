@@ -226,7 +226,7 @@ public class AbstractNFAState<S extends INFAState<S, T>, T extends INFATransitio
 		for (EObject root : element.eResource().getContents())
 			if (root instanceof Grammar)
 				for (AbstractRule rule : ((Grammar) root).getRules())
-					if (rule.getType().getClassifier() instanceof EClass)
+					if (GrammarUtil.isEObjectRuleCall(rule))
 						for (AbstractElement ele : EcoreUtil2.eAllOfType(rule, AbstractElement.class))
 							if (!builder.filter(ele))
 								builder.getState(ele).getOutgoing();

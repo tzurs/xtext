@@ -108,8 +108,7 @@ public class MatcherState extends AbstractNFAState<MatcherState, MatcherTransiti
 	}
 
 	public boolean isParserRuleCall() {
-		return element instanceof RuleCall
-				&& ((RuleCall) element).getRule().getType().getClassifier() instanceof EClass;
+		return GrammarUtil.isEObjectRuleCall(element);
 	}
 
 	public boolean isParserRuleCallOptional() {
