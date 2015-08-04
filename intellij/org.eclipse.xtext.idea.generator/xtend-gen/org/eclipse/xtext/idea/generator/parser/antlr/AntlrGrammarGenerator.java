@@ -293,9 +293,15 @@ public class AntlrGrammarGenerator extends AbstractActionAwareAntlrGrammarGenera
   @Override
   protected CharSequence _compileRule(final ParserRule it, final Grammar grammar, final AntlrOptions options) {
     StringConcatenation _builder = new StringConcatenation();
-    String _compileEntryRule = this.compileEntryRule(it, grammar, options);
-    _builder.append(_compileEntryRule, "");
-    _builder.newLineIfNotEmpty();
+    {
+      boolean _isFragment = it.isFragment();
+      boolean _not = (!_isFragment);
+      if (_not) {
+        String _compileEntryRule = this.compileEntryRule(it, grammar, options);
+        _builder.append(_compileEntryRule, "");
+        _builder.newLineIfNotEmpty();
+      }
+    }
     _builder.newLine();
     String _compileEBNF = this.compileEBNF(it, options);
     _builder.append(_compileEBNF, "");
@@ -381,10 +387,15 @@ public class AntlrGrammarGenerator extends AbstractActionAwareAntlrGrammarGenera
   @Override
   protected String compileInit(final AbstractRule it, final AntlrOptions options) {
     StringConcatenation _builder = new StringConcatenation();
-    _builder.append(" ");
-    _builder.append("returns ");
-    String _compileReturns = this.compileReturns(it, options);
-    _builder.append(_compileReturns, " ");
+    {
+      boolean _isEObjectFragmentRule = GrammarUtil.isEObjectFragmentRule(it);
+      if (_isEObjectFragmentRule) {
+        _builder.append("[EObject in_current]");
+      }
+    }
+    _builder.append(" returns ");
+    CharSequence _compileReturns = this.compileReturns(it, options);
+    _builder.append(_compileReturns, "");
     _builder.newLineIfNotEmpty();
     _builder.append("@init {");
     _builder.newLine();
@@ -410,8 +421,8 @@ public class AntlrGrammarGenerator extends AbstractActionAwareAntlrGrammarGenera
     return _builder.toString();
   }
   
-  protected String compileReturns(final AbstractRule it, final AntlrOptions options) {
-    String _switchResult = null;
+  protected CharSequence compileReturns(final AbstractRule it, final AntlrOptions options) {
+    CharSequence _switchResult = null;
     boolean _matched = false;
     if (!_matched) {
       if (it instanceof EnumRule) {
@@ -431,7 +442,18 @@ public class AntlrGrammarGenerator extends AbstractActionAwareAntlrGrammarGenera
     if (!_matched) {
       if (it instanceof ParserRule) {
         _matched=true;
-        _switchResult = "[EObject current=null]";
+        StringConcatenation _builder = new StringConcatenation();
+        _builder.append("[EObject current=");
+        {
+          boolean _isEObjectFragmentRule = GrammarUtil.isEObjectFragmentRule(it);
+          if (_isEObjectFragmentRule) {
+            _builder.append("in_current");
+          } else {
+            _builder.append("null");
+          }
+        }
+        _builder.append("]");
+        _switchResult = _builder;
       }
     }
     if (!_matched) {
@@ -763,6 +785,24 @@ public class AntlrGrammarGenerator extends AbstractActionAwareAntlrGrammarGenera
           }
           _builder.append("{");
           _builder.newLine();
+          {
+            boolean _isEObjectFragmentRuleCall = GrammarUtil.isEObjectFragmentRuleCall(it);
+            if (_isEObjectFragmentRuleCall) {
+              _builder.append("\t");
+              _builder.append("if ($current==null) {");
+              _builder.newLine();
+              _builder.append("\t");
+              _builder.append("\t");
+              _builder.append("$current = ");
+              CharSequence _createModelElement = this.createModelElement(it);
+              _builder.append(_createModelElement, "\t\t");
+              _builder.append(";");
+              _builder.newLineIfNotEmpty();
+              _builder.append("\t");
+              _builder.append("}");
+              _builder.newLine();
+            }
+          }
           _builder.append("\t");
           CharSequence _newCompositeNode = this.newCompositeNode(it);
           _builder.append(_newCompositeNode, "\t");
@@ -771,6 +811,12 @@ public class AntlrGrammarGenerator extends AbstractActionAwareAntlrGrammarGenera
           _builder.newLine();
           String __ebnf2 = super._ebnf2(it, options, supportActions);
           _builder.append(__ebnf2, "");
+          {
+            boolean _isEObjectFragmentRuleCall_1 = GrammarUtil.isEObjectFragmentRuleCall(it);
+            if (_isEObjectFragmentRuleCall_1) {
+              _builder.append("[$current]");
+            }
+          }
           _builder.newLineIfNotEmpty();
           _builder.append("{");
           _builder.newLine();

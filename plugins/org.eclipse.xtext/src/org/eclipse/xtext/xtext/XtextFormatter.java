@@ -23,6 +23,7 @@ import org.eclipse.xtext.services.XtextGrammarAccess.NamedArgumentElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.NegatedTokenElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.ParserRuleElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.RuleCallElements;
+import org.eclipse.xtext.services.XtextGrammarAccess.TerminalRuleCallElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.TerminalTokenElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.TypeRefElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.UnorderedGroupElements;
@@ -136,12 +137,12 @@ public class XtextFormatter extends AbstractDeclarativeFormatter {
 		
 		// RuleCall
 		RuleCallElements rca = g.getRuleCallAccess();
-		cfg.setNoSpace().before(rca.getLeftSquareBracketKeyword_2_0());
+		cfg.setNoSpace().before(rca.getLeftSquareBracketKeyword_1_0());
 		
-		// RuleCall
+		// NamedArgument
 		NamedArgumentElements naa = g.getNamedArgumentAccess();
-		cfg.setNoSpace().around(naa.getLiteralValueAssignment_1_0_0());
-		cfg.setNoSpace().around(naa.getEqualsSignKeyword_1_1_1());
+		cfg.setNoSpace().around(naa.getLiteralValueAssignment_0_0());
+		cfg.setNoSpace().around(naa.getEqualsSignKeyword_1_1());
 
 		//saveDebugGraphvizDiagram("XtextFormatting.dot");
 	}

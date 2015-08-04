@@ -107,9 +107,7 @@ Keyword :
 ;
 
 RuleCall :
-   {RuleCall}
    rule=[AbstractRule|RuleID] ('[' arguments+=NamedArgument (',' arguments+=NamedArgument)* ']')?
-   
 ;
 
 LiteralValue returns ecore::EBoolean:
@@ -121,7 +119,6 @@ InverseLiteralValue returns ecore::EBoolean:
 ;
 
 NamedArgument:
-	{NamedArgument} 
 	( literalValue=LiteralValue? parameter=[Parameter|ID]
 	| parameter=[Parameter|ID] '=' value=[Parameter|ID]
 	)
@@ -144,8 +141,7 @@ PredicatedRuleCall returns RuleCall:
 ;
 
 Assignment returns Assignment:
-   (predicated?='=>' | firstSetPredicated?='->')? 
-   feature=ID operator=('+='|'='|'?=') ^terminal=AssignableTerminal
+   (predicated?='=>' | firstSetPredicated?='->')? feature=ID operator=('+='|'='|'?=') ^terminal=AssignableTerminal
 ;
 
 AssignableTerminal returns AbstractElement:

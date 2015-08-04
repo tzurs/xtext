@@ -357,7 +357,7 @@ finally {
         «EXPAND newCompositeNode» 
     }
 «ENDIF-»
-    «localVar()»=«ELSE» «ENDIF-»«rule.ruleName()-»«IF !debugGrammar-»«IF rule.fragment»«ENDIF-»
+    «localVar()»=«ELSE» «ENDIF-»«rule.ruleName()-»«IF !debugGrammar-»
     {
 		$current.merge(«localVar()»);
     }

@@ -7,17 +7,18 @@
  */
 package org.eclipse.xtext.parser.fragments;
 
-import org.eclipse.xtext.junit4.InjectWith;
-import org.eclipse.xtext.junit4.XtextRunner;
 import org.eclipse.xtext.parser.fragments.AbstractFragmentsTest;
-import org.eclipse.xtext.parser.fragments.FragmentTestLanguageInjectorProvider;
-import org.junit.runner.RunWith;
+import org.eclipse.xtext.parser.fragments.FragmentTestLanguageStandaloneSetup;
 
 /**
  * @author Sebastian Zarnekow - Initial contribution and API
  */
-@RunWith(XtextRunner.class)
-@InjectWith(FragmentTestLanguageInjectorProvider.class)
 @SuppressWarnings("all")
 public class FragmentsTest extends AbstractFragmentsTest {
+  @Override
+  public void setUp() throws Exception {
+    super.setUp();
+    FragmentTestLanguageStandaloneSetup _fragmentTestLanguageStandaloneSetup = new FragmentTestLanguageStandaloneSetup();
+    this.with(_fragmentTestLanguageStandaloneSetup);
+  }
 }

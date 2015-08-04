@@ -7,16 +7,12 @@
  *******************************************************************************/
 package org.eclipse.xtext.parser.fragments
 
-import org.eclipse.xtext.junit4.InjectWith
-import org.eclipse.xtext.junit4.XtextRunner
-import org.junit.runner.RunWith
-import org.junit.Ignore
-
 /**
  * @author Sebastian Zarnekow - Initial contribution and API
  */
-@Ignore("To be implemented")
-@RunWith(XtextRunner)
-@InjectWith(FragmentTestLanguageExInjectorProvider)
 class FragmentExsTest extends AbstractFragmentsTest {
+	override void setUp() throws Exception {
+		super.setUp();
+		with(new FragmentTestLanguageExStandaloneSetup());
+	}
 }

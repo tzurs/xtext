@@ -8,7 +8,9 @@
 package org.eclipse.xtext.parser.fragments;
 
 import com.google.inject.Inject;
+import com.google.inject.Injector;
 import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.xtext.junit4.AbstractXtextTests;
 import org.eclipse.xtext.junit4.util.ParseHelper;
 import org.eclipse.xtext.junit4.validation.ValidationTestHelper;
 import org.eclipse.xtext.nodemodel.ICompositeNode;
@@ -27,7 +29,7 @@ import org.junit.Test;
  * @author Sebastian Zarnekow - Initial contribution and API
  */
 @SuppressWarnings("all")
-public abstract class AbstractFragmentsTest {
+public abstract class AbstractFragmentsTest extends AbstractXtextTests {
   @Inject
   @Extension
   private ParseHelper<ParserRuleFragments> parseHelper;
@@ -39,6 +41,12 @@ public abstract class AbstractFragmentsTest {
   @Inject
   @Extension
   private InvariantChecker invariantChecker;
+  
+  @Override
+  protected void setInjector(final Injector injector) {
+    super.setInjector(injector);
+    this.injectMembers(this);
+  }
   
   @Test
   public void testSimpleModel() {

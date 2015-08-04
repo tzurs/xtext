@@ -8,20 +8,21 @@
 package org.eclipse.xtext.parser.fragments
 
 import com.google.inject.Inject
+import com.google.inject.Injector
+import org.eclipse.xtext.junit4.AbstractXtextTests
 import org.eclipse.xtext.junit4.util.ParseHelper
 import org.eclipse.xtext.junit4.validation.ValidationTestHelper
 import org.eclipse.xtext.nodemodel.impl.InvariantChecker
+import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamedWithAction
+import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.ParserRuleFragments
 import org.eclipse.xtext.resource.XtextResource
 import org.junit.Test
-
-import static org.junit.Assert.*
-import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.ParserRuleFragments
-import org.eclipse.xtext.parser.fragments.fragmentTestLanguage.PRFNamedWithAction
 
 /**
  * @author Sebastian Zarnekow - Initial contribution and API
  */
-abstract class AbstractFragmentsTest {
+abstract class AbstractFragmentsTest extends AbstractXtextTests {
+
 	@Inject
 	extension ParseHelper<ParserRuleFragments> parseHelper
 	
@@ -30,6 +31,11 @@ abstract class AbstractFragmentsTest {
 	
 	@Inject
 	extension InvariantChecker invariantChecker
+	
+	override protected setInjector(Injector injector) {
+		super.setInjector(injector)
+		injectMembers(this)
+	}
 	
 	@Test
 	def void testSimpleModel() {

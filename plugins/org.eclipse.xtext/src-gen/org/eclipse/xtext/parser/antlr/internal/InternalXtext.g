@@ -1494,12 +1494,6 @@ ruleRuleCall returns [EObject current=null]
     }
     @after { leaveRule(); }:
 ((
-    {
-        $current = forceCreateModelElement(
-            grammarAccess.getRuleCallAccess().getRuleCallAction_0(),
-            $current);
-    }
-)(
 (
 		{
 			if ($current==null) {
@@ -1507,60 +1501,60 @@ ruleRuleCall returns [EObject current=null]
 	        }
         }
 		{ 
-	        newCompositeNode(grammarAccess.getRuleCallAccess().getRuleAbstractRuleCrossReference_1_0()); 
+	        newCompositeNode(grammarAccess.getRuleCallAccess().getRuleAbstractRuleCrossReference_0_0()); 
 	    }
 		ruleRuleID		{ 
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-)(	otherlv_2='[' 
+)(	otherlv_1='[' 
     {
-    	newLeafNode(otherlv_2, grammarAccess.getRuleCallAccess().getLeftSquareBracketKeyword_2_0());
+    	newLeafNode(otherlv_1, grammarAccess.getRuleCallAccess().getLeftSquareBracketKeyword_1_0());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getRuleCallAccess().getArgumentsNamedArgumentParserRuleCall_2_1_0()); 
+	        newCompositeNode(grammarAccess.getRuleCallAccess().getArgumentsNamedArgumentParserRuleCall_1_1_0()); 
 	    }
-		lv_arguments_3_0=ruleNamedArgument		{
+		lv_arguments_2_0=ruleNamedArgument		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getRuleCallRule());
 	        }
        		add(
        			$current, 
        			"arguments",
-        		lv_arguments_3_0, 
+        		lv_arguments_2_0, 
         		"org.eclipse.xtext.Xtext.NamedArgument");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-)(	otherlv_4=',' 
+)(	otherlv_3=',' 
     {
-    	newLeafNode(otherlv_4, grammarAccess.getRuleCallAccess().getCommaKeyword_2_2_0());
+    	newLeafNode(otherlv_3, grammarAccess.getRuleCallAccess().getCommaKeyword_1_2_0());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getRuleCallAccess().getArgumentsNamedArgumentParserRuleCall_2_2_1_0()); 
+	        newCompositeNode(grammarAccess.getRuleCallAccess().getArgumentsNamedArgumentParserRuleCall_1_2_1_0()); 
 	    }
-		lv_arguments_5_0=ruleNamedArgument		{
+		lv_arguments_4_0=ruleNamedArgument		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getRuleCallRule());
 	        }
        		add(
        			$current, 
        			"arguments",
-        		lv_arguments_5_0, 
+        		lv_arguments_4_0, 
         		"org.eclipse.xtext.Xtext.NamedArgument");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-))*	otherlv_6=']' 
+))*	otherlv_5=']' 
     {
-    	newLeafNode(otherlv_6, grammarAccess.getRuleCallAccess().getRightSquareBracketKeyword_2_3());
+    	newLeafNode(otherlv_5, grammarAccess.getRuleCallAccess().getRightSquareBracketKeyword_1_3());
     }
 )?)
 ;
@@ -1649,25 +1643,19 @@ ruleNamedArgument returns [EObject current=null]
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-((
-    {
-        $current = forceCreateModelElement(
-            grammarAccess.getNamedArgumentAccess().getNamedArgumentAction_0(),
-            $current);
-    }
-)(((
+(((
 (
 		{ 
-	        newCompositeNode(grammarAccess.getNamedArgumentAccess().getLiteralValueLiteralValueParserRuleCall_1_0_0_0()); 
+	        newCompositeNode(grammarAccess.getNamedArgumentAccess().getLiteralValueLiteralValueParserRuleCall_0_0_0()); 
 	    }
-		lv_literalValue_1_0=ruleLiteralValue		{
+		lv_literalValue_0_0=ruleLiteralValue		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getNamedArgumentRule());
 	        }
        		set(
        			$current, 
        			"literalValue",
-        		lv_literalValue_1_0, 
+        		lv_literalValue_0_0, 
         		"org.eclipse.xtext.Xtext.LiteralValue");
 	        afterParserOrEnumRuleCall();
 	    }
@@ -1680,9 +1668,9 @@ ruleNamedArgument returns [EObject current=null]
 	            $current = createModelElement(grammarAccess.getNamedArgumentRule());
 	        }
         }
-	otherlv_2=RULE_ID
+	otherlv_1=RULE_ID
 	{
-		newLeafNode(otherlv_2, grammarAccess.getNamedArgumentAccess().getParameterParameterCrossReference_1_0_1_0()); 
+		newLeafNode(otherlv_1, grammarAccess.getNamedArgumentAccess().getParameterParameterCrossReference_0_1_0()); 
 	}
 
 )
@@ -1694,15 +1682,15 @@ ruleNamedArgument returns [EObject current=null]
 	            $current = createModelElement(grammarAccess.getNamedArgumentRule());
 	        }
         }
-	otherlv_3=RULE_ID
+	otherlv_2=RULE_ID
 	{
-		newLeafNode(otherlv_3, grammarAccess.getNamedArgumentAccess().getParameterParameterCrossReference_1_1_0_0()); 
+		newLeafNode(otherlv_2, grammarAccess.getNamedArgumentAccess().getParameterParameterCrossReference_1_0_0()); 
 	}
 
 )
-)	otherlv_4='=' 
+)	otherlv_3='=' 
     {
-    	newLeafNode(otherlv_4, grammarAccess.getNamedArgumentAccess().getEqualsSignKeyword_1_1_1());
+    	newLeafNode(otherlv_3, grammarAccess.getNamedArgumentAccess().getEqualsSignKeyword_1_1());
     }
 (
 (
@@ -1711,13 +1699,13 @@ ruleNamedArgument returns [EObject current=null]
 	            $current = createModelElement(grammarAccess.getNamedArgumentRule());
 	        }
         }
-	otherlv_5=RULE_ID
+	otherlv_4=RULE_ID
 	{
-		newLeafNode(otherlv_5, grammarAccess.getNamedArgumentAccess().getValueParameterCrossReference_1_1_2_0()); 
+		newLeafNode(otherlv_4, grammarAccess.getNamedArgumentAccess().getValueParameterCrossReference_1_2_0()); 
 	}
 
 )
-))))
+)))
 ;
 
 

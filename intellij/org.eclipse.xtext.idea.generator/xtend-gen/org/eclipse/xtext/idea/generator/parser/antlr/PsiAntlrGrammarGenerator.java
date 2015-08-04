@@ -265,32 +265,38 @@ public class PsiAntlrGrammarGenerator extends AbstractActionAwareAntlrGrammarGen
   @Override
   protected CharSequence _compileRule(final ParserRule it, final Grammar grammar, final AntlrOptions options) {
     StringConcatenation _builder = new StringConcatenation();
-    _builder.append("//Entry rule ");
-    String _entryRuleName = this._grammarAccessExtensions.entryRuleName(it);
-    _builder.append(_entryRuleName, "");
-    _builder.newLineIfNotEmpty();
-    String _entryRuleName_1 = this._grammarAccessExtensions.entryRuleName(it);
-    _builder.append(_entryRuleName_1, "");
-    CharSequence _compileEntryInit = this.compileEntryInit(it, options);
-    _builder.append(_compileEntryInit, "");
-    _builder.append(":");
-    _builder.newLineIfNotEmpty();
-    _builder.append("\t");
-    _builder.append("{ ");
-    CharSequence _markComposite = this.markComposite(it);
-    _builder.append(_markComposite, "\t");
-    _builder.append(" }");
-    _builder.newLineIfNotEmpty();
-    _builder.append("\t");
-    String _ruleName = this._grammarAccessExtensions.ruleName(it);
-    _builder.append(_ruleName, "\t");
-    _builder.newLineIfNotEmpty();
-    _builder.append("\t");
-    _builder.append("EOF;");
-    _builder.newLine();
-    CharSequence _compileEntryFinally = this.compileEntryFinally(it, options);
-    _builder.append(_compileEntryFinally, "");
-    _builder.newLineIfNotEmpty();
+    {
+      boolean _isFragment = it.isFragment();
+      boolean _not = (!_isFragment);
+      if (_not) {
+        _builder.append("//Entry rule ");
+        String _entryRuleName = this._grammarAccessExtensions.entryRuleName(it);
+        _builder.append(_entryRuleName, "");
+        _builder.newLineIfNotEmpty();
+        String _entryRuleName_1 = this._grammarAccessExtensions.entryRuleName(it);
+        _builder.append(_entryRuleName_1, "");
+        CharSequence _compileEntryInit = this.compileEntryInit(it, options);
+        _builder.append(_compileEntryInit, "");
+        _builder.append(":");
+        _builder.newLineIfNotEmpty();
+        _builder.append("\t");
+        _builder.append("{ ");
+        CharSequence _markComposite = this.markComposite(it);
+        _builder.append(_markComposite, "\t");
+        _builder.append(" }");
+        _builder.newLineIfNotEmpty();
+        _builder.append("\t");
+        String _ruleName = this._grammarAccessExtensions.ruleName(it);
+        _builder.append(_ruleName, "\t");
+        _builder.newLineIfNotEmpty();
+        _builder.append("\t");
+        _builder.append("EOF;");
+        _builder.newLine();
+        CharSequence _compileEntryFinally = this.compileEntryFinally(it, options);
+        _builder.append(_compileEntryFinally, "");
+        _builder.newLineIfNotEmpty();
+      }
+    }
     _builder.newLine();
     String _compileEBNF = this.compileEBNF(it, options);
     _builder.append(_compileEBNF, "");

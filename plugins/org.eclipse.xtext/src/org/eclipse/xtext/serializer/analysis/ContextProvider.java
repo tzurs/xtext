@@ -19,6 +19,7 @@ import org.eclipse.xtext.Assignment;
 import org.eclipse.xtext.Grammar;
 import org.eclipse.xtext.GrammarUtil;
 import org.eclipse.xtext.ParserRule;
+import org.eclipse.xtext.TypeRef;
 import org.eclipse.xtext.serializer.analysis.TypeFinderNFAProvider.TypeFinderState;
 import org.eclipse.xtext.serializer.analysis.TypeFinderNFAProvider.TypeFinderTransition;
 import org.eclipse.xtext.util.EmfFormatter;
@@ -39,7 +40,7 @@ public class ContextProvider implements IContextProvider {
 
 	protected void collectTypesForContext(TypeFinderState state, Set<EClass> types, boolean allowLocal,
 			boolean hasAssignment, Set<Object> visited) {
-		hasAssignment = hasAssignment || state.getGrammarElement() instanceof Assignment;
+		hasAssignment = hasAssignment || state.getGrammarElement() instanceof Assignment || GrammarUtil.isEObjectFragmentRuleCall(state.getGrammarElement());
 		if (allowLocal) {
 			if (state.getGrammarElement() instanceof Action) {
 				types.add((EClass) ((Action) state.getGrammarElement()).getType().getClassifier());
@@ -47,10 +48,14 @@ public class ContextProvider implements IContextProvider {
 			}
 		}
 		if (state.isEndState() && !GrammarUtil.isUnassignedEObjectRuleCall(state.getGrammarElement())) {
-			if (hasAssignment)
-				types.add((EClass) GrammarUtil.containingRule(state.getGrammarElement()).getType().getClassifier());
-			else
+			if (hasAssignment) {
+				ParserRule rule = (ParserRule) GrammarUtil.containingRule(state.getGrammarElement());
+				if (!rule.isFragment()) {
+					types.add((EClass) rule.getType().getClassifier());
+				}
+			} else {
 				types.add(null);
+			}
 		}
 		if (!visited.add(state))
 			return;

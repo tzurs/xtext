@@ -120,7 +120,9 @@ class AntlrGrammarGenerator extends AbstractActionAwareAntlrGrammarGenerator {
 	}
 	
 	protected override _compileRule(ParserRule it, Grammar grammar, AntlrOptions options) '''
-		«compileEntryRule(grammar, options)»
+		«IF !it.isFragment»
+			«compileEntryRule(grammar, options)»
+		«ENDIF»
 		
 		«compileEBNF(options)»
 	'''
@@ -147,7 +149,7 @@ class AntlrGrammarGenerator extends AbstractActionAwareAntlrGrammarGenerator {
 	}
 	
 	override protected compileInit(AbstractRule it, AntlrOptions options) '''
-		 returns «compileReturns(options)»
+		«IF it.isEObjectFragmentRule»[EObject in_current]«ENDIF» returns «compileReturns(options)»
 		@init {
 			enterRule();
 			«compileInitHiddenTokens(options)»
@@ -156,6 +158,8 @@ class AntlrGrammarGenerator extends AbstractActionAwareAntlrGrammarGenerator {
 		@after {
 			leaveRule();
 		}'''
+	
+	
 		
 	protected def compileReturns(AbstractRule it, AntlrOptions options) {
 		switch it {
@@ -164,7 +168,7 @@ class AntlrGrammarGenerator extends AbstractActionAwareAntlrGrammarGenerator {
 			ParserRule case datatypeRule:
 				'[AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]'
 			ParserRule:
-				'[EObject current=null]'
+				'''[EObject current=«IF it.isEObjectFragmentRule»in_current«ELSE»null«ENDIF»]'''
 			default:
 				throw new IllegalStateException("Unexpected rule: " + it)
 		}
@@ -278,9 +282,14 @@ class AntlrGrammarGenerator extends AbstractActionAwareAntlrGrammarGenerator {
 					}
 					«ENDIF»
 					{
+						«IF isEObjectFragmentRuleCall»
+							if ($current==null) {
+								$current = «it.createModelElement»;
+							}
+						«ENDIF»
 						«newCompositeNode»
 					}
-					«super._ebnf2(it, options, supportActions)»
+					«super._ebnf2(it, options, supportActions)»«IF isEObjectFragmentRuleCall»[$current]«ENDIF»
 					{
 						afterParserOrEnumRuleCall();
 					}

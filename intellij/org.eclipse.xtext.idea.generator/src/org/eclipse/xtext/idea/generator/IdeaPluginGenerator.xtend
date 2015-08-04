@@ -18,7 +18,6 @@ import org.eclipse.xpand2.output.Output
 import org.eclipse.xpand2.output.OutputImpl
 import org.eclipse.xtend.lib.annotations.Accessors
 import org.eclipse.xtext.AbstractElement
-import org.eclipse.xtext.AbstractRule
 import org.eclipse.xtext.Action
 import org.eclipse.xtext.CrossReference
 import org.eclipse.xtext.GeneratedMetamodel
@@ -460,26 +459,6 @@ class IdeaPluginGenerator extends Xtend2GeneratorFragment {
 		<«extensionPointId» language="«grammar.languageID»"
 								factoryClass="«grammar.extensionFactoryName»"
 								implementationClass="«implementationClass»"/>
-	'''
-	
-	def compilePsiElement(Grammar grammar, AbstractRule rule)'''
-		package «grammar.psiPackageName»;
-		«IF rule.hasMultipleAssigment»
-		
-		import java.util.List;
-		«ENDIF»
-		
-		import com.intellij.psi.«rule.psiElementSuperClassName»;
-		
-		public interface «rule.psiElementClassName» extends «rule.psiElementSuperClassName» {
-			«FOR assignment:rule.assignmentsWithoutName»
-				
-				«assignment.typeName» «assignment.getter»();
-				
-				void «assignment.setter»(«assignment.typeName» «assignment.feature»);
-			«ENDFOR»
-		
-		}
 	'''
 	
 	def compileFileImpl(Grammar grammar)'''

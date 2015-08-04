@@ -62,7 +62,7 @@ public class XtextScopingTest extends AbstractXtextTests {
 		AbstractRule calledRule = call.getRule();
 		assertNotNull(calledRule);
 		XtextGrammarAccess ga = (XtextGrammarAccess) get(IGrammarAccess.class);
-		String text = get(ICrossReferenceSerializer.class).serializeCrossRef(call, ga.getRuleCallAccess().getRuleAbstractRuleCrossReference_1_0(), calledRule, null);
+		String text = get(ICrossReferenceSerializer.class).serializeCrossRef(call, ga.getRuleCallAccess().getRuleAbstractRuleCrossReference_0_0(), calledRule, null);
 		assertNotNull(text);
 		assertEquals(calledRule.getName(), text);
 	}

@@ -964,34 +964,53 @@ ruleAbstractTokenWithCardinality:
 			}
 		)
 		(
-			(
-				(
-					{
-						markLeaf(elementTypeProvider.getAbstractTokenWithCardinality_CardinalityQuestionMarkKeyword_1_0_0ElementType());
-					}
-					lv_cardinality_2_1='?'
-					{
-						doneLeaf(lv_cardinality_2_1);
-					}
-					    |
-					{
-						markLeaf(elementTypeProvider.getAbstractTokenWithCardinality_CardinalityAsteriskKeyword_1_0_1ElementType());
-					}
-					lv_cardinality_2_2='*'
-					{
-						doneLeaf(lv_cardinality_2_2);
-					}
-					    |
-					{
-						markLeaf(elementTypeProvider.getAbstractTokenWithCardinality_CardinalityPlusSignKeyword_1_0_2ElementType());
-					}
-					lv_cardinality_2_3='+'
-					{
-						doneLeaf(lv_cardinality_2_3);
-					}
-				)
-			)
+			{
+				markComposite(elementTypeProvider.getAbstractTokenWithCardinality_CardinalitiesParserRuleCall_1ElementType());
+			}
+			ruleCardinalities
+			{
+				doneComposite();
+			}
 		)?
+	)
+;
+
+//Entry rule entryRuleCardinalities
+entryRuleCardinalities:
+	{ markComposite(elementTypeProvider.getCardinalitiesElementType()); }
+	ruleCardinalities
+	EOF;
+
+// Rule Cardinalities
+ruleCardinalities:
+	(
+		(
+			(
+				{
+					markLeaf(elementTypeProvider.getCardinalities_CardinalityQuestionMarkKeyword_0_0ElementType());
+				}
+				lv_cardinality_0_1='?'
+				{
+					doneLeaf(lv_cardinality_0_1);
+				}
+				    |
+				{
+					markLeaf(elementTypeProvider.getCardinalities_CardinalityAsteriskKeyword_0_1ElementType());
+				}
+				lv_cardinality_0_2='*'
+				{
+					doneLeaf(lv_cardinality_0_2);
+				}
+				    |
+				{
+					markLeaf(elementTypeProvider.getCardinalities_CardinalityPlusSignKeyword_0_2ElementType());
+				}
+				lv_cardinality_0_3='+'
+				{
+					doneLeaf(lv_cardinality_0_3);
+				}
+			)
+		)
 	)
 ;
 
@@ -1421,39 +1440,21 @@ entryRulePredicatedKeyword:
 // Rule PredicatedKeyword
 rulePredicatedKeyword:
 	(
-		(
-			(
-				(
-					{
-						markLeaf(elementTypeProvider.getPredicatedKeyword_PredicatedEqualsSignGreaterThanSignKeyword_0_0_0ElementType());
-					}
-					lv_predicated_0_0='=>'
-					{
-						doneLeaf(lv_predicated_0_0);
-					}
-				)
-			)
-			    |
-			(
-				(
-					{
-						markLeaf(elementTypeProvider.getPredicatedKeyword_FirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0ElementType());
-					}
-					lv_firstSetPredicated_1_0='->'
-					{
-						doneLeaf(lv_firstSetPredicated_1_0);
-					}
-				)
-			)
-		)
+		{
+			markComposite(elementTypeProvider.getPredicatedKeyword_PredicateParserRuleCall_0ElementType());
+		}
+		rulePredicate
+		{
+			doneComposite();
+		}
 		(
 			(
 				{
 					markLeaf(elementTypeProvider.getPredicatedKeyword_ValueSTRINGTerminalRuleCall_1_0ElementType());
 				}
-				lv_value_2_0=RULE_STRING
+				lv_value_1_0=RULE_STRING
 				{
-					doneLeaf(lv_value_2_0);
+					doneLeaf(lv_value_1_0);
 				}
 			)
 		)
@@ -1469,39 +1470,21 @@ entryRulePredicatedRuleCall:
 // Rule PredicatedRuleCall
 rulePredicatedRuleCall:
 	(
-		(
-			(
-				(
-					{
-						markLeaf(elementTypeProvider.getPredicatedRuleCall_PredicatedEqualsSignGreaterThanSignKeyword_0_0_0ElementType());
-					}
-					lv_predicated_0_0='=>'
-					{
-						doneLeaf(lv_predicated_0_0);
-					}
-				)
-			)
-			    |
-			(
-				(
-					{
-						markLeaf(elementTypeProvider.getPredicatedRuleCall_FirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0ElementType());
-					}
-					lv_firstSetPredicated_1_0='->'
-					{
-						doneLeaf(lv_firstSetPredicated_1_0);
-					}
-				)
-			)
-		)
+		{
+			markComposite(elementTypeProvider.getPredicatedRuleCall_PredicateParserRuleCall_0ElementType());
+		}
+		rulePredicate
+		{
+			doneComposite();
+		}
 		(
 			(
 				{
 					markLeaf(elementTypeProvider.getPredicatedRuleCall_RuleAbstractRuleCrossReference_1_0ElementType());
 				}
-				otherlv_2=RULE_ID
+				otherlv_1=RULE_ID
 				{
-					doneLeaf(otherlv_2);
+					doneLeaf(otherlv_1);
 				}
 			)
 		)
@@ -1518,38 +1501,22 @@ entryRuleAssignment:
 ruleAssignment:
 	(
 		(
-			(
-				(
-					{
-						markLeaf(elementTypeProvider.getAssignment_PredicatedEqualsSignGreaterThanSignKeyword_0_0_0ElementType());
-					}
-					lv_predicated_0_0='=>'
-					{
-						doneLeaf(lv_predicated_0_0);
-					}
-				)
-			)
-			    |
-			(
-				(
-					{
-						markLeaf(elementTypeProvider.getAssignment_FirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0ElementType());
-					}
-					lv_firstSetPredicated_1_0='->'
-					{
-						doneLeaf(lv_firstSetPredicated_1_0);
-					}
-				)
-			)
+			{
+				markComposite(elementTypeProvider.getAssignment_PredicateParserRuleCall_0ElementType());
+			}
+			rulePredicate
+			{
+				doneComposite();
+			}
 		)?
 		(
 			(
 				{
 					markLeaf(elementTypeProvider.getAssignment_FeatureIDTerminalRuleCall_1_0ElementType());
 				}
-				lv_feature_2_0=RULE_ID
+				lv_feature_1_0=RULE_ID
 				{
-					doneLeaf(lv_feature_2_0);
+					doneLeaf(lv_feature_1_0);
 				}
 			)
 		)
@@ -1559,25 +1526,25 @@ ruleAssignment:
 					{
 						markLeaf(elementTypeProvider.getAssignment_OperatorPlusSignEqualsSignKeyword_2_0_0ElementType());
 					}
-					lv_operator_3_1='+='
+					lv_operator_2_1='+='
 					{
-						doneLeaf(lv_operator_3_1);
+						doneLeaf(lv_operator_2_1);
 					}
 					    |
 					{
 						markLeaf(elementTypeProvider.getAssignment_OperatorEqualsSignKeyword_2_0_1ElementType());
 					}
-					lv_operator_3_2='='
+					lv_operator_2_2='='
 					{
-						doneLeaf(lv_operator_3_2);
+						doneLeaf(lv_operator_2_2);
 					}
 					    |
 					{
 						markLeaf(elementTypeProvider.getAssignment_OperatorQuestionMarkEqualsSignKeyword_2_0_2ElementType());
 					}
-					lv_operator_3_3='?='
+					lv_operator_2_3='?='
 					{
-						doneLeaf(lv_operator_3_3);
+						doneLeaf(lv_operator_2_3);
 					}
 				)
 			)
@@ -1587,9 +1554,44 @@ ruleAssignment:
 				{
 					markComposite(elementTypeProvider.getAssignment_TerminalAssignableTerminalParserRuleCall_3_0ElementType());
 				}
-				lv_terminal_4_0=ruleAssignableTerminal
+				lv_terminal_3_0=ruleAssignableTerminal
 				{
 					doneComposite();
+				}
+			)
+		)
+	)
+;
+
+//Entry rule entryRulePredicate
+entryRulePredicate:
+	{ markComposite(elementTypeProvider.getPredicateElementType()); }
+	rulePredicate
+	EOF;
+
+// Rule Predicate
+rulePredicate:
+	(
+		(
+			(
+				{
+					markLeaf(elementTypeProvider.getPredicate_PredicatedEqualsSignGreaterThanSignKeyword_0_0ElementType());
+				}
+				lv_predicated_0_0='=>'
+				{
+					doneLeaf(lv_predicated_0_0);
+				}
+			)
+		)
+		    |
+		(
+			(
+				{
+					markLeaf(elementTypeProvider.getPredicate_FirstSetPredicatedHyphenMinusGreaterThanSignKeyword_1_0ElementType());
+				}
+				lv_firstSetPredicated_1_0='->'
+				{
+					doneLeaf(lv_firstSetPredicated_1_0);
 				}
 			)
 		)
@@ -1845,44 +1847,26 @@ entryRulePredicatedGroup:
 // Rule PredicatedGroup
 rulePredicatedGroup:
 	(
-		(
-			(
-				(
-					{
-						markLeaf(elementTypeProvider.getPredicatedGroup_PredicatedEqualsSignGreaterThanSignKeyword_0_0_0ElementType());
-					}
-					lv_predicated_0_0='=>'
-					{
-						doneLeaf(lv_predicated_0_0);
-					}
-				)
-			)
-			    |
-			(
-				(
-					{
-						markLeaf(elementTypeProvider.getPredicatedGroup_FirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0ElementType());
-					}
-					lv_firstSetPredicated_1_0='->'
-					{
-						doneLeaf(lv_firstSetPredicated_1_0);
-					}
-				)
-			)
-		)
+		{
+			markComposite(elementTypeProvider.getPredicatedGroup_PredicateParserRuleCall_0ElementType());
+		}
+		rulePredicate
+		{
+			doneComposite();
+		}
 		{
 			markLeaf(elementTypeProvider.getPredicatedGroup_LeftParenthesisKeyword_1ElementType());
 		}
-		otherlv_2='('
+		otherlv_1='('
 		{
-			doneLeaf(otherlv_2);
+			doneLeaf(otherlv_1);
 		}
 		(
 			(
 				{
 					markComposite(elementTypeProvider.getPredicatedGroup_ElementsAlternativesParserRuleCall_2_0ElementType());
 				}
-				lv_elements_3_0=ruleAlternatives
+				lv_elements_2_0=ruleAlternatives
 				{
 					doneComposite();
 				}
@@ -1891,9 +1875,9 @@ rulePredicatedGroup:
 		{
 			markLeaf(elementTypeProvider.getPredicatedGroup_RightParenthesisKeyword_3ElementType());
 		}
-		otherlv_4=')'
+		otherlv_3=')'
 		{
-			doneLeaf(otherlv_4);
+			doneLeaf(otherlv_3);
 		}
 	)
 ;
@@ -1954,39 +1938,28 @@ ruleTerminalRule:
 				)
 				(
 					{
-						markLeaf(elementTypeProvider.getTerminalRule_ReturnsKeyword_1_1_1_0ElementType());
+						markComposite(elementTypeProvider.getTerminalRule_ReturnsClauseParserRuleCall_1_1_1ElementType());
 					}
-					otherlv_4='returns'
+					ruleReturnsClause
 					{
-						doneLeaf(otherlv_4);
+						doneComposite();
 					}
-					(
-						(
-							{
-								markComposite(elementTypeProvider.getTerminalRule_TypeTypeRefParserRuleCall_1_1_1_1_0ElementType());
-							}
-							lv_type_5_0=ruleTypeRef
-							{
-								doneComposite();
-							}
-						)
-					)
 				)?
 			)
 		)
 		{
 			markLeaf(elementTypeProvider.getTerminalRule_ColonKeyword_2ElementType());
 		}
-		otherlv_6=':'
+		otherlv_5=':'
 		{
-			doneLeaf(otherlv_6);
+			doneLeaf(otherlv_5);
 		}
 		(
 			(
 				{
 					markComposite(elementTypeProvider.getTerminalRule_AlternativesTerminalAlternativesParserRuleCall_3_0ElementType());
 				}
-				lv_alternatives_7_0=ruleTerminalAlternatives
+				lv_alternatives_6_0=ruleTerminalAlternatives
 				{
 					doneComposite();
 				}
@@ -1995,9 +1968,9 @@ ruleTerminalRule:
 		{
 			markLeaf(elementTypeProvider.getTerminalRule_SemicolonKeyword_4ElementType());
 		}
-		otherlv_8=';'
+		otherlv_7=';'
 		{
-			doneLeaf(otherlv_8);
+			doneLeaf(otherlv_7);
 		}
 	)
 ;
@@ -2104,33 +2077,13 @@ ruleTerminalToken:
 			doneComposite();
 		}
 		(
-			(
-				(
-					{
-						markLeaf(elementTypeProvider.getTerminalToken_CardinalityQuestionMarkKeyword_1_0_0ElementType());
-					}
-					lv_cardinality_1_1='?'
-					{
-						doneLeaf(lv_cardinality_1_1);
-					}
-					    |
-					{
-						markLeaf(elementTypeProvider.getTerminalToken_CardinalityAsteriskKeyword_1_0_1ElementType());
-					}
-					lv_cardinality_1_2='*'
-					{
-						doneLeaf(lv_cardinality_1_2);
-					}
-					    |
-					{
-						markLeaf(elementTypeProvider.getTerminalToken_CardinalityPlusSignKeyword_1_0_2ElementType());
-					}
-					lv_cardinality_1_3='+'
-					{
-						doneLeaf(lv_cardinality_1_3);
-					}
-				)
-			)
+			{
+				markComposite(elementTypeProvider.getTerminalToken_CardinalitiesParserRuleCall_1ElementType());
+			}
+			ruleCardinalities
+			{
+				doneComposite();
+			}
 		)?
 	)
 ;
@@ -2438,37 +2391,26 @@ ruleEnumRule:
 		)
 		(
 			{
-				markLeaf(elementTypeProvider.getEnumRule_ReturnsKeyword_2_0ElementType());
+				markComposite(elementTypeProvider.getEnumRule_ReturnsClauseParserRuleCall_2ElementType());
 			}
-			otherlv_2='returns'
+			ruleReturnsClause
 			{
-				doneLeaf(otherlv_2);
+				doneComposite();
 			}
-			(
-				(
-					{
-						markComposite(elementTypeProvider.getEnumRule_TypeTypeRefParserRuleCall_2_1_0ElementType());
-					}
-					lv_type_3_0=ruleTypeRef
-					{
-						doneComposite();
-					}
-				)
-			)
 		)?
 		{
 			markLeaf(elementTypeProvider.getEnumRule_ColonKeyword_3ElementType());
 		}
-		otherlv_4=':'
+		otherlv_3=':'
 		{
-			doneLeaf(otherlv_4);
+			doneLeaf(otherlv_3);
 		}
 		(
 			(
 				{
 					markComposite(elementTypeProvider.getEnumRule_AlternativesEnumLiteralsParserRuleCall_4_0ElementType());
 				}
-				lv_alternatives_5_0=ruleEnumLiterals
+				lv_alternatives_4_0=ruleEnumLiterals
 				{
 					doneComposite();
 				}
@@ -2477,9 +2419,9 @@ ruleEnumRule:
 		{
 			markLeaf(elementTypeProvider.getEnumRule_SemicolonKeyword_5ElementType());
 		}
-		otherlv_6=';'
+		otherlv_5=';'
 		{
-			doneLeaf(otherlv_6);
+			doneLeaf(otherlv_5);
 		}
 	)
 ;

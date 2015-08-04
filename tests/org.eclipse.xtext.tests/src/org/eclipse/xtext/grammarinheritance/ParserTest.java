@@ -29,11 +29,6 @@ public class ParserTest extends AbstractXtextTests {
 		with(new InheritanceTest3LanguageStandaloneSetup());
 	}
 	
-	@Override
-	protected boolean shouldTestSerializer(XtextResource resource) {
-		return true;
-	}
-
 	@Test public void test_01() throws Exception {
 		Model model = (Model) getModel("model id { element id }");
 		assertEquals("id", model.getName());

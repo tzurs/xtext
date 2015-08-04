@@ -34,6 +34,7 @@ import org.eclipse.xtext.ParserRule;
 import org.eclipse.xtext.RuleCall;
 import org.eclipse.xtext.RuleNames;
 import org.eclipse.xtext.TerminalRule;
+import org.eclipse.xtext.TypeRef;
 import org.eclipse.xtext.UnorderedGroup;
 import org.eclipse.xtext.grammaranalysis.impl.GrammarElementTitleSwitch;
 import org.eclipse.xtext.serializer.analysis.ActionFilterNFAProvider.ActionFilterState;
@@ -186,17 +187,19 @@ public class GrammarConstraintProvider implements IGrammarConstraintProvider {
 				case ASSIGNED_TERMINAL_RULE_CALL:
 					EClass type = ele.getContainingConstraint().getType();
 					EStructuralFeature feature = type.getEStructuralFeature(ele.getFeatureName());
-					if (feature == null)
-						throw new RuntimeException("Feature " + ele.getFeatureName() + " not found in "
+					if (feature == null) {
+						System.err.println("Feature " + ele.getFeatureName() + " not found in "
 								+ type.getName());
-					int featureID = type.getFeatureID(feature);
-					List<IConstraintElement> assignmentByFeature = assignmentsByFeature[featureID];
-					if (assignmentByFeature == null)
-						assignmentsByFeature[featureID] = assignmentByFeature = Lists.newArrayList();
-					ele.setFeatureAssignmentId(assignmentByFeature.size());
-					assignmentByFeature.add(ele);
-					ele.setAssignmentId(assignments.size());
-					assignments.add(ele);
+					} else {
+						int featureID = type.getFeatureID(feature);
+						List<IConstraintElement> assignmentByFeature = assignmentsByFeature[featureID];
+						if (assignmentByFeature == null)
+							assignmentsByFeature[featureID] = assignmentByFeature = Lists.newArrayList();
+						ele.setFeatureAssignmentId(assignmentByFeature.size());
+						assignmentByFeature.add(ele);
+						ele.setAssignmentId(assignments.size());
+						assignments.add(ele);
+					}
 					return;
 				case ALTERNATIVE:
 				case GROUP:
@@ -1040,16 +1043,27 @@ public class GrammarConstraintProvider implements IGrammarConstraintProvider {
 		} else if (ele instanceof RuleCall) {
 			RuleCall rc = (RuleCall) ele;
 			if (GrammarUtil.isUnassignedEObjectRuleCall(rc)) {
-				if (!visited.add(rc))
-					return null;
-				ConstraintElement result = createConstraintElement((ParserRule) rc.getRule(), requiredType, visited);
-				if (result != null && result != INVALID) {
-					if (rc.getRule().getType().getClassifier() == requiredType)
-						result.typeMatch();
-					if (result.isTypeMatch())
-						return result;
+				ParserRule rule = (ParserRule) rc.getRule();
+				if (!rule.isFragment()) {
+					if (!visited.add(rc))
+						return null;
+					ConstraintElement result = createConstraintElement(rule, requiredType, visited);
+					if (result != null && result != INVALID) {
+						TypeRef returnType = rc.getRule().getType();
+						if (returnType.getClassifier() == requiredType)
+							result.typeMatch();
+						if (result.isTypeMatch())
+							return result;
+					}
+					return isOptional ? null : INVALID;
+				} else {
+					ConstraintElement result = createConstraintElement(context, rule.getAlternatives(), requiredType, visited);
+					if (result != null && result != INVALID) {
+						result.setMany(result.isMany() || GrammarUtil.isMultipleCardinality(ele));
+						result.setOptional(result.isOptional() || GrammarUtil.isOptionalCardinality(ele));
+					}
+					return result;
 				}
-				return isOptional ? null : INVALID;
 			} else if (GrammarUtil.containingAssignment(ele) != null) {
 				return new ConstraintElement(context, getConstraintElementType(ele), ele);
 			} else {
@@ -1236,7 +1250,7 @@ public class GrammarConstraintProvider implements IGrammarConstraintProvider {
 	protected ConstraintElement createConstraintElement(ParserRule rule, EClass requiredType, Set<Object> visited) {
 		if (!visited.add(rule))
 			return INVALID;
-		if (GrammarUtil.containsAssignedAction(rule)) {
+		if (GrammarUtil.containsAssignedAction(rule)) { // also check actions in used fragments
 			ActionFilterState start = nfaProvider.getNFA(rule.getAlternatives());
 			return createConstraintElement(rule, start, requiredType, false, visited);
 		} else {

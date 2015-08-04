@@ -31,7 +31,6 @@ import org.eclipse.xtext.serializer.sequencer.LegacyTransientValueService;
 import org.eclipse.xtext.serializer.sequencertest.NullCrossRef;
 import org.eclipse.xtext.serializer.sequencertest.SequencertestPackage;
 
-import com.google.common.base.Strings;
 import com.google.common.collect.Multimap;
 import com.google.inject.Singleton;
 

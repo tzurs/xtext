@@ -43,15 +43,15 @@ class PsiAntlrGrammarGenerator extends AbstractActionAwareAntlrGrammarGenerator 
 		options {
 			superClass=AbstractPsiAntlrParser;
 			«IF options.backtrack || options.memoize || options.k >= 0»
-			«IF options.backtrack»
-			backtrack=true;
-			«ENDIF»
-			«IF options.memoize»
-			memoize=true;
-			«ENDIF»
-			«IF options.k >= 0»
-			memoize=«options.k»;
-			«ENDIF»
+				«IF options.backtrack»
+					backtrack=true;
+				«ENDIF»
+				«IF options.memoize»
+					memoize=true;
+				«ENDIF»
+				«IF options.k >= 0»
+					memoize=«options.k»;
+				«ENDIF»
 			«ENDIF»
 		}
 	'''
@@ -64,7 +64,7 @@ class PsiAntlrGrammarGenerator extends AbstractActionAwareAntlrGrammarGenerator 
 		import org.eclipse.xtext.parser.antlr.XtextTokenStream;
 		import org.eclipse.xtext.parser.antlr.XtextTokenStream.HiddenTokens;
 		«IF !allParserRules.map[eAllContentsAsList].flatten.filter(UnorderedGroup).empty && options.backtrack»
-		import org.eclipse.xtext.parser.antlr.IUnorderedGroupHelper.UnorderedGroupState;
+			import org.eclipse.xtext.parser.antlr.IUnorderedGroupHelper.UnorderedGroupState;
 		«ENDIF»
 		import «gaFQName»;
 
@@ -106,12 +106,14 @@ class PsiAntlrGrammarGenerator extends AbstractActionAwareAntlrGrammarGenerator 
 	}
 	
 	override protected _compileRule(ParserRule it, Grammar grammar, AntlrOptions options) '''
-		//Entry rule «entryRuleName»
-		«entryRuleName»«compileEntryInit(options)»:
-			{ «markComposite» }
-			«ruleName»
-			EOF;
-		«compileEntryFinally(options)»
+		«IF !it.fragment»
+			//Entry rule «entryRuleName»
+			«entryRuleName»«compileEntryInit(options)»:
+				{ «markComposite» }
+				«ruleName»
+				EOF;
+			«compileEntryFinally(options)»
+		«ENDIF»
 		
 		«compileEBNF(options)»
 	'''

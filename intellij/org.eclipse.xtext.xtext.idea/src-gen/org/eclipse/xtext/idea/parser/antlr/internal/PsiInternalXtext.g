@@ -591,11 +591,6 @@ ruleParserRule:
 	)
 ;
 
-//Entry rule entryRuleRuleNameAndParams
-entryRuleRuleNameAndParams:
-	{ markComposite(elementTypeProvider.getRuleNameAndParamsElementType()); }
-	ruleRuleNameAndParams
-	EOF;
 
 // Rule RuleNameAndParams
 ruleRuleNameAndParams:
@@ -1194,15 +1189,9 @@ entryRuleRuleCall:
 ruleRuleCall:
 	(
 		(
-			{
-				precedeComposite(elementTypeProvider.getRuleCall_RuleCallAction_0ElementType());
-				doneComposite();
-			}
-		)
-		(
 			(
 				{
-					markComposite(elementTypeProvider.getRuleCall_RuleAbstractRuleCrossReference_1_0ElementType());
+					markComposite(elementTypeProvider.getRuleCall_RuleAbstractRuleCrossReference_0_0ElementType());
 				}
 				ruleRuleID
 				{
@@ -1212,18 +1201,18 @@ ruleRuleCall:
 		)
 		(
 			{
-				markLeaf(elementTypeProvider.getRuleCall_LeftSquareBracketKeyword_2_0ElementType());
+				markLeaf(elementTypeProvider.getRuleCall_LeftSquareBracketKeyword_1_0ElementType());
 			}
-			otherlv_2='['
+			otherlv_1='['
 			{
-				doneLeaf(otherlv_2);
+				doneLeaf(otherlv_1);
 			}
 			(
 				(
 					{
-						markComposite(elementTypeProvider.getRuleCall_ArgumentsNamedArgumentParserRuleCall_2_1_0ElementType());
+						markComposite(elementTypeProvider.getRuleCall_ArgumentsNamedArgumentParserRuleCall_1_1_0ElementType());
 					}
-					lv_arguments_3_0=ruleNamedArgument
+					lv_arguments_2_0=ruleNamedArgument
 					{
 						doneComposite();
 					}
@@ -1231,18 +1220,18 @@ ruleRuleCall:
 			)
 			(
 				{
-					markLeaf(elementTypeProvider.getRuleCall_CommaKeyword_2_2_0ElementType());
+					markLeaf(elementTypeProvider.getRuleCall_CommaKeyword_1_2_0ElementType());
 				}
-				otherlv_4=','
+				otherlv_3=','
 				{
-					doneLeaf(otherlv_4);
+					doneLeaf(otherlv_3);
 				}
 				(
 					(
 						{
-							markComposite(elementTypeProvider.getRuleCall_ArgumentsNamedArgumentParserRuleCall_2_2_1_0ElementType());
+							markComposite(elementTypeProvider.getRuleCall_ArgumentsNamedArgumentParserRuleCall_1_2_1_0ElementType());
 						}
-						lv_arguments_5_0=ruleNamedArgument
+						lv_arguments_4_0=ruleNamedArgument
 						{
 							doneComposite();
 						}
@@ -1250,11 +1239,11 @@ ruleRuleCall:
 				)
 			)*
 			{
-				markLeaf(elementTypeProvider.getRuleCall_RightSquareBracketKeyword_2_3ElementType());
+				markLeaf(elementTypeProvider.getRuleCall_RightSquareBracketKeyword_1_3ElementType());
 			}
-			otherlv_6=']'
+			otherlv_5=']'
 			{
-				doneLeaf(otherlv_6);
+				doneLeaf(otherlv_5);
 			}
 		)?
 	)
@@ -1314,66 +1303,58 @@ entryRuleNamedArgument:
 ruleNamedArgument:
 	(
 		(
-			{
-				precedeComposite(elementTypeProvider.getNamedArgument_NamedArgumentAction_0ElementType());
-				doneComposite();
-			}
+			(
+				(
+					{
+						markComposite(elementTypeProvider.getNamedArgument_LiteralValueLiteralValueParserRuleCall_0_0_0ElementType());
+					}
+					lv_literalValue_0_0=ruleLiteralValue
+					{
+						doneComposite();
+					}
+				)
+			)?
+			(
+				(
+					{
+						markLeaf(elementTypeProvider.getNamedArgument_ParameterParameterCrossReference_0_1_0ElementType());
+					}
+					otherlv_1=RULE_ID
+					{
+						doneLeaf(otherlv_1);
+					}
+				)
+			)
 		)
+		    |
 		(
 			(
 				(
-					(
-						{
-							markComposite(elementTypeProvider.getNamedArgument_LiteralValueLiteralValueParserRuleCall_1_0_0_0ElementType());
-						}
-						lv_literalValue_1_0=ruleLiteralValue
-						{
-							doneComposite();
-						}
-					)
-				)?
-				(
-					(
-						{
-							markLeaf(elementTypeProvider.getNamedArgument_ParameterParameterCrossReference_1_0_1_0ElementType());
-						}
-						otherlv_2=RULE_ID
-						{
-							doneLeaf(otherlv_2);
-						}
-					)
+					{
+						markLeaf(elementTypeProvider.getNamedArgument_ParameterParameterCrossReference_1_0_0ElementType());
+					}
+					otherlv_2=RULE_ID
+					{
+						doneLeaf(otherlv_2);
+					}
 				)
 			)
-			    |
+			{
+				markLeaf(elementTypeProvider.getNamedArgument_EqualsSignKeyword_1_1ElementType());
+			}
+			otherlv_3='='
+			{
+				doneLeaf(otherlv_3);
+			}
 			(
 				(
-					(
-						{
-							markLeaf(elementTypeProvider.getNamedArgument_ParameterParameterCrossReference_1_1_0_0ElementType());
-						}
-						otherlv_3=RULE_ID
-						{
-							doneLeaf(otherlv_3);
-						}
-					)
-				)
-				{
-					markLeaf(elementTypeProvider.getNamedArgument_EqualsSignKeyword_1_1_1ElementType());
-				}
-				otherlv_4='='
-				{
-					doneLeaf(otherlv_4);
-				}
-				(
-					(
-						{
-							markLeaf(elementTypeProvider.getNamedArgument_ValueParameterCrossReference_1_1_2_0ElementType());
-						}
-						otherlv_5=RULE_ID
-						{
-							doneLeaf(otherlv_5);
-						}
-					)
+					{
+						markLeaf(elementTypeProvider.getNamedArgument_ValueParameterCrossReference_1_2_0ElementType());
+					}
+					otherlv_4=RULE_ID
+					{
+						doneLeaf(otherlv_4);
+					}
 				)
 			)
 		)

@@ -53,7 +53,7 @@ fragment RuleNameAndParams returns ParserRule:
 	name=ID ('[' (parameters+=Parameter (',' parameters+=Parameter)*)? ']')?
 ;
 
-fragment ReturnsClause returns ParserRule:
+fragment ReturnsClause returns AbstractRule:
 	'returns' type=TypeRef
 ;
 
@@ -89,7 +89,11 @@ AbstractToken returns AbstractElement:
 
 /* SuppressWarnings[potentialOverride]: Handled in CardinalityAwareEcoreFactory */
 AbstractTokenWithCardinality returns AbstractElement:
-	(Assignment | AbstractTerminal) (cardinality=('?'|'*'|'+'))?
+	(Assignment | AbstractTerminal) Cardinalities?
+;
+
+fragment Cardinalities returns AbstractElement:
+	cardinality=('?'|'*'|'+')
 ;
 
 Action returns Action:
@@ -144,15 +148,19 @@ RuleID returns ecore::EString:
 ;
 
 PredicatedKeyword returns Keyword:
-	(predicated?='=>' | firstSetPredicated?='->') value=STRING  
+	Predicate value=STRING  
 ;
 
 PredicatedRuleCall returns RuleCall:
-	(predicated?='=>' | firstSetPredicated?='->') rule=[AbstractRule]
+	Predicate rule=[AbstractRule]
 ;
 
 Assignment returns Assignment:
-   (predicated?='=>' | firstSetPredicated?='->')? feature=ID operator=('+='|'='|'?=') ^terminal=AssignableTerminal
+   Predicate? feature=ID operator=('+='|'='|'?=') ^terminal=AssignableTerminal
+;
+
+fragment Predicate returns AbstractElement:
+	(predicated?='=>' | firstSetPredicated?='->')
 ;
 
 AssignableTerminal returns AbstractElement:
@@ -180,11 +188,11 @@ ParenthesizedElement returns AbstractElement:
 ;
 
 PredicatedGroup returns Group:
-	(predicated?='=>' | firstSetPredicated?='->') '(' elements+=Alternatives ')' 
+	Predicate '(' elements+=Alternatives ')' 
 ;
 
 TerminalRule :
-	'terminal' (^fragment?='fragment' name=ID | name=ID ('returns' type=TypeRef)?) ':'
+	'terminal' (^fragment?='fragment' name=ID | name=ID ReturnsClause?) ':'
 		alternatives=TerminalAlternatives
 	';'
 ;
@@ -199,7 +207,7 @@ TerminalGroup returns AbstractElement:
 
 /* SuppressWarnings[potentialOverride]: Handled in CardinalityAwareEcoreFactory */
 TerminalToken returns AbstractElement:
-	TerminalTokenElement (cardinality=('?'|'*'|'+'))?
+	TerminalTokenElement Cardinalities?
 ;
 
 TerminalTokenElement returns AbstractElement: 
@@ -235,7 +243,7 @@ CharacterRange returns AbstractElement:
 ;
 
 EnumRule:
-    'enum' name=ID ('returns' type=TypeRef)? ':' 
+    'enum' name=ID ReturnsClause? ':' 
     	alternatives=EnumLiterals   
     ';'
 ;

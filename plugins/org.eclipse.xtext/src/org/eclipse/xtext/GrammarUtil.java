@@ -192,8 +192,13 @@ public class GrammarUtil {
 	 * @since 2.0
 	 */
 	public static boolean isEObjectRule(EObject grammarElement) {
-		return grammarElement instanceof ParserRule
-				&& ((ParserRule) grammarElement).getType().getClassifier() instanceof EClass;
+		if (grammarElement instanceof ParserRule) {
+			ParserRule rule = (ParserRule) grammarElement;
+			TypeRef type = rule.getType();
+			// wildcard fragments are considered to be EObjectRules, too
+			return type == null || type.getClassifier() instanceof EClass;
+		}
+		return false;
 	}
 	
 	/**
@@ -220,11 +225,16 @@ public class GrammarUtil {
 	public static boolean isEObjectFragmentRuleCall(EObject ele) {
 		if (ele instanceof RuleCall) {
 			AbstractRule rule = ((RuleCall) ele).getRule();
-			if (rule instanceof ParserRule && ((ParserRule) rule).isFragment()) {
-				return true;
-			}
+			return isEObjectFragmentRule(rule);
 		}
 		return false;
+	}
+
+	/**
+	 * @since 2.9
+	 */
+	public static boolean isEObjectFragmentRule(AbstractRule rule) {
+		return rule instanceof ParserRule && ((ParserRule) rule).isFragment();
 	}
 	
 	/**

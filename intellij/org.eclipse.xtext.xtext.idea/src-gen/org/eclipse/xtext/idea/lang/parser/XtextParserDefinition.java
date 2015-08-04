@@ -96,16 +96,16 @@ public class XtextParserDefinition extends AbstractXtextParserDefinition {
 		if (elementType == elementTypeProvider.getConditionalBranch_ParameterParameterCrossReference_1_3_0ElementType()) {
 			return new PsiEObjectReference(node);
 		}
-		if (elementType == elementTypeProvider.getRuleCall_RuleAbstractRuleCrossReference_1_0ElementType()) {
+		if (elementType == elementTypeProvider.getRuleCall_RuleAbstractRuleCrossReference_0_0ElementType()) {
 			return new PsiEObjectReference(node);
 		}
-		if (elementType == elementTypeProvider.getNamedArgument_ParameterParameterCrossReference_1_0_1_0ElementType()) {
+		if (elementType == elementTypeProvider.getNamedArgument_ParameterParameterCrossReference_0_1_0ElementType()) {
 			return new PsiEObjectReference(node);
 		}
-		if (elementType == elementTypeProvider.getNamedArgument_ParameterParameterCrossReference_1_1_0_0ElementType()) {
+		if (elementType == elementTypeProvider.getNamedArgument_ParameterParameterCrossReference_1_0_0ElementType()) {
 			return new PsiEObjectReference(node);
 		}
-		if (elementType == elementTypeProvider.getNamedArgument_ValueParameterCrossReference_1_1_2_0ElementType()) {
+		if (elementType == elementTypeProvider.getNamedArgument_ValueParameterCrossReference_1_2_0ElementType()) {
 			return new PsiEObjectReference(node);
 		}
 		if (elementType == elementTypeProvider.getTerminalRuleCall_RuleAbstractRuleCrossReference_0ElementType()) {
