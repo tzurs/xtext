@@ -17,7 +17,7 @@ import org.junit.Test;
  * @author Sebastian Zarnekow - Initial contribution and API
  */
 @SuppressWarnings("all")
-public class AbstractFragmentsPlainParsingTest extends AbstractXtextTests {
+public abstract class AbstractFragmentsPlainParsingTest extends AbstractXtextTests {
   @Override
   protected void setInjector(final Injector injector) {
     super.setInjector(injector);

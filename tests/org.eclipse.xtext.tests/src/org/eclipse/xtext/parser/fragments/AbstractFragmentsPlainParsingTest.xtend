@@ -15,7 +15,7 @@ import org.eclipse.xtext.resource.XtextResource
 /**
  * @author Sebastian Zarnekow - Initial contribution and API
  */
-class AbstractFragmentsPlainParsingTest extends AbstractXtextTests {
+abstract class AbstractFragmentsPlainParsingTest extends AbstractXtextTests {
 
 	override protected setInjector(Injector injector) {
 		super.setInjector(injector)
