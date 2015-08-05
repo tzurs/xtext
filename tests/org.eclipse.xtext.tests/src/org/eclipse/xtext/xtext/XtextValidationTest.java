@@ -82,6 +82,17 @@ public class XtextValidationTest extends AbstractValidationMessageAcceptingTestC
 		state.context = newHashMap();
 	}
 	
+	@Test public void testParameterNotAvailable() throws Exception {
+		XtextResource resource = getResourceFromStringAndExpect(
+				"grammar Bar with org.eclipse.xtext.common.Terminals\n" +
+				"generate metamodel 'myURI'\n" +
+				"Model: rule=Rule[Arg];\n" + 
+				"Rule[Arg]: name=ID;", 1);
+
+		String message = resource.getErrors().get(0).getMessage();
+		assertEquals("Cannot resolve implicit reference to enclosing parameter 'Arg'", message);
+	}
+	
 	/**
 	 * see https://bugs.eclipse.org/bugs/show_bug.cgi?id=287082
 	 */

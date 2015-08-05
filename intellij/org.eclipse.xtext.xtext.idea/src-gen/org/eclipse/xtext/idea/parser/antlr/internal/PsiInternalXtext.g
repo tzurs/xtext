@@ -1313,7 +1313,7 @@ ruleNamedArgument:
 						doneComposite();
 					}
 				)
-			)?
+			)
 			(
 				(
 					{
@@ -1339,24 +1339,30 @@ ruleNamedArgument:
 					}
 				)
 			)
-			{
-				markLeaf(elementTypeProvider.getNamedArgument_EqualsSignKeyword_1_1ElementType());
-			}
-			otherlv_3='='
-			{
-				doneLeaf(otherlv_3);
-			}
 			(
 				(
-					{
-						markLeaf(elementTypeProvider.getNamedArgument_ValueParameterCrossReference_1_2_0ElementType());
-					}
-					otherlv_4=RULE_ID
-					{
-						doneLeaf(otherlv_4);
-					}
+					(
+						{
+							markLeaf(elementTypeProvider.getNamedArgument_ExplicitValueEqualsSignKeyword_1_1_0_0ElementType());
+						}
+						lv_explicitValue_3_0='='
+						{
+							doneLeaf(lv_explicitValue_3_0);
+						}
+					)
 				)
-			)
+				(
+					(
+						{
+							markLeaf(elementTypeProvider.getNamedArgument_ValueParameterCrossReference_1_1_1_0ElementType());
+						}
+						otherlv_4=RULE_ID
+						{
+							doneLeaf(otherlv_4);
+						}
+					)
+				)
+			)?
 		)
 	)
 ;

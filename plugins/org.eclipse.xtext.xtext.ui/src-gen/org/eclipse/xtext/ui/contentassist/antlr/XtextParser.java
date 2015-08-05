@@ -103,6 +103,7 @@ public class XtextParser extends AbstractContentAssistParser {
 					put(grammarAccess.getRuleCallAccess().getGroup_1_2(), "rule__RuleCall__Group_1_2__0");
 					put(grammarAccess.getNamedArgumentAccess().getGroup_0(), "rule__NamedArgument__Group_0__0");
 					put(grammarAccess.getNamedArgumentAccess().getGroup_1(), "rule__NamedArgument__Group_1__0");
+					put(grammarAccess.getNamedArgumentAccess().getGroup_1_1(), "rule__NamedArgument__Group_1_1__0");
 					put(grammarAccess.getRuleIDAccess().getGroup(), "rule__RuleID__Group__0");
 					put(grammarAccess.getRuleIDAccess().getGroup_1(), "rule__RuleID__Group_1__0");
 					put(grammarAccess.getPredicatedKeywordAccess().getGroup(), "rule__PredicatedKeyword__Group__0");
@@ -184,7 +185,8 @@ public class XtextParser extends AbstractContentAssistParser {
 					put(grammarAccess.getNamedArgumentAccess().getLiteralValueAssignment_0_0(), "rule__NamedArgument__LiteralValueAssignment_0_0");
 					put(grammarAccess.getNamedArgumentAccess().getParameterAssignment_0_1(), "rule__NamedArgument__ParameterAssignment_0_1");
 					put(grammarAccess.getNamedArgumentAccess().getParameterAssignment_1_0(), "rule__NamedArgument__ParameterAssignment_1_0");
-					put(grammarAccess.getNamedArgumentAccess().getValueAssignment_1_2(), "rule__NamedArgument__ValueAssignment_1_2");
+					put(grammarAccess.getNamedArgumentAccess().getExplicitValueAssignment_1_1_0(), "rule__NamedArgument__ExplicitValueAssignment_1_1_0");
+					put(grammarAccess.getNamedArgumentAccess().getValueAssignment_1_1_1(), "rule__NamedArgument__ValueAssignment_1_1_1");
 					put(grammarAccess.getTerminalRuleCallAccess().getRuleAssignment(), "rule__TerminalRuleCall__RuleAssignment");
 					put(grammarAccess.getPredicatedKeywordAccess().getPredicatedAssignment_0_0(), "rule__PredicatedKeyword__PredicatedAssignment_0_0");
 					put(grammarAccess.getPredicatedKeywordAccess().getFirstSetPredicatedAssignment_0_1(), "rule__PredicatedKeyword__FirstSetPredicatedAssignment_0_1");

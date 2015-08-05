@@ -22,7 +22,7 @@ class XtextGrammarSerializationTest extends AbstractXtextTests {
 		with(XtextStandaloneSetup)
 	}
 
-	@Test def void testSerializationParameters() throws Exception {
+	@Test def void testParameters() throws Exception {
 		val String model = '''
 			grammar foo with org.eclipse.xtext.common.Terminals
 			generate mm "http://bar"
@@ -44,17 +44,34 @@ class XtextGrammarSerializationTest extends AbstractXtextTests {
 		doTestSerialization(model, expectedModel)
 	}
 	
-	@Test def void testSerializationArguments() throws Exception {
+	@Test def void testArguments_01() throws Exception {
+		val String model = '''
+			grammar foo with org.eclipse.xtext.common.Terminals
+			generate mm "http://bar"
+			Rule  [ arg  ] :
+				name=ID child=Rule[ arg ]
+			;
+		'''
+		val String expectedModel = '''
+			grammar foo with org.eclipse.xtext.common.Terminals
+			generate mm "http://bar"
+			Rule[arg]:
+				name=ID child=Rule[arg]
+			;'''
+		doTestSerialization(model, expectedModel)
+	}
+	
+	@Test def void testArguments_02() throws Exception {
 		val String model = '''
 			grammar foo with org.eclipse.xtext.common.Terminals
 			generate mm "http://bar"
 			MyRule[host]:
-				value1=MyParameterizedRule[+arg]
-				value2=MyParameterizedRule[!arg]
-				value3=MyParameterizedRule[arg=host]
+				value1=MyParameterizedRule[ + arg ]
+				value2=MyParameterizedRule[ ! arg ]
+				value3=MyParameterizedRule [ arg = host ]
 			;
-			MyParameterizedRule[arg]:
-				name=ID
+			MyParameterizedRule  [ arg  ] :
+				name=ID child=MyParameterizedRule[ arg ]
 			;
 		'''
 		val String expectedModel = '''
@@ -64,11 +81,11 @@ class XtextGrammarSerializationTest extends AbstractXtextTests {
 			
 			MyRule [host]:
 				value1=MyParameterizedRule[+arg]
-				value2=MyParameterizedRule[arg]
+				value2=MyParameterizedRule[!arg]
 				value3=MyParameterizedRule[arg=host];
 			
 			MyParameterizedRule [arg]:
-				name=ID;'''
+				name=ID child=MyParameterizedRule[arg];'''
 		doTestSerialization(model, expectedModel)
 	}
 

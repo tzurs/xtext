@@ -32,6 +32,8 @@ import org.eclipse.xtext.EnumRule;
 import org.eclipse.xtext.GeneratedMetamodel;
 import org.eclipse.xtext.Grammar;
 import org.eclipse.xtext.GrammarUtil;
+import org.eclipse.xtext.NamedArgument;
+import org.eclipse.xtext.Parameter;
 import org.eclipse.xtext.ParserRule;
 import org.eclipse.xtext.ReferencedMetamodel;
 import org.eclipse.xtext.RuleCall;
@@ -132,7 +134,8 @@ public class XtextLinker extends Linker {
 
 	@Override
 	protected boolean canSetDefaultValues(EReference ref) {
-		return super.canSetDefaultValues(ref) || ref == XtextPackage.Literals.CROSS_REFERENCE__TERMINAL;
+		return super.canSetDefaultValues(ref)
+				|| ref == XtextPackage.Literals.CROSS_REFERENCE__TERMINAL;
 	}
 
 	@Override
@@ -154,6 +157,25 @@ public class XtextLinker extends Linker {
 				RuleCall call = XtextFactory.eINSTANCE.createRuleCall();
 				call.setRule(rule);
 				((CrossReference) obj).setTerminal(call);
+			}
+		} else if (XtextPackage.eINSTANCE.getNamedArgument_Value() == ref) {
+			final NamedArgument argument = (NamedArgument) obj;
+			if (!argument.isSetLiteralValue() && !argument.isExplicitValue()) {
+				Parameter linkedParameter = argument.getParameter();
+				if (linkedParameter != null && !linkedParameter.eIsProxy()) {
+					ParserRule containingRule = GrammarUtil.containingParserRule(argument);
+					if (containingRule != null) {
+						for(Parameter enclosing: containingRule.getParameters()) {
+							if (linkedParameter.getName().equals(enclosing.getName())) {
+								argument.setValue(enclosing);
+								return;
+							}
+						}
+					}
+					producer.addDiagnostic(new DiagnosticMessage(
+							"Cannot resolve implicit reference to enclosing parameter '" + linkedParameter.getName() + "'", 
+							Severity.ERROR, null));
+				}
 			}
 		} else {
 			super.setDefaultValueImpl(obj, ref, producer);

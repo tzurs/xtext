@@ -142,7 +142,7 @@ public class XtextFormatter extends AbstractDeclarativeFormatter {
 		// NamedArgument
 		NamedArgumentElements naa = g.getNamedArgumentAccess();
 		cfg.setNoSpace().around(naa.getLiteralValueAssignment_0_0());
-		cfg.setNoSpace().around(naa.getEqualsSignKeyword_1_1());
+		cfg.setNoSpace().around(naa.getExplicitValueAssignment_1_1_0());
 
 		//saveDebugGraphvizDiagram("XtextFormatting.dot");
 	}

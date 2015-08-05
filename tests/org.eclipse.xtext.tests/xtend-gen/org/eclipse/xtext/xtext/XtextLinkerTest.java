@@ -23,8 +23,13 @@ import org.eclipse.xtend2.lib.StringConcatenation;
 import org.eclipse.xtext.AbstractElement;
 import org.eclipse.xtext.AbstractMetamodelDeclaration;
 import org.eclipse.xtext.AbstractRule;
+import org.eclipse.xtext.Assignment;
 import org.eclipse.xtext.Grammar;
 import org.eclipse.xtext.GrammarUtil;
+import org.eclipse.xtext.Group;
+import org.eclipse.xtext.NamedArgument;
+import org.eclipse.xtext.Parameter;
+import org.eclipse.xtext.ParserRule;
 import org.eclipse.xtext.RuleCall;
 import org.eclipse.xtext.TerminalRule;
 import org.eclipse.xtext.XtextStandaloneSetup;
@@ -46,6 +51,82 @@ public class XtextLinkerTest extends AbstractXtextTests {
     super.setUp();
     XtextStandaloneSetup _xtextStandaloneSetup = new XtextStandaloneSetup();
     this.with(_xtextStandaloneSetup);
+  }
+  
+  @Test
+  public void testNamedParameterLinking() throws Exception {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("grammar test.Lang with org.eclipse.xtext.common.Terminals");
+    _builder.newLine();
+    _builder.append("generate test \'http://test\'");
+    _builder.newLine();
+    _builder.append("Root[MyArg]: rule=Rule[+MyParam];");
+    _builder.newLine();
+    _builder.append("Rule[MyParam]: name=ID child=Root[MyArg=MyParam]?;");
+    _builder.newLine();
+    final String grammarAsString = _builder.toString();
+    EObject _model = this.getModel(grammarAsString);
+    final Grammar grammar = ((Grammar) _model);
+    EList<AbstractRule> _rules = grammar.getRules();
+    AbstractRule _head = IterableExtensions.<AbstractRule>head(_rules);
+    final ParserRule rootRule = ((ParserRule) _head);
+    EList<AbstractRule> _rules_1 = grammar.getRules();
+    AbstractRule _last = IterableExtensions.<AbstractRule>last(_rules_1);
+    final ParserRule lastRule = ((ParserRule) _last);
+    AbstractElement _alternatives = lastRule.getAlternatives();
+    EList<AbstractElement> _elements = ((Group) _alternatives).getElements();
+    AbstractElement _last_1 = IterableExtensions.<AbstractElement>last(_elements);
+    final Assignment lastAssignment = ((Assignment) _last_1);
+    AbstractElement _terminal = lastAssignment.getTerminal();
+    final RuleCall ruleCall = ((RuleCall) _terminal);
+    EList<NamedArgument> _arguments = ruleCall.getArguments();
+    final NamedArgument argument = IterableExtensions.<NamedArgument>head(_arguments);
+    EList<Parameter> _parameters = rootRule.getParameters();
+    Parameter _head_1 = IterableExtensions.<Parameter>head(_parameters);
+    Parameter _parameter = argument.getParameter();
+    Assert.assertEquals(_head_1, _parameter);
+    EList<Parameter> _parameters_1 = lastRule.getParameters();
+    Parameter _head_2 = IterableExtensions.<Parameter>head(_parameters_1);
+    Parameter _value = argument.getValue();
+    Assert.assertEquals(_head_2, _value);
+  }
+  
+  @Test
+  public void testImplicitNamedParameterLinking() throws Exception {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("grammar test.Lang with org.eclipse.xtext.common.Terminals");
+    _builder.newLine();
+    _builder.append("generate test \'http://test\'");
+    _builder.newLine();
+    _builder.append("Root[MyParam]: rule=Rule[+MyParam];");
+    _builder.newLine();
+    _builder.append("Rule[MyParam]: name=ID child=Root[MyParam]?;");
+    _builder.newLine();
+    final String grammarAsString = _builder.toString();
+    EObject _model = this.getModel(grammarAsString);
+    final Grammar grammar = ((Grammar) _model);
+    EList<AbstractRule> _rules = grammar.getRules();
+    AbstractRule _head = IterableExtensions.<AbstractRule>head(_rules);
+    final ParserRule rootRule = ((ParserRule) _head);
+    EList<AbstractRule> _rules_1 = grammar.getRules();
+    AbstractRule _last = IterableExtensions.<AbstractRule>last(_rules_1);
+    final ParserRule lastRule = ((ParserRule) _last);
+    AbstractElement _alternatives = lastRule.getAlternatives();
+    EList<AbstractElement> _elements = ((Group) _alternatives).getElements();
+    AbstractElement _last_1 = IterableExtensions.<AbstractElement>last(_elements);
+    final Assignment lastAssignment = ((Assignment) _last_1);
+    AbstractElement _terminal = lastAssignment.getTerminal();
+    final RuleCall ruleCall = ((RuleCall) _terminal);
+    EList<NamedArgument> _arguments = ruleCall.getArguments();
+    final NamedArgument argument = IterableExtensions.<NamedArgument>head(_arguments);
+    EList<Parameter> _parameters = rootRule.getParameters();
+    Parameter _head_1 = IterableExtensions.<Parameter>head(_parameters);
+    Parameter _parameter = argument.getParameter();
+    Assert.assertEquals(_head_1, _parameter);
+    EList<Parameter> _parameters_1 = lastRule.getParameters();
+    Parameter _head_2 = IterableExtensions.<Parameter>head(_parameters_1);
+    Parameter _value = argument.getValue();
+    Assert.assertEquals(_head_2, _value);
   }
   
   @Test

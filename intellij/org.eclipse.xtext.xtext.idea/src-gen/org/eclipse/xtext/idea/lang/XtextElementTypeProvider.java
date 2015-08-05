@@ -1299,17 +1299,23 @@ public class XtextElementTypeProvider implements IElementTypeProvider {
 		public static IGrammarAwareElementType createNamedArgument_ParameterParameterIDTerminalRuleCall_1_0_0_1ElementType() {
 			return new IGrammarAwareElementType("NamedArgument_ParameterParameterIDTerminalRuleCall_1_0_0_1_ELEMENT_TYPE", XtextLanguage.INSTANCE, GRAMMAR_ACCESS.getNamedArgumentAccess().getParameterParameterIDTerminalRuleCall_1_0_0_1());
 		}
-		public static IGrammarAwareElementType createNamedArgument_EqualsSignKeyword_1_1ElementType() {
-			return new IGrammarAwareElementType("NamedArgument_EqualsSignKeyword_1_1_ELEMENT_TYPE", XtextLanguage.INSTANCE, GRAMMAR_ACCESS.getNamedArgumentAccess().getEqualsSignKeyword_1_1());
+		public static IGrammarAwareElementType createNamedArgument_Group_1_1ElementType() {
+			return new IGrammarAwareElementType("NamedArgument_Group_1_1_ELEMENT_TYPE", XtextLanguage.INSTANCE, GRAMMAR_ACCESS.getNamedArgumentAccess().getGroup_1_1());
 		}
-		public static IGrammarAwareElementType createNamedArgument_ValueAssignment_1_2ElementType() {
-			return new IGrammarAwareElementType("NamedArgument_ValueAssignment_1_2_ELEMENT_TYPE", XtextLanguage.INSTANCE, GRAMMAR_ACCESS.getNamedArgumentAccess().getValueAssignment_1_2());
+		public static IGrammarAwareElementType createNamedArgument_ExplicitValueAssignment_1_1_0ElementType() {
+			return new IGrammarAwareElementType("NamedArgument_ExplicitValueAssignment_1_1_0_ELEMENT_TYPE", XtextLanguage.INSTANCE, GRAMMAR_ACCESS.getNamedArgumentAccess().getExplicitValueAssignment_1_1_0());
 		}
-		public static IGrammarAwareElementType createNamedArgument_ValueParameterCrossReference_1_2_0ElementType() {
-			return new IGrammarAwareElementType("NamedArgument_ValueParameterCrossReference_1_2_0_ELEMENT_TYPE", XtextLanguage.INSTANCE, GRAMMAR_ACCESS.getNamedArgumentAccess().getValueParameterCrossReference_1_2_0());
+		public static IGrammarAwareElementType createNamedArgument_ExplicitValueEqualsSignKeyword_1_1_0_0ElementType() {
+			return new IGrammarAwareElementType("NamedArgument_ExplicitValueEqualsSignKeyword_1_1_0_0_ELEMENT_TYPE", XtextLanguage.INSTANCE, GRAMMAR_ACCESS.getNamedArgumentAccess().getExplicitValueEqualsSignKeyword_1_1_0_0());
 		}
-		public static IGrammarAwareElementType createNamedArgument_ValueParameterIDTerminalRuleCall_1_2_0_1ElementType() {
-			return new IGrammarAwareElementType("NamedArgument_ValueParameterIDTerminalRuleCall_1_2_0_1_ELEMENT_TYPE", XtextLanguage.INSTANCE, GRAMMAR_ACCESS.getNamedArgumentAccess().getValueParameterIDTerminalRuleCall_1_2_0_1());
+		public static IGrammarAwareElementType createNamedArgument_ValueAssignment_1_1_1ElementType() {
+			return new IGrammarAwareElementType("NamedArgument_ValueAssignment_1_1_1_ELEMENT_TYPE", XtextLanguage.INSTANCE, GRAMMAR_ACCESS.getNamedArgumentAccess().getValueAssignment_1_1_1());
+		}
+		public static IGrammarAwareElementType createNamedArgument_ValueParameterCrossReference_1_1_1_0ElementType() {
+			return new IGrammarAwareElementType("NamedArgument_ValueParameterCrossReference_1_1_1_0_ELEMENT_TYPE", XtextLanguage.INSTANCE, GRAMMAR_ACCESS.getNamedArgumentAccess().getValueParameterCrossReference_1_1_1_0());
+		}
+		public static IGrammarAwareElementType createNamedArgument_ValueParameterIDTerminalRuleCall_1_1_1_0_1ElementType() {
+			return new IGrammarAwareElementType("NamedArgument_ValueParameterIDTerminalRuleCall_1_1_1_0_1_ELEMENT_TYPE", XtextLanguage.INSTANCE, GRAMMAR_ACCESS.getNamedArgumentAccess().getValueParameterIDTerminalRuleCall_1_1_1_0_1());
 		}
 	}
 
@@ -1337,13 +1343,17 @@ public class XtextElementTypeProvider implements IElementTypeProvider {
 
 	public static final IGrammarAwareElementType NamedArgument_ParameterParameterIDTerminalRuleCall_1_0_0_1_ELEMENT_TYPE = associate(NamedArgumentFactory.createNamedArgument_ParameterParameterIDTerminalRuleCall_1_0_0_1ElementType());
 
-	public static final IGrammarAwareElementType NamedArgument_EqualsSignKeyword_1_1_ELEMENT_TYPE = associate(NamedArgumentFactory.createNamedArgument_EqualsSignKeyword_1_1ElementType());
+	public static final IGrammarAwareElementType NamedArgument_Group_1_1_ELEMENT_TYPE = associate(NamedArgumentFactory.createNamedArgument_Group_1_1ElementType());
 
-	public static final IGrammarAwareElementType NamedArgument_ValueAssignment_1_2_ELEMENT_TYPE = associate(NamedArgumentFactory.createNamedArgument_ValueAssignment_1_2ElementType());
+	public static final IGrammarAwareElementType NamedArgument_ExplicitValueAssignment_1_1_0_ELEMENT_TYPE = associate(NamedArgumentFactory.createNamedArgument_ExplicitValueAssignment_1_1_0ElementType());
 
-	public static final IGrammarAwareElementType NamedArgument_ValueParameterCrossReference_1_2_0_ELEMENT_TYPE = associate(NamedArgumentFactory.createNamedArgument_ValueParameterCrossReference_1_2_0ElementType());
+	public static final IGrammarAwareElementType NamedArgument_ExplicitValueEqualsSignKeyword_1_1_0_0_ELEMENT_TYPE = associate(NamedArgumentFactory.createNamedArgument_ExplicitValueEqualsSignKeyword_1_1_0_0ElementType());
 
-	public static final IGrammarAwareElementType NamedArgument_ValueParameterIDTerminalRuleCall_1_2_0_1_ELEMENT_TYPE = associate(NamedArgumentFactory.createNamedArgument_ValueParameterIDTerminalRuleCall_1_2_0_1ElementType());
+	public static final IGrammarAwareElementType NamedArgument_ValueAssignment_1_1_1_ELEMENT_TYPE = associate(NamedArgumentFactory.createNamedArgument_ValueAssignment_1_1_1ElementType());
+
+	public static final IGrammarAwareElementType NamedArgument_ValueParameterCrossReference_1_1_1_0_ELEMENT_TYPE = associate(NamedArgumentFactory.createNamedArgument_ValueParameterCrossReference_1_1_1_0ElementType());
+
+	public static final IGrammarAwareElementType NamedArgument_ValueParameterIDTerminalRuleCall_1_1_1_0_1_ELEMENT_TYPE = associate(NamedArgumentFactory.createNamedArgument_ValueParameterIDTerminalRuleCall_1_1_1_0_1ElementType());
 
 	private static class TerminalRuleCallFactory {
 		public static IGrammarAwareElementType createTerminalRuleCallElementType() {
@@ -3485,20 +3495,28 @@ public class XtextElementTypeProvider implements IElementTypeProvider {
 		return NamedArgument_ParameterParameterIDTerminalRuleCall_1_0_0_1_ELEMENT_TYPE;
 	}
 
-	public IGrammarAwareElementType getNamedArgument_EqualsSignKeyword_1_1ElementType() {
-		return NamedArgument_EqualsSignKeyword_1_1_ELEMENT_TYPE;
+	public IGrammarAwareElementType getNamedArgument_Group_1_1ElementType() {
+		return NamedArgument_Group_1_1_ELEMENT_TYPE;
 	}
 
-	public IGrammarAwareElementType getNamedArgument_ValueAssignment_1_2ElementType() {
-		return NamedArgument_ValueAssignment_1_2_ELEMENT_TYPE;
+	public IGrammarAwareElementType getNamedArgument_ExplicitValueAssignment_1_1_0ElementType() {
+		return NamedArgument_ExplicitValueAssignment_1_1_0_ELEMENT_TYPE;
 	}
 
-	public IGrammarAwareElementType getNamedArgument_ValueParameterCrossReference_1_2_0ElementType() {
-		return NamedArgument_ValueParameterCrossReference_1_2_0_ELEMENT_TYPE;
+	public IGrammarAwareElementType getNamedArgument_ExplicitValueEqualsSignKeyword_1_1_0_0ElementType() {
+		return NamedArgument_ExplicitValueEqualsSignKeyword_1_1_0_0_ELEMENT_TYPE;
 	}
 
-	public IGrammarAwareElementType getNamedArgument_ValueParameterIDTerminalRuleCall_1_2_0_1ElementType() {
-		return NamedArgument_ValueParameterIDTerminalRuleCall_1_2_0_1_ELEMENT_TYPE;
+	public IGrammarAwareElementType getNamedArgument_ValueAssignment_1_1_1ElementType() {
+		return NamedArgument_ValueAssignment_1_1_1_ELEMENT_TYPE;
+	}
+
+	public IGrammarAwareElementType getNamedArgument_ValueParameterCrossReference_1_1_1_0ElementType() {
+		return NamedArgument_ValueParameterCrossReference_1_1_1_0_ELEMENT_TYPE;
+	}
+
+	public IGrammarAwareElementType getNamedArgument_ValueParameterIDTerminalRuleCall_1_1_1_0_1ElementType() {
+		return NamedArgument_ValueParameterIDTerminalRuleCall_1_1_1_0_1_ELEMENT_TYPE;
 	}
 
 	public IGrammarAwareElementType getTerminalRuleCallElementType() {

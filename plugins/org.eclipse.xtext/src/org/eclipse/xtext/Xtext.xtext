@@ -119,8 +119,8 @@ InverseLiteralValue returns ecore::EBoolean:
 ;
 
 NamedArgument:
-	( literalValue=LiteralValue? parameter=[Parameter|ID]
-	| parameter=[Parameter|ID] '=' value=[Parameter|ID]
+	( literalValue=LiteralValue parameter=[Parameter|ID]
+	| parameter=[Parameter|ID] (explicitValue?='=' value=[Parameter|ID])?
 	)
 ;
 

@@ -15,6 +15,9 @@ import org.eclipse.xtext.TerminalRule
 import org.eclipse.xtext.XtextStandaloneSetup
 import org.eclipse.xtext.junit4.AbstractXtextTests
 import org.junit.Test
+import org.eclipse.xtext.Group
+import org.eclipse.xtext.Assignment
+import org.eclipse.xtext.ParserRule
 
 /**
  * @author Sven Efftinge - Initial contribution and API
@@ -23,6 +26,40 @@ class XtextLinkerTest extends AbstractXtextTests {
 	override void setUp() throws Exception {
 		super.setUp()
 		with(new XtextStandaloneSetup())
+	}
+	
+	@Test def void testNamedParameterLinking() throws Exception {
+		val grammarAsString = '''
+			grammar test.Lang with org.eclipse.xtext.common.Terminals
+			generate test 'http://test'
+			Root[MyArg]: rule=Rule[+MyParam];
+			Rule[MyParam]: name=ID child=Root[MyArg=MyParam]?;
+		'''
+		val grammar = grammarAsString.model as Grammar
+		val rootRule = grammar.rules.head as ParserRule
+		val lastRule = grammar.rules.last as ParserRule
+		val lastAssignment = (lastRule.alternatives as Group).elements.last as Assignment
+		val ruleCall = lastAssignment.terminal as RuleCall
+		val argument = ruleCall.arguments.head
+		assertEquals(rootRule.parameters.head, argument.parameter)
+		assertEquals(lastRule.parameters.head, argument.value)
+	}
+	
+	@Test def void testImplicitNamedParameterLinking() throws Exception {
+		val grammarAsString = '''
+			grammar test.Lang with org.eclipse.xtext.common.Terminals
+			generate test 'http://test'
+			Root[MyParam]: rule=Rule[+MyParam];
+			Rule[MyParam]: name=ID child=Root[MyParam]?;
+		'''
+		val grammar = grammarAsString.model as Grammar
+		val rootRule = grammar.rules.head as ParserRule
+		val lastRule = grammar.rules.last as ParserRule
+		val lastAssignment = (lastRule.alternatives as Group).elements.last as Assignment
+		val ruleCall = lastAssignment.terminal as RuleCall
+		val argument = ruleCall.arguments.head
+		assertEquals(rootRule.parameters.head, argument.parameter)
+		assertEquals(lastRule.parameters.head, argument.value)
 	}
 	
 	@Test def void testExplicitRuleCallsAreTracked() throws Exception {

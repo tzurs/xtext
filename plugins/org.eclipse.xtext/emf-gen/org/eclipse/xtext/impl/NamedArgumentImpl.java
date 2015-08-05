@@ -25,6 +25,7 @@ import org.eclipse.xtext.XtextPackage;
  *   <li>{@link org.eclipse.xtext.impl.NamedArgumentImpl#getParameter <em>Parameter</em>}</li>
  *   <li>{@link org.eclipse.xtext.impl.NamedArgumentImpl#isLiteralValue <em>Literal Value</em>}</li>
  *   <li>{@link org.eclipse.xtext.impl.NamedArgumentImpl#getValue <em>Value</em>}</li>
+ *   <li>{@link org.eclipse.xtext.impl.NamedArgumentImpl#isExplicitValue <em>Explicit Value</em>}</li>
  * </ul>
  *
  * @generated
@@ -62,6 +63,15 @@ public class NamedArgumentImpl extends MinimalEObjectImpl.Container implements N
 	protected boolean literalValue = LITERAL_VALUE_EDEFAULT;
 
 	/**
+	 * This is true if the Literal Value attribute has been set.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean literalValueESet;
+
+	/**
 	 * The cached value of the '{@link #getValue() <em>Value</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -70,6 +80,26 @@ public class NamedArgumentImpl extends MinimalEObjectImpl.Container implements N
 	 * @ordered
 	 */
 	protected Parameter value;
+
+	/**
+	 * The default value of the '{@link #isExplicitValue() <em>Explicit Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isExplicitValue()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final boolean EXPLICIT_VALUE_EDEFAULT = false;
+
+	/**
+	 * The cached value of the '{@link #isExplicitValue() <em>Explicit Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isExplicitValue()
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean explicitValue = EXPLICIT_VALUE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -145,8 +175,33 @@ public class NamedArgumentImpl extends MinimalEObjectImpl.Container implements N
 	public void setLiteralValue(boolean newLiteralValue) {
 		boolean oldLiteralValue = literalValue;
 		literalValue = newLiteralValue;
+		boolean oldLiteralValueESet = literalValueESet;
+		literalValueESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, XtextPackage.NAMED_ARGUMENT__LITERAL_VALUE, oldLiteralValue, literalValue));
+			eNotify(new ENotificationImpl(this, Notification.SET, XtextPackage.NAMED_ARGUMENT__LITERAL_VALUE, oldLiteralValue, literalValue, !oldLiteralValueESet));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void unsetLiteralValue() {
+		boolean oldLiteralValue = literalValue;
+		boolean oldLiteralValueESet = literalValueESet;
+		literalValue = LITERAL_VALUE_EDEFAULT;
+		literalValueESet = false;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.UNSET, XtextPackage.NAMED_ARGUMENT__LITERAL_VALUE, oldLiteralValue, LITERAL_VALUE_EDEFAULT, oldLiteralValueESet));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean isSetLiteralValue() {
+		return literalValueESet;
 	}
 
 	/**
@@ -192,6 +247,27 @@ public class NamedArgumentImpl extends MinimalEObjectImpl.Container implements N
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean isExplicitValue() {
+		return explicitValue;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setExplicitValue(boolean newExplicitValue) {
+		boolean oldExplicitValue = explicitValue;
+		explicitValue = newExplicitValue;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, XtextPackage.NAMED_ARGUMENT__EXPLICIT_VALUE, oldExplicitValue, explicitValue));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -203,6 +279,8 @@ public class NamedArgumentImpl extends MinimalEObjectImpl.Container implements N
 			case XtextPackage.NAMED_ARGUMENT__VALUE:
 				if (resolve) return getValue();
 				return basicGetValue();
+			case XtextPackage.NAMED_ARGUMENT__EXPLICIT_VALUE:
+				return isExplicitValue();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -224,6 +302,9 @@ public class NamedArgumentImpl extends MinimalEObjectImpl.Container implements N
 			case XtextPackage.NAMED_ARGUMENT__VALUE:
 				setValue((Parameter)newValue);
 				return;
+			case XtextPackage.NAMED_ARGUMENT__EXPLICIT_VALUE:
+				setExplicitValue((Boolean)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -240,10 +321,13 @@ public class NamedArgumentImpl extends MinimalEObjectImpl.Container implements N
 				setParameter((Parameter)null);
 				return;
 			case XtextPackage.NAMED_ARGUMENT__LITERAL_VALUE:
-				setLiteralValue(LITERAL_VALUE_EDEFAULT);
+				unsetLiteralValue();
 				return;
 			case XtextPackage.NAMED_ARGUMENT__VALUE:
 				setValue((Parameter)null);
+				return;
+			case XtextPackage.NAMED_ARGUMENT__EXPLICIT_VALUE:
+				setExplicitValue(EXPLICIT_VALUE_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -260,9 +344,11 @@ public class NamedArgumentImpl extends MinimalEObjectImpl.Container implements N
 			case XtextPackage.NAMED_ARGUMENT__PARAMETER:
 				return parameter != null;
 			case XtextPackage.NAMED_ARGUMENT__LITERAL_VALUE:
-				return literalValue != LITERAL_VALUE_EDEFAULT;
+				return isSetLiteralValue();
 			case XtextPackage.NAMED_ARGUMENT__VALUE:
 				return value != null;
+			case XtextPackage.NAMED_ARGUMENT__EXPLICIT_VALUE:
+				return explicitValue != EXPLICIT_VALUE_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -278,7 +364,9 @@ public class NamedArgumentImpl extends MinimalEObjectImpl.Container implements N
 
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (literalValue: ");
-		result.append(literalValue);
+		if (literalValueESet) result.append(literalValue); else result.append("<unset>");
+		result.append(", explicitValue: ");
+		result.append(explicitValue);
 		result.append(')');
 		return result.toString();
 	}

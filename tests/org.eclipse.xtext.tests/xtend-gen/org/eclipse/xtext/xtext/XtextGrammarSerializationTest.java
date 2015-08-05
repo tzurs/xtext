@@ -31,7 +31,7 @@ public class XtextGrammarSerializationTest extends AbstractXtextTests {
   }
   
   @Test
-  public void testSerializationParameters() throws Exception {
+  public void testParameters() throws Exception {
     StringConcatenation _builder = new StringConcatenation();
     _builder.append("grammar foo with org.eclipse.xtext.common.Terminals");
     _builder.newLine();
@@ -73,7 +73,37 @@ public class XtextGrammarSerializationTest extends AbstractXtextTests {
   }
   
   @Test
-  public void testSerializationArguments() throws Exception {
+  public void testArguments_01() throws Exception {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("grammar foo with org.eclipse.xtext.common.Terminals");
+    _builder.newLine();
+    _builder.append("generate mm \"http://bar\"");
+    _builder.newLine();
+    _builder.append("Rule  [ arg  ] :");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("name=ID child=Rule[ arg ]");
+    _builder.newLine();
+    _builder.append(";");
+    _builder.newLine();
+    final String model = _builder.toString();
+    StringConcatenation _builder_1 = new StringConcatenation();
+    _builder_1.append("grammar foo with org.eclipse.xtext.common.Terminals");
+    _builder_1.newLine();
+    _builder_1.append("generate mm \"http://bar\"");
+    _builder_1.newLine();
+    _builder_1.append("Rule[arg]:");
+    _builder_1.newLine();
+    _builder_1.append("\t");
+    _builder_1.append("name=ID child=Rule[arg]");
+    _builder_1.newLine();
+    _builder_1.append(";");
+    final String expectedModel = _builder_1.toString();
+    this.doTestSerialization(model, expectedModel);
+  }
+  
+  @Test
+  public void testArguments_02() throws Exception {
     StringConcatenation _builder = new StringConcatenation();
     _builder.append("grammar foo with org.eclipse.xtext.common.Terminals");
     _builder.newLine();
@@ -82,20 +112,20 @@ public class XtextGrammarSerializationTest extends AbstractXtextTests {
     _builder.append("MyRule[host]:");
     _builder.newLine();
     _builder.append("\t");
-    _builder.append("value1=MyParameterizedRule[+arg]");
+    _builder.append("value1=MyParameterizedRule[ + arg ]");
     _builder.newLine();
     _builder.append("\t");
-    _builder.append("value2=MyParameterizedRule[!arg]");
+    _builder.append("value2=MyParameterizedRule[ ! arg ]");
     _builder.newLine();
     _builder.append("\t");
-    _builder.append("value3=MyParameterizedRule[arg=host]");
+    _builder.append("value3=MyParameterizedRule [ arg = host ]");
     _builder.newLine();
     _builder.append(";");
     _builder.newLine();
-    _builder.append("MyParameterizedRule[arg]:");
+    _builder.append("MyParameterizedRule  [ arg  ] :");
     _builder.newLine();
     _builder.append("\t");
-    _builder.append("name=ID");
+    _builder.append("name=ID child=MyParameterizedRule[ arg ]");
     _builder.newLine();
     _builder.append(";");
     _builder.newLine();
@@ -113,7 +143,7 @@ public class XtextGrammarSerializationTest extends AbstractXtextTests {
     _builder_1.append("value1=MyParameterizedRule[+arg]");
     _builder_1.newLine();
     _builder_1.append("\t");
-    _builder_1.append("value2=MyParameterizedRule[arg]");
+    _builder_1.append("value2=MyParameterizedRule[!arg]");
     _builder_1.newLine();
     _builder_1.append("\t");
     _builder_1.append("value3=MyParameterizedRule[arg=host];");
@@ -122,7 +152,7 @@ public class XtextGrammarSerializationTest extends AbstractXtextTests {
     _builder_1.append("MyParameterizedRule [arg]:");
     _builder_1.newLine();
     _builder_1.append("\t");
-    _builder_1.append("name=ID;");
+    _builder_1.append("name=ID child=MyParameterizedRule[arg];");
     final String expectedModel = _builder_1.toString();
     this.doTestSerialization(model, expectedModel);
   }

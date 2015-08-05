@@ -1661,7 +1661,7 @@ ruleNamedArgument returns [EObject current=null]
 	    }
 
 )
-)?(
+)(
 (
 		{
 			if ($current==null) {
@@ -1688,11 +1688,22 @@ ruleNamedArgument returns [EObject current=null]
 	}
 
 )
-)	otherlv_3='=' 
-    {
-    	newLeafNode(otherlv_3, grammarAccess.getNamedArgumentAccess().getEqualsSignKeyword_1_1());
-    }
+)((
 (
+		lv_explicitValue_3_0=	'=' 
+    {
+        newLeafNode(lv_explicitValue_3_0, grammarAccess.getNamedArgumentAccess().getExplicitValueEqualsSignKeyword_1_1_0_0());
+    }
+ 
+	    {
+	        if ($current==null) {
+	            $current = createModelElement(grammarAccess.getNamedArgumentRule());
+	        }
+       		setWithLastConsumed($current, "explicitValue", true, "=");
+	    }
+
+)
+)(
 (
 		{
 			if ($current==null) {
@@ -1701,11 +1712,11 @@ ruleNamedArgument returns [EObject current=null]
         }
 	otherlv_4=RULE_ID
 	{
-		newLeafNode(otherlv_4, grammarAccess.getNamedArgumentAccess().getValueParameterCrossReference_1_2_0()); 
+		newLeafNode(otherlv_4, grammarAccess.getNamedArgumentAccess().getValueParameterCrossReference_1_1_1_0()); 
 	}
 
 )
-)))
+))?))
 ;
 
 

@@ -4873,6 +4873,11 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
             case 39:
                 {
                 switch ( input.LA(2) ) {
+                case RULE_ID:
+                    {
+                    alt11=5;
+                    }
+                    break;
                 case RULE_STRING:
                     {
                     alt11=4;
@@ -4881,11 +4886,6 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
                 case 21:
                     {
                     alt11=6;
-                    }
-                    break;
-                case RULE_ID:
-                    {
-                    alt11=5;
                     }
                     break;
                 default:
@@ -5122,20 +5122,7 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
                 alt13=1;
             }
             else if ( (LA13_0==RULE_ID) ) {
-                int LA13_2 = input.LA(2);
-
-                if ( (LA13_2==EOF||LA13_2==20||LA13_2==31) ) {
-                    alt13=1;
-                }
-                else if ( (LA13_2==14) ) {
-                    alt13=2;
-                }
-                else {
-                    NoViableAltException nvae =
-                        new NoViableAltException("", 13, 2, input);
-
-                    throw nvae;
-                }
+                alt13=2;
             }
             else {
                 NoViableAltException nvae =
@@ -15493,38 +15480,27 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NamedArgument__Group_0__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5530:1: rule__NamedArgument__Group_0__0__Impl : ( ( rule__NamedArgument__LiteralValueAssignment_0_0 )? ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5530:1: rule__NamedArgument__Group_0__0__Impl : ( ( rule__NamedArgument__LiteralValueAssignment_0_0 ) ) ;
     public final void rule__NamedArgument__Group_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5534:1: ( ( ( rule__NamedArgument__LiteralValueAssignment_0_0 )? ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5535:1: ( ( rule__NamedArgument__LiteralValueAssignment_0_0 )? )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5534:1: ( ( ( rule__NamedArgument__LiteralValueAssignment_0_0 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5535:1: ( ( rule__NamedArgument__LiteralValueAssignment_0_0 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5535:1: ( ( rule__NamedArgument__LiteralValueAssignment_0_0 )? )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5536:1: ( rule__NamedArgument__LiteralValueAssignment_0_0 )?
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5535:1: ( ( rule__NamedArgument__LiteralValueAssignment_0_0 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5536:1: ( rule__NamedArgument__LiteralValueAssignment_0_0 )
             {
              before(grammarAccess.getNamedArgumentAccess().getLiteralValueAssignment_0_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5537:1: ( rule__NamedArgument__LiteralValueAssignment_0_0 )?
-            int alt53=2;
-            int LA53_0 = input.LA(1);
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5537:1: ( rule__NamedArgument__LiteralValueAssignment_0_0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5537:2: rule__NamedArgument__LiteralValueAssignment_0_0
+            {
+            pushFollow(FollowSets000.FOLLOW_rule__NamedArgument__LiteralValueAssignment_0_0_in_rule__NamedArgument__Group_0__0__Impl11309);
+            rule__NamedArgument__LiteralValueAssignment_0_0();
 
-            if ( (LA53_0==13||LA53_0==16) ) {
-                alt53=1;
-            }
-            switch (alt53) {
-                case 1 :
-                    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5537:2: rule__NamedArgument__LiteralValueAssignment_0_0
-                    {
-                    pushFollow(FollowSets000.FOLLOW_rule__NamedArgument__LiteralValueAssignment_0_0_in_rule__NamedArgument__Group_0__0__Impl11309);
-                    rule__NamedArgument__LiteralValueAssignment_0_0();
+            state._fsp--;
 
-                    state._fsp--;
-
-
-                    }
-                    break;
 
             }
 
@@ -15560,7 +15536,7 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
             // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5551:1: ( rule__NamedArgument__Group_0__1__Impl )
             // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5552:2: rule__NamedArgument__Group_0__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__NamedArgument__Group_0__1__Impl_in_rule__NamedArgument__Group_0__111340);
+            pushFollow(FollowSets000.FOLLOW_rule__NamedArgument__Group_0__1__Impl_in_rule__NamedArgument__Group_0__111339);
             rule__NamedArgument__Group_0__1__Impl();
 
             state._fsp--;
@@ -15600,7 +15576,7 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
             // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5565:1: ( rule__NamedArgument__ParameterAssignment_0_1 )
             // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5565:2: rule__NamedArgument__ParameterAssignment_0_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__NamedArgument__ParameterAssignment_0_1_in_rule__NamedArgument__Group_0__1__Impl11367);
+            pushFollow(FollowSets000.FOLLOW_rule__NamedArgument__ParameterAssignment_0_1_in_rule__NamedArgument__Group_0__1__Impl11366);
             rule__NamedArgument__ParameterAssignment_0_1();
 
             state._fsp--;
@@ -15640,12 +15616,12 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
             // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5583:1: ( rule__NamedArgument__Group_1__0__Impl rule__NamedArgument__Group_1__1 )
             // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5584:2: rule__NamedArgument__Group_1__0__Impl rule__NamedArgument__Group_1__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__NamedArgument__Group_1__0__Impl_in_rule__NamedArgument__Group_1__011401);
+            pushFollow(FollowSets000.FOLLOW_rule__NamedArgument__Group_1__0__Impl_in_rule__NamedArgument__Group_1__011400);
             rule__NamedArgument__Group_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__NamedArgument__Group_1__1_in_rule__NamedArgument__Group_1__011404);
+            pushFollow(FollowSets000.FOLLOW_rule__NamedArgument__Group_1__1_in_rule__NamedArgument__Group_1__011403);
             rule__NamedArgument__Group_1__1();
 
             state._fsp--;
@@ -15685,7 +15661,7 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
             // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5598:1: ( rule__NamedArgument__ParameterAssignment_1_0 )
             // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5598:2: rule__NamedArgument__ParameterAssignment_1_0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__NamedArgument__ParameterAssignment_1_0_in_rule__NamedArgument__Group_1__0__Impl11431);
+            pushFollow(FollowSets000.FOLLOW_rule__NamedArgument__ParameterAssignment_1_0_in_rule__NamedArgument__Group_1__0__Impl11430);
             rule__NamedArgument__ParameterAssignment_1_0();
 
             state._fsp--;
@@ -15716,22 +15692,17 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NamedArgument__Group_1__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5608:1: rule__NamedArgument__Group_1__1 : rule__NamedArgument__Group_1__1__Impl rule__NamedArgument__Group_1__2 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5608:1: rule__NamedArgument__Group_1__1 : rule__NamedArgument__Group_1__1__Impl ;
     public final void rule__NamedArgument__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5612:1: ( rule__NamedArgument__Group_1__1__Impl rule__NamedArgument__Group_1__2 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5613:2: rule__NamedArgument__Group_1__1__Impl rule__NamedArgument__Group_1__2
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5612:1: ( rule__NamedArgument__Group_1__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5613:2: rule__NamedArgument__Group_1__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__NamedArgument__Group_1__1__Impl_in_rule__NamedArgument__Group_1__111461);
+            pushFollow(FollowSets000.FOLLOW_rule__NamedArgument__Group_1__1__Impl_in_rule__NamedArgument__Group_1__111460);
             rule__NamedArgument__Group_1__1__Impl();
-
-            state._fsp--;
-
-            pushFollow(FollowSets000.FOLLOW_rule__NamedArgument__Group_1__2_in_rule__NamedArgument__Group_1__111464);
-            rule__NamedArgument__Group_1__2();
 
             state._fsp--;
 
@@ -15754,21 +15725,42 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NamedArgument__Group_1__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5620:1: rule__NamedArgument__Group_1__1__Impl : ( '=' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5619:1: rule__NamedArgument__Group_1__1__Impl : ( ( rule__NamedArgument__Group_1_1__0 )? ) ;
     public final void rule__NamedArgument__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5624:1: ( ( '=' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5625:1: ( '=' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5623:1: ( ( ( rule__NamedArgument__Group_1_1__0 )? ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5624:1: ( ( rule__NamedArgument__Group_1_1__0 )? )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5625:1: ( '=' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5626:1: '='
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5624:1: ( ( rule__NamedArgument__Group_1_1__0 )? )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5625:1: ( rule__NamedArgument__Group_1_1__0 )?
             {
-             before(grammarAccess.getNamedArgumentAccess().getEqualsSignKeyword_1_1()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__NamedArgument__Group_1__1__Impl11492); 
-             after(grammarAccess.getNamedArgumentAccess().getEqualsSignKeyword_1_1()); 
+             before(grammarAccess.getNamedArgumentAccess().getGroup_1_1()); 
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5626:1: ( rule__NamedArgument__Group_1_1__0 )?
+            int alt53=2;
+            int LA53_0 = input.LA(1);
+
+            if ( (LA53_0==14) ) {
+                alt53=1;
+            }
+            switch (alt53) {
+                case 1 :
+                    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5626:2: rule__NamedArgument__Group_1_1__0
+                    {
+                    pushFollow(FollowSets000.FOLLOW_rule__NamedArgument__Group_1_1__0_in_rule__NamedArgument__Group_1__1__Impl11487);
+                    rule__NamedArgument__Group_1_1__0();
+
+                    state._fsp--;
+
+
+                    }
+                    break;
+
+            }
+
+             after(grammarAccess.getNamedArgumentAccess().getGroup_1_1()); 
 
             }
 
@@ -15790,18 +15782,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__NamedArgument__Group_1__1__Impl"
 
 
-    // $ANTLR start "rule__NamedArgument__Group_1__2"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5639:1: rule__NamedArgument__Group_1__2 : rule__NamedArgument__Group_1__2__Impl ;
-    public final void rule__NamedArgument__Group_1__2() throws RecognitionException {
+    // $ANTLR start "rule__NamedArgument__Group_1_1__0"
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5640:1: rule__NamedArgument__Group_1_1__0 : rule__NamedArgument__Group_1_1__0__Impl rule__NamedArgument__Group_1_1__1 ;
+    public final void rule__NamedArgument__Group_1_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5643:1: ( rule__NamedArgument__Group_1__2__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5644:2: rule__NamedArgument__Group_1__2__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5644:1: ( rule__NamedArgument__Group_1_1__0__Impl rule__NamedArgument__Group_1_1__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5645:2: rule__NamedArgument__Group_1_1__0__Impl rule__NamedArgument__Group_1_1__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__NamedArgument__Group_1__2__Impl_in_rule__NamedArgument__Group_1__211523);
-            rule__NamedArgument__Group_1__2__Impl();
+            pushFollow(FollowSets000.FOLLOW_rule__NamedArgument__Group_1_1__0__Impl_in_rule__NamedArgument__Group_1_1__011522);
+            rule__NamedArgument__Group_1_1__0__Impl();
+
+            state._fsp--;
+
+            pushFollow(FollowSets000.FOLLOW_rule__NamedArgument__Group_1_1__1_in_rule__NamedArgument__Group_1_1__011525);
+            rule__NamedArgument__Group_1_1__1();
 
             state._fsp--;
 
@@ -15820,35 +15817,35 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__NamedArgument__Group_1__2"
+    // $ANTLR end "rule__NamedArgument__Group_1_1__0"
 
 
-    // $ANTLR start "rule__NamedArgument__Group_1__2__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5650:1: rule__NamedArgument__Group_1__2__Impl : ( ( rule__NamedArgument__ValueAssignment_1_2 ) ) ;
-    public final void rule__NamedArgument__Group_1__2__Impl() throws RecognitionException {
+    // $ANTLR start "rule__NamedArgument__Group_1_1__0__Impl"
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5652:1: rule__NamedArgument__Group_1_1__0__Impl : ( ( rule__NamedArgument__ExplicitValueAssignment_1_1_0 ) ) ;
+    public final void rule__NamedArgument__Group_1_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5654:1: ( ( ( rule__NamedArgument__ValueAssignment_1_2 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5655:1: ( ( rule__NamedArgument__ValueAssignment_1_2 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5656:1: ( ( ( rule__NamedArgument__ExplicitValueAssignment_1_1_0 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5657:1: ( ( rule__NamedArgument__ExplicitValueAssignment_1_1_0 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5655:1: ( ( rule__NamedArgument__ValueAssignment_1_2 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5656:1: ( rule__NamedArgument__ValueAssignment_1_2 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5657:1: ( ( rule__NamedArgument__ExplicitValueAssignment_1_1_0 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5658:1: ( rule__NamedArgument__ExplicitValueAssignment_1_1_0 )
             {
-             before(grammarAccess.getNamedArgumentAccess().getValueAssignment_1_2()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5657:1: ( rule__NamedArgument__ValueAssignment_1_2 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5657:2: rule__NamedArgument__ValueAssignment_1_2
+             before(grammarAccess.getNamedArgumentAccess().getExplicitValueAssignment_1_1_0()); 
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5659:1: ( rule__NamedArgument__ExplicitValueAssignment_1_1_0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5659:2: rule__NamedArgument__ExplicitValueAssignment_1_1_0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__NamedArgument__ValueAssignment_1_2_in_rule__NamedArgument__Group_1__2__Impl11550);
-            rule__NamedArgument__ValueAssignment_1_2();
+            pushFollow(FollowSets000.FOLLOW_rule__NamedArgument__ExplicitValueAssignment_1_1_0_in_rule__NamedArgument__Group_1_1__0__Impl11552);
+            rule__NamedArgument__ExplicitValueAssignment_1_1_0();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getNamedArgumentAccess().getValueAssignment_1_2()); 
+             after(grammarAccess.getNamedArgumentAccess().getExplicitValueAssignment_1_1_0()); 
 
             }
 
@@ -15867,25 +15864,105 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__NamedArgument__Group_1__2__Impl"
+    // $ANTLR end "rule__NamedArgument__Group_1_1__0__Impl"
+
+
+    // $ANTLR start "rule__NamedArgument__Group_1_1__1"
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5669:1: rule__NamedArgument__Group_1_1__1 : rule__NamedArgument__Group_1_1__1__Impl ;
+    public final void rule__NamedArgument__Group_1_1__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5673:1: ( rule__NamedArgument__Group_1_1__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5674:2: rule__NamedArgument__Group_1_1__1__Impl
+            {
+            pushFollow(FollowSets000.FOLLOW_rule__NamedArgument__Group_1_1__1__Impl_in_rule__NamedArgument__Group_1_1__111582);
+            rule__NamedArgument__Group_1_1__1__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__NamedArgument__Group_1_1__1"
+
+
+    // $ANTLR start "rule__NamedArgument__Group_1_1__1__Impl"
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5680:1: rule__NamedArgument__Group_1_1__1__Impl : ( ( rule__NamedArgument__ValueAssignment_1_1_1 ) ) ;
+    public final void rule__NamedArgument__Group_1_1__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5684:1: ( ( ( rule__NamedArgument__ValueAssignment_1_1_1 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5685:1: ( ( rule__NamedArgument__ValueAssignment_1_1_1 ) )
+            {
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5685:1: ( ( rule__NamedArgument__ValueAssignment_1_1_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5686:1: ( rule__NamedArgument__ValueAssignment_1_1_1 )
+            {
+             before(grammarAccess.getNamedArgumentAccess().getValueAssignment_1_1_1()); 
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5687:1: ( rule__NamedArgument__ValueAssignment_1_1_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5687:2: rule__NamedArgument__ValueAssignment_1_1_1
+            {
+            pushFollow(FollowSets000.FOLLOW_rule__NamedArgument__ValueAssignment_1_1_1_in_rule__NamedArgument__Group_1_1__1__Impl11609);
+            rule__NamedArgument__ValueAssignment_1_1_1();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getNamedArgumentAccess().getValueAssignment_1_1_1()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__NamedArgument__Group_1_1__1__Impl"
 
 
     // $ANTLR start "rule__RuleID__Group__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5673:1: rule__RuleID__Group__0 : rule__RuleID__Group__0__Impl rule__RuleID__Group__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5701:1: rule__RuleID__Group__0 : rule__RuleID__Group__0__Impl rule__RuleID__Group__1 ;
     public final void rule__RuleID__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5677:1: ( rule__RuleID__Group__0__Impl rule__RuleID__Group__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5678:2: rule__RuleID__Group__0__Impl rule__RuleID__Group__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5705:1: ( rule__RuleID__Group__0__Impl rule__RuleID__Group__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5706:2: rule__RuleID__Group__0__Impl rule__RuleID__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RuleID__Group__0__Impl_in_rule__RuleID__Group__011586);
+            pushFollow(FollowSets000.FOLLOW_rule__RuleID__Group__0__Impl_in_rule__RuleID__Group__011643);
             rule__RuleID__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RuleID__Group__1_in_rule__RuleID__Group__011589);
+            pushFollow(FollowSets000.FOLLOW_rule__RuleID__Group__1_in_rule__RuleID__Group__011646);
             rule__RuleID__Group__1();
 
             state._fsp--;
@@ -15909,20 +15986,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RuleID__Group__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5685:1: rule__RuleID__Group__0__Impl : ( RULE_ID ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5713:1: rule__RuleID__Group__0__Impl : ( RULE_ID ) ;
     public final void rule__RuleID__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5689:1: ( ( RULE_ID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5690:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5717:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5718:1: ( RULE_ID )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5690:1: ( RULE_ID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5691:1: RULE_ID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5718:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5719:1: RULE_ID
             {
              before(grammarAccess.getRuleIDAccess().getIDTerminalRuleCall_0()); 
-            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__RuleID__Group__0__Impl11616); 
+            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__RuleID__Group__0__Impl11673); 
              after(grammarAccess.getRuleIDAccess().getIDTerminalRuleCall_0()); 
 
             }
@@ -15946,16 +16023,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RuleID__Group__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5702:1: rule__RuleID__Group__1 : rule__RuleID__Group__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5730:1: rule__RuleID__Group__1 : rule__RuleID__Group__1__Impl ;
     public final void rule__RuleID__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5706:1: ( rule__RuleID__Group__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5707:2: rule__RuleID__Group__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5734:1: ( rule__RuleID__Group__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5735:2: rule__RuleID__Group__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RuleID__Group__1__Impl_in_rule__RuleID__Group__111645);
+            pushFollow(FollowSets000.FOLLOW_rule__RuleID__Group__1__Impl_in_rule__RuleID__Group__111702);
             rule__RuleID__Group__1__Impl();
 
             state._fsp--;
@@ -15979,20 +16056,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RuleID__Group__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5713:1: rule__RuleID__Group__1__Impl : ( ( rule__RuleID__Group_1__0 )* ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5741:1: rule__RuleID__Group__1__Impl : ( ( rule__RuleID__Group_1__0 )* ) ;
     public final void rule__RuleID__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5717:1: ( ( ( rule__RuleID__Group_1__0 )* ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5718:1: ( ( rule__RuleID__Group_1__0 )* )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5745:1: ( ( ( rule__RuleID__Group_1__0 )* ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5746:1: ( ( rule__RuleID__Group_1__0 )* )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5718:1: ( ( rule__RuleID__Group_1__0 )* )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5719:1: ( rule__RuleID__Group_1__0 )*
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5746:1: ( ( rule__RuleID__Group_1__0 )* )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5747:1: ( rule__RuleID__Group_1__0 )*
             {
              before(grammarAccess.getRuleIDAccess().getGroup_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5720:1: ( rule__RuleID__Group_1__0 )*
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5748:1: ( rule__RuleID__Group_1__0 )*
             loop54:
             do {
                 int alt54=2;
@@ -16005,9 +16082,9 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
                 switch (alt54) {
             	case 1 :
-            	    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5720:2: rule__RuleID__Group_1__0
+            	    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5748:2: rule__RuleID__Group_1__0
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__RuleID__Group_1__0_in_rule__RuleID__Group__1__Impl11672);
+            	    pushFollow(FollowSets000.FOLLOW_rule__RuleID__Group_1__0_in_rule__RuleID__Group__1__Impl11729);
             	    rule__RuleID__Group_1__0();
 
             	    state._fsp--;
@@ -16044,21 +16121,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RuleID__Group_1__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5734:1: rule__RuleID__Group_1__0 : rule__RuleID__Group_1__0__Impl rule__RuleID__Group_1__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5762:1: rule__RuleID__Group_1__0 : rule__RuleID__Group_1__0__Impl rule__RuleID__Group_1__1 ;
     public final void rule__RuleID__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5738:1: ( rule__RuleID__Group_1__0__Impl rule__RuleID__Group_1__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5739:2: rule__RuleID__Group_1__0__Impl rule__RuleID__Group_1__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5766:1: ( rule__RuleID__Group_1__0__Impl rule__RuleID__Group_1__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5767:2: rule__RuleID__Group_1__0__Impl rule__RuleID__Group_1__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RuleID__Group_1__0__Impl_in_rule__RuleID__Group_1__011707);
+            pushFollow(FollowSets000.FOLLOW_rule__RuleID__Group_1__0__Impl_in_rule__RuleID__Group_1__011764);
             rule__RuleID__Group_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__RuleID__Group_1__1_in_rule__RuleID__Group_1__011710);
+            pushFollow(FollowSets000.FOLLOW_rule__RuleID__Group_1__1_in_rule__RuleID__Group_1__011767);
             rule__RuleID__Group_1__1();
 
             state._fsp--;
@@ -16082,20 +16159,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RuleID__Group_1__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5746:1: rule__RuleID__Group_1__0__Impl : ( '::' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5774:1: rule__RuleID__Group_1__0__Impl : ( '::' ) ;
     public final void rule__RuleID__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5750:1: ( ( '::' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5751:1: ( '::' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5778:1: ( ( '::' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5779:1: ( '::' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5751:1: ( '::' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5752:1: '::'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5779:1: ( '::' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5780:1: '::'
             {
              before(grammarAccess.getRuleIDAccess().getColonColonKeyword_1_0()); 
-            match(input,32,FollowSets000.FOLLOW_32_in_rule__RuleID__Group_1__0__Impl11738); 
+            match(input,32,FollowSets000.FOLLOW_32_in_rule__RuleID__Group_1__0__Impl11795); 
              after(grammarAccess.getRuleIDAccess().getColonColonKeyword_1_0()); 
 
             }
@@ -16119,16 +16196,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RuleID__Group_1__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5765:1: rule__RuleID__Group_1__1 : rule__RuleID__Group_1__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5793:1: rule__RuleID__Group_1__1 : rule__RuleID__Group_1__1__Impl ;
     public final void rule__RuleID__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5769:1: ( rule__RuleID__Group_1__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5770:2: rule__RuleID__Group_1__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5797:1: ( rule__RuleID__Group_1__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5798:2: rule__RuleID__Group_1__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__RuleID__Group_1__1__Impl_in_rule__RuleID__Group_1__111769);
+            pushFollow(FollowSets000.FOLLOW_rule__RuleID__Group_1__1__Impl_in_rule__RuleID__Group_1__111826);
             rule__RuleID__Group_1__1__Impl();
 
             state._fsp--;
@@ -16152,20 +16229,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RuleID__Group_1__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5776:1: rule__RuleID__Group_1__1__Impl : ( RULE_ID ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5804:1: rule__RuleID__Group_1__1__Impl : ( RULE_ID ) ;
     public final void rule__RuleID__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5780:1: ( ( RULE_ID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5781:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5808:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5809:1: ( RULE_ID )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5781:1: ( RULE_ID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5782:1: RULE_ID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5809:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5810:1: RULE_ID
             {
              before(grammarAccess.getRuleIDAccess().getIDTerminalRuleCall_1_1()); 
-            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__RuleID__Group_1__1__Impl11796); 
+            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__RuleID__Group_1__1__Impl11853); 
              after(grammarAccess.getRuleIDAccess().getIDTerminalRuleCall_1_1()); 
 
             }
@@ -16189,21 +16266,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PredicatedKeyword__Group__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5797:1: rule__PredicatedKeyword__Group__0 : rule__PredicatedKeyword__Group__0__Impl rule__PredicatedKeyword__Group__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5825:1: rule__PredicatedKeyword__Group__0 : rule__PredicatedKeyword__Group__0__Impl rule__PredicatedKeyword__Group__1 ;
     public final void rule__PredicatedKeyword__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5801:1: ( rule__PredicatedKeyword__Group__0__Impl rule__PredicatedKeyword__Group__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5802:2: rule__PredicatedKeyword__Group__0__Impl rule__PredicatedKeyword__Group__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5829:1: ( rule__PredicatedKeyword__Group__0__Impl rule__PredicatedKeyword__Group__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5830:2: rule__PredicatedKeyword__Group__0__Impl rule__PredicatedKeyword__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__PredicatedKeyword__Group__0__Impl_in_rule__PredicatedKeyword__Group__011829);
+            pushFollow(FollowSets000.FOLLOW_rule__PredicatedKeyword__Group__0__Impl_in_rule__PredicatedKeyword__Group__011886);
             rule__PredicatedKeyword__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__PredicatedKeyword__Group__1_in_rule__PredicatedKeyword__Group__011832);
+            pushFollow(FollowSets000.FOLLOW_rule__PredicatedKeyword__Group__1_in_rule__PredicatedKeyword__Group__011889);
             rule__PredicatedKeyword__Group__1();
 
             state._fsp--;
@@ -16227,23 +16304,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PredicatedKeyword__Group__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5809:1: rule__PredicatedKeyword__Group__0__Impl : ( ( rule__PredicatedKeyword__Alternatives_0 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5837:1: rule__PredicatedKeyword__Group__0__Impl : ( ( rule__PredicatedKeyword__Alternatives_0 ) ) ;
     public final void rule__PredicatedKeyword__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5813:1: ( ( ( rule__PredicatedKeyword__Alternatives_0 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5814:1: ( ( rule__PredicatedKeyword__Alternatives_0 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5841:1: ( ( ( rule__PredicatedKeyword__Alternatives_0 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5842:1: ( ( rule__PredicatedKeyword__Alternatives_0 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5814:1: ( ( rule__PredicatedKeyword__Alternatives_0 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5815:1: ( rule__PredicatedKeyword__Alternatives_0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5842:1: ( ( rule__PredicatedKeyword__Alternatives_0 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5843:1: ( rule__PredicatedKeyword__Alternatives_0 )
             {
              before(grammarAccess.getPredicatedKeywordAccess().getAlternatives_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5816:1: ( rule__PredicatedKeyword__Alternatives_0 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5816:2: rule__PredicatedKeyword__Alternatives_0
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5844:1: ( rule__PredicatedKeyword__Alternatives_0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5844:2: rule__PredicatedKeyword__Alternatives_0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__PredicatedKeyword__Alternatives_0_in_rule__PredicatedKeyword__Group__0__Impl11859);
+            pushFollow(FollowSets000.FOLLOW_rule__PredicatedKeyword__Alternatives_0_in_rule__PredicatedKeyword__Group__0__Impl11916);
             rule__PredicatedKeyword__Alternatives_0();
 
             state._fsp--;
@@ -16274,16 +16351,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PredicatedKeyword__Group__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5826:1: rule__PredicatedKeyword__Group__1 : rule__PredicatedKeyword__Group__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5854:1: rule__PredicatedKeyword__Group__1 : rule__PredicatedKeyword__Group__1__Impl ;
     public final void rule__PredicatedKeyword__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5830:1: ( rule__PredicatedKeyword__Group__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5831:2: rule__PredicatedKeyword__Group__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5858:1: ( rule__PredicatedKeyword__Group__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5859:2: rule__PredicatedKeyword__Group__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__PredicatedKeyword__Group__1__Impl_in_rule__PredicatedKeyword__Group__111889);
+            pushFollow(FollowSets000.FOLLOW_rule__PredicatedKeyword__Group__1__Impl_in_rule__PredicatedKeyword__Group__111946);
             rule__PredicatedKeyword__Group__1__Impl();
 
             state._fsp--;
@@ -16307,23 +16384,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PredicatedKeyword__Group__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5837:1: rule__PredicatedKeyword__Group__1__Impl : ( ( rule__PredicatedKeyword__ValueAssignment_1 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5865:1: rule__PredicatedKeyword__Group__1__Impl : ( ( rule__PredicatedKeyword__ValueAssignment_1 ) ) ;
     public final void rule__PredicatedKeyword__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5841:1: ( ( ( rule__PredicatedKeyword__ValueAssignment_1 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5842:1: ( ( rule__PredicatedKeyword__ValueAssignment_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5869:1: ( ( ( rule__PredicatedKeyword__ValueAssignment_1 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5870:1: ( ( rule__PredicatedKeyword__ValueAssignment_1 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5842:1: ( ( rule__PredicatedKeyword__ValueAssignment_1 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5843:1: ( rule__PredicatedKeyword__ValueAssignment_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5870:1: ( ( rule__PredicatedKeyword__ValueAssignment_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5871:1: ( rule__PredicatedKeyword__ValueAssignment_1 )
             {
              before(grammarAccess.getPredicatedKeywordAccess().getValueAssignment_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5844:1: ( rule__PredicatedKeyword__ValueAssignment_1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5844:2: rule__PredicatedKeyword__ValueAssignment_1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5872:1: ( rule__PredicatedKeyword__ValueAssignment_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5872:2: rule__PredicatedKeyword__ValueAssignment_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__PredicatedKeyword__ValueAssignment_1_in_rule__PredicatedKeyword__Group__1__Impl11916);
+            pushFollow(FollowSets000.FOLLOW_rule__PredicatedKeyword__ValueAssignment_1_in_rule__PredicatedKeyword__Group__1__Impl11973);
             rule__PredicatedKeyword__ValueAssignment_1();
 
             state._fsp--;
@@ -16354,21 +16431,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PredicatedRuleCall__Group__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5858:1: rule__PredicatedRuleCall__Group__0 : rule__PredicatedRuleCall__Group__0__Impl rule__PredicatedRuleCall__Group__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5886:1: rule__PredicatedRuleCall__Group__0 : rule__PredicatedRuleCall__Group__0__Impl rule__PredicatedRuleCall__Group__1 ;
     public final void rule__PredicatedRuleCall__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5862:1: ( rule__PredicatedRuleCall__Group__0__Impl rule__PredicatedRuleCall__Group__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5863:2: rule__PredicatedRuleCall__Group__0__Impl rule__PredicatedRuleCall__Group__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5890:1: ( rule__PredicatedRuleCall__Group__0__Impl rule__PredicatedRuleCall__Group__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5891:2: rule__PredicatedRuleCall__Group__0__Impl rule__PredicatedRuleCall__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__PredicatedRuleCall__Group__0__Impl_in_rule__PredicatedRuleCall__Group__011950);
+            pushFollow(FollowSets000.FOLLOW_rule__PredicatedRuleCall__Group__0__Impl_in_rule__PredicatedRuleCall__Group__012007);
             rule__PredicatedRuleCall__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__PredicatedRuleCall__Group__1_in_rule__PredicatedRuleCall__Group__011953);
+            pushFollow(FollowSets000.FOLLOW_rule__PredicatedRuleCall__Group__1_in_rule__PredicatedRuleCall__Group__012010);
             rule__PredicatedRuleCall__Group__1();
 
             state._fsp--;
@@ -16392,23 +16469,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PredicatedRuleCall__Group__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5870:1: rule__PredicatedRuleCall__Group__0__Impl : ( ( rule__PredicatedRuleCall__Alternatives_0 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5898:1: rule__PredicatedRuleCall__Group__0__Impl : ( ( rule__PredicatedRuleCall__Alternatives_0 ) ) ;
     public final void rule__PredicatedRuleCall__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5874:1: ( ( ( rule__PredicatedRuleCall__Alternatives_0 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5875:1: ( ( rule__PredicatedRuleCall__Alternatives_0 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5902:1: ( ( ( rule__PredicatedRuleCall__Alternatives_0 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5903:1: ( ( rule__PredicatedRuleCall__Alternatives_0 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5875:1: ( ( rule__PredicatedRuleCall__Alternatives_0 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5876:1: ( rule__PredicatedRuleCall__Alternatives_0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5903:1: ( ( rule__PredicatedRuleCall__Alternatives_0 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5904:1: ( rule__PredicatedRuleCall__Alternatives_0 )
             {
              before(grammarAccess.getPredicatedRuleCallAccess().getAlternatives_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5877:1: ( rule__PredicatedRuleCall__Alternatives_0 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5877:2: rule__PredicatedRuleCall__Alternatives_0
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5905:1: ( rule__PredicatedRuleCall__Alternatives_0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5905:2: rule__PredicatedRuleCall__Alternatives_0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__PredicatedRuleCall__Alternatives_0_in_rule__PredicatedRuleCall__Group__0__Impl11980);
+            pushFollow(FollowSets000.FOLLOW_rule__PredicatedRuleCall__Alternatives_0_in_rule__PredicatedRuleCall__Group__0__Impl12037);
             rule__PredicatedRuleCall__Alternatives_0();
 
             state._fsp--;
@@ -16439,16 +16516,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PredicatedRuleCall__Group__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5887:1: rule__PredicatedRuleCall__Group__1 : rule__PredicatedRuleCall__Group__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5915:1: rule__PredicatedRuleCall__Group__1 : rule__PredicatedRuleCall__Group__1__Impl ;
     public final void rule__PredicatedRuleCall__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5891:1: ( rule__PredicatedRuleCall__Group__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5892:2: rule__PredicatedRuleCall__Group__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5919:1: ( rule__PredicatedRuleCall__Group__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5920:2: rule__PredicatedRuleCall__Group__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__PredicatedRuleCall__Group__1__Impl_in_rule__PredicatedRuleCall__Group__112010);
+            pushFollow(FollowSets000.FOLLOW_rule__PredicatedRuleCall__Group__1__Impl_in_rule__PredicatedRuleCall__Group__112067);
             rule__PredicatedRuleCall__Group__1__Impl();
 
             state._fsp--;
@@ -16472,23 +16549,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PredicatedRuleCall__Group__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5898:1: rule__PredicatedRuleCall__Group__1__Impl : ( ( rule__PredicatedRuleCall__RuleAssignment_1 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5926:1: rule__PredicatedRuleCall__Group__1__Impl : ( ( rule__PredicatedRuleCall__RuleAssignment_1 ) ) ;
     public final void rule__PredicatedRuleCall__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5902:1: ( ( ( rule__PredicatedRuleCall__RuleAssignment_1 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5903:1: ( ( rule__PredicatedRuleCall__RuleAssignment_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5930:1: ( ( ( rule__PredicatedRuleCall__RuleAssignment_1 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5931:1: ( ( rule__PredicatedRuleCall__RuleAssignment_1 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5903:1: ( ( rule__PredicatedRuleCall__RuleAssignment_1 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5904:1: ( rule__PredicatedRuleCall__RuleAssignment_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5931:1: ( ( rule__PredicatedRuleCall__RuleAssignment_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5932:1: ( rule__PredicatedRuleCall__RuleAssignment_1 )
             {
              before(grammarAccess.getPredicatedRuleCallAccess().getRuleAssignment_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5905:1: ( rule__PredicatedRuleCall__RuleAssignment_1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5905:2: rule__PredicatedRuleCall__RuleAssignment_1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5933:1: ( rule__PredicatedRuleCall__RuleAssignment_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5933:2: rule__PredicatedRuleCall__RuleAssignment_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__PredicatedRuleCall__RuleAssignment_1_in_rule__PredicatedRuleCall__Group__1__Impl12037);
+            pushFollow(FollowSets000.FOLLOW_rule__PredicatedRuleCall__RuleAssignment_1_in_rule__PredicatedRuleCall__Group__1__Impl12094);
             rule__PredicatedRuleCall__RuleAssignment_1();
 
             state._fsp--;
@@ -16519,21 +16596,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Assignment__Group__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5919:1: rule__Assignment__Group__0 : rule__Assignment__Group__0__Impl rule__Assignment__Group__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5947:1: rule__Assignment__Group__0 : rule__Assignment__Group__0__Impl rule__Assignment__Group__1 ;
     public final void rule__Assignment__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5923:1: ( rule__Assignment__Group__0__Impl rule__Assignment__Group__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5924:2: rule__Assignment__Group__0__Impl rule__Assignment__Group__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5951:1: ( rule__Assignment__Group__0__Impl rule__Assignment__Group__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5952:2: rule__Assignment__Group__0__Impl rule__Assignment__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Assignment__Group__0__Impl_in_rule__Assignment__Group__012071);
+            pushFollow(FollowSets000.FOLLOW_rule__Assignment__Group__0__Impl_in_rule__Assignment__Group__012128);
             rule__Assignment__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Assignment__Group__1_in_rule__Assignment__Group__012074);
+            pushFollow(FollowSets000.FOLLOW_rule__Assignment__Group__1_in_rule__Assignment__Group__012131);
             rule__Assignment__Group__1();
 
             state._fsp--;
@@ -16557,20 +16634,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Assignment__Group__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5931:1: rule__Assignment__Group__0__Impl : ( ( rule__Assignment__Alternatives_0 )? ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5959:1: rule__Assignment__Group__0__Impl : ( ( rule__Assignment__Alternatives_0 )? ) ;
     public final void rule__Assignment__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5935:1: ( ( ( rule__Assignment__Alternatives_0 )? ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5936:1: ( ( rule__Assignment__Alternatives_0 )? )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5963:1: ( ( ( rule__Assignment__Alternatives_0 )? ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5964:1: ( ( rule__Assignment__Alternatives_0 )? )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5936:1: ( ( rule__Assignment__Alternatives_0 )? )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5937:1: ( rule__Assignment__Alternatives_0 )?
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5964:1: ( ( rule__Assignment__Alternatives_0 )? )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5965:1: ( rule__Assignment__Alternatives_0 )?
             {
              before(grammarAccess.getAssignmentAccess().getAlternatives_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5938:1: ( rule__Assignment__Alternatives_0 )?
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5966:1: ( rule__Assignment__Alternatives_0 )?
             int alt55=2;
             int LA55_0 = input.LA(1);
 
@@ -16579,9 +16656,9 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
             }
             switch (alt55) {
                 case 1 :
-                    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5938:2: rule__Assignment__Alternatives_0
+                    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5966:2: rule__Assignment__Alternatives_0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__Assignment__Alternatives_0_in_rule__Assignment__Group__0__Impl12101);
+                    pushFollow(FollowSets000.FOLLOW_rule__Assignment__Alternatives_0_in_rule__Assignment__Group__0__Impl12158);
                     rule__Assignment__Alternatives_0();
 
                     state._fsp--;
@@ -16615,21 +16692,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Assignment__Group__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5948:1: rule__Assignment__Group__1 : rule__Assignment__Group__1__Impl rule__Assignment__Group__2 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5976:1: rule__Assignment__Group__1 : rule__Assignment__Group__1__Impl rule__Assignment__Group__2 ;
     public final void rule__Assignment__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5952:1: ( rule__Assignment__Group__1__Impl rule__Assignment__Group__2 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5953:2: rule__Assignment__Group__1__Impl rule__Assignment__Group__2
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5980:1: ( rule__Assignment__Group__1__Impl rule__Assignment__Group__2 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5981:2: rule__Assignment__Group__1__Impl rule__Assignment__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Assignment__Group__1__Impl_in_rule__Assignment__Group__112132);
+            pushFollow(FollowSets000.FOLLOW_rule__Assignment__Group__1__Impl_in_rule__Assignment__Group__112189);
             rule__Assignment__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Assignment__Group__2_in_rule__Assignment__Group__112135);
+            pushFollow(FollowSets000.FOLLOW_rule__Assignment__Group__2_in_rule__Assignment__Group__112192);
             rule__Assignment__Group__2();
 
             state._fsp--;
@@ -16653,23 +16730,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Assignment__Group__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5960:1: rule__Assignment__Group__1__Impl : ( ( rule__Assignment__FeatureAssignment_1 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5988:1: rule__Assignment__Group__1__Impl : ( ( rule__Assignment__FeatureAssignment_1 ) ) ;
     public final void rule__Assignment__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5964:1: ( ( ( rule__Assignment__FeatureAssignment_1 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5965:1: ( ( rule__Assignment__FeatureAssignment_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5992:1: ( ( ( rule__Assignment__FeatureAssignment_1 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5993:1: ( ( rule__Assignment__FeatureAssignment_1 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5965:1: ( ( rule__Assignment__FeatureAssignment_1 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5966:1: ( rule__Assignment__FeatureAssignment_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5993:1: ( ( rule__Assignment__FeatureAssignment_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5994:1: ( rule__Assignment__FeatureAssignment_1 )
             {
              before(grammarAccess.getAssignmentAccess().getFeatureAssignment_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5967:1: ( rule__Assignment__FeatureAssignment_1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5967:2: rule__Assignment__FeatureAssignment_1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5995:1: ( rule__Assignment__FeatureAssignment_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5995:2: rule__Assignment__FeatureAssignment_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Assignment__FeatureAssignment_1_in_rule__Assignment__Group__1__Impl12162);
+            pushFollow(FollowSets000.FOLLOW_rule__Assignment__FeatureAssignment_1_in_rule__Assignment__Group__1__Impl12219);
             rule__Assignment__FeatureAssignment_1();
 
             state._fsp--;
@@ -16700,21 +16777,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Assignment__Group__2"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5977:1: rule__Assignment__Group__2 : rule__Assignment__Group__2__Impl rule__Assignment__Group__3 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6005:1: rule__Assignment__Group__2 : rule__Assignment__Group__2__Impl rule__Assignment__Group__3 ;
     public final void rule__Assignment__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5981:1: ( rule__Assignment__Group__2__Impl rule__Assignment__Group__3 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5982:2: rule__Assignment__Group__2__Impl rule__Assignment__Group__3
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6009:1: ( rule__Assignment__Group__2__Impl rule__Assignment__Group__3 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6010:2: rule__Assignment__Group__2__Impl rule__Assignment__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Assignment__Group__2__Impl_in_rule__Assignment__Group__212192);
+            pushFollow(FollowSets000.FOLLOW_rule__Assignment__Group__2__Impl_in_rule__Assignment__Group__212249);
             rule__Assignment__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Assignment__Group__3_in_rule__Assignment__Group__212195);
+            pushFollow(FollowSets000.FOLLOW_rule__Assignment__Group__3_in_rule__Assignment__Group__212252);
             rule__Assignment__Group__3();
 
             state._fsp--;
@@ -16738,23 +16815,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Assignment__Group__2__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5989:1: rule__Assignment__Group__2__Impl : ( ( rule__Assignment__OperatorAssignment_2 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6017:1: rule__Assignment__Group__2__Impl : ( ( rule__Assignment__OperatorAssignment_2 ) ) ;
     public final void rule__Assignment__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5993:1: ( ( ( rule__Assignment__OperatorAssignment_2 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5994:1: ( ( rule__Assignment__OperatorAssignment_2 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6021:1: ( ( ( rule__Assignment__OperatorAssignment_2 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6022:1: ( ( rule__Assignment__OperatorAssignment_2 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5994:1: ( ( rule__Assignment__OperatorAssignment_2 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5995:1: ( rule__Assignment__OperatorAssignment_2 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6022:1: ( ( rule__Assignment__OperatorAssignment_2 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6023:1: ( rule__Assignment__OperatorAssignment_2 )
             {
              before(grammarAccess.getAssignmentAccess().getOperatorAssignment_2()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5996:1: ( rule__Assignment__OperatorAssignment_2 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:5996:2: rule__Assignment__OperatorAssignment_2
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6024:1: ( rule__Assignment__OperatorAssignment_2 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6024:2: rule__Assignment__OperatorAssignment_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Assignment__OperatorAssignment_2_in_rule__Assignment__Group__2__Impl12222);
+            pushFollow(FollowSets000.FOLLOW_rule__Assignment__OperatorAssignment_2_in_rule__Assignment__Group__2__Impl12279);
             rule__Assignment__OperatorAssignment_2();
 
             state._fsp--;
@@ -16785,16 +16862,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Assignment__Group__3"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6006:1: rule__Assignment__Group__3 : rule__Assignment__Group__3__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6034:1: rule__Assignment__Group__3 : rule__Assignment__Group__3__Impl ;
     public final void rule__Assignment__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6010:1: ( rule__Assignment__Group__3__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6011:2: rule__Assignment__Group__3__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6038:1: ( rule__Assignment__Group__3__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6039:2: rule__Assignment__Group__3__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Assignment__Group__3__Impl_in_rule__Assignment__Group__312252);
+            pushFollow(FollowSets000.FOLLOW_rule__Assignment__Group__3__Impl_in_rule__Assignment__Group__312309);
             rule__Assignment__Group__3__Impl();
 
             state._fsp--;
@@ -16818,23 +16895,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Assignment__Group__3__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6017:1: rule__Assignment__Group__3__Impl : ( ( rule__Assignment__TerminalAssignment_3 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6045:1: rule__Assignment__Group__3__Impl : ( ( rule__Assignment__TerminalAssignment_3 ) ) ;
     public final void rule__Assignment__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6021:1: ( ( ( rule__Assignment__TerminalAssignment_3 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6022:1: ( ( rule__Assignment__TerminalAssignment_3 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6049:1: ( ( ( rule__Assignment__TerminalAssignment_3 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6050:1: ( ( rule__Assignment__TerminalAssignment_3 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6022:1: ( ( rule__Assignment__TerminalAssignment_3 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6023:1: ( rule__Assignment__TerminalAssignment_3 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6050:1: ( ( rule__Assignment__TerminalAssignment_3 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6051:1: ( rule__Assignment__TerminalAssignment_3 )
             {
              before(grammarAccess.getAssignmentAccess().getTerminalAssignment_3()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6024:1: ( rule__Assignment__TerminalAssignment_3 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6024:2: rule__Assignment__TerminalAssignment_3
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6052:1: ( rule__Assignment__TerminalAssignment_3 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6052:2: rule__Assignment__TerminalAssignment_3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Assignment__TerminalAssignment_3_in_rule__Assignment__Group__3__Impl12279);
+            pushFollow(FollowSets000.FOLLOW_rule__Assignment__TerminalAssignment_3_in_rule__Assignment__Group__3__Impl12336);
             rule__Assignment__TerminalAssignment_3();
 
             state._fsp--;
@@ -16865,21 +16942,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParenthesizedAssignableElement__Group__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6042:1: rule__ParenthesizedAssignableElement__Group__0 : rule__ParenthesizedAssignableElement__Group__0__Impl rule__ParenthesizedAssignableElement__Group__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6070:1: rule__ParenthesizedAssignableElement__Group__0 : rule__ParenthesizedAssignableElement__Group__0__Impl rule__ParenthesizedAssignableElement__Group__1 ;
     public final void rule__ParenthesizedAssignableElement__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6046:1: ( rule__ParenthesizedAssignableElement__Group__0__Impl rule__ParenthesizedAssignableElement__Group__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6047:2: rule__ParenthesizedAssignableElement__Group__0__Impl rule__ParenthesizedAssignableElement__Group__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6074:1: ( rule__ParenthesizedAssignableElement__Group__0__Impl rule__ParenthesizedAssignableElement__Group__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6075:2: rule__ParenthesizedAssignableElement__Group__0__Impl rule__ParenthesizedAssignableElement__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedAssignableElement__Group__0__Impl_in_rule__ParenthesizedAssignableElement__Group__012317);
+            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedAssignableElement__Group__0__Impl_in_rule__ParenthesizedAssignableElement__Group__012374);
             rule__ParenthesizedAssignableElement__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedAssignableElement__Group__1_in_rule__ParenthesizedAssignableElement__Group__012320);
+            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedAssignableElement__Group__1_in_rule__ParenthesizedAssignableElement__Group__012377);
             rule__ParenthesizedAssignableElement__Group__1();
 
             state._fsp--;
@@ -16903,20 +16980,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParenthesizedAssignableElement__Group__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6054:1: rule__ParenthesizedAssignableElement__Group__0__Impl : ( '(' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6082:1: rule__ParenthesizedAssignableElement__Group__0__Impl : ( '(' ) ;
     public final void rule__ParenthesizedAssignableElement__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6058:1: ( ( '(' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6059:1: ( '(' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6086:1: ( ( '(' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6087:1: ( '(' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6059:1: ( '(' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6060:1: '('
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6087:1: ( '(' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6088:1: '('
             {
              before(grammarAccess.getParenthesizedAssignableElementAccess().getLeftParenthesisKeyword_0()); 
-            match(input,21,FollowSets000.FOLLOW_21_in_rule__ParenthesizedAssignableElement__Group__0__Impl12348); 
+            match(input,21,FollowSets000.FOLLOW_21_in_rule__ParenthesizedAssignableElement__Group__0__Impl12405); 
              after(grammarAccess.getParenthesizedAssignableElementAccess().getLeftParenthesisKeyword_0()); 
 
             }
@@ -16940,21 +17017,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParenthesizedAssignableElement__Group__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6073:1: rule__ParenthesizedAssignableElement__Group__1 : rule__ParenthesizedAssignableElement__Group__1__Impl rule__ParenthesizedAssignableElement__Group__2 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6101:1: rule__ParenthesizedAssignableElement__Group__1 : rule__ParenthesizedAssignableElement__Group__1__Impl rule__ParenthesizedAssignableElement__Group__2 ;
     public final void rule__ParenthesizedAssignableElement__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6077:1: ( rule__ParenthesizedAssignableElement__Group__1__Impl rule__ParenthesizedAssignableElement__Group__2 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6078:2: rule__ParenthesizedAssignableElement__Group__1__Impl rule__ParenthesizedAssignableElement__Group__2
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6105:1: ( rule__ParenthesizedAssignableElement__Group__1__Impl rule__ParenthesizedAssignableElement__Group__2 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6106:2: rule__ParenthesizedAssignableElement__Group__1__Impl rule__ParenthesizedAssignableElement__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedAssignableElement__Group__1__Impl_in_rule__ParenthesizedAssignableElement__Group__112379);
+            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedAssignableElement__Group__1__Impl_in_rule__ParenthesizedAssignableElement__Group__112436);
             rule__ParenthesizedAssignableElement__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedAssignableElement__Group__2_in_rule__ParenthesizedAssignableElement__Group__112382);
+            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedAssignableElement__Group__2_in_rule__ParenthesizedAssignableElement__Group__112439);
             rule__ParenthesizedAssignableElement__Group__2();
 
             state._fsp--;
@@ -16978,20 +17055,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParenthesizedAssignableElement__Group__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6085:1: rule__ParenthesizedAssignableElement__Group__1__Impl : ( ruleAssignableAlternatives ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6113:1: rule__ParenthesizedAssignableElement__Group__1__Impl : ( ruleAssignableAlternatives ) ;
     public final void rule__ParenthesizedAssignableElement__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6089:1: ( ( ruleAssignableAlternatives ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6090:1: ( ruleAssignableAlternatives )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6117:1: ( ( ruleAssignableAlternatives ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6118:1: ( ruleAssignableAlternatives )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6090:1: ( ruleAssignableAlternatives )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6091:1: ruleAssignableAlternatives
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6118:1: ( ruleAssignableAlternatives )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6119:1: ruleAssignableAlternatives
             {
              before(grammarAccess.getParenthesizedAssignableElementAccess().getAssignableAlternativesParserRuleCall_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAssignableAlternatives_in_rule__ParenthesizedAssignableElement__Group__1__Impl12409);
+            pushFollow(FollowSets000.FOLLOW_ruleAssignableAlternatives_in_rule__ParenthesizedAssignableElement__Group__1__Impl12466);
             ruleAssignableAlternatives();
 
             state._fsp--;
@@ -17019,16 +17096,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParenthesizedAssignableElement__Group__2"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6102:1: rule__ParenthesizedAssignableElement__Group__2 : rule__ParenthesizedAssignableElement__Group__2__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6130:1: rule__ParenthesizedAssignableElement__Group__2 : rule__ParenthesizedAssignableElement__Group__2__Impl ;
     public final void rule__ParenthesizedAssignableElement__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6106:1: ( rule__ParenthesizedAssignableElement__Group__2__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6107:2: rule__ParenthesizedAssignableElement__Group__2__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6134:1: ( rule__ParenthesizedAssignableElement__Group__2__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6135:2: rule__ParenthesizedAssignableElement__Group__2__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedAssignableElement__Group__2__Impl_in_rule__ParenthesizedAssignableElement__Group__212438);
+            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedAssignableElement__Group__2__Impl_in_rule__ParenthesizedAssignableElement__Group__212495);
             rule__ParenthesizedAssignableElement__Group__2__Impl();
 
             state._fsp--;
@@ -17052,20 +17129,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParenthesizedAssignableElement__Group__2__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6113:1: rule__ParenthesizedAssignableElement__Group__2__Impl : ( ')' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6141:1: rule__ParenthesizedAssignableElement__Group__2__Impl : ( ')' ) ;
     public final void rule__ParenthesizedAssignableElement__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6117:1: ( ( ')' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6118:1: ( ')' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6145:1: ( ( ')' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6146:1: ( ')' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6118:1: ( ')' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6119:1: ')'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6146:1: ( ')' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6147:1: ')'
             {
              before(grammarAccess.getParenthesizedAssignableElementAccess().getRightParenthesisKeyword_2()); 
-            match(input,22,FollowSets000.FOLLOW_22_in_rule__ParenthesizedAssignableElement__Group__2__Impl12466); 
+            match(input,22,FollowSets000.FOLLOW_22_in_rule__ParenthesizedAssignableElement__Group__2__Impl12523); 
              after(grammarAccess.getParenthesizedAssignableElementAccess().getRightParenthesisKeyword_2()); 
 
             }
@@ -17089,21 +17166,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AssignableAlternatives__Group__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6138:1: rule__AssignableAlternatives__Group__0 : rule__AssignableAlternatives__Group__0__Impl rule__AssignableAlternatives__Group__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6166:1: rule__AssignableAlternatives__Group__0 : rule__AssignableAlternatives__Group__0__Impl rule__AssignableAlternatives__Group__1 ;
     public final void rule__AssignableAlternatives__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6142:1: ( rule__AssignableAlternatives__Group__0__Impl rule__AssignableAlternatives__Group__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6143:2: rule__AssignableAlternatives__Group__0__Impl rule__AssignableAlternatives__Group__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6170:1: ( rule__AssignableAlternatives__Group__0__Impl rule__AssignableAlternatives__Group__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6171:2: rule__AssignableAlternatives__Group__0__Impl rule__AssignableAlternatives__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__AssignableAlternatives__Group__0__Impl_in_rule__AssignableAlternatives__Group__012503);
+            pushFollow(FollowSets000.FOLLOW_rule__AssignableAlternatives__Group__0__Impl_in_rule__AssignableAlternatives__Group__012560);
             rule__AssignableAlternatives__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__AssignableAlternatives__Group__1_in_rule__AssignableAlternatives__Group__012506);
+            pushFollow(FollowSets000.FOLLOW_rule__AssignableAlternatives__Group__1_in_rule__AssignableAlternatives__Group__012563);
             rule__AssignableAlternatives__Group__1();
 
             state._fsp--;
@@ -17127,20 +17204,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AssignableAlternatives__Group__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6150:1: rule__AssignableAlternatives__Group__0__Impl : ( ruleAssignableTerminal ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6178:1: rule__AssignableAlternatives__Group__0__Impl : ( ruleAssignableTerminal ) ;
     public final void rule__AssignableAlternatives__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6154:1: ( ( ruleAssignableTerminal ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6155:1: ( ruleAssignableTerminal )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6182:1: ( ( ruleAssignableTerminal ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6183:1: ( ruleAssignableTerminal )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6155:1: ( ruleAssignableTerminal )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6156:1: ruleAssignableTerminal
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6183:1: ( ruleAssignableTerminal )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6184:1: ruleAssignableTerminal
             {
              before(grammarAccess.getAssignableAlternativesAccess().getAssignableTerminalParserRuleCall_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAssignableTerminal_in_rule__AssignableAlternatives__Group__0__Impl12533);
+            pushFollow(FollowSets000.FOLLOW_ruleAssignableTerminal_in_rule__AssignableAlternatives__Group__0__Impl12590);
             ruleAssignableTerminal();
 
             state._fsp--;
@@ -17168,16 +17245,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AssignableAlternatives__Group__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6167:1: rule__AssignableAlternatives__Group__1 : rule__AssignableAlternatives__Group__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6195:1: rule__AssignableAlternatives__Group__1 : rule__AssignableAlternatives__Group__1__Impl ;
     public final void rule__AssignableAlternatives__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6171:1: ( rule__AssignableAlternatives__Group__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6172:2: rule__AssignableAlternatives__Group__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6199:1: ( rule__AssignableAlternatives__Group__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6200:2: rule__AssignableAlternatives__Group__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__AssignableAlternatives__Group__1__Impl_in_rule__AssignableAlternatives__Group__112562);
+            pushFollow(FollowSets000.FOLLOW_rule__AssignableAlternatives__Group__1__Impl_in_rule__AssignableAlternatives__Group__112619);
             rule__AssignableAlternatives__Group__1__Impl();
 
             state._fsp--;
@@ -17201,20 +17278,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AssignableAlternatives__Group__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6178:1: rule__AssignableAlternatives__Group__1__Impl : ( ( rule__AssignableAlternatives__Group_1__0 )? ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6206:1: rule__AssignableAlternatives__Group__1__Impl : ( ( rule__AssignableAlternatives__Group_1__0 )? ) ;
     public final void rule__AssignableAlternatives__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6182:1: ( ( ( rule__AssignableAlternatives__Group_1__0 )? ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6183:1: ( ( rule__AssignableAlternatives__Group_1__0 )? )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6210:1: ( ( ( rule__AssignableAlternatives__Group_1__0 )? ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6211:1: ( ( rule__AssignableAlternatives__Group_1__0 )? )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6183:1: ( ( rule__AssignableAlternatives__Group_1__0 )? )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6184:1: ( rule__AssignableAlternatives__Group_1__0 )?
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6211:1: ( ( rule__AssignableAlternatives__Group_1__0 )? )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6212:1: ( rule__AssignableAlternatives__Group_1__0 )?
             {
              before(grammarAccess.getAssignableAlternativesAccess().getGroup_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6185:1: ( rule__AssignableAlternatives__Group_1__0 )?
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6213:1: ( rule__AssignableAlternatives__Group_1__0 )?
             int alt56=2;
             int LA56_0 = input.LA(1);
 
@@ -17223,9 +17300,9 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
             }
             switch (alt56) {
                 case 1 :
-                    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6185:2: rule__AssignableAlternatives__Group_1__0
+                    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6213:2: rule__AssignableAlternatives__Group_1__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__AssignableAlternatives__Group_1__0_in_rule__AssignableAlternatives__Group__1__Impl12589);
+                    pushFollow(FollowSets000.FOLLOW_rule__AssignableAlternatives__Group_1__0_in_rule__AssignableAlternatives__Group__1__Impl12646);
                     rule__AssignableAlternatives__Group_1__0();
 
                     state._fsp--;
@@ -17259,21 +17336,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AssignableAlternatives__Group_1__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6199:1: rule__AssignableAlternatives__Group_1__0 : rule__AssignableAlternatives__Group_1__0__Impl rule__AssignableAlternatives__Group_1__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6227:1: rule__AssignableAlternatives__Group_1__0 : rule__AssignableAlternatives__Group_1__0__Impl rule__AssignableAlternatives__Group_1__1 ;
     public final void rule__AssignableAlternatives__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6203:1: ( rule__AssignableAlternatives__Group_1__0__Impl rule__AssignableAlternatives__Group_1__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6204:2: rule__AssignableAlternatives__Group_1__0__Impl rule__AssignableAlternatives__Group_1__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6231:1: ( rule__AssignableAlternatives__Group_1__0__Impl rule__AssignableAlternatives__Group_1__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6232:2: rule__AssignableAlternatives__Group_1__0__Impl rule__AssignableAlternatives__Group_1__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__AssignableAlternatives__Group_1__0__Impl_in_rule__AssignableAlternatives__Group_1__012624);
+            pushFollow(FollowSets000.FOLLOW_rule__AssignableAlternatives__Group_1__0__Impl_in_rule__AssignableAlternatives__Group_1__012681);
             rule__AssignableAlternatives__Group_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__AssignableAlternatives__Group_1__1_in_rule__AssignableAlternatives__Group_1__012627);
+            pushFollow(FollowSets000.FOLLOW_rule__AssignableAlternatives__Group_1__1_in_rule__AssignableAlternatives__Group_1__012684);
             rule__AssignableAlternatives__Group_1__1();
 
             state._fsp--;
@@ -17297,21 +17374,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AssignableAlternatives__Group_1__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6211:1: rule__AssignableAlternatives__Group_1__0__Impl : ( () ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6239:1: rule__AssignableAlternatives__Group_1__0__Impl : ( () ) ;
     public final void rule__AssignableAlternatives__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6215:1: ( ( () ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6216:1: ( () )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6243:1: ( ( () ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6244:1: ( () )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6216:1: ( () )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6217:1: ()
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6244:1: ( () )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6245:1: ()
             {
              before(grammarAccess.getAssignableAlternativesAccess().getAlternativesElementsAction_1_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6218:1: ()
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6220:1: 
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6246:1: ()
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6248:1: 
             {
             }
 
@@ -17334,16 +17411,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AssignableAlternatives__Group_1__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6230:1: rule__AssignableAlternatives__Group_1__1 : rule__AssignableAlternatives__Group_1__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6258:1: rule__AssignableAlternatives__Group_1__1 : rule__AssignableAlternatives__Group_1__1__Impl ;
     public final void rule__AssignableAlternatives__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6234:1: ( rule__AssignableAlternatives__Group_1__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6235:2: rule__AssignableAlternatives__Group_1__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6262:1: ( rule__AssignableAlternatives__Group_1__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6263:2: rule__AssignableAlternatives__Group_1__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__AssignableAlternatives__Group_1__1__Impl_in_rule__AssignableAlternatives__Group_1__112685);
+            pushFollow(FollowSets000.FOLLOW_rule__AssignableAlternatives__Group_1__1__Impl_in_rule__AssignableAlternatives__Group_1__112742);
             rule__AssignableAlternatives__Group_1__1__Impl();
 
             state._fsp--;
@@ -17367,26 +17444,26 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AssignableAlternatives__Group_1__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6241:1: rule__AssignableAlternatives__Group_1__1__Impl : ( ( ( rule__AssignableAlternatives__Group_1_1__0 ) ) ( ( rule__AssignableAlternatives__Group_1_1__0 )* ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6269:1: rule__AssignableAlternatives__Group_1__1__Impl : ( ( ( rule__AssignableAlternatives__Group_1_1__0 ) ) ( ( rule__AssignableAlternatives__Group_1_1__0 )* ) ) ;
     public final void rule__AssignableAlternatives__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6245:1: ( ( ( ( rule__AssignableAlternatives__Group_1_1__0 ) ) ( ( rule__AssignableAlternatives__Group_1_1__0 )* ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6246:1: ( ( ( rule__AssignableAlternatives__Group_1_1__0 ) ) ( ( rule__AssignableAlternatives__Group_1_1__0 )* ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6273:1: ( ( ( ( rule__AssignableAlternatives__Group_1_1__0 ) ) ( ( rule__AssignableAlternatives__Group_1_1__0 )* ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6274:1: ( ( ( rule__AssignableAlternatives__Group_1_1__0 ) ) ( ( rule__AssignableAlternatives__Group_1_1__0 )* ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6246:1: ( ( ( rule__AssignableAlternatives__Group_1_1__0 ) ) ( ( rule__AssignableAlternatives__Group_1_1__0 )* ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6247:1: ( ( rule__AssignableAlternatives__Group_1_1__0 ) ) ( ( rule__AssignableAlternatives__Group_1_1__0 )* )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6274:1: ( ( ( rule__AssignableAlternatives__Group_1_1__0 ) ) ( ( rule__AssignableAlternatives__Group_1_1__0 )* ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6275:1: ( ( rule__AssignableAlternatives__Group_1_1__0 ) ) ( ( rule__AssignableAlternatives__Group_1_1__0 )* )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6247:1: ( ( rule__AssignableAlternatives__Group_1_1__0 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6248:1: ( rule__AssignableAlternatives__Group_1_1__0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6275:1: ( ( rule__AssignableAlternatives__Group_1_1__0 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6276:1: ( rule__AssignableAlternatives__Group_1_1__0 )
             {
              before(grammarAccess.getAssignableAlternativesAccess().getGroup_1_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6249:1: ( rule__AssignableAlternatives__Group_1_1__0 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6249:2: rule__AssignableAlternatives__Group_1_1__0
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6277:1: ( rule__AssignableAlternatives__Group_1_1__0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6277:2: rule__AssignableAlternatives__Group_1_1__0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__AssignableAlternatives__Group_1_1__0_in_rule__AssignableAlternatives__Group_1__1__Impl12714);
+            pushFollow(FollowSets000.FOLLOW_rule__AssignableAlternatives__Group_1_1__0_in_rule__AssignableAlternatives__Group_1__1__Impl12771);
             rule__AssignableAlternatives__Group_1_1__0();
 
             state._fsp--;
@@ -17398,11 +17475,11 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
             }
 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6252:1: ( ( rule__AssignableAlternatives__Group_1_1__0 )* )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6253:1: ( rule__AssignableAlternatives__Group_1_1__0 )*
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6280:1: ( ( rule__AssignableAlternatives__Group_1_1__0 )* )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6281:1: ( rule__AssignableAlternatives__Group_1_1__0 )*
             {
              before(grammarAccess.getAssignableAlternativesAccess().getGroup_1_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6254:1: ( rule__AssignableAlternatives__Group_1_1__0 )*
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6282:1: ( rule__AssignableAlternatives__Group_1_1__0 )*
             loop57:
             do {
                 int alt57=2;
@@ -17415,9 +17492,9 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
                 switch (alt57) {
             	case 1 :
-            	    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6254:2: rule__AssignableAlternatives__Group_1_1__0
+            	    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6282:2: rule__AssignableAlternatives__Group_1_1__0
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__AssignableAlternatives__Group_1_1__0_in_rule__AssignableAlternatives__Group_1__1__Impl12726);
+            	    pushFollow(FollowSets000.FOLLOW_rule__AssignableAlternatives__Group_1_1__0_in_rule__AssignableAlternatives__Group_1__1__Impl12783);
             	    rule__AssignableAlternatives__Group_1_1__0();
 
             	    state._fsp--;
@@ -17457,21 +17534,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AssignableAlternatives__Group_1_1__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6269:1: rule__AssignableAlternatives__Group_1_1__0 : rule__AssignableAlternatives__Group_1_1__0__Impl rule__AssignableAlternatives__Group_1_1__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6297:1: rule__AssignableAlternatives__Group_1_1__0 : rule__AssignableAlternatives__Group_1_1__0__Impl rule__AssignableAlternatives__Group_1_1__1 ;
     public final void rule__AssignableAlternatives__Group_1_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6273:1: ( rule__AssignableAlternatives__Group_1_1__0__Impl rule__AssignableAlternatives__Group_1_1__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6274:2: rule__AssignableAlternatives__Group_1_1__0__Impl rule__AssignableAlternatives__Group_1_1__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6301:1: ( rule__AssignableAlternatives__Group_1_1__0__Impl rule__AssignableAlternatives__Group_1_1__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6302:2: rule__AssignableAlternatives__Group_1_1__0__Impl rule__AssignableAlternatives__Group_1_1__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__AssignableAlternatives__Group_1_1__0__Impl_in_rule__AssignableAlternatives__Group_1_1__012763);
+            pushFollow(FollowSets000.FOLLOW_rule__AssignableAlternatives__Group_1_1__0__Impl_in_rule__AssignableAlternatives__Group_1_1__012820);
             rule__AssignableAlternatives__Group_1_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__AssignableAlternatives__Group_1_1__1_in_rule__AssignableAlternatives__Group_1_1__012766);
+            pushFollow(FollowSets000.FOLLOW_rule__AssignableAlternatives__Group_1_1__1_in_rule__AssignableAlternatives__Group_1_1__012823);
             rule__AssignableAlternatives__Group_1_1__1();
 
             state._fsp--;
@@ -17495,20 +17572,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AssignableAlternatives__Group_1_1__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6281:1: rule__AssignableAlternatives__Group_1_1__0__Impl : ( '|' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6309:1: rule__AssignableAlternatives__Group_1_1__0__Impl : ( '|' ) ;
     public final void rule__AssignableAlternatives__Group_1_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6285:1: ( ( '|' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6286:1: ( '|' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6313:1: ( ( '|' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6314:1: ( '|' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6286:1: ( '|' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6287:1: '|'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6314:1: ( '|' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6315:1: '|'
             {
              before(grammarAccess.getAssignableAlternativesAccess().getVerticalLineKeyword_1_1_0()); 
-            match(input,33,FollowSets000.FOLLOW_33_in_rule__AssignableAlternatives__Group_1_1__0__Impl12794); 
+            match(input,33,FollowSets000.FOLLOW_33_in_rule__AssignableAlternatives__Group_1_1__0__Impl12851); 
              after(grammarAccess.getAssignableAlternativesAccess().getVerticalLineKeyword_1_1_0()); 
 
             }
@@ -17532,16 +17609,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AssignableAlternatives__Group_1_1__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6300:1: rule__AssignableAlternatives__Group_1_1__1 : rule__AssignableAlternatives__Group_1_1__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6328:1: rule__AssignableAlternatives__Group_1_1__1 : rule__AssignableAlternatives__Group_1_1__1__Impl ;
     public final void rule__AssignableAlternatives__Group_1_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6304:1: ( rule__AssignableAlternatives__Group_1_1__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6305:2: rule__AssignableAlternatives__Group_1_1__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6332:1: ( rule__AssignableAlternatives__Group_1_1__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6333:2: rule__AssignableAlternatives__Group_1_1__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__AssignableAlternatives__Group_1_1__1__Impl_in_rule__AssignableAlternatives__Group_1_1__112825);
+            pushFollow(FollowSets000.FOLLOW_rule__AssignableAlternatives__Group_1_1__1__Impl_in_rule__AssignableAlternatives__Group_1_1__112882);
             rule__AssignableAlternatives__Group_1_1__1__Impl();
 
             state._fsp--;
@@ -17565,23 +17642,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AssignableAlternatives__Group_1_1__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6311:1: rule__AssignableAlternatives__Group_1_1__1__Impl : ( ( rule__AssignableAlternatives__ElementsAssignment_1_1_1 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6339:1: rule__AssignableAlternatives__Group_1_1__1__Impl : ( ( rule__AssignableAlternatives__ElementsAssignment_1_1_1 ) ) ;
     public final void rule__AssignableAlternatives__Group_1_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6315:1: ( ( ( rule__AssignableAlternatives__ElementsAssignment_1_1_1 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6316:1: ( ( rule__AssignableAlternatives__ElementsAssignment_1_1_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6343:1: ( ( ( rule__AssignableAlternatives__ElementsAssignment_1_1_1 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6344:1: ( ( rule__AssignableAlternatives__ElementsAssignment_1_1_1 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6316:1: ( ( rule__AssignableAlternatives__ElementsAssignment_1_1_1 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6317:1: ( rule__AssignableAlternatives__ElementsAssignment_1_1_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6344:1: ( ( rule__AssignableAlternatives__ElementsAssignment_1_1_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6345:1: ( rule__AssignableAlternatives__ElementsAssignment_1_1_1 )
             {
              before(grammarAccess.getAssignableAlternativesAccess().getElementsAssignment_1_1_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6318:1: ( rule__AssignableAlternatives__ElementsAssignment_1_1_1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6318:2: rule__AssignableAlternatives__ElementsAssignment_1_1_1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6346:1: ( rule__AssignableAlternatives__ElementsAssignment_1_1_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6346:2: rule__AssignableAlternatives__ElementsAssignment_1_1_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__AssignableAlternatives__ElementsAssignment_1_1_1_in_rule__AssignableAlternatives__Group_1_1__1__Impl12852);
+            pushFollow(FollowSets000.FOLLOW_rule__AssignableAlternatives__ElementsAssignment_1_1_1_in_rule__AssignableAlternatives__Group_1_1__1__Impl12909);
             rule__AssignableAlternatives__ElementsAssignment_1_1_1();
 
             state._fsp--;
@@ -17612,21 +17689,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CrossReference__Group__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6332:1: rule__CrossReference__Group__0 : rule__CrossReference__Group__0__Impl rule__CrossReference__Group__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6360:1: rule__CrossReference__Group__0 : rule__CrossReference__Group__0__Impl rule__CrossReference__Group__1 ;
     public final void rule__CrossReference__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6336:1: ( rule__CrossReference__Group__0__Impl rule__CrossReference__Group__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6337:2: rule__CrossReference__Group__0__Impl rule__CrossReference__Group__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6364:1: ( rule__CrossReference__Group__0__Impl rule__CrossReference__Group__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6365:2: rule__CrossReference__Group__0__Impl rule__CrossReference__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__CrossReference__Group__0__Impl_in_rule__CrossReference__Group__012886);
+            pushFollow(FollowSets000.FOLLOW_rule__CrossReference__Group__0__Impl_in_rule__CrossReference__Group__012943);
             rule__CrossReference__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__CrossReference__Group__1_in_rule__CrossReference__Group__012889);
+            pushFollow(FollowSets000.FOLLOW_rule__CrossReference__Group__1_in_rule__CrossReference__Group__012946);
             rule__CrossReference__Group__1();
 
             state._fsp--;
@@ -17650,20 +17727,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CrossReference__Group__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6344:1: rule__CrossReference__Group__0__Impl : ( '[' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6372:1: rule__CrossReference__Group__0__Impl : ( '[' ) ;
     public final void rule__CrossReference__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6348:1: ( ( '[' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6349:1: ( '[' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6376:1: ( ( '[' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6377:1: ( '[' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6349:1: ( '[' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6350:1: '['
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6377:1: ( '[' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6378:1: '['
             {
              before(grammarAccess.getCrossReferenceAccess().getLeftSquareBracketKeyword_0()); 
-            match(input,30,FollowSets000.FOLLOW_30_in_rule__CrossReference__Group__0__Impl12917); 
+            match(input,30,FollowSets000.FOLLOW_30_in_rule__CrossReference__Group__0__Impl12974); 
              after(grammarAccess.getCrossReferenceAccess().getLeftSquareBracketKeyword_0()); 
 
             }
@@ -17687,21 +17764,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CrossReference__Group__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6363:1: rule__CrossReference__Group__1 : rule__CrossReference__Group__1__Impl rule__CrossReference__Group__2 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6391:1: rule__CrossReference__Group__1 : rule__CrossReference__Group__1__Impl rule__CrossReference__Group__2 ;
     public final void rule__CrossReference__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6367:1: ( rule__CrossReference__Group__1__Impl rule__CrossReference__Group__2 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6368:2: rule__CrossReference__Group__1__Impl rule__CrossReference__Group__2
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6395:1: ( rule__CrossReference__Group__1__Impl rule__CrossReference__Group__2 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6396:2: rule__CrossReference__Group__1__Impl rule__CrossReference__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__CrossReference__Group__1__Impl_in_rule__CrossReference__Group__112948);
+            pushFollow(FollowSets000.FOLLOW_rule__CrossReference__Group__1__Impl_in_rule__CrossReference__Group__113005);
             rule__CrossReference__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__CrossReference__Group__2_in_rule__CrossReference__Group__112951);
+            pushFollow(FollowSets000.FOLLOW_rule__CrossReference__Group__2_in_rule__CrossReference__Group__113008);
             rule__CrossReference__Group__2();
 
             state._fsp--;
@@ -17725,23 +17802,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CrossReference__Group__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6375:1: rule__CrossReference__Group__1__Impl : ( ( rule__CrossReference__TypeAssignment_1 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6403:1: rule__CrossReference__Group__1__Impl : ( ( rule__CrossReference__TypeAssignment_1 ) ) ;
     public final void rule__CrossReference__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6379:1: ( ( ( rule__CrossReference__TypeAssignment_1 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6380:1: ( ( rule__CrossReference__TypeAssignment_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6407:1: ( ( ( rule__CrossReference__TypeAssignment_1 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6408:1: ( ( rule__CrossReference__TypeAssignment_1 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6380:1: ( ( rule__CrossReference__TypeAssignment_1 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6381:1: ( rule__CrossReference__TypeAssignment_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6408:1: ( ( rule__CrossReference__TypeAssignment_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6409:1: ( rule__CrossReference__TypeAssignment_1 )
             {
              before(grammarAccess.getCrossReferenceAccess().getTypeAssignment_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6382:1: ( rule__CrossReference__TypeAssignment_1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6382:2: rule__CrossReference__TypeAssignment_1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6410:1: ( rule__CrossReference__TypeAssignment_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6410:2: rule__CrossReference__TypeAssignment_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__CrossReference__TypeAssignment_1_in_rule__CrossReference__Group__1__Impl12978);
+            pushFollow(FollowSets000.FOLLOW_rule__CrossReference__TypeAssignment_1_in_rule__CrossReference__Group__1__Impl13035);
             rule__CrossReference__TypeAssignment_1();
 
             state._fsp--;
@@ -17772,21 +17849,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CrossReference__Group__2"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6392:1: rule__CrossReference__Group__2 : rule__CrossReference__Group__2__Impl rule__CrossReference__Group__3 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6420:1: rule__CrossReference__Group__2 : rule__CrossReference__Group__2__Impl rule__CrossReference__Group__3 ;
     public final void rule__CrossReference__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6396:1: ( rule__CrossReference__Group__2__Impl rule__CrossReference__Group__3 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6397:2: rule__CrossReference__Group__2__Impl rule__CrossReference__Group__3
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6424:1: ( rule__CrossReference__Group__2__Impl rule__CrossReference__Group__3 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6425:2: rule__CrossReference__Group__2__Impl rule__CrossReference__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__CrossReference__Group__2__Impl_in_rule__CrossReference__Group__213008);
+            pushFollow(FollowSets000.FOLLOW_rule__CrossReference__Group__2__Impl_in_rule__CrossReference__Group__213065);
             rule__CrossReference__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__CrossReference__Group__3_in_rule__CrossReference__Group__213011);
+            pushFollow(FollowSets000.FOLLOW_rule__CrossReference__Group__3_in_rule__CrossReference__Group__213068);
             rule__CrossReference__Group__3();
 
             state._fsp--;
@@ -17810,20 +17887,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CrossReference__Group__2__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6404:1: rule__CrossReference__Group__2__Impl : ( ( rule__CrossReference__Group_2__0 )? ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6432:1: rule__CrossReference__Group__2__Impl : ( ( rule__CrossReference__Group_2__0 )? ) ;
     public final void rule__CrossReference__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6408:1: ( ( ( rule__CrossReference__Group_2__0 )? ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6409:1: ( ( rule__CrossReference__Group_2__0 )? )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6436:1: ( ( ( rule__CrossReference__Group_2__0 )? ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6437:1: ( ( rule__CrossReference__Group_2__0 )? )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6409:1: ( ( rule__CrossReference__Group_2__0 )? )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6410:1: ( rule__CrossReference__Group_2__0 )?
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6437:1: ( ( rule__CrossReference__Group_2__0 )? )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6438:1: ( rule__CrossReference__Group_2__0 )?
             {
              before(grammarAccess.getCrossReferenceAccess().getGroup_2()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6411:1: ( rule__CrossReference__Group_2__0 )?
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6439:1: ( rule__CrossReference__Group_2__0 )?
             int alt58=2;
             int LA58_0 = input.LA(1);
 
@@ -17832,9 +17909,9 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
             }
             switch (alt58) {
                 case 1 :
-                    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6411:2: rule__CrossReference__Group_2__0
+                    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6439:2: rule__CrossReference__Group_2__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__CrossReference__Group_2__0_in_rule__CrossReference__Group__2__Impl13038);
+                    pushFollow(FollowSets000.FOLLOW_rule__CrossReference__Group_2__0_in_rule__CrossReference__Group__2__Impl13095);
                     rule__CrossReference__Group_2__0();
 
                     state._fsp--;
@@ -17868,16 +17945,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CrossReference__Group__3"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6421:1: rule__CrossReference__Group__3 : rule__CrossReference__Group__3__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6449:1: rule__CrossReference__Group__3 : rule__CrossReference__Group__3__Impl ;
     public final void rule__CrossReference__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6425:1: ( rule__CrossReference__Group__3__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6426:2: rule__CrossReference__Group__3__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6453:1: ( rule__CrossReference__Group__3__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6454:2: rule__CrossReference__Group__3__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__CrossReference__Group__3__Impl_in_rule__CrossReference__Group__313069);
+            pushFollow(FollowSets000.FOLLOW_rule__CrossReference__Group__3__Impl_in_rule__CrossReference__Group__313126);
             rule__CrossReference__Group__3__Impl();
 
             state._fsp--;
@@ -17901,20 +17978,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CrossReference__Group__3__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6432:1: rule__CrossReference__Group__3__Impl : ( ']' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6460:1: rule__CrossReference__Group__3__Impl : ( ']' ) ;
     public final void rule__CrossReference__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6436:1: ( ( ']' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6437:1: ( ']' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6464:1: ( ( ']' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6465:1: ( ']' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6437:1: ( ']' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6438:1: ']'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6465:1: ( ']' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6466:1: ']'
             {
              before(grammarAccess.getCrossReferenceAccess().getRightSquareBracketKeyword_3()); 
-            match(input,31,FollowSets000.FOLLOW_31_in_rule__CrossReference__Group__3__Impl13097); 
+            match(input,31,FollowSets000.FOLLOW_31_in_rule__CrossReference__Group__3__Impl13154); 
              after(grammarAccess.getCrossReferenceAccess().getRightSquareBracketKeyword_3()); 
 
             }
@@ -17938,21 +18015,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CrossReference__Group_2__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6459:1: rule__CrossReference__Group_2__0 : rule__CrossReference__Group_2__0__Impl rule__CrossReference__Group_2__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6487:1: rule__CrossReference__Group_2__0 : rule__CrossReference__Group_2__0__Impl rule__CrossReference__Group_2__1 ;
     public final void rule__CrossReference__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6463:1: ( rule__CrossReference__Group_2__0__Impl rule__CrossReference__Group_2__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6464:2: rule__CrossReference__Group_2__0__Impl rule__CrossReference__Group_2__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6491:1: ( rule__CrossReference__Group_2__0__Impl rule__CrossReference__Group_2__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6492:2: rule__CrossReference__Group_2__0__Impl rule__CrossReference__Group_2__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__CrossReference__Group_2__0__Impl_in_rule__CrossReference__Group_2__013136);
+            pushFollow(FollowSets000.FOLLOW_rule__CrossReference__Group_2__0__Impl_in_rule__CrossReference__Group_2__013193);
             rule__CrossReference__Group_2__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__CrossReference__Group_2__1_in_rule__CrossReference__Group_2__013139);
+            pushFollow(FollowSets000.FOLLOW_rule__CrossReference__Group_2__1_in_rule__CrossReference__Group_2__013196);
             rule__CrossReference__Group_2__1();
 
             state._fsp--;
@@ -17976,20 +18053,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CrossReference__Group_2__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6471:1: rule__CrossReference__Group_2__0__Impl : ( '|' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6499:1: rule__CrossReference__Group_2__0__Impl : ( '|' ) ;
     public final void rule__CrossReference__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6475:1: ( ( '|' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6476:1: ( '|' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6503:1: ( ( '|' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6504:1: ( '|' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6476:1: ( '|' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6477:1: '|'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6504:1: ( '|' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6505:1: '|'
             {
              before(grammarAccess.getCrossReferenceAccess().getVerticalLineKeyword_2_0()); 
-            match(input,33,FollowSets000.FOLLOW_33_in_rule__CrossReference__Group_2__0__Impl13167); 
+            match(input,33,FollowSets000.FOLLOW_33_in_rule__CrossReference__Group_2__0__Impl13224); 
              after(grammarAccess.getCrossReferenceAccess().getVerticalLineKeyword_2_0()); 
 
             }
@@ -18013,16 +18090,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CrossReference__Group_2__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6490:1: rule__CrossReference__Group_2__1 : rule__CrossReference__Group_2__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6518:1: rule__CrossReference__Group_2__1 : rule__CrossReference__Group_2__1__Impl ;
     public final void rule__CrossReference__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6494:1: ( rule__CrossReference__Group_2__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6495:2: rule__CrossReference__Group_2__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6522:1: ( rule__CrossReference__Group_2__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6523:2: rule__CrossReference__Group_2__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__CrossReference__Group_2__1__Impl_in_rule__CrossReference__Group_2__113198);
+            pushFollow(FollowSets000.FOLLOW_rule__CrossReference__Group_2__1__Impl_in_rule__CrossReference__Group_2__113255);
             rule__CrossReference__Group_2__1__Impl();
 
             state._fsp--;
@@ -18046,23 +18123,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CrossReference__Group_2__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6501:1: rule__CrossReference__Group_2__1__Impl : ( ( rule__CrossReference__TerminalAssignment_2_1 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6529:1: rule__CrossReference__Group_2__1__Impl : ( ( rule__CrossReference__TerminalAssignment_2_1 ) ) ;
     public final void rule__CrossReference__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6505:1: ( ( ( rule__CrossReference__TerminalAssignment_2_1 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6506:1: ( ( rule__CrossReference__TerminalAssignment_2_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6533:1: ( ( ( rule__CrossReference__TerminalAssignment_2_1 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6534:1: ( ( rule__CrossReference__TerminalAssignment_2_1 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6506:1: ( ( rule__CrossReference__TerminalAssignment_2_1 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6507:1: ( rule__CrossReference__TerminalAssignment_2_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6534:1: ( ( rule__CrossReference__TerminalAssignment_2_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6535:1: ( rule__CrossReference__TerminalAssignment_2_1 )
             {
              before(grammarAccess.getCrossReferenceAccess().getTerminalAssignment_2_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6508:1: ( rule__CrossReference__TerminalAssignment_2_1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6508:2: rule__CrossReference__TerminalAssignment_2_1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6536:1: ( rule__CrossReference__TerminalAssignment_2_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6536:2: rule__CrossReference__TerminalAssignment_2_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__CrossReference__TerminalAssignment_2_1_in_rule__CrossReference__Group_2__1__Impl13225);
+            pushFollow(FollowSets000.FOLLOW_rule__CrossReference__TerminalAssignment_2_1_in_rule__CrossReference__Group_2__1__Impl13282);
             rule__CrossReference__TerminalAssignment_2_1();
 
             state._fsp--;
@@ -18093,21 +18170,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParenthesizedElement__Group__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6522:1: rule__ParenthesizedElement__Group__0 : rule__ParenthesizedElement__Group__0__Impl rule__ParenthesizedElement__Group__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6550:1: rule__ParenthesizedElement__Group__0 : rule__ParenthesizedElement__Group__0__Impl rule__ParenthesizedElement__Group__1 ;
     public final void rule__ParenthesizedElement__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6526:1: ( rule__ParenthesizedElement__Group__0__Impl rule__ParenthesizedElement__Group__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6527:2: rule__ParenthesizedElement__Group__0__Impl rule__ParenthesizedElement__Group__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6554:1: ( rule__ParenthesizedElement__Group__0__Impl rule__ParenthesizedElement__Group__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6555:2: rule__ParenthesizedElement__Group__0__Impl rule__ParenthesizedElement__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedElement__Group__0__Impl_in_rule__ParenthesizedElement__Group__013259);
+            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedElement__Group__0__Impl_in_rule__ParenthesizedElement__Group__013316);
             rule__ParenthesizedElement__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedElement__Group__1_in_rule__ParenthesizedElement__Group__013262);
+            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedElement__Group__1_in_rule__ParenthesizedElement__Group__013319);
             rule__ParenthesizedElement__Group__1();
 
             state._fsp--;
@@ -18131,20 +18208,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParenthesizedElement__Group__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6534:1: rule__ParenthesizedElement__Group__0__Impl : ( '(' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6562:1: rule__ParenthesizedElement__Group__0__Impl : ( '(' ) ;
     public final void rule__ParenthesizedElement__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6538:1: ( ( '(' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6539:1: ( '(' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6566:1: ( ( '(' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6567:1: ( '(' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6539:1: ( '(' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6540:1: '('
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6567:1: ( '(' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6568:1: '('
             {
              before(grammarAccess.getParenthesizedElementAccess().getLeftParenthesisKeyword_0()); 
-            match(input,21,FollowSets000.FOLLOW_21_in_rule__ParenthesizedElement__Group__0__Impl13290); 
+            match(input,21,FollowSets000.FOLLOW_21_in_rule__ParenthesizedElement__Group__0__Impl13347); 
              after(grammarAccess.getParenthesizedElementAccess().getLeftParenthesisKeyword_0()); 
 
             }
@@ -18168,21 +18245,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParenthesizedElement__Group__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6553:1: rule__ParenthesizedElement__Group__1 : rule__ParenthesizedElement__Group__1__Impl rule__ParenthesizedElement__Group__2 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6581:1: rule__ParenthesizedElement__Group__1 : rule__ParenthesizedElement__Group__1__Impl rule__ParenthesizedElement__Group__2 ;
     public final void rule__ParenthesizedElement__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6557:1: ( rule__ParenthesizedElement__Group__1__Impl rule__ParenthesizedElement__Group__2 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6558:2: rule__ParenthesizedElement__Group__1__Impl rule__ParenthesizedElement__Group__2
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6585:1: ( rule__ParenthesizedElement__Group__1__Impl rule__ParenthesizedElement__Group__2 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6586:2: rule__ParenthesizedElement__Group__1__Impl rule__ParenthesizedElement__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedElement__Group__1__Impl_in_rule__ParenthesizedElement__Group__113321);
+            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedElement__Group__1__Impl_in_rule__ParenthesizedElement__Group__113378);
             rule__ParenthesizedElement__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedElement__Group__2_in_rule__ParenthesizedElement__Group__113324);
+            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedElement__Group__2_in_rule__ParenthesizedElement__Group__113381);
             rule__ParenthesizedElement__Group__2();
 
             state._fsp--;
@@ -18206,20 +18283,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParenthesizedElement__Group__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6565:1: rule__ParenthesizedElement__Group__1__Impl : ( ruleAlternatives ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6593:1: rule__ParenthesizedElement__Group__1__Impl : ( ruleAlternatives ) ;
     public final void rule__ParenthesizedElement__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6569:1: ( ( ruleAlternatives ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6570:1: ( ruleAlternatives )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6597:1: ( ( ruleAlternatives ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6598:1: ( ruleAlternatives )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6570:1: ( ruleAlternatives )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6571:1: ruleAlternatives
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6598:1: ( ruleAlternatives )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6599:1: ruleAlternatives
             {
              before(grammarAccess.getParenthesizedElementAccess().getAlternativesParserRuleCall_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAlternatives_in_rule__ParenthesizedElement__Group__1__Impl13351);
+            pushFollow(FollowSets000.FOLLOW_ruleAlternatives_in_rule__ParenthesizedElement__Group__1__Impl13408);
             ruleAlternatives();
 
             state._fsp--;
@@ -18247,16 +18324,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParenthesizedElement__Group__2"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6582:1: rule__ParenthesizedElement__Group__2 : rule__ParenthesizedElement__Group__2__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6610:1: rule__ParenthesizedElement__Group__2 : rule__ParenthesizedElement__Group__2__Impl ;
     public final void rule__ParenthesizedElement__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6586:1: ( rule__ParenthesizedElement__Group__2__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6587:2: rule__ParenthesizedElement__Group__2__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6614:1: ( rule__ParenthesizedElement__Group__2__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6615:2: rule__ParenthesizedElement__Group__2__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedElement__Group__2__Impl_in_rule__ParenthesizedElement__Group__213380);
+            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedElement__Group__2__Impl_in_rule__ParenthesizedElement__Group__213437);
             rule__ParenthesizedElement__Group__2__Impl();
 
             state._fsp--;
@@ -18280,20 +18357,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParenthesizedElement__Group__2__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6593:1: rule__ParenthesizedElement__Group__2__Impl : ( ')' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6621:1: rule__ParenthesizedElement__Group__2__Impl : ( ')' ) ;
     public final void rule__ParenthesizedElement__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6597:1: ( ( ')' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6598:1: ( ')' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6625:1: ( ( ')' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6626:1: ( ')' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6598:1: ( ')' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6599:1: ')'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6626:1: ( ')' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6627:1: ')'
             {
              before(grammarAccess.getParenthesizedElementAccess().getRightParenthesisKeyword_2()); 
-            match(input,22,FollowSets000.FOLLOW_22_in_rule__ParenthesizedElement__Group__2__Impl13408); 
+            match(input,22,FollowSets000.FOLLOW_22_in_rule__ParenthesizedElement__Group__2__Impl13465); 
              after(grammarAccess.getParenthesizedElementAccess().getRightParenthesisKeyword_2()); 
 
             }
@@ -18317,21 +18394,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PredicatedGroup__Group__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6618:1: rule__PredicatedGroup__Group__0 : rule__PredicatedGroup__Group__0__Impl rule__PredicatedGroup__Group__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6646:1: rule__PredicatedGroup__Group__0 : rule__PredicatedGroup__Group__0__Impl rule__PredicatedGroup__Group__1 ;
     public final void rule__PredicatedGroup__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6622:1: ( rule__PredicatedGroup__Group__0__Impl rule__PredicatedGroup__Group__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6623:2: rule__PredicatedGroup__Group__0__Impl rule__PredicatedGroup__Group__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6650:1: ( rule__PredicatedGroup__Group__0__Impl rule__PredicatedGroup__Group__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6651:2: rule__PredicatedGroup__Group__0__Impl rule__PredicatedGroup__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__PredicatedGroup__Group__0__Impl_in_rule__PredicatedGroup__Group__013445);
+            pushFollow(FollowSets000.FOLLOW_rule__PredicatedGroup__Group__0__Impl_in_rule__PredicatedGroup__Group__013502);
             rule__PredicatedGroup__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__PredicatedGroup__Group__1_in_rule__PredicatedGroup__Group__013448);
+            pushFollow(FollowSets000.FOLLOW_rule__PredicatedGroup__Group__1_in_rule__PredicatedGroup__Group__013505);
             rule__PredicatedGroup__Group__1();
 
             state._fsp--;
@@ -18355,23 +18432,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PredicatedGroup__Group__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6630:1: rule__PredicatedGroup__Group__0__Impl : ( ( rule__PredicatedGroup__Alternatives_0 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6658:1: rule__PredicatedGroup__Group__0__Impl : ( ( rule__PredicatedGroup__Alternatives_0 ) ) ;
     public final void rule__PredicatedGroup__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6634:1: ( ( ( rule__PredicatedGroup__Alternatives_0 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6635:1: ( ( rule__PredicatedGroup__Alternatives_0 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6662:1: ( ( ( rule__PredicatedGroup__Alternatives_0 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6663:1: ( ( rule__PredicatedGroup__Alternatives_0 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6635:1: ( ( rule__PredicatedGroup__Alternatives_0 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6636:1: ( rule__PredicatedGroup__Alternatives_0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6663:1: ( ( rule__PredicatedGroup__Alternatives_0 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6664:1: ( rule__PredicatedGroup__Alternatives_0 )
             {
              before(grammarAccess.getPredicatedGroupAccess().getAlternatives_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6637:1: ( rule__PredicatedGroup__Alternatives_0 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6637:2: rule__PredicatedGroup__Alternatives_0
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6665:1: ( rule__PredicatedGroup__Alternatives_0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6665:2: rule__PredicatedGroup__Alternatives_0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__PredicatedGroup__Alternatives_0_in_rule__PredicatedGroup__Group__0__Impl13475);
+            pushFollow(FollowSets000.FOLLOW_rule__PredicatedGroup__Alternatives_0_in_rule__PredicatedGroup__Group__0__Impl13532);
             rule__PredicatedGroup__Alternatives_0();
 
             state._fsp--;
@@ -18402,21 +18479,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PredicatedGroup__Group__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6647:1: rule__PredicatedGroup__Group__1 : rule__PredicatedGroup__Group__1__Impl rule__PredicatedGroup__Group__2 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6675:1: rule__PredicatedGroup__Group__1 : rule__PredicatedGroup__Group__1__Impl rule__PredicatedGroup__Group__2 ;
     public final void rule__PredicatedGroup__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6651:1: ( rule__PredicatedGroup__Group__1__Impl rule__PredicatedGroup__Group__2 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6652:2: rule__PredicatedGroup__Group__1__Impl rule__PredicatedGroup__Group__2
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6679:1: ( rule__PredicatedGroup__Group__1__Impl rule__PredicatedGroup__Group__2 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6680:2: rule__PredicatedGroup__Group__1__Impl rule__PredicatedGroup__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__PredicatedGroup__Group__1__Impl_in_rule__PredicatedGroup__Group__113505);
+            pushFollow(FollowSets000.FOLLOW_rule__PredicatedGroup__Group__1__Impl_in_rule__PredicatedGroup__Group__113562);
             rule__PredicatedGroup__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__PredicatedGroup__Group__2_in_rule__PredicatedGroup__Group__113508);
+            pushFollow(FollowSets000.FOLLOW_rule__PredicatedGroup__Group__2_in_rule__PredicatedGroup__Group__113565);
             rule__PredicatedGroup__Group__2();
 
             state._fsp--;
@@ -18440,20 +18517,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PredicatedGroup__Group__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6659:1: rule__PredicatedGroup__Group__1__Impl : ( '(' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6687:1: rule__PredicatedGroup__Group__1__Impl : ( '(' ) ;
     public final void rule__PredicatedGroup__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6663:1: ( ( '(' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6664:1: ( '(' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6691:1: ( ( '(' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6692:1: ( '(' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6664:1: ( '(' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6665:1: '('
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6692:1: ( '(' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6693:1: '('
             {
              before(grammarAccess.getPredicatedGroupAccess().getLeftParenthesisKeyword_1()); 
-            match(input,21,FollowSets000.FOLLOW_21_in_rule__PredicatedGroup__Group__1__Impl13536); 
+            match(input,21,FollowSets000.FOLLOW_21_in_rule__PredicatedGroup__Group__1__Impl13593); 
              after(grammarAccess.getPredicatedGroupAccess().getLeftParenthesisKeyword_1()); 
 
             }
@@ -18477,21 +18554,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PredicatedGroup__Group__2"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6678:1: rule__PredicatedGroup__Group__2 : rule__PredicatedGroup__Group__2__Impl rule__PredicatedGroup__Group__3 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6706:1: rule__PredicatedGroup__Group__2 : rule__PredicatedGroup__Group__2__Impl rule__PredicatedGroup__Group__3 ;
     public final void rule__PredicatedGroup__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6682:1: ( rule__PredicatedGroup__Group__2__Impl rule__PredicatedGroup__Group__3 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6683:2: rule__PredicatedGroup__Group__2__Impl rule__PredicatedGroup__Group__3
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6710:1: ( rule__PredicatedGroup__Group__2__Impl rule__PredicatedGroup__Group__3 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6711:2: rule__PredicatedGroup__Group__2__Impl rule__PredicatedGroup__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__PredicatedGroup__Group__2__Impl_in_rule__PredicatedGroup__Group__213567);
+            pushFollow(FollowSets000.FOLLOW_rule__PredicatedGroup__Group__2__Impl_in_rule__PredicatedGroup__Group__213624);
             rule__PredicatedGroup__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__PredicatedGroup__Group__3_in_rule__PredicatedGroup__Group__213570);
+            pushFollow(FollowSets000.FOLLOW_rule__PredicatedGroup__Group__3_in_rule__PredicatedGroup__Group__213627);
             rule__PredicatedGroup__Group__3();
 
             state._fsp--;
@@ -18515,23 +18592,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PredicatedGroup__Group__2__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6690:1: rule__PredicatedGroup__Group__2__Impl : ( ( rule__PredicatedGroup__ElementsAssignment_2 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6718:1: rule__PredicatedGroup__Group__2__Impl : ( ( rule__PredicatedGroup__ElementsAssignment_2 ) ) ;
     public final void rule__PredicatedGroup__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6694:1: ( ( ( rule__PredicatedGroup__ElementsAssignment_2 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6695:1: ( ( rule__PredicatedGroup__ElementsAssignment_2 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6722:1: ( ( ( rule__PredicatedGroup__ElementsAssignment_2 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6723:1: ( ( rule__PredicatedGroup__ElementsAssignment_2 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6695:1: ( ( rule__PredicatedGroup__ElementsAssignment_2 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6696:1: ( rule__PredicatedGroup__ElementsAssignment_2 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6723:1: ( ( rule__PredicatedGroup__ElementsAssignment_2 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6724:1: ( rule__PredicatedGroup__ElementsAssignment_2 )
             {
              before(grammarAccess.getPredicatedGroupAccess().getElementsAssignment_2()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6697:1: ( rule__PredicatedGroup__ElementsAssignment_2 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6697:2: rule__PredicatedGroup__ElementsAssignment_2
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6725:1: ( rule__PredicatedGroup__ElementsAssignment_2 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6725:2: rule__PredicatedGroup__ElementsAssignment_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__PredicatedGroup__ElementsAssignment_2_in_rule__PredicatedGroup__Group__2__Impl13597);
+            pushFollow(FollowSets000.FOLLOW_rule__PredicatedGroup__ElementsAssignment_2_in_rule__PredicatedGroup__Group__2__Impl13654);
             rule__PredicatedGroup__ElementsAssignment_2();
 
             state._fsp--;
@@ -18562,16 +18639,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PredicatedGroup__Group__3"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6707:1: rule__PredicatedGroup__Group__3 : rule__PredicatedGroup__Group__3__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6735:1: rule__PredicatedGroup__Group__3 : rule__PredicatedGroup__Group__3__Impl ;
     public final void rule__PredicatedGroup__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6711:1: ( rule__PredicatedGroup__Group__3__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6712:2: rule__PredicatedGroup__Group__3__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6739:1: ( rule__PredicatedGroup__Group__3__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6740:2: rule__PredicatedGroup__Group__3__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__PredicatedGroup__Group__3__Impl_in_rule__PredicatedGroup__Group__313627);
+            pushFollow(FollowSets000.FOLLOW_rule__PredicatedGroup__Group__3__Impl_in_rule__PredicatedGroup__Group__313684);
             rule__PredicatedGroup__Group__3__Impl();
 
             state._fsp--;
@@ -18595,20 +18672,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PredicatedGroup__Group__3__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6718:1: rule__PredicatedGroup__Group__3__Impl : ( ')' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6746:1: rule__PredicatedGroup__Group__3__Impl : ( ')' ) ;
     public final void rule__PredicatedGroup__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6722:1: ( ( ')' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6723:1: ( ')' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6750:1: ( ( ')' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6751:1: ( ')' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6723:1: ( ')' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6724:1: ')'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6751:1: ( ')' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6752:1: ')'
             {
              before(grammarAccess.getPredicatedGroupAccess().getRightParenthesisKeyword_3()); 
-            match(input,22,FollowSets000.FOLLOW_22_in_rule__PredicatedGroup__Group__3__Impl13655); 
+            match(input,22,FollowSets000.FOLLOW_22_in_rule__PredicatedGroup__Group__3__Impl13712); 
              after(grammarAccess.getPredicatedGroupAccess().getRightParenthesisKeyword_3()); 
 
             }
@@ -18632,21 +18709,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalRule__Group__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6745:1: rule__TerminalRule__Group__0 : rule__TerminalRule__Group__0__Impl rule__TerminalRule__Group__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6773:1: rule__TerminalRule__Group__0 : rule__TerminalRule__Group__0__Impl rule__TerminalRule__Group__1 ;
     public final void rule__TerminalRule__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6749:1: ( rule__TerminalRule__Group__0__Impl rule__TerminalRule__Group__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6750:2: rule__TerminalRule__Group__0__Impl rule__TerminalRule__Group__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6777:1: ( rule__TerminalRule__Group__0__Impl rule__TerminalRule__Group__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6778:2: rule__TerminalRule__Group__0__Impl rule__TerminalRule__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group__0__Impl_in_rule__TerminalRule__Group__013694);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group__0__Impl_in_rule__TerminalRule__Group__013751);
             rule__TerminalRule__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group__1_in_rule__TerminalRule__Group__013697);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group__1_in_rule__TerminalRule__Group__013754);
             rule__TerminalRule__Group__1();
 
             state._fsp--;
@@ -18670,20 +18747,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalRule__Group__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6757:1: rule__TerminalRule__Group__0__Impl : ( 'terminal' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6785:1: rule__TerminalRule__Group__0__Impl : ( 'terminal' ) ;
     public final void rule__TerminalRule__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6761:1: ( ( 'terminal' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6762:1: ( 'terminal' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6789:1: ( ( 'terminal' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6790:1: ( 'terminal' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6762:1: ( 'terminal' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6763:1: 'terminal'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6790:1: ( 'terminal' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6791:1: 'terminal'
             {
              before(grammarAccess.getTerminalRuleAccess().getTerminalKeyword_0()); 
-            match(input,38,FollowSets000.FOLLOW_38_in_rule__TerminalRule__Group__0__Impl13725); 
+            match(input,38,FollowSets000.FOLLOW_38_in_rule__TerminalRule__Group__0__Impl13782); 
              after(grammarAccess.getTerminalRuleAccess().getTerminalKeyword_0()); 
 
             }
@@ -18707,21 +18784,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalRule__Group__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6776:1: rule__TerminalRule__Group__1 : rule__TerminalRule__Group__1__Impl rule__TerminalRule__Group__2 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6804:1: rule__TerminalRule__Group__1 : rule__TerminalRule__Group__1__Impl rule__TerminalRule__Group__2 ;
     public final void rule__TerminalRule__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6780:1: ( rule__TerminalRule__Group__1__Impl rule__TerminalRule__Group__2 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6781:2: rule__TerminalRule__Group__1__Impl rule__TerminalRule__Group__2
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6808:1: ( rule__TerminalRule__Group__1__Impl rule__TerminalRule__Group__2 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6809:2: rule__TerminalRule__Group__1__Impl rule__TerminalRule__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group__1__Impl_in_rule__TerminalRule__Group__113756);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group__1__Impl_in_rule__TerminalRule__Group__113813);
             rule__TerminalRule__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group__2_in_rule__TerminalRule__Group__113759);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group__2_in_rule__TerminalRule__Group__113816);
             rule__TerminalRule__Group__2();
 
             state._fsp--;
@@ -18745,23 +18822,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalRule__Group__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6788:1: rule__TerminalRule__Group__1__Impl : ( ( rule__TerminalRule__Alternatives_1 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6816:1: rule__TerminalRule__Group__1__Impl : ( ( rule__TerminalRule__Alternatives_1 ) ) ;
     public final void rule__TerminalRule__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6792:1: ( ( ( rule__TerminalRule__Alternatives_1 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6793:1: ( ( rule__TerminalRule__Alternatives_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6820:1: ( ( ( rule__TerminalRule__Alternatives_1 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6821:1: ( ( rule__TerminalRule__Alternatives_1 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6793:1: ( ( rule__TerminalRule__Alternatives_1 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6794:1: ( rule__TerminalRule__Alternatives_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6821:1: ( ( rule__TerminalRule__Alternatives_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6822:1: ( rule__TerminalRule__Alternatives_1 )
             {
              before(grammarAccess.getTerminalRuleAccess().getAlternatives_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6795:1: ( rule__TerminalRule__Alternatives_1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6795:2: rule__TerminalRule__Alternatives_1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6823:1: ( rule__TerminalRule__Alternatives_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6823:2: rule__TerminalRule__Alternatives_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Alternatives_1_in_rule__TerminalRule__Group__1__Impl13786);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Alternatives_1_in_rule__TerminalRule__Group__1__Impl13843);
             rule__TerminalRule__Alternatives_1();
 
             state._fsp--;
@@ -18792,21 +18869,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalRule__Group__2"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6805:1: rule__TerminalRule__Group__2 : rule__TerminalRule__Group__2__Impl rule__TerminalRule__Group__3 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6833:1: rule__TerminalRule__Group__2 : rule__TerminalRule__Group__2__Impl rule__TerminalRule__Group__3 ;
     public final void rule__TerminalRule__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6809:1: ( rule__TerminalRule__Group__2__Impl rule__TerminalRule__Group__3 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6810:2: rule__TerminalRule__Group__2__Impl rule__TerminalRule__Group__3
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6837:1: ( rule__TerminalRule__Group__2__Impl rule__TerminalRule__Group__3 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6838:2: rule__TerminalRule__Group__2__Impl rule__TerminalRule__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group__2__Impl_in_rule__TerminalRule__Group__213816);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group__2__Impl_in_rule__TerminalRule__Group__213873);
             rule__TerminalRule__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group__3_in_rule__TerminalRule__Group__213819);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group__3_in_rule__TerminalRule__Group__213876);
             rule__TerminalRule__Group__3();
 
             state._fsp--;
@@ -18830,20 +18907,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalRule__Group__2__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6817:1: rule__TerminalRule__Group__2__Impl : ( ':' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6845:1: rule__TerminalRule__Group__2__Impl : ( ':' ) ;
     public final void rule__TerminalRule__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6821:1: ( ( ':' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6822:1: ( ':' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6849:1: ( ( ':' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6850:1: ( ':' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6822:1: ( ':' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6823:1: ':'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6850:1: ( ':' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6851:1: ':'
             {
              before(grammarAccess.getTerminalRuleAccess().getColonKeyword_2()); 
-            match(input,27,FollowSets000.FOLLOW_27_in_rule__TerminalRule__Group__2__Impl13847); 
+            match(input,27,FollowSets000.FOLLOW_27_in_rule__TerminalRule__Group__2__Impl13904); 
              after(grammarAccess.getTerminalRuleAccess().getColonKeyword_2()); 
 
             }
@@ -18867,21 +18944,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalRule__Group__3"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6836:1: rule__TerminalRule__Group__3 : rule__TerminalRule__Group__3__Impl rule__TerminalRule__Group__4 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6864:1: rule__TerminalRule__Group__3 : rule__TerminalRule__Group__3__Impl rule__TerminalRule__Group__4 ;
     public final void rule__TerminalRule__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6840:1: ( rule__TerminalRule__Group__3__Impl rule__TerminalRule__Group__4 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6841:2: rule__TerminalRule__Group__3__Impl rule__TerminalRule__Group__4
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6868:1: ( rule__TerminalRule__Group__3__Impl rule__TerminalRule__Group__4 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6869:2: rule__TerminalRule__Group__3__Impl rule__TerminalRule__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group__3__Impl_in_rule__TerminalRule__Group__313878);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group__3__Impl_in_rule__TerminalRule__Group__313935);
             rule__TerminalRule__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group__4_in_rule__TerminalRule__Group__313881);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group__4_in_rule__TerminalRule__Group__313938);
             rule__TerminalRule__Group__4();
 
             state._fsp--;
@@ -18905,23 +18982,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalRule__Group__3__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6848:1: rule__TerminalRule__Group__3__Impl : ( ( rule__TerminalRule__AlternativesAssignment_3 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6876:1: rule__TerminalRule__Group__3__Impl : ( ( rule__TerminalRule__AlternativesAssignment_3 ) ) ;
     public final void rule__TerminalRule__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6852:1: ( ( ( rule__TerminalRule__AlternativesAssignment_3 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6853:1: ( ( rule__TerminalRule__AlternativesAssignment_3 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6880:1: ( ( ( rule__TerminalRule__AlternativesAssignment_3 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6881:1: ( ( rule__TerminalRule__AlternativesAssignment_3 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6853:1: ( ( rule__TerminalRule__AlternativesAssignment_3 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6854:1: ( rule__TerminalRule__AlternativesAssignment_3 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6881:1: ( ( rule__TerminalRule__AlternativesAssignment_3 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6882:1: ( rule__TerminalRule__AlternativesAssignment_3 )
             {
              before(grammarAccess.getTerminalRuleAccess().getAlternativesAssignment_3()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6855:1: ( rule__TerminalRule__AlternativesAssignment_3 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6855:2: rule__TerminalRule__AlternativesAssignment_3
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6883:1: ( rule__TerminalRule__AlternativesAssignment_3 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6883:2: rule__TerminalRule__AlternativesAssignment_3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__AlternativesAssignment_3_in_rule__TerminalRule__Group__3__Impl13908);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__AlternativesAssignment_3_in_rule__TerminalRule__Group__3__Impl13965);
             rule__TerminalRule__AlternativesAssignment_3();
 
             state._fsp--;
@@ -18952,16 +19029,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalRule__Group__4"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6865:1: rule__TerminalRule__Group__4 : rule__TerminalRule__Group__4__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6893:1: rule__TerminalRule__Group__4 : rule__TerminalRule__Group__4__Impl ;
     public final void rule__TerminalRule__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6869:1: ( rule__TerminalRule__Group__4__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6870:2: rule__TerminalRule__Group__4__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6897:1: ( rule__TerminalRule__Group__4__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6898:2: rule__TerminalRule__Group__4__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group__4__Impl_in_rule__TerminalRule__Group__413938);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group__4__Impl_in_rule__TerminalRule__Group__413995);
             rule__TerminalRule__Group__4__Impl();
 
             state._fsp--;
@@ -18985,20 +19062,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalRule__Group__4__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6876:1: rule__TerminalRule__Group__4__Impl : ( ';' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6904:1: rule__TerminalRule__Group__4__Impl : ( ';' ) ;
     public final void rule__TerminalRule__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6880:1: ( ( ';' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6881:1: ( ';' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6908:1: ( ( ';' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6909:1: ( ';' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6881:1: ( ';' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6882:1: ';'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6909:1: ( ';' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6910:1: ';'
             {
              before(grammarAccess.getTerminalRuleAccess().getSemicolonKeyword_4()); 
-            match(input,28,FollowSets000.FOLLOW_28_in_rule__TerminalRule__Group__4__Impl13966); 
+            match(input,28,FollowSets000.FOLLOW_28_in_rule__TerminalRule__Group__4__Impl14023); 
              after(grammarAccess.getTerminalRuleAccess().getSemicolonKeyword_4()); 
 
             }
@@ -19022,21 +19099,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalRule__Group_1_0__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6905:1: rule__TerminalRule__Group_1_0__0 : rule__TerminalRule__Group_1_0__0__Impl rule__TerminalRule__Group_1_0__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6933:1: rule__TerminalRule__Group_1_0__0 : rule__TerminalRule__Group_1_0__0__Impl rule__TerminalRule__Group_1_0__1 ;
     public final void rule__TerminalRule__Group_1_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6909:1: ( rule__TerminalRule__Group_1_0__0__Impl rule__TerminalRule__Group_1_0__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6910:2: rule__TerminalRule__Group_1_0__0__Impl rule__TerminalRule__Group_1_0__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6937:1: ( rule__TerminalRule__Group_1_0__0__Impl rule__TerminalRule__Group_1_0__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6938:2: rule__TerminalRule__Group_1_0__0__Impl rule__TerminalRule__Group_1_0__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group_1_0__0__Impl_in_rule__TerminalRule__Group_1_0__014007);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group_1_0__0__Impl_in_rule__TerminalRule__Group_1_0__014064);
             rule__TerminalRule__Group_1_0__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group_1_0__1_in_rule__TerminalRule__Group_1_0__014010);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group_1_0__1_in_rule__TerminalRule__Group_1_0__014067);
             rule__TerminalRule__Group_1_0__1();
 
             state._fsp--;
@@ -19060,23 +19137,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalRule__Group_1_0__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6917:1: rule__TerminalRule__Group_1_0__0__Impl : ( ( rule__TerminalRule__FragmentAssignment_1_0_0 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6945:1: rule__TerminalRule__Group_1_0__0__Impl : ( ( rule__TerminalRule__FragmentAssignment_1_0_0 ) ) ;
     public final void rule__TerminalRule__Group_1_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6921:1: ( ( ( rule__TerminalRule__FragmentAssignment_1_0_0 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6922:1: ( ( rule__TerminalRule__FragmentAssignment_1_0_0 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6949:1: ( ( ( rule__TerminalRule__FragmentAssignment_1_0_0 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6950:1: ( ( rule__TerminalRule__FragmentAssignment_1_0_0 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6922:1: ( ( rule__TerminalRule__FragmentAssignment_1_0_0 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6923:1: ( rule__TerminalRule__FragmentAssignment_1_0_0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6950:1: ( ( rule__TerminalRule__FragmentAssignment_1_0_0 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6951:1: ( rule__TerminalRule__FragmentAssignment_1_0_0 )
             {
              before(grammarAccess.getTerminalRuleAccess().getFragmentAssignment_1_0_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6924:1: ( rule__TerminalRule__FragmentAssignment_1_0_0 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6924:2: rule__TerminalRule__FragmentAssignment_1_0_0
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6952:1: ( rule__TerminalRule__FragmentAssignment_1_0_0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6952:2: rule__TerminalRule__FragmentAssignment_1_0_0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__FragmentAssignment_1_0_0_in_rule__TerminalRule__Group_1_0__0__Impl14037);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__FragmentAssignment_1_0_0_in_rule__TerminalRule__Group_1_0__0__Impl14094);
             rule__TerminalRule__FragmentAssignment_1_0_0();
 
             state._fsp--;
@@ -19107,16 +19184,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalRule__Group_1_0__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6934:1: rule__TerminalRule__Group_1_0__1 : rule__TerminalRule__Group_1_0__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6962:1: rule__TerminalRule__Group_1_0__1 : rule__TerminalRule__Group_1_0__1__Impl ;
     public final void rule__TerminalRule__Group_1_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6938:1: ( rule__TerminalRule__Group_1_0__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6939:2: rule__TerminalRule__Group_1_0__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6966:1: ( rule__TerminalRule__Group_1_0__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6967:2: rule__TerminalRule__Group_1_0__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group_1_0__1__Impl_in_rule__TerminalRule__Group_1_0__114067);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group_1_0__1__Impl_in_rule__TerminalRule__Group_1_0__114124);
             rule__TerminalRule__Group_1_0__1__Impl();
 
             state._fsp--;
@@ -19140,23 +19217,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalRule__Group_1_0__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6945:1: rule__TerminalRule__Group_1_0__1__Impl : ( ( rule__TerminalRule__NameAssignment_1_0_1 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6973:1: rule__TerminalRule__Group_1_0__1__Impl : ( ( rule__TerminalRule__NameAssignment_1_0_1 ) ) ;
     public final void rule__TerminalRule__Group_1_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6949:1: ( ( ( rule__TerminalRule__NameAssignment_1_0_1 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6950:1: ( ( rule__TerminalRule__NameAssignment_1_0_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6977:1: ( ( ( rule__TerminalRule__NameAssignment_1_0_1 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6978:1: ( ( rule__TerminalRule__NameAssignment_1_0_1 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6950:1: ( ( rule__TerminalRule__NameAssignment_1_0_1 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6951:1: ( rule__TerminalRule__NameAssignment_1_0_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6978:1: ( ( rule__TerminalRule__NameAssignment_1_0_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6979:1: ( rule__TerminalRule__NameAssignment_1_0_1 )
             {
              before(grammarAccess.getTerminalRuleAccess().getNameAssignment_1_0_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6952:1: ( rule__TerminalRule__NameAssignment_1_0_1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6952:2: rule__TerminalRule__NameAssignment_1_0_1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6980:1: ( rule__TerminalRule__NameAssignment_1_0_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6980:2: rule__TerminalRule__NameAssignment_1_0_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__NameAssignment_1_0_1_in_rule__TerminalRule__Group_1_0__1__Impl14094);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__NameAssignment_1_0_1_in_rule__TerminalRule__Group_1_0__1__Impl14151);
             rule__TerminalRule__NameAssignment_1_0_1();
 
             state._fsp--;
@@ -19187,21 +19264,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalRule__Group_1_1__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6966:1: rule__TerminalRule__Group_1_1__0 : rule__TerminalRule__Group_1_1__0__Impl rule__TerminalRule__Group_1_1__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6994:1: rule__TerminalRule__Group_1_1__0 : rule__TerminalRule__Group_1_1__0__Impl rule__TerminalRule__Group_1_1__1 ;
     public final void rule__TerminalRule__Group_1_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6970:1: ( rule__TerminalRule__Group_1_1__0__Impl rule__TerminalRule__Group_1_1__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6971:2: rule__TerminalRule__Group_1_1__0__Impl rule__TerminalRule__Group_1_1__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6998:1: ( rule__TerminalRule__Group_1_1__0__Impl rule__TerminalRule__Group_1_1__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6999:2: rule__TerminalRule__Group_1_1__0__Impl rule__TerminalRule__Group_1_1__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group_1_1__0__Impl_in_rule__TerminalRule__Group_1_1__014128);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group_1_1__0__Impl_in_rule__TerminalRule__Group_1_1__014185);
             rule__TerminalRule__Group_1_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group_1_1__1_in_rule__TerminalRule__Group_1_1__014131);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group_1_1__1_in_rule__TerminalRule__Group_1_1__014188);
             rule__TerminalRule__Group_1_1__1();
 
             state._fsp--;
@@ -19225,23 +19302,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalRule__Group_1_1__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6978:1: rule__TerminalRule__Group_1_1__0__Impl : ( ( rule__TerminalRule__NameAssignment_1_1_0 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7006:1: rule__TerminalRule__Group_1_1__0__Impl : ( ( rule__TerminalRule__NameAssignment_1_1_0 ) ) ;
     public final void rule__TerminalRule__Group_1_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6982:1: ( ( ( rule__TerminalRule__NameAssignment_1_1_0 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6983:1: ( ( rule__TerminalRule__NameAssignment_1_1_0 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7010:1: ( ( ( rule__TerminalRule__NameAssignment_1_1_0 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7011:1: ( ( rule__TerminalRule__NameAssignment_1_1_0 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6983:1: ( ( rule__TerminalRule__NameAssignment_1_1_0 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6984:1: ( rule__TerminalRule__NameAssignment_1_1_0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7011:1: ( ( rule__TerminalRule__NameAssignment_1_1_0 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7012:1: ( rule__TerminalRule__NameAssignment_1_1_0 )
             {
              before(grammarAccess.getTerminalRuleAccess().getNameAssignment_1_1_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6985:1: ( rule__TerminalRule__NameAssignment_1_1_0 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6985:2: rule__TerminalRule__NameAssignment_1_1_0
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7013:1: ( rule__TerminalRule__NameAssignment_1_1_0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7013:2: rule__TerminalRule__NameAssignment_1_1_0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__NameAssignment_1_1_0_in_rule__TerminalRule__Group_1_1__0__Impl14158);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__NameAssignment_1_1_0_in_rule__TerminalRule__Group_1_1__0__Impl14215);
             rule__TerminalRule__NameAssignment_1_1_0();
 
             state._fsp--;
@@ -19272,16 +19349,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalRule__Group_1_1__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6995:1: rule__TerminalRule__Group_1_1__1 : rule__TerminalRule__Group_1_1__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7023:1: rule__TerminalRule__Group_1_1__1 : rule__TerminalRule__Group_1_1__1__Impl ;
     public final void rule__TerminalRule__Group_1_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:6999:1: ( rule__TerminalRule__Group_1_1__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7000:2: rule__TerminalRule__Group_1_1__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7027:1: ( rule__TerminalRule__Group_1_1__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7028:2: rule__TerminalRule__Group_1_1__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group_1_1__1__Impl_in_rule__TerminalRule__Group_1_1__114188);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group_1_1__1__Impl_in_rule__TerminalRule__Group_1_1__114245);
             rule__TerminalRule__Group_1_1__1__Impl();
 
             state._fsp--;
@@ -19305,20 +19382,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalRule__Group_1_1__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7006:1: rule__TerminalRule__Group_1_1__1__Impl : ( ( rule__TerminalRule__Group_1_1_1__0 )? ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7034:1: rule__TerminalRule__Group_1_1__1__Impl : ( ( rule__TerminalRule__Group_1_1_1__0 )? ) ;
     public final void rule__TerminalRule__Group_1_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7010:1: ( ( ( rule__TerminalRule__Group_1_1_1__0 )? ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7011:1: ( ( rule__TerminalRule__Group_1_1_1__0 )? )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7038:1: ( ( ( rule__TerminalRule__Group_1_1_1__0 )? ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7039:1: ( ( rule__TerminalRule__Group_1_1_1__0 )? )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7011:1: ( ( rule__TerminalRule__Group_1_1_1__0 )? )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7012:1: ( rule__TerminalRule__Group_1_1_1__0 )?
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7039:1: ( ( rule__TerminalRule__Group_1_1_1__0 )? )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7040:1: ( rule__TerminalRule__Group_1_1_1__0 )?
             {
              before(grammarAccess.getTerminalRuleAccess().getGroup_1_1_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7013:1: ( rule__TerminalRule__Group_1_1_1__0 )?
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7041:1: ( rule__TerminalRule__Group_1_1_1__0 )?
             int alt59=2;
             int LA59_0 = input.LA(1);
 
@@ -19327,9 +19404,9 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
             }
             switch (alt59) {
                 case 1 :
-                    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7013:2: rule__TerminalRule__Group_1_1_1__0
+                    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7041:2: rule__TerminalRule__Group_1_1_1__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group_1_1_1__0_in_rule__TerminalRule__Group_1_1__1__Impl14215);
+                    pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group_1_1_1__0_in_rule__TerminalRule__Group_1_1__1__Impl14272);
                     rule__TerminalRule__Group_1_1_1__0();
 
                     state._fsp--;
@@ -19363,21 +19440,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalRule__Group_1_1_1__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7027:1: rule__TerminalRule__Group_1_1_1__0 : rule__TerminalRule__Group_1_1_1__0__Impl rule__TerminalRule__Group_1_1_1__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7055:1: rule__TerminalRule__Group_1_1_1__0 : rule__TerminalRule__Group_1_1_1__0__Impl rule__TerminalRule__Group_1_1_1__1 ;
     public final void rule__TerminalRule__Group_1_1_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7031:1: ( rule__TerminalRule__Group_1_1_1__0__Impl rule__TerminalRule__Group_1_1_1__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7032:2: rule__TerminalRule__Group_1_1_1__0__Impl rule__TerminalRule__Group_1_1_1__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7059:1: ( rule__TerminalRule__Group_1_1_1__0__Impl rule__TerminalRule__Group_1_1_1__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7060:2: rule__TerminalRule__Group_1_1_1__0__Impl rule__TerminalRule__Group_1_1_1__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group_1_1_1__0__Impl_in_rule__TerminalRule__Group_1_1_1__014250);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group_1_1_1__0__Impl_in_rule__TerminalRule__Group_1_1_1__014307);
             rule__TerminalRule__Group_1_1_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group_1_1_1__1_in_rule__TerminalRule__Group_1_1_1__014253);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group_1_1_1__1_in_rule__TerminalRule__Group_1_1_1__014310);
             rule__TerminalRule__Group_1_1_1__1();
 
             state._fsp--;
@@ -19401,20 +19478,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalRule__Group_1_1_1__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7039:1: rule__TerminalRule__Group_1_1_1__0__Impl : ( 'returns' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7067:1: rule__TerminalRule__Group_1_1_1__0__Impl : ( 'returns' ) ;
     public final void rule__TerminalRule__Group_1_1_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7043:1: ( ( 'returns' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7044:1: ( 'returns' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7071:1: ( ( 'returns' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7072:1: ( 'returns' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7044:1: ( 'returns' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7045:1: 'returns'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7072:1: ( 'returns' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7073:1: 'returns'
             {
              before(grammarAccess.getTerminalRuleAccess().getReturnsKeyword_1_1_1_0()); 
-            match(input,29,FollowSets000.FOLLOW_29_in_rule__TerminalRule__Group_1_1_1__0__Impl14281); 
+            match(input,29,FollowSets000.FOLLOW_29_in_rule__TerminalRule__Group_1_1_1__0__Impl14338); 
              after(grammarAccess.getTerminalRuleAccess().getReturnsKeyword_1_1_1_0()); 
 
             }
@@ -19438,16 +19515,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalRule__Group_1_1_1__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7058:1: rule__TerminalRule__Group_1_1_1__1 : rule__TerminalRule__Group_1_1_1__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7086:1: rule__TerminalRule__Group_1_1_1__1 : rule__TerminalRule__Group_1_1_1__1__Impl ;
     public final void rule__TerminalRule__Group_1_1_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7062:1: ( rule__TerminalRule__Group_1_1_1__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7063:2: rule__TerminalRule__Group_1_1_1__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7090:1: ( rule__TerminalRule__Group_1_1_1__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7091:2: rule__TerminalRule__Group_1_1_1__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group_1_1_1__1__Impl_in_rule__TerminalRule__Group_1_1_1__114312);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__Group_1_1_1__1__Impl_in_rule__TerminalRule__Group_1_1_1__114369);
             rule__TerminalRule__Group_1_1_1__1__Impl();
 
             state._fsp--;
@@ -19471,23 +19548,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalRule__Group_1_1_1__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7069:1: rule__TerminalRule__Group_1_1_1__1__Impl : ( ( rule__TerminalRule__TypeAssignment_1_1_1_1 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7097:1: rule__TerminalRule__Group_1_1_1__1__Impl : ( ( rule__TerminalRule__TypeAssignment_1_1_1_1 ) ) ;
     public final void rule__TerminalRule__Group_1_1_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7073:1: ( ( ( rule__TerminalRule__TypeAssignment_1_1_1_1 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7074:1: ( ( rule__TerminalRule__TypeAssignment_1_1_1_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7101:1: ( ( ( rule__TerminalRule__TypeAssignment_1_1_1_1 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7102:1: ( ( rule__TerminalRule__TypeAssignment_1_1_1_1 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7074:1: ( ( rule__TerminalRule__TypeAssignment_1_1_1_1 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7075:1: ( rule__TerminalRule__TypeAssignment_1_1_1_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7102:1: ( ( rule__TerminalRule__TypeAssignment_1_1_1_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7103:1: ( rule__TerminalRule__TypeAssignment_1_1_1_1 )
             {
              before(grammarAccess.getTerminalRuleAccess().getTypeAssignment_1_1_1_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7076:1: ( rule__TerminalRule__TypeAssignment_1_1_1_1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7076:2: rule__TerminalRule__TypeAssignment_1_1_1_1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7104:1: ( rule__TerminalRule__TypeAssignment_1_1_1_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7104:2: rule__TerminalRule__TypeAssignment_1_1_1_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__TypeAssignment_1_1_1_1_in_rule__TerminalRule__Group_1_1_1__1__Impl14339);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalRule__TypeAssignment_1_1_1_1_in_rule__TerminalRule__Group_1_1_1__1__Impl14396);
             rule__TerminalRule__TypeAssignment_1_1_1_1();
 
             state._fsp--;
@@ -19518,21 +19595,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalAlternatives__Group__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7090:1: rule__TerminalAlternatives__Group__0 : rule__TerminalAlternatives__Group__0__Impl rule__TerminalAlternatives__Group__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7118:1: rule__TerminalAlternatives__Group__0 : rule__TerminalAlternatives__Group__0__Impl rule__TerminalAlternatives__Group__1 ;
     public final void rule__TerminalAlternatives__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7094:1: ( rule__TerminalAlternatives__Group__0__Impl rule__TerminalAlternatives__Group__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7095:2: rule__TerminalAlternatives__Group__0__Impl rule__TerminalAlternatives__Group__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7122:1: ( rule__TerminalAlternatives__Group__0__Impl rule__TerminalAlternatives__Group__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7123:2: rule__TerminalAlternatives__Group__0__Impl rule__TerminalAlternatives__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalAlternatives__Group__0__Impl_in_rule__TerminalAlternatives__Group__014373);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalAlternatives__Group__0__Impl_in_rule__TerminalAlternatives__Group__014430);
             rule__TerminalAlternatives__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalAlternatives__Group__1_in_rule__TerminalAlternatives__Group__014376);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalAlternatives__Group__1_in_rule__TerminalAlternatives__Group__014433);
             rule__TerminalAlternatives__Group__1();
 
             state._fsp--;
@@ -19556,20 +19633,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalAlternatives__Group__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7102:1: rule__TerminalAlternatives__Group__0__Impl : ( ruleTerminalGroup ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7130:1: rule__TerminalAlternatives__Group__0__Impl : ( ruleTerminalGroup ) ;
     public final void rule__TerminalAlternatives__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7106:1: ( ( ruleTerminalGroup ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7107:1: ( ruleTerminalGroup )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7134:1: ( ( ruleTerminalGroup ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7135:1: ( ruleTerminalGroup )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7107:1: ( ruleTerminalGroup )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7108:1: ruleTerminalGroup
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7135:1: ( ruleTerminalGroup )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7136:1: ruleTerminalGroup
             {
              before(grammarAccess.getTerminalAlternativesAccess().getTerminalGroupParserRuleCall_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalGroup_in_rule__TerminalAlternatives__Group__0__Impl14403);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalGroup_in_rule__TerminalAlternatives__Group__0__Impl14460);
             ruleTerminalGroup();
 
             state._fsp--;
@@ -19597,16 +19674,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalAlternatives__Group__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7119:1: rule__TerminalAlternatives__Group__1 : rule__TerminalAlternatives__Group__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7147:1: rule__TerminalAlternatives__Group__1 : rule__TerminalAlternatives__Group__1__Impl ;
     public final void rule__TerminalAlternatives__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7123:1: ( rule__TerminalAlternatives__Group__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7124:2: rule__TerminalAlternatives__Group__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7151:1: ( rule__TerminalAlternatives__Group__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7152:2: rule__TerminalAlternatives__Group__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalAlternatives__Group__1__Impl_in_rule__TerminalAlternatives__Group__114432);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalAlternatives__Group__1__Impl_in_rule__TerminalAlternatives__Group__114489);
             rule__TerminalAlternatives__Group__1__Impl();
 
             state._fsp--;
@@ -19630,20 +19707,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalAlternatives__Group__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7130:1: rule__TerminalAlternatives__Group__1__Impl : ( ( rule__TerminalAlternatives__Group_1__0 )? ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7158:1: rule__TerminalAlternatives__Group__1__Impl : ( ( rule__TerminalAlternatives__Group_1__0 )? ) ;
     public final void rule__TerminalAlternatives__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7134:1: ( ( ( rule__TerminalAlternatives__Group_1__0 )? ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7135:1: ( ( rule__TerminalAlternatives__Group_1__0 )? )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7162:1: ( ( ( rule__TerminalAlternatives__Group_1__0 )? ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7163:1: ( ( rule__TerminalAlternatives__Group_1__0 )? )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7135:1: ( ( rule__TerminalAlternatives__Group_1__0 )? )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7136:1: ( rule__TerminalAlternatives__Group_1__0 )?
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7163:1: ( ( rule__TerminalAlternatives__Group_1__0 )? )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7164:1: ( rule__TerminalAlternatives__Group_1__0 )?
             {
              before(grammarAccess.getTerminalAlternativesAccess().getGroup_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7137:1: ( rule__TerminalAlternatives__Group_1__0 )?
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7165:1: ( rule__TerminalAlternatives__Group_1__0 )?
             int alt60=2;
             int LA60_0 = input.LA(1);
 
@@ -19652,9 +19729,9 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
             }
             switch (alt60) {
                 case 1 :
-                    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7137:2: rule__TerminalAlternatives__Group_1__0
+                    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7165:2: rule__TerminalAlternatives__Group_1__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__TerminalAlternatives__Group_1__0_in_rule__TerminalAlternatives__Group__1__Impl14459);
+                    pushFollow(FollowSets000.FOLLOW_rule__TerminalAlternatives__Group_1__0_in_rule__TerminalAlternatives__Group__1__Impl14516);
                     rule__TerminalAlternatives__Group_1__0();
 
                     state._fsp--;
@@ -19688,21 +19765,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalAlternatives__Group_1__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7151:1: rule__TerminalAlternatives__Group_1__0 : rule__TerminalAlternatives__Group_1__0__Impl rule__TerminalAlternatives__Group_1__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7179:1: rule__TerminalAlternatives__Group_1__0 : rule__TerminalAlternatives__Group_1__0__Impl rule__TerminalAlternatives__Group_1__1 ;
     public final void rule__TerminalAlternatives__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7155:1: ( rule__TerminalAlternatives__Group_1__0__Impl rule__TerminalAlternatives__Group_1__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7156:2: rule__TerminalAlternatives__Group_1__0__Impl rule__TerminalAlternatives__Group_1__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7183:1: ( rule__TerminalAlternatives__Group_1__0__Impl rule__TerminalAlternatives__Group_1__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7184:2: rule__TerminalAlternatives__Group_1__0__Impl rule__TerminalAlternatives__Group_1__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalAlternatives__Group_1__0__Impl_in_rule__TerminalAlternatives__Group_1__014494);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalAlternatives__Group_1__0__Impl_in_rule__TerminalAlternatives__Group_1__014551);
             rule__TerminalAlternatives__Group_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalAlternatives__Group_1__1_in_rule__TerminalAlternatives__Group_1__014497);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalAlternatives__Group_1__1_in_rule__TerminalAlternatives__Group_1__014554);
             rule__TerminalAlternatives__Group_1__1();
 
             state._fsp--;
@@ -19726,21 +19803,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalAlternatives__Group_1__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7163:1: rule__TerminalAlternatives__Group_1__0__Impl : ( () ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7191:1: rule__TerminalAlternatives__Group_1__0__Impl : ( () ) ;
     public final void rule__TerminalAlternatives__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7167:1: ( ( () ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7168:1: ( () )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7195:1: ( ( () ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7196:1: ( () )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7168:1: ( () )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7169:1: ()
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7196:1: ( () )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7197:1: ()
             {
              before(grammarAccess.getTerminalAlternativesAccess().getAlternativesElementsAction_1_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7170:1: ()
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7172:1: 
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7198:1: ()
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7200:1: 
             {
             }
 
@@ -19763,16 +19840,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalAlternatives__Group_1__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7182:1: rule__TerminalAlternatives__Group_1__1 : rule__TerminalAlternatives__Group_1__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7210:1: rule__TerminalAlternatives__Group_1__1 : rule__TerminalAlternatives__Group_1__1__Impl ;
     public final void rule__TerminalAlternatives__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7186:1: ( rule__TerminalAlternatives__Group_1__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7187:2: rule__TerminalAlternatives__Group_1__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7214:1: ( rule__TerminalAlternatives__Group_1__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7215:2: rule__TerminalAlternatives__Group_1__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalAlternatives__Group_1__1__Impl_in_rule__TerminalAlternatives__Group_1__114555);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalAlternatives__Group_1__1__Impl_in_rule__TerminalAlternatives__Group_1__114612);
             rule__TerminalAlternatives__Group_1__1__Impl();
 
             state._fsp--;
@@ -19796,26 +19873,26 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalAlternatives__Group_1__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7193:1: rule__TerminalAlternatives__Group_1__1__Impl : ( ( ( rule__TerminalAlternatives__Group_1_1__0 ) ) ( ( rule__TerminalAlternatives__Group_1_1__0 )* ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7221:1: rule__TerminalAlternatives__Group_1__1__Impl : ( ( ( rule__TerminalAlternatives__Group_1_1__0 ) ) ( ( rule__TerminalAlternatives__Group_1_1__0 )* ) ) ;
     public final void rule__TerminalAlternatives__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7197:1: ( ( ( ( rule__TerminalAlternatives__Group_1_1__0 ) ) ( ( rule__TerminalAlternatives__Group_1_1__0 )* ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7198:1: ( ( ( rule__TerminalAlternatives__Group_1_1__0 ) ) ( ( rule__TerminalAlternatives__Group_1_1__0 )* ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7225:1: ( ( ( ( rule__TerminalAlternatives__Group_1_1__0 ) ) ( ( rule__TerminalAlternatives__Group_1_1__0 )* ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7226:1: ( ( ( rule__TerminalAlternatives__Group_1_1__0 ) ) ( ( rule__TerminalAlternatives__Group_1_1__0 )* ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7198:1: ( ( ( rule__TerminalAlternatives__Group_1_1__0 ) ) ( ( rule__TerminalAlternatives__Group_1_1__0 )* ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7199:1: ( ( rule__TerminalAlternatives__Group_1_1__0 ) ) ( ( rule__TerminalAlternatives__Group_1_1__0 )* )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7226:1: ( ( ( rule__TerminalAlternatives__Group_1_1__0 ) ) ( ( rule__TerminalAlternatives__Group_1_1__0 )* ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7227:1: ( ( rule__TerminalAlternatives__Group_1_1__0 ) ) ( ( rule__TerminalAlternatives__Group_1_1__0 )* )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7199:1: ( ( rule__TerminalAlternatives__Group_1_1__0 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7200:1: ( rule__TerminalAlternatives__Group_1_1__0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7227:1: ( ( rule__TerminalAlternatives__Group_1_1__0 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7228:1: ( rule__TerminalAlternatives__Group_1_1__0 )
             {
              before(grammarAccess.getTerminalAlternativesAccess().getGroup_1_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7201:1: ( rule__TerminalAlternatives__Group_1_1__0 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7201:2: rule__TerminalAlternatives__Group_1_1__0
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7229:1: ( rule__TerminalAlternatives__Group_1_1__0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7229:2: rule__TerminalAlternatives__Group_1_1__0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalAlternatives__Group_1_1__0_in_rule__TerminalAlternatives__Group_1__1__Impl14584);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalAlternatives__Group_1_1__0_in_rule__TerminalAlternatives__Group_1__1__Impl14641);
             rule__TerminalAlternatives__Group_1_1__0();
 
             state._fsp--;
@@ -19827,11 +19904,11 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
             }
 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7204:1: ( ( rule__TerminalAlternatives__Group_1_1__0 )* )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7205:1: ( rule__TerminalAlternatives__Group_1_1__0 )*
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7232:1: ( ( rule__TerminalAlternatives__Group_1_1__0 )* )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7233:1: ( rule__TerminalAlternatives__Group_1_1__0 )*
             {
              before(grammarAccess.getTerminalAlternativesAccess().getGroup_1_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7206:1: ( rule__TerminalAlternatives__Group_1_1__0 )*
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7234:1: ( rule__TerminalAlternatives__Group_1_1__0 )*
             loop61:
             do {
                 int alt61=2;
@@ -19844,9 +19921,9 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
                 switch (alt61) {
             	case 1 :
-            	    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7206:2: rule__TerminalAlternatives__Group_1_1__0
+            	    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7234:2: rule__TerminalAlternatives__Group_1_1__0
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__TerminalAlternatives__Group_1_1__0_in_rule__TerminalAlternatives__Group_1__1__Impl14596);
+            	    pushFollow(FollowSets000.FOLLOW_rule__TerminalAlternatives__Group_1_1__0_in_rule__TerminalAlternatives__Group_1__1__Impl14653);
             	    rule__TerminalAlternatives__Group_1_1__0();
 
             	    state._fsp--;
@@ -19886,21 +19963,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalAlternatives__Group_1_1__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7221:1: rule__TerminalAlternatives__Group_1_1__0 : rule__TerminalAlternatives__Group_1_1__0__Impl rule__TerminalAlternatives__Group_1_1__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7249:1: rule__TerminalAlternatives__Group_1_1__0 : rule__TerminalAlternatives__Group_1_1__0__Impl rule__TerminalAlternatives__Group_1_1__1 ;
     public final void rule__TerminalAlternatives__Group_1_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7225:1: ( rule__TerminalAlternatives__Group_1_1__0__Impl rule__TerminalAlternatives__Group_1_1__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7226:2: rule__TerminalAlternatives__Group_1_1__0__Impl rule__TerminalAlternatives__Group_1_1__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7253:1: ( rule__TerminalAlternatives__Group_1_1__0__Impl rule__TerminalAlternatives__Group_1_1__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7254:2: rule__TerminalAlternatives__Group_1_1__0__Impl rule__TerminalAlternatives__Group_1_1__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalAlternatives__Group_1_1__0__Impl_in_rule__TerminalAlternatives__Group_1_1__014633);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalAlternatives__Group_1_1__0__Impl_in_rule__TerminalAlternatives__Group_1_1__014690);
             rule__TerminalAlternatives__Group_1_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalAlternatives__Group_1_1__1_in_rule__TerminalAlternatives__Group_1_1__014636);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalAlternatives__Group_1_1__1_in_rule__TerminalAlternatives__Group_1_1__014693);
             rule__TerminalAlternatives__Group_1_1__1();
 
             state._fsp--;
@@ -19924,20 +20001,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalAlternatives__Group_1_1__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7233:1: rule__TerminalAlternatives__Group_1_1__0__Impl : ( '|' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7261:1: rule__TerminalAlternatives__Group_1_1__0__Impl : ( '|' ) ;
     public final void rule__TerminalAlternatives__Group_1_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7237:1: ( ( '|' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7238:1: ( '|' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7265:1: ( ( '|' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7266:1: ( '|' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7238:1: ( '|' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7239:1: '|'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7266:1: ( '|' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7267:1: '|'
             {
              before(grammarAccess.getTerminalAlternativesAccess().getVerticalLineKeyword_1_1_0()); 
-            match(input,33,FollowSets000.FOLLOW_33_in_rule__TerminalAlternatives__Group_1_1__0__Impl14664); 
+            match(input,33,FollowSets000.FOLLOW_33_in_rule__TerminalAlternatives__Group_1_1__0__Impl14721); 
              after(grammarAccess.getTerminalAlternativesAccess().getVerticalLineKeyword_1_1_0()); 
 
             }
@@ -19961,16 +20038,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalAlternatives__Group_1_1__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7252:1: rule__TerminalAlternatives__Group_1_1__1 : rule__TerminalAlternatives__Group_1_1__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7280:1: rule__TerminalAlternatives__Group_1_1__1 : rule__TerminalAlternatives__Group_1_1__1__Impl ;
     public final void rule__TerminalAlternatives__Group_1_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7256:1: ( rule__TerminalAlternatives__Group_1_1__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7257:2: rule__TerminalAlternatives__Group_1_1__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7284:1: ( rule__TerminalAlternatives__Group_1_1__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7285:2: rule__TerminalAlternatives__Group_1_1__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalAlternatives__Group_1_1__1__Impl_in_rule__TerminalAlternatives__Group_1_1__114695);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalAlternatives__Group_1_1__1__Impl_in_rule__TerminalAlternatives__Group_1_1__114752);
             rule__TerminalAlternatives__Group_1_1__1__Impl();
 
             state._fsp--;
@@ -19994,23 +20071,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalAlternatives__Group_1_1__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7263:1: rule__TerminalAlternatives__Group_1_1__1__Impl : ( ( rule__TerminalAlternatives__ElementsAssignment_1_1_1 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7291:1: rule__TerminalAlternatives__Group_1_1__1__Impl : ( ( rule__TerminalAlternatives__ElementsAssignment_1_1_1 ) ) ;
     public final void rule__TerminalAlternatives__Group_1_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7267:1: ( ( ( rule__TerminalAlternatives__ElementsAssignment_1_1_1 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7268:1: ( ( rule__TerminalAlternatives__ElementsAssignment_1_1_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7295:1: ( ( ( rule__TerminalAlternatives__ElementsAssignment_1_1_1 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7296:1: ( ( rule__TerminalAlternatives__ElementsAssignment_1_1_1 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7268:1: ( ( rule__TerminalAlternatives__ElementsAssignment_1_1_1 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7269:1: ( rule__TerminalAlternatives__ElementsAssignment_1_1_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7296:1: ( ( rule__TerminalAlternatives__ElementsAssignment_1_1_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7297:1: ( rule__TerminalAlternatives__ElementsAssignment_1_1_1 )
             {
              before(grammarAccess.getTerminalAlternativesAccess().getElementsAssignment_1_1_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7270:1: ( rule__TerminalAlternatives__ElementsAssignment_1_1_1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7270:2: rule__TerminalAlternatives__ElementsAssignment_1_1_1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7298:1: ( rule__TerminalAlternatives__ElementsAssignment_1_1_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7298:2: rule__TerminalAlternatives__ElementsAssignment_1_1_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalAlternatives__ElementsAssignment_1_1_1_in_rule__TerminalAlternatives__Group_1_1__1__Impl14722);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalAlternatives__ElementsAssignment_1_1_1_in_rule__TerminalAlternatives__Group_1_1__1__Impl14779);
             rule__TerminalAlternatives__ElementsAssignment_1_1_1();
 
             state._fsp--;
@@ -20041,21 +20118,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalGroup__Group__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7284:1: rule__TerminalGroup__Group__0 : rule__TerminalGroup__Group__0__Impl rule__TerminalGroup__Group__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7312:1: rule__TerminalGroup__Group__0 : rule__TerminalGroup__Group__0__Impl rule__TerminalGroup__Group__1 ;
     public final void rule__TerminalGroup__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7288:1: ( rule__TerminalGroup__Group__0__Impl rule__TerminalGroup__Group__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7289:2: rule__TerminalGroup__Group__0__Impl rule__TerminalGroup__Group__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7316:1: ( rule__TerminalGroup__Group__0__Impl rule__TerminalGroup__Group__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7317:2: rule__TerminalGroup__Group__0__Impl rule__TerminalGroup__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalGroup__Group__0__Impl_in_rule__TerminalGroup__Group__014756);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalGroup__Group__0__Impl_in_rule__TerminalGroup__Group__014813);
             rule__TerminalGroup__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalGroup__Group__1_in_rule__TerminalGroup__Group__014759);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalGroup__Group__1_in_rule__TerminalGroup__Group__014816);
             rule__TerminalGroup__Group__1();
 
             state._fsp--;
@@ -20079,20 +20156,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalGroup__Group__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7296:1: rule__TerminalGroup__Group__0__Impl : ( ruleTerminalToken ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7324:1: rule__TerminalGroup__Group__0__Impl : ( ruleTerminalToken ) ;
     public final void rule__TerminalGroup__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7300:1: ( ( ruleTerminalToken ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7301:1: ( ruleTerminalToken )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7328:1: ( ( ruleTerminalToken ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7329:1: ( ruleTerminalToken )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7301:1: ( ruleTerminalToken )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7302:1: ruleTerminalToken
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7329:1: ( ruleTerminalToken )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7330:1: ruleTerminalToken
             {
              before(grammarAccess.getTerminalGroupAccess().getTerminalTokenParserRuleCall_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalToken_in_rule__TerminalGroup__Group__0__Impl14786);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalToken_in_rule__TerminalGroup__Group__0__Impl14843);
             ruleTerminalToken();
 
             state._fsp--;
@@ -20120,16 +20197,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalGroup__Group__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7313:1: rule__TerminalGroup__Group__1 : rule__TerminalGroup__Group__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7341:1: rule__TerminalGroup__Group__1 : rule__TerminalGroup__Group__1__Impl ;
     public final void rule__TerminalGroup__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7317:1: ( rule__TerminalGroup__Group__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7318:2: rule__TerminalGroup__Group__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7345:1: ( rule__TerminalGroup__Group__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7346:2: rule__TerminalGroup__Group__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalGroup__Group__1__Impl_in_rule__TerminalGroup__Group__114815);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalGroup__Group__1__Impl_in_rule__TerminalGroup__Group__114872);
             rule__TerminalGroup__Group__1__Impl();
 
             state._fsp--;
@@ -20153,20 +20230,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalGroup__Group__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7324:1: rule__TerminalGroup__Group__1__Impl : ( ( rule__TerminalGroup__Group_1__0 )? ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7352:1: rule__TerminalGroup__Group__1__Impl : ( ( rule__TerminalGroup__Group_1__0 )? ) ;
     public final void rule__TerminalGroup__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7328:1: ( ( ( rule__TerminalGroup__Group_1__0 )? ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7329:1: ( ( rule__TerminalGroup__Group_1__0 )? )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7356:1: ( ( ( rule__TerminalGroup__Group_1__0 )? ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7357:1: ( ( rule__TerminalGroup__Group_1__0 )? )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7329:1: ( ( rule__TerminalGroup__Group_1__0 )? )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7330:1: ( rule__TerminalGroup__Group_1__0 )?
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7357:1: ( ( rule__TerminalGroup__Group_1__0 )? )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7358:1: ( rule__TerminalGroup__Group_1__0 )?
             {
              before(grammarAccess.getTerminalGroupAccess().getGroup_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7331:1: ( rule__TerminalGroup__Group_1__0 )?
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7359:1: ( rule__TerminalGroup__Group_1__0 )?
             int alt62=2;
             int LA62_0 = input.LA(1);
 
@@ -20175,9 +20252,9 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
             }
             switch (alt62) {
                 case 1 :
-                    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7331:2: rule__TerminalGroup__Group_1__0
+                    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7359:2: rule__TerminalGroup__Group_1__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__TerminalGroup__Group_1__0_in_rule__TerminalGroup__Group__1__Impl14842);
+                    pushFollow(FollowSets000.FOLLOW_rule__TerminalGroup__Group_1__0_in_rule__TerminalGroup__Group__1__Impl14899);
                     rule__TerminalGroup__Group_1__0();
 
                     state._fsp--;
@@ -20211,21 +20288,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalGroup__Group_1__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7345:1: rule__TerminalGroup__Group_1__0 : rule__TerminalGroup__Group_1__0__Impl rule__TerminalGroup__Group_1__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7373:1: rule__TerminalGroup__Group_1__0 : rule__TerminalGroup__Group_1__0__Impl rule__TerminalGroup__Group_1__1 ;
     public final void rule__TerminalGroup__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7349:1: ( rule__TerminalGroup__Group_1__0__Impl rule__TerminalGroup__Group_1__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7350:2: rule__TerminalGroup__Group_1__0__Impl rule__TerminalGroup__Group_1__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7377:1: ( rule__TerminalGroup__Group_1__0__Impl rule__TerminalGroup__Group_1__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7378:2: rule__TerminalGroup__Group_1__0__Impl rule__TerminalGroup__Group_1__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalGroup__Group_1__0__Impl_in_rule__TerminalGroup__Group_1__014877);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalGroup__Group_1__0__Impl_in_rule__TerminalGroup__Group_1__014934);
             rule__TerminalGroup__Group_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalGroup__Group_1__1_in_rule__TerminalGroup__Group_1__014880);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalGroup__Group_1__1_in_rule__TerminalGroup__Group_1__014937);
             rule__TerminalGroup__Group_1__1();
 
             state._fsp--;
@@ -20249,21 +20326,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalGroup__Group_1__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7357:1: rule__TerminalGroup__Group_1__0__Impl : ( () ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7385:1: rule__TerminalGroup__Group_1__0__Impl : ( () ) ;
     public final void rule__TerminalGroup__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7361:1: ( ( () ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7362:1: ( () )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7389:1: ( ( () ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7390:1: ( () )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7362:1: ( () )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7363:1: ()
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7390:1: ( () )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7391:1: ()
             {
              before(grammarAccess.getTerminalGroupAccess().getGroupElementsAction_1_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7364:1: ()
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7366:1: 
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7392:1: ()
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7394:1: 
             {
             }
 
@@ -20286,16 +20363,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalGroup__Group_1__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7376:1: rule__TerminalGroup__Group_1__1 : rule__TerminalGroup__Group_1__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7404:1: rule__TerminalGroup__Group_1__1 : rule__TerminalGroup__Group_1__1__Impl ;
     public final void rule__TerminalGroup__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7380:1: ( rule__TerminalGroup__Group_1__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7381:2: rule__TerminalGroup__Group_1__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7408:1: ( rule__TerminalGroup__Group_1__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7409:2: rule__TerminalGroup__Group_1__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalGroup__Group_1__1__Impl_in_rule__TerminalGroup__Group_1__114938);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalGroup__Group_1__1__Impl_in_rule__TerminalGroup__Group_1__114995);
             rule__TerminalGroup__Group_1__1__Impl();
 
             state._fsp--;
@@ -20319,26 +20396,26 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalGroup__Group_1__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7387:1: rule__TerminalGroup__Group_1__1__Impl : ( ( ( rule__TerminalGroup__ElementsAssignment_1_1 ) ) ( ( rule__TerminalGroup__ElementsAssignment_1_1 )* ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7415:1: rule__TerminalGroup__Group_1__1__Impl : ( ( ( rule__TerminalGroup__ElementsAssignment_1_1 ) ) ( ( rule__TerminalGroup__ElementsAssignment_1_1 )* ) ) ;
     public final void rule__TerminalGroup__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7391:1: ( ( ( ( rule__TerminalGroup__ElementsAssignment_1_1 ) ) ( ( rule__TerminalGroup__ElementsAssignment_1_1 )* ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7392:1: ( ( ( rule__TerminalGroup__ElementsAssignment_1_1 ) ) ( ( rule__TerminalGroup__ElementsAssignment_1_1 )* ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7419:1: ( ( ( ( rule__TerminalGroup__ElementsAssignment_1_1 ) ) ( ( rule__TerminalGroup__ElementsAssignment_1_1 )* ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7420:1: ( ( ( rule__TerminalGroup__ElementsAssignment_1_1 ) ) ( ( rule__TerminalGroup__ElementsAssignment_1_1 )* ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7392:1: ( ( ( rule__TerminalGroup__ElementsAssignment_1_1 ) ) ( ( rule__TerminalGroup__ElementsAssignment_1_1 )* ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7393:1: ( ( rule__TerminalGroup__ElementsAssignment_1_1 ) ) ( ( rule__TerminalGroup__ElementsAssignment_1_1 )* )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7420:1: ( ( ( rule__TerminalGroup__ElementsAssignment_1_1 ) ) ( ( rule__TerminalGroup__ElementsAssignment_1_1 )* ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7421:1: ( ( rule__TerminalGroup__ElementsAssignment_1_1 ) ) ( ( rule__TerminalGroup__ElementsAssignment_1_1 )* )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7393:1: ( ( rule__TerminalGroup__ElementsAssignment_1_1 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7394:1: ( rule__TerminalGroup__ElementsAssignment_1_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7421:1: ( ( rule__TerminalGroup__ElementsAssignment_1_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7422:1: ( rule__TerminalGroup__ElementsAssignment_1_1 )
             {
              before(grammarAccess.getTerminalGroupAccess().getElementsAssignment_1_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7395:1: ( rule__TerminalGroup__ElementsAssignment_1_1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7395:2: rule__TerminalGroup__ElementsAssignment_1_1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7423:1: ( rule__TerminalGroup__ElementsAssignment_1_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7423:2: rule__TerminalGroup__ElementsAssignment_1_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalGroup__ElementsAssignment_1_1_in_rule__TerminalGroup__Group_1__1__Impl14967);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalGroup__ElementsAssignment_1_1_in_rule__TerminalGroup__Group_1__1__Impl15024);
             rule__TerminalGroup__ElementsAssignment_1_1();
 
             state._fsp--;
@@ -20350,11 +20427,11 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
             }
 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7398:1: ( ( rule__TerminalGroup__ElementsAssignment_1_1 )* )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7399:1: ( rule__TerminalGroup__ElementsAssignment_1_1 )*
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7426:1: ( ( rule__TerminalGroup__ElementsAssignment_1_1 )* )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7427:1: ( rule__TerminalGroup__ElementsAssignment_1_1 )*
             {
              before(grammarAccess.getTerminalGroupAccess().getElementsAssignment_1_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7400:1: ( rule__TerminalGroup__ElementsAssignment_1_1 )*
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7428:1: ( rule__TerminalGroup__ElementsAssignment_1_1 )*
             loop63:
             do {
                 int alt63=2;
@@ -20367,9 +20444,9 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
                 switch (alt63) {
             	case 1 :
-            	    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7400:2: rule__TerminalGroup__ElementsAssignment_1_1
+            	    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7428:2: rule__TerminalGroup__ElementsAssignment_1_1
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__TerminalGroup__ElementsAssignment_1_1_in_rule__TerminalGroup__Group_1__1__Impl14979);
+            	    pushFollow(FollowSets000.FOLLOW_rule__TerminalGroup__ElementsAssignment_1_1_in_rule__TerminalGroup__Group_1__1__Impl15036);
             	    rule__TerminalGroup__ElementsAssignment_1_1();
 
             	    state._fsp--;
@@ -20409,21 +20486,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalToken__Group__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7415:1: rule__TerminalToken__Group__0 : rule__TerminalToken__Group__0__Impl rule__TerminalToken__Group__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7443:1: rule__TerminalToken__Group__0 : rule__TerminalToken__Group__0__Impl rule__TerminalToken__Group__1 ;
     public final void rule__TerminalToken__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7419:1: ( rule__TerminalToken__Group__0__Impl rule__TerminalToken__Group__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7420:2: rule__TerminalToken__Group__0__Impl rule__TerminalToken__Group__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7447:1: ( rule__TerminalToken__Group__0__Impl rule__TerminalToken__Group__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7448:2: rule__TerminalToken__Group__0__Impl rule__TerminalToken__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalToken__Group__0__Impl_in_rule__TerminalToken__Group__015016);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalToken__Group__0__Impl_in_rule__TerminalToken__Group__015073);
             rule__TerminalToken__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalToken__Group__1_in_rule__TerminalToken__Group__015019);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalToken__Group__1_in_rule__TerminalToken__Group__015076);
             rule__TerminalToken__Group__1();
 
             state._fsp--;
@@ -20447,20 +20524,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalToken__Group__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7427:1: rule__TerminalToken__Group__0__Impl : ( ruleTerminalTokenElement ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7455:1: rule__TerminalToken__Group__0__Impl : ( ruleTerminalTokenElement ) ;
     public final void rule__TerminalToken__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7431:1: ( ( ruleTerminalTokenElement ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7432:1: ( ruleTerminalTokenElement )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7459:1: ( ( ruleTerminalTokenElement ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7460:1: ( ruleTerminalTokenElement )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7432:1: ( ruleTerminalTokenElement )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7433:1: ruleTerminalTokenElement
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7460:1: ( ruleTerminalTokenElement )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7461:1: ruleTerminalTokenElement
             {
              before(grammarAccess.getTerminalTokenAccess().getTerminalTokenElementParserRuleCall_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalTokenElement_in_rule__TerminalToken__Group__0__Impl15046);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalTokenElement_in_rule__TerminalToken__Group__0__Impl15103);
             ruleTerminalTokenElement();
 
             state._fsp--;
@@ -20488,16 +20565,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalToken__Group__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7444:1: rule__TerminalToken__Group__1 : rule__TerminalToken__Group__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7472:1: rule__TerminalToken__Group__1 : rule__TerminalToken__Group__1__Impl ;
     public final void rule__TerminalToken__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7448:1: ( rule__TerminalToken__Group__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7449:2: rule__TerminalToken__Group__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7476:1: ( rule__TerminalToken__Group__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7477:2: rule__TerminalToken__Group__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalToken__Group__1__Impl_in_rule__TerminalToken__Group__115075);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalToken__Group__1__Impl_in_rule__TerminalToken__Group__115132);
             rule__TerminalToken__Group__1__Impl();
 
             state._fsp--;
@@ -20521,20 +20598,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalToken__Group__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7455:1: rule__TerminalToken__Group__1__Impl : ( ( rule__TerminalToken__CardinalityAssignment_1 )? ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7483:1: rule__TerminalToken__Group__1__Impl : ( ( rule__TerminalToken__CardinalityAssignment_1 )? ) ;
     public final void rule__TerminalToken__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7459:1: ( ( ( rule__TerminalToken__CardinalityAssignment_1 )? ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7460:1: ( ( rule__TerminalToken__CardinalityAssignment_1 )? )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7487:1: ( ( ( rule__TerminalToken__CardinalityAssignment_1 )? ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7488:1: ( ( rule__TerminalToken__CardinalityAssignment_1 )? )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7460:1: ( ( rule__TerminalToken__CardinalityAssignment_1 )? )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7461:1: ( rule__TerminalToken__CardinalityAssignment_1 )?
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7488:1: ( ( rule__TerminalToken__CardinalityAssignment_1 )? )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7489:1: ( rule__TerminalToken__CardinalityAssignment_1 )?
             {
              before(grammarAccess.getTerminalTokenAccess().getCardinalityAssignment_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7462:1: ( rule__TerminalToken__CardinalityAssignment_1 )?
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7490:1: ( rule__TerminalToken__CardinalityAssignment_1 )?
             int alt64=2;
             int LA64_0 = input.LA(1);
 
@@ -20543,9 +20620,9 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
             }
             switch (alt64) {
                 case 1 :
-                    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7462:2: rule__TerminalToken__CardinalityAssignment_1
+                    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7490:2: rule__TerminalToken__CardinalityAssignment_1
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__TerminalToken__CardinalityAssignment_1_in_rule__TerminalToken__Group__1__Impl15102);
+                    pushFollow(FollowSets000.FOLLOW_rule__TerminalToken__CardinalityAssignment_1_in_rule__TerminalToken__Group__1__Impl15159);
                     rule__TerminalToken__CardinalityAssignment_1();
 
                     state._fsp--;
@@ -20579,21 +20656,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParenthesizedTerminalElement__Group__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7476:1: rule__ParenthesizedTerminalElement__Group__0 : rule__ParenthesizedTerminalElement__Group__0__Impl rule__ParenthesizedTerminalElement__Group__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7504:1: rule__ParenthesizedTerminalElement__Group__0 : rule__ParenthesizedTerminalElement__Group__0__Impl rule__ParenthesizedTerminalElement__Group__1 ;
     public final void rule__ParenthesizedTerminalElement__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7480:1: ( rule__ParenthesizedTerminalElement__Group__0__Impl rule__ParenthesizedTerminalElement__Group__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7481:2: rule__ParenthesizedTerminalElement__Group__0__Impl rule__ParenthesizedTerminalElement__Group__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7508:1: ( rule__ParenthesizedTerminalElement__Group__0__Impl rule__ParenthesizedTerminalElement__Group__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7509:2: rule__ParenthesizedTerminalElement__Group__0__Impl rule__ParenthesizedTerminalElement__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedTerminalElement__Group__0__Impl_in_rule__ParenthesizedTerminalElement__Group__015137);
+            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedTerminalElement__Group__0__Impl_in_rule__ParenthesizedTerminalElement__Group__015194);
             rule__ParenthesizedTerminalElement__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedTerminalElement__Group__1_in_rule__ParenthesizedTerminalElement__Group__015140);
+            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedTerminalElement__Group__1_in_rule__ParenthesizedTerminalElement__Group__015197);
             rule__ParenthesizedTerminalElement__Group__1();
 
             state._fsp--;
@@ -20617,20 +20694,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParenthesizedTerminalElement__Group__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7488:1: rule__ParenthesizedTerminalElement__Group__0__Impl : ( '(' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7516:1: rule__ParenthesizedTerminalElement__Group__0__Impl : ( '(' ) ;
     public final void rule__ParenthesizedTerminalElement__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7492:1: ( ( '(' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7493:1: ( '(' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7520:1: ( ( '(' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7521:1: ( '(' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7493:1: ( '(' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7494:1: '('
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7521:1: ( '(' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7522:1: '('
             {
              before(grammarAccess.getParenthesizedTerminalElementAccess().getLeftParenthesisKeyword_0()); 
-            match(input,21,FollowSets000.FOLLOW_21_in_rule__ParenthesizedTerminalElement__Group__0__Impl15168); 
+            match(input,21,FollowSets000.FOLLOW_21_in_rule__ParenthesizedTerminalElement__Group__0__Impl15225); 
              after(grammarAccess.getParenthesizedTerminalElementAccess().getLeftParenthesisKeyword_0()); 
 
             }
@@ -20654,21 +20731,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParenthesizedTerminalElement__Group__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7507:1: rule__ParenthesizedTerminalElement__Group__1 : rule__ParenthesizedTerminalElement__Group__1__Impl rule__ParenthesizedTerminalElement__Group__2 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7535:1: rule__ParenthesizedTerminalElement__Group__1 : rule__ParenthesizedTerminalElement__Group__1__Impl rule__ParenthesizedTerminalElement__Group__2 ;
     public final void rule__ParenthesizedTerminalElement__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7511:1: ( rule__ParenthesizedTerminalElement__Group__1__Impl rule__ParenthesizedTerminalElement__Group__2 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7512:2: rule__ParenthesizedTerminalElement__Group__1__Impl rule__ParenthesizedTerminalElement__Group__2
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7539:1: ( rule__ParenthesizedTerminalElement__Group__1__Impl rule__ParenthesizedTerminalElement__Group__2 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7540:2: rule__ParenthesizedTerminalElement__Group__1__Impl rule__ParenthesizedTerminalElement__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedTerminalElement__Group__1__Impl_in_rule__ParenthesizedTerminalElement__Group__115199);
+            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedTerminalElement__Group__1__Impl_in_rule__ParenthesizedTerminalElement__Group__115256);
             rule__ParenthesizedTerminalElement__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedTerminalElement__Group__2_in_rule__ParenthesizedTerminalElement__Group__115202);
+            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedTerminalElement__Group__2_in_rule__ParenthesizedTerminalElement__Group__115259);
             rule__ParenthesizedTerminalElement__Group__2();
 
             state._fsp--;
@@ -20692,20 +20769,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParenthesizedTerminalElement__Group__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7519:1: rule__ParenthesizedTerminalElement__Group__1__Impl : ( ruleTerminalAlternatives ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7547:1: rule__ParenthesizedTerminalElement__Group__1__Impl : ( ruleTerminalAlternatives ) ;
     public final void rule__ParenthesizedTerminalElement__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7523:1: ( ( ruleTerminalAlternatives ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7524:1: ( ruleTerminalAlternatives )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7551:1: ( ( ruleTerminalAlternatives ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7552:1: ( ruleTerminalAlternatives )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7524:1: ( ruleTerminalAlternatives )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7525:1: ruleTerminalAlternatives
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7552:1: ( ruleTerminalAlternatives )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7553:1: ruleTerminalAlternatives
             {
              before(grammarAccess.getParenthesizedTerminalElementAccess().getTerminalAlternativesParserRuleCall_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalAlternatives_in_rule__ParenthesizedTerminalElement__Group__1__Impl15229);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalAlternatives_in_rule__ParenthesizedTerminalElement__Group__1__Impl15286);
             ruleTerminalAlternatives();
 
             state._fsp--;
@@ -20733,16 +20810,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParenthesizedTerminalElement__Group__2"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7536:1: rule__ParenthesizedTerminalElement__Group__2 : rule__ParenthesizedTerminalElement__Group__2__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7564:1: rule__ParenthesizedTerminalElement__Group__2 : rule__ParenthesizedTerminalElement__Group__2__Impl ;
     public final void rule__ParenthesizedTerminalElement__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7540:1: ( rule__ParenthesizedTerminalElement__Group__2__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7541:2: rule__ParenthesizedTerminalElement__Group__2__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7568:1: ( rule__ParenthesizedTerminalElement__Group__2__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7569:2: rule__ParenthesizedTerminalElement__Group__2__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedTerminalElement__Group__2__Impl_in_rule__ParenthesizedTerminalElement__Group__215258);
+            pushFollow(FollowSets000.FOLLOW_rule__ParenthesizedTerminalElement__Group__2__Impl_in_rule__ParenthesizedTerminalElement__Group__215315);
             rule__ParenthesizedTerminalElement__Group__2__Impl();
 
             state._fsp--;
@@ -20766,20 +20843,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParenthesizedTerminalElement__Group__2__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7547:1: rule__ParenthesizedTerminalElement__Group__2__Impl : ( ')' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7575:1: rule__ParenthesizedTerminalElement__Group__2__Impl : ( ')' ) ;
     public final void rule__ParenthesizedTerminalElement__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7551:1: ( ( ')' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7552:1: ( ')' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7579:1: ( ( ')' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7580:1: ( ')' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7552:1: ( ')' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7553:1: ')'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7580:1: ( ')' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7581:1: ')'
             {
              before(grammarAccess.getParenthesizedTerminalElementAccess().getRightParenthesisKeyword_2()); 
-            match(input,22,FollowSets000.FOLLOW_22_in_rule__ParenthesizedTerminalElement__Group__2__Impl15286); 
+            match(input,22,FollowSets000.FOLLOW_22_in_rule__ParenthesizedTerminalElement__Group__2__Impl15343); 
              after(grammarAccess.getParenthesizedTerminalElementAccess().getRightParenthesisKeyword_2()); 
 
             }
@@ -20803,21 +20880,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NegatedToken__Group__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7572:1: rule__NegatedToken__Group__0 : rule__NegatedToken__Group__0__Impl rule__NegatedToken__Group__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7600:1: rule__NegatedToken__Group__0 : rule__NegatedToken__Group__0__Impl rule__NegatedToken__Group__1 ;
     public final void rule__NegatedToken__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7576:1: ( rule__NegatedToken__Group__0__Impl rule__NegatedToken__Group__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7577:2: rule__NegatedToken__Group__0__Impl rule__NegatedToken__Group__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7604:1: ( rule__NegatedToken__Group__0__Impl rule__NegatedToken__Group__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7605:2: rule__NegatedToken__Group__0__Impl rule__NegatedToken__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__NegatedToken__Group__0__Impl_in_rule__NegatedToken__Group__015323);
+            pushFollow(FollowSets000.FOLLOW_rule__NegatedToken__Group__0__Impl_in_rule__NegatedToken__Group__015380);
             rule__NegatedToken__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__NegatedToken__Group__1_in_rule__NegatedToken__Group__015326);
+            pushFollow(FollowSets000.FOLLOW_rule__NegatedToken__Group__1_in_rule__NegatedToken__Group__015383);
             rule__NegatedToken__Group__1();
 
             state._fsp--;
@@ -20841,20 +20918,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NegatedToken__Group__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7584:1: rule__NegatedToken__Group__0__Impl : ( '!' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7612:1: rule__NegatedToken__Group__0__Impl : ( '!' ) ;
     public final void rule__NegatedToken__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7588:1: ( ( '!' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7589:1: ( '!' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7616:1: ( ( '!' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7617:1: ( '!' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7589:1: ( '!' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7590:1: '!'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7617:1: ( '!' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7618:1: '!'
             {
              before(grammarAccess.getNegatedTokenAccess().getExclamationMarkKeyword_0()); 
-            match(input,16,FollowSets000.FOLLOW_16_in_rule__NegatedToken__Group__0__Impl15354); 
+            match(input,16,FollowSets000.FOLLOW_16_in_rule__NegatedToken__Group__0__Impl15411); 
              after(grammarAccess.getNegatedTokenAccess().getExclamationMarkKeyword_0()); 
 
             }
@@ -20878,16 +20955,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NegatedToken__Group__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7603:1: rule__NegatedToken__Group__1 : rule__NegatedToken__Group__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7631:1: rule__NegatedToken__Group__1 : rule__NegatedToken__Group__1__Impl ;
     public final void rule__NegatedToken__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7607:1: ( rule__NegatedToken__Group__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7608:2: rule__NegatedToken__Group__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7635:1: ( rule__NegatedToken__Group__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7636:2: rule__NegatedToken__Group__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__NegatedToken__Group__1__Impl_in_rule__NegatedToken__Group__115385);
+            pushFollow(FollowSets000.FOLLOW_rule__NegatedToken__Group__1__Impl_in_rule__NegatedToken__Group__115442);
             rule__NegatedToken__Group__1__Impl();
 
             state._fsp--;
@@ -20911,23 +20988,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NegatedToken__Group__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7614:1: rule__NegatedToken__Group__1__Impl : ( ( rule__NegatedToken__TerminalAssignment_1 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7642:1: rule__NegatedToken__Group__1__Impl : ( ( rule__NegatedToken__TerminalAssignment_1 ) ) ;
     public final void rule__NegatedToken__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7618:1: ( ( ( rule__NegatedToken__TerminalAssignment_1 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7619:1: ( ( rule__NegatedToken__TerminalAssignment_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7646:1: ( ( ( rule__NegatedToken__TerminalAssignment_1 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7647:1: ( ( rule__NegatedToken__TerminalAssignment_1 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7619:1: ( ( rule__NegatedToken__TerminalAssignment_1 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7620:1: ( rule__NegatedToken__TerminalAssignment_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7647:1: ( ( rule__NegatedToken__TerminalAssignment_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7648:1: ( rule__NegatedToken__TerminalAssignment_1 )
             {
              before(grammarAccess.getNegatedTokenAccess().getTerminalAssignment_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7621:1: ( rule__NegatedToken__TerminalAssignment_1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7621:2: rule__NegatedToken__TerminalAssignment_1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7649:1: ( rule__NegatedToken__TerminalAssignment_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7649:2: rule__NegatedToken__TerminalAssignment_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__NegatedToken__TerminalAssignment_1_in_rule__NegatedToken__Group__1__Impl15412);
+            pushFollow(FollowSets000.FOLLOW_rule__NegatedToken__TerminalAssignment_1_in_rule__NegatedToken__Group__1__Impl15469);
             rule__NegatedToken__TerminalAssignment_1();
 
             state._fsp--;
@@ -20958,21 +21035,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UntilToken__Group__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7635:1: rule__UntilToken__Group__0 : rule__UntilToken__Group__0__Impl rule__UntilToken__Group__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7663:1: rule__UntilToken__Group__0 : rule__UntilToken__Group__0__Impl rule__UntilToken__Group__1 ;
     public final void rule__UntilToken__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7639:1: ( rule__UntilToken__Group__0__Impl rule__UntilToken__Group__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7640:2: rule__UntilToken__Group__0__Impl rule__UntilToken__Group__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7667:1: ( rule__UntilToken__Group__0__Impl rule__UntilToken__Group__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7668:2: rule__UntilToken__Group__0__Impl rule__UntilToken__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__UntilToken__Group__0__Impl_in_rule__UntilToken__Group__015446);
+            pushFollow(FollowSets000.FOLLOW_rule__UntilToken__Group__0__Impl_in_rule__UntilToken__Group__015503);
             rule__UntilToken__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__UntilToken__Group__1_in_rule__UntilToken__Group__015449);
+            pushFollow(FollowSets000.FOLLOW_rule__UntilToken__Group__1_in_rule__UntilToken__Group__015506);
             rule__UntilToken__Group__1();
 
             state._fsp--;
@@ -20996,20 +21073,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UntilToken__Group__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7647:1: rule__UntilToken__Group__0__Impl : ( '->' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7675:1: rule__UntilToken__Group__0__Impl : ( '->' ) ;
     public final void rule__UntilToken__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7651:1: ( ( '->' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7652:1: ( '->' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7679:1: ( ( '->' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7680:1: ( '->' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7652:1: ( '->' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7653:1: '->'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7680:1: ( '->' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7681:1: '->'
             {
              before(grammarAccess.getUntilTokenAccess().getHyphenMinusGreaterThanSignKeyword_0()); 
-            match(input,39,FollowSets000.FOLLOW_39_in_rule__UntilToken__Group__0__Impl15477); 
+            match(input,39,FollowSets000.FOLLOW_39_in_rule__UntilToken__Group__0__Impl15534); 
              after(grammarAccess.getUntilTokenAccess().getHyphenMinusGreaterThanSignKeyword_0()); 
 
             }
@@ -21033,16 +21110,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UntilToken__Group__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7666:1: rule__UntilToken__Group__1 : rule__UntilToken__Group__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7694:1: rule__UntilToken__Group__1 : rule__UntilToken__Group__1__Impl ;
     public final void rule__UntilToken__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7670:1: ( rule__UntilToken__Group__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7671:2: rule__UntilToken__Group__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7698:1: ( rule__UntilToken__Group__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7699:2: rule__UntilToken__Group__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__UntilToken__Group__1__Impl_in_rule__UntilToken__Group__115508);
+            pushFollow(FollowSets000.FOLLOW_rule__UntilToken__Group__1__Impl_in_rule__UntilToken__Group__115565);
             rule__UntilToken__Group__1__Impl();
 
             state._fsp--;
@@ -21066,23 +21143,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UntilToken__Group__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7677:1: rule__UntilToken__Group__1__Impl : ( ( rule__UntilToken__TerminalAssignment_1 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7705:1: rule__UntilToken__Group__1__Impl : ( ( rule__UntilToken__TerminalAssignment_1 ) ) ;
     public final void rule__UntilToken__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7681:1: ( ( ( rule__UntilToken__TerminalAssignment_1 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7682:1: ( ( rule__UntilToken__TerminalAssignment_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7709:1: ( ( ( rule__UntilToken__TerminalAssignment_1 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7710:1: ( ( rule__UntilToken__TerminalAssignment_1 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7682:1: ( ( rule__UntilToken__TerminalAssignment_1 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7683:1: ( rule__UntilToken__TerminalAssignment_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7710:1: ( ( rule__UntilToken__TerminalAssignment_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7711:1: ( rule__UntilToken__TerminalAssignment_1 )
             {
              before(grammarAccess.getUntilTokenAccess().getTerminalAssignment_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7684:1: ( rule__UntilToken__TerminalAssignment_1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7684:2: rule__UntilToken__TerminalAssignment_1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7712:1: ( rule__UntilToken__TerminalAssignment_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7712:2: rule__UntilToken__TerminalAssignment_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__UntilToken__TerminalAssignment_1_in_rule__UntilToken__Group__1__Impl15535);
+            pushFollow(FollowSets000.FOLLOW_rule__UntilToken__TerminalAssignment_1_in_rule__UntilToken__Group__1__Impl15592);
             rule__UntilToken__TerminalAssignment_1();
 
             state._fsp--;
@@ -21113,21 +21190,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Wildcard__Group__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7698:1: rule__Wildcard__Group__0 : rule__Wildcard__Group__0__Impl rule__Wildcard__Group__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7726:1: rule__Wildcard__Group__0 : rule__Wildcard__Group__0__Impl rule__Wildcard__Group__1 ;
     public final void rule__Wildcard__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7702:1: ( rule__Wildcard__Group__0__Impl rule__Wildcard__Group__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7703:2: rule__Wildcard__Group__0__Impl rule__Wildcard__Group__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7730:1: ( rule__Wildcard__Group__0__Impl rule__Wildcard__Group__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7731:2: rule__Wildcard__Group__0__Impl rule__Wildcard__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Wildcard__Group__0__Impl_in_rule__Wildcard__Group__015569);
+            pushFollow(FollowSets000.FOLLOW_rule__Wildcard__Group__0__Impl_in_rule__Wildcard__Group__015626);
             rule__Wildcard__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__Wildcard__Group__1_in_rule__Wildcard__Group__015572);
+            pushFollow(FollowSets000.FOLLOW_rule__Wildcard__Group__1_in_rule__Wildcard__Group__015629);
             rule__Wildcard__Group__1();
 
             state._fsp--;
@@ -21151,21 +21228,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Wildcard__Group__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7710:1: rule__Wildcard__Group__0__Impl : ( () ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7738:1: rule__Wildcard__Group__0__Impl : ( () ) ;
     public final void rule__Wildcard__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7714:1: ( ( () ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7715:1: ( () )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7742:1: ( ( () ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7743:1: ( () )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7715:1: ( () )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7716:1: ()
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7743:1: ( () )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7744:1: ()
             {
              before(grammarAccess.getWildcardAccess().getWildcardAction_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7717:1: ()
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7719:1: 
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7745:1: ()
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7747:1: 
             {
             }
 
@@ -21188,16 +21265,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Wildcard__Group__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7729:1: rule__Wildcard__Group__1 : rule__Wildcard__Group__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7757:1: rule__Wildcard__Group__1 : rule__Wildcard__Group__1__Impl ;
     public final void rule__Wildcard__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7733:1: ( rule__Wildcard__Group__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7734:2: rule__Wildcard__Group__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7761:1: ( rule__Wildcard__Group__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7762:2: rule__Wildcard__Group__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Wildcard__Group__1__Impl_in_rule__Wildcard__Group__115630);
+            pushFollow(FollowSets000.FOLLOW_rule__Wildcard__Group__1__Impl_in_rule__Wildcard__Group__115687);
             rule__Wildcard__Group__1__Impl();
 
             state._fsp--;
@@ -21221,20 +21298,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Wildcard__Group__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7740:1: rule__Wildcard__Group__1__Impl : ( '.' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7768:1: rule__Wildcard__Group__1__Impl : ( '.' ) ;
     public final void rule__Wildcard__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7744:1: ( ( '.' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7745:1: ( '.' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7772:1: ( ( '.' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7773:1: ( '.' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7745:1: ( '.' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7746:1: '.'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7773:1: ( '.' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7774:1: '.'
             {
              before(grammarAccess.getWildcardAccess().getFullStopKeyword_1()); 
-            match(input,23,FollowSets000.FOLLOW_23_in_rule__Wildcard__Group__1__Impl15658); 
+            match(input,23,FollowSets000.FOLLOW_23_in_rule__Wildcard__Group__1__Impl15715); 
              after(grammarAccess.getWildcardAccess().getFullStopKeyword_1()); 
 
             }
@@ -21258,21 +21335,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EOF__Group__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7763:1: rule__EOF__Group__0 : rule__EOF__Group__0__Impl rule__EOF__Group__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7791:1: rule__EOF__Group__0 : rule__EOF__Group__0__Impl rule__EOF__Group__1 ;
     public final void rule__EOF__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7767:1: ( rule__EOF__Group__0__Impl rule__EOF__Group__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7768:2: rule__EOF__Group__0__Impl rule__EOF__Group__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7795:1: ( rule__EOF__Group__0__Impl rule__EOF__Group__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7796:2: rule__EOF__Group__0__Impl rule__EOF__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EOF__Group__0__Impl_in_rule__EOF__Group__015693);
+            pushFollow(FollowSets000.FOLLOW_rule__EOF__Group__0__Impl_in_rule__EOF__Group__015750);
             rule__EOF__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__EOF__Group__1_in_rule__EOF__Group__015696);
+            pushFollow(FollowSets000.FOLLOW_rule__EOF__Group__1_in_rule__EOF__Group__015753);
             rule__EOF__Group__1();
 
             state._fsp--;
@@ -21296,21 +21373,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EOF__Group__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7775:1: rule__EOF__Group__0__Impl : ( () ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7803:1: rule__EOF__Group__0__Impl : ( () ) ;
     public final void rule__EOF__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7779:1: ( ( () ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7780:1: ( () )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7807:1: ( ( () ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7808:1: ( () )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7780:1: ( () )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7781:1: ()
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7808:1: ( () )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7809:1: ()
             {
              before(grammarAccess.getEOFAccess().getEOFAction_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7782:1: ()
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7784:1: 
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7810:1: ()
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7812:1: 
             {
             }
 
@@ -21333,16 +21410,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EOF__Group__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7794:1: rule__EOF__Group__1 : rule__EOF__Group__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7822:1: rule__EOF__Group__1 : rule__EOF__Group__1__Impl ;
     public final void rule__EOF__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7798:1: ( rule__EOF__Group__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7799:2: rule__EOF__Group__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7826:1: ( rule__EOF__Group__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7827:2: rule__EOF__Group__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EOF__Group__1__Impl_in_rule__EOF__Group__115754);
+            pushFollow(FollowSets000.FOLLOW_rule__EOF__Group__1__Impl_in_rule__EOF__Group__115811);
             rule__EOF__Group__1__Impl();
 
             state._fsp--;
@@ -21366,20 +21443,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EOF__Group__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7805:1: rule__EOF__Group__1__Impl : ( 'EOF' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7833:1: rule__EOF__Group__1__Impl : ( 'EOF' ) ;
     public final void rule__EOF__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7809:1: ( ( 'EOF' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7810:1: ( 'EOF' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7837:1: ( ( 'EOF' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7838:1: ( 'EOF' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7810:1: ( 'EOF' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7811:1: 'EOF'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7838:1: ( 'EOF' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7839:1: 'EOF'
             {
              before(grammarAccess.getEOFAccess().getEOFKeyword_1()); 
-            match(input,40,FollowSets000.FOLLOW_40_in_rule__EOF__Group__1__Impl15782); 
+            match(input,40,FollowSets000.FOLLOW_40_in_rule__EOF__Group__1__Impl15839); 
              after(grammarAccess.getEOFAccess().getEOFKeyword_1()); 
 
             }
@@ -21403,21 +21480,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CharacterRange__Group__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7828:1: rule__CharacterRange__Group__0 : rule__CharacterRange__Group__0__Impl rule__CharacterRange__Group__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7856:1: rule__CharacterRange__Group__0 : rule__CharacterRange__Group__0__Impl rule__CharacterRange__Group__1 ;
     public final void rule__CharacterRange__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7832:1: ( rule__CharacterRange__Group__0__Impl rule__CharacterRange__Group__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7833:2: rule__CharacterRange__Group__0__Impl rule__CharacterRange__Group__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7860:1: ( rule__CharacterRange__Group__0__Impl rule__CharacterRange__Group__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7861:2: rule__CharacterRange__Group__0__Impl rule__CharacterRange__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__CharacterRange__Group__0__Impl_in_rule__CharacterRange__Group__015817);
+            pushFollow(FollowSets000.FOLLOW_rule__CharacterRange__Group__0__Impl_in_rule__CharacterRange__Group__015874);
             rule__CharacterRange__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__CharacterRange__Group__1_in_rule__CharacterRange__Group__015820);
+            pushFollow(FollowSets000.FOLLOW_rule__CharacterRange__Group__1_in_rule__CharacterRange__Group__015877);
             rule__CharacterRange__Group__1();
 
             state._fsp--;
@@ -21441,20 +21518,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CharacterRange__Group__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7840:1: rule__CharacterRange__Group__0__Impl : ( ruleKeyword ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7868:1: rule__CharacterRange__Group__0__Impl : ( ruleKeyword ) ;
     public final void rule__CharacterRange__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7844:1: ( ( ruleKeyword ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7845:1: ( ruleKeyword )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7872:1: ( ( ruleKeyword ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7873:1: ( ruleKeyword )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7845:1: ( ruleKeyword )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7846:1: ruleKeyword
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7873:1: ( ruleKeyword )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7874:1: ruleKeyword
             {
              before(grammarAccess.getCharacterRangeAccess().getKeywordParserRuleCall_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_rule__CharacterRange__Group__0__Impl15847);
+            pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_rule__CharacterRange__Group__0__Impl15904);
             ruleKeyword();
 
             state._fsp--;
@@ -21482,16 +21559,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CharacterRange__Group__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7857:1: rule__CharacterRange__Group__1 : rule__CharacterRange__Group__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7885:1: rule__CharacterRange__Group__1 : rule__CharacterRange__Group__1__Impl ;
     public final void rule__CharacterRange__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7861:1: ( rule__CharacterRange__Group__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7862:2: rule__CharacterRange__Group__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7889:1: ( rule__CharacterRange__Group__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7890:2: rule__CharacterRange__Group__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__CharacterRange__Group__1__Impl_in_rule__CharacterRange__Group__115876);
+            pushFollow(FollowSets000.FOLLOW_rule__CharacterRange__Group__1__Impl_in_rule__CharacterRange__Group__115933);
             rule__CharacterRange__Group__1__Impl();
 
             state._fsp--;
@@ -21515,20 +21592,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CharacterRange__Group__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7868:1: rule__CharacterRange__Group__1__Impl : ( ( rule__CharacterRange__Group_1__0 )? ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7896:1: rule__CharacterRange__Group__1__Impl : ( ( rule__CharacterRange__Group_1__0 )? ) ;
     public final void rule__CharacterRange__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7872:1: ( ( ( rule__CharacterRange__Group_1__0 )? ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7873:1: ( ( rule__CharacterRange__Group_1__0 )? )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7900:1: ( ( ( rule__CharacterRange__Group_1__0 )? ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7901:1: ( ( rule__CharacterRange__Group_1__0 )? )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7873:1: ( ( rule__CharacterRange__Group_1__0 )? )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7874:1: ( rule__CharacterRange__Group_1__0 )?
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7901:1: ( ( rule__CharacterRange__Group_1__0 )? )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7902:1: ( rule__CharacterRange__Group_1__0 )?
             {
              before(grammarAccess.getCharacterRangeAccess().getGroup_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7875:1: ( rule__CharacterRange__Group_1__0 )?
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7903:1: ( rule__CharacterRange__Group_1__0 )?
             int alt65=2;
             int LA65_0 = input.LA(1);
 
@@ -21537,9 +21614,9 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
             }
             switch (alt65) {
                 case 1 :
-                    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7875:2: rule__CharacterRange__Group_1__0
+                    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7903:2: rule__CharacterRange__Group_1__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__CharacterRange__Group_1__0_in_rule__CharacterRange__Group__1__Impl15903);
+                    pushFollow(FollowSets000.FOLLOW_rule__CharacterRange__Group_1__0_in_rule__CharacterRange__Group__1__Impl15960);
                     rule__CharacterRange__Group_1__0();
 
                     state._fsp--;
@@ -21573,21 +21650,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CharacterRange__Group_1__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7889:1: rule__CharacterRange__Group_1__0 : rule__CharacterRange__Group_1__0__Impl rule__CharacterRange__Group_1__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7917:1: rule__CharacterRange__Group_1__0 : rule__CharacterRange__Group_1__0__Impl rule__CharacterRange__Group_1__1 ;
     public final void rule__CharacterRange__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7893:1: ( rule__CharacterRange__Group_1__0__Impl rule__CharacterRange__Group_1__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7894:2: rule__CharacterRange__Group_1__0__Impl rule__CharacterRange__Group_1__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7921:1: ( rule__CharacterRange__Group_1__0__Impl rule__CharacterRange__Group_1__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7922:2: rule__CharacterRange__Group_1__0__Impl rule__CharacterRange__Group_1__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__CharacterRange__Group_1__0__Impl_in_rule__CharacterRange__Group_1__015938);
+            pushFollow(FollowSets000.FOLLOW_rule__CharacterRange__Group_1__0__Impl_in_rule__CharacterRange__Group_1__015995);
             rule__CharacterRange__Group_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__CharacterRange__Group_1__1_in_rule__CharacterRange__Group_1__015941);
+            pushFollow(FollowSets000.FOLLOW_rule__CharacterRange__Group_1__1_in_rule__CharacterRange__Group_1__015998);
             rule__CharacterRange__Group_1__1();
 
             state._fsp--;
@@ -21611,21 +21688,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CharacterRange__Group_1__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7901:1: rule__CharacterRange__Group_1__0__Impl : ( () ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7929:1: rule__CharacterRange__Group_1__0__Impl : ( () ) ;
     public final void rule__CharacterRange__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7905:1: ( ( () ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7906:1: ( () )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7933:1: ( ( () ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7934:1: ( () )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7906:1: ( () )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7907:1: ()
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7934:1: ( () )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7935:1: ()
             {
              before(grammarAccess.getCharacterRangeAccess().getCharacterRangeLeftAction_1_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7908:1: ()
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7910:1: 
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7936:1: ()
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7938:1: 
             {
             }
 
@@ -21648,21 +21725,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CharacterRange__Group_1__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7920:1: rule__CharacterRange__Group_1__1 : rule__CharacterRange__Group_1__1__Impl rule__CharacterRange__Group_1__2 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7948:1: rule__CharacterRange__Group_1__1 : rule__CharacterRange__Group_1__1__Impl rule__CharacterRange__Group_1__2 ;
     public final void rule__CharacterRange__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7924:1: ( rule__CharacterRange__Group_1__1__Impl rule__CharacterRange__Group_1__2 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7925:2: rule__CharacterRange__Group_1__1__Impl rule__CharacterRange__Group_1__2
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7952:1: ( rule__CharacterRange__Group_1__1__Impl rule__CharacterRange__Group_1__2 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7953:2: rule__CharacterRange__Group_1__1__Impl rule__CharacterRange__Group_1__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__CharacterRange__Group_1__1__Impl_in_rule__CharacterRange__Group_1__115999);
+            pushFollow(FollowSets000.FOLLOW_rule__CharacterRange__Group_1__1__Impl_in_rule__CharacterRange__Group_1__116056);
             rule__CharacterRange__Group_1__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__CharacterRange__Group_1__2_in_rule__CharacterRange__Group_1__116002);
+            pushFollow(FollowSets000.FOLLOW_rule__CharacterRange__Group_1__2_in_rule__CharacterRange__Group_1__116059);
             rule__CharacterRange__Group_1__2();
 
             state._fsp--;
@@ -21686,20 +21763,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CharacterRange__Group_1__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7932:1: rule__CharacterRange__Group_1__1__Impl : ( '..' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7960:1: rule__CharacterRange__Group_1__1__Impl : ( '..' ) ;
     public final void rule__CharacterRange__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7936:1: ( ( '..' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7937:1: ( '..' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7964:1: ( ( '..' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7965:1: ( '..' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7937:1: ( '..' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7938:1: '..'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7965:1: ( '..' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7966:1: '..'
             {
              before(grammarAccess.getCharacterRangeAccess().getFullStopFullStopKeyword_1_1()); 
-            match(input,41,FollowSets000.FOLLOW_41_in_rule__CharacterRange__Group_1__1__Impl16030); 
+            match(input,41,FollowSets000.FOLLOW_41_in_rule__CharacterRange__Group_1__1__Impl16087); 
              after(grammarAccess.getCharacterRangeAccess().getFullStopFullStopKeyword_1_1()); 
 
             }
@@ -21723,16 +21800,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CharacterRange__Group_1__2"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7951:1: rule__CharacterRange__Group_1__2 : rule__CharacterRange__Group_1__2__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7979:1: rule__CharacterRange__Group_1__2 : rule__CharacterRange__Group_1__2__Impl ;
     public final void rule__CharacterRange__Group_1__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7955:1: ( rule__CharacterRange__Group_1__2__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7956:2: rule__CharacterRange__Group_1__2__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7983:1: ( rule__CharacterRange__Group_1__2__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7984:2: rule__CharacterRange__Group_1__2__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__CharacterRange__Group_1__2__Impl_in_rule__CharacterRange__Group_1__216061);
+            pushFollow(FollowSets000.FOLLOW_rule__CharacterRange__Group_1__2__Impl_in_rule__CharacterRange__Group_1__216118);
             rule__CharacterRange__Group_1__2__Impl();
 
             state._fsp--;
@@ -21756,23 +21833,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CharacterRange__Group_1__2__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7962:1: rule__CharacterRange__Group_1__2__Impl : ( ( rule__CharacterRange__RightAssignment_1_2 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7990:1: rule__CharacterRange__Group_1__2__Impl : ( ( rule__CharacterRange__RightAssignment_1_2 ) ) ;
     public final void rule__CharacterRange__Group_1__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7966:1: ( ( ( rule__CharacterRange__RightAssignment_1_2 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7967:1: ( ( rule__CharacterRange__RightAssignment_1_2 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7994:1: ( ( ( rule__CharacterRange__RightAssignment_1_2 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7995:1: ( ( rule__CharacterRange__RightAssignment_1_2 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7967:1: ( ( rule__CharacterRange__RightAssignment_1_2 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7968:1: ( rule__CharacterRange__RightAssignment_1_2 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7995:1: ( ( rule__CharacterRange__RightAssignment_1_2 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7996:1: ( rule__CharacterRange__RightAssignment_1_2 )
             {
              before(grammarAccess.getCharacterRangeAccess().getRightAssignment_1_2()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7969:1: ( rule__CharacterRange__RightAssignment_1_2 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7969:2: rule__CharacterRange__RightAssignment_1_2
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7997:1: ( rule__CharacterRange__RightAssignment_1_2 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7997:2: rule__CharacterRange__RightAssignment_1_2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__CharacterRange__RightAssignment_1_2_in_rule__CharacterRange__Group_1__2__Impl16088);
+            pushFollow(FollowSets000.FOLLOW_rule__CharacterRange__RightAssignment_1_2_in_rule__CharacterRange__Group_1__2__Impl16145);
             rule__CharacterRange__RightAssignment_1_2();
 
             state._fsp--;
@@ -21803,21 +21880,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumRule__Group__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7985:1: rule__EnumRule__Group__0 : rule__EnumRule__Group__0__Impl rule__EnumRule__Group__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8013:1: rule__EnumRule__Group__0 : rule__EnumRule__Group__0__Impl rule__EnumRule__Group__1 ;
     public final void rule__EnumRule__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7989:1: ( rule__EnumRule__Group__0__Impl rule__EnumRule__Group__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7990:2: rule__EnumRule__Group__0__Impl rule__EnumRule__Group__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8017:1: ( rule__EnumRule__Group__0__Impl rule__EnumRule__Group__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8018:2: rule__EnumRule__Group__0__Impl rule__EnumRule__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group__0__Impl_in_rule__EnumRule__Group__016124);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group__0__Impl_in_rule__EnumRule__Group__016181);
             rule__EnumRule__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group__1_in_rule__EnumRule__Group__016127);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group__1_in_rule__EnumRule__Group__016184);
             rule__EnumRule__Group__1();
 
             state._fsp--;
@@ -21841,20 +21918,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumRule__Group__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:7997:1: rule__EnumRule__Group__0__Impl : ( 'enum' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8025:1: rule__EnumRule__Group__0__Impl : ( 'enum' ) ;
     public final void rule__EnumRule__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8001:1: ( ( 'enum' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8002:1: ( 'enum' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8029:1: ( ( 'enum' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8030:1: ( 'enum' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8002:1: ( 'enum' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8003:1: 'enum'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8030:1: ( 'enum' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8031:1: 'enum'
             {
              before(grammarAccess.getEnumRuleAccess().getEnumKeyword_0()); 
-            match(input,42,FollowSets000.FOLLOW_42_in_rule__EnumRule__Group__0__Impl16155); 
+            match(input,42,FollowSets000.FOLLOW_42_in_rule__EnumRule__Group__0__Impl16212); 
              after(grammarAccess.getEnumRuleAccess().getEnumKeyword_0()); 
 
             }
@@ -21878,21 +21955,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumRule__Group__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8016:1: rule__EnumRule__Group__1 : rule__EnumRule__Group__1__Impl rule__EnumRule__Group__2 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8044:1: rule__EnumRule__Group__1 : rule__EnumRule__Group__1__Impl rule__EnumRule__Group__2 ;
     public final void rule__EnumRule__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8020:1: ( rule__EnumRule__Group__1__Impl rule__EnumRule__Group__2 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8021:2: rule__EnumRule__Group__1__Impl rule__EnumRule__Group__2
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8048:1: ( rule__EnumRule__Group__1__Impl rule__EnumRule__Group__2 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8049:2: rule__EnumRule__Group__1__Impl rule__EnumRule__Group__2
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group__1__Impl_in_rule__EnumRule__Group__116186);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group__1__Impl_in_rule__EnumRule__Group__116243);
             rule__EnumRule__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group__2_in_rule__EnumRule__Group__116189);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group__2_in_rule__EnumRule__Group__116246);
             rule__EnumRule__Group__2();
 
             state._fsp--;
@@ -21916,23 +21993,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumRule__Group__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8028:1: rule__EnumRule__Group__1__Impl : ( ( rule__EnumRule__NameAssignment_1 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8056:1: rule__EnumRule__Group__1__Impl : ( ( rule__EnumRule__NameAssignment_1 ) ) ;
     public final void rule__EnumRule__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8032:1: ( ( ( rule__EnumRule__NameAssignment_1 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8033:1: ( ( rule__EnumRule__NameAssignment_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8060:1: ( ( ( rule__EnumRule__NameAssignment_1 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8061:1: ( ( rule__EnumRule__NameAssignment_1 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8033:1: ( ( rule__EnumRule__NameAssignment_1 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8034:1: ( rule__EnumRule__NameAssignment_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8061:1: ( ( rule__EnumRule__NameAssignment_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8062:1: ( rule__EnumRule__NameAssignment_1 )
             {
              before(grammarAccess.getEnumRuleAccess().getNameAssignment_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8035:1: ( rule__EnumRule__NameAssignment_1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8035:2: rule__EnumRule__NameAssignment_1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8063:1: ( rule__EnumRule__NameAssignment_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8063:2: rule__EnumRule__NameAssignment_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__NameAssignment_1_in_rule__EnumRule__Group__1__Impl16216);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__NameAssignment_1_in_rule__EnumRule__Group__1__Impl16273);
             rule__EnumRule__NameAssignment_1();
 
             state._fsp--;
@@ -21963,21 +22040,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumRule__Group__2"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8045:1: rule__EnumRule__Group__2 : rule__EnumRule__Group__2__Impl rule__EnumRule__Group__3 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8073:1: rule__EnumRule__Group__2 : rule__EnumRule__Group__2__Impl rule__EnumRule__Group__3 ;
     public final void rule__EnumRule__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8049:1: ( rule__EnumRule__Group__2__Impl rule__EnumRule__Group__3 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8050:2: rule__EnumRule__Group__2__Impl rule__EnumRule__Group__3
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8077:1: ( rule__EnumRule__Group__2__Impl rule__EnumRule__Group__3 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8078:2: rule__EnumRule__Group__2__Impl rule__EnumRule__Group__3
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group__2__Impl_in_rule__EnumRule__Group__216246);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group__2__Impl_in_rule__EnumRule__Group__216303);
             rule__EnumRule__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group__3_in_rule__EnumRule__Group__216249);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group__3_in_rule__EnumRule__Group__216306);
             rule__EnumRule__Group__3();
 
             state._fsp--;
@@ -22001,20 +22078,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumRule__Group__2__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8057:1: rule__EnumRule__Group__2__Impl : ( ( rule__EnumRule__Group_2__0 )? ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8085:1: rule__EnumRule__Group__2__Impl : ( ( rule__EnumRule__Group_2__0 )? ) ;
     public final void rule__EnumRule__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8061:1: ( ( ( rule__EnumRule__Group_2__0 )? ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8062:1: ( ( rule__EnumRule__Group_2__0 )? )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8089:1: ( ( ( rule__EnumRule__Group_2__0 )? ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8090:1: ( ( rule__EnumRule__Group_2__0 )? )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8062:1: ( ( rule__EnumRule__Group_2__0 )? )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8063:1: ( rule__EnumRule__Group_2__0 )?
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8090:1: ( ( rule__EnumRule__Group_2__0 )? )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8091:1: ( rule__EnumRule__Group_2__0 )?
             {
              before(grammarAccess.getEnumRuleAccess().getGroup_2()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8064:1: ( rule__EnumRule__Group_2__0 )?
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8092:1: ( rule__EnumRule__Group_2__0 )?
             int alt66=2;
             int LA66_0 = input.LA(1);
 
@@ -22023,9 +22100,9 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
             }
             switch (alt66) {
                 case 1 :
-                    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8064:2: rule__EnumRule__Group_2__0
+                    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8092:2: rule__EnumRule__Group_2__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group_2__0_in_rule__EnumRule__Group__2__Impl16276);
+                    pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group_2__0_in_rule__EnumRule__Group__2__Impl16333);
                     rule__EnumRule__Group_2__0();
 
                     state._fsp--;
@@ -22059,21 +22136,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumRule__Group__3"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8074:1: rule__EnumRule__Group__3 : rule__EnumRule__Group__3__Impl rule__EnumRule__Group__4 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8102:1: rule__EnumRule__Group__3 : rule__EnumRule__Group__3__Impl rule__EnumRule__Group__4 ;
     public final void rule__EnumRule__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8078:1: ( rule__EnumRule__Group__3__Impl rule__EnumRule__Group__4 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8079:2: rule__EnumRule__Group__3__Impl rule__EnumRule__Group__4
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8106:1: ( rule__EnumRule__Group__3__Impl rule__EnumRule__Group__4 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8107:2: rule__EnumRule__Group__3__Impl rule__EnumRule__Group__4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group__3__Impl_in_rule__EnumRule__Group__316307);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group__3__Impl_in_rule__EnumRule__Group__316364);
             rule__EnumRule__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group__4_in_rule__EnumRule__Group__316310);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group__4_in_rule__EnumRule__Group__316367);
             rule__EnumRule__Group__4();
 
             state._fsp--;
@@ -22097,20 +22174,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumRule__Group__3__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8086:1: rule__EnumRule__Group__3__Impl : ( ':' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8114:1: rule__EnumRule__Group__3__Impl : ( ':' ) ;
     public final void rule__EnumRule__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8090:1: ( ( ':' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8091:1: ( ':' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8118:1: ( ( ':' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8119:1: ( ':' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8091:1: ( ':' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8092:1: ':'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8119:1: ( ':' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8120:1: ':'
             {
              before(grammarAccess.getEnumRuleAccess().getColonKeyword_3()); 
-            match(input,27,FollowSets000.FOLLOW_27_in_rule__EnumRule__Group__3__Impl16338); 
+            match(input,27,FollowSets000.FOLLOW_27_in_rule__EnumRule__Group__3__Impl16395); 
              after(grammarAccess.getEnumRuleAccess().getColonKeyword_3()); 
 
             }
@@ -22134,21 +22211,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumRule__Group__4"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8105:1: rule__EnumRule__Group__4 : rule__EnumRule__Group__4__Impl rule__EnumRule__Group__5 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8133:1: rule__EnumRule__Group__4 : rule__EnumRule__Group__4__Impl rule__EnumRule__Group__5 ;
     public final void rule__EnumRule__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8109:1: ( rule__EnumRule__Group__4__Impl rule__EnumRule__Group__5 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8110:2: rule__EnumRule__Group__4__Impl rule__EnumRule__Group__5
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8137:1: ( rule__EnumRule__Group__4__Impl rule__EnumRule__Group__5 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8138:2: rule__EnumRule__Group__4__Impl rule__EnumRule__Group__5
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group__4__Impl_in_rule__EnumRule__Group__416369);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group__4__Impl_in_rule__EnumRule__Group__416426);
             rule__EnumRule__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group__5_in_rule__EnumRule__Group__416372);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group__5_in_rule__EnumRule__Group__416429);
             rule__EnumRule__Group__5();
 
             state._fsp--;
@@ -22172,23 +22249,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumRule__Group__4__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8117:1: rule__EnumRule__Group__4__Impl : ( ( rule__EnumRule__AlternativesAssignment_4 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8145:1: rule__EnumRule__Group__4__Impl : ( ( rule__EnumRule__AlternativesAssignment_4 ) ) ;
     public final void rule__EnumRule__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8121:1: ( ( ( rule__EnumRule__AlternativesAssignment_4 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8122:1: ( ( rule__EnumRule__AlternativesAssignment_4 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8149:1: ( ( ( rule__EnumRule__AlternativesAssignment_4 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8150:1: ( ( rule__EnumRule__AlternativesAssignment_4 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8122:1: ( ( rule__EnumRule__AlternativesAssignment_4 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8123:1: ( rule__EnumRule__AlternativesAssignment_4 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8150:1: ( ( rule__EnumRule__AlternativesAssignment_4 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8151:1: ( rule__EnumRule__AlternativesAssignment_4 )
             {
              before(grammarAccess.getEnumRuleAccess().getAlternativesAssignment_4()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8124:1: ( rule__EnumRule__AlternativesAssignment_4 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8124:2: rule__EnumRule__AlternativesAssignment_4
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8152:1: ( rule__EnumRule__AlternativesAssignment_4 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8152:2: rule__EnumRule__AlternativesAssignment_4
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__AlternativesAssignment_4_in_rule__EnumRule__Group__4__Impl16399);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__AlternativesAssignment_4_in_rule__EnumRule__Group__4__Impl16456);
             rule__EnumRule__AlternativesAssignment_4();
 
             state._fsp--;
@@ -22219,16 +22296,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumRule__Group__5"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8134:1: rule__EnumRule__Group__5 : rule__EnumRule__Group__5__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8162:1: rule__EnumRule__Group__5 : rule__EnumRule__Group__5__Impl ;
     public final void rule__EnumRule__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8138:1: ( rule__EnumRule__Group__5__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8139:2: rule__EnumRule__Group__5__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8166:1: ( rule__EnumRule__Group__5__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8167:2: rule__EnumRule__Group__5__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group__5__Impl_in_rule__EnumRule__Group__516429);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group__5__Impl_in_rule__EnumRule__Group__516486);
             rule__EnumRule__Group__5__Impl();
 
             state._fsp--;
@@ -22252,20 +22329,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumRule__Group__5__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8145:1: rule__EnumRule__Group__5__Impl : ( ';' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8173:1: rule__EnumRule__Group__5__Impl : ( ';' ) ;
     public final void rule__EnumRule__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8149:1: ( ( ';' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8150:1: ( ';' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8177:1: ( ( ';' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8178:1: ( ';' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8150:1: ( ';' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8151:1: ';'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8178:1: ( ';' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8179:1: ';'
             {
              before(grammarAccess.getEnumRuleAccess().getSemicolonKeyword_5()); 
-            match(input,28,FollowSets000.FOLLOW_28_in_rule__EnumRule__Group__5__Impl16457); 
+            match(input,28,FollowSets000.FOLLOW_28_in_rule__EnumRule__Group__5__Impl16514); 
              after(grammarAccess.getEnumRuleAccess().getSemicolonKeyword_5()); 
 
             }
@@ -22289,21 +22366,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumRule__Group_2__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8176:1: rule__EnumRule__Group_2__0 : rule__EnumRule__Group_2__0__Impl rule__EnumRule__Group_2__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8204:1: rule__EnumRule__Group_2__0 : rule__EnumRule__Group_2__0__Impl rule__EnumRule__Group_2__1 ;
     public final void rule__EnumRule__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8180:1: ( rule__EnumRule__Group_2__0__Impl rule__EnumRule__Group_2__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8181:2: rule__EnumRule__Group_2__0__Impl rule__EnumRule__Group_2__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8208:1: ( rule__EnumRule__Group_2__0__Impl rule__EnumRule__Group_2__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8209:2: rule__EnumRule__Group_2__0__Impl rule__EnumRule__Group_2__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group_2__0__Impl_in_rule__EnumRule__Group_2__016500);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group_2__0__Impl_in_rule__EnumRule__Group_2__016557);
             rule__EnumRule__Group_2__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group_2__1_in_rule__EnumRule__Group_2__016503);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group_2__1_in_rule__EnumRule__Group_2__016560);
             rule__EnumRule__Group_2__1();
 
             state._fsp--;
@@ -22327,20 +22404,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumRule__Group_2__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8188:1: rule__EnumRule__Group_2__0__Impl : ( 'returns' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8216:1: rule__EnumRule__Group_2__0__Impl : ( 'returns' ) ;
     public final void rule__EnumRule__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8192:1: ( ( 'returns' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8193:1: ( 'returns' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8220:1: ( ( 'returns' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8221:1: ( 'returns' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8193:1: ( 'returns' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8194:1: 'returns'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8221:1: ( 'returns' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8222:1: 'returns'
             {
              before(grammarAccess.getEnumRuleAccess().getReturnsKeyword_2_0()); 
-            match(input,29,FollowSets000.FOLLOW_29_in_rule__EnumRule__Group_2__0__Impl16531); 
+            match(input,29,FollowSets000.FOLLOW_29_in_rule__EnumRule__Group_2__0__Impl16588); 
              after(grammarAccess.getEnumRuleAccess().getReturnsKeyword_2_0()); 
 
             }
@@ -22364,16 +22441,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumRule__Group_2__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8207:1: rule__EnumRule__Group_2__1 : rule__EnumRule__Group_2__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8235:1: rule__EnumRule__Group_2__1 : rule__EnumRule__Group_2__1__Impl ;
     public final void rule__EnumRule__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8211:1: ( rule__EnumRule__Group_2__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8212:2: rule__EnumRule__Group_2__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8239:1: ( rule__EnumRule__Group_2__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8240:2: rule__EnumRule__Group_2__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group_2__1__Impl_in_rule__EnumRule__Group_2__116562);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__Group_2__1__Impl_in_rule__EnumRule__Group_2__116619);
             rule__EnumRule__Group_2__1__Impl();
 
             state._fsp--;
@@ -22397,23 +22474,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumRule__Group_2__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8218:1: rule__EnumRule__Group_2__1__Impl : ( ( rule__EnumRule__TypeAssignment_2_1 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8246:1: rule__EnumRule__Group_2__1__Impl : ( ( rule__EnumRule__TypeAssignment_2_1 ) ) ;
     public final void rule__EnumRule__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8222:1: ( ( ( rule__EnumRule__TypeAssignment_2_1 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8223:1: ( ( rule__EnumRule__TypeAssignment_2_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8250:1: ( ( ( rule__EnumRule__TypeAssignment_2_1 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8251:1: ( ( rule__EnumRule__TypeAssignment_2_1 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8223:1: ( ( rule__EnumRule__TypeAssignment_2_1 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8224:1: ( rule__EnumRule__TypeAssignment_2_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8251:1: ( ( rule__EnumRule__TypeAssignment_2_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8252:1: ( rule__EnumRule__TypeAssignment_2_1 )
             {
              before(grammarAccess.getEnumRuleAccess().getTypeAssignment_2_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8225:1: ( rule__EnumRule__TypeAssignment_2_1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8225:2: rule__EnumRule__TypeAssignment_2_1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8253:1: ( rule__EnumRule__TypeAssignment_2_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8253:2: rule__EnumRule__TypeAssignment_2_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__TypeAssignment_2_1_in_rule__EnumRule__Group_2__1__Impl16589);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumRule__TypeAssignment_2_1_in_rule__EnumRule__Group_2__1__Impl16646);
             rule__EnumRule__TypeAssignment_2_1();
 
             state._fsp--;
@@ -22444,21 +22521,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumLiterals__Group__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8239:1: rule__EnumLiterals__Group__0 : rule__EnumLiterals__Group__0__Impl rule__EnumLiterals__Group__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8267:1: rule__EnumLiterals__Group__0 : rule__EnumLiterals__Group__0__Impl rule__EnumLiterals__Group__1 ;
     public final void rule__EnumLiterals__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8243:1: ( rule__EnumLiterals__Group__0__Impl rule__EnumLiterals__Group__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8244:2: rule__EnumLiterals__Group__0__Impl rule__EnumLiterals__Group__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8271:1: ( rule__EnumLiterals__Group__0__Impl rule__EnumLiterals__Group__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8272:2: rule__EnumLiterals__Group__0__Impl rule__EnumLiterals__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EnumLiterals__Group__0__Impl_in_rule__EnumLiterals__Group__016623);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumLiterals__Group__0__Impl_in_rule__EnumLiterals__Group__016680);
             rule__EnumLiterals__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__EnumLiterals__Group__1_in_rule__EnumLiterals__Group__016626);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumLiterals__Group__1_in_rule__EnumLiterals__Group__016683);
             rule__EnumLiterals__Group__1();
 
             state._fsp--;
@@ -22482,20 +22559,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumLiterals__Group__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8251:1: rule__EnumLiterals__Group__0__Impl : ( ruleEnumLiteralDeclaration ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8279:1: rule__EnumLiterals__Group__0__Impl : ( ruleEnumLiteralDeclaration ) ;
     public final void rule__EnumLiterals__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8255:1: ( ( ruleEnumLiteralDeclaration ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8256:1: ( ruleEnumLiteralDeclaration )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8283:1: ( ( ruleEnumLiteralDeclaration ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8284:1: ( ruleEnumLiteralDeclaration )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8256:1: ( ruleEnumLiteralDeclaration )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8257:1: ruleEnumLiteralDeclaration
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8284:1: ( ruleEnumLiteralDeclaration )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8285:1: ruleEnumLiteralDeclaration
             {
              before(grammarAccess.getEnumLiteralsAccess().getEnumLiteralDeclarationParserRuleCall_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEnumLiteralDeclaration_in_rule__EnumLiterals__Group__0__Impl16653);
+            pushFollow(FollowSets000.FOLLOW_ruleEnumLiteralDeclaration_in_rule__EnumLiterals__Group__0__Impl16710);
             ruleEnumLiteralDeclaration();
 
             state._fsp--;
@@ -22523,16 +22600,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumLiterals__Group__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8268:1: rule__EnumLiterals__Group__1 : rule__EnumLiterals__Group__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8296:1: rule__EnumLiterals__Group__1 : rule__EnumLiterals__Group__1__Impl ;
     public final void rule__EnumLiterals__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8272:1: ( rule__EnumLiterals__Group__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8273:2: rule__EnumLiterals__Group__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8300:1: ( rule__EnumLiterals__Group__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8301:2: rule__EnumLiterals__Group__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EnumLiterals__Group__1__Impl_in_rule__EnumLiterals__Group__116682);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumLiterals__Group__1__Impl_in_rule__EnumLiterals__Group__116739);
             rule__EnumLiterals__Group__1__Impl();
 
             state._fsp--;
@@ -22556,20 +22633,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumLiterals__Group__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8279:1: rule__EnumLiterals__Group__1__Impl : ( ( rule__EnumLiterals__Group_1__0 )? ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8307:1: rule__EnumLiterals__Group__1__Impl : ( ( rule__EnumLiterals__Group_1__0 )? ) ;
     public final void rule__EnumLiterals__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8283:1: ( ( ( rule__EnumLiterals__Group_1__0 )? ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8284:1: ( ( rule__EnumLiterals__Group_1__0 )? )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8311:1: ( ( ( rule__EnumLiterals__Group_1__0 )? ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8312:1: ( ( rule__EnumLiterals__Group_1__0 )? )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8284:1: ( ( rule__EnumLiterals__Group_1__0 )? )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8285:1: ( rule__EnumLiterals__Group_1__0 )?
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8312:1: ( ( rule__EnumLiterals__Group_1__0 )? )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8313:1: ( rule__EnumLiterals__Group_1__0 )?
             {
              before(grammarAccess.getEnumLiteralsAccess().getGroup_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8286:1: ( rule__EnumLiterals__Group_1__0 )?
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8314:1: ( rule__EnumLiterals__Group_1__0 )?
             int alt67=2;
             int LA67_0 = input.LA(1);
 
@@ -22578,9 +22655,9 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
             }
             switch (alt67) {
                 case 1 :
-                    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8286:2: rule__EnumLiterals__Group_1__0
+                    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8314:2: rule__EnumLiterals__Group_1__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__EnumLiterals__Group_1__0_in_rule__EnumLiterals__Group__1__Impl16709);
+                    pushFollow(FollowSets000.FOLLOW_rule__EnumLiterals__Group_1__0_in_rule__EnumLiterals__Group__1__Impl16766);
                     rule__EnumLiterals__Group_1__0();
 
                     state._fsp--;
@@ -22614,21 +22691,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumLiterals__Group_1__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8300:1: rule__EnumLiterals__Group_1__0 : rule__EnumLiterals__Group_1__0__Impl rule__EnumLiterals__Group_1__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8328:1: rule__EnumLiterals__Group_1__0 : rule__EnumLiterals__Group_1__0__Impl rule__EnumLiterals__Group_1__1 ;
     public final void rule__EnumLiterals__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8304:1: ( rule__EnumLiterals__Group_1__0__Impl rule__EnumLiterals__Group_1__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8305:2: rule__EnumLiterals__Group_1__0__Impl rule__EnumLiterals__Group_1__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8332:1: ( rule__EnumLiterals__Group_1__0__Impl rule__EnumLiterals__Group_1__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8333:2: rule__EnumLiterals__Group_1__0__Impl rule__EnumLiterals__Group_1__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EnumLiterals__Group_1__0__Impl_in_rule__EnumLiterals__Group_1__016744);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumLiterals__Group_1__0__Impl_in_rule__EnumLiterals__Group_1__016801);
             rule__EnumLiterals__Group_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__EnumLiterals__Group_1__1_in_rule__EnumLiterals__Group_1__016747);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumLiterals__Group_1__1_in_rule__EnumLiterals__Group_1__016804);
             rule__EnumLiterals__Group_1__1();
 
             state._fsp--;
@@ -22652,21 +22729,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumLiterals__Group_1__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8312:1: rule__EnumLiterals__Group_1__0__Impl : ( () ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8340:1: rule__EnumLiterals__Group_1__0__Impl : ( () ) ;
     public final void rule__EnumLiterals__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8316:1: ( ( () ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8317:1: ( () )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8344:1: ( ( () ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8345:1: ( () )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8317:1: ( () )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8318:1: ()
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8345:1: ( () )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8346:1: ()
             {
              before(grammarAccess.getEnumLiteralsAccess().getAlternativesElementsAction_1_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8319:1: ()
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8321:1: 
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8347:1: ()
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8349:1: 
             {
             }
 
@@ -22689,16 +22766,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumLiterals__Group_1__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8331:1: rule__EnumLiterals__Group_1__1 : rule__EnumLiterals__Group_1__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8359:1: rule__EnumLiterals__Group_1__1 : rule__EnumLiterals__Group_1__1__Impl ;
     public final void rule__EnumLiterals__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8335:1: ( rule__EnumLiterals__Group_1__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8336:2: rule__EnumLiterals__Group_1__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8363:1: ( rule__EnumLiterals__Group_1__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8364:2: rule__EnumLiterals__Group_1__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EnumLiterals__Group_1__1__Impl_in_rule__EnumLiterals__Group_1__116805);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumLiterals__Group_1__1__Impl_in_rule__EnumLiterals__Group_1__116862);
             rule__EnumLiterals__Group_1__1__Impl();
 
             state._fsp--;
@@ -22722,26 +22799,26 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumLiterals__Group_1__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8342:1: rule__EnumLiterals__Group_1__1__Impl : ( ( ( rule__EnumLiterals__Group_1_1__0 ) ) ( ( rule__EnumLiterals__Group_1_1__0 )* ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8370:1: rule__EnumLiterals__Group_1__1__Impl : ( ( ( rule__EnumLiterals__Group_1_1__0 ) ) ( ( rule__EnumLiterals__Group_1_1__0 )* ) ) ;
     public final void rule__EnumLiterals__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8346:1: ( ( ( ( rule__EnumLiterals__Group_1_1__0 ) ) ( ( rule__EnumLiterals__Group_1_1__0 )* ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8347:1: ( ( ( rule__EnumLiterals__Group_1_1__0 ) ) ( ( rule__EnumLiterals__Group_1_1__0 )* ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8374:1: ( ( ( ( rule__EnumLiterals__Group_1_1__0 ) ) ( ( rule__EnumLiterals__Group_1_1__0 )* ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8375:1: ( ( ( rule__EnumLiterals__Group_1_1__0 ) ) ( ( rule__EnumLiterals__Group_1_1__0 )* ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8347:1: ( ( ( rule__EnumLiterals__Group_1_1__0 ) ) ( ( rule__EnumLiterals__Group_1_1__0 )* ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8348:1: ( ( rule__EnumLiterals__Group_1_1__0 ) ) ( ( rule__EnumLiterals__Group_1_1__0 )* )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8375:1: ( ( ( rule__EnumLiterals__Group_1_1__0 ) ) ( ( rule__EnumLiterals__Group_1_1__0 )* ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8376:1: ( ( rule__EnumLiterals__Group_1_1__0 ) ) ( ( rule__EnumLiterals__Group_1_1__0 )* )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8348:1: ( ( rule__EnumLiterals__Group_1_1__0 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8349:1: ( rule__EnumLiterals__Group_1_1__0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8376:1: ( ( rule__EnumLiterals__Group_1_1__0 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8377:1: ( rule__EnumLiterals__Group_1_1__0 )
             {
              before(grammarAccess.getEnumLiteralsAccess().getGroup_1_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8350:1: ( rule__EnumLiterals__Group_1_1__0 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8350:2: rule__EnumLiterals__Group_1_1__0
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8378:1: ( rule__EnumLiterals__Group_1_1__0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8378:2: rule__EnumLiterals__Group_1_1__0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EnumLiterals__Group_1_1__0_in_rule__EnumLiterals__Group_1__1__Impl16834);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumLiterals__Group_1_1__0_in_rule__EnumLiterals__Group_1__1__Impl16891);
             rule__EnumLiterals__Group_1_1__0();
 
             state._fsp--;
@@ -22753,11 +22830,11 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
             }
 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8353:1: ( ( rule__EnumLiterals__Group_1_1__0 )* )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8354:1: ( rule__EnumLiterals__Group_1_1__0 )*
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8381:1: ( ( rule__EnumLiterals__Group_1_1__0 )* )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8382:1: ( rule__EnumLiterals__Group_1_1__0 )*
             {
              before(grammarAccess.getEnumLiteralsAccess().getGroup_1_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8355:1: ( rule__EnumLiterals__Group_1_1__0 )*
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8383:1: ( rule__EnumLiterals__Group_1_1__0 )*
             loop68:
             do {
                 int alt68=2;
@@ -22770,9 +22847,9 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
                 switch (alt68) {
             	case 1 :
-            	    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8355:2: rule__EnumLiterals__Group_1_1__0
+            	    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8383:2: rule__EnumLiterals__Group_1_1__0
             	    {
-            	    pushFollow(FollowSets000.FOLLOW_rule__EnumLiterals__Group_1_1__0_in_rule__EnumLiterals__Group_1__1__Impl16846);
+            	    pushFollow(FollowSets000.FOLLOW_rule__EnumLiterals__Group_1_1__0_in_rule__EnumLiterals__Group_1__1__Impl16903);
             	    rule__EnumLiterals__Group_1_1__0();
 
             	    state._fsp--;
@@ -22812,21 +22889,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumLiterals__Group_1_1__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8370:1: rule__EnumLiterals__Group_1_1__0 : rule__EnumLiterals__Group_1_1__0__Impl rule__EnumLiterals__Group_1_1__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8398:1: rule__EnumLiterals__Group_1_1__0 : rule__EnumLiterals__Group_1_1__0__Impl rule__EnumLiterals__Group_1_1__1 ;
     public final void rule__EnumLiterals__Group_1_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8374:1: ( rule__EnumLiterals__Group_1_1__0__Impl rule__EnumLiterals__Group_1_1__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8375:2: rule__EnumLiterals__Group_1_1__0__Impl rule__EnumLiterals__Group_1_1__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8402:1: ( rule__EnumLiterals__Group_1_1__0__Impl rule__EnumLiterals__Group_1_1__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8403:2: rule__EnumLiterals__Group_1_1__0__Impl rule__EnumLiterals__Group_1_1__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EnumLiterals__Group_1_1__0__Impl_in_rule__EnumLiterals__Group_1_1__016883);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumLiterals__Group_1_1__0__Impl_in_rule__EnumLiterals__Group_1_1__016940);
             rule__EnumLiterals__Group_1_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__EnumLiterals__Group_1_1__1_in_rule__EnumLiterals__Group_1_1__016886);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumLiterals__Group_1_1__1_in_rule__EnumLiterals__Group_1_1__016943);
             rule__EnumLiterals__Group_1_1__1();
 
             state._fsp--;
@@ -22850,20 +22927,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumLiterals__Group_1_1__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8382:1: rule__EnumLiterals__Group_1_1__0__Impl : ( '|' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8410:1: rule__EnumLiterals__Group_1_1__0__Impl : ( '|' ) ;
     public final void rule__EnumLiterals__Group_1_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8386:1: ( ( '|' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8387:1: ( '|' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8414:1: ( ( '|' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8415:1: ( '|' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8387:1: ( '|' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8388:1: '|'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8415:1: ( '|' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8416:1: '|'
             {
              before(grammarAccess.getEnumLiteralsAccess().getVerticalLineKeyword_1_1_0()); 
-            match(input,33,FollowSets000.FOLLOW_33_in_rule__EnumLiterals__Group_1_1__0__Impl16914); 
+            match(input,33,FollowSets000.FOLLOW_33_in_rule__EnumLiterals__Group_1_1__0__Impl16971); 
              after(grammarAccess.getEnumLiteralsAccess().getVerticalLineKeyword_1_1_0()); 
 
             }
@@ -22887,16 +22964,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumLiterals__Group_1_1__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8401:1: rule__EnumLiterals__Group_1_1__1 : rule__EnumLiterals__Group_1_1__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8429:1: rule__EnumLiterals__Group_1_1__1 : rule__EnumLiterals__Group_1_1__1__Impl ;
     public final void rule__EnumLiterals__Group_1_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8405:1: ( rule__EnumLiterals__Group_1_1__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8406:2: rule__EnumLiterals__Group_1_1__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8433:1: ( rule__EnumLiterals__Group_1_1__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8434:2: rule__EnumLiterals__Group_1_1__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EnumLiterals__Group_1_1__1__Impl_in_rule__EnumLiterals__Group_1_1__116945);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumLiterals__Group_1_1__1__Impl_in_rule__EnumLiterals__Group_1_1__117002);
             rule__EnumLiterals__Group_1_1__1__Impl();
 
             state._fsp--;
@@ -22920,23 +22997,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumLiterals__Group_1_1__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8412:1: rule__EnumLiterals__Group_1_1__1__Impl : ( ( rule__EnumLiterals__ElementsAssignment_1_1_1 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8440:1: rule__EnumLiterals__Group_1_1__1__Impl : ( ( rule__EnumLiterals__ElementsAssignment_1_1_1 ) ) ;
     public final void rule__EnumLiterals__Group_1_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8416:1: ( ( ( rule__EnumLiterals__ElementsAssignment_1_1_1 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8417:1: ( ( rule__EnumLiterals__ElementsAssignment_1_1_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8444:1: ( ( ( rule__EnumLiterals__ElementsAssignment_1_1_1 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8445:1: ( ( rule__EnumLiterals__ElementsAssignment_1_1_1 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8417:1: ( ( rule__EnumLiterals__ElementsAssignment_1_1_1 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8418:1: ( rule__EnumLiterals__ElementsAssignment_1_1_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8445:1: ( ( rule__EnumLiterals__ElementsAssignment_1_1_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8446:1: ( rule__EnumLiterals__ElementsAssignment_1_1_1 )
             {
              before(grammarAccess.getEnumLiteralsAccess().getElementsAssignment_1_1_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8419:1: ( rule__EnumLiterals__ElementsAssignment_1_1_1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8419:2: rule__EnumLiterals__ElementsAssignment_1_1_1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8447:1: ( rule__EnumLiterals__ElementsAssignment_1_1_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8447:2: rule__EnumLiterals__ElementsAssignment_1_1_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EnumLiterals__ElementsAssignment_1_1_1_in_rule__EnumLiterals__Group_1_1__1__Impl16972);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumLiterals__ElementsAssignment_1_1_1_in_rule__EnumLiterals__Group_1_1__1__Impl17029);
             rule__EnumLiterals__ElementsAssignment_1_1_1();
 
             state._fsp--;
@@ -22967,21 +23044,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumLiteralDeclaration__Group__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8433:1: rule__EnumLiteralDeclaration__Group__0 : rule__EnumLiteralDeclaration__Group__0__Impl rule__EnumLiteralDeclaration__Group__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8461:1: rule__EnumLiteralDeclaration__Group__0 : rule__EnumLiteralDeclaration__Group__0__Impl rule__EnumLiteralDeclaration__Group__1 ;
     public final void rule__EnumLiteralDeclaration__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8437:1: ( rule__EnumLiteralDeclaration__Group__0__Impl rule__EnumLiteralDeclaration__Group__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8438:2: rule__EnumLiteralDeclaration__Group__0__Impl rule__EnumLiteralDeclaration__Group__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8465:1: ( rule__EnumLiteralDeclaration__Group__0__Impl rule__EnumLiteralDeclaration__Group__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8466:2: rule__EnumLiteralDeclaration__Group__0__Impl rule__EnumLiteralDeclaration__Group__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EnumLiteralDeclaration__Group__0__Impl_in_rule__EnumLiteralDeclaration__Group__017006);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumLiteralDeclaration__Group__0__Impl_in_rule__EnumLiteralDeclaration__Group__017063);
             rule__EnumLiteralDeclaration__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__EnumLiteralDeclaration__Group__1_in_rule__EnumLiteralDeclaration__Group__017009);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumLiteralDeclaration__Group__1_in_rule__EnumLiteralDeclaration__Group__017066);
             rule__EnumLiteralDeclaration__Group__1();
 
             state._fsp--;
@@ -23005,23 +23082,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumLiteralDeclaration__Group__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8445:1: rule__EnumLiteralDeclaration__Group__0__Impl : ( ( rule__EnumLiteralDeclaration__EnumLiteralAssignment_0 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8473:1: rule__EnumLiteralDeclaration__Group__0__Impl : ( ( rule__EnumLiteralDeclaration__EnumLiteralAssignment_0 ) ) ;
     public final void rule__EnumLiteralDeclaration__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8449:1: ( ( ( rule__EnumLiteralDeclaration__EnumLiteralAssignment_0 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8450:1: ( ( rule__EnumLiteralDeclaration__EnumLiteralAssignment_0 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8477:1: ( ( ( rule__EnumLiteralDeclaration__EnumLiteralAssignment_0 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8478:1: ( ( rule__EnumLiteralDeclaration__EnumLiteralAssignment_0 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8450:1: ( ( rule__EnumLiteralDeclaration__EnumLiteralAssignment_0 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8451:1: ( rule__EnumLiteralDeclaration__EnumLiteralAssignment_0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8478:1: ( ( rule__EnumLiteralDeclaration__EnumLiteralAssignment_0 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8479:1: ( rule__EnumLiteralDeclaration__EnumLiteralAssignment_0 )
             {
              before(grammarAccess.getEnumLiteralDeclarationAccess().getEnumLiteralAssignment_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8452:1: ( rule__EnumLiteralDeclaration__EnumLiteralAssignment_0 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8452:2: rule__EnumLiteralDeclaration__EnumLiteralAssignment_0
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8480:1: ( rule__EnumLiteralDeclaration__EnumLiteralAssignment_0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8480:2: rule__EnumLiteralDeclaration__EnumLiteralAssignment_0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EnumLiteralDeclaration__EnumLiteralAssignment_0_in_rule__EnumLiteralDeclaration__Group__0__Impl17036);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumLiteralDeclaration__EnumLiteralAssignment_0_in_rule__EnumLiteralDeclaration__Group__0__Impl17093);
             rule__EnumLiteralDeclaration__EnumLiteralAssignment_0();
 
             state._fsp--;
@@ -23052,16 +23129,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumLiteralDeclaration__Group__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8462:1: rule__EnumLiteralDeclaration__Group__1 : rule__EnumLiteralDeclaration__Group__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8490:1: rule__EnumLiteralDeclaration__Group__1 : rule__EnumLiteralDeclaration__Group__1__Impl ;
     public final void rule__EnumLiteralDeclaration__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8466:1: ( rule__EnumLiteralDeclaration__Group__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8467:2: rule__EnumLiteralDeclaration__Group__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8494:1: ( rule__EnumLiteralDeclaration__Group__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8495:2: rule__EnumLiteralDeclaration__Group__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EnumLiteralDeclaration__Group__1__Impl_in_rule__EnumLiteralDeclaration__Group__117066);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumLiteralDeclaration__Group__1__Impl_in_rule__EnumLiteralDeclaration__Group__117123);
             rule__EnumLiteralDeclaration__Group__1__Impl();
 
             state._fsp--;
@@ -23085,20 +23162,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumLiteralDeclaration__Group__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8473:1: rule__EnumLiteralDeclaration__Group__1__Impl : ( ( rule__EnumLiteralDeclaration__Group_1__0 )? ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8501:1: rule__EnumLiteralDeclaration__Group__1__Impl : ( ( rule__EnumLiteralDeclaration__Group_1__0 )? ) ;
     public final void rule__EnumLiteralDeclaration__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8477:1: ( ( ( rule__EnumLiteralDeclaration__Group_1__0 )? ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8478:1: ( ( rule__EnumLiteralDeclaration__Group_1__0 )? )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8505:1: ( ( ( rule__EnumLiteralDeclaration__Group_1__0 )? ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8506:1: ( ( rule__EnumLiteralDeclaration__Group_1__0 )? )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8478:1: ( ( rule__EnumLiteralDeclaration__Group_1__0 )? )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8479:1: ( rule__EnumLiteralDeclaration__Group_1__0 )?
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8506:1: ( ( rule__EnumLiteralDeclaration__Group_1__0 )? )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8507:1: ( rule__EnumLiteralDeclaration__Group_1__0 )?
             {
              before(grammarAccess.getEnumLiteralDeclarationAccess().getGroup_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8480:1: ( rule__EnumLiteralDeclaration__Group_1__0 )?
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8508:1: ( rule__EnumLiteralDeclaration__Group_1__0 )?
             int alt69=2;
             int LA69_0 = input.LA(1);
 
@@ -23107,9 +23184,9 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
             }
             switch (alt69) {
                 case 1 :
-                    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8480:2: rule__EnumLiteralDeclaration__Group_1__0
+                    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8508:2: rule__EnumLiteralDeclaration__Group_1__0
                     {
-                    pushFollow(FollowSets000.FOLLOW_rule__EnumLiteralDeclaration__Group_1__0_in_rule__EnumLiteralDeclaration__Group__1__Impl17093);
+                    pushFollow(FollowSets000.FOLLOW_rule__EnumLiteralDeclaration__Group_1__0_in_rule__EnumLiteralDeclaration__Group__1__Impl17150);
                     rule__EnumLiteralDeclaration__Group_1__0();
 
                     state._fsp--;
@@ -23143,21 +23220,21 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumLiteralDeclaration__Group_1__0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8494:1: rule__EnumLiteralDeclaration__Group_1__0 : rule__EnumLiteralDeclaration__Group_1__0__Impl rule__EnumLiteralDeclaration__Group_1__1 ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8522:1: rule__EnumLiteralDeclaration__Group_1__0 : rule__EnumLiteralDeclaration__Group_1__0__Impl rule__EnumLiteralDeclaration__Group_1__1 ;
     public final void rule__EnumLiteralDeclaration__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8498:1: ( rule__EnumLiteralDeclaration__Group_1__0__Impl rule__EnumLiteralDeclaration__Group_1__1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8499:2: rule__EnumLiteralDeclaration__Group_1__0__Impl rule__EnumLiteralDeclaration__Group_1__1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8526:1: ( rule__EnumLiteralDeclaration__Group_1__0__Impl rule__EnumLiteralDeclaration__Group_1__1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8527:2: rule__EnumLiteralDeclaration__Group_1__0__Impl rule__EnumLiteralDeclaration__Group_1__1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EnumLiteralDeclaration__Group_1__0__Impl_in_rule__EnumLiteralDeclaration__Group_1__017128);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumLiteralDeclaration__Group_1__0__Impl_in_rule__EnumLiteralDeclaration__Group_1__017185);
             rule__EnumLiteralDeclaration__Group_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FollowSets000.FOLLOW_rule__EnumLiteralDeclaration__Group_1__1_in_rule__EnumLiteralDeclaration__Group_1__017131);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumLiteralDeclaration__Group_1__1_in_rule__EnumLiteralDeclaration__Group_1__017188);
             rule__EnumLiteralDeclaration__Group_1__1();
 
             state._fsp--;
@@ -23181,20 +23258,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumLiteralDeclaration__Group_1__0__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8506:1: rule__EnumLiteralDeclaration__Group_1__0__Impl : ( '=' ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8534:1: rule__EnumLiteralDeclaration__Group_1__0__Impl : ( '=' ) ;
     public final void rule__EnumLiteralDeclaration__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8510:1: ( ( '=' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8511:1: ( '=' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8538:1: ( ( '=' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8539:1: ( '=' )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8511:1: ( '=' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8512:1: '='
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8539:1: ( '=' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8540:1: '='
             {
              before(grammarAccess.getEnumLiteralDeclarationAccess().getEqualsSignKeyword_1_0()); 
-            match(input,14,FollowSets000.FOLLOW_14_in_rule__EnumLiteralDeclaration__Group_1__0__Impl17159); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__EnumLiteralDeclaration__Group_1__0__Impl17216); 
              after(grammarAccess.getEnumLiteralDeclarationAccess().getEqualsSignKeyword_1_0()); 
 
             }
@@ -23218,16 +23295,16 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumLiteralDeclaration__Group_1__1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8525:1: rule__EnumLiteralDeclaration__Group_1__1 : rule__EnumLiteralDeclaration__Group_1__1__Impl ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8553:1: rule__EnumLiteralDeclaration__Group_1__1 : rule__EnumLiteralDeclaration__Group_1__1__Impl ;
     public final void rule__EnumLiteralDeclaration__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8529:1: ( rule__EnumLiteralDeclaration__Group_1__1__Impl )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8530:2: rule__EnumLiteralDeclaration__Group_1__1__Impl
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8557:1: ( rule__EnumLiteralDeclaration__Group_1__1__Impl )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8558:2: rule__EnumLiteralDeclaration__Group_1__1__Impl
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EnumLiteralDeclaration__Group_1__1__Impl_in_rule__EnumLiteralDeclaration__Group_1__117190);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumLiteralDeclaration__Group_1__1__Impl_in_rule__EnumLiteralDeclaration__Group_1__117247);
             rule__EnumLiteralDeclaration__Group_1__1__Impl();
 
             state._fsp--;
@@ -23251,23 +23328,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumLiteralDeclaration__Group_1__1__Impl"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8536:1: rule__EnumLiteralDeclaration__Group_1__1__Impl : ( ( rule__EnumLiteralDeclaration__LiteralAssignment_1_1 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8564:1: rule__EnumLiteralDeclaration__Group_1__1__Impl : ( ( rule__EnumLiteralDeclaration__LiteralAssignment_1_1 ) ) ;
     public final void rule__EnumLiteralDeclaration__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8540:1: ( ( ( rule__EnumLiteralDeclaration__LiteralAssignment_1_1 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8541:1: ( ( rule__EnumLiteralDeclaration__LiteralAssignment_1_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8568:1: ( ( ( rule__EnumLiteralDeclaration__LiteralAssignment_1_1 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8569:1: ( ( rule__EnumLiteralDeclaration__LiteralAssignment_1_1 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8541:1: ( ( rule__EnumLiteralDeclaration__LiteralAssignment_1_1 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8542:1: ( rule__EnumLiteralDeclaration__LiteralAssignment_1_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8569:1: ( ( rule__EnumLiteralDeclaration__LiteralAssignment_1_1 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8570:1: ( rule__EnumLiteralDeclaration__LiteralAssignment_1_1 )
             {
              before(grammarAccess.getEnumLiteralDeclarationAccess().getLiteralAssignment_1_1()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8543:1: ( rule__EnumLiteralDeclaration__LiteralAssignment_1_1 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8543:2: rule__EnumLiteralDeclaration__LiteralAssignment_1_1
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8571:1: ( rule__EnumLiteralDeclaration__LiteralAssignment_1_1 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8571:2: rule__EnumLiteralDeclaration__LiteralAssignment_1_1
             {
-            pushFollow(FollowSets000.FOLLOW_rule__EnumLiteralDeclaration__LiteralAssignment_1_1_in_rule__EnumLiteralDeclaration__Group_1__1__Impl17217);
+            pushFollow(FollowSets000.FOLLOW_rule__EnumLiteralDeclaration__LiteralAssignment_1_1_in_rule__EnumLiteralDeclaration__Group_1__1__Impl17274);
             rule__EnumLiteralDeclaration__LiteralAssignment_1_1();
 
             state._fsp--;
@@ -23298,20 +23375,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grammar__NameAssignment_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8558:1: rule__Grammar__NameAssignment_1 : ( ruleGrammarID ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8586:1: rule__Grammar__NameAssignment_1 : ( ruleGrammarID ) ;
     public final void rule__Grammar__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8562:1: ( ( ruleGrammarID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8563:1: ( ruleGrammarID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8590:1: ( ( ruleGrammarID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8591:1: ( ruleGrammarID )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8563:1: ( ruleGrammarID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8564:1: ruleGrammarID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8591:1: ( ruleGrammarID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8592:1: ruleGrammarID
             {
              before(grammarAccess.getGrammarAccess().getNameGrammarIDParserRuleCall_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleGrammarID_in_rule__Grammar__NameAssignment_117256);
+            pushFollow(FollowSets000.FOLLOW_ruleGrammarID_in_rule__Grammar__NameAssignment_117313);
             ruleGrammarID();
 
             state._fsp--;
@@ -23339,24 +23416,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grammar__UsedGrammarsAssignment_2_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8573:1: rule__Grammar__UsedGrammarsAssignment_2_1 : ( ( ruleGrammarID ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8601:1: rule__Grammar__UsedGrammarsAssignment_2_1 : ( ( ruleGrammarID ) ) ;
     public final void rule__Grammar__UsedGrammarsAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8577:1: ( ( ( ruleGrammarID ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8578:1: ( ( ruleGrammarID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8605:1: ( ( ( ruleGrammarID ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8606:1: ( ( ruleGrammarID ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8578:1: ( ( ruleGrammarID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8579:1: ( ruleGrammarID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8606:1: ( ( ruleGrammarID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8607:1: ( ruleGrammarID )
             {
              before(grammarAccess.getGrammarAccess().getUsedGrammarsGrammarCrossReference_2_1_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8580:1: ( ruleGrammarID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8581:1: ruleGrammarID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8608:1: ( ruleGrammarID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8609:1: ruleGrammarID
             {
              before(grammarAccess.getGrammarAccess().getUsedGrammarsGrammarGrammarIDParserRuleCall_2_1_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleGrammarID_in_rule__Grammar__UsedGrammarsAssignment_2_117291);
+            pushFollow(FollowSets000.FOLLOW_ruleGrammarID_in_rule__Grammar__UsedGrammarsAssignment_2_117348);
             ruleGrammarID();
 
             state._fsp--;
@@ -23388,24 +23465,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grammar__UsedGrammarsAssignment_2_2_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8592:1: rule__Grammar__UsedGrammarsAssignment_2_2_1 : ( ( ruleGrammarID ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8620:1: rule__Grammar__UsedGrammarsAssignment_2_2_1 : ( ( ruleGrammarID ) ) ;
     public final void rule__Grammar__UsedGrammarsAssignment_2_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8596:1: ( ( ( ruleGrammarID ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8597:1: ( ( ruleGrammarID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8624:1: ( ( ( ruleGrammarID ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8625:1: ( ( ruleGrammarID ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8597:1: ( ( ruleGrammarID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8598:1: ( ruleGrammarID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8625:1: ( ( ruleGrammarID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8626:1: ( ruleGrammarID )
             {
              before(grammarAccess.getGrammarAccess().getUsedGrammarsGrammarCrossReference_2_2_1_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8599:1: ( ruleGrammarID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8600:1: ruleGrammarID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8627:1: ( ruleGrammarID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8628:1: ruleGrammarID
             {
              before(grammarAccess.getGrammarAccess().getUsedGrammarsGrammarGrammarIDParserRuleCall_2_2_1_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleGrammarID_in_rule__Grammar__UsedGrammarsAssignment_2_2_117330);
+            pushFollow(FollowSets000.FOLLOW_ruleGrammarID_in_rule__Grammar__UsedGrammarsAssignment_2_2_117387);
             ruleGrammarID();
 
             state._fsp--;
@@ -23437,24 +23514,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grammar__DefinesHiddenTokensAssignment_3_0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8611:1: rule__Grammar__DefinesHiddenTokensAssignment_3_0 : ( ( 'hidden' ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8639:1: rule__Grammar__DefinesHiddenTokensAssignment_3_0 : ( ( 'hidden' ) ) ;
     public final void rule__Grammar__DefinesHiddenTokensAssignment_3_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8615:1: ( ( ( 'hidden' ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8616:1: ( ( 'hidden' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8643:1: ( ( ( 'hidden' ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8644:1: ( ( 'hidden' ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8616:1: ( ( 'hidden' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8617:1: ( 'hidden' )
-            {
-             before(grammarAccess.getGrammarAccess().getDefinesHiddenTokensHiddenKeyword_3_0_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8618:1: ( 'hidden' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8619:1: 'hidden'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8644:1: ( ( 'hidden' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8645:1: ( 'hidden' )
             {
              before(grammarAccess.getGrammarAccess().getDefinesHiddenTokensHiddenKeyword_3_0_0()); 
-            match(input,43,FollowSets000.FOLLOW_43_in_rule__Grammar__DefinesHiddenTokensAssignment_3_017370); 
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8646:1: ( 'hidden' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8647:1: 'hidden'
+            {
+             before(grammarAccess.getGrammarAccess().getDefinesHiddenTokensHiddenKeyword_3_0_0()); 
+            match(input,43,FollowSets000.FOLLOW_43_in_rule__Grammar__DefinesHiddenTokensAssignment_3_017427); 
              after(grammarAccess.getGrammarAccess().getDefinesHiddenTokensHiddenKeyword_3_0_0()); 
 
             }
@@ -23482,24 +23559,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grammar__HiddenTokensAssignment_3_2_0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8634:1: rule__Grammar__HiddenTokensAssignment_3_2_0 : ( ( RULE_ID ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8662:1: rule__Grammar__HiddenTokensAssignment_3_2_0 : ( ( RULE_ID ) ) ;
     public final void rule__Grammar__HiddenTokensAssignment_3_2_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8638:1: ( ( ( RULE_ID ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8639:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8666:1: ( ( ( RULE_ID ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8667:1: ( ( RULE_ID ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8639:1: ( ( RULE_ID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8640:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8667:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8668:1: ( RULE_ID )
             {
              before(grammarAccess.getGrammarAccess().getHiddenTokensAbstractRuleCrossReference_3_2_0_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8641:1: ( RULE_ID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8642:1: RULE_ID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8669:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8670:1: RULE_ID
             {
              before(grammarAccess.getGrammarAccess().getHiddenTokensAbstractRuleIDTerminalRuleCall_3_2_0_0_1()); 
-            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__Grammar__HiddenTokensAssignment_3_2_017413); 
+            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__Grammar__HiddenTokensAssignment_3_2_017470); 
              after(grammarAccess.getGrammarAccess().getHiddenTokensAbstractRuleIDTerminalRuleCall_3_2_0_0_1()); 
 
             }
@@ -23527,24 +23604,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grammar__HiddenTokensAssignment_3_2_1_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8653:1: rule__Grammar__HiddenTokensAssignment_3_2_1_1 : ( ( RULE_ID ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8681:1: rule__Grammar__HiddenTokensAssignment_3_2_1_1 : ( ( RULE_ID ) ) ;
     public final void rule__Grammar__HiddenTokensAssignment_3_2_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8657:1: ( ( ( RULE_ID ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8658:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8685:1: ( ( ( RULE_ID ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8686:1: ( ( RULE_ID ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8658:1: ( ( RULE_ID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8659:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8686:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8687:1: ( RULE_ID )
             {
              before(grammarAccess.getGrammarAccess().getHiddenTokensAbstractRuleCrossReference_3_2_1_1_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8660:1: ( RULE_ID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8661:1: RULE_ID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8688:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8689:1: RULE_ID
             {
              before(grammarAccess.getGrammarAccess().getHiddenTokensAbstractRuleIDTerminalRuleCall_3_2_1_1_0_1()); 
-            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__Grammar__HiddenTokensAssignment_3_2_1_117452); 
+            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__Grammar__HiddenTokensAssignment_3_2_1_117509); 
              after(grammarAccess.getGrammarAccess().getHiddenTokensAbstractRuleIDTerminalRuleCall_3_2_1_1_0_1()); 
 
             }
@@ -23572,20 +23649,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grammar__MetamodelDeclarationsAssignment_4"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8672:1: rule__Grammar__MetamodelDeclarationsAssignment_4 : ( ruleAbstractMetamodelDeclaration ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8700:1: rule__Grammar__MetamodelDeclarationsAssignment_4 : ( ruleAbstractMetamodelDeclaration ) ;
     public final void rule__Grammar__MetamodelDeclarationsAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8676:1: ( ( ruleAbstractMetamodelDeclaration ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8677:1: ( ruleAbstractMetamodelDeclaration )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8704:1: ( ( ruleAbstractMetamodelDeclaration ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8705:1: ( ruleAbstractMetamodelDeclaration )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8677:1: ( ruleAbstractMetamodelDeclaration )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8678:1: ruleAbstractMetamodelDeclaration
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8705:1: ( ruleAbstractMetamodelDeclaration )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8706:1: ruleAbstractMetamodelDeclaration
             {
              before(grammarAccess.getGrammarAccess().getMetamodelDeclarationsAbstractMetamodelDeclarationParserRuleCall_4_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAbstractMetamodelDeclaration_in_rule__Grammar__MetamodelDeclarationsAssignment_417487);
+            pushFollow(FollowSets000.FOLLOW_ruleAbstractMetamodelDeclaration_in_rule__Grammar__MetamodelDeclarationsAssignment_417544);
             ruleAbstractMetamodelDeclaration();
 
             state._fsp--;
@@ -23613,20 +23690,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grammar__RulesAssignment_5"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8687:1: rule__Grammar__RulesAssignment_5 : ( ruleAbstractRule ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8715:1: rule__Grammar__RulesAssignment_5 : ( ruleAbstractRule ) ;
     public final void rule__Grammar__RulesAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8691:1: ( ( ruleAbstractRule ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8692:1: ( ruleAbstractRule )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8719:1: ( ( ruleAbstractRule ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8720:1: ( ruleAbstractRule )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8692:1: ( ruleAbstractRule )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8693:1: ruleAbstractRule
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8720:1: ( ruleAbstractRule )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8721:1: ruleAbstractRule
             {
              before(grammarAccess.getGrammarAccess().getRulesAbstractRuleParserRuleCall_5_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAbstractRule_in_rule__Grammar__RulesAssignment_517518);
+            pushFollow(FollowSets000.FOLLOW_ruleAbstractRule_in_rule__Grammar__RulesAssignment_517575);
             ruleAbstractRule();
 
             state._fsp--;
@@ -23654,20 +23731,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GeneratedMetamodel__NameAssignment_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8702:1: rule__GeneratedMetamodel__NameAssignment_1 : ( RULE_ID ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8730:1: rule__GeneratedMetamodel__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__GeneratedMetamodel__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8706:1: ( ( RULE_ID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8707:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8734:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8735:1: ( RULE_ID )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8707:1: ( RULE_ID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8708:1: RULE_ID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8735:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8736:1: RULE_ID
             {
              before(grammarAccess.getGeneratedMetamodelAccess().getNameIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__GeneratedMetamodel__NameAssignment_117549); 
+            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__GeneratedMetamodel__NameAssignment_117606); 
              after(grammarAccess.getGeneratedMetamodelAccess().getNameIDTerminalRuleCall_1_0()); 
 
             }
@@ -23691,24 +23768,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GeneratedMetamodel__EPackageAssignment_2"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8717:1: rule__GeneratedMetamodel__EPackageAssignment_2 : ( ( RULE_STRING ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8745:1: rule__GeneratedMetamodel__EPackageAssignment_2 : ( ( RULE_STRING ) ) ;
     public final void rule__GeneratedMetamodel__EPackageAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8721:1: ( ( ( RULE_STRING ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8722:1: ( ( RULE_STRING ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8749:1: ( ( ( RULE_STRING ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8750:1: ( ( RULE_STRING ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8722:1: ( ( RULE_STRING ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8723:1: ( RULE_STRING )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8750:1: ( ( RULE_STRING ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8751:1: ( RULE_STRING )
             {
              before(grammarAccess.getGeneratedMetamodelAccess().getEPackageEPackageCrossReference_2_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8724:1: ( RULE_STRING )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8725:1: RULE_STRING
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8752:1: ( RULE_STRING )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8753:1: RULE_STRING
             {
              before(grammarAccess.getGeneratedMetamodelAccess().getEPackageEPackageSTRINGTerminalRuleCall_2_0_1()); 
-            match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_rule__GeneratedMetamodel__EPackageAssignment_217584); 
+            match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_rule__GeneratedMetamodel__EPackageAssignment_217641); 
              after(grammarAccess.getGeneratedMetamodelAccess().getEPackageEPackageSTRINGTerminalRuleCall_2_0_1()); 
 
             }
@@ -23736,20 +23813,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GeneratedMetamodel__AliasAssignment_3_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8736:1: rule__GeneratedMetamodel__AliasAssignment_3_1 : ( RULE_ID ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8764:1: rule__GeneratedMetamodel__AliasAssignment_3_1 : ( RULE_ID ) ;
     public final void rule__GeneratedMetamodel__AliasAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8740:1: ( ( RULE_ID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8741:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8768:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8769:1: ( RULE_ID )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8741:1: ( RULE_ID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8742:1: RULE_ID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8769:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8770:1: RULE_ID
             {
              before(grammarAccess.getGeneratedMetamodelAccess().getAliasIDTerminalRuleCall_3_1_0()); 
-            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__GeneratedMetamodel__AliasAssignment_3_117619); 
+            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__GeneratedMetamodel__AliasAssignment_3_117676); 
              after(grammarAccess.getGeneratedMetamodelAccess().getAliasIDTerminalRuleCall_3_1_0()); 
 
             }
@@ -23773,24 +23850,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ReferencedMetamodel__EPackageAssignment_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8751:1: rule__ReferencedMetamodel__EPackageAssignment_1 : ( ( RULE_STRING ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8779:1: rule__ReferencedMetamodel__EPackageAssignment_1 : ( ( RULE_STRING ) ) ;
     public final void rule__ReferencedMetamodel__EPackageAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8755:1: ( ( ( RULE_STRING ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8756:1: ( ( RULE_STRING ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8783:1: ( ( ( RULE_STRING ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8784:1: ( ( RULE_STRING ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8756:1: ( ( RULE_STRING ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8757:1: ( RULE_STRING )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8784:1: ( ( RULE_STRING ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8785:1: ( RULE_STRING )
             {
              before(grammarAccess.getReferencedMetamodelAccess().getEPackageEPackageCrossReference_1_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8758:1: ( RULE_STRING )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8759:1: RULE_STRING
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8786:1: ( RULE_STRING )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8787:1: RULE_STRING
             {
              before(grammarAccess.getReferencedMetamodelAccess().getEPackageEPackageSTRINGTerminalRuleCall_1_0_1()); 
-            match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_rule__ReferencedMetamodel__EPackageAssignment_117654); 
+            match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_rule__ReferencedMetamodel__EPackageAssignment_117711); 
              after(grammarAccess.getReferencedMetamodelAccess().getEPackageEPackageSTRINGTerminalRuleCall_1_0_1()); 
 
             }
@@ -23818,20 +23895,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ReferencedMetamodel__AliasAssignment_2_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8770:1: rule__ReferencedMetamodel__AliasAssignment_2_1 : ( RULE_ID ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8798:1: rule__ReferencedMetamodel__AliasAssignment_2_1 : ( RULE_ID ) ;
     public final void rule__ReferencedMetamodel__AliasAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8774:1: ( ( RULE_ID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8775:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8802:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8803:1: ( RULE_ID )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8775:1: ( RULE_ID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8776:1: RULE_ID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8803:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8804:1: RULE_ID
             {
              before(grammarAccess.getReferencedMetamodelAccess().getAliasIDTerminalRuleCall_2_1_0()); 
-            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__ReferencedMetamodel__AliasAssignment_2_117689); 
+            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__ReferencedMetamodel__AliasAssignment_2_117746); 
              after(grammarAccess.getReferencedMetamodelAccess().getAliasIDTerminalRuleCall_2_1_0()); 
 
             }
@@ -23855,24 +23932,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParserRule__FragmentAssignment_0_0_0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8785:1: rule__ParserRule__FragmentAssignment_0_0_0 : ( ( 'fragment' ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8813:1: rule__ParserRule__FragmentAssignment_0_0_0 : ( ( 'fragment' ) ) ;
     public final void rule__ParserRule__FragmentAssignment_0_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8789:1: ( ( ( 'fragment' ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8790:1: ( ( 'fragment' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8817:1: ( ( ( 'fragment' ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8818:1: ( ( 'fragment' ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8790:1: ( ( 'fragment' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8791:1: ( 'fragment' )
-            {
-             before(grammarAccess.getParserRuleAccess().getFragmentFragmentKeyword_0_0_0_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8792:1: ( 'fragment' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8793:1: 'fragment'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8818:1: ( ( 'fragment' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8819:1: ( 'fragment' )
             {
              before(grammarAccess.getParserRuleAccess().getFragmentFragmentKeyword_0_0_0_0()); 
-            match(input,44,FollowSets000.FOLLOW_44_in_rule__ParserRule__FragmentAssignment_0_0_017725); 
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8820:1: ( 'fragment' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8821:1: 'fragment'
+            {
+             before(grammarAccess.getParserRuleAccess().getFragmentFragmentKeyword_0_0_0_0()); 
+            match(input,44,FollowSets000.FOLLOW_44_in_rule__ParserRule__FragmentAssignment_0_0_017782); 
              after(grammarAccess.getParserRuleAccess().getFragmentFragmentKeyword_0_0_0_0()); 
 
             }
@@ -23900,24 +23977,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParserRule__WildcardAssignment_0_0_2_0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8808:1: rule__ParserRule__WildcardAssignment_0_0_2_0 : ( ( '*' ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8836:1: rule__ParserRule__WildcardAssignment_0_0_2_0 : ( ( '*' ) ) ;
     public final void rule__ParserRule__WildcardAssignment_0_0_2_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8812:1: ( ( ( '*' ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8813:1: ( ( '*' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8840:1: ( ( ( '*' ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8841:1: ( ( '*' ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8813:1: ( ( '*' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8814:1: ( '*' )
-            {
-             before(grammarAccess.getParserRuleAccess().getWildcardAsteriskKeyword_0_0_2_0_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8815:1: ( '*' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8816:1: '*'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8841:1: ( ( '*' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8842:1: ( '*' )
             {
              before(grammarAccess.getParserRuleAccess().getWildcardAsteriskKeyword_0_0_2_0_0()); 
-            match(input,12,FollowSets000.FOLLOW_12_in_rule__ParserRule__WildcardAssignment_0_0_2_017769); 
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8843:1: ( '*' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8844:1: '*'
+            {
+             before(grammarAccess.getParserRuleAccess().getWildcardAsteriskKeyword_0_0_2_0_0()); 
+            match(input,12,FollowSets000.FOLLOW_12_in_rule__ParserRule__WildcardAssignment_0_0_2_017826); 
              after(grammarAccess.getParserRuleAccess().getWildcardAsteriskKeyword_0_0_2_0_0()); 
 
             }
@@ -23945,20 +24022,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParserRule__TypeAssignment_0_0_2_1_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8831:1: rule__ParserRule__TypeAssignment_0_0_2_1_1 : ( ruleTypeRef ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8859:1: rule__ParserRule__TypeAssignment_0_0_2_1_1 : ( ruleTypeRef ) ;
     public final void rule__ParserRule__TypeAssignment_0_0_2_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8835:1: ( ( ruleTypeRef ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8836:1: ( ruleTypeRef )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8863:1: ( ( ruleTypeRef ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8864:1: ( ruleTypeRef )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8836:1: ( ruleTypeRef )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8837:1: ruleTypeRef
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8864:1: ( ruleTypeRef )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8865:1: ruleTypeRef
             {
              before(grammarAccess.getParserRuleAccess().getTypeTypeRefParserRuleCall_0_0_2_1_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_rule__ParserRule__TypeAssignment_0_0_2_1_117808);
+            pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_rule__ParserRule__TypeAssignment_0_0_2_1_117865);
             ruleTypeRef();
 
             state._fsp--;
@@ -23986,20 +24063,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParserRule__TypeAssignment_0_1_1_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8846:1: rule__ParserRule__TypeAssignment_0_1_1_1 : ( ruleTypeRef ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8874:1: rule__ParserRule__TypeAssignment_0_1_1_1 : ( ruleTypeRef ) ;
     public final void rule__ParserRule__TypeAssignment_0_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8850:1: ( ( ruleTypeRef ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8851:1: ( ruleTypeRef )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8878:1: ( ( ruleTypeRef ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8879:1: ( ruleTypeRef )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8851:1: ( ruleTypeRef )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8852:1: ruleTypeRef
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8879:1: ( ruleTypeRef )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8880:1: ruleTypeRef
             {
              before(grammarAccess.getParserRuleAccess().getTypeTypeRefParserRuleCall_0_1_1_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_rule__ParserRule__TypeAssignment_0_1_1_117839);
+            pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_rule__ParserRule__TypeAssignment_0_1_1_117896);
             ruleTypeRef();
 
             state._fsp--;
@@ -24027,24 +24104,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParserRule__DefinesHiddenTokensAssignment_1_0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8861:1: rule__ParserRule__DefinesHiddenTokensAssignment_1_0 : ( ( 'hidden' ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8889:1: rule__ParserRule__DefinesHiddenTokensAssignment_1_0 : ( ( 'hidden' ) ) ;
     public final void rule__ParserRule__DefinesHiddenTokensAssignment_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8865:1: ( ( ( 'hidden' ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8866:1: ( ( 'hidden' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8893:1: ( ( ( 'hidden' ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8894:1: ( ( 'hidden' ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8866:1: ( ( 'hidden' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8867:1: ( 'hidden' )
-            {
-             before(grammarAccess.getParserRuleAccess().getDefinesHiddenTokensHiddenKeyword_1_0_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8868:1: ( 'hidden' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8869:1: 'hidden'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8894:1: ( ( 'hidden' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8895:1: ( 'hidden' )
             {
              before(grammarAccess.getParserRuleAccess().getDefinesHiddenTokensHiddenKeyword_1_0_0()); 
-            match(input,43,FollowSets000.FOLLOW_43_in_rule__ParserRule__DefinesHiddenTokensAssignment_1_017875); 
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8896:1: ( 'hidden' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8897:1: 'hidden'
+            {
+             before(grammarAccess.getParserRuleAccess().getDefinesHiddenTokensHiddenKeyword_1_0_0()); 
+            match(input,43,FollowSets000.FOLLOW_43_in_rule__ParserRule__DefinesHiddenTokensAssignment_1_017932); 
              after(grammarAccess.getParserRuleAccess().getDefinesHiddenTokensHiddenKeyword_1_0_0()); 
 
             }
@@ -24072,24 +24149,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParserRule__HiddenTokensAssignment_1_2_0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8884:1: rule__ParserRule__HiddenTokensAssignment_1_2_0 : ( ( RULE_ID ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8912:1: rule__ParserRule__HiddenTokensAssignment_1_2_0 : ( ( RULE_ID ) ) ;
     public final void rule__ParserRule__HiddenTokensAssignment_1_2_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8888:1: ( ( ( RULE_ID ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8889:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8916:1: ( ( ( RULE_ID ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8917:1: ( ( RULE_ID ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8889:1: ( ( RULE_ID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8890:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8917:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8918:1: ( RULE_ID )
             {
              before(grammarAccess.getParserRuleAccess().getHiddenTokensAbstractRuleCrossReference_1_2_0_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8891:1: ( RULE_ID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8892:1: RULE_ID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8919:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8920:1: RULE_ID
             {
              before(grammarAccess.getParserRuleAccess().getHiddenTokensAbstractRuleIDTerminalRuleCall_1_2_0_0_1()); 
-            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__ParserRule__HiddenTokensAssignment_1_2_017918); 
+            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__ParserRule__HiddenTokensAssignment_1_2_017975); 
              after(grammarAccess.getParserRuleAccess().getHiddenTokensAbstractRuleIDTerminalRuleCall_1_2_0_0_1()); 
 
             }
@@ -24117,24 +24194,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParserRule__HiddenTokensAssignment_1_2_1_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8903:1: rule__ParserRule__HiddenTokensAssignment_1_2_1_1 : ( ( RULE_ID ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8931:1: rule__ParserRule__HiddenTokensAssignment_1_2_1_1 : ( ( RULE_ID ) ) ;
     public final void rule__ParserRule__HiddenTokensAssignment_1_2_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8907:1: ( ( ( RULE_ID ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8908:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8935:1: ( ( ( RULE_ID ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8936:1: ( ( RULE_ID ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8908:1: ( ( RULE_ID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8909:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8936:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8937:1: ( RULE_ID )
             {
              before(grammarAccess.getParserRuleAccess().getHiddenTokensAbstractRuleCrossReference_1_2_1_1_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8910:1: ( RULE_ID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8911:1: RULE_ID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8938:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8939:1: RULE_ID
             {
              before(grammarAccess.getParserRuleAccess().getHiddenTokensAbstractRuleIDTerminalRuleCall_1_2_1_1_0_1()); 
-            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__ParserRule__HiddenTokensAssignment_1_2_1_117957); 
+            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__ParserRule__HiddenTokensAssignment_1_2_1_118014); 
              after(grammarAccess.getParserRuleAccess().getHiddenTokensAbstractRuleIDTerminalRuleCall_1_2_1_1_0_1()); 
 
             }
@@ -24162,20 +24239,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ParserRule__AlternativesAssignment_3"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8922:1: rule__ParserRule__AlternativesAssignment_3 : ( ruleAlternatives ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8950:1: rule__ParserRule__AlternativesAssignment_3 : ( ruleAlternatives ) ;
     public final void rule__ParserRule__AlternativesAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8926:1: ( ( ruleAlternatives ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8927:1: ( ruleAlternatives )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8954:1: ( ( ruleAlternatives ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8955:1: ( ruleAlternatives )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8927:1: ( ruleAlternatives )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8928:1: ruleAlternatives
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8955:1: ( ruleAlternatives )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8956:1: ruleAlternatives
             {
              before(grammarAccess.getParserRuleAccess().getAlternativesAlternativesParserRuleCall_3_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAlternatives_in_rule__ParserRule__AlternativesAssignment_317992);
+            pushFollow(FollowSets000.FOLLOW_ruleAlternatives_in_rule__ParserRule__AlternativesAssignment_318049);
             ruleAlternatives();
 
             state._fsp--;
@@ -24203,20 +24280,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RuleNameAndParams__NameAssignment_0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8937:1: rule__RuleNameAndParams__NameAssignment_0 : ( RULE_ID ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8965:1: rule__RuleNameAndParams__NameAssignment_0 : ( RULE_ID ) ;
     public final void rule__RuleNameAndParams__NameAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8941:1: ( ( RULE_ID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8942:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8969:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8970:1: ( RULE_ID )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8942:1: ( RULE_ID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8943:1: RULE_ID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8970:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8971:1: RULE_ID
             {
              before(grammarAccess.getRuleNameAndParamsAccess().getNameIDTerminalRuleCall_0_0()); 
-            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__RuleNameAndParams__NameAssignment_018023); 
+            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__RuleNameAndParams__NameAssignment_018080); 
              after(grammarAccess.getRuleNameAndParamsAccess().getNameIDTerminalRuleCall_0_0()); 
 
             }
@@ -24240,20 +24317,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RuleNameAndParams__ParametersAssignment_1_1_0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8952:1: rule__RuleNameAndParams__ParametersAssignment_1_1_0 : ( ruleParameter ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8980:1: rule__RuleNameAndParams__ParametersAssignment_1_1_0 : ( ruleParameter ) ;
     public final void rule__RuleNameAndParams__ParametersAssignment_1_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8956:1: ( ( ruleParameter ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8957:1: ( ruleParameter )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8984:1: ( ( ruleParameter ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8985:1: ( ruleParameter )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8957:1: ( ruleParameter )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8958:1: ruleParameter
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8985:1: ( ruleParameter )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8986:1: ruleParameter
             {
              before(grammarAccess.getRuleNameAndParamsAccess().getParametersParameterParserRuleCall_1_1_0_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleParameter_in_rule__RuleNameAndParams__ParametersAssignment_1_1_018054);
+            pushFollow(FollowSets000.FOLLOW_ruleParameter_in_rule__RuleNameAndParams__ParametersAssignment_1_1_018111);
             ruleParameter();
 
             state._fsp--;
@@ -24281,20 +24358,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RuleNameAndParams__ParametersAssignment_1_1_1_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8967:1: rule__RuleNameAndParams__ParametersAssignment_1_1_1_1 : ( ruleParameter ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8995:1: rule__RuleNameAndParams__ParametersAssignment_1_1_1_1 : ( ruleParameter ) ;
     public final void rule__RuleNameAndParams__ParametersAssignment_1_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8971:1: ( ( ruleParameter ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8972:1: ( ruleParameter )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8999:1: ( ( ruleParameter ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9000:1: ( ruleParameter )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8972:1: ( ruleParameter )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8973:1: ruleParameter
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9000:1: ( ruleParameter )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9001:1: ruleParameter
             {
              before(grammarAccess.getRuleNameAndParamsAccess().getParametersParameterParserRuleCall_1_1_1_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleParameter_in_rule__RuleNameAndParams__ParametersAssignment_1_1_1_118085);
+            pushFollow(FollowSets000.FOLLOW_ruleParameter_in_rule__RuleNameAndParams__ParametersAssignment_1_1_1_118142);
             ruleParameter();
 
             state._fsp--;
@@ -24322,20 +24399,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Parameter__NameAssignment"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8982:1: rule__Parameter__NameAssignment : ( RULE_ID ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9010:1: rule__Parameter__NameAssignment : ( RULE_ID ) ;
     public final void rule__Parameter__NameAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8986:1: ( ( RULE_ID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8987:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9014:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9015:1: ( RULE_ID )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8987:1: ( RULE_ID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8988:1: RULE_ID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9015:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9016:1: RULE_ID
             {
              before(grammarAccess.getParameterAccess().getNameIDTerminalRuleCall_0()); 
-            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__Parameter__NameAssignment18116); 
+            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__Parameter__NameAssignment18173); 
              after(grammarAccess.getParameterAccess().getNameIDTerminalRuleCall_0()); 
 
             }
@@ -24359,24 +24436,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeRef__MetamodelAssignment_0_0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:8997:1: rule__TypeRef__MetamodelAssignment_0_0 : ( ( RULE_ID ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9025:1: rule__TypeRef__MetamodelAssignment_0_0 : ( ( RULE_ID ) ) ;
     public final void rule__TypeRef__MetamodelAssignment_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9001:1: ( ( ( RULE_ID ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9002:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9029:1: ( ( ( RULE_ID ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9030:1: ( ( RULE_ID ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9002:1: ( ( RULE_ID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9003:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9030:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9031:1: ( RULE_ID )
             {
              before(grammarAccess.getTypeRefAccess().getMetamodelAbstractMetamodelDeclarationCrossReference_0_0_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9004:1: ( RULE_ID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9005:1: RULE_ID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9032:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9033:1: RULE_ID
             {
              before(grammarAccess.getTypeRefAccess().getMetamodelAbstractMetamodelDeclarationIDTerminalRuleCall_0_0_0_1()); 
-            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__TypeRef__MetamodelAssignment_0_018151); 
+            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__TypeRef__MetamodelAssignment_0_018208); 
              after(grammarAccess.getTypeRefAccess().getMetamodelAbstractMetamodelDeclarationIDTerminalRuleCall_0_0_0_1()); 
 
             }
@@ -24404,24 +24481,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TypeRef__ClassifierAssignment_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9016:1: rule__TypeRef__ClassifierAssignment_1 : ( ( RULE_ID ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9044:1: rule__TypeRef__ClassifierAssignment_1 : ( ( RULE_ID ) ) ;
     public final void rule__TypeRef__ClassifierAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9020:1: ( ( ( RULE_ID ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9021:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9048:1: ( ( ( RULE_ID ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9049:1: ( ( RULE_ID ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9021:1: ( ( RULE_ID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9022:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9049:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9050:1: ( RULE_ID )
             {
              before(grammarAccess.getTypeRefAccess().getClassifierEClassifierCrossReference_1_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9023:1: ( RULE_ID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9024:1: RULE_ID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9051:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9052:1: RULE_ID
             {
              before(grammarAccess.getTypeRefAccess().getClassifierEClassifierIDTerminalRuleCall_1_0_1()); 
-            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__TypeRef__ClassifierAssignment_118190); 
+            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__TypeRef__ClassifierAssignment_118247); 
              after(grammarAccess.getTypeRefAccess().getClassifierEClassifierIDTerminalRuleCall_1_0_1()); 
 
             }
@@ -24449,20 +24526,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Alternatives__ElementsAssignment_1_1_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9035:1: rule__Alternatives__ElementsAssignment_1_1_1 : ( ruleConditionalBranch ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9063:1: rule__Alternatives__ElementsAssignment_1_1_1 : ( ruleConditionalBranch ) ;
     public final void rule__Alternatives__ElementsAssignment_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9039:1: ( ( ruleConditionalBranch ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9040:1: ( ruleConditionalBranch )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9067:1: ( ( ruleConditionalBranch ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9068:1: ( ruleConditionalBranch )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9040:1: ( ruleConditionalBranch )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9041:1: ruleConditionalBranch
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9068:1: ( ruleConditionalBranch )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9069:1: ruleConditionalBranch
             {
              before(grammarAccess.getAlternativesAccess().getElementsConditionalBranchParserRuleCall_1_1_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleConditionalBranch_in_rule__Alternatives__ElementsAssignment_1_1_118225);
+            pushFollow(FollowSets000.FOLLOW_ruleConditionalBranch_in_rule__Alternatives__ElementsAssignment_1_1_118282);
             ruleConditionalBranch();
 
             state._fsp--;
@@ -24490,20 +24567,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConditionalBranch__FilteredAssignment_1_2"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9050:1: rule__ConditionalBranch__FilteredAssignment_1_2 : ( ruleInverseLiteralValue ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9078:1: rule__ConditionalBranch__FilteredAssignment_1_2 : ( ruleInverseLiteralValue ) ;
     public final void rule__ConditionalBranch__FilteredAssignment_1_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9054:1: ( ( ruleInverseLiteralValue ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9055:1: ( ruleInverseLiteralValue )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9082:1: ( ( ruleInverseLiteralValue ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9083:1: ( ruleInverseLiteralValue )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9055:1: ( ruleInverseLiteralValue )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9056:1: ruleInverseLiteralValue
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9083:1: ( ruleInverseLiteralValue )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9084:1: ruleInverseLiteralValue
             {
              before(grammarAccess.getConditionalBranchAccess().getFilteredInverseLiteralValueParserRuleCall_1_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleInverseLiteralValue_in_rule__ConditionalBranch__FilteredAssignment_1_218256);
+            pushFollow(FollowSets000.FOLLOW_ruleInverseLiteralValue_in_rule__ConditionalBranch__FilteredAssignment_1_218313);
             ruleInverseLiteralValue();
 
             state._fsp--;
@@ -24531,24 +24608,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConditionalBranch__ParameterAssignment_1_3"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9065:1: rule__ConditionalBranch__ParameterAssignment_1_3 : ( ( RULE_ID ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9093:1: rule__ConditionalBranch__ParameterAssignment_1_3 : ( ( RULE_ID ) ) ;
     public final void rule__ConditionalBranch__ParameterAssignment_1_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9069:1: ( ( ( RULE_ID ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9070:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9097:1: ( ( ( RULE_ID ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9098:1: ( ( RULE_ID ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9070:1: ( ( RULE_ID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9071:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9098:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9099:1: ( RULE_ID )
             {
              before(grammarAccess.getConditionalBranchAccess().getParameterParameterCrossReference_1_3_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9072:1: ( RULE_ID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9073:1: RULE_ID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9100:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9101:1: RULE_ID
             {
              before(grammarAccess.getConditionalBranchAccess().getParameterParameterIDTerminalRuleCall_1_3_0_1()); 
-            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__ConditionalBranch__ParameterAssignment_1_318291); 
+            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__ConditionalBranch__ParameterAssignment_1_318348); 
              after(grammarAccess.getConditionalBranchAccess().getParameterParameterIDTerminalRuleCall_1_3_0_1()); 
 
             }
@@ -24576,20 +24653,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__ConditionalBranch__GuardedElementAssignment_1_5"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9084:1: rule__ConditionalBranch__GuardedElementAssignment_1_5 : ( ruleUnorderedGroup ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9112:1: rule__ConditionalBranch__GuardedElementAssignment_1_5 : ( ruleUnorderedGroup ) ;
     public final void rule__ConditionalBranch__GuardedElementAssignment_1_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9088:1: ( ( ruleUnorderedGroup ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9089:1: ( ruleUnorderedGroup )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9116:1: ( ( ruleUnorderedGroup ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9117:1: ( ruleUnorderedGroup )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9089:1: ( ruleUnorderedGroup )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9090:1: ruleUnorderedGroup
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9117:1: ( ruleUnorderedGroup )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9118:1: ruleUnorderedGroup
             {
              before(grammarAccess.getConditionalBranchAccess().getGuardedElementUnorderedGroupParserRuleCall_1_5_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleUnorderedGroup_in_rule__ConditionalBranch__GuardedElementAssignment_1_518326);
+            pushFollow(FollowSets000.FOLLOW_ruleUnorderedGroup_in_rule__ConditionalBranch__GuardedElementAssignment_1_518383);
             ruleUnorderedGroup();
 
             state._fsp--;
@@ -24617,20 +24694,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UnorderedGroup__ElementsAssignment_1_1_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9099:1: rule__UnorderedGroup__ElementsAssignment_1_1_1 : ( ruleGroup ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9127:1: rule__UnorderedGroup__ElementsAssignment_1_1_1 : ( ruleGroup ) ;
     public final void rule__UnorderedGroup__ElementsAssignment_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9103:1: ( ( ruleGroup ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9104:1: ( ruleGroup )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9131:1: ( ( ruleGroup ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9132:1: ( ruleGroup )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9104:1: ( ruleGroup )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9105:1: ruleGroup
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9132:1: ( ruleGroup )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9133:1: ruleGroup
             {
              before(grammarAccess.getUnorderedGroupAccess().getElementsGroupParserRuleCall_1_1_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleGroup_in_rule__UnorderedGroup__ElementsAssignment_1_1_118357);
+            pushFollow(FollowSets000.FOLLOW_ruleGroup_in_rule__UnorderedGroup__ElementsAssignment_1_1_118414);
             ruleGroup();
 
             state._fsp--;
@@ -24658,20 +24735,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Group__ElementsAssignment_1_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9114:1: rule__Group__ElementsAssignment_1_1 : ( ruleAbstractToken ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9142:1: rule__Group__ElementsAssignment_1_1 : ( ruleAbstractToken ) ;
     public final void rule__Group__ElementsAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9118:1: ( ( ruleAbstractToken ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9119:1: ( ruleAbstractToken )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9146:1: ( ( ruleAbstractToken ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9147:1: ( ruleAbstractToken )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9119:1: ( ruleAbstractToken )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9120:1: ruleAbstractToken
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9147:1: ( ruleAbstractToken )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9148:1: ruleAbstractToken
             {
              before(grammarAccess.getGroupAccess().getElementsAbstractTokenParserRuleCall_1_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAbstractToken_in_rule__Group__ElementsAssignment_1_118388);
+            pushFollow(FollowSets000.FOLLOW_ruleAbstractToken_in_rule__Group__ElementsAssignment_1_118445);
             ruleAbstractToken();
 
             state._fsp--;
@@ -24699,23 +24776,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AbstractTokenWithCardinality__CardinalityAssignment_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9129:1: rule__AbstractTokenWithCardinality__CardinalityAssignment_1 : ( ( rule__AbstractTokenWithCardinality__CardinalityAlternatives_1_0 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9157:1: rule__AbstractTokenWithCardinality__CardinalityAssignment_1 : ( ( rule__AbstractTokenWithCardinality__CardinalityAlternatives_1_0 ) ) ;
     public final void rule__AbstractTokenWithCardinality__CardinalityAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9133:1: ( ( ( rule__AbstractTokenWithCardinality__CardinalityAlternatives_1_0 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9134:1: ( ( rule__AbstractTokenWithCardinality__CardinalityAlternatives_1_0 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9161:1: ( ( ( rule__AbstractTokenWithCardinality__CardinalityAlternatives_1_0 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9162:1: ( ( rule__AbstractTokenWithCardinality__CardinalityAlternatives_1_0 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9134:1: ( ( rule__AbstractTokenWithCardinality__CardinalityAlternatives_1_0 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9135:1: ( rule__AbstractTokenWithCardinality__CardinalityAlternatives_1_0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9162:1: ( ( rule__AbstractTokenWithCardinality__CardinalityAlternatives_1_0 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9163:1: ( rule__AbstractTokenWithCardinality__CardinalityAlternatives_1_0 )
             {
              before(grammarAccess.getAbstractTokenWithCardinalityAccess().getCardinalityAlternatives_1_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9136:1: ( rule__AbstractTokenWithCardinality__CardinalityAlternatives_1_0 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9136:2: rule__AbstractTokenWithCardinality__CardinalityAlternatives_1_0
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9164:1: ( rule__AbstractTokenWithCardinality__CardinalityAlternatives_1_0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9164:2: rule__AbstractTokenWithCardinality__CardinalityAlternatives_1_0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__AbstractTokenWithCardinality__CardinalityAlternatives_1_0_in_rule__AbstractTokenWithCardinality__CardinalityAssignment_118419);
+            pushFollow(FollowSets000.FOLLOW_rule__AbstractTokenWithCardinality__CardinalityAlternatives_1_0_in_rule__AbstractTokenWithCardinality__CardinalityAssignment_118476);
             rule__AbstractTokenWithCardinality__CardinalityAlternatives_1_0();
 
             state._fsp--;
@@ -24746,20 +24823,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Action__TypeAssignment_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9145:1: rule__Action__TypeAssignment_1 : ( ruleTypeRef ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9173:1: rule__Action__TypeAssignment_1 : ( ruleTypeRef ) ;
     public final void rule__Action__TypeAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9149:1: ( ( ruleTypeRef ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9150:1: ( ruleTypeRef )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9177:1: ( ( ruleTypeRef ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9178:1: ( ruleTypeRef )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9150:1: ( ruleTypeRef )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9151:1: ruleTypeRef
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9178:1: ( ruleTypeRef )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9179:1: ruleTypeRef
             {
              before(grammarAccess.getActionAccess().getTypeTypeRefParserRuleCall_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_rule__Action__TypeAssignment_118452);
+            pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_rule__Action__TypeAssignment_118509);
             ruleTypeRef();
 
             state._fsp--;
@@ -24787,20 +24864,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Action__FeatureAssignment_2_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9160:1: rule__Action__FeatureAssignment_2_1 : ( RULE_ID ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9188:1: rule__Action__FeatureAssignment_2_1 : ( RULE_ID ) ;
     public final void rule__Action__FeatureAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9164:1: ( ( RULE_ID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9165:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9192:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9193:1: ( RULE_ID )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9165:1: ( RULE_ID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9166:1: RULE_ID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9193:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9194:1: RULE_ID
             {
              before(grammarAccess.getActionAccess().getFeatureIDTerminalRuleCall_2_1_0()); 
-            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__Action__FeatureAssignment_2_118483); 
+            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__Action__FeatureAssignment_2_118540); 
              after(grammarAccess.getActionAccess().getFeatureIDTerminalRuleCall_2_1_0()); 
 
             }
@@ -24824,23 +24901,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Action__OperatorAssignment_2_2"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9175:1: rule__Action__OperatorAssignment_2_2 : ( ( rule__Action__OperatorAlternatives_2_2_0 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9203:1: rule__Action__OperatorAssignment_2_2 : ( ( rule__Action__OperatorAlternatives_2_2_0 ) ) ;
     public final void rule__Action__OperatorAssignment_2_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9179:1: ( ( ( rule__Action__OperatorAlternatives_2_2_0 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9180:1: ( ( rule__Action__OperatorAlternatives_2_2_0 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9207:1: ( ( ( rule__Action__OperatorAlternatives_2_2_0 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9208:1: ( ( rule__Action__OperatorAlternatives_2_2_0 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9180:1: ( ( rule__Action__OperatorAlternatives_2_2_0 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9181:1: ( rule__Action__OperatorAlternatives_2_2_0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9208:1: ( ( rule__Action__OperatorAlternatives_2_2_0 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9209:1: ( rule__Action__OperatorAlternatives_2_2_0 )
             {
              before(grammarAccess.getActionAccess().getOperatorAlternatives_2_2_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9182:1: ( rule__Action__OperatorAlternatives_2_2_0 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9182:2: rule__Action__OperatorAlternatives_2_2_0
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9210:1: ( rule__Action__OperatorAlternatives_2_2_0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9210:2: rule__Action__OperatorAlternatives_2_2_0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Action__OperatorAlternatives_2_2_0_in_rule__Action__OperatorAssignment_2_218514);
+            pushFollow(FollowSets000.FOLLOW_rule__Action__OperatorAlternatives_2_2_0_in_rule__Action__OperatorAssignment_2_218571);
             rule__Action__OperatorAlternatives_2_2_0();
 
             state._fsp--;
@@ -24871,20 +24948,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Keyword__ValueAssignment"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9191:1: rule__Keyword__ValueAssignment : ( RULE_STRING ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9219:1: rule__Keyword__ValueAssignment : ( RULE_STRING ) ;
     public final void rule__Keyword__ValueAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9195:1: ( ( RULE_STRING ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9196:1: ( RULE_STRING )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9223:1: ( ( RULE_STRING ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9224:1: ( RULE_STRING )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9196:1: ( RULE_STRING )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9197:1: RULE_STRING
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9224:1: ( RULE_STRING )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9225:1: RULE_STRING
             {
              before(grammarAccess.getKeywordAccess().getValueSTRINGTerminalRuleCall_0()); 
-            match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_rule__Keyword__ValueAssignment18547); 
+            match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_rule__Keyword__ValueAssignment18604); 
              after(grammarAccess.getKeywordAccess().getValueSTRINGTerminalRuleCall_0()); 
 
             }
@@ -24908,24 +24985,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RuleCall__RuleAssignment_0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9206:1: rule__RuleCall__RuleAssignment_0 : ( ( ruleRuleID ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9234:1: rule__RuleCall__RuleAssignment_0 : ( ( ruleRuleID ) ) ;
     public final void rule__RuleCall__RuleAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9210:1: ( ( ( ruleRuleID ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9211:1: ( ( ruleRuleID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9238:1: ( ( ( ruleRuleID ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9239:1: ( ( ruleRuleID ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9211:1: ( ( ruleRuleID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9212:1: ( ruleRuleID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9239:1: ( ( ruleRuleID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9240:1: ( ruleRuleID )
             {
              before(grammarAccess.getRuleCallAccess().getRuleAbstractRuleCrossReference_0_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9213:1: ( ruleRuleID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9214:1: ruleRuleID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9241:1: ( ruleRuleID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9242:1: ruleRuleID
             {
              before(grammarAccess.getRuleCallAccess().getRuleAbstractRuleRuleIDParserRuleCall_0_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleRuleID_in_rule__RuleCall__RuleAssignment_018582);
+            pushFollow(FollowSets000.FOLLOW_ruleRuleID_in_rule__RuleCall__RuleAssignment_018639);
             ruleRuleID();
 
             state._fsp--;
@@ -24957,20 +25034,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RuleCall__ArgumentsAssignment_1_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9225:1: rule__RuleCall__ArgumentsAssignment_1_1 : ( ruleNamedArgument ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9253:1: rule__RuleCall__ArgumentsAssignment_1_1 : ( ruleNamedArgument ) ;
     public final void rule__RuleCall__ArgumentsAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9229:1: ( ( ruleNamedArgument ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9230:1: ( ruleNamedArgument )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9257:1: ( ( ruleNamedArgument ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9258:1: ( ruleNamedArgument )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9230:1: ( ruleNamedArgument )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9231:1: ruleNamedArgument
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9258:1: ( ruleNamedArgument )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9259:1: ruleNamedArgument
             {
              before(grammarAccess.getRuleCallAccess().getArgumentsNamedArgumentParserRuleCall_1_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleNamedArgument_in_rule__RuleCall__ArgumentsAssignment_1_118617);
+            pushFollow(FollowSets000.FOLLOW_ruleNamedArgument_in_rule__RuleCall__ArgumentsAssignment_1_118674);
             ruleNamedArgument();
 
             state._fsp--;
@@ -24998,20 +25075,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__RuleCall__ArgumentsAssignment_1_2_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9240:1: rule__RuleCall__ArgumentsAssignment_1_2_1 : ( ruleNamedArgument ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9268:1: rule__RuleCall__ArgumentsAssignment_1_2_1 : ( ruleNamedArgument ) ;
     public final void rule__RuleCall__ArgumentsAssignment_1_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9244:1: ( ( ruleNamedArgument ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9245:1: ( ruleNamedArgument )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9272:1: ( ( ruleNamedArgument ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9273:1: ( ruleNamedArgument )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9245:1: ( ruleNamedArgument )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9246:1: ruleNamedArgument
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9273:1: ( ruleNamedArgument )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9274:1: ruleNamedArgument
             {
              before(grammarAccess.getRuleCallAccess().getArgumentsNamedArgumentParserRuleCall_1_2_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleNamedArgument_in_rule__RuleCall__ArgumentsAssignment_1_2_118648);
+            pushFollow(FollowSets000.FOLLOW_ruleNamedArgument_in_rule__RuleCall__ArgumentsAssignment_1_2_118705);
             ruleNamedArgument();
 
             state._fsp--;
@@ -25039,20 +25116,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NamedArgument__LiteralValueAssignment_0_0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9255:1: rule__NamedArgument__LiteralValueAssignment_0_0 : ( ruleLiteralValue ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9283:1: rule__NamedArgument__LiteralValueAssignment_0_0 : ( ruleLiteralValue ) ;
     public final void rule__NamedArgument__LiteralValueAssignment_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9259:1: ( ( ruleLiteralValue ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9260:1: ( ruleLiteralValue )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9287:1: ( ( ruleLiteralValue ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9288:1: ( ruleLiteralValue )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9260:1: ( ruleLiteralValue )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9261:1: ruleLiteralValue
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9288:1: ( ruleLiteralValue )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9289:1: ruleLiteralValue
             {
              before(grammarAccess.getNamedArgumentAccess().getLiteralValueLiteralValueParserRuleCall_0_0_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleLiteralValue_in_rule__NamedArgument__LiteralValueAssignment_0_018679);
+            pushFollow(FollowSets000.FOLLOW_ruleLiteralValue_in_rule__NamedArgument__LiteralValueAssignment_0_018736);
             ruleLiteralValue();
 
             state._fsp--;
@@ -25080,24 +25157,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NamedArgument__ParameterAssignment_0_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9270:1: rule__NamedArgument__ParameterAssignment_0_1 : ( ( RULE_ID ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9298:1: rule__NamedArgument__ParameterAssignment_0_1 : ( ( RULE_ID ) ) ;
     public final void rule__NamedArgument__ParameterAssignment_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9274:1: ( ( ( RULE_ID ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9275:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9302:1: ( ( ( RULE_ID ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9303:1: ( ( RULE_ID ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9275:1: ( ( RULE_ID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9276:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9303:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9304:1: ( RULE_ID )
             {
              before(grammarAccess.getNamedArgumentAccess().getParameterParameterCrossReference_0_1_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9277:1: ( RULE_ID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9278:1: RULE_ID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9305:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9306:1: RULE_ID
             {
              before(grammarAccess.getNamedArgumentAccess().getParameterParameterIDTerminalRuleCall_0_1_0_1()); 
-            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__NamedArgument__ParameterAssignment_0_118714); 
+            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__NamedArgument__ParameterAssignment_0_118771); 
              after(grammarAccess.getNamedArgumentAccess().getParameterParameterIDTerminalRuleCall_0_1_0_1()); 
 
             }
@@ -25125,24 +25202,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NamedArgument__ParameterAssignment_1_0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9289:1: rule__NamedArgument__ParameterAssignment_1_0 : ( ( RULE_ID ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9317:1: rule__NamedArgument__ParameterAssignment_1_0 : ( ( RULE_ID ) ) ;
     public final void rule__NamedArgument__ParameterAssignment_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9293:1: ( ( ( RULE_ID ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9294:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9321:1: ( ( ( RULE_ID ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9322:1: ( ( RULE_ID ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9294:1: ( ( RULE_ID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9295:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9322:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9323:1: ( RULE_ID )
             {
              before(grammarAccess.getNamedArgumentAccess().getParameterParameterCrossReference_1_0_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9296:1: ( RULE_ID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9297:1: RULE_ID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9324:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9325:1: RULE_ID
             {
              before(grammarAccess.getNamedArgumentAccess().getParameterParameterIDTerminalRuleCall_1_0_0_1()); 
-            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__NamedArgument__ParameterAssignment_1_018753); 
+            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__NamedArgument__ParameterAssignment_1_018810); 
              after(grammarAccess.getNamedArgumentAccess().getParameterParameterIDTerminalRuleCall_1_0_0_1()); 
 
             }
@@ -25169,30 +25246,30 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__NamedArgument__ParameterAssignment_1_0"
 
 
-    // $ANTLR start "rule__NamedArgument__ValueAssignment_1_2"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9308:1: rule__NamedArgument__ValueAssignment_1_2 : ( ( RULE_ID ) ) ;
-    public final void rule__NamedArgument__ValueAssignment_1_2() throws RecognitionException {
+    // $ANTLR start "rule__NamedArgument__ExplicitValueAssignment_1_1_0"
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9336:1: rule__NamedArgument__ExplicitValueAssignment_1_1_0 : ( ( '=' ) ) ;
+    public final void rule__NamedArgument__ExplicitValueAssignment_1_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9312:1: ( ( ( RULE_ID ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9313:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9340:1: ( ( ( '=' ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9341:1: ( ( '=' ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9313:1: ( ( RULE_ID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9314:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9341:1: ( ( '=' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9342:1: ( '=' )
             {
-             before(grammarAccess.getNamedArgumentAccess().getValueParameterCrossReference_1_2_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9315:1: ( RULE_ID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9316:1: RULE_ID
+             before(grammarAccess.getNamedArgumentAccess().getExplicitValueEqualsSignKeyword_1_1_0_0()); 
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9343:1: ( '=' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9344:1: '='
             {
-             before(grammarAccess.getNamedArgumentAccess().getValueParameterIDTerminalRuleCall_1_2_0_1()); 
-            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__NamedArgument__ValueAssignment_1_218792); 
-             after(grammarAccess.getNamedArgumentAccess().getValueParameterIDTerminalRuleCall_1_2_0_1()); 
+             before(grammarAccess.getNamedArgumentAccess().getExplicitValueEqualsSignKeyword_1_1_0_0()); 
+            match(input,14,FollowSets000.FOLLOW_14_in_rule__NamedArgument__ExplicitValueAssignment_1_1_018850); 
+             after(grammarAccess.getNamedArgumentAccess().getExplicitValueEqualsSignKeyword_1_1_0_0()); 
 
             }
 
-             after(grammarAccess.getNamedArgumentAccess().getValueParameterCrossReference_1_2_0()); 
+             after(grammarAccess.getNamedArgumentAccess().getExplicitValueEqualsSignKeyword_1_1_0_0()); 
 
             }
 
@@ -25211,28 +25288,73 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__NamedArgument__ValueAssignment_1_2"
+    // $ANTLR end "rule__NamedArgument__ExplicitValueAssignment_1_1_0"
+
+
+    // $ANTLR start "rule__NamedArgument__ValueAssignment_1_1_1"
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9359:1: rule__NamedArgument__ValueAssignment_1_1_1 : ( ( RULE_ID ) ) ;
+    public final void rule__NamedArgument__ValueAssignment_1_1_1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9363:1: ( ( ( RULE_ID ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9364:1: ( ( RULE_ID ) )
+            {
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9364:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9365:1: ( RULE_ID )
+            {
+             before(grammarAccess.getNamedArgumentAccess().getValueParameterCrossReference_1_1_1_0()); 
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9366:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9367:1: RULE_ID
+            {
+             before(grammarAccess.getNamedArgumentAccess().getValueParameterIDTerminalRuleCall_1_1_1_0_1()); 
+            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__NamedArgument__ValueAssignment_1_1_118893); 
+             after(grammarAccess.getNamedArgumentAccess().getValueParameterIDTerminalRuleCall_1_1_1_0_1()); 
+
+            }
+
+             after(grammarAccess.getNamedArgumentAccess().getValueParameterCrossReference_1_1_1_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__NamedArgument__ValueAssignment_1_1_1"
 
 
     // $ANTLR start "rule__TerminalRuleCall__RuleAssignment"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9327:1: rule__TerminalRuleCall__RuleAssignment : ( ( ruleRuleID ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9378:1: rule__TerminalRuleCall__RuleAssignment : ( ( ruleRuleID ) ) ;
     public final void rule__TerminalRuleCall__RuleAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9331:1: ( ( ( ruleRuleID ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9332:1: ( ( ruleRuleID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9382:1: ( ( ( ruleRuleID ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9383:1: ( ( ruleRuleID ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9332:1: ( ( ruleRuleID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9333:1: ( ruleRuleID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9383:1: ( ( ruleRuleID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9384:1: ( ruleRuleID )
             {
              before(grammarAccess.getTerminalRuleCallAccess().getRuleAbstractRuleCrossReference_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9334:1: ( ruleRuleID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9335:1: ruleRuleID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9385:1: ( ruleRuleID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9386:1: ruleRuleID
             {
              before(grammarAccess.getTerminalRuleCallAccess().getRuleAbstractRuleRuleIDParserRuleCall_0_1()); 
-            pushFollow(FollowSets000.FOLLOW_ruleRuleID_in_rule__TerminalRuleCall__RuleAssignment18831);
+            pushFollow(FollowSets000.FOLLOW_ruleRuleID_in_rule__TerminalRuleCall__RuleAssignment18932);
             ruleRuleID();
 
             state._fsp--;
@@ -25264,24 +25386,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PredicatedKeyword__PredicatedAssignment_0_0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9346:1: rule__PredicatedKeyword__PredicatedAssignment_0_0 : ( ( '=>' ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9397:1: rule__PredicatedKeyword__PredicatedAssignment_0_0 : ( ( '=>' ) ) ;
     public final void rule__PredicatedKeyword__PredicatedAssignment_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9350:1: ( ( ( '=>' ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9351:1: ( ( '=>' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9401:1: ( ( ( '=>' ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9402:1: ( ( '=>' ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9351:1: ( ( '=>' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9352:1: ( '=>' )
-            {
-             before(grammarAccess.getPredicatedKeywordAccess().getPredicatedEqualsSignGreaterThanSignKeyword_0_0_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9353:1: ( '=>' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9354:1: '=>'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9402:1: ( ( '=>' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9403:1: ( '=>' )
             {
              before(grammarAccess.getPredicatedKeywordAccess().getPredicatedEqualsSignGreaterThanSignKeyword_0_0_0()); 
-            match(input,45,FollowSets000.FOLLOW_45_in_rule__PredicatedKeyword__PredicatedAssignment_0_018871); 
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9404:1: ( '=>' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9405:1: '=>'
+            {
+             before(grammarAccess.getPredicatedKeywordAccess().getPredicatedEqualsSignGreaterThanSignKeyword_0_0_0()); 
+            match(input,45,FollowSets000.FOLLOW_45_in_rule__PredicatedKeyword__PredicatedAssignment_0_018972); 
              after(grammarAccess.getPredicatedKeywordAccess().getPredicatedEqualsSignGreaterThanSignKeyword_0_0_0()); 
 
             }
@@ -25309,24 +25431,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PredicatedKeyword__FirstSetPredicatedAssignment_0_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9369:1: rule__PredicatedKeyword__FirstSetPredicatedAssignment_0_1 : ( ( '->' ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9420:1: rule__PredicatedKeyword__FirstSetPredicatedAssignment_0_1 : ( ( '->' ) ) ;
     public final void rule__PredicatedKeyword__FirstSetPredicatedAssignment_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9373:1: ( ( ( '->' ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9374:1: ( ( '->' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9424:1: ( ( ( '->' ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9425:1: ( ( '->' ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9374:1: ( ( '->' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9375:1: ( '->' )
-            {
-             before(grammarAccess.getPredicatedKeywordAccess().getFirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9376:1: ( '->' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9377:1: '->'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9425:1: ( ( '->' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9426:1: ( '->' )
             {
              before(grammarAccess.getPredicatedKeywordAccess().getFirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0()); 
-            match(input,39,FollowSets000.FOLLOW_39_in_rule__PredicatedKeyword__FirstSetPredicatedAssignment_0_118915); 
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9427:1: ( '->' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9428:1: '->'
+            {
+             before(grammarAccess.getPredicatedKeywordAccess().getFirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0()); 
+            match(input,39,FollowSets000.FOLLOW_39_in_rule__PredicatedKeyword__FirstSetPredicatedAssignment_0_119016); 
              after(grammarAccess.getPredicatedKeywordAccess().getFirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0()); 
 
             }
@@ -25354,20 +25476,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PredicatedKeyword__ValueAssignment_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9392:1: rule__PredicatedKeyword__ValueAssignment_1 : ( RULE_STRING ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9443:1: rule__PredicatedKeyword__ValueAssignment_1 : ( RULE_STRING ) ;
     public final void rule__PredicatedKeyword__ValueAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9396:1: ( ( RULE_STRING ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9397:1: ( RULE_STRING )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9447:1: ( ( RULE_STRING ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9448:1: ( RULE_STRING )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9397:1: ( RULE_STRING )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9398:1: RULE_STRING
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9448:1: ( RULE_STRING )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9449:1: RULE_STRING
             {
              before(grammarAccess.getPredicatedKeywordAccess().getValueSTRINGTerminalRuleCall_1_0()); 
-            match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_rule__PredicatedKeyword__ValueAssignment_118954); 
+            match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_rule__PredicatedKeyword__ValueAssignment_119055); 
              after(grammarAccess.getPredicatedKeywordAccess().getValueSTRINGTerminalRuleCall_1_0()); 
 
             }
@@ -25391,24 +25513,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PredicatedRuleCall__PredicatedAssignment_0_0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9407:1: rule__PredicatedRuleCall__PredicatedAssignment_0_0 : ( ( '=>' ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9458:1: rule__PredicatedRuleCall__PredicatedAssignment_0_0 : ( ( '=>' ) ) ;
     public final void rule__PredicatedRuleCall__PredicatedAssignment_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9411:1: ( ( ( '=>' ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9412:1: ( ( '=>' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9462:1: ( ( ( '=>' ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9463:1: ( ( '=>' ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9412:1: ( ( '=>' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9413:1: ( '=>' )
-            {
-             before(grammarAccess.getPredicatedRuleCallAccess().getPredicatedEqualsSignGreaterThanSignKeyword_0_0_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9414:1: ( '=>' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9415:1: '=>'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9463:1: ( ( '=>' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9464:1: ( '=>' )
             {
              before(grammarAccess.getPredicatedRuleCallAccess().getPredicatedEqualsSignGreaterThanSignKeyword_0_0_0()); 
-            match(input,45,FollowSets000.FOLLOW_45_in_rule__PredicatedRuleCall__PredicatedAssignment_0_018990); 
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9465:1: ( '=>' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9466:1: '=>'
+            {
+             before(grammarAccess.getPredicatedRuleCallAccess().getPredicatedEqualsSignGreaterThanSignKeyword_0_0_0()); 
+            match(input,45,FollowSets000.FOLLOW_45_in_rule__PredicatedRuleCall__PredicatedAssignment_0_019091); 
              after(grammarAccess.getPredicatedRuleCallAccess().getPredicatedEqualsSignGreaterThanSignKeyword_0_0_0()); 
 
             }
@@ -25436,24 +25558,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PredicatedRuleCall__FirstSetPredicatedAssignment_0_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9430:1: rule__PredicatedRuleCall__FirstSetPredicatedAssignment_0_1 : ( ( '->' ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9481:1: rule__PredicatedRuleCall__FirstSetPredicatedAssignment_0_1 : ( ( '->' ) ) ;
     public final void rule__PredicatedRuleCall__FirstSetPredicatedAssignment_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9434:1: ( ( ( '->' ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9435:1: ( ( '->' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9485:1: ( ( ( '->' ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9486:1: ( ( '->' ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9435:1: ( ( '->' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9436:1: ( '->' )
-            {
-             before(grammarAccess.getPredicatedRuleCallAccess().getFirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9437:1: ( '->' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9438:1: '->'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9486:1: ( ( '->' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9487:1: ( '->' )
             {
              before(grammarAccess.getPredicatedRuleCallAccess().getFirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0()); 
-            match(input,39,FollowSets000.FOLLOW_39_in_rule__PredicatedRuleCall__FirstSetPredicatedAssignment_0_119034); 
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9488:1: ( '->' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9489:1: '->'
+            {
+             before(grammarAccess.getPredicatedRuleCallAccess().getFirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0()); 
+            match(input,39,FollowSets000.FOLLOW_39_in_rule__PredicatedRuleCall__FirstSetPredicatedAssignment_0_119135); 
              after(grammarAccess.getPredicatedRuleCallAccess().getFirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0()); 
 
             }
@@ -25481,24 +25603,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PredicatedRuleCall__RuleAssignment_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9453:1: rule__PredicatedRuleCall__RuleAssignment_1 : ( ( RULE_ID ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9504:1: rule__PredicatedRuleCall__RuleAssignment_1 : ( ( RULE_ID ) ) ;
     public final void rule__PredicatedRuleCall__RuleAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9457:1: ( ( ( RULE_ID ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9458:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9508:1: ( ( ( RULE_ID ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9509:1: ( ( RULE_ID ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9458:1: ( ( RULE_ID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9459:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9509:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9510:1: ( RULE_ID )
             {
              before(grammarAccess.getPredicatedRuleCallAccess().getRuleAbstractRuleCrossReference_1_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9460:1: ( RULE_ID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9461:1: RULE_ID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9511:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9512:1: RULE_ID
             {
              before(grammarAccess.getPredicatedRuleCallAccess().getRuleAbstractRuleIDTerminalRuleCall_1_0_1()); 
-            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__PredicatedRuleCall__RuleAssignment_119077); 
+            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__PredicatedRuleCall__RuleAssignment_119178); 
              after(grammarAccess.getPredicatedRuleCallAccess().getRuleAbstractRuleIDTerminalRuleCall_1_0_1()); 
 
             }
@@ -25526,24 +25648,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Assignment__PredicatedAssignment_0_0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9472:1: rule__Assignment__PredicatedAssignment_0_0 : ( ( '=>' ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9523:1: rule__Assignment__PredicatedAssignment_0_0 : ( ( '=>' ) ) ;
     public final void rule__Assignment__PredicatedAssignment_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9476:1: ( ( ( '=>' ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9477:1: ( ( '=>' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9527:1: ( ( ( '=>' ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9528:1: ( ( '=>' ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9477:1: ( ( '=>' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9478:1: ( '=>' )
-            {
-             before(grammarAccess.getAssignmentAccess().getPredicatedEqualsSignGreaterThanSignKeyword_0_0_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9479:1: ( '=>' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9480:1: '=>'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9528:1: ( ( '=>' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9529:1: ( '=>' )
             {
              before(grammarAccess.getAssignmentAccess().getPredicatedEqualsSignGreaterThanSignKeyword_0_0_0()); 
-            match(input,45,FollowSets000.FOLLOW_45_in_rule__Assignment__PredicatedAssignment_0_019117); 
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9530:1: ( '=>' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9531:1: '=>'
+            {
+             before(grammarAccess.getAssignmentAccess().getPredicatedEqualsSignGreaterThanSignKeyword_0_0_0()); 
+            match(input,45,FollowSets000.FOLLOW_45_in_rule__Assignment__PredicatedAssignment_0_019218); 
              after(grammarAccess.getAssignmentAccess().getPredicatedEqualsSignGreaterThanSignKeyword_0_0_0()); 
 
             }
@@ -25571,24 +25693,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Assignment__FirstSetPredicatedAssignment_0_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9495:1: rule__Assignment__FirstSetPredicatedAssignment_0_1 : ( ( '->' ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9546:1: rule__Assignment__FirstSetPredicatedAssignment_0_1 : ( ( '->' ) ) ;
     public final void rule__Assignment__FirstSetPredicatedAssignment_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9499:1: ( ( ( '->' ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9500:1: ( ( '->' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9550:1: ( ( ( '->' ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9551:1: ( ( '->' ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9500:1: ( ( '->' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9501:1: ( '->' )
-            {
-             before(grammarAccess.getAssignmentAccess().getFirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9502:1: ( '->' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9503:1: '->'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9551:1: ( ( '->' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9552:1: ( '->' )
             {
              before(grammarAccess.getAssignmentAccess().getFirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0()); 
-            match(input,39,FollowSets000.FOLLOW_39_in_rule__Assignment__FirstSetPredicatedAssignment_0_119161); 
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9553:1: ( '->' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9554:1: '->'
+            {
+             before(grammarAccess.getAssignmentAccess().getFirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0()); 
+            match(input,39,FollowSets000.FOLLOW_39_in_rule__Assignment__FirstSetPredicatedAssignment_0_119262); 
              after(grammarAccess.getAssignmentAccess().getFirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0()); 
 
             }
@@ -25616,20 +25738,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Assignment__FeatureAssignment_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9518:1: rule__Assignment__FeatureAssignment_1 : ( RULE_ID ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9569:1: rule__Assignment__FeatureAssignment_1 : ( RULE_ID ) ;
     public final void rule__Assignment__FeatureAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9522:1: ( ( RULE_ID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9523:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9573:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9574:1: ( RULE_ID )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9523:1: ( RULE_ID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9524:1: RULE_ID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9574:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9575:1: RULE_ID
             {
              before(grammarAccess.getAssignmentAccess().getFeatureIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__Assignment__FeatureAssignment_119200); 
+            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__Assignment__FeatureAssignment_119301); 
              after(grammarAccess.getAssignmentAccess().getFeatureIDTerminalRuleCall_1_0()); 
 
             }
@@ -25653,23 +25775,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Assignment__OperatorAssignment_2"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9533:1: rule__Assignment__OperatorAssignment_2 : ( ( rule__Assignment__OperatorAlternatives_2_0 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9584:1: rule__Assignment__OperatorAssignment_2 : ( ( rule__Assignment__OperatorAlternatives_2_0 ) ) ;
     public final void rule__Assignment__OperatorAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9537:1: ( ( ( rule__Assignment__OperatorAlternatives_2_0 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9538:1: ( ( rule__Assignment__OperatorAlternatives_2_0 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9588:1: ( ( ( rule__Assignment__OperatorAlternatives_2_0 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9589:1: ( ( rule__Assignment__OperatorAlternatives_2_0 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9538:1: ( ( rule__Assignment__OperatorAlternatives_2_0 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9539:1: ( rule__Assignment__OperatorAlternatives_2_0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9589:1: ( ( rule__Assignment__OperatorAlternatives_2_0 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9590:1: ( rule__Assignment__OperatorAlternatives_2_0 )
             {
              before(grammarAccess.getAssignmentAccess().getOperatorAlternatives_2_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9540:1: ( rule__Assignment__OperatorAlternatives_2_0 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9540:2: rule__Assignment__OperatorAlternatives_2_0
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9591:1: ( rule__Assignment__OperatorAlternatives_2_0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9591:2: rule__Assignment__OperatorAlternatives_2_0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__Assignment__OperatorAlternatives_2_0_in_rule__Assignment__OperatorAssignment_219231);
+            pushFollow(FollowSets000.FOLLOW_rule__Assignment__OperatorAlternatives_2_0_in_rule__Assignment__OperatorAssignment_219332);
             rule__Assignment__OperatorAlternatives_2_0();
 
             state._fsp--;
@@ -25700,20 +25822,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Assignment__TerminalAssignment_3"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9549:1: rule__Assignment__TerminalAssignment_3 : ( ruleAssignableTerminal ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9600:1: rule__Assignment__TerminalAssignment_3 : ( ruleAssignableTerminal ) ;
     public final void rule__Assignment__TerminalAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9553:1: ( ( ruleAssignableTerminal ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9554:1: ( ruleAssignableTerminal )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9604:1: ( ( ruleAssignableTerminal ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9605:1: ( ruleAssignableTerminal )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9554:1: ( ruleAssignableTerminal )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9555:1: ruleAssignableTerminal
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9605:1: ( ruleAssignableTerminal )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9606:1: ruleAssignableTerminal
             {
              before(grammarAccess.getAssignmentAccess().getTerminalAssignableTerminalParserRuleCall_3_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAssignableTerminal_in_rule__Assignment__TerminalAssignment_319264);
+            pushFollow(FollowSets000.FOLLOW_ruleAssignableTerminal_in_rule__Assignment__TerminalAssignment_319365);
             ruleAssignableTerminal();
 
             state._fsp--;
@@ -25741,20 +25863,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AssignableAlternatives__ElementsAssignment_1_1_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9564:1: rule__AssignableAlternatives__ElementsAssignment_1_1_1 : ( ruleAssignableTerminal ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9615:1: rule__AssignableAlternatives__ElementsAssignment_1_1_1 : ( ruleAssignableTerminal ) ;
     public final void rule__AssignableAlternatives__ElementsAssignment_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9568:1: ( ( ruleAssignableTerminal ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9569:1: ( ruleAssignableTerminal )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9619:1: ( ( ruleAssignableTerminal ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9620:1: ( ruleAssignableTerminal )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9569:1: ( ruleAssignableTerminal )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9570:1: ruleAssignableTerminal
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9620:1: ( ruleAssignableTerminal )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9621:1: ruleAssignableTerminal
             {
              before(grammarAccess.getAssignableAlternativesAccess().getElementsAssignableTerminalParserRuleCall_1_1_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAssignableTerminal_in_rule__AssignableAlternatives__ElementsAssignment_1_1_119295);
+            pushFollow(FollowSets000.FOLLOW_ruleAssignableTerminal_in_rule__AssignableAlternatives__ElementsAssignment_1_1_119396);
             ruleAssignableTerminal();
 
             state._fsp--;
@@ -25782,20 +25904,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CrossReference__TypeAssignment_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9579:1: rule__CrossReference__TypeAssignment_1 : ( ruleTypeRef ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9630:1: rule__CrossReference__TypeAssignment_1 : ( ruleTypeRef ) ;
     public final void rule__CrossReference__TypeAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9583:1: ( ( ruleTypeRef ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9584:1: ( ruleTypeRef )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9634:1: ( ( ruleTypeRef ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9635:1: ( ruleTypeRef )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9584:1: ( ruleTypeRef )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9585:1: ruleTypeRef
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9635:1: ( ruleTypeRef )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9636:1: ruleTypeRef
             {
              before(grammarAccess.getCrossReferenceAccess().getTypeTypeRefParserRuleCall_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_rule__CrossReference__TypeAssignment_119326);
+            pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_rule__CrossReference__TypeAssignment_119427);
             ruleTypeRef();
 
             state._fsp--;
@@ -25823,20 +25945,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CrossReference__TerminalAssignment_2_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9594:1: rule__CrossReference__TerminalAssignment_2_1 : ( ruleCrossReferenceableTerminal ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9645:1: rule__CrossReference__TerminalAssignment_2_1 : ( ruleCrossReferenceableTerminal ) ;
     public final void rule__CrossReference__TerminalAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9598:1: ( ( ruleCrossReferenceableTerminal ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9599:1: ( ruleCrossReferenceableTerminal )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9649:1: ( ( ruleCrossReferenceableTerminal ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9650:1: ( ruleCrossReferenceableTerminal )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9599:1: ( ruleCrossReferenceableTerminal )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9600:1: ruleCrossReferenceableTerminal
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9650:1: ( ruleCrossReferenceableTerminal )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9651:1: ruleCrossReferenceableTerminal
             {
              before(grammarAccess.getCrossReferenceAccess().getTerminalCrossReferenceableTerminalParserRuleCall_2_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleCrossReferenceableTerminal_in_rule__CrossReference__TerminalAssignment_2_119357);
+            pushFollow(FollowSets000.FOLLOW_ruleCrossReferenceableTerminal_in_rule__CrossReference__TerminalAssignment_2_119458);
             ruleCrossReferenceableTerminal();
 
             state._fsp--;
@@ -25864,24 +25986,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PredicatedGroup__PredicatedAssignment_0_0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9609:1: rule__PredicatedGroup__PredicatedAssignment_0_0 : ( ( '=>' ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9660:1: rule__PredicatedGroup__PredicatedAssignment_0_0 : ( ( '=>' ) ) ;
     public final void rule__PredicatedGroup__PredicatedAssignment_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9613:1: ( ( ( '=>' ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9614:1: ( ( '=>' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9664:1: ( ( ( '=>' ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9665:1: ( ( '=>' ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9614:1: ( ( '=>' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9615:1: ( '=>' )
-            {
-             before(grammarAccess.getPredicatedGroupAccess().getPredicatedEqualsSignGreaterThanSignKeyword_0_0_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9616:1: ( '=>' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9617:1: '=>'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9665:1: ( ( '=>' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9666:1: ( '=>' )
             {
              before(grammarAccess.getPredicatedGroupAccess().getPredicatedEqualsSignGreaterThanSignKeyword_0_0_0()); 
-            match(input,45,FollowSets000.FOLLOW_45_in_rule__PredicatedGroup__PredicatedAssignment_0_019393); 
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9667:1: ( '=>' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9668:1: '=>'
+            {
+             before(grammarAccess.getPredicatedGroupAccess().getPredicatedEqualsSignGreaterThanSignKeyword_0_0_0()); 
+            match(input,45,FollowSets000.FOLLOW_45_in_rule__PredicatedGroup__PredicatedAssignment_0_019494); 
              after(grammarAccess.getPredicatedGroupAccess().getPredicatedEqualsSignGreaterThanSignKeyword_0_0_0()); 
 
             }
@@ -25909,24 +26031,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PredicatedGroup__FirstSetPredicatedAssignment_0_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9632:1: rule__PredicatedGroup__FirstSetPredicatedAssignment_0_1 : ( ( '->' ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9683:1: rule__PredicatedGroup__FirstSetPredicatedAssignment_0_1 : ( ( '->' ) ) ;
     public final void rule__PredicatedGroup__FirstSetPredicatedAssignment_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9636:1: ( ( ( '->' ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9637:1: ( ( '->' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9687:1: ( ( ( '->' ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9688:1: ( ( '->' ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9637:1: ( ( '->' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9638:1: ( '->' )
-            {
-             before(grammarAccess.getPredicatedGroupAccess().getFirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9639:1: ( '->' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9640:1: '->'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9688:1: ( ( '->' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9689:1: ( '->' )
             {
              before(grammarAccess.getPredicatedGroupAccess().getFirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0()); 
-            match(input,39,FollowSets000.FOLLOW_39_in_rule__PredicatedGroup__FirstSetPredicatedAssignment_0_119437); 
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9690:1: ( '->' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9691:1: '->'
+            {
+             before(grammarAccess.getPredicatedGroupAccess().getFirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0()); 
+            match(input,39,FollowSets000.FOLLOW_39_in_rule__PredicatedGroup__FirstSetPredicatedAssignment_0_119538); 
              after(grammarAccess.getPredicatedGroupAccess().getFirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0()); 
 
             }
@@ -25954,20 +26076,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PredicatedGroup__ElementsAssignment_2"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9655:1: rule__PredicatedGroup__ElementsAssignment_2 : ( ruleAlternatives ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9706:1: rule__PredicatedGroup__ElementsAssignment_2 : ( ruleAlternatives ) ;
     public final void rule__PredicatedGroup__ElementsAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9659:1: ( ( ruleAlternatives ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9660:1: ( ruleAlternatives )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9710:1: ( ( ruleAlternatives ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9711:1: ( ruleAlternatives )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9660:1: ( ruleAlternatives )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9661:1: ruleAlternatives
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9711:1: ( ruleAlternatives )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9712:1: ruleAlternatives
             {
              before(grammarAccess.getPredicatedGroupAccess().getElementsAlternativesParserRuleCall_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAlternatives_in_rule__PredicatedGroup__ElementsAssignment_219476);
+            pushFollow(FollowSets000.FOLLOW_ruleAlternatives_in_rule__PredicatedGroup__ElementsAssignment_219577);
             ruleAlternatives();
 
             state._fsp--;
@@ -25995,24 +26117,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalRule__FragmentAssignment_1_0_0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9670:1: rule__TerminalRule__FragmentAssignment_1_0_0 : ( ( 'fragment' ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9721:1: rule__TerminalRule__FragmentAssignment_1_0_0 : ( ( 'fragment' ) ) ;
     public final void rule__TerminalRule__FragmentAssignment_1_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9674:1: ( ( ( 'fragment' ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9675:1: ( ( 'fragment' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9725:1: ( ( ( 'fragment' ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9726:1: ( ( 'fragment' ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9675:1: ( ( 'fragment' ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9676:1: ( 'fragment' )
-            {
-             before(grammarAccess.getTerminalRuleAccess().getFragmentFragmentKeyword_1_0_0_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9677:1: ( 'fragment' )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9678:1: 'fragment'
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9726:1: ( ( 'fragment' ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9727:1: ( 'fragment' )
             {
              before(grammarAccess.getTerminalRuleAccess().getFragmentFragmentKeyword_1_0_0_0()); 
-            match(input,44,FollowSets000.FOLLOW_44_in_rule__TerminalRule__FragmentAssignment_1_0_019512); 
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9728:1: ( 'fragment' )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9729:1: 'fragment'
+            {
+             before(grammarAccess.getTerminalRuleAccess().getFragmentFragmentKeyword_1_0_0_0()); 
+            match(input,44,FollowSets000.FOLLOW_44_in_rule__TerminalRule__FragmentAssignment_1_0_019613); 
              after(grammarAccess.getTerminalRuleAccess().getFragmentFragmentKeyword_1_0_0_0()); 
 
             }
@@ -26040,20 +26162,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalRule__NameAssignment_1_0_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9693:1: rule__TerminalRule__NameAssignment_1_0_1 : ( RULE_ID ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9744:1: rule__TerminalRule__NameAssignment_1_0_1 : ( RULE_ID ) ;
     public final void rule__TerminalRule__NameAssignment_1_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9697:1: ( ( RULE_ID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9698:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9748:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9749:1: ( RULE_ID )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9698:1: ( RULE_ID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9699:1: RULE_ID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9749:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9750:1: RULE_ID
             {
              before(grammarAccess.getTerminalRuleAccess().getNameIDTerminalRuleCall_1_0_1_0()); 
-            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__TerminalRule__NameAssignment_1_0_119551); 
+            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__TerminalRule__NameAssignment_1_0_119652); 
              after(grammarAccess.getTerminalRuleAccess().getNameIDTerminalRuleCall_1_0_1_0()); 
 
             }
@@ -26077,20 +26199,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalRule__NameAssignment_1_1_0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9708:1: rule__TerminalRule__NameAssignment_1_1_0 : ( RULE_ID ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9759:1: rule__TerminalRule__NameAssignment_1_1_0 : ( RULE_ID ) ;
     public final void rule__TerminalRule__NameAssignment_1_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9712:1: ( ( RULE_ID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9713:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9763:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9764:1: ( RULE_ID )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9713:1: ( RULE_ID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9714:1: RULE_ID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9764:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9765:1: RULE_ID
             {
              before(grammarAccess.getTerminalRuleAccess().getNameIDTerminalRuleCall_1_1_0_0()); 
-            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__TerminalRule__NameAssignment_1_1_019582); 
+            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__TerminalRule__NameAssignment_1_1_019683); 
              after(grammarAccess.getTerminalRuleAccess().getNameIDTerminalRuleCall_1_1_0_0()); 
 
             }
@@ -26114,20 +26236,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalRule__TypeAssignment_1_1_1_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9723:1: rule__TerminalRule__TypeAssignment_1_1_1_1 : ( ruleTypeRef ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9774:1: rule__TerminalRule__TypeAssignment_1_1_1_1 : ( ruleTypeRef ) ;
     public final void rule__TerminalRule__TypeAssignment_1_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9727:1: ( ( ruleTypeRef ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9728:1: ( ruleTypeRef )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9778:1: ( ( ruleTypeRef ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9779:1: ( ruleTypeRef )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9728:1: ( ruleTypeRef )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9729:1: ruleTypeRef
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9779:1: ( ruleTypeRef )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9780:1: ruleTypeRef
             {
              before(grammarAccess.getTerminalRuleAccess().getTypeTypeRefParserRuleCall_1_1_1_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_rule__TerminalRule__TypeAssignment_1_1_1_119613);
+            pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_rule__TerminalRule__TypeAssignment_1_1_1_119714);
             ruleTypeRef();
 
             state._fsp--;
@@ -26155,20 +26277,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalRule__AlternativesAssignment_3"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9738:1: rule__TerminalRule__AlternativesAssignment_3 : ( ruleTerminalAlternatives ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9789:1: rule__TerminalRule__AlternativesAssignment_3 : ( ruleTerminalAlternatives ) ;
     public final void rule__TerminalRule__AlternativesAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9742:1: ( ( ruleTerminalAlternatives ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9743:1: ( ruleTerminalAlternatives )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9793:1: ( ( ruleTerminalAlternatives ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9794:1: ( ruleTerminalAlternatives )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9743:1: ( ruleTerminalAlternatives )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9744:1: ruleTerminalAlternatives
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9794:1: ( ruleTerminalAlternatives )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9795:1: ruleTerminalAlternatives
             {
              before(grammarAccess.getTerminalRuleAccess().getAlternativesTerminalAlternativesParserRuleCall_3_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalAlternatives_in_rule__TerminalRule__AlternativesAssignment_319644);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalAlternatives_in_rule__TerminalRule__AlternativesAssignment_319745);
             ruleTerminalAlternatives();
 
             state._fsp--;
@@ -26196,20 +26318,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalAlternatives__ElementsAssignment_1_1_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9753:1: rule__TerminalAlternatives__ElementsAssignment_1_1_1 : ( ruleTerminalGroup ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9804:1: rule__TerminalAlternatives__ElementsAssignment_1_1_1 : ( ruleTerminalGroup ) ;
     public final void rule__TerminalAlternatives__ElementsAssignment_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9757:1: ( ( ruleTerminalGroup ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9758:1: ( ruleTerminalGroup )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9808:1: ( ( ruleTerminalGroup ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9809:1: ( ruleTerminalGroup )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9758:1: ( ruleTerminalGroup )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9759:1: ruleTerminalGroup
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9809:1: ( ruleTerminalGroup )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9810:1: ruleTerminalGroup
             {
              before(grammarAccess.getTerminalAlternativesAccess().getElementsTerminalGroupParserRuleCall_1_1_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalGroup_in_rule__TerminalAlternatives__ElementsAssignment_1_1_119675);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalGroup_in_rule__TerminalAlternatives__ElementsAssignment_1_1_119776);
             ruleTerminalGroup();
 
             state._fsp--;
@@ -26237,20 +26359,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalGroup__ElementsAssignment_1_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9768:1: rule__TerminalGroup__ElementsAssignment_1_1 : ( ruleTerminalToken ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9819:1: rule__TerminalGroup__ElementsAssignment_1_1 : ( ruleTerminalToken ) ;
     public final void rule__TerminalGroup__ElementsAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9772:1: ( ( ruleTerminalToken ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9773:1: ( ruleTerminalToken )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9823:1: ( ( ruleTerminalToken ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9824:1: ( ruleTerminalToken )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9773:1: ( ruleTerminalToken )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9774:1: ruleTerminalToken
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9824:1: ( ruleTerminalToken )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9825:1: ruleTerminalToken
             {
              before(grammarAccess.getTerminalGroupAccess().getElementsTerminalTokenParserRuleCall_1_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalToken_in_rule__TerminalGroup__ElementsAssignment_1_119706);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalToken_in_rule__TerminalGroup__ElementsAssignment_1_119807);
             ruleTerminalToken();
 
             state._fsp--;
@@ -26278,23 +26400,23 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TerminalToken__CardinalityAssignment_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9783:1: rule__TerminalToken__CardinalityAssignment_1 : ( ( rule__TerminalToken__CardinalityAlternatives_1_0 ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9834:1: rule__TerminalToken__CardinalityAssignment_1 : ( ( rule__TerminalToken__CardinalityAlternatives_1_0 ) ) ;
     public final void rule__TerminalToken__CardinalityAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9787:1: ( ( ( rule__TerminalToken__CardinalityAlternatives_1_0 ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9788:1: ( ( rule__TerminalToken__CardinalityAlternatives_1_0 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9838:1: ( ( ( rule__TerminalToken__CardinalityAlternatives_1_0 ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9839:1: ( ( rule__TerminalToken__CardinalityAlternatives_1_0 ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9788:1: ( ( rule__TerminalToken__CardinalityAlternatives_1_0 ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9789:1: ( rule__TerminalToken__CardinalityAlternatives_1_0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9839:1: ( ( rule__TerminalToken__CardinalityAlternatives_1_0 ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9840:1: ( rule__TerminalToken__CardinalityAlternatives_1_0 )
             {
              before(grammarAccess.getTerminalTokenAccess().getCardinalityAlternatives_1_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9790:1: ( rule__TerminalToken__CardinalityAlternatives_1_0 )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9790:2: rule__TerminalToken__CardinalityAlternatives_1_0
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9841:1: ( rule__TerminalToken__CardinalityAlternatives_1_0 )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9841:2: rule__TerminalToken__CardinalityAlternatives_1_0
             {
-            pushFollow(FollowSets000.FOLLOW_rule__TerminalToken__CardinalityAlternatives_1_0_in_rule__TerminalToken__CardinalityAssignment_119737);
+            pushFollow(FollowSets000.FOLLOW_rule__TerminalToken__CardinalityAlternatives_1_0_in_rule__TerminalToken__CardinalityAssignment_119838);
             rule__TerminalToken__CardinalityAlternatives_1_0();
 
             state._fsp--;
@@ -26325,20 +26447,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NegatedToken__TerminalAssignment_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9799:1: rule__NegatedToken__TerminalAssignment_1 : ( ruleTerminalTokenElement ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9850:1: rule__NegatedToken__TerminalAssignment_1 : ( ruleTerminalTokenElement ) ;
     public final void rule__NegatedToken__TerminalAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9803:1: ( ( ruleTerminalTokenElement ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9804:1: ( ruleTerminalTokenElement )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9854:1: ( ( ruleTerminalTokenElement ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9855:1: ( ruleTerminalTokenElement )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9804:1: ( ruleTerminalTokenElement )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9805:1: ruleTerminalTokenElement
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9855:1: ( ruleTerminalTokenElement )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9856:1: ruleTerminalTokenElement
             {
              before(grammarAccess.getNegatedTokenAccess().getTerminalTerminalTokenElementParserRuleCall_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalTokenElement_in_rule__NegatedToken__TerminalAssignment_119770);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalTokenElement_in_rule__NegatedToken__TerminalAssignment_119871);
             ruleTerminalTokenElement();
 
             state._fsp--;
@@ -26366,20 +26488,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__UntilToken__TerminalAssignment_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9814:1: rule__UntilToken__TerminalAssignment_1 : ( ruleTerminalTokenElement ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9865:1: rule__UntilToken__TerminalAssignment_1 : ( ruleTerminalTokenElement ) ;
     public final void rule__UntilToken__TerminalAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9818:1: ( ( ruleTerminalTokenElement ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9819:1: ( ruleTerminalTokenElement )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9869:1: ( ( ruleTerminalTokenElement ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9870:1: ( ruleTerminalTokenElement )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9819:1: ( ruleTerminalTokenElement )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9820:1: ruleTerminalTokenElement
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9870:1: ( ruleTerminalTokenElement )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9871:1: ruleTerminalTokenElement
             {
              before(grammarAccess.getUntilTokenAccess().getTerminalTerminalTokenElementParserRuleCall_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalTokenElement_in_rule__UntilToken__TerminalAssignment_119801);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalTokenElement_in_rule__UntilToken__TerminalAssignment_119902);
             ruleTerminalTokenElement();
 
             state._fsp--;
@@ -26407,20 +26529,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__CharacterRange__RightAssignment_1_2"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9829:1: rule__CharacterRange__RightAssignment_1_2 : ( ruleKeyword ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9880:1: rule__CharacterRange__RightAssignment_1_2 : ( ruleKeyword ) ;
     public final void rule__CharacterRange__RightAssignment_1_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9833:1: ( ( ruleKeyword ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9834:1: ( ruleKeyword )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9884:1: ( ( ruleKeyword ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9885:1: ( ruleKeyword )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9834:1: ( ruleKeyword )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9835:1: ruleKeyword
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9885:1: ( ruleKeyword )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9886:1: ruleKeyword
             {
              before(grammarAccess.getCharacterRangeAccess().getRightKeywordParserRuleCall_1_2_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_rule__CharacterRange__RightAssignment_1_219832);
+            pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_rule__CharacterRange__RightAssignment_1_219933);
             ruleKeyword();
 
             state._fsp--;
@@ -26448,20 +26570,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumRule__NameAssignment_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9844:1: rule__EnumRule__NameAssignment_1 : ( RULE_ID ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9895:1: rule__EnumRule__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__EnumRule__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9848:1: ( ( RULE_ID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9849:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9899:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9900:1: ( RULE_ID )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9849:1: ( RULE_ID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9850:1: RULE_ID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9900:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9901:1: RULE_ID
             {
              before(grammarAccess.getEnumRuleAccess().getNameIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__EnumRule__NameAssignment_119863); 
+            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__EnumRule__NameAssignment_119964); 
              after(grammarAccess.getEnumRuleAccess().getNameIDTerminalRuleCall_1_0()); 
 
             }
@@ -26485,20 +26607,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumRule__TypeAssignment_2_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9859:1: rule__EnumRule__TypeAssignment_2_1 : ( ruleTypeRef ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9910:1: rule__EnumRule__TypeAssignment_2_1 : ( ruleTypeRef ) ;
     public final void rule__EnumRule__TypeAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9863:1: ( ( ruleTypeRef ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9864:1: ( ruleTypeRef )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9914:1: ( ( ruleTypeRef ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9915:1: ( ruleTypeRef )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9864:1: ( ruleTypeRef )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9865:1: ruleTypeRef
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9915:1: ( ruleTypeRef )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9916:1: ruleTypeRef
             {
              before(grammarAccess.getEnumRuleAccess().getTypeTypeRefParserRuleCall_2_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_rule__EnumRule__TypeAssignment_2_119894);
+            pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_rule__EnumRule__TypeAssignment_2_119995);
             ruleTypeRef();
 
             state._fsp--;
@@ -26526,20 +26648,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumRule__AlternativesAssignment_4"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9874:1: rule__EnumRule__AlternativesAssignment_4 : ( ruleEnumLiterals ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9925:1: rule__EnumRule__AlternativesAssignment_4 : ( ruleEnumLiterals ) ;
     public final void rule__EnumRule__AlternativesAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9878:1: ( ( ruleEnumLiterals ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9879:1: ( ruleEnumLiterals )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9929:1: ( ( ruleEnumLiterals ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9930:1: ( ruleEnumLiterals )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9879:1: ( ruleEnumLiterals )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9880:1: ruleEnumLiterals
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9930:1: ( ruleEnumLiterals )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9931:1: ruleEnumLiterals
             {
              before(grammarAccess.getEnumRuleAccess().getAlternativesEnumLiteralsParserRuleCall_4_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEnumLiterals_in_rule__EnumRule__AlternativesAssignment_419925);
+            pushFollow(FollowSets000.FOLLOW_ruleEnumLiterals_in_rule__EnumRule__AlternativesAssignment_420026);
             ruleEnumLiterals();
 
             state._fsp--;
@@ -26567,20 +26689,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumLiterals__ElementsAssignment_1_1_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9889:1: rule__EnumLiterals__ElementsAssignment_1_1_1 : ( ruleEnumLiteralDeclaration ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9940:1: rule__EnumLiterals__ElementsAssignment_1_1_1 : ( ruleEnumLiteralDeclaration ) ;
     public final void rule__EnumLiterals__ElementsAssignment_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9893:1: ( ( ruleEnumLiteralDeclaration ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9894:1: ( ruleEnumLiteralDeclaration )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9944:1: ( ( ruleEnumLiteralDeclaration ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9945:1: ( ruleEnumLiteralDeclaration )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9894:1: ( ruleEnumLiteralDeclaration )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9895:1: ruleEnumLiteralDeclaration
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9945:1: ( ruleEnumLiteralDeclaration )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9946:1: ruleEnumLiteralDeclaration
             {
              before(grammarAccess.getEnumLiteralsAccess().getElementsEnumLiteralDeclarationParserRuleCall_1_1_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEnumLiteralDeclaration_in_rule__EnumLiterals__ElementsAssignment_1_1_119956);
+            pushFollow(FollowSets000.FOLLOW_ruleEnumLiteralDeclaration_in_rule__EnumLiterals__ElementsAssignment_1_1_120057);
             ruleEnumLiteralDeclaration();
 
             state._fsp--;
@@ -26608,24 +26730,24 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumLiteralDeclaration__EnumLiteralAssignment_0"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9904:1: rule__EnumLiteralDeclaration__EnumLiteralAssignment_0 : ( ( RULE_ID ) ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9955:1: rule__EnumLiteralDeclaration__EnumLiteralAssignment_0 : ( ( RULE_ID ) ) ;
     public final void rule__EnumLiteralDeclaration__EnumLiteralAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9908:1: ( ( ( RULE_ID ) ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9909:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9959:1: ( ( ( RULE_ID ) ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9960:1: ( ( RULE_ID ) )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9909:1: ( ( RULE_ID ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9910:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9960:1: ( ( RULE_ID ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9961:1: ( RULE_ID )
             {
              before(grammarAccess.getEnumLiteralDeclarationAccess().getEnumLiteralEEnumLiteralCrossReference_0_0()); 
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9911:1: ( RULE_ID )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9912:1: RULE_ID
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9962:1: ( RULE_ID )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9963:1: RULE_ID
             {
              before(grammarAccess.getEnumLiteralDeclarationAccess().getEnumLiteralEEnumLiteralIDTerminalRuleCall_0_0_1()); 
-            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__EnumLiteralDeclaration__EnumLiteralAssignment_019991); 
+            match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rule__EnumLiteralDeclaration__EnumLiteralAssignment_020092); 
              after(grammarAccess.getEnumLiteralDeclarationAccess().getEnumLiteralEEnumLiteralIDTerminalRuleCall_0_0_1()); 
 
             }
@@ -26653,20 +26775,20 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__EnumLiteralDeclaration__LiteralAssignment_1_1"
-    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9923:1: rule__EnumLiteralDeclaration__LiteralAssignment_1_1 : ( ruleKeyword ) ;
+    // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9974:1: rule__EnumLiteralDeclaration__LiteralAssignment_1_1 : ( ruleKeyword ) ;
     public final void rule__EnumLiteralDeclaration__LiteralAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9927:1: ( ( ruleKeyword ) )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9928:1: ( ruleKeyword )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9978:1: ( ( ruleKeyword ) )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9979:1: ( ruleKeyword )
             {
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9928:1: ( ruleKeyword )
-            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9929:1: ruleKeyword
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9979:1: ( ruleKeyword )
+            // ../../plugins/org.eclipse.xtext.xtext.ui/src-gen/org/eclipse/xtext/ui/contentassist/antlr/internal/InternalXtext.g:9980:1: ruleKeyword
             {
              before(grammarAccess.getEnumLiteralDeclarationAccess().getLiteralKeywordParserRuleCall_1_1_0()); 
-            pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_rule__EnumLiteralDeclaration__LiteralAssignment_1_120026);
+            pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_rule__EnumLiteralDeclaration__LiteralAssignment_1_120127);
             ruleKeyword();
 
             state._fsp--;
@@ -27195,332 +27317,335 @@ public class InternalXtextParser extends AbstractInternalContentAssistParser {
         public static final BitSet FOLLOW_20_in_rule__RuleCall__Group_1_2__0__Impl11187 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_rule__RuleCall__Group_1_2__1__Impl_in_rule__RuleCall__Group_1_2__111218 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_rule__RuleCall__ArgumentsAssignment_1_2_1_in_rule__RuleCall__Group_1_2__1__Impl11245 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__NamedArgument__Group_0__0__Impl_in_rule__NamedArgument__Group_0__011279 = new BitSet(new long[]{0x0000000000012010L});
+        public static final BitSet FOLLOW_rule__NamedArgument__Group_0__0__Impl_in_rule__NamedArgument__Group_0__011279 = new BitSet(new long[]{0x0000000000000010L});
         public static final BitSet FOLLOW_rule__NamedArgument__Group_0__1_in_rule__NamedArgument__Group_0__011282 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_rule__NamedArgument__LiteralValueAssignment_0_0_in_rule__NamedArgument__Group_0__0__Impl11309 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__NamedArgument__Group_0__1__Impl_in_rule__NamedArgument__Group_0__111340 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__NamedArgument__ParameterAssignment_0_1_in_rule__NamedArgument__Group_0__1__Impl11367 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__NamedArgument__Group_1__0__Impl_in_rule__NamedArgument__Group_1__011401 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__NamedArgument__Group_1__1_in_rule__NamedArgument__Group_1__011404 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__NamedArgument__ParameterAssignment_1_0_in_rule__NamedArgument__Group_1__0__Impl11431 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__NamedArgument__Group_1__1__Impl_in_rule__NamedArgument__Group_1__111461 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__NamedArgument__Group_1__2_in_rule__NamedArgument__Group_1__111464 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__NamedArgument__Group_1__1__Impl11492 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__NamedArgument__Group_1__2__Impl_in_rule__NamedArgument__Group_1__211523 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__NamedArgument__ValueAssignment_1_2_in_rule__NamedArgument__Group_1__2__Impl11550 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RuleID__Group__0__Impl_in_rule__RuleID__Group__011586 = new BitSet(new long[]{0x0000000100000000L});
-        public static final BitSet FOLLOW_rule__RuleID__Group__1_in_rule__RuleID__Group__011589 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_rule__RuleID__Group__0__Impl11616 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RuleID__Group__1__Impl_in_rule__RuleID__Group__111645 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RuleID__Group_1__0_in_rule__RuleID__Group__1__Impl11672 = new BitSet(new long[]{0x0000000100000002L});
-        public static final BitSet FOLLOW_rule__RuleID__Group_1__0__Impl_in_rule__RuleID__Group_1__011707 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__RuleID__Group_1__1_in_rule__RuleID__Group_1__011710 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_32_in_rule__RuleID__Group_1__0__Impl11738 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__RuleID__Group_1__1__Impl_in_rule__RuleID__Group_1__111769 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_rule__RuleID__Group_1__1__Impl11796 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__PredicatedKeyword__Group__0__Impl_in_rule__PredicatedKeyword__Group__011829 = new BitSet(new long[]{0x0000000000000020L});
-        public static final BitSet FOLLOW_rule__PredicatedKeyword__Group__1_in_rule__PredicatedKeyword__Group__011832 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__PredicatedKeyword__Alternatives_0_in_rule__PredicatedKeyword__Group__0__Impl11859 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__PredicatedKeyword__Group__1__Impl_in_rule__PredicatedKeyword__Group__111889 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__PredicatedKeyword__ValueAssignment_1_in_rule__PredicatedKeyword__Group__1__Impl11916 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__PredicatedRuleCall__Group__0__Impl_in_rule__PredicatedRuleCall__Group__011950 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__PredicatedRuleCall__Group__1_in_rule__PredicatedRuleCall__Group__011953 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__PredicatedRuleCall__Alternatives_0_in_rule__PredicatedRuleCall__Group__0__Impl11980 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__PredicatedRuleCall__Group__1__Impl_in_rule__PredicatedRuleCall__Group__112010 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__PredicatedRuleCall__RuleAssignment_1_in_rule__PredicatedRuleCall__Group__1__Impl12037 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Assignment__Group__0__Impl_in_rule__Assignment__Group__012071 = new BitSet(new long[]{0x0000208000000010L});
-        public static final BitSet FOLLOW_rule__Assignment__Group__1_in_rule__Assignment__Group__012074 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Assignment__Alternatives_0_in_rule__Assignment__Group__0__Impl12101 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Assignment__Group__1__Impl_in_rule__Assignment__Group__112132 = new BitSet(new long[]{0x000000000002C000L});
-        public static final BitSet FOLLOW_rule__Assignment__Group__2_in_rule__Assignment__Group__112135 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Assignment__FeatureAssignment_1_in_rule__Assignment__Group__1__Impl12162 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Assignment__Group__2__Impl_in_rule__Assignment__Group__212192 = new BitSet(new long[]{0x0000000040200030L});
-        public static final BitSet FOLLOW_rule__Assignment__Group__3_in_rule__Assignment__Group__212195 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Assignment__OperatorAssignment_2_in_rule__Assignment__Group__2__Impl12222 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Assignment__Group__3__Impl_in_rule__Assignment__Group__312252 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Assignment__TerminalAssignment_3_in_rule__Assignment__Group__3__Impl12279 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__ParenthesizedAssignableElement__Group__0__Impl_in_rule__ParenthesizedAssignableElement__Group__012317 = new BitSet(new long[]{0x0000000040200030L});
-        public static final BitSet FOLLOW_rule__ParenthesizedAssignableElement__Group__1_in_rule__ParenthesizedAssignableElement__Group__012320 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_21_in_rule__ParenthesizedAssignableElement__Group__0__Impl12348 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__ParenthesizedAssignableElement__Group__1__Impl_in_rule__ParenthesizedAssignableElement__Group__112379 = new BitSet(new long[]{0x0000000000400000L});
-        public static final BitSet FOLLOW_rule__ParenthesizedAssignableElement__Group__2_in_rule__ParenthesizedAssignableElement__Group__112382 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAssignableAlternatives_in_rule__ParenthesizedAssignableElement__Group__1__Impl12409 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__ParenthesizedAssignableElement__Group__2__Impl_in_rule__ParenthesizedAssignableElement__Group__212438 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_22_in_rule__ParenthesizedAssignableElement__Group__2__Impl12466 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__AssignableAlternatives__Group__0__Impl_in_rule__AssignableAlternatives__Group__012503 = new BitSet(new long[]{0x0000000200000000L});
-        public static final BitSet FOLLOW_rule__AssignableAlternatives__Group__1_in_rule__AssignableAlternatives__Group__012506 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAssignableTerminal_in_rule__AssignableAlternatives__Group__0__Impl12533 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__AssignableAlternatives__Group__1__Impl_in_rule__AssignableAlternatives__Group__112562 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__AssignableAlternatives__Group_1__0_in_rule__AssignableAlternatives__Group__1__Impl12589 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__AssignableAlternatives__Group_1__0__Impl_in_rule__AssignableAlternatives__Group_1__012624 = new BitSet(new long[]{0x0000000200000000L});
-        public static final BitSet FOLLOW_rule__AssignableAlternatives__Group_1__1_in_rule__AssignableAlternatives__Group_1__012627 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__AssignableAlternatives__Group_1__1__Impl_in_rule__AssignableAlternatives__Group_1__112685 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__AssignableAlternatives__Group_1_1__0_in_rule__AssignableAlternatives__Group_1__1__Impl12714 = new BitSet(new long[]{0x0000000200000002L});
-        public static final BitSet FOLLOW_rule__AssignableAlternatives__Group_1_1__0_in_rule__AssignableAlternatives__Group_1__1__Impl12726 = new BitSet(new long[]{0x0000000200000002L});
-        public static final BitSet FOLLOW_rule__AssignableAlternatives__Group_1_1__0__Impl_in_rule__AssignableAlternatives__Group_1_1__012763 = new BitSet(new long[]{0x0000000040200030L});
-        public static final BitSet FOLLOW_rule__AssignableAlternatives__Group_1_1__1_in_rule__AssignableAlternatives__Group_1_1__012766 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_33_in_rule__AssignableAlternatives__Group_1_1__0__Impl12794 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__AssignableAlternatives__Group_1_1__1__Impl_in_rule__AssignableAlternatives__Group_1_1__112825 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__AssignableAlternatives__ElementsAssignment_1_1_1_in_rule__AssignableAlternatives__Group_1_1__1__Impl12852 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__CrossReference__Group__0__Impl_in_rule__CrossReference__Group__012886 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__CrossReference__Group__1_in_rule__CrossReference__Group__012889 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_30_in_rule__CrossReference__Group__0__Impl12917 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__CrossReference__Group__1__Impl_in_rule__CrossReference__Group__112948 = new BitSet(new long[]{0x0000000280000000L});
-        public static final BitSet FOLLOW_rule__CrossReference__Group__2_in_rule__CrossReference__Group__112951 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__CrossReference__TypeAssignment_1_in_rule__CrossReference__Group__1__Impl12978 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__CrossReference__Group__2__Impl_in_rule__CrossReference__Group__213008 = new BitSet(new long[]{0x0000000280000000L});
-        public static final BitSet FOLLOW_rule__CrossReference__Group__3_in_rule__CrossReference__Group__213011 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__CrossReference__Group_2__0_in_rule__CrossReference__Group__2__Impl13038 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__CrossReference__Group__3__Impl_in_rule__CrossReference__Group__313069 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_31_in_rule__CrossReference__Group__3__Impl13097 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__CrossReference__Group_2__0__Impl_in_rule__CrossReference__Group_2__013136 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_rule__CrossReference__Group_2__1_in_rule__CrossReference__Group_2__013139 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_33_in_rule__CrossReference__Group_2__0__Impl13167 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__CrossReference__Group_2__1__Impl_in_rule__CrossReference__Group_2__113198 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__CrossReference__TerminalAssignment_2_1_in_rule__CrossReference__Group_2__1__Impl13225 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__ParenthesizedElement__Group__0__Impl_in_rule__ParenthesizedElement__Group__013259 = new BitSet(new long[]{0x0000208840200030L});
-        public static final BitSet FOLLOW_rule__ParenthesizedElement__Group__1_in_rule__ParenthesizedElement__Group__013262 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_21_in_rule__ParenthesizedElement__Group__0__Impl13290 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__ParenthesizedElement__Group__1__Impl_in_rule__ParenthesizedElement__Group__113321 = new BitSet(new long[]{0x0000000000400000L});
-        public static final BitSet FOLLOW_rule__ParenthesizedElement__Group__2_in_rule__ParenthesizedElement__Group__113324 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAlternatives_in_rule__ParenthesizedElement__Group__1__Impl13351 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__ParenthesizedElement__Group__2__Impl_in_rule__ParenthesizedElement__Group__213380 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_22_in_rule__ParenthesizedElement__Group__2__Impl13408 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__PredicatedGroup__Group__0__Impl_in_rule__PredicatedGroup__Group__013445 = new BitSet(new long[]{0x0000000000200000L});
-        public static final BitSet FOLLOW_rule__PredicatedGroup__Group__1_in_rule__PredicatedGroup__Group__013448 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__PredicatedGroup__Alternatives_0_in_rule__PredicatedGroup__Group__0__Impl13475 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__PredicatedGroup__Group__1__Impl_in_rule__PredicatedGroup__Group__113505 = new BitSet(new long[]{0x0000208840200030L});
-        public static final BitSet FOLLOW_rule__PredicatedGroup__Group__2_in_rule__PredicatedGroup__Group__113508 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_21_in_rule__PredicatedGroup__Group__1__Impl13536 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__PredicatedGroup__Group__2__Impl_in_rule__PredicatedGroup__Group__213567 = new BitSet(new long[]{0x0000000000400000L});
-        public static final BitSet FOLLOW_rule__PredicatedGroup__Group__3_in_rule__PredicatedGroup__Group__213570 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__PredicatedGroup__ElementsAssignment_2_in_rule__PredicatedGroup__Group__2__Impl13597 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__PredicatedGroup__Group__3__Impl_in_rule__PredicatedGroup__Group__313627 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_22_in_rule__PredicatedGroup__Group__3__Impl13655 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalRule__Group__0__Impl_in_rule__TerminalRule__Group__013694 = new BitSet(new long[]{0x0000100000000010L});
-        public static final BitSet FOLLOW_rule__TerminalRule__Group__1_in_rule__TerminalRule__Group__013697 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_38_in_rule__TerminalRule__Group__0__Impl13725 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalRule__Group__1__Impl_in_rule__TerminalRule__Group__113756 = new BitSet(new long[]{0x0000000008000000L});
-        public static final BitSet FOLLOW_rule__TerminalRule__Group__2_in_rule__TerminalRule__Group__113759 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalRule__Alternatives_1_in_rule__TerminalRule__Group__1__Impl13786 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalRule__Group__2__Impl_in_rule__TerminalRule__Group__213816 = new BitSet(new long[]{0x0000018000A10030L});
-        public static final BitSet FOLLOW_rule__TerminalRule__Group__3_in_rule__TerminalRule__Group__213819 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_27_in_rule__TerminalRule__Group__2__Impl13847 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalRule__Group__3__Impl_in_rule__TerminalRule__Group__313878 = new BitSet(new long[]{0x0000000010000000L});
-        public static final BitSet FOLLOW_rule__TerminalRule__Group__4_in_rule__TerminalRule__Group__313881 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalRule__AlternativesAssignment_3_in_rule__TerminalRule__Group__3__Impl13908 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalRule__Group__4__Impl_in_rule__TerminalRule__Group__413938 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_28_in_rule__TerminalRule__Group__4__Impl13966 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalRule__Group_1_0__0__Impl_in_rule__TerminalRule__Group_1_0__014007 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__TerminalRule__Group_1_0__1_in_rule__TerminalRule__Group_1_0__014010 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalRule__FragmentAssignment_1_0_0_in_rule__TerminalRule__Group_1_0__0__Impl14037 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalRule__Group_1_0__1__Impl_in_rule__TerminalRule__Group_1_0__114067 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalRule__NameAssignment_1_0_1_in_rule__TerminalRule__Group_1_0__1__Impl14094 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalRule__Group_1_1__0__Impl_in_rule__TerminalRule__Group_1_1__014128 = new BitSet(new long[]{0x0000000020000000L});
-        public static final BitSet FOLLOW_rule__TerminalRule__Group_1_1__1_in_rule__TerminalRule__Group_1_1__014131 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalRule__NameAssignment_1_1_0_in_rule__TerminalRule__Group_1_1__0__Impl14158 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalRule__Group_1_1__1__Impl_in_rule__TerminalRule__Group_1_1__114188 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalRule__Group_1_1_1__0_in_rule__TerminalRule__Group_1_1__1__Impl14215 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalRule__Group_1_1_1__0__Impl_in_rule__TerminalRule__Group_1_1_1__014250 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__TerminalRule__Group_1_1_1__1_in_rule__TerminalRule__Group_1_1_1__014253 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_29_in_rule__TerminalRule__Group_1_1_1__0__Impl14281 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalRule__Group_1_1_1__1__Impl_in_rule__TerminalRule__Group_1_1_1__114312 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalRule__TypeAssignment_1_1_1_1_in_rule__TerminalRule__Group_1_1_1__1__Impl14339 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalAlternatives__Group__0__Impl_in_rule__TerminalAlternatives__Group__014373 = new BitSet(new long[]{0x0000000200000000L});
-        public static final BitSet FOLLOW_rule__TerminalAlternatives__Group__1_in_rule__TerminalAlternatives__Group__014376 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTerminalGroup_in_rule__TerminalAlternatives__Group__0__Impl14403 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalAlternatives__Group__1__Impl_in_rule__TerminalAlternatives__Group__114432 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalAlternatives__Group_1__0_in_rule__TerminalAlternatives__Group__1__Impl14459 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalAlternatives__Group_1__0__Impl_in_rule__TerminalAlternatives__Group_1__014494 = new BitSet(new long[]{0x0000000200000000L});
-        public static final BitSet FOLLOW_rule__TerminalAlternatives__Group_1__1_in_rule__TerminalAlternatives__Group_1__014497 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalAlternatives__Group_1__1__Impl_in_rule__TerminalAlternatives__Group_1__114555 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalAlternatives__Group_1_1__0_in_rule__TerminalAlternatives__Group_1__1__Impl14584 = new BitSet(new long[]{0x0000000200000002L});
-        public static final BitSet FOLLOW_rule__TerminalAlternatives__Group_1_1__0_in_rule__TerminalAlternatives__Group_1__1__Impl14596 = new BitSet(new long[]{0x0000000200000002L});
-        public static final BitSet FOLLOW_rule__TerminalAlternatives__Group_1_1__0__Impl_in_rule__TerminalAlternatives__Group_1_1__014633 = new BitSet(new long[]{0x0000018000A10030L});
-        public static final BitSet FOLLOW_rule__TerminalAlternatives__Group_1_1__1_in_rule__TerminalAlternatives__Group_1_1__014636 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_33_in_rule__TerminalAlternatives__Group_1_1__0__Impl14664 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalAlternatives__Group_1_1__1__Impl_in_rule__TerminalAlternatives__Group_1_1__114695 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalAlternatives__ElementsAssignment_1_1_1_in_rule__TerminalAlternatives__Group_1_1__1__Impl14722 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalGroup__Group__0__Impl_in_rule__TerminalGroup__Group__014756 = new BitSet(new long[]{0x0000018000A10030L});
-        public static final BitSet FOLLOW_rule__TerminalGroup__Group__1_in_rule__TerminalGroup__Group__014759 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTerminalToken_in_rule__TerminalGroup__Group__0__Impl14786 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalGroup__Group__1__Impl_in_rule__TerminalGroup__Group__114815 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalGroup__Group_1__0_in_rule__TerminalGroup__Group__1__Impl14842 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalGroup__Group_1__0__Impl_in_rule__TerminalGroup__Group_1__014877 = new BitSet(new long[]{0x0000018000A10030L});
-        public static final BitSet FOLLOW_rule__TerminalGroup__Group_1__1_in_rule__TerminalGroup__Group_1__014880 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalGroup__Group_1__1__Impl_in_rule__TerminalGroup__Group_1__114938 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalGroup__ElementsAssignment_1_1_in_rule__TerminalGroup__Group_1__1__Impl14967 = new BitSet(new long[]{0x0000018000A10032L});
-        public static final BitSet FOLLOW_rule__TerminalGroup__ElementsAssignment_1_1_in_rule__TerminalGroup__Group_1__1__Impl14979 = new BitSet(new long[]{0x0000018000A10032L});
-        public static final BitSet FOLLOW_rule__TerminalToken__Group__0__Impl_in_rule__TerminalToken__Group__015016 = new BitSet(new long[]{0x0000000000003800L});
-        public static final BitSet FOLLOW_rule__TerminalToken__Group__1_in_rule__TerminalToken__Group__015019 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTerminalTokenElement_in_rule__TerminalToken__Group__0__Impl15046 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalToken__Group__1__Impl_in_rule__TerminalToken__Group__115075 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalToken__CardinalityAssignment_1_in_rule__TerminalToken__Group__1__Impl15102 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__ParenthesizedTerminalElement__Group__0__Impl_in_rule__ParenthesizedTerminalElement__Group__015137 = new BitSet(new long[]{0x0000018000A10030L});
-        public static final BitSet FOLLOW_rule__ParenthesizedTerminalElement__Group__1_in_rule__ParenthesizedTerminalElement__Group__015140 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_21_in_rule__ParenthesizedTerminalElement__Group__0__Impl15168 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__ParenthesizedTerminalElement__Group__1__Impl_in_rule__ParenthesizedTerminalElement__Group__115199 = new BitSet(new long[]{0x0000000000400000L});
-        public static final BitSet FOLLOW_rule__ParenthesizedTerminalElement__Group__2_in_rule__ParenthesizedTerminalElement__Group__115202 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTerminalAlternatives_in_rule__ParenthesizedTerminalElement__Group__1__Impl15229 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__ParenthesizedTerminalElement__Group__2__Impl_in_rule__ParenthesizedTerminalElement__Group__215258 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_22_in_rule__ParenthesizedTerminalElement__Group__2__Impl15286 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__NegatedToken__Group__0__Impl_in_rule__NegatedToken__Group__015323 = new BitSet(new long[]{0x0000018000A10030L});
-        public static final BitSet FOLLOW_rule__NegatedToken__Group__1_in_rule__NegatedToken__Group__015326 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_16_in_rule__NegatedToken__Group__0__Impl15354 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__NegatedToken__Group__1__Impl_in_rule__NegatedToken__Group__115385 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__NegatedToken__TerminalAssignment_1_in_rule__NegatedToken__Group__1__Impl15412 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__UntilToken__Group__0__Impl_in_rule__UntilToken__Group__015446 = new BitSet(new long[]{0x0000018000A10030L});
-        public static final BitSet FOLLOW_rule__UntilToken__Group__1_in_rule__UntilToken__Group__015449 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_39_in_rule__UntilToken__Group__0__Impl15477 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__UntilToken__Group__1__Impl_in_rule__UntilToken__Group__115508 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__UntilToken__TerminalAssignment_1_in_rule__UntilToken__Group__1__Impl15535 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Wildcard__Group__0__Impl_in_rule__Wildcard__Group__015569 = new BitSet(new long[]{0x0000000000800000L});
-        public static final BitSet FOLLOW_rule__Wildcard__Group__1_in_rule__Wildcard__Group__015572 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Wildcard__Group__1__Impl_in_rule__Wildcard__Group__115630 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_23_in_rule__Wildcard__Group__1__Impl15658 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EOF__Group__0__Impl_in_rule__EOF__Group__015693 = new BitSet(new long[]{0x0000018000A10030L});
-        public static final BitSet FOLLOW_rule__EOF__Group__1_in_rule__EOF__Group__015696 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EOF__Group__1__Impl_in_rule__EOF__Group__115754 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_40_in_rule__EOF__Group__1__Impl15782 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__CharacterRange__Group__0__Impl_in_rule__CharacterRange__Group__015817 = new BitSet(new long[]{0x0000020000000000L});
-        public static final BitSet FOLLOW_rule__CharacterRange__Group__1_in_rule__CharacterRange__Group__015820 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleKeyword_in_rule__CharacterRange__Group__0__Impl15847 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__CharacterRange__Group__1__Impl_in_rule__CharacterRange__Group__115876 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__CharacterRange__Group_1__0_in_rule__CharacterRange__Group__1__Impl15903 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__CharacterRange__Group_1__0__Impl_in_rule__CharacterRange__Group_1__015938 = new BitSet(new long[]{0x0000020000000000L});
-        public static final BitSet FOLLOW_rule__CharacterRange__Group_1__1_in_rule__CharacterRange__Group_1__015941 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__CharacterRange__Group_1__1__Impl_in_rule__CharacterRange__Group_1__115999 = new BitSet(new long[]{0x0000000000000020L});
-        public static final BitSet FOLLOW_rule__CharacterRange__Group_1__2_in_rule__CharacterRange__Group_1__116002 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_41_in_rule__CharacterRange__Group_1__1__Impl16030 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__CharacterRange__Group_1__2__Impl_in_rule__CharacterRange__Group_1__216061 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__CharacterRange__RightAssignment_1_2_in_rule__CharacterRange__Group_1__2__Impl16088 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EnumRule__Group__0__Impl_in_rule__EnumRule__Group__016124 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__EnumRule__Group__1_in_rule__EnumRule__Group__016127 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_42_in_rule__EnumRule__Group__0__Impl16155 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EnumRule__Group__1__Impl_in_rule__EnumRule__Group__116186 = new BitSet(new long[]{0x0000000028000000L});
-        public static final BitSet FOLLOW_rule__EnumRule__Group__2_in_rule__EnumRule__Group__116189 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EnumRule__NameAssignment_1_in_rule__EnumRule__Group__1__Impl16216 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EnumRule__Group__2__Impl_in_rule__EnumRule__Group__216246 = new BitSet(new long[]{0x0000000028000000L});
-        public static final BitSet FOLLOW_rule__EnumRule__Group__3_in_rule__EnumRule__Group__216249 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EnumRule__Group_2__0_in_rule__EnumRule__Group__2__Impl16276 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EnumRule__Group__3__Impl_in_rule__EnumRule__Group__316307 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__EnumRule__Group__4_in_rule__EnumRule__Group__316310 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_27_in_rule__EnumRule__Group__3__Impl16338 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EnumRule__Group__4__Impl_in_rule__EnumRule__Group__416369 = new BitSet(new long[]{0x0000000010000000L});
-        public static final BitSet FOLLOW_rule__EnumRule__Group__5_in_rule__EnumRule__Group__416372 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EnumRule__AlternativesAssignment_4_in_rule__EnumRule__Group__4__Impl16399 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EnumRule__Group__5__Impl_in_rule__EnumRule__Group__516429 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_28_in_rule__EnumRule__Group__5__Impl16457 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EnumRule__Group_2__0__Impl_in_rule__EnumRule__Group_2__016500 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__EnumRule__Group_2__1_in_rule__EnumRule__Group_2__016503 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_29_in_rule__EnumRule__Group_2__0__Impl16531 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EnumRule__Group_2__1__Impl_in_rule__EnumRule__Group_2__116562 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EnumRule__TypeAssignment_2_1_in_rule__EnumRule__Group_2__1__Impl16589 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EnumLiterals__Group__0__Impl_in_rule__EnumLiterals__Group__016623 = new BitSet(new long[]{0x0000000200000000L});
-        public static final BitSet FOLLOW_rule__EnumLiterals__Group__1_in_rule__EnumLiterals__Group__016626 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEnumLiteralDeclaration_in_rule__EnumLiterals__Group__0__Impl16653 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EnumLiterals__Group__1__Impl_in_rule__EnumLiterals__Group__116682 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EnumLiterals__Group_1__0_in_rule__EnumLiterals__Group__1__Impl16709 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EnumLiterals__Group_1__0__Impl_in_rule__EnumLiterals__Group_1__016744 = new BitSet(new long[]{0x0000000200000000L});
-        public static final BitSet FOLLOW_rule__EnumLiterals__Group_1__1_in_rule__EnumLiterals__Group_1__016747 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EnumLiterals__Group_1__1__Impl_in_rule__EnumLiterals__Group_1__116805 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EnumLiterals__Group_1_1__0_in_rule__EnumLiterals__Group_1__1__Impl16834 = new BitSet(new long[]{0x0000000200000002L});
-        public static final BitSet FOLLOW_rule__EnumLiterals__Group_1_1__0_in_rule__EnumLiterals__Group_1__1__Impl16846 = new BitSet(new long[]{0x0000000200000002L});
-        public static final BitSet FOLLOW_rule__EnumLiterals__Group_1_1__0__Impl_in_rule__EnumLiterals__Group_1_1__016883 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_rule__EnumLiterals__Group_1_1__1_in_rule__EnumLiterals__Group_1_1__016886 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_33_in_rule__EnumLiterals__Group_1_1__0__Impl16914 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EnumLiterals__Group_1_1__1__Impl_in_rule__EnumLiterals__Group_1_1__116945 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EnumLiterals__ElementsAssignment_1_1_1_in_rule__EnumLiterals__Group_1_1__1__Impl16972 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EnumLiteralDeclaration__Group__0__Impl_in_rule__EnumLiteralDeclaration__Group__017006 = new BitSet(new long[]{0x0000000000004000L});
-        public static final BitSet FOLLOW_rule__EnumLiteralDeclaration__Group__1_in_rule__EnumLiteralDeclaration__Group__017009 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EnumLiteralDeclaration__EnumLiteralAssignment_0_in_rule__EnumLiteralDeclaration__Group__0__Impl17036 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EnumLiteralDeclaration__Group__1__Impl_in_rule__EnumLiteralDeclaration__Group__117066 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EnumLiteralDeclaration__Group_1__0_in_rule__EnumLiteralDeclaration__Group__1__Impl17093 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EnumLiteralDeclaration__Group_1__0__Impl_in_rule__EnumLiteralDeclaration__Group_1__017128 = new BitSet(new long[]{0x0000000000000020L});
-        public static final BitSet FOLLOW_rule__EnumLiteralDeclaration__Group_1__1_in_rule__EnumLiteralDeclaration__Group_1__017131 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_14_in_rule__EnumLiteralDeclaration__Group_1__0__Impl17159 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EnumLiteralDeclaration__Group_1__1__Impl_in_rule__EnumLiteralDeclaration__Group_1__117190 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__EnumLiteralDeclaration__LiteralAssignment_1_1_in_rule__EnumLiteralDeclaration__Group_1__1__Impl17217 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleGrammarID_in_rule__Grammar__NameAssignment_117256 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleGrammarID_in_rule__Grammar__UsedGrammarsAssignment_2_117291 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleGrammarID_in_rule__Grammar__UsedGrammarsAssignment_2_2_117330 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_43_in_rule__Grammar__DefinesHiddenTokensAssignment_3_017370 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_rule__Grammar__HiddenTokensAssignment_3_2_017413 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_rule__Grammar__HiddenTokensAssignment_3_2_1_117452 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAbstractMetamodelDeclaration_in_rule__Grammar__MetamodelDeclarationsAssignment_417487 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAbstractRule_in_rule__Grammar__RulesAssignment_517518 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_rule__GeneratedMetamodel__NameAssignment_117549 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_STRING_in_rule__GeneratedMetamodel__EPackageAssignment_217584 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_rule__GeneratedMetamodel__AliasAssignment_3_117619 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_STRING_in_rule__ReferencedMetamodel__EPackageAssignment_117654 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_rule__ReferencedMetamodel__AliasAssignment_2_117689 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_44_in_rule__ParserRule__FragmentAssignment_0_0_017725 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_12_in_rule__ParserRule__WildcardAssignment_0_0_2_017769 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTypeRef_in_rule__ParserRule__TypeAssignment_0_0_2_1_117808 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTypeRef_in_rule__ParserRule__TypeAssignment_0_1_1_117839 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_43_in_rule__ParserRule__DefinesHiddenTokensAssignment_1_017875 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_rule__ParserRule__HiddenTokensAssignment_1_2_017918 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_rule__ParserRule__HiddenTokensAssignment_1_2_1_117957 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAlternatives_in_rule__ParserRule__AlternativesAssignment_317992 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_rule__RuleNameAndParams__NameAssignment_018023 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleParameter_in_rule__RuleNameAndParams__ParametersAssignment_1_1_018054 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleParameter_in_rule__RuleNameAndParams__ParametersAssignment_1_1_1_118085 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_rule__Parameter__NameAssignment18116 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_rule__TypeRef__MetamodelAssignment_0_018151 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_rule__TypeRef__ClassifierAssignment_118190 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleConditionalBranch_in_rule__Alternatives__ElementsAssignment_1_1_118225 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleInverseLiteralValue_in_rule__ConditionalBranch__FilteredAssignment_1_218256 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_rule__ConditionalBranch__ParameterAssignment_1_318291 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleUnorderedGroup_in_rule__ConditionalBranch__GuardedElementAssignment_1_518326 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleGroup_in_rule__UnorderedGroup__ElementsAssignment_1_1_118357 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAbstractToken_in_rule__Group__ElementsAssignment_1_118388 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__AbstractTokenWithCardinality__CardinalityAlternatives_1_0_in_rule__AbstractTokenWithCardinality__CardinalityAssignment_118419 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTypeRef_in_rule__Action__TypeAssignment_118452 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_rule__Action__FeatureAssignment_2_118483 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Action__OperatorAlternatives_2_2_0_in_rule__Action__OperatorAssignment_2_218514 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_STRING_in_rule__Keyword__ValueAssignment18547 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleRuleID_in_rule__RuleCall__RuleAssignment_018582 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleNamedArgument_in_rule__RuleCall__ArgumentsAssignment_1_118617 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleNamedArgument_in_rule__RuleCall__ArgumentsAssignment_1_2_118648 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleLiteralValue_in_rule__NamedArgument__LiteralValueAssignment_0_018679 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_rule__NamedArgument__ParameterAssignment_0_118714 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_rule__NamedArgument__ParameterAssignment_1_018753 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_rule__NamedArgument__ValueAssignment_1_218792 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleRuleID_in_rule__TerminalRuleCall__RuleAssignment18831 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_45_in_rule__PredicatedKeyword__PredicatedAssignment_0_018871 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_39_in_rule__PredicatedKeyword__FirstSetPredicatedAssignment_0_118915 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_STRING_in_rule__PredicatedKeyword__ValueAssignment_118954 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_45_in_rule__PredicatedRuleCall__PredicatedAssignment_0_018990 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_39_in_rule__PredicatedRuleCall__FirstSetPredicatedAssignment_0_119034 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_rule__PredicatedRuleCall__RuleAssignment_119077 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_45_in_rule__Assignment__PredicatedAssignment_0_019117 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_39_in_rule__Assignment__FirstSetPredicatedAssignment_0_119161 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_rule__Assignment__FeatureAssignment_119200 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__Assignment__OperatorAlternatives_2_0_in_rule__Assignment__OperatorAssignment_219231 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAssignableTerminal_in_rule__Assignment__TerminalAssignment_319264 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAssignableTerminal_in_rule__AssignableAlternatives__ElementsAssignment_1_1_119295 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTypeRef_in_rule__CrossReference__TypeAssignment_119326 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleCrossReferenceableTerminal_in_rule__CrossReference__TerminalAssignment_2_119357 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_45_in_rule__PredicatedGroup__PredicatedAssignment_0_019393 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_39_in_rule__PredicatedGroup__FirstSetPredicatedAssignment_0_119437 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAlternatives_in_rule__PredicatedGroup__ElementsAssignment_219476 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_44_in_rule__TerminalRule__FragmentAssignment_1_0_019512 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_rule__TerminalRule__NameAssignment_1_0_119551 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_rule__TerminalRule__NameAssignment_1_1_019582 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTypeRef_in_rule__TerminalRule__TypeAssignment_1_1_1_119613 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTerminalAlternatives_in_rule__TerminalRule__AlternativesAssignment_319644 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTerminalGroup_in_rule__TerminalAlternatives__ElementsAssignment_1_1_119675 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTerminalToken_in_rule__TerminalGroup__ElementsAssignment_1_119706 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rule__TerminalToken__CardinalityAlternatives_1_0_in_rule__TerminalToken__CardinalityAssignment_119737 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTerminalTokenElement_in_rule__NegatedToken__TerminalAssignment_119770 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTerminalTokenElement_in_rule__UntilToken__TerminalAssignment_119801 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleKeyword_in_rule__CharacterRange__RightAssignment_1_219832 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_rule__EnumRule__NameAssignment_119863 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTypeRef_in_rule__EnumRule__TypeAssignment_2_119894 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEnumLiterals_in_rule__EnumRule__AlternativesAssignment_419925 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEnumLiteralDeclaration_in_rule__EnumLiterals__ElementsAssignment_1_1_119956 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_rule__EnumLiteralDeclaration__EnumLiteralAssignment_019991 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleKeyword_in_rule__EnumLiteralDeclaration__LiteralAssignment_1_120026 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__NamedArgument__Group_0__1__Impl_in_rule__NamedArgument__Group_0__111339 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__NamedArgument__ParameterAssignment_0_1_in_rule__NamedArgument__Group_0__1__Impl11366 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__NamedArgument__Group_1__0__Impl_in_rule__NamedArgument__Group_1__011400 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_rule__NamedArgument__Group_1__1_in_rule__NamedArgument__Group_1__011403 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__NamedArgument__ParameterAssignment_1_0_in_rule__NamedArgument__Group_1__0__Impl11430 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__NamedArgument__Group_1__1__Impl_in_rule__NamedArgument__Group_1__111460 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__NamedArgument__Group_1_1__0_in_rule__NamedArgument__Group_1__1__Impl11487 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__NamedArgument__Group_1_1__0__Impl_in_rule__NamedArgument__Group_1_1__011522 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_rule__NamedArgument__Group_1_1__1_in_rule__NamedArgument__Group_1_1__011525 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__NamedArgument__ExplicitValueAssignment_1_1_0_in_rule__NamedArgument__Group_1_1__0__Impl11552 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__NamedArgument__Group_1_1__1__Impl_in_rule__NamedArgument__Group_1_1__111582 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__NamedArgument__ValueAssignment_1_1_1_in_rule__NamedArgument__Group_1_1__1__Impl11609 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RuleID__Group__0__Impl_in_rule__RuleID__Group__011643 = new BitSet(new long[]{0x0000000100000000L});
+        public static final BitSet FOLLOW_rule__RuleID__Group__1_in_rule__RuleID__Group__011646 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rule__RuleID__Group__0__Impl11673 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RuleID__Group__1__Impl_in_rule__RuleID__Group__111702 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RuleID__Group_1__0_in_rule__RuleID__Group__1__Impl11729 = new BitSet(new long[]{0x0000000100000002L});
+        public static final BitSet FOLLOW_rule__RuleID__Group_1__0__Impl_in_rule__RuleID__Group_1__011764 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_rule__RuleID__Group_1__1_in_rule__RuleID__Group_1__011767 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_32_in_rule__RuleID__Group_1__0__Impl11795 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__RuleID__Group_1__1__Impl_in_rule__RuleID__Group_1__111826 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rule__RuleID__Group_1__1__Impl11853 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__PredicatedKeyword__Group__0__Impl_in_rule__PredicatedKeyword__Group__011886 = new BitSet(new long[]{0x0000000000000020L});
+        public static final BitSet FOLLOW_rule__PredicatedKeyword__Group__1_in_rule__PredicatedKeyword__Group__011889 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__PredicatedKeyword__Alternatives_0_in_rule__PredicatedKeyword__Group__0__Impl11916 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__PredicatedKeyword__Group__1__Impl_in_rule__PredicatedKeyword__Group__111946 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__PredicatedKeyword__ValueAssignment_1_in_rule__PredicatedKeyword__Group__1__Impl11973 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__PredicatedRuleCall__Group__0__Impl_in_rule__PredicatedRuleCall__Group__012007 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_rule__PredicatedRuleCall__Group__1_in_rule__PredicatedRuleCall__Group__012010 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__PredicatedRuleCall__Alternatives_0_in_rule__PredicatedRuleCall__Group__0__Impl12037 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__PredicatedRuleCall__Group__1__Impl_in_rule__PredicatedRuleCall__Group__112067 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__PredicatedRuleCall__RuleAssignment_1_in_rule__PredicatedRuleCall__Group__1__Impl12094 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Assignment__Group__0__Impl_in_rule__Assignment__Group__012128 = new BitSet(new long[]{0x0000208000000010L});
+        public static final BitSet FOLLOW_rule__Assignment__Group__1_in_rule__Assignment__Group__012131 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Assignment__Alternatives_0_in_rule__Assignment__Group__0__Impl12158 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Assignment__Group__1__Impl_in_rule__Assignment__Group__112189 = new BitSet(new long[]{0x000000000002C000L});
+        public static final BitSet FOLLOW_rule__Assignment__Group__2_in_rule__Assignment__Group__112192 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Assignment__FeatureAssignment_1_in_rule__Assignment__Group__1__Impl12219 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Assignment__Group__2__Impl_in_rule__Assignment__Group__212249 = new BitSet(new long[]{0x0000000040200030L});
+        public static final BitSet FOLLOW_rule__Assignment__Group__3_in_rule__Assignment__Group__212252 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Assignment__OperatorAssignment_2_in_rule__Assignment__Group__2__Impl12279 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Assignment__Group__3__Impl_in_rule__Assignment__Group__312309 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Assignment__TerminalAssignment_3_in_rule__Assignment__Group__3__Impl12336 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__ParenthesizedAssignableElement__Group__0__Impl_in_rule__ParenthesizedAssignableElement__Group__012374 = new BitSet(new long[]{0x0000000040200030L});
+        public static final BitSet FOLLOW_rule__ParenthesizedAssignableElement__Group__1_in_rule__ParenthesizedAssignableElement__Group__012377 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_21_in_rule__ParenthesizedAssignableElement__Group__0__Impl12405 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__ParenthesizedAssignableElement__Group__1__Impl_in_rule__ParenthesizedAssignableElement__Group__112436 = new BitSet(new long[]{0x0000000000400000L});
+        public static final BitSet FOLLOW_rule__ParenthesizedAssignableElement__Group__2_in_rule__ParenthesizedAssignableElement__Group__112439 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAssignableAlternatives_in_rule__ParenthesizedAssignableElement__Group__1__Impl12466 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__ParenthesizedAssignableElement__Group__2__Impl_in_rule__ParenthesizedAssignableElement__Group__212495 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_22_in_rule__ParenthesizedAssignableElement__Group__2__Impl12523 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__AssignableAlternatives__Group__0__Impl_in_rule__AssignableAlternatives__Group__012560 = new BitSet(new long[]{0x0000000200000000L});
+        public static final BitSet FOLLOW_rule__AssignableAlternatives__Group__1_in_rule__AssignableAlternatives__Group__012563 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAssignableTerminal_in_rule__AssignableAlternatives__Group__0__Impl12590 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__AssignableAlternatives__Group__1__Impl_in_rule__AssignableAlternatives__Group__112619 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__AssignableAlternatives__Group_1__0_in_rule__AssignableAlternatives__Group__1__Impl12646 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__AssignableAlternatives__Group_1__0__Impl_in_rule__AssignableAlternatives__Group_1__012681 = new BitSet(new long[]{0x0000000200000000L});
+        public static final BitSet FOLLOW_rule__AssignableAlternatives__Group_1__1_in_rule__AssignableAlternatives__Group_1__012684 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__AssignableAlternatives__Group_1__1__Impl_in_rule__AssignableAlternatives__Group_1__112742 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__AssignableAlternatives__Group_1_1__0_in_rule__AssignableAlternatives__Group_1__1__Impl12771 = new BitSet(new long[]{0x0000000200000002L});
+        public static final BitSet FOLLOW_rule__AssignableAlternatives__Group_1_1__0_in_rule__AssignableAlternatives__Group_1__1__Impl12783 = new BitSet(new long[]{0x0000000200000002L});
+        public static final BitSet FOLLOW_rule__AssignableAlternatives__Group_1_1__0__Impl_in_rule__AssignableAlternatives__Group_1_1__012820 = new BitSet(new long[]{0x0000000040200030L});
+        public static final BitSet FOLLOW_rule__AssignableAlternatives__Group_1_1__1_in_rule__AssignableAlternatives__Group_1_1__012823 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_33_in_rule__AssignableAlternatives__Group_1_1__0__Impl12851 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__AssignableAlternatives__Group_1_1__1__Impl_in_rule__AssignableAlternatives__Group_1_1__112882 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__AssignableAlternatives__ElementsAssignment_1_1_1_in_rule__AssignableAlternatives__Group_1_1__1__Impl12909 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__CrossReference__Group__0__Impl_in_rule__CrossReference__Group__012943 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_rule__CrossReference__Group__1_in_rule__CrossReference__Group__012946 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_30_in_rule__CrossReference__Group__0__Impl12974 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__CrossReference__Group__1__Impl_in_rule__CrossReference__Group__113005 = new BitSet(new long[]{0x0000000280000000L});
+        public static final BitSet FOLLOW_rule__CrossReference__Group__2_in_rule__CrossReference__Group__113008 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__CrossReference__TypeAssignment_1_in_rule__CrossReference__Group__1__Impl13035 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__CrossReference__Group__2__Impl_in_rule__CrossReference__Group__213065 = new BitSet(new long[]{0x0000000280000000L});
+        public static final BitSet FOLLOW_rule__CrossReference__Group__3_in_rule__CrossReference__Group__213068 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__CrossReference__Group_2__0_in_rule__CrossReference__Group__2__Impl13095 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__CrossReference__Group__3__Impl_in_rule__CrossReference__Group__313126 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_31_in_rule__CrossReference__Group__3__Impl13154 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__CrossReference__Group_2__0__Impl_in_rule__CrossReference__Group_2__013193 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_rule__CrossReference__Group_2__1_in_rule__CrossReference__Group_2__013196 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_33_in_rule__CrossReference__Group_2__0__Impl13224 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__CrossReference__Group_2__1__Impl_in_rule__CrossReference__Group_2__113255 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__CrossReference__TerminalAssignment_2_1_in_rule__CrossReference__Group_2__1__Impl13282 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__ParenthesizedElement__Group__0__Impl_in_rule__ParenthesizedElement__Group__013316 = new BitSet(new long[]{0x0000208840200030L});
+        public static final BitSet FOLLOW_rule__ParenthesizedElement__Group__1_in_rule__ParenthesizedElement__Group__013319 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_21_in_rule__ParenthesizedElement__Group__0__Impl13347 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__ParenthesizedElement__Group__1__Impl_in_rule__ParenthesizedElement__Group__113378 = new BitSet(new long[]{0x0000000000400000L});
+        public static final BitSet FOLLOW_rule__ParenthesizedElement__Group__2_in_rule__ParenthesizedElement__Group__113381 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAlternatives_in_rule__ParenthesizedElement__Group__1__Impl13408 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__ParenthesizedElement__Group__2__Impl_in_rule__ParenthesizedElement__Group__213437 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_22_in_rule__ParenthesizedElement__Group__2__Impl13465 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__PredicatedGroup__Group__0__Impl_in_rule__PredicatedGroup__Group__013502 = new BitSet(new long[]{0x0000000000200000L});
+        public static final BitSet FOLLOW_rule__PredicatedGroup__Group__1_in_rule__PredicatedGroup__Group__013505 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__PredicatedGroup__Alternatives_0_in_rule__PredicatedGroup__Group__0__Impl13532 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__PredicatedGroup__Group__1__Impl_in_rule__PredicatedGroup__Group__113562 = new BitSet(new long[]{0x0000208840200030L});
+        public static final BitSet FOLLOW_rule__PredicatedGroup__Group__2_in_rule__PredicatedGroup__Group__113565 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_21_in_rule__PredicatedGroup__Group__1__Impl13593 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__PredicatedGroup__Group__2__Impl_in_rule__PredicatedGroup__Group__213624 = new BitSet(new long[]{0x0000000000400000L});
+        public static final BitSet FOLLOW_rule__PredicatedGroup__Group__3_in_rule__PredicatedGroup__Group__213627 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__PredicatedGroup__ElementsAssignment_2_in_rule__PredicatedGroup__Group__2__Impl13654 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__PredicatedGroup__Group__3__Impl_in_rule__PredicatedGroup__Group__313684 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_22_in_rule__PredicatedGroup__Group__3__Impl13712 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalRule__Group__0__Impl_in_rule__TerminalRule__Group__013751 = new BitSet(new long[]{0x0000100000000010L});
+        public static final BitSet FOLLOW_rule__TerminalRule__Group__1_in_rule__TerminalRule__Group__013754 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_38_in_rule__TerminalRule__Group__0__Impl13782 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalRule__Group__1__Impl_in_rule__TerminalRule__Group__113813 = new BitSet(new long[]{0x0000000008000000L});
+        public static final BitSet FOLLOW_rule__TerminalRule__Group__2_in_rule__TerminalRule__Group__113816 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalRule__Alternatives_1_in_rule__TerminalRule__Group__1__Impl13843 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalRule__Group__2__Impl_in_rule__TerminalRule__Group__213873 = new BitSet(new long[]{0x0000018000A10030L});
+        public static final BitSet FOLLOW_rule__TerminalRule__Group__3_in_rule__TerminalRule__Group__213876 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_27_in_rule__TerminalRule__Group__2__Impl13904 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalRule__Group__3__Impl_in_rule__TerminalRule__Group__313935 = new BitSet(new long[]{0x0000000010000000L});
+        public static final BitSet FOLLOW_rule__TerminalRule__Group__4_in_rule__TerminalRule__Group__313938 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalRule__AlternativesAssignment_3_in_rule__TerminalRule__Group__3__Impl13965 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalRule__Group__4__Impl_in_rule__TerminalRule__Group__413995 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_28_in_rule__TerminalRule__Group__4__Impl14023 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalRule__Group_1_0__0__Impl_in_rule__TerminalRule__Group_1_0__014064 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_rule__TerminalRule__Group_1_0__1_in_rule__TerminalRule__Group_1_0__014067 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalRule__FragmentAssignment_1_0_0_in_rule__TerminalRule__Group_1_0__0__Impl14094 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalRule__Group_1_0__1__Impl_in_rule__TerminalRule__Group_1_0__114124 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalRule__NameAssignment_1_0_1_in_rule__TerminalRule__Group_1_0__1__Impl14151 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalRule__Group_1_1__0__Impl_in_rule__TerminalRule__Group_1_1__014185 = new BitSet(new long[]{0x0000000020000000L});
+        public static final BitSet FOLLOW_rule__TerminalRule__Group_1_1__1_in_rule__TerminalRule__Group_1_1__014188 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalRule__NameAssignment_1_1_0_in_rule__TerminalRule__Group_1_1__0__Impl14215 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalRule__Group_1_1__1__Impl_in_rule__TerminalRule__Group_1_1__114245 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalRule__Group_1_1_1__0_in_rule__TerminalRule__Group_1_1__1__Impl14272 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalRule__Group_1_1_1__0__Impl_in_rule__TerminalRule__Group_1_1_1__014307 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_rule__TerminalRule__Group_1_1_1__1_in_rule__TerminalRule__Group_1_1_1__014310 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_29_in_rule__TerminalRule__Group_1_1_1__0__Impl14338 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalRule__Group_1_1_1__1__Impl_in_rule__TerminalRule__Group_1_1_1__114369 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalRule__TypeAssignment_1_1_1_1_in_rule__TerminalRule__Group_1_1_1__1__Impl14396 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalAlternatives__Group__0__Impl_in_rule__TerminalAlternatives__Group__014430 = new BitSet(new long[]{0x0000000200000000L});
+        public static final BitSet FOLLOW_rule__TerminalAlternatives__Group__1_in_rule__TerminalAlternatives__Group__014433 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTerminalGroup_in_rule__TerminalAlternatives__Group__0__Impl14460 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalAlternatives__Group__1__Impl_in_rule__TerminalAlternatives__Group__114489 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalAlternatives__Group_1__0_in_rule__TerminalAlternatives__Group__1__Impl14516 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalAlternatives__Group_1__0__Impl_in_rule__TerminalAlternatives__Group_1__014551 = new BitSet(new long[]{0x0000000200000000L});
+        public static final BitSet FOLLOW_rule__TerminalAlternatives__Group_1__1_in_rule__TerminalAlternatives__Group_1__014554 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalAlternatives__Group_1__1__Impl_in_rule__TerminalAlternatives__Group_1__114612 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalAlternatives__Group_1_1__0_in_rule__TerminalAlternatives__Group_1__1__Impl14641 = new BitSet(new long[]{0x0000000200000002L});
+        public static final BitSet FOLLOW_rule__TerminalAlternatives__Group_1_1__0_in_rule__TerminalAlternatives__Group_1__1__Impl14653 = new BitSet(new long[]{0x0000000200000002L});
+        public static final BitSet FOLLOW_rule__TerminalAlternatives__Group_1_1__0__Impl_in_rule__TerminalAlternatives__Group_1_1__014690 = new BitSet(new long[]{0x0000018000A10030L});
+        public static final BitSet FOLLOW_rule__TerminalAlternatives__Group_1_1__1_in_rule__TerminalAlternatives__Group_1_1__014693 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_33_in_rule__TerminalAlternatives__Group_1_1__0__Impl14721 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalAlternatives__Group_1_1__1__Impl_in_rule__TerminalAlternatives__Group_1_1__114752 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalAlternatives__ElementsAssignment_1_1_1_in_rule__TerminalAlternatives__Group_1_1__1__Impl14779 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalGroup__Group__0__Impl_in_rule__TerminalGroup__Group__014813 = new BitSet(new long[]{0x0000018000A10030L});
+        public static final BitSet FOLLOW_rule__TerminalGroup__Group__1_in_rule__TerminalGroup__Group__014816 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTerminalToken_in_rule__TerminalGroup__Group__0__Impl14843 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalGroup__Group__1__Impl_in_rule__TerminalGroup__Group__114872 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalGroup__Group_1__0_in_rule__TerminalGroup__Group__1__Impl14899 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalGroup__Group_1__0__Impl_in_rule__TerminalGroup__Group_1__014934 = new BitSet(new long[]{0x0000018000A10030L});
+        public static final BitSet FOLLOW_rule__TerminalGroup__Group_1__1_in_rule__TerminalGroup__Group_1__014937 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalGroup__Group_1__1__Impl_in_rule__TerminalGroup__Group_1__114995 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalGroup__ElementsAssignment_1_1_in_rule__TerminalGroup__Group_1__1__Impl15024 = new BitSet(new long[]{0x0000018000A10032L});
+        public static final BitSet FOLLOW_rule__TerminalGroup__ElementsAssignment_1_1_in_rule__TerminalGroup__Group_1__1__Impl15036 = new BitSet(new long[]{0x0000018000A10032L});
+        public static final BitSet FOLLOW_rule__TerminalToken__Group__0__Impl_in_rule__TerminalToken__Group__015073 = new BitSet(new long[]{0x0000000000003800L});
+        public static final BitSet FOLLOW_rule__TerminalToken__Group__1_in_rule__TerminalToken__Group__015076 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTerminalTokenElement_in_rule__TerminalToken__Group__0__Impl15103 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalToken__Group__1__Impl_in_rule__TerminalToken__Group__115132 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalToken__CardinalityAssignment_1_in_rule__TerminalToken__Group__1__Impl15159 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__ParenthesizedTerminalElement__Group__0__Impl_in_rule__ParenthesizedTerminalElement__Group__015194 = new BitSet(new long[]{0x0000018000A10030L});
+        public static final BitSet FOLLOW_rule__ParenthesizedTerminalElement__Group__1_in_rule__ParenthesizedTerminalElement__Group__015197 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_21_in_rule__ParenthesizedTerminalElement__Group__0__Impl15225 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__ParenthesizedTerminalElement__Group__1__Impl_in_rule__ParenthesizedTerminalElement__Group__115256 = new BitSet(new long[]{0x0000000000400000L});
+        public static final BitSet FOLLOW_rule__ParenthesizedTerminalElement__Group__2_in_rule__ParenthesizedTerminalElement__Group__115259 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTerminalAlternatives_in_rule__ParenthesizedTerminalElement__Group__1__Impl15286 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__ParenthesizedTerminalElement__Group__2__Impl_in_rule__ParenthesizedTerminalElement__Group__215315 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_22_in_rule__ParenthesizedTerminalElement__Group__2__Impl15343 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__NegatedToken__Group__0__Impl_in_rule__NegatedToken__Group__015380 = new BitSet(new long[]{0x0000018000A10030L});
+        public static final BitSet FOLLOW_rule__NegatedToken__Group__1_in_rule__NegatedToken__Group__015383 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_16_in_rule__NegatedToken__Group__0__Impl15411 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__NegatedToken__Group__1__Impl_in_rule__NegatedToken__Group__115442 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__NegatedToken__TerminalAssignment_1_in_rule__NegatedToken__Group__1__Impl15469 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__UntilToken__Group__0__Impl_in_rule__UntilToken__Group__015503 = new BitSet(new long[]{0x0000018000A10030L});
+        public static final BitSet FOLLOW_rule__UntilToken__Group__1_in_rule__UntilToken__Group__015506 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_39_in_rule__UntilToken__Group__0__Impl15534 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__UntilToken__Group__1__Impl_in_rule__UntilToken__Group__115565 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__UntilToken__TerminalAssignment_1_in_rule__UntilToken__Group__1__Impl15592 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Wildcard__Group__0__Impl_in_rule__Wildcard__Group__015626 = new BitSet(new long[]{0x0000000000800000L});
+        public static final BitSet FOLLOW_rule__Wildcard__Group__1_in_rule__Wildcard__Group__015629 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Wildcard__Group__1__Impl_in_rule__Wildcard__Group__115687 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_23_in_rule__Wildcard__Group__1__Impl15715 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EOF__Group__0__Impl_in_rule__EOF__Group__015750 = new BitSet(new long[]{0x0000018000A10030L});
+        public static final BitSet FOLLOW_rule__EOF__Group__1_in_rule__EOF__Group__015753 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EOF__Group__1__Impl_in_rule__EOF__Group__115811 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_40_in_rule__EOF__Group__1__Impl15839 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__CharacterRange__Group__0__Impl_in_rule__CharacterRange__Group__015874 = new BitSet(new long[]{0x0000020000000000L});
+        public static final BitSet FOLLOW_rule__CharacterRange__Group__1_in_rule__CharacterRange__Group__015877 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleKeyword_in_rule__CharacterRange__Group__0__Impl15904 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__CharacterRange__Group__1__Impl_in_rule__CharacterRange__Group__115933 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__CharacterRange__Group_1__0_in_rule__CharacterRange__Group__1__Impl15960 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__CharacterRange__Group_1__0__Impl_in_rule__CharacterRange__Group_1__015995 = new BitSet(new long[]{0x0000020000000000L});
+        public static final BitSet FOLLOW_rule__CharacterRange__Group_1__1_in_rule__CharacterRange__Group_1__015998 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__CharacterRange__Group_1__1__Impl_in_rule__CharacterRange__Group_1__116056 = new BitSet(new long[]{0x0000000000000020L});
+        public static final BitSet FOLLOW_rule__CharacterRange__Group_1__2_in_rule__CharacterRange__Group_1__116059 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_41_in_rule__CharacterRange__Group_1__1__Impl16087 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__CharacterRange__Group_1__2__Impl_in_rule__CharacterRange__Group_1__216118 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__CharacterRange__RightAssignment_1_2_in_rule__CharacterRange__Group_1__2__Impl16145 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EnumRule__Group__0__Impl_in_rule__EnumRule__Group__016181 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_rule__EnumRule__Group__1_in_rule__EnumRule__Group__016184 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_42_in_rule__EnumRule__Group__0__Impl16212 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EnumRule__Group__1__Impl_in_rule__EnumRule__Group__116243 = new BitSet(new long[]{0x0000000028000000L});
+        public static final BitSet FOLLOW_rule__EnumRule__Group__2_in_rule__EnumRule__Group__116246 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EnumRule__NameAssignment_1_in_rule__EnumRule__Group__1__Impl16273 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EnumRule__Group__2__Impl_in_rule__EnumRule__Group__216303 = new BitSet(new long[]{0x0000000028000000L});
+        public static final BitSet FOLLOW_rule__EnumRule__Group__3_in_rule__EnumRule__Group__216306 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EnumRule__Group_2__0_in_rule__EnumRule__Group__2__Impl16333 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EnumRule__Group__3__Impl_in_rule__EnumRule__Group__316364 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_rule__EnumRule__Group__4_in_rule__EnumRule__Group__316367 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_27_in_rule__EnumRule__Group__3__Impl16395 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EnumRule__Group__4__Impl_in_rule__EnumRule__Group__416426 = new BitSet(new long[]{0x0000000010000000L});
+        public static final BitSet FOLLOW_rule__EnumRule__Group__5_in_rule__EnumRule__Group__416429 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EnumRule__AlternativesAssignment_4_in_rule__EnumRule__Group__4__Impl16456 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EnumRule__Group__5__Impl_in_rule__EnumRule__Group__516486 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_28_in_rule__EnumRule__Group__5__Impl16514 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EnumRule__Group_2__0__Impl_in_rule__EnumRule__Group_2__016557 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_rule__EnumRule__Group_2__1_in_rule__EnumRule__Group_2__016560 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_29_in_rule__EnumRule__Group_2__0__Impl16588 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EnumRule__Group_2__1__Impl_in_rule__EnumRule__Group_2__116619 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EnumRule__TypeAssignment_2_1_in_rule__EnumRule__Group_2__1__Impl16646 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EnumLiterals__Group__0__Impl_in_rule__EnumLiterals__Group__016680 = new BitSet(new long[]{0x0000000200000000L});
+        public static final BitSet FOLLOW_rule__EnumLiterals__Group__1_in_rule__EnumLiterals__Group__016683 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEnumLiteralDeclaration_in_rule__EnumLiterals__Group__0__Impl16710 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EnumLiterals__Group__1__Impl_in_rule__EnumLiterals__Group__116739 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EnumLiterals__Group_1__0_in_rule__EnumLiterals__Group__1__Impl16766 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EnumLiterals__Group_1__0__Impl_in_rule__EnumLiterals__Group_1__016801 = new BitSet(new long[]{0x0000000200000000L});
+        public static final BitSet FOLLOW_rule__EnumLiterals__Group_1__1_in_rule__EnumLiterals__Group_1__016804 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EnumLiterals__Group_1__1__Impl_in_rule__EnumLiterals__Group_1__116862 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EnumLiterals__Group_1_1__0_in_rule__EnumLiterals__Group_1__1__Impl16891 = new BitSet(new long[]{0x0000000200000002L});
+        public static final BitSet FOLLOW_rule__EnumLiterals__Group_1_1__0_in_rule__EnumLiterals__Group_1__1__Impl16903 = new BitSet(new long[]{0x0000000200000002L});
+        public static final BitSet FOLLOW_rule__EnumLiterals__Group_1_1__0__Impl_in_rule__EnumLiterals__Group_1_1__016940 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_rule__EnumLiterals__Group_1_1__1_in_rule__EnumLiterals__Group_1_1__016943 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_33_in_rule__EnumLiterals__Group_1_1__0__Impl16971 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EnumLiterals__Group_1_1__1__Impl_in_rule__EnumLiterals__Group_1_1__117002 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EnumLiterals__ElementsAssignment_1_1_1_in_rule__EnumLiterals__Group_1_1__1__Impl17029 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EnumLiteralDeclaration__Group__0__Impl_in_rule__EnumLiteralDeclaration__Group__017063 = new BitSet(new long[]{0x0000000000004000L});
+        public static final BitSet FOLLOW_rule__EnumLiteralDeclaration__Group__1_in_rule__EnumLiteralDeclaration__Group__017066 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EnumLiteralDeclaration__EnumLiteralAssignment_0_in_rule__EnumLiteralDeclaration__Group__0__Impl17093 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EnumLiteralDeclaration__Group__1__Impl_in_rule__EnumLiteralDeclaration__Group__117123 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EnumLiteralDeclaration__Group_1__0_in_rule__EnumLiteralDeclaration__Group__1__Impl17150 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EnumLiteralDeclaration__Group_1__0__Impl_in_rule__EnumLiteralDeclaration__Group_1__017185 = new BitSet(new long[]{0x0000000000000020L});
+        public static final BitSet FOLLOW_rule__EnumLiteralDeclaration__Group_1__1_in_rule__EnumLiteralDeclaration__Group_1__017188 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__EnumLiteralDeclaration__Group_1__0__Impl17216 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EnumLiteralDeclaration__Group_1__1__Impl_in_rule__EnumLiteralDeclaration__Group_1__117247 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__EnumLiteralDeclaration__LiteralAssignment_1_1_in_rule__EnumLiteralDeclaration__Group_1__1__Impl17274 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleGrammarID_in_rule__Grammar__NameAssignment_117313 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleGrammarID_in_rule__Grammar__UsedGrammarsAssignment_2_117348 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleGrammarID_in_rule__Grammar__UsedGrammarsAssignment_2_2_117387 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_43_in_rule__Grammar__DefinesHiddenTokensAssignment_3_017427 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rule__Grammar__HiddenTokensAssignment_3_2_017470 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rule__Grammar__HiddenTokensAssignment_3_2_1_117509 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAbstractMetamodelDeclaration_in_rule__Grammar__MetamodelDeclarationsAssignment_417544 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAbstractRule_in_rule__Grammar__RulesAssignment_517575 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rule__GeneratedMetamodel__NameAssignment_117606 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_STRING_in_rule__GeneratedMetamodel__EPackageAssignment_217641 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rule__GeneratedMetamodel__AliasAssignment_3_117676 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_STRING_in_rule__ReferencedMetamodel__EPackageAssignment_117711 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rule__ReferencedMetamodel__AliasAssignment_2_117746 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_44_in_rule__ParserRule__FragmentAssignment_0_0_017782 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_12_in_rule__ParserRule__WildcardAssignment_0_0_2_017826 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTypeRef_in_rule__ParserRule__TypeAssignment_0_0_2_1_117865 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTypeRef_in_rule__ParserRule__TypeAssignment_0_1_1_117896 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_43_in_rule__ParserRule__DefinesHiddenTokensAssignment_1_017932 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rule__ParserRule__HiddenTokensAssignment_1_2_017975 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rule__ParserRule__HiddenTokensAssignment_1_2_1_118014 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAlternatives_in_rule__ParserRule__AlternativesAssignment_318049 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rule__RuleNameAndParams__NameAssignment_018080 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleParameter_in_rule__RuleNameAndParams__ParametersAssignment_1_1_018111 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleParameter_in_rule__RuleNameAndParams__ParametersAssignment_1_1_1_118142 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rule__Parameter__NameAssignment18173 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rule__TypeRef__MetamodelAssignment_0_018208 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rule__TypeRef__ClassifierAssignment_118247 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleConditionalBranch_in_rule__Alternatives__ElementsAssignment_1_1_118282 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleInverseLiteralValue_in_rule__ConditionalBranch__FilteredAssignment_1_218313 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rule__ConditionalBranch__ParameterAssignment_1_318348 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleUnorderedGroup_in_rule__ConditionalBranch__GuardedElementAssignment_1_518383 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleGroup_in_rule__UnorderedGroup__ElementsAssignment_1_1_118414 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAbstractToken_in_rule__Group__ElementsAssignment_1_118445 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__AbstractTokenWithCardinality__CardinalityAlternatives_1_0_in_rule__AbstractTokenWithCardinality__CardinalityAssignment_118476 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTypeRef_in_rule__Action__TypeAssignment_118509 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rule__Action__FeatureAssignment_2_118540 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Action__OperatorAlternatives_2_2_0_in_rule__Action__OperatorAssignment_2_218571 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_STRING_in_rule__Keyword__ValueAssignment18604 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleRuleID_in_rule__RuleCall__RuleAssignment_018639 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleNamedArgument_in_rule__RuleCall__ArgumentsAssignment_1_118674 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleNamedArgument_in_rule__RuleCall__ArgumentsAssignment_1_2_118705 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleLiteralValue_in_rule__NamedArgument__LiteralValueAssignment_0_018736 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rule__NamedArgument__ParameterAssignment_0_118771 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rule__NamedArgument__ParameterAssignment_1_018810 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_14_in_rule__NamedArgument__ExplicitValueAssignment_1_1_018850 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rule__NamedArgument__ValueAssignment_1_1_118893 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleRuleID_in_rule__TerminalRuleCall__RuleAssignment18932 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_45_in_rule__PredicatedKeyword__PredicatedAssignment_0_018972 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_39_in_rule__PredicatedKeyword__FirstSetPredicatedAssignment_0_119016 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_STRING_in_rule__PredicatedKeyword__ValueAssignment_119055 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_45_in_rule__PredicatedRuleCall__PredicatedAssignment_0_019091 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_39_in_rule__PredicatedRuleCall__FirstSetPredicatedAssignment_0_119135 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rule__PredicatedRuleCall__RuleAssignment_119178 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_45_in_rule__Assignment__PredicatedAssignment_0_019218 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_39_in_rule__Assignment__FirstSetPredicatedAssignment_0_119262 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rule__Assignment__FeatureAssignment_119301 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__Assignment__OperatorAlternatives_2_0_in_rule__Assignment__OperatorAssignment_219332 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAssignableTerminal_in_rule__Assignment__TerminalAssignment_319365 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAssignableTerminal_in_rule__AssignableAlternatives__ElementsAssignment_1_1_119396 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTypeRef_in_rule__CrossReference__TypeAssignment_119427 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleCrossReferenceableTerminal_in_rule__CrossReference__TerminalAssignment_2_119458 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_45_in_rule__PredicatedGroup__PredicatedAssignment_0_019494 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_39_in_rule__PredicatedGroup__FirstSetPredicatedAssignment_0_119538 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAlternatives_in_rule__PredicatedGroup__ElementsAssignment_219577 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_44_in_rule__TerminalRule__FragmentAssignment_1_0_019613 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rule__TerminalRule__NameAssignment_1_0_119652 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rule__TerminalRule__NameAssignment_1_1_019683 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTypeRef_in_rule__TerminalRule__TypeAssignment_1_1_1_119714 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTerminalAlternatives_in_rule__TerminalRule__AlternativesAssignment_319745 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTerminalGroup_in_rule__TerminalAlternatives__ElementsAssignment_1_1_119776 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTerminalToken_in_rule__TerminalGroup__ElementsAssignment_1_119807 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rule__TerminalToken__CardinalityAlternatives_1_0_in_rule__TerminalToken__CardinalityAssignment_119838 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTerminalTokenElement_in_rule__NegatedToken__TerminalAssignment_119871 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTerminalTokenElement_in_rule__UntilToken__TerminalAssignment_119902 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleKeyword_in_rule__CharacterRange__RightAssignment_1_219933 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rule__EnumRule__NameAssignment_119964 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTypeRef_in_rule__EnumRule__TypeAssignment_2_119995 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEnumLiterals_in_rule__EnumRule__AlternativesAssignment_420026 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEnumLiteralDeclaration_in_rule__EnumLiterals__ElementsAssignment_1_1_120057 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_rule__EnumLiteralDeclaration__EnumLiteralAssignment_020092 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleKeyword_in_rule__EnumLiteralDeclaration__LiteralAssignment_1_120127 = new BitSet(new long[]{0x0000000000000002L});
     }
 
 

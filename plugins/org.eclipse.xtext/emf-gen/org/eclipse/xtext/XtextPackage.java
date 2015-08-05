@@ -1692,6 +1692,16 @@ public interface XtextPackage extends EPackage {
 	int NAMED_ARGUMENT__VALUE = 2;
 
 	/**
+	 * The feature id for the '<em><b>Explicit Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NAMED_ARGUMENT__EXPLICIT_VALUE = 3;
+
+	/**
 	 * The number of structural features of the '<em>Named Argument</em>' class.
 	 * <!-- begin-user-doc -->
 	 * @since 2.9
@@ -1699,7 +1709,7 @@ public interface XtextPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NAMED_ARGUMENT_FEATURE_COUNT = 3;
+	int NAMED_ARGUMENT_FEATURE_COUNT = 4;
 
 
 	/**
@@ -2537,6 +2547,18 @@ public interface XtextPackage extends EPackage {
 	EReference getNamedArgument_Value();
 
 	/**
+	 * Returns the meta object for the attribute '{@link org.eclipse.xtext.NamedArgument#isExplicitValue <em>Explicit Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Explicit Value</em>'.
+	 * @see org.eclipse.xtext.NamedArgument#isExplicitValue()
+	 * @see #getNamedArgument()
+	 * @generated
+	 */
+	EAttribute getNamedArgument_ExplicitValue();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2554,9 +2576,9 @@ public interface XtextPackage extends EPackage {
 	 *   <li>each enum,</li>
 	 *   <li>and each data type</li>
 	 * </ul>
-	 * @noimplement This interface is not intended to be implemented by clients.
-	 * @noextend This interface is not intended to be extended by clients.
 	 * <!-- end-user-doc -->
+	 * @noextend This interface is not intended to be extended by clients.
+	 * @noimplement This interface is not intended to be implemented by clients.
 	 * @generated
 	 */
 	interface Literals {
@@ -3249,6 +3271,15 @@ public interface XtextPackage extends EPackage {
 		 * @generated
 		 */
 		EReference NAMED_ARGUMENT__VALUE = eINSTANCE.getNamedArgument_Value();
+
+		/**
+		 * The meta object literal for the '<em><b>Explicit Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * @since 2.9
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NAMED_ARGUMENT__EXPLICIT_VALUE = eINSTANCE.getNamedArgument_ExplicitValue();
 
 	}
 

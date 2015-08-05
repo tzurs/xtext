@@ -105,7 +105,7 @@ public class XtextParserDefinition extends AbstractXtextParserDefinition {
 		if (elementType == elementTypeProvider.getNamedArgument_ParameterParameterCrossReference_1_0_0ElementType()) {
 			return new PsiEObjectReference(node);
 		}
-		if (elementType == elementTypeProvider.getNamedArgument_ValueParameterCrossReference_1_2_0ElementType()) {
+		if (elementType == elementTypeProvider.getNamedArgument_ValueParameterCrossReference_1_1_1_0ElementType()) {
 			return new PsiEObjectReference(node);
 		}
 		if (elementType == elementTypeProvider.getTerminalRuleCall_RuleAbstractRuleCrossReference_0ElementType()) {
