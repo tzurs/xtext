@@ -268,16 +268,6 @@ public interface XtextFactory extends EFactory {
 	Parameter createParameter();
 
 	/**
-	 * Returns a new object of class '<em>Conditional Branch</em>'.
-	 * <!-- begin-user-doc -->
-	 * @since 2.9
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Conditional Branch</em>'.
-	 * @generated
-	 */
-	ConditionalBranch createConditionalBranch();
-
-	/**
 	 * Returns a new object of class '<em>Named Argument</em>'.
 	 * <!-- begin-user-doc -->
 	 * @since 2.9
@@ -286,6 +276,16 @@ public interface XtextFactory extends EFactory {
 	 * @generated
 	 */
 	NamedArgument createNamedArgument();
+
+	/**
+	 * Returns a new object of class '<em>Guard Condition</em>'.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Guard Condition</em>'.
+	 * @generated
+	 */
+	GuardCondition createGuardCondition();
 
 	/**
 	 * Returns the package supported by this factory.

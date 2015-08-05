@@ -91,7 +91,10 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Alternatives" eSuperTypes="#//CompoundElement"/>
   <eClassifiers xsi:type="ecore:EClass" name="UnorderedGroup" eSuperTypes="#//CompoundElement"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Group" eSuperTypes="#//CompoundElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Group" eSuperTypes="#//CompoundElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="guardConditions" upperBound="-1"
+        eType="#//GuardCondition" containment="true"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CharacterRange" eSuperTypes="#//AbstractElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="left" eType="#//Keyword"
         containment="true"/>
@@ -106,17 +109,16 @@
   <eClassifiers xsi:type="ecore:EClass" name="Parameter">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType ../../../../org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ConditionalBranch" eSuperTypes="#//AbstractElement">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="parameter" eType="#//Parameter"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="filtered" eType="ecore:EDataType ../../../../org.eclipse.emf.ecore/model/Ecore.ecore#//EBoolean"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="guardedElement" eType="#//AbstractElement"
-        containment="true"/>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NamedArgument">
     <eStructuralFeatures xsi:type="ecore:EReference" name="parameter" eType="#//Parameter"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="literalValue" eType="ecore:EDataType ../../../../org.eclipse.emf.ecore/model/Ecore.ecore#//EBoolean"
         unsettable="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="value" eType="#//Parameter"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="explicitValue" eType="ecore:EDataType ../../../../org.eclipse.emf.ecore/model/Ecore.ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GuardCondition">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parameter" eType="#//Parameter"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="passIfTrue" eType="ecore:EDataType ../../../../org.eclipse.emf.ecore/model/Ecore.ecore#//EBoolean"
+        unsettable="true"/>
   </eClassifiers>
 </ecore:EPackage>

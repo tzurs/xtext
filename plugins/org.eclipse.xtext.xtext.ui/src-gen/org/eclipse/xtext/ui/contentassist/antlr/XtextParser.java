@@ -90,6 +90,8 @@ public class XtextParser extends AbstractContentAssistParser {
 					put(grammarAccess.getAlternativesAccess().getGroup_1(), "rule__Alternatives__Group_1__0");
 					put(grammarAccess.getAlternativesAccess().getGroup_1_1(), "rule__Alternatives__Group_1_1__0");
 					put(grammarAccess.getConditionalBranchAccess().getGroup_1(), "rule__ConditionalBranch__Group_1__0");
+					put(grammarAccess.getConditionalBranchAccess().getGroup_1_3(), "rule__ConditionalBranch__Group_1_3__0");
+					put(grammarAccess.getGuardConditionAccess().getGroup(), "rule__GuardCondition__Group__0");
 					put(grammarAccess.getUnorderedGroupAccess().getGroup(), "rule__UnorderedGroup__Group__0");
 					put(grammarAccess.getUnorderedGroupAccess().getGroup_1(), "rule__UnorderedGroup__Group_1__0");
 					put(grammarAccess.getUnorderedGroupAccess().getGroup_1_1(), "rule__UnorderedGroup__Group_1_1__0");
@@ -169,9 +171,11 @@ public class XtextParser extends AbstractContentAssistParser {
 					put(grammarAccess.getTypeRefAccess().getMetamodelAssignment_0_0(), "rule__TypeRef__MetamodelAssignment_0_0");
 					put(grammarAccess.getTypeRefAccess().getClassifierAssignment_1(), "rule__TypeRef__ClassifierAssignment_1");
 					put(grammarAccess.getAlternativesAccess().getElementsAssignment_1_1_1(), "rule__Alternatives__ElementsAssignment_1_1_1");
-					put(grammarAccess.getConditionalBranchAccess().getFilteredAssignment_1_2(), "rule__ConditionalBranch__FilteredAssignment_1_2");
-					put(grammarAccess.getConditionalBranchAccess().getParameterAssignment_1_3(), "rule__ConditionalBranch__ParameterAssignment_1_3");
-					put(grammarAccess.getConditionalBranchAccess().getGuardedElementAssignment_1_5(), "rule__ConditionalBranch__GuardedElementAssignment_1_5");
+					put(grammarAccess.getConditionalBranchAccess().getGuardConditionsAssignment_1_2(), "rule__ConditionalBranch__GuardConditionsAssignment_1_2");
+					put(grammarAccess.getConditionalBranchAccess().getGuardConditionsAssignment_1_3_1(), "rule__ConditionalBranch__GuardConditionsAssignment_1_3_1");
+					put(grammarAccess.getConditionalBranchAccess().getElementsAssignment_1_5(), "rule__ConditionalBranch__ElementsAssignment_1_5");
+					put(grammarAccess.getGuardConditionAccess().getPassIfTrueAssignment_0(), "rule__GuardCondition__PassIfTrueAssignment_0");
+					put(grammarAccess.getGuardConditionAccess().getParameterAssignment_1(), "rule__GuardCondition__ParameterAssignment_1");
 					put(grammarAccess.getUnorderedGroupAccess().getElementsAssignment_1_1_1(), "rule__UnorderedGroup__ElementsAssignment_1_1_1");
 					put(grammarAccess.getGroupAccess().getElementsAssignment_1_1(), "rule__Group__ElementsAssignment_1_1");
 					put(grammarAccess.getAbstractTokenWithCardinalityAccess().getCardinalityAssignment_1(), "rule__AbstractTokenWithCardinality__CardinalityAssignment_1");

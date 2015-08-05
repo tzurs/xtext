@@ -63,7 +63,11 @@ Alternatives returns AbstractElement:
 
 ConditionalBranch returns AbstractElement:
 	  UnorderedGroup
-	| {ConditionalBranch} '[' filtered=InverseLiteralValue parameter=[Parameter|ID] ']' guardedElement=UnorderedGroup
+	| {Group} '[' guardConditions+=GuardCondition (',' guardConditions+=GuardCondition)* ']' (elements+=AbstractToken)+
+;
+
+GuardCondition:
+	passIfTrue=LiteralValue parameter=[Parameter|ID]
 ;
 
 UnorderedGroup returns AbstractElement:
@@ -112,10 +116,6 @@ RuleCall :
 
 LiteralValue returns ecore::EBoolean:
 	'!'|'+'
-;
-
-InverseLiteralValue returns ecore::EBoolean:
-	LiteralValue
 ;
 
 NamedArgument:

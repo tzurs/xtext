@@ -23,10 +23,12 @@ import org.eclipse.xtend2.lib.StringConcatenation;
 import org.eclipse.xtext.AbstractElement;
 import org.eclipse.xtext.AbstractMetamodelDeclaration;
 import org.eclipse.xtext.AbstractRule;
+import org.eclipse.xtext.Alternatives;
 import org.eclipse.xtext.Assignment;
 import org.eclipse.xtext.Grammar;
 import org.eclipse.xtext.GrammarUtil;
 import org.eclipse.xtext.Group;
+import org.eclipse.xtext.GuardCondition;
 import org.eclipse.xtext.NamedArgument;
 import org.eclipse.xtext.Parameter;
 import org.eclipse.xtext.ParserRule;
@@ -51,6 +53,45 @@ public class XtextLinkerTest extends AbstractXtextTests {
     super.setUp();
     XtextStandaloneSetup _xtextStandaloneSetup = new XtextStandaloneSetup();
     this.with(_xtextStandaloneSetup);
+  }
+  
+  @Test
+  public void testGuardLinking() throws Exception {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("grammar test.Lang with org.eclipse.xtext.common.Terminals");
+    _builder.newLine();
+    _builder.append("generate test \'http://test\'");
+    _builder.newLine();
+    _builder.append("Root[MyArg]: [+MyArg] name=ID | [!MyArg] name=STRING;");
+    _builder.newLine();
+    final String grammarAsString = _builder.toString();
+    EObject _model = this.getModel(grammarAsString);
+    final Grammar grammar = ((Grammar) _model);
+    EList<AbstractRule> _rules = grammar.getRules();
+    AbstractRule _head = IterableExtensions.<AbstractRule>head(_rules);
+    final ParserRule rootRule = ((ParserRule) _head);
+    AbstractElement _alternatives = rootRule.getAlternatives();
+    final Alternatives alternatives = ((Alternatives) _alternatives);
+    EList<AbstractElement> _elements = alternatives.getElements();
+    AbstractElement _head_1 = IterableExtensions.<AbstractElement>head(_elements);
+    EList<GuardCondition> _guardConditions = ((Group) _head_1).getGuardConditions();
+    final GuardCondition firstGuard = IterableExtensions.<GuardCondition>head(_guardConditions);
+    EList<Parameter> _parameters = rootRule.getParameters();
+    Parameter _head_2 = IterableExtensions.<Parameter>head(_parameters);
+    Parameter _parameter = firstGuard.getParameter();
+    Assert.assertEquals(_head_2, _parameter);
+    boolean _isPassIfTrue = firstGuard.isPassIfTrue();
+    Assert.assertTrue(_isPassIfTrue);
+    EList<AbstractElement> _elements_1 = alternatives.getElements();
+    AbstractElement _last = IterableExtensions.<AbstractElement>last(_elements_1);
+    EList<GuardCondition> _guardConditions_1 = ((Group) _last).getGuardConditions();
+    final GuardCondition secondGuard = IterableExtensions.<GuardCondition>head(_guardConditions_1);
+    EList<Parameter> _parameters_1 = rootRule.getParameters();
+    Parameter _head_3 = IterableExtensions.<Parameter>head(_parameters_1);
+    Parameter _parameter_1 = secondGuard.getParameter();
+    Assert.assertEquals(_head_3, _parameter_1);
+    boolean _isPassIfTrue_1 = secondGuard.isPassIfTrue();
+    Assert.assertFalse(_isPassIfTrue_1);
   }
   
   @Test

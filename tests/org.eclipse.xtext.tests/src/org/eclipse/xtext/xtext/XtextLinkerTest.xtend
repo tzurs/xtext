@@ -18,6 +18,7 @@ import org.junit.Test
 import org.eclipse.xtext.Group
 import org.eclipse.xtext.Assignment
 import org.eclipse.xtext.ParserRule
+import org.eclipse.xtext.Alternatives
 
 /**
  * @author Sven Efftinge - Initial contribution and API
@@ -26,6 +27,23 @@ class XtextLinkerTest extends AbstractXtextTests {
 	override void setUp() throws Exception {
 		super.setUp()
 		with(new XtextStandaloneSetup())
+	}
+	
+	@Test def void testGuardLinking() throws Exception {
+		val grammarAsString = '''
+			grammar test.Lang with org.eclipse.xtext.common.Terminals
+			generate test 'http://test'
+			Root[MyArg]: [+MyArg] name=ID | [!MyArg] name=STRING;
+		'''
+		val grammar = grammarAsString.model as Grammar
+		val rootRule = grammar.rules.head as ParserRule
+		val alternatives = rootRule.alternatives as Alternatives
+		val firstGuard = (alternatives.elements.head as Group).guardConditions.head
+		assertEquals(rootRule.parameters.head, firstGuard.parameter)
+		assertTrue(firstGuard.isPassIfTrue)
+		val secondGuard = (alternatives.elements.last as Group).guardConditions.head
+		assertEquals(rootRule.parameters.head, secondGuard.parameter)
+		assertFalse(secondGuard.isPassIfTrue)
 	}
 	
 	@Test def void testNamedParameterLinking() throws Exception {

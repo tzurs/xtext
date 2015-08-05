@@ -19,13 +19,13 @@ import org.eclipse.xtext.Alternatives;
 import org.eclipse.xtext.Assignment;
 import org.eclipse.xtext.CharacterRange;
 import org.eclipse.xtext.CompoundElement;
-import org.eclipse.xtext.ConditionalBranch;
 import org.eclipse.xtext.CrossReference;
 import org.eclipse.xtext.EnumLiteralDeclaration;
 import org.eclipse.xtext.EnumRule;
 import org.eclipse.xtext.GeneratedMetamodel;
 import org.eclipse.xtext.Grammar;
 import org.eclipse.xtext.Group;
+import org.eclipse.xtext.GuardCondition;
 import org.eclipse.xtext.Keyword;
 import org.eclipse.xtext.NamedArgument;
 import org.eclipse.xtext.NegatedToken;
@@ -46,6 +46,9 @@ import org.eclipse.xtext.XtextPackage;
  * An implementation of the model <b>Package</b>.
  * <!-- end-user-doc -->
  * @generated
+ * @noextend This class is not intended to be subclassed by clients.
+ * @noinstantiate This class is not intended to be instantiated by clients.
+ * @noreference This class is not intended to be referenced by clients.
  */
 public class XtextPackageImpl extends EPackageImpl implements XtextPackage {
 	/**
@@ -242,14 +245,14 @@ public class XtextPackageImpl extends EPackageImpl implements XtextPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass conditionalBranchEClass = null;
+	private EClass namedArgumentEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass namedArgumentEClass = null;
+	private EClass guardConditionEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -875,6 +878,15 @@ public class XtextPackageImpl extends EPackageImpl implements XtextPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getGroup_GuardConditions() {
+		return (EReference)groupEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getCharacterRange() {
 		return characterRangeEClass;
 	}
@@ -950,45 +962,6 @@ public class XtextPackageImpl extends EPackageImpl implements XtextPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getConditionalBranch() {
-		return conditionalBranchEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * @since 2.9
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getConditionalBranch_Parameter() {
-		return (EReference)conditionalBranchEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * @since 2.9
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getConditionalBranch_Filtered() {
-		return (EAttribute)conditionalBranchEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getConditionalBranch_GuardedElement() {
-		return (EReference)conditionalBranchEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * @since 2.9
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getNamedArgument() {
 		return namedArgumentEClass;
 	}
@@ -1030,6 +1003,33 @@ public class XtextPackageImpl extends EPackageImpl implements XtextPackage {
 	 */
 	public EAttribute getNamedArgument_ExplicitValue() {
 		return (EAttribute)namedArgumentEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getGuardCondition() {
+		return guardConditionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getGuardCondition_Parameter() {
+		return (EReference)guardConditionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getGuardCondition_PassIfTrue() {
+		return (EAttribute)guardConditionEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1143,6 +1143,7 @@ public class XtextPackageImpl extends EPackageImpl implements XtextPackage {
 		unorderedGroupEClass = createEClass(UNORDERED_GROUP);
 
 		groupEClass = createEClass(GROUP);
+		createEReference(groupEClass, GROUP__GUARD_CONDITIONS);
 
 		characterRangeEClass = createEClass(CHARACTER_RANGE);
 		createEReference(characterRangeEClass, CHARACTER_RANGE__LEFT);
@@ -1156,16 +1157,15 @@ public class XtextPackageImpl extends EPackageImpl implements XtextPackage {
 		parameterEClass = createEClass(PARAMETER);
 		createEAttribute(parameterEClass, PARAMETER__NAME);
 
-		conditionalBranchEClass = createEClass(CONDITIONAL_BRANCH);
-		createEReference(conditionalBranchEClass, CONDITIONAL_BRANCH__PARAMETER);
-		createEAttribute(conditionalBranchEClass, CONDITIONAL_BRANCH__FILTERED);
-		createEReference(conditionalBranchEClass, CONDITIONAL_BRANCH__GUARDED_ELEMENT);
-
 		namedArgumentEClass = createEClass(NAMED_ARGUMENT);
 		createEReference(namedArgumentEClass, NAMED_ARGUMENT__PARAMETER);
 		createEAttribute(namedArgumentEClass, NAMED_ARGUMENT__LITERAL_VALUE);
 		createEReference(namedArgumentEClass, NAMED_ARGUMENT__VALUE);
 		createEAttribute(namedArgumentEClass, NAMED_ARGUMENT__EXPLICIT_VALUE);
+
+		guardConditionEClass = createEClass(GUARD_CONDITION);
+		createEReference(guardConditionEClass, GUARD_CONDITION__PARAMETER);
+		createEAttribute(guardConditionEClass, GUARD_CONDITION__PASS_IF_TRUE);
 	}
 
 	/**
@@ -1220,7 +1220,6 @@ public class XtextPackageImpl extends EPackageImpl implements XtextPackage {
 		characterRangeEClass.getESuperTypes().add(this.getAbstractElement());
 		compoundElementEClass.getESuperTypes().add(this.getAbstractElement());
 		eofEClass.getESuperTypes().add(this.getAbstractElement());
-		conditionalBranchEClass.getESuperTypes().add(this.getAbstractElement());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(grammarEClass, Grammar.class, "Grammar", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1306,6 +1305,7 @@ public class XtextPackageImpl extends EPackageImpl implements XtextPackage {
 		initEClass(unorderedGroupEClass, UnorderedGroup.class, "UnorderedGroup", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(groupEClass, Group.class, "Group", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getGroup_GuardConditions(), this.getGuardCondition(), null, "guardConditions", null, 0, -1, Group.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(characterRangeEClass, CharacterRange.class, "CharacterRange", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCharacterRange_Left(), this.getKeyword(), null, "left", null, 0, 1, CharacterRange.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1319,16 +1319,15 @@ public class XtextPackageImpl extends EPackageImpl implements XtextPackage {
 		initEClass(parameterEClass, Parameter.class, "Parameter", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getParameter_Name(), theEcorePackage.getEString(), "name", null, 0, 1, Parameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(conditionalBranchEClass, ConditionalBranch.class, "ConditionalBranch", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getConditionalBranch_Parameter(), this.getParameter(), null, "parameter", null, 0, 1, ConditionalBranch.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getConditionalBranch_Filtered(), theEcorePackage.getEBoolean(), "filtered", null, 0, 1, ConditionalBranch.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getConditionalBranch_GuardedElement(), this.getAbstractElement(), null, "guardedElement", null, 0, 1, ConditionalBranch.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
 		initEClass(namedArgumentEClass, NamedArgument.class, "NamedArgument", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getNamedArgument_Parameter(), this.getParameter(), null, "parameter", null, 0, 1, NamedArgument.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getNamedArgument_LiteralValue(), theEcorePackage.getEBoolean(), "literalValue", null, 0, 1, NamedArgument.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getNamedArgument_Value(), this.getParameter(), null, "value", null, 0, 1, NamedArgument.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getNamedArgument_ExplicitValue(), theEcorePackage.getEBoolean(), "explicitValue", null, 0, 1, NamedArgument.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(guardConditionEClass, GuardCondition.class, "GuardCondition", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getGuardCondition_Parameter(), this.getParameter(), null, "parameter", null, 0, 1, GuardCondition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getGuardCondition_PassIfTrue(), theEcorePackage.getEBoolean(), "passIfTrue", null, 0, 1, GuardCondition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

@@ -176,12 +176,12 @@ public class XtextAdapterFactory extends AdapterFactoryImpl {
 				return createParameterAdapter();
 			}
 			@Override
-			public Adapter caseConditionalBranch(ConditionalBranch object) {
-				return createConditionalBranchAdapter();
-			}
-			@Override
 			public Adapter caseNamedArgument(NamedArgument object) {
 				return createNamedArgumentAdapter();
+			}
+			@Override
+			public Adapter caseGuardCondition(GuardCondition object) {
+				return createGuardConditionAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -583,21 +583,6 @@ public class XtextAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.eclipse.xtext.ConditionalBranch <em>Conditional Branch</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * @since 2.9
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.eclipse.xtext.ConditionalBranch
-	 * @generated
-	 */
-	public Adapter createConditionalBranchAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link org.eclipse.xtext.NamedArgument <em>Named Argument</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -609,6 +594,21 @@ public class XtextAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createNamedArgumentAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.xtext.GuardCondition <em>Guard Condition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.xtext.GuardCondition
+	 * @generated
+	 */
+	public Adapter createGuardConditionAdapter() {
 		return null;
 	}
 

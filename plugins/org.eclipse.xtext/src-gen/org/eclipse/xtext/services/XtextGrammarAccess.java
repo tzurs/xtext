@@ -656,61 +656,97 @@ public class XtextGrammarAccess extends AbstractGrammarElementFinder {
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final RuleCall cUnorderedGroupParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
 		private final Group cGroup_1 = (Group)cAlternatives.eContents().get(1);
-		private final Action cConditionalBranchAction_1_0 = (Action)cGroup_1.eContents().get(0);
+		private final Action cGroupAction_1_0 = (Action)cGroup_1.eContents().get(0);
 		private final Keyword cLeftSquareBracketKeyword_1_1 = (Keyword)cGroup_1.eContents().get(1);
-		private final Assignment cFilteredAssignment_1_2 = (Assignment)cGroup_1.eContents().get(2);
-		private final RuleCall cFilteredInverseLiteralValueParserRuleCall_1_2_0 = (RuleCall)cFilteredAssignment_1_2.eContents().get(0);
-		private final Assignment cParameterAssignment_1_3 = (Assignment)cGroup_1.eContents().get(3);
-		private final CrossReference cParameterParameterCrossReference_1_3_0 = (CrossReference)cParameterAssignment_1_3.eContents().get(0);
-		private final RuleCall cParameterParameterIDTerminalRuleCall_1_3_0_1 = (RuleCall)cParameterParameterCrossReference_1_3_0.eContents().get(1);
+		private final Assignment cGuardConditionsAssignment_1_2 = (Assignment)cGroup_1.eContents().get(2);
+		private final RuleCall cGuardConditionsGuardConditionParserRuleCall_1_2_0 = (RuleCall)cGuardConditionsAssignment_1_2.eContents().get(0);
+		private final Group cGroup_1_3 = (Group)cGroup_1.eContents().get(3);
+		private final Keyword cCommaKeyword_1_3_0 = (Keyword)cGroup_1_3.eContents().get(0);
+		private final Assignment cGuardConditionsAssignment_1_3_1 = (Assignment)cGroup_1_3.eContents().get(1);
+		private final RuleCall cGuardConditionsGuardConditionParserRuleCall_1_3_1_0 = (RuleCall)cGuardConditionsAssignment_1_3_1.eContents().get(0);
 		private final Keyword cRightSquareBracketKeyword_1_4 = (Keyword)cGroup_1.eContents().get(4);
-		private final Assignment cGuardedElementAssignment_1_5 = (Assignment)cGroup_1.eContents().get(5);
-		private final RuleCall cGuardedElementUnorderedGroupParserRuleCall_1_5_0 = (RuleCall)cGuardedElementAssignment_1_5.eContents().get(0);
+		private final Assignment cElementsAssignment_1_5 = (Assignment)cGroup_1.eContents().get(5);
+		private final RuleCall cElementsAbstractTokenParserRuleCall_1_5_0 = (RuleCall)cElementsAssignment_1_5.eContents().get(0);
 		
 		//ConditionalBranch returns AbstractElement:
-		//	UnorderedGroup | {ConditionalBranch} "[" filtered=InverseLiteralValue parameter=[Parameter] "]"
-		//	guardedElement=UnorderedGroup;
+		//	UnorderedGroup | {Group} "[" guardConditions+=GuardCondition ("," guardConditions+=GuardCondition)* "]"
+		//	elements+=AbstractToken+;
 		@Override public ParserRule getRule() { return rule; }
 
-		//UnorderedGroup | {ConditionalBranch} "[" filtered=InverseLiteralValue parameter=[Parameter] "]"
-		//guardedElement=UnorderedGroup
+		//UnorderedGroup | {Group} "[" guardConditions+=GuardCondition ("," guardConditions+=GuardCondition)* "]"
+		//elements+=AbstractToken+
 		public Alternatives getAlternatives() { return cAlternatives; }
 
 		//UnorderedGroup
 		public RuleCall getUnorderedGroupParserRuleCall_0() { return cUnorderedGroupParserRuleCall_0; }
 
-		//{ConditionalBranch} "[" filtered=InverseLiteralValue parameter=[Parameter] "]" guardedElement=UnorderedGroup
+		//{Group} "[" guardConditions+=GuardCondition ("," guardConditions+=GuardCondition)* "]" elements+=AbstractToken+
 		public Group getGroup_1() { return cGroup_1; }
 
-		//{ConditionalBranch}
-		public Action getConditionalBranchAction_1_0() { return cConditionalBranchAction_1_0; }
+		//{Group}
+		public Action getGroupAction_1_0() { return cGroupAction_1_0; }
 
 		//"["
 		public Keyword getLeftSquareBracketKeyword_1_1() { return cLeftSquareBracketKeyword_1_1; }
 
-		//filtered=InverseLiteralValue
-		public Assignment getFilteredAssignment_1_2() { return cFilteredAssignment_1_2; }
+		//guardConditions+=GuardCondition
+		public Assignment getGuardConditionsAssignment_1_2() { return cGuardConditionsAssignment_1_2; }
 
-		//InverseLiteralValue
-		public RuleCall getFilteredInverseLiteralValueParserRuleCall_1_2_0() { return cFilteredInverseLiteralValueParserRuleCall_1_2_0; }
+		//GuardCondition
+		public RuleCall getGuardConditionsGuardConditionParserRuleCall_1_2_0() { return cGuardConditionsGuardConditionParserRuleCall_1_2_0; }
 
-		//parameter=[Parameter]
-		public Assignment getParameterAssignment_1_3() { return cParameterAssignment_1_3; }
+		//("," guardConditions+=GuardCondition)*
+		public Group getGroup_1_3() { return cGroup_1_3; }
 
-		//[Parameter]
-		public CrossReference getParameterParameterCrossReference_1_3_0() { return cParameterParameterCrossReference_1_3_0; }
+		//","
+		public Keyword getCommaKeyword_1_3_0() { return cCommaKeyword_1_3_0; }
 
-		//ID
-		public RuleCall getParameterParameterIDTerminalRuleCall_1_3_0_1() { return cParameterParameterIDTerminalRuleCall_1_3_0_1; }
+		//guardConditions+=GuardCondition
+		public Assignment getGuardConditionsAssignment_1_3_1() { return cGuardConditionsAssignment_1_3_1; }
+
+		//GuardCondition
+		public RuleCall getGuardConditionsGuardConditionParserRuleCall_1_3_1_0() { return cGuardConditionsGuardConditionParserRuleCall_1_3_1_0; }
 
 		//"]"
 		public Keyword getRightSquareBracketKeyword_1_4() { return cRightSquareBracketKeyword_1_4; }
 
-		//guardedElement=UnorderedGroup
-		public Assignment getGuardedElementAssignment_1_5() { return cGuardedElementAssignment_1_5; }
+		//elements+=AbstractToken+
+		public Assignment getElementsAssignment_1_5() { return cElementsAssignment_1_5; }
 
-		//UnorderedGroup
-		public RuleCall getGuardedElementUnorderedGroupParserRuleCall_1_5_0() { return cGuardedElementUnorderedGroupParserRuleCall_1_5_0; }
+		//AbstractToken
+		public RuleCall getElementsAbstractTokenParserRuleCall_1_5_0() { return cElementsAbstractTokenParserRuleCall_1_5_0; }
+	}
+
+	public class GuardConditionElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.Xtext.GuardCondition");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Assignment cPassIfTrueAssignment_0 = (Assignment)cGroup.eContents().get(0);
+		private final RuleCall cPassIfTrueLiteralValueParserRuleCall_0_0 = (RuleCall)cPassIfTrueAssignment_0.eContents().get(0);
+		private final Assignment cParameterAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final CrossReference cParameterParameterCrossReference_1_0 = (CrossReference)cParameterAssignment_1.eContents().get(0);
+		private final RuleCall cParameterParameterIDTerminalRuleCall_1_0_1 = (RuleCall)cParameterParameterCrossReference_1_0.eContents().get(1);
+		
+		//GuardCondition:
+		//	passIfTrue=LiteralValue parameter=[Parameter];
+		@Override public ParserRule getRule() { return rule; }
+
+		//passIfTrue=LiteralValue parameter=[Parameter]
+		public Group getGroup() { return cGroup; }
+
+		//passIfTrue=LiteralValue
+		public Assignment getPassIfTrueAssignment_0() { return cPassIfTrueAssignment_0; }
+
+		//LiteralValue
+		public RuleCall getPassIfTrueLiteralValueParserRuleCall_0_0() { return cPassIfTrueLiteralValueParserRuleCall_0_0; }
+
+		//parameter=[Parameter]
+		public Assignment getParameterAssignment_1() { return cParameterAssignment_1; }
+
+		//[Parameter]
+		public CrossReference getParameterParameterCrossReference_1_0() { return cParameterParameterCrossReference_1_0; }
+
+		//ID
+		public RuleCall getParameterParameterIDTerminalRuleCall_1_0_1() { return cParameterParameterIDTerminalRuleCall_1_0_1; }
 	}
 
 	public class UnorderedGroupElements extends AbstractParserRuleElementFinder {
@@ -1059,18 +1095,6 @@ public class XtextGrammarAccess extends AbstractGrammarElementFinder {
 
 		//"+"
 		public Keyword getPlusSignKeyword_1() { return cPlusSignKeyword_1; }
-	}
-
-	public class InverseLiteralValueElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.eclipse.xtext.Xtext.InverseLiteralValue");
-		private final RuleCall cLiteralValueParserRuleCall = (RuleCall)rule.eContents().get(1);
-		
-		//InverseLiteralValue returns ecore::EBoolean:
-		//	LiteralValue;
-		@Override public ParserRule getRule() { return rule; }
-
-		//LiteralValue
-		public RuleCall getLiteralValueParserRuleCall() { return cLiteralValueParserRuleCall; }
 	}
 
 	public class NamedArgumentElements extends AbstractParserRuleElementFinder {
@@ -2124,6 +2148,7 @@ public class XtextGrammarAccess extends AbstractGrammarElementFinder {
 	private final TypeRefElements pTypeRef;
 	private final AlternativesElements pAlternatives;
 	private final ConditionalBranchElements pConditionalBranch;
+	private final GuardConditionElements pGuardCondition;
 	private final UnorderedGroupElements pUnorderedGroup;
 	private final GroupElements pGroup;
 	private final AbstractTokenElements pAbstractToken;
@@ -2133,7 +2158,6 @@ public class XtextGrammarAccess extends AbstractGrammarElementFinder {
 	private final KeywordElements pKeyword;
 	private final RuleCallElements pRuleCall;
 	private final LiteralValueElements pLiteralValue;
-	private final InverseLiteralValueElements pInverseLiteralValue;
 	private final NamedArgumentElements pNamedArgument;
 	private final TerminalRuleCallElements pTerminalRuleCall;
 	private final RuleIDElements pRuleID;
@@ -2184,6 +2208,7 @@ public class XtextGrammarAccess extends AbstractGrammarElementFinder {
 		this.pTypeRef = new TypeRefElements();
 		this.pAlternatives = new AlternativesElements();
 		this.pConditionalBranch = new ConditionalBranchElements();
+		this.pGuardCondition = new GuardConditionElements();
 		this.pUnorderedGroup = new UnorderedGroupElements();
 		this.pGroup = new GroupElements();
 		this.pAbstractToken = new AbstractTokenElements();
@@ -2193,7 +2218,6 @@ public class XtextGrammarAccess extends AbstractGrammarElementFinder {
 		this.pKeyword = new KeywordElements();
 		this.pRuleCall = new RuleCallElements();
 		this.pLiteralValue = new LiteralValueElements();
-		this.pInverseLiteralValue = new InverseLiteralValueElements();
 		this.pNamedArgument = new NamedArgumentElements();
 		this.pTerminalRuleCall = new TerminalRuleCallElements();
 		this.pRuleID = new RuleIDElements();
@@ -2370,14 +2394,24 @@ public class XtextGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//ConditionalBranch returns AbstractElement:
-	//	UnorderedGroup | {ConditionalBranch} "[" filtered=InverseLiteralValue parameter=[Parameter] "]"
-	//	guardedElement=UnorderedGroup;
+	//	UnorderedGroup | {Group} "[" guardConditions+=GuardCondition ("," guardConditions+=GuardCondition)* "]"
+	//	elements+=AbstractToken+;
 	public ConditionalBranchElements getConditionalBranchAccess() {
 		return pConditionalBranch;
 	}
 	
 	public ParserRule getConditionalBranchRule() {
 		return getConditionalBranchAccess().getRule();
+	}
+
+	//GuardCondition:
+	//	passIfTrue=LiteralValue parameter=[Parameter];
+	public GuardConditionElements getGuardConditionAccess() {
+		return pGuardCondition;
+	}
+	
+	public ParserRule getGuardConditionRule() {
+		return getGuardConditionAccess().getRule();
 	}
 
 	//UnorderedGroup returns AbstractElement:
@@ -2474,16 +2508,6 @@ public class XtextGrammarAccess extends AbstractGrammarElementFinder {
 	
 	public ParserRule getLiteralValueRule() {
 		return getLiteralValueAccess().getRule();
-	}
-
-	//InverseLiteralValue returns ecore::EBoolean:
-	//	LiteralValue;
-	public InverseLiteralValueElements getInverseLiteralValueAccess() {
-		return pInverseLiteralValue;
-	}
-	
-	public ParserRule getInverseLiteralValueRule() {
-		return getInverseLiteralValueAccess().getRule();
 	}
 
 	//NamedArgument:

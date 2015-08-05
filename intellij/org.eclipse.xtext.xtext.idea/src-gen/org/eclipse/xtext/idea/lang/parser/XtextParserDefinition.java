@@ -93,7 +93,7 @@ public class XtextParserDefinition extends AbstractXtextParserDefinition {
 		if (elementType == elementTypeProvider.getTypeRef_ClassifierEClassifierCrossReference_1_0ElementType()) {
 			return new PsiEObjectReference(node);
 		}
-		if (elementType == elementTypeProvider.getConditionalBranch_ParameterParameterCrossReference_1_3_0ElementType()) {
+		if (elementType == elementTypeProvider.getGuardCondition_ParameterParameterCrossReference_1_0ElementType()) {
 			return new PsiEObjectReference(node);
 		}
 		if (elementType == elementTypeProvider.getRuleCall_RuleAbstractRuleCrossReference_0_0ElementType()) {

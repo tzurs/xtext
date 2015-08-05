@@ -2182,33 +2182,33 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleConditionalBranch"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:779:1: ruleConditionalBranch : ( ruleUnorderedGroup | ( () otherlv_2= '[' ( (lv_filtered_3_0= ruleInverseLiteralValue ) ) ( (otherlv_4= RULE_ID ) ) otherlv_5= ']' ( (lv_guardedElement_6_0= ruleUnorderedGroup ) ) ) ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:779:1: ruleConditionalBranch : ( ruleUnorderedGroup | ( () otherlv_2= '[' ( (lv_guardConditions_3_0= ruleGuardCondition ) ) (otherlv_4= ',' ( (lv_guardConditions_5_0= ruleGuardCondition ) ) )* otherlv_6= ']' ( (lv_elements_7_0= ruleAbstractToken ) )+ ) ) ;
     public final void ruleConditionalBranch() throws RecognitionException {
         Token otherlv_2=null;
         Token otherlv_4=null;
-        Token otherlv_5=null;
+        Token otherlv_6=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:779:22: ( ( ruleUnorderedGroup | ( () otherlv_2= '[' ( (lv_filtered_3_0= ruleInverseLiteralValue ) ) ( (otherlv_4= RULE_ID ) ) otherlv_5= ']' ( (lv_guardedElement_6_0= ruleUnorderedGroup ) ) ) ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:780:2: ( ruleUnorderedGroup | ( () otherlv_2= '[' ( (lv_filtered_3_0= ruleInverseLiteralValue ) ) ( (otherlv_4= RULE_ID ) ) otherlv_5= ']' ( (lv_guardedElement_6_0= ruleUnorderedGroup ) ) ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:779:22: ( ( ruleUnorderedGroup | ( () otherlv_2= '[' ( (lv_guardConditions_3_0= ruleGuardCondition ) ) (otherlv_4= ',' ( (lv_guardConditions_5_0= ruleGuardCondition ) ) )* otherlv_6= ']' ( (lv_elements_7_0= ruleAbstractToken ) )+ ) ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:780:2: ( ruleUnorderedGroup | ( () otherlv_2= '[' ( (lv_guardConditions_3_0= ruleGuardCondition ) ) (otherlv_4= ',' ( (lv_guardConditions_5_0= ruleGuardCondition ) ) )* otherlv_6= ']' ( (lv_elements_7_0= ruleAbstractToken ) )+ ) )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:780:2: ( ruleUnorderedGroup | ( () otherlv_2= '[' ( (lv_filtered_3_0= ruleInverseLiteralValue ) ) ( (otherlv_4= RULE_ID ) ) otherlv_5= ']' ( (lv_guardedElement_6_0= ruleUnorderedGroup ) ) ) )
-            int alt26=2;
-            int LA26_0 = input.LA(1);
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:780:2: ( ruleUnorderedGroup | ( () otherlv_2= '[' ( (lv_guardConditions_3_0= ruleGuardCondition ) ) (otherlv_4= ',' ( (lv_guardConditions_5_0= ruleGuardCondition ) ) )* otherlv_6= ']' ( (lv_elements_7_0= ruleAbstractToken ) )+ ) )
+            int alt28=2;
+            int LA28_0 = input.LA(1);
 
-            if ( ((LA26_0>=RULE_ID && LA26_0<=RULE_STRING)||LA26_0==15||LA26_0==33||(LA26_0>=39 && LA26_0<=40)) ) {
-                alt26=1;
+            if ( ((LA28_0>=RULE_ID && LA28_0<=RULE_STRING)||LA28_0==15||LA28_0==33||(LA28_0>=39 && LA28_0<=40)) ) {
+                alt28=1;
             }
-            else if ( (LA26_0==26) ) {
-                alt26=2;
+            else if ( (LA28_0==26) ) {
+                alt28=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 26, 0, input);
+                    new NoViableAltException("", 28, 0, input);
 
                 throw nvae;
             }
-            switch (alt26) {
+            switch (alt28) {
                 case 1 :
                     // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:781:3: ruleUnorderedGroup
                     {
@@ -2227,16 +2227,16 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:789:3: ( () otherlv_2= '[' ( (lv_filtered_3_0= ruleInverseLiteralValue ) ) ( (otherlv_4= RULE_ID ) ) otherlv_5= ']' ( (lv_guardedElement_6_0= ruleUnorderedGroup ) ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:789:3: ( () otherlv_2= '[' ( (lv_guardConditions_3_0= ruleGuardCondition ) ) (otherlv_4= ',' ( (lv_guardConditions_5_0= ruleGuardCondition ) ) )* otherlv_6= ']' ( (lv_elements_7_0= ruleAbstractToken ) )+ )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:789:3: ( () otherlv_2= '[' ( (lv_filtered_3_0= ruleInverseLiteralValue ) ) ( (otherlv_4= RULE_ID ) ) otherlv_5= ']' ( (lv_guardedElement_6_0= ruleUnorderedGroup ) ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:790:4: () otherlv_2= '[' ( (lv_filtered_3_0= ruleInverseLiteralValue ) ) ( (otherlv_4= RULE_ID ) ) otherlv_5= ']' ( (lv_guardedElement_6_0= ruleUnorderedGroup ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:789:3: ( () otherlv_2= '[' ( (lv_guardConditions_3_0= ruleGuardCondition ) ) (otherlv_4= ',' ( (lv_guardConditions_5_0= ruleGuardCondition ) ) )* otherlv_6= ']' ( (lv_elements_7_0= ruleAbstractToken ) )+ )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:790:4: () otherlv_2= '[' ( (lv_guardConditions_3_0= ruleGuardCondition ) ) (otherlv_4= ',' ( (lv_guardConditions_5_0= ruleGuardCondition ) ) )* otherlv_6= ']' ( (lv_elements_7_0= ruleAbstractToken ) )+
                     {
                     // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:790:4: ()
                     // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:791:5: 
                     {
 
-                    					precedeComposite(elementTypeProvider.getConditionalBranch_ConditionalBranchAction_1_0ElementType());
+                    					precedeComposite(elementTypeProvider.getConditionalBranch_GroupAction_1_0ElementType());
                     					doneComposite();
                     				
 
@@ -2249,17 +2249,17 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
                     				doneLeaf(otherlv_2);
                     			
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:803:4: ( (lv_filtered_3_0= ruleInverseLiteralValue ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:804:5: (lv_filtered_3_0= ruleInverseLiteralValue )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:803:4: ( (lv_guardConditions_3_0= ruleGuardCondition ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:804:5: (lv_guardConditions_3_0= ruleGuardCondition )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:804:5: (lv_filtered_3_0= ruleInverseLiteralValue )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:805:6: lv_filtered_3_0= ruleInverseLiteralValue
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:804:5: (lv_guardConditions_3_0= ruleGuardCondition )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:805:6: lv_guardConditions_3_0= ruleGuardCondition
                     {
 
-                    						markComposite(elementTypeProvider.getConditionalBranch_FilteredInverseLiteralValueParserRuleCall_1_2_0ElementType());
+                    						markComposite(elementTypeProvider.getConditionalBranch_GuardConditionsGuardConditionParserRuleCall_1_2_0ElementType());
                     					
-                    pushFollow(FollowSets000.FOLLOW_ruleInverseLiteralValue_in_ruleConditionalBranch2609);
-                    ruleInverseLiteralValue();
+                    pushFollow(FollowSets000.FOLLOW_ruleGuardCondition_in_ruleConditionalBranch2609);
+                    ruleGuardCondition();
 
                     state._fsp--;
 
@@ -2272,54 +2272,112 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
                     }
 
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:814:4: ( (otherlv_4= RULE_ID ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:815:5: (otherlv_4= RULE_ID )
-                    {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:815:5: (otherlv_4= RULE_ID )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:816:6: otherlv_4= RULE_ID
-                    {
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:814:4: (otherlv_4= ',' ( (lv_guardConditions_5_0= ruleGuardCondition ) ) )*
+                    loop26:
+                    do {
+                        int alt26=2;
+                        int LA26_0 = input.LA(1);
 
-                    						markLeaf(elementTypeProvider.getConditionalBranch_ParameterParameterCrossReference_1_3_0ElementType());
-                    					
-                    otherlv_4=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleConditionalBranch2654); 
-
-                    						doneLeaf(otherlv_4);
-                    					
-
-                    }
+                        if ( (LA26_0==13) ) {
+                            alt26=1;
+                        }
 
 
-                    }
+                        switch (alt26) {
+                    	case 1 :
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:815:5: otherlv_4= ',' ( (lv_guardConditions_5_0= ruleGuardCondition ) )
+                    	    {
+
+                    	    					markLeaf(elementTypeProvider.getConditionalBranch_CommaKeyword_1_3_0ElementType());
+                    	    				
+                    	    otherlv_4=(Token)match(input,13,FollowSets000.FOLLOW_13_in_ruleConditionalBranch2646); 
+
+                    	    					doneLeaf(otherlv_4);
+                    	    				
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:822:5: ( (lv_guardConditions_5_0= ruleGuardCondition ) )
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:823:6: (lv_guardConditions_5_0= ruleGuardCondition )
+                    	    {
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:823:6: (lv_guardConditions_5_0= ruleGuardCondition )
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:824:7: lv_guardConditions_5_0= ruleGuardCondition
+                    	    {
+
+                    	    							markComposite(elementTypeProvider.getConditionalBranch_GuardConditionsGuardConditionParserRuleCall_1_3_1_0ElementType());
+                    	    						
+                    	    pushFollow(FollowSets000.FOLLOW_ruleGuardCondition_in_ruleConditionalBranch2683);
+                    	    ruleGuardCondition();
+
+                    	    state._fsp--;
+
+
+                    	    							doneComposite();
+                    	    						
+
+                    	    }
+
+
+                    	    }
+
+
+                    	    }
+                    	    break;
+
+                    	default :
+                    	    break loop26;
+                        }
+                    } while (true);
 
 
                     				markLeaf(elementTypeProvider.getConditionalBranch_RightSquareBracketKeyword_1_4ElementType());
                     			
-                    otherlv_5=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleConditionalBranch2684); 
+                    otherlv_6=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleConditionalBranch2722); 
 
-                    				doneLeaf(otherlv_5);
+                    				doneLeaf(otherlv_6);
                     			
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:832:4: ( (lv_guardedElement_6_0= ruleUnorderedGroup ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:833:5: (lv_guardedElement_6_0= ruleUnorderedGroup )
-                    {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:833:5: (lv_guardedElement_6_0= ruleUnorderedGroup )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:834:6: lv_guardedElement_6_0= ruleUnorderedGroup
-                    {
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:841:4: ( (lv_elements_7_0= ruleAbstractToken ) )+
+                    int cnt27=0;
+                    loop27:
+                    do {
+                        int alt27=2;
+                        int LA27_0 = input.LA(1);
 
-                    						markComposite(elementTypeProvider.getConditionalBranch_GuardedElementUnorderedGroupParserRuleCall_1_5_0ElementType());
-                    					
-                    pushFollow(FollowSets000.FOLLOW_ruleUnorderedGroup_in_ruleConditionalBranch2716);
-                    ruleUnorderedGroup();
-
-                    state._fsp--;
+                        if ( ((LA27_0>=RULE_ID && LA27_0<=RULE_STRING)||LA27_0==15||LA27_0==33||(LA27_0>=39 && LA27_0<=40)) ) {
+                            alt27=1;
+                        }
 
 
-                    						doneComposite();
-                    					
+                        switch (alt27) {
+                    	case 1 :
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:842:5: (lv_elements_7_0= ruleAbstractToken )
+                    	    {
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:842:5: (lv_elements_7_0= ruleAbstractToken )
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:843:6: lv_elements_7_0= ruleAbstractToken
+                    	    {
 
-                    }
+                    	    						markComposite(elementTypeProvider.getConditionalBranch_ElementsAbstractTokenParserRuleCall_1_5_0ElementType());
+                    	    					
+                    	    pushFollow(FollowSets000.FOLLOW_ruleAbstractToken_in_ruleConditionalBranch2754);
+                    	    ruleAbstractToken();
+
+                    	    state._fsp--;
 
 
-                    }
+                    	    						doneComposite();
+                    	    					
+
+                    	    }
+
+
+                    	    }
+                    	    break;
+
+                    	default :
+                    	    if ( cnt27 >= 1 ) break loop27;
+                                EarlyExitException eee =
+                                    new EarlyExitException(27, input);
+                                throw eee;
+                        }
+                        cnt27++;
+                    } while (true);
 
 
                     }
@@ -2345,20 +2403,121 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
     // $ANTLR end "ruleConditionalBranch"
 
 
+    // $ANTLR start "entryRuleGuardCondition"
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:857:1: entryRuleGuardCondition : ruleGuardCondition EOF ;
+    public final void entryRuleGuardCondition() throws RecognitionException {
+        try {
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:857:24: ( ruleGuardCondition EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:858:2: ruleGuardCondition EOF
+            {
+             markComposite(elementTypeProvider.getGuardConditionElementType()); 
+            pushFollow(FollowSets000.FOLLOW_ruleGuardCondition_in_entryRuleGuardCondition2793);
+            ruleGuardCondition();
+
+            state._fsp--;
+
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleGuardCondition2796); 
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+        }
+        return ;
+    }
+    // $ANTLR end "entryRuleGuardCondition"
+
+
+    // $ANTLR start "ruleGuardCondition"
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:863:1: ruleGuardCondition : ( ( (lv_passIfTrue_0_0= ruleLiteralValue ) ) ( (otherlv_1= RULE_ID ) ) ) ;
+    public final void ruleGuardCondition() throws RecognitionException {
+        Token otherlv_1=null;
+
+        try {
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:863:19: ( ( ( (lv_passIfTrue_0_0= ruleLiteralValue ) ) ( (otherlv_1= RULE_ID ) ) ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:864:2: ( ( (lv_passIfTrue_0_0= ruleLiteralValue ) ) ( (otherlv_1= RULE_ID ) ) )
+            {
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:864:2: ( ( (lv_passIfTrue_0_0= ruleLiteralValue ) ) ( (otherlv_1= RULE_ID ) ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:865:3: ( (lv_passIfTrue_0_0= ruleLiteralValue ) ) ( (otherlv_1= RULE_ID ) )
+            {
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:865:3: ( (lv_passIfTrue_0_0= ruleLiteralValue ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:866:4: (lv_passIfTrue_0_0= ruleLiteralValue )
+            {
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:866:4: (lv_passIfTrue_0_0= ruleLiteralValue )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:867:5: lv_passIfTrue_0_0= ruleLiteralValue
+            {
+
+            					markComposite(elementTypeProvider.getGuardCondition_PassIfTrueLiteralValueParserRuleCall_0_0ElementType());
+            				
+            pushFollow(FollowSets000.FOLLOW_ruleLiteralValue_in_ruleGuardCondition2828);
+            ruleLiteralValue();
+
+            state._fsp--;
+
+
+            					doneComposite();
+            				
+
+            }
+
+
+            }
+
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:876:3: ( (otherlv_1= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:877:4: (otherlv_1= RULE_ID )
+            {
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:877:4: (otherlv_1= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:878:5: otherlv_1= RULE_ID
+            {
+
+            					markLeaf(elementTypeProvider.getGuardCondition_ParameterParameterCrossReference_1_0ElementType());
+            				
+            otherlv_1=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleGuardCondition2866); 
+
+            					doneLeaf(otherlv_1);
+            				
+
+            }
+
+
+            }
+
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+        }
+        return ;
+    }
+    // $ANTLR end "ruleGuardCondition"
+
+
     // $ANTLR start "entryRuleUnorderedGroup"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:848:1: entryRuleUnorderedGroup : ruleUnorderedGroup EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:891:1: entryRuleUnorderedGroup : ruleUnorderedGroup EOF ;
     public final void entryRuleUnorderedGroup() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:848:24: ( ruleUnorderedGroup EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:849:2: ruleUnorderedGroup EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:891:24: ( ruleUnorderedGroup EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:892:2: ruleUnorderedGroup EOF
             {
              markComposite(elementTypeProvider.getUnorderedGroupElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleUnorderedGroup_in_entryRuleUnorderedGroup2754);
+            pushFollow(FollowSets000.FOLLOW_ruleUnorderedGroup_in_entryRuleUnorderedGroup2897);
             ruleUnorderedGroup();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleUnorderedGroup2757); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleUnorderedGroup2900); 
 
             }
 
@@ -2375,21 +2534,21 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleUnorderedGroup"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:854:1: ruleUnorderedGroup : ( ruleGroup ( () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+ )? ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:897:1: ruleUnorderedGroup : ( ruleGroup ( () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+ )? ) ;
     public final void ruleUnorderedGroup() throws RecognitionException {
         Token otherlv_2=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:854:19: ( ( ruleGroup ( () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+ )? ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:855:2: ( ruleGroup ( () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+ )? )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:897:19: ( ( ruleGroup ( () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+ )? ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:898:2: ( ruleGroup ( () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+ )? )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:855:2: ( ruleGroup ( () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+ )? )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:856:3: ruleGroup ( () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+ )?
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:898:2: ( ruleGroup ( () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+ )? )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:899:3: ruleGroup ( () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+ )?
             {
 
             			markComposite(elementTypeProvider.getUnorderedGroup_GroupParserRuleCall_0ElementType());
             		
-            pushFollow(FollowSets000.FOLLOW_ruleGroup_in_ruleUnorderedGroup2774);
+            pushFollow(FollowSets000.FOLLOW_ruleGroup_in_ruleUnorderedGroup2917);
             ruleGroup();
 
             state._fsp--;
@@ -2397,19 +2556,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             			doneComposite();
             		
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:863:3: ( () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+ )?
-            int alt28=2;
-            int LA28_0 = input.LA(1);
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:906:3: ( () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+ )?
+            int alt30=2;
+            int LA30_0 = input.LA(1);
 
-            if ( (LA28_0==30) ) {
-                alt28=1;
+            if ( (LA30_0==30) ) {
+                alt30=1;
             }
-            switch (alt28) {
+            switch (alt30) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:864:4: () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:907:4: () (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:864:4: ()
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:865:5: 
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:907:4: ()
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:908:5: 
                     {
 
                     					precedeComposite(elementTypeProvider.getUnorderedGroup_UnorderedGroupElementsAction_1_0ElementType());
@@ -2418,39 +2577,39 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
                     }
 
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:870:4: (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+
-                    int cnt27=0;
-                    loop27:
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:913:4: (otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) ) )+
+                    int cnt29=0;
+                    loop29:
                     do {
-                        int alt27=2;
-                        int LA27_0 = input.LA(1);
+                        int alt29=2;
+                        int LA29_0 = input.LA(1);
 
-                        if ( (LA27_0==30) ) {
-                            alt27=1;
+                        if ( (LA29_0==30) ) {
+                            alt29=1;
                         }
 
 
-                        switch (alt27) {
+                        switch (alt29) {
                     	case 1 :
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:871:5: otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) )
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:914:5: otherlv_2= '&' ( (lv_elements_3_0= ruleGroup ) )
                     	    {
 
                     	    					markLeaf(elementTypeProvider.getUnorderedGroup_AmpersandKeyword_1_1_0ElementType());
                     	    				
-                    	    otherlv_2=(Token)match(input,30,FollowSets000.FOLLOW_30_in_ruleUnorderedGroup2817); 
+                    	    otherlv_2=(Token)match(input,30,FollowSets000.FOLLOW_30_in_ruleUnorderedGroup2960); 
 
                     	    					doneLeaf(otherlv_2);
                     	    				
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:878:5: ( (lv_elements_3_0= ruleGroup ) )
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:879:6: (lv_elements_3_0= ruleGroup )
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:921:5: ( (lv_elements_3_0= ruleGroup ) )
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:922:6: (lv_elements_3_0= ruleGroup )
                     	    {
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:879:6: (lv_elements_3_0= ruleGroup )
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:880:7: lv_elements_3_0= ruleGroup
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:922:6: (lv_elements_3_0= ruleGroup )
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:923:7: lv_elements_3_0= ruleGroup
                     	    {
 
                     	    							markComposite(elementTypeProvider.getUnorderedGroup_ElementsGroupParserRuleCall_1_1_1_0ElementType());
                     	    						
-                    	    pushFollow(FollowSets000.FOLLOW_ruleGroup_in_ruleUnorderedGroup2854);
+                    	    pushFollow(FollowSets000.FOLLOW_ruleGroup_in_ruleUnorderedGroup2997);
                     	    ruleGroup();
 
                     	    state._fsp--;
@@ -2461,147 +2620,6 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
                     	    }
 
-
-                    	    }
-
-
-                    	    }
-                    	    break;
-
-                    	default :
-                    	    if ( cnt27 >= 1 ) break loop27;
-                                EarlyExitException eee =
-                                    new EarlyExitException(27, input);
-                                throw eee;
-                        }
-                        cnt27++;
-                    } while (true);
-
-
-                    }
-                    break;
-
-            }
-
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-        }
-        return ;
-    }
-    // $ANTLR end "ruleUnorderedGroup"
-
-
-    // $ANTLR start "entryRuleGroup"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:895:1: entryRuleGroup : ruleGroup EOF ;
-    public final void entryRuleGroup() throws RecognitionException {
-        try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:895:15: ( ruleGroup EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:896:2: ruleGroup EOF
-            {
-             markComposite(elementTypeProvider.getGroupElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleGroup_in_entryRuleGroup2902);
-            ruleGroup();
-
-            state._fsp--;
-
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleGroup2905); 
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-        }
-        return ;
-    }
-    // $ANTLR end "entryRuleGroup"
-
-
-    // $ANTLR start "ruleGroup"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:901:1: ruleGroup : ( ruleAbstractToken ( () ( (lv_elements_2_0= ruleAbstractToken ) )+ )? ) ;
-    public final void ruleGroup() throws RecognitionException {
-        try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:901:10: ( ( ruleAbstractToken ( () ( (lv_elements_2_0= ruleAbstractToken ) )+ )? ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:902:2: ( ruleAbstractToken ( () ( (lv_elements_2_0= ruleAbstractToken ) )+ )? )
-            {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:902:2: ( ruleAbstractToken ( () ( (lv_elements_2_0= ruleAbstractToken ) )+ )? )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:903:3: ruleAbstractToken ( () ( (lv_elements_2_0= ruleAbstractToken ) )+ )?
-            {
-
-            			markComposite(elementTypeProvider.getGroup_AbstractTokenParserRuleCall_0ElementType());
-            		
-            pushFollow(FollowSets000.FOLLOW_ruleAbstractToken_in_ruleGroup2922);
-            ruleAbstractToken();
-
-            state._fsp--;
-
-
-            			doneComposite();
-            		
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:910:3: ( () ( (lv_elements_2_0= ruleAbstractToken ) )+ )?
-            int alt30=2;
-            int LA30_0 = input.LA(1);
-
-            if ( ((LA30_0>=RULE_ID && LA30_0<=RULE_STRING)||LA30_0==15||LA30_0==33||(LA30_0>=39 && LA30_0<=40)) ) {
-                alt30=1;
-            }
-            switch (alt30) {
-                case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:911:4: () ( (lv_elements_2_0= ruleAbstractToken ) )+
-                    {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:911:4: ()
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:912:5: 
-                    {
-
-                    					precedeComposite(elementTypeProvider.getGroup_GroupElementsAction_1_0ElementType());
-                    					doneComposite();
-                    				
-
-                    }
-
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:917:4: ( (lv_elements_2_0= ruleAbstractToken ) )+
-                    int cnt29=0;
-                    loop29:
-                    do {
-                        int alt29=2;
-                        int LA29_0 = input.LA(1);
-
-                        if ( ((LA29_0>=RULE_ID && LA29_0<=RULE_STRING)||LA29_0==15||LA29_0==33||(LA29_0>=39 && LA29_0<=40)) ) {
-                            alt29=1;
-                        }
-
-
-                        switch (alt29) {
-                    	case 1 :
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:918:5: (lv_elements_2_0= ruleAbstractToken )
-                    	    {
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:918:5: (lv_elements_2_0= ruleAbstractToken )
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:919:6: lv_elements_2_0= ruleAbstractToken
-                    	    {
-
-                    	    						markComposite(elementTypeProvider.getGroup_ElementsAbstractTokenParserRuleCall_1_1_0ElementType());
-                    	    					
-                    	    pushFollow(FollowSets000.FOLLOW_ruleAbstractToken_in_ruleGroup2973);
-                    	    ruleAbstractToken();
-
-                    	    state._fsp--;
-
-
-                    	    						doneComposite();
-                    	    					
 
                     	    }
 
@@ -2639,23 +2657,164 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
         }
         return ;
     }
-    // $ANTLR end "ruleGroup"
+    // $ANTLR end "ruleUnorderedGroup"
 
 
-    // $ANTLR start "entryRuleAbstractToken"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:933:1: entryRuleAbstractToken : ruleAbstractToken EOF ;
-    public final void entryRuleAbstractToken() throws RecognitionException {
+    // $ANTLR start "entryRuleGroup"
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:938:1: entryRuleGroup : ruleGroup EOF ;
+    public final void entryRuleGroup() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:933:23: ( ruleAbstractToken EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:934:2: ruleAbstractToken EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:938:15: ( ruleGroup EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:939:2: ruleGroup EOF
             {
-             markComposite(elementTypeProvider.getAbstractTokenElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAbstractToken_in_entryRuleAbstractToken3013);
+             markComposite(elementTypeProvider.getGroupElementType()); 
+            pushFollow(FollowSets000.FOLLOW_ruleGroup_in_entryRuleGroup3045);
+            ruleGroup();
+
+            state._fsp--;
+
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleGroup3048); 
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+        }
+        return ;
+    }
+    // $ANTLR end "entryRuleGroup"
+
+
+    // $ANTLR start "ruleGroup"
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:944:1: ruleGroup : ( ruleAbstractToken ( () ( (lv_elements_2_0= ruleAbstractToken ) )+ )? ) ;
+    public final void ruleGroup() throws RecognitionException {
+        try {
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:944:10: ( ( ruleAbstractToken ( () ( (lv_elements_2_0= ruleAbstractToken ) )+ )? ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:945:2: ( ruleAbstractToken ( () ( (lv_elements_2_0= ruleAbstractToken ) )+ )? )
+            {
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:945:2: ( ruleAbstractToken ( () ( (lv_elements_2_0= ruleAbstractToken ) )+ )? )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:946:3: ruleAbstractToken ( () ( (lv_elements_2_0= ruleAbstractToken ) )+ )?
+            {
+
+            			markComposite(elementTypeProvider.getGroup_AbstractTokenParserRuleCall_0ElementType());
+            		
+            pushFollow(FollowSets000.FOLLOW_ruleAbstractToken_in_ruleGroup3065);
             ruleAbstractToken();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAbstractToken3016); 
+
+            			doneComposite();
+            		
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:953:3: ( () ( (lv_elements_2_0= ruleAbstractToken ) )+ )?
+            int alt32=2;
+            int LA32_0 = input.LA(1);
+
+            if ( ((LA32_0>=RULE_ID && LA32_0<=RULE_STRING)||LA32_0==15||LA32_0==33||(LA32_0>=39 && LA32_0<=40)) ) {
+                alt32=1;
+            }
+            switch (alt32) {
+                case 1 :
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:954:4: () ( (lv_elements_2_0= ruleAbstractToken ) )+
+                    {
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:954:4: ()
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:955:5: 
+                    {
+
+                    					precedeComposite(elementTypeProvider.getGroup_GroupElementsAction_1_0ElementType());
+                    					doneComposite();
+                    				
+
+                    }
+
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:960:4: ( (lv_elements_2_0= ruleAbstractToken ) )+
+                    int cnt31=0;
+                    loop31:
+                    do {
+                        int alt31=2;
+                        int LA31_0 = input.LA(1);
+
+                        if ( ((LA31_0>=RULE_ID && LA31_0<=RULE_STRING)||LA31_0==15||LA31_0==33||(LA31_0>=39 && LA31_0<=40)) ) {
+                            alt31=1;
+                        }
+
+
+                        switch (alt31) {
+                    	case 1 :
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:961:5: (lv_elements_2_0= ruleAbstractToken )
+                    	    {
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:961:5: (lv_elements_2_0= ruleAbstractToken )
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:962:6: lv_elements_2_0= ruleAbstractToken
+                    	    {
+
+                    	    						markComposite(elementTypeProvider.getGroup_ElementsAbstractTokenParserRuleCall_1_1_0ElementType());
+                    	    					
+                    	    pushFollow(FollowSets000.FOLLOW_ruleAbstractToken_in_ruleGroup3116);
+                    	    ruleAbstractToken();
+
+                    	    state._fsp--;
+
+
+                    	    						doneComposite();
+                    	    					
+
+                    	    }
+
+
+                    	    }
+                    	    break;
+
+                    	default :
+                    	    if ( cnt31 >= 1 ) break loop31;
+                                EarlyExitException eee =
+                                    new EarlyExitException(31, input);
+                                throw eee;
+                        }
+                        cnt31++;
+                    } while (true);
+
+
+                    }
+                    break;
+
+            }
+
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+        }
+        return ;
+    }
+    // $ANTLR end "ruleGroup"
+
+
+    // $ANTLR start "entryRuleAbstractToken"
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:976:1: entryRuleAbstractToken : ruleAbstractToken EOF ;
+    public final void entryRuleAbstractToken() throws RecognitionException {
+        try {
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:976:23: ( ruleAbstractToken EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:977:2: ruleAbstractToken EOF
+            {
+             markComposite(elementTypeProvider.getAbstractTokenElementType()); 
+            pushFollow(FollowSets000.FOLLOW_ruleAbstractToken_in_entryRuleAbstractToken3156);
+            ruleAbstractToken();
+
+            state._fsp--;
+
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAbstractToken3159); 
 
             }
 
@@ -2672,36 +2831,36 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleAbstractToken"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:939:1: ruleAbstractToken : ( ruleAbstractTokenWithCardinality | ruleAction ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:982:1: ruleAbstractToken : ( ruleAbstractTokenWithCardinality | ruleAction ) ;
     public final void ruleAbstractToken() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:939:18: ( ( ruleAbstractTokenWithCardinality | ruleAction ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:940:2: ( ruleAbstractTokenWithCardinality | ruleAction )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:982:18: ( ( ruleAbstractTokenWithCardinality | ruleAction ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:983:2: ( ruleAbstractTokenWithCardinality | ruleAction )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:940:2: ( ruleAbstractTokenWithCardinality | ruleAction )
-            int alt31=2;
-            int LA31_0 = input.LA(1);
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:983:2: ( ruleAbstractTokenWithCardinality | ruleAction )
+            int alt33=2;
+            int LA33_0 = input.LA(1);
 
-            if ( ((LA31_0>=RULE_ID && LA31_0<=RULE_STRING)||LA31_0==15||(LA31_0>=39 && LA31_0<=40)) ) {
-                alt31=1;
+            if ( ((LA33_0>=RULE_ID && LA33_0<=RULE_STRING)||LA33_0==15||(LA33_0>=39 && LA33_0<=40)) ) {
+                alt33=1;
             }
-            else if ( (LA31_0==33) ) {
-                alt31=2;
+            else if ( (LA33_0==33) ) {
+                alt33=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 31, 0, input);
+                    new NoViableAltException("", 33, 0, input);
 
                 throw nvae;
             }
-            switch (alt31) {
+            switch (alt33) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:941:3: ruleAbstractTokenWithCardinality
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:984:3: ruleAbstractTokenWithCardinality
                     {
 
                     			markComposite(elementTypeProvider.getAbstractToken_AbstractTokenWithCardinalityParserRuleCall_0ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleAbstractTokenWithCardinality_in_ruleAbstractToken3033);
+                    pushFollow(FollowSets000.FOLLOW_ruleAbstractTokenWithCardinality_in_ruleAbstractToken3176);
                     ruleAbstractTokenWithCardinality();
 
                     state._fsp--;
@@ -2713,12 +2872,12 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:949:3: ruleAction
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:992:3: ruleAction
                     {
 
                     			markComposite(elementTypeProvider.getAbstractToken_ActionParserRuleCall_1ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleAction_in_ruleAbstractToken3053);
+                    pushFollow(FollowSets000.FOLLOW_ruleAction_in_ruleAbstractToken3196);
                     ruleAction();
 
                     state._fsp--;
@@ -2748,19 +2907,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleAbstractTokenWithCardinality"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:960:1: entryRuleAbstractTokenWithCardinality : ruleAbstractTokenWithCardinality EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1003:1: entryRuleAbstractTokenWithCardinality : ruleAbstractTokenWithCardinality EOF ;
     public final void entryRuleAbstractTokenWithCardinality() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:960:38: ( ruleAbstractTokenWithCardinality EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:961:2: ruleAbstractTokenWithCardinality EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1003:38: ( ruleAbstractTokenWithCardinality EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1004:2: ruleAbstractTokenWithCardinality EOF
             {
              markComposite(elementTypeProvider.getAbstractTokenWithCardinalityElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAbstractTokenWithCardinality_in_entryRuleAbstractTokenWithCardinality3073);
+            pushFollow(FollowSets000.FOLLOW_ruleAbstractTokenWithCardinality_in_entryRuleAbstractTokenWithCardinality3216);
             ruleAbstractTokenWithCardinality();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAbstractTokenWithCardinality3076); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAbstractTokenWithCardinality3219); 
 
             }
 
@@ -2777,48 +2936,48 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleAbstractTokenWithCardinality"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:966:1: ruleAbstractTokenWithCardinality : ( ( ruleAssignment | ruleAbstractTerminal ) ( ( (lv_cardinality_2_1= '?' | lv_cardinality_2_2= '*' | lv_cardinality_2_3= '+' ) ) )? ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1009:1: ruleAbstractTokenWithCardinality : ( ( ruleAssignment | ruleAbstractTerminal ) ( ( (lv_cardinality_2_1= '?' | lv_cardinality_2_2= '*' | lv_cardinality_2_3= '+' ) ) )? ) ;
     public final void ruleAbstractTokenWithCardinality() throws RecognitionException {
         Token lv_cardinality_2_1=null;
         Token lv_cardinality_2_2=null;
         Token lv_cardinality_2_3=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:966:33: ( ( ( ruleAssignment | ruleAbstractTerminal ) ( ( (lv_cardinality_2_1= '?' | lv_cardinality_2_2= '*' | lv_cardinality_2_3= '+' ) ) )? ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:967:2: ( ( ruleAssignment | ruleAbstractTerminal ) ( ( (lv_cardinality_2_1= '?' | lv_cardinality_2_2= '*' | lv_cardinality_2_3= '+' ) ) )? )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1009:33: ( ( ( ruleAssignment | ruleAbstractTerminal ) ( ( (lv_cardinality_2_1= '?' | lv_cardinality_2_2= '*' | lv_cardinality_2_3= '+' ) ) )? ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1010:2: ( ( ruleAssignment | ruleAbstractTerminal ) ( ( (lv_cardinality_2_1= '?' | lv_cardinality_2_2= '*' | lv_cardinality_2_3= '+' ) ) )? )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:967:2: ( ( ruleAssignment | ruleAbstractTerminal ) ( ( (lv_cardinality_2_1= '?' | lv_cardinality_2_2= '*' | lv_cardinality_2_3= '+' ) ) )? )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:968:3: ( ruleAssignment | ruleAbstractTerminal ) ( ( (lv_cardinality_2_1= '?' | lv_cardinality_2_2= '*' | lv_cardinality_2_3= '+' ) ) )?
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1010:2: ( ( ruleAssignment | ruleAbstractTerminal ) ( ( (lv_cardinality_2_1= '?' | lv_cardinality_2_2= '*' | lv_cardinality_2_3= '+' ) ) )? )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1011:3: ( ruleAssignment | ruleAbstractTerminal ) ( ( (lv_cardinality_2_1= '?' | lv_cardinality_2_2= '*' | lv_cardinality_2_3= '+' ) ) )?
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:968:3: ( ruleAssignment | ruleAbstractTerminal )
-            int alt32=2;
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1011:3: ( ruleAssignment | ruleAbstractTerminal )
+            int alt34=2;
             switch ( input.LA(1) ) {
             case 39:
                 {
-                int LA32_1 = input.LA(2);
+                int LA34_1 = input.LA(2);
 
-                if ( (LA32_1==RULE_ID) ) {
-                    int LA32_5 = input.LA(3);
+                if ( (LA34_1==RULE_ID) ) {
+                    int LA34_5 = input.LA(3);
 
-                    if ( ((LA32_5>=34 && LA32_5<=35)||LA32_5==41) ) {
-                        alt32=1;
+                    if ( ((LA34_5>=34 && LA34_5<=35)||LA34_5==41) ) {
+                        alt34=1;
                     }
-                    else if ( (LA32_5==EOF||(LA32_5>=RULE_ID && LA32_5<=RULE_STRING)||(LA32_5>=15 && LA32_5<=16)||LA32_5==22||LA32_5==25||(LA32_5>=29 && LA32_5<=33)||(LA32_5>=39 && LA32_5<=40)) ) {
-                        alt32=2;
+                    else if ( (LA34_5==EOF||(LA34_5>=RULE_ID && LA34_5<=RULE_STRING)||(LA34_5>=15 && LA34_5<=16)||LA34_5==22||LA34_5==25||(LA34_5>=29 && LA34_5<=33)||(LA34_5>=39 && LA34_5<=40)) ) {
+                        alt34=2;
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("", 32, 5, input);
+                            new NoViableAltException("", 34, 5, input);
 
                         throw nvae;
                     }
                 }
-                else if ( (LA32_1==RULE_STRING||LA32_1==15) ) {
-                    alt32=2;
+                else if ( (LA34_1==RULE_STRING||LA34_1==15) ) {
+                    alt34=2;
                 }
                 else {
                     NoViableAltException nvae =
-                        new NoViableAltException("", 32, 1, input);
+                        new NoViableAltException("", 34, 1, input);
 
                     throw nvae;
                 }
@@ -2826,30 +2985,30 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                 break;
             case 40:
                 {
-                int LA32_2 = input.LA(2);
+                int LA34_2 = input.LA(2);
 
-                if ( (LA32_2==RULE_ID) ) {
-                    int LA32_5 = input.LA(3);
+                if ( (LA34_2==RULE_STRING||LA34_2==15) ) {
+                    alt34=2;
+                }
+                else if ( (LA34_2==RULE_ID) ) {
+                    int LA34_5 = input.LA(3);
 
-                    if ( ((LA32_5>=34 && LA32_5<=35)||LA32_5==41) ) {
-                        alt32=1;
+                    if ( ((LA34_5>=34 && LA34_5<=35)||LA34_5==41) ) {
+                        alt34=1;
                     }
-                    else if ( (LA32_5==EOF||(LA32_5>=RULE_ID && LA32_5<=RULE_STRING)||(LA32_5>=15 && LA32_5<=16)||LA32_5==22||LA32_5==25||(LA32_5>=29 && LA32_5<=33)||(LA32_5>=39 && LA32_5<=40)) ) {
-                        alt32=2;
+                    else if ( (LA34_5==EOF||(LA34_5>=RULE_ID && LA34_5<=RULE_STRING)||(LA34_5>=15 && LA34_5<=16)||LA34_5==22||LA34_5==25||(LA34_5>=29 && LA34_5<=33)||(LA34_5>=39 && LA34_5<=40)) ) {
+                        alt34=2;
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("", 32, 5, input);
+                            new NoViableAltException("", 34, 5, input);
 
                         throw nvae;
                     }
                 }
-                else if ( (LA32_2==RULE_STRING||LA32_2==15) ) {
-                    alt32=2;
-                }
                 else {
                     NoViableAltException nvae =
-                        new NoViableAltException("", 32, 2, input);
+                        new NoViableAltException("", 34, 2, input);
 
                     throw nvae;
                 }
@@ -2857,17 +3016,17 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                 break;
             case RULE_ID:
                 {
-                int LA32_3 = input.LA(2);
+                int LA34_3 = input.LA(2);
 
-                if ( ((LA32_3>=34 && LA32_3<=35)||LA32_3==41) ) {
-                    alt32=1;
+                if ( ((LA34_3>=34 && LA34_3<=35)||LA34_3==41) ) {
+                    alt34=1;
                 }
-                else if ( (LA32_3==EOF||(LA32_3>=RULE_ID && LA32_3<=RULE_STRING)||(LA32_3>=15 && LA32_3<=16)||LA32_3==22||(LA32_3>=25 && LA32_3<=26)||(LA32_3>=28 && LA32_3<=33)||(LA32_3>=39 && LA32_3<=40)) ) {
-                    alt32=2;
+                else if ( (LA34_3==EOF||(LA34_3>=RULE_ID && LA34_3<=RULE_STRING)||(LA34_3>=15 && LA34_3<=16)||LA34_3==22||(LA34_3>=25 && LA34_3<=26)||(LA34_3>=28 && LA34_3<=33)||(LA34_3>=39 && LA34_3<=40)) ) {
+                    alt34=2;
                 }
                 else {
                     NoViableAltException nvae =
-                        new NoViableAltException("", 32, 3, input);
+                        new NoViableAltException("", 34, 3, input);
 
                     throw nvae;
                 }
@@ -2876,24 +3035,24 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
             case RULE_STRING:
             case 15:
                 {
-                alt32=2;
+                alt34=2;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 32, 0, input);
+                    new NoViableAltException("", 34, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt32) {
+            switch (alt34) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:969:4: ruleAssignment
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1012:4: ruleAssignment
                     {
 
                     				markComposite(elementTypeProvider.getAbstractTokenWithCardinality_AssignmentParserRuleCall_0_0ElementType());
                     			
-                    pushFollow(FollowSets000.FOLLOW_ruleAssignment_in_ruleAbstractTokenWithCardinality3099);
+                    pushFollow(FollowSets000.FOLLOW_ruleAssignment_in_ruleAbstractTokenWithCardinality3242);
                     ruleAssignment();
 
                     state._fsp--;
@@ -2905,12 +3064,12 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:977:4: ruleAbstractTerminal
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1020:4: ruleAbstractTerminal
                     {
 
                     				markComposite(elementTypeProvider.getAbstractTokenWithCardinality_AbstractTerminalParserRuleCall_0_1ElementType());
                     			
-                    pushFollow(FollowSets000.FOLLOW_ruleAbstractTerminal_in_ruleAbstractTokenWithCardinality3123);
+                    pushFollow(FollowSets000.FOLLOW_ruleAbstractTerminal_in_ruleAbstractTokenWithCardinality3266);
                     ruleAbstractTerminal();
 
                     state._fsp--;
@@ -2924,53 +3083,53 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             }
 
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:985:3: ( ( (lv_cardinality_2_1= '?' | lv_cardinality_2_2= '*' | lv_cardinality_2_3= '+' ) ) )?
-            int alt34=2;
-            int LA34_0 = input.LA(1);
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1028:3: ( ( (lv_cardinality_2_1= '?' | lv_cardinality_2_2= '*' | lv_cardinality_2_3= '+' ) ) )?
+            int alt36=2;
+            int LA36_0 = input.LA(1);
 
-            if ( (LA34_0==22||(LA34_0>=31 && LA34_0<=32)) ) {
-                alt34=1;
+            if ( (LA36_0==22||(LA36_0>=31 && LA36_0<=32)) ) {
+                alt36=1;
             }
-            switch (alt34) {
+            switch (alt36) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:986:4: ( (lv_cardinality_2_1= '?' | lv_cardinality_2_2= '*' | lv_cardinality_2_3= '+' ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1029:4: ( (lv_cardinality_2_1= '?' | lv_cardinality_2_2= '*' | lv_cardinality_2_3= '+' ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:986:4: ( (lv_cardinality_2_1= '?' | lv_cardinality_2_2= '*' | lv_cardinality_2_3= '+' ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:987:5: (lv_cardinality_2_1= '?' | lv_cardinality_2_2= '*' | lv_cardinality_2_3= '+' )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1029:4: ( (lv_cardinality_2_1= '?' | lv_cardinality_2_2= '*' | lv_cardinality_2_3= '+' ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1030:5: (lv_cardinality_2_1= '?' | lv_cardinality_2_2= '*' | lv_cardinality_2_3= '+' )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:987:5: (lv_cardinality_2_1= '?' | lv_cardinality_2_2= '*' | lv_cardinality_2_3= '+' )
-                    int alt33=3;
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1030:5: (lv_cardinality_2_1= '?' | lv_cardinality_2_2= '*' | lv_cardinality_2_3= '+' )
+                    int alt35=3;
                     switch ( input.LA(1) ) {
                     case 31:
                         {
-                        alt33=1;
+                        alt35=1;
                         }
                         break;
                     case 22:
                         {
-                        alt33=2;
+                        alt35=2;
                         }
                         break;
                     case 32:
                         {
-                        alt33=3;
+                        alt35=3;
                         }
                         break;
                     default:
                         NoViableAltException nvae =
-                            new NoViableAltException("", 33, 0, input);
+                            new NoViableAltException("", 35, 0, input);
 
                         throw nvae;
                     }
 
-                    switch (alt33) {
+                    switch (alt35) {
                         case 1 :
-                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:988:6: lv_cardinality_2_1= '?'
+                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1031:6: lv_cardinality_2_1= '?'
                             {
 
                             						markLeaf(elementTypeProvider.getAbstractTokenWithCardinality_CardinalityQuestionMarkKeyword_1_0_0ElementType());
                             					
-                            lv_cardinality_2_1=(Token)match(input,31,FollowSets000.FOLLOW_31_in_ruleAbstractTokenWithCardinality3163); 
+                            lv_cardinality_2_1=(Token)match(input,31,FollowSets000.FOLLOW_31_in_ruleAbstractTokenWithCardinality3306); 
 
                             						doneLeaf(lv_cardinality_2_1);
                             					
@@ -2978,12 +3137,12 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                             }
                             break;
                         case 2 :
-                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:996:6: lv_cardinality_2_2= '*'
+                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1039:6: lv_cardinality_2_2= '*'
                             {
 
                             						markLeaf(elementTypeProvider.getAbstractTokenWithCardinality_CardinalityAsteriskKeyword_1_0_1ElementType());
                             					
-                            lv_cardinality_2_2=(Token)match(input,22,FollowSets000.FOLLOW_22_in_ruleAbstractTokenWithCardinality3197); 
+                            lv_cardinality_2_2=(Token)match(input,22,FollowSets000.FOLLOW_22_in_ruleAbstractTokenWithCardinality3340); 
 
                             						doneLeaf(lv_cardinality_2_2);
                             					
@@ -2991,12 +3150,12 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                             }
                             break;
                         case 3 :
-                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1004:6: lv_cardinality_2_3= '+'
+                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1047:6: lv_cardinality_2_3= '+'
                             {
 
                             						markLeaf(elementTypeProvider.getAbstractTokenWithCardinality_CardinalityPlusSignKeyword_1_0_2ElementType());
                             					
-                            lv_cardinality_2_3=(Token)match(input,32,FollowSets000.FOLLOW_32_in_ruleAbstractTokenWithCardinality3231); 
+                            lv_cardinality_2_3=(Token)match(input,32,FollowSets000.FOLLOW_32_in_ruleAbstractTokenWithCardinality3374); 
 
                             						doneLeaf(lv_cardinality_2_3);
                             					
@@ -3034,19 +3193,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleAction"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1018:1: entryRuleAction : ruleAction EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1061:1: entryRuleAction : ruleAction EOF ;
     public final void entryRuleAction() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1018:16: ( ruleAction EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1019:2: ruleAction EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1061:16: ( ruleAction EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1062:2: ruleAction EOF
             {
              markComposite(elementTypeProvider.getActionElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAction_in_entryRuleAction3270);
+            pushFollow(FollowSets000.FOLLOW_ruleAction_in_entryRuleAction3413);
             ruleAction();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAction3273); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAction3416); 
 
             }
 
@@ -3063,7 +3222,7 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleAction"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1024:1: ruleAction : (otherlv_0= '{' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current' )? otherlv_6= '}' ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1067:1: ruleAction : (otherlv_0= '{' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current' )? otherlv_6= '}' ) ;
     public final void ruleAction() throws RecognitionException {
         Token otherlv_0=null;
         Token otherlv_2=null;
@@ -3074,29 +3233,29 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
         Token otherlv_6=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1024:11: ( (otherlv_0= '{' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current' )? otherlv_6= '}' ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1025:2: (otherlv_0= '{' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current' )? otherlv_6= '}' )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1067:11: ( (otherlv_0= '{' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current' )? otherlv_6= '}' ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1068:2: (otherlv_0= '{' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current' )? otherlv_6= '}' )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1025:2: (otherlv_0= '{' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current' )? otherlv_6= '}' )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1026:3: otherlv_0= '{' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current' )? otherlv_6= '}'
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1068:2: (otherlv_0= '{' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current' )? otherlv_6= '}' )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1069:3: otherlv_0= '{' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current' )? otherlv_6= '}'
             {
 
             			markLeaf(elementTypeProvider.getAction_LeftCurlyBracketKeyword_0ElementType());
             		
-            otherlv_0=(Token)match(input,33,FollowSets000.FOLLOW_33_in_ruleAction3292); 
+            otherlv_0=(Token)match(input,33,FollowSets000.FOLLOW_33_in_ruleAction3435); 
 
             			doneLeaf(otherlv_0);
             		
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1033:3: ( (lv_type_1_0= ruleTypeRef ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1034:4: (lv_type_1_0= ruleTypeRef )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1076:3: ( (lv_type_1_0= ruleTypeRef ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1077:4: (lv_type_1_0= ruleTypeRef )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1034:4: (lv_type_1_0= ruleTypeRef )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1035:5: lv_type_1_0= ruleTypeRef
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1077:4: (lv_type_1_0= ruleTypeRef )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1078:5: lv_type_1_0= ruleTypeRef
             {
 
             					markComposite(elementTypeProvider.getAction_TypeTypeRefParserRuleCall_1_0ElementType());
             				
-            pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_ruleAction3319);
+            pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_ruleAction3462);
             ruleTypeRef();
 
             state._fsp--;
@@ -3110,34 +3269,34 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             }
 
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1044:3: (otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current' )?
-            int alt36=2;
-            int LA36_0 = input.LA(1);
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1087:3: (otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current' )?
+            int alt38=2;
+            int LA38_0 = input.LA(1);
 
-            if ( (LA36_0==17) ) {
-                alt36=1;
+            if ( (LA38_0==17) ) {
+                alt38=1;
             }
-            switch (alt36) {
+            switch (alt38) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1045:4: otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current'
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1088:4: otherlv_2= '.' ( (lv_feature_3_0= RULE_ID ) ) ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) ) otherlv_5= 'current'
                     {
 
                     				markLeaf(elementTypeProvider.getAction_FullStopKeyword_2_0ElementType());
                     			
-                    otherlv_2=(Token)match(input,17,FollowSets000.FOLLOW_17_in_ruleAction3350); 
+                    otherlv_2=(Token)match(input,17,FollowSets000.FOLLOW_17_in_ruleAction3493); 
 
                     				doneLeaf(otherlv_2);
                     			
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1052:4: ( (lv_feature_3_0= RULE_ID ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1053:5: (lv_feature_3_0= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1095:4: ( (lv_feature_3_0= RULE_ID ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1096:5: (lv_feature_3_0= RULE_ID )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1053:5: (lv_feature_3_0= RULE_ID )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1054:6: lv_feature_3_0= RULE_ID
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1096:5: (lv_feature_3_0= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1097:6: lv_feature_3_0= RULE_ID
                     {
 
                     						markLeaf(elementTypeProvider.getAction_FeatureIDTerminalRuleCall_2_1_0ElementType());
                     					
-                    lv_feature_3_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleAction3382); 
+                    lv_feature_3_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleAction3525); 
 
                     						doneLeaf(lv_feature_3_0);
                     					
@@ -3147,36 +3306,36 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
                     }
 
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1063:4: ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1064:5: ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1106:4: ( ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1107:5: ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1064:5: ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1065:6: (lv_operator_4_1= '=' | lv_operator_4_2= '+=' )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1107:5: ( (lv_operator_4_1= '=' | lv_operator_4_2= '+=' ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1108:6: (lv_operator_4_1= '=' | lv_operator_4_2= '+=' )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1065:6: (lv_operator_4_1= '=' | lv_operator_4_2= '+=' )
-                    int alt35=2;
-                    int LA35_0 = input.LA(1);
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1108:6: (lv_operator_4_1= '=' | lv_operator_4_2= '+=' )
+                    int alt37=2;
+                    int LA37_0 = input.LA(1);
 
-                    if ( (LA35_0==34) ) {
-                        alt35=1;
+                    if ( (LA37_0==34) ) {
+                        alt37=1;
                     }
-                    else if ( (LA35_0==35) ) {
-                        alt35=2;
+                    else if ( (LA37_0==35) ) {
+                        alt37=2;
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("", 35, 0, input);
+                            new NoViableAltException("", 37, 0, input);
 
                         throw nvae;
                     }
-                    switch (alt35) {
+                    switch (alt37) {
                         case 1 :
-                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1066:7: lv_operator_4_1= '='
+                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1109:7: lv_operator_4_1= '='
                             {
 
                             							markLeaf(elementTypeProvider.getAction_OperatorEqualsSignKeyword_2_2_0_0ElementType());
                             						
-                            lv_operator_4_1=(Token)match(input,34,FollowSets000.FOLLOW_34_in_ruleAction3436); 
+                            lv_operator_4_1=(Token)match(input,34,FollowSets000.FOLLOW_34_in_ruleAction3579); 
 
                             							doneLeaf(lv_operator_4_1);
                             						
@@ -3184,12 +3343,12 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                             }
                             break;
                         case 2 :
-                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1074:7: lv_operator_4_2= '+='
+                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1117:7: lv_operator_4_2= '+='
                             {
 
                             							markLeaf(elementTypeProvider.getAction_OperatorPlusSignEqualsSignKeyword_2_2_0_1ElementType());
                             						
-                            lv_operator_4_2=(Token)match(input,35,FollowSets000.FOLLOW_35_in_ruleAction3474); 
+                            lv_operator_4_2=(Token)match(input,35,FollowSets000.FOLLOW_35_in_ruleAction3617); 
 
                             							doneLeaf(lv_operator_4_2);
                             						
@@ -3208,7 +3367,7 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
                     				markLeaf(elementTypeProvider.getAction_CurrentKeyword_2_3ElementType());
                     			
-                    otherlv_5=(Token)match(input,36,FollowSets000.FOLLOW_36_in_ruleAction3512); 
+                    otherlv_5=(Token)match(input,36,FollowSets000.FOLLOW_36_in_ruleAction3655); 
 
                     				doneLeaf(otherlv_5);
                     			
@@ -3221,7 +3380,7 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             			markLeaf(elementTypeProvider.getAction_RightCurlyBracketKeyword_3ElementType());
             		
-            otherlv_6=(Token)match(input,37,FollowSets000.FOLLOW_37_in_ruleAction3532); 
+            otherlv_6=(Token)match(input,37,FollowSets000.FOLLOW_37_in_ruleAction3675); 
 
             			doneLeaf(otherlv_6);
             		
@@ -3244,19 +3403,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleAbstractTerminal"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1103:1: entryRuleAbstractTerminal : ruleAbstractTerminal EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1146:1: entryRuleAbstractTerminal : ruleAbstractTerminal EOF ;
     public final void entryRuleAbstractTerminal() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1103:26: ( ruleAbstractTerminal EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1104:2: ruleAbstractTerminal EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1146:26: ( ruleAbstractTerminal EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1147:2: ruleAbstractTerminal EOF
             {
              markComposite(elementTypeProvider.getAbstractTerminalElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAbstractTerminal_in_entryRuleAbstractTerminal3552);
+            pushFollow(FollowSets000.FOLLOW_ruleAbstractTerminal_in_entryRuleAbstractTerminal3695);
             ruleAbstractTerminal();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAbstractTerminal3555); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAbstractTerminal3698); 
 
             }
 
@@ -3273,51 +3432,51 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleAbstractTerminal"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1109:1: ruleAbstractTerminal : ( ruleKeyword | ruleRuleCall | ruleParenthesizedElement | rulePredicatedKeyword | rulePredicatedRuleCall | rulePredicatedGroup ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1152:1: ruleAbstractTerminal : ( ruleKeyword | ruleRuleCall | ruleParenthesizedElement | rulePredicatedKeyword | rulePredicatedRuleCall | rulePredicatedGroup ) ;
     public final void ruleAbstractTerminal() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1109:21: ( ( ruleKeyword | ruleRuleCall | ruleParenthesizedElement | rulePredicatedKeyword | rulePredicatedRuleCall | rulePredicatedGroup ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1110:2: ( ruleKeyword | ruleRuleCall | ruleParenthesizedElement | rulePredicatedKeyword | rulePredicatedRuleCall | rulePredicatedGroup )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1152:21: ( ( ruleKeyword | ruleRuleCall | ruleParenthesizedElement | rulePredicatedKeyword | rulePredicatedRuleCall | rulePredicatedGroup ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1153:2: ( ruleKeyword | ruleRuleCall | ruleParenthesizedElement | rulePredicatedKeyword | rulePredicatedRuleCall | rulePredicatedGroup )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1110:2: ( ruleKeyword | ruleRuleCall | ruleParenthesizedElement | rulePredicatedKeyword | rulePredicatedRuleCall | rulePredicatedGroup )
-            int alt37=6;
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1153:2: ( ruleKeyword | ruleRuleCall | ruleParenthesizedElement | rulePredicatedKeyword | rulePredicatedRuleCall | rulePredicatedGroup )
+            int alt39=6;
             switch ( input.LA(1) ) {
             case RULE_STRING:
                 {
-                alt37=1;
+                alt39=1;
                 }
                 break;
             case RULE_ID:
                 {
-                alt37=2;
+                alt39=2;
                 }
                 break;
             case 15:
                 {
-                alt37=3;
+                alt39=3;
                 }
                 break;
             case 39:
                 {
                 switch ( input.LA(2) ) {
+                case RULE_ID:
+                    {
+                    alt39=5;
+                    }
+                    break;
                 case RULE_STRING:
                     {
-                    alt37=4;
+                    alt39=4;
                     }
                     break;
                 case 15:
                     {
-                    alt37=6;
-                    }
-                    break;
-                case RULE_ID:
-                    {
-                    alt37=5;
+                    alt39=6;
                     }
                     break;
                 default:
                     NoViableAltException nvae =
-                        new NoViableAltException("", 37, 4, input);
+                        new NoViableAltException("", 39, 4, input);
 
                     throw nvae;
                 }
@@ -3329,22 +3488,22 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                 switch ( input.LA(2) ) {
                 case 15:
                     {
-                    alt37=6;
-                    }
-                    break;
-                case RULE_ID:
-                    {
-                    alt37=5;
+                    alt39=6;
                     }
                     break;
                 case RULE_STRING:
                     {
-                    alt37=4;
+                    alt39=4;
+                    }
+                    break;
+                case RULE_ID:
+                    {
+                    alt39=5;
                     }
                     break;
                 default:
                     NoViableAltException nvae =
-                        new NoViableAltException("", 37, 5, input);
+                        new NoViableAltException("", 39, 5, input);
 
                     throw nvae;
                 }
@@ -3353,19 +3512,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 37, 0, input);
+                    new NoViableAltException("", 39, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt37) {
+            switch (alt39) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1111:3: ruleKeyword
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1154:3: ruleKeyword
                     {
 
                     			markComposite(elementTypeProvider.getAbstractTerminal_KeywordParserRuleCall_0ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_ruleAbstractTerminal3572);
+                    pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_ruleAbstractTerminal3715);
                     ruleKeyword();
 
                     state._fsp--;
@@ -3377,12 +3536,12 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1119:3: ruleRuleCall
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1162:3: ruleRuleCall
                     {
 
                     			markComposite(elementTypeProvider.getAbstractTerminal_RuleCallParserRuleCall_1ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleRuleCall_in_ruleAbstractTerminal3592);
+                    pushFollow(FollowSets000.FOLLOW_ruleRuleCall_in_ruleAbstractTerminal3735);
                     ruleRuleCall();
 
                     state._fsp--;
@@ -3394,12 +3553,12 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1127:3: ruleParenthesizedElement
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1170:3: ruleParenthesizedElement
                     {
 
                     			markComposite(elementTypeProvider.getAbstractTerminal_ParenthesizedElementParserRuleCall_2ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleParenthesizedElement_in_ruleAbstractTerminal3612);
+                    pushFollow(FollowSets000.FOLLOW_ruleParenthesizedElement_in_ruleAbstractTerminal3755);
                     ruleParenthesizedElement();
 
                     state._fsp--;
@@ -3411,12 +3570,12 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     }
                     break;
                 case 4 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1135:3: rulePredicatedKeyword
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1178:3: rulePredicatedKeyword
                     {
 
                     			markComposite(elementTypeProvider.getAbstractTerminal_PredicatedKeywordParserRuleCall_3ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_rulePredicatedKeyword_in_ruleAbstractTerminal3632);
+                    pushFollow(FollowSets000.FOLLOW_rulePredicatedKeyword_in_ruleAbstractTerminal3775);
                     rulePredicatedKeyword();
 
                     state._fsp--;
@@ -3428,12 +3587,12 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     }
                     break;
                 case 5 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1143:3: rulePredicatedRuleCall
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1186:3: rulePredicatedRuleCall
                     {
 
                     			markComposite(elementTypeProvider.getAbstractTerminal_PredicatedRuleCallParserRuleCall_4ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_rulePredicatedRuleCall_in_ruleAbstractTerminal3652);
+                    pushFollow(FollowSets000.FOLLOW_rulePredicatedRuleCall_in_ruleAbstractTerminal3795);
                     rulePredicatedRuleCall();
 
                     state._fsp--;
@@ -3445,12 +3604,12 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     }
                     break;
                 case 6 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1151:3: rulePredicatedGroup
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1194:3: rulePredicatedGroup
                     {
 
                     			markComposite(elementTypeProvider.getAbstractTerminal_PredicatedGroupParserRuleCall_5ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_rulePredicatedGroup_in_ruleAbstractTerminal3672);
+                    pushFollow(FollowSets000.FOLLOW_rulePredicatedGroup_in_ruleAbstractTerminal3815);
                     rulePredicatedGroup();
 
                     state._fsp--;
@@ -3480,19 +3639,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleKeyword"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1162:1: entryRuleKeyword : ruleKeyword EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1205:1: entryRuleKeyword : ruleKeyword EOF ;
     public final void entryRuleKeyword() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1162:17: ( ruleKeyword EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1163:2: ruleKeyword EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1205:17: ( ruleKeyword EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1206:2: ruleKeyword EOF
             {
              markComposite(elementTypeProvider.getKeywordElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_entryRuleKeyword3692);
+            pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_entryRuleKeyword3835);
             ruleKeyword();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleKeyword3695); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleKeyword3838); 
 
             }
 
@@ -3509,24 +3668,24 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleKeyword"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1168:1: ruleKeyword : ( (lv_value_0_0= RULE_STRING ) ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1211:1: ruleKeyword : ( (lv_value_0_0= RULE_STRING ) ) ;
     public final void ruleKeyword() throws RecognitionException {
         Token lv_value_0_0=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1168:12: ( ( (lv_value_0_0= RULE_STRING ) ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1169:2: ( (lv_value_0_0= RULE_STRING ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1211:12: ( ( (lv_value_0_0= RULE_STRING ) ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1212:2: ( (lv_value_0_0= RULE_STRING ) )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1169:2: ( (lv_value_0_0= RULE_STRING ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1170:3: (lv_value_0_0= RULE_STRING )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1212:2: ( (lv_value_0_0= RULE_STRING ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1213:3: (lv_value_0_0= RULE_STRING )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1170:3: (lv_value_0_0= RULE_STRING )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1171:4: lv_value_0_0= RULE_STRING
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1213:3: (lv_value_0_0= RULE_STRING )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1214:4: lv_value_0_0= RULE_STRING
             {
 
             				markLeaf(elementTypeProvider.getKeyword_ValueSTRINGTerminalRuleCall_0ElementType());
             			
-            lv_value_0_0=(Token)match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_ruleKeyword3720); 
+            lv_value_0_0=(Token)match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_ruleKeyword3863); 
 
             				doneLeaf(lv_value_0_0);
             			
@@ -3552,19 +3711,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleRuleCall"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1183:1: entryRuleRuleCall : ruleRuleCall EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1226:1: entryRuleRuleCall : ruleRuleCall EOF ;
     public final void entryRuleRuleCall() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1183:18: ( ruleRuleCall EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1184:2: ruleRuleCall EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1226:18: ( ruleRuleCall EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1227:2: ruleRuleCall EOF
             {
              markComposite(elementTypeProvider.getRuleCallElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleRuleCall_in_entryRuleRuleCall3745);
+            pushFollow(FollowSets000.FOLLOW_ruleRuleCall_in_entryRuleRuleCall3888);
             ruleRuleCall();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleRuleCall3748); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleRuleCall3891); 
 
             }
 
@@ -3581,29 +3740,29 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleRuleCall"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1189:1: ruleRuleCall : ( ( ( ruleRuleID ) ) (otherlv_1= '[' ( (lv_arguments_2_0= ruleNamedArgument ) ) (otherlv_3= ',' ( (lv_arguments_4_0= ruleNamedArgument ) ) )* otherlv_5= ']' )? ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1232:1: ruleRuleCall : ( ( ( ruleRuleID ) ) (otherlv_1= '[' ( (lv_arguments_2_0= ruleNamedArgument ) ) (otherlv_3= ',' ( (lv_arguments_4_0= ruleNamedArgument ) ) )* otherlv_5= ']' )? ) ;
     public final void ruleRuleCall() throws RecognitionException {
         Token otherlv_1=null;
         Token otherlv_3=null;
         Token otherlv_5=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1189:13: ( ( ( ( ruleRuleID ) ) (otherlv_1= '[' ( (lv_arguments_2_0= ruleNamedArgument ) ) (otherlv_3= ',' ( (lv_arguments_4_0= ruleNamedArgument ) ) )* otherlv_5= ']' )? ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1190:2: ( ( ( ruleRuleID ) ) (otherlv_1= '[' ( (lv_arguments_2_0= ruleNamedArgument ) ) (otherlv_3= ',' ( (lv_arguments_4_0= ruleNamedArgument ) ) )* otherlv_5= ']' )? )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1232:13: ( ( ( ( ruleRuleID ) ) (otherlv_1= '[' ( (lv_arguments_2_0= ruleNamedArgument ) ) (otherlv_3= ',' ( (lv_arguments_4_0= ruleNamedArgument ) ) )* otherlv_5= ']' )? ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1233:2: ( ( ( ruleRuleID ) ) (otherlv_1= '[' ( (lv_arguments_2_0= ruleNamedArgument ) ) (otherlv_3= ',' ( (lv_arguments_4_0= ruleNamedArgument ) ) )* otherlv_5= ']' )? )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1190:2: ( ( ( ruleRuleID ) ) (otherlv_1= '[' ( (lv_arguments_2_0= ruleNamedArgument ) ) (otherlv_3= ',' ( (lv_arguments_4_0= ruleNamedArgument ) ) )* otherlv_5= ']' )? )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1191:3: ( ( ruleRuleID ) ) (otherlv_1= '[' ( (lv_arguments_2_0= ruleNamedArgument ) ) (otherlv_3= ',' ( (lv_arguments_4_0= ruleNamedArgument ) ) )* otherlv_5= ']' )?
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1233:2: ( ( ( ruleRuleID ) ) (otherlv_1= '[' ( (lv_arguments_2_0= ruleNamedArgument ) ) (otherlv_3= ',' ( (lv_arguments_4_0= ruleNamedArgument ) ) )* otherlv_5= ']' )? )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1234:3: ( ( ruleRuleID ) ) (otherlv_1= '[' ( (lv_arguments_2_0= ruleNamedArgument ) ) (otherlv_3= ',' ( (lv_arguments_4_0= ruleNamedArgument ) ) )* otherlv_5= ']' )?
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1191:3: ( ( ruleRuleID ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1192:4: ( ruleRuleID )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1234:3: ( ( ruleRuleID ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1235:4: ( ruleRuleID )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1192:4: ( ruleRuleID )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1193:5: ruleRuleID
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1235:4: ( ruleRuleID )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1236:5: ruleRuleID
             {
 
             					markComposite(elementTypeProvider.getRuleCall_RuleAbstractRuleCrossReference_0_0ElementType());
             				
-            pushFollow(FollowSets000.FOLLOW_ruleRuleID_in_ruleRuleCall3778);
+            pushFollow(FollowSets000.FOLLOW_ruleRuleID_in_ruleRuleCall3921);
             ruleRuleID();
 
             state._fsp--;
@@ -3617,34 +3776,34 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             }
 
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1202:3: (otherlv_1= '[' ( (lv_arguments_2_0= ruleNamedArgument ) ) (otherlv_3= ',' ( (lv_arguments_4_0= ruleNamedArgument ) ) )* otherlv_5= ']' )?
-            int alt39=2;
-            int LA39_0 = input.LA(1);
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1245:3: (otherlv_1= '[' ( (lv_arguments_2_0= ruleNamedArgument ) ) (otherlv_3= ',' ( (lv_arguments_4_0= ruleNamedArgument ) ) )* otherlv_5= ']' )?
+            int alt41=2;
+            int LA41_0 = input.LA(1);
 
-            if ( (LA39_0==26) ) {
-                alt39=1;
+            if ( (LA41_0==26) ) {
+                alt41=1;
             }
-            switch (alt39) {
+            switch (alt41) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1203:4: otherlv_1= '[' ( (lv_arguments_2_0= ruleNamedArgument ) ) (otherlv_3= ',' ( (lv_arguments_4_0= ruleNamedArgument ) ) )* otherlv_5= ']'
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1246:4: otherlv_1= '[' ( (lv_arguments_2_0= ruleNamedArgument ) ) (otherlv_3= ',' ( (lv_arguments_4_0= ruleNamedArgument ) ) )* otherlv_5= ']'
                     {
 
                     				markLeaf(elementTypeProvider.getRuleCall_LeftSquareBracketKeyword_1_0ElementType());
                     			
-                    otherlv_1=(Token)match(input,26,FollowSets000.FOLLOW_26_in_ruleRuleCall3809); 
+                    otherlv_1=(Token)match(input,26,FollowSets000.FOLLOW_26_in_ruleRuleCall3952); 
 
                     				doneLeaf(otherlv_1);
                     			
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1210:4: ( (lv_arguments_2_0= ruleNamedArgument ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1211:5: (lv_arguments_2_0= ruleNamedArgument )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1253:4: ( (lv_arguments_2_0= ruleNamedArgument ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1254:5: (lv_arguments_2_0= ruleNamedArgument )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1211:5: (lv_arguments_2_0= ruleNamedArgument )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1212:6: lv_arguments_2_0= ruleNamedArgument
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1254:5: (lv_arguments_2_0= ruleNamedArgument )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1255:6: lv_arguments_2_0= ruleNamedArgument
                     {
 
                     						markComposite(elementTypeProvider.getRuleCall_ArgumentsNamedArgumentParserRuleCall_1_1_0ElementType());
                     					
-                    pushFollow(FollowSets000.FOLLOW_ruleNamedArgument_in_ruleRuleCall3841);
+                    pushFollow(FollowSets000.FOLLOW_ruleNamedArgument_in_ruleRuleCall3984);
                     ruleNamedArgument();
 
                     state._fsp--;
@@ -3658,38 +3817,38 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
                     }
 
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1221:4: (otherlv_3= ',' ( (lv_arguments_4_0= ruleNamedArgument ) ) )*
-                    loop38:
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1264:4: (otherlv_3= ',' ( (lv_arguments_4_0= ruleNamedArgument ) ) )*
+                    loop40:
                     do {
-                        int alt38=2;
-                        int LA38_0 = input.LA(1);
+                        int alt40=2;
+                        int LA40_0 = input.LA(1);
 
-                        if ( (LA38_0==13) ) {
-                            alt38=1;
+                        if ( (LA40_0==13) ) {
+                            alt40=1;
                         }
 
 
-                        switch (alt38) {
+                        switch (alt40) {
                     	case 1 :
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1222:5: otherlv_3= ',' ( (lv_arguments_4_0= ruleNamedArgument ) )
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1265:5: otherlv_3= ',' ( (lv_arguments_4_0= ruleNamedArgument ) )
                     	    {
 
                     	    					markLeaf(elementTypeProvider.getRuleCall_CommaKeyword_1_2_0ElementType());
                     	    				
-                    	    otherlv_3=(Token)match(input,13,FollowSets000.FOLLOW_13_in_ruleRuleCall3878); 
+                    	    otherlv_3=(Token)match(input,13,FollowSets000.FOLLOW_13_in_ruleRuleCall4021); 
 
                     	    					doneLeaf(otherlv_3);
                     	    				
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1229:5: ( (lv_arguments_4_0= ruleNamedArgument ) )
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1230:6: (lv_arguments_4_0= ruleNamedArgument )
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1272:5: ( (lv_arguments_4_0= ruleNamedArgument ) )
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1273:6: (lv_arguments_4_0= ruleNamedArgument )
                     	    {
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1230:6: (lv_arguments_4_0= ruleNamedArgument )
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1231:7: lv_arguments_4_0= ruleNamedArgument
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1273:6: (lv_arguments_4_0= ruleNamedArgument )
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1274:7: lv_arguments_4_0= ruleNamedArgument
                     	    {
 
                     	    							markComposite(elementTypeProvider.getRuleCall_ArgumentsNamedArgumentParserRuleCall_1_2_1_0ElementType());
                     	    						
-                    	    pushFollow(FollowSets000.FOLLOW_ruleNamedArgument_in_ruleRuleCall3915);
+                    	    pushFollow(FollowSets000.FOLLOW_ruleNamedArgument_in_ruleRuleCall4058);
                     	    ruleNamedArgument();
 
                     	    state._fsp--;
@@ -3708,14 +3867,14 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop38;
+                    	    break loop40;
                         }
                     } while (true);
 
 
                     				markLeaf(elementTypeProvider.getRuleCall_RightSquareBracketKeyword_1_3ElementType());
                     			
-                    otherlv_5=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleRuleCall3954); 
+                    otherlv_5=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleRuleCall4097); 
 
                     				doneLeaf(otherlv_5);
                     			
@@ -3744,19 +3903,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleLiteralValue"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1253:1: entryRuleLiteralValue : ruleLiteralValue EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1296:1: entryRuleLiteralValue : ruleLiteralValue EOF ;
     public final void entryRuleLiteralValue() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1253:22: ( ruleLiteralValue EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1254:2: ruleLiteralValue EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1296:22: ( ruleLiteralValue EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1297:2: ruleLiteralValue EOF
             {
              markComposite(elementTypeProvider.getLiteralValueElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleLiteralValue_in_entryRuleLiteralValue3980);
+            pushFollow(FollowSets000.FOLLOW_ruleLiteralValue_in_entryRuleLiteralValue4123);
             ruleLiteralValue();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleLiteralValue3983); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleLiteralValue4126); 
 
             }
 
@@ -3773,38 +3932,38 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleLiteralValue"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1259:1: ruleLiteralValue : (kw= '!' | kw= '+' ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1302:1: ruleLiteralValue : (kw= '!' | kw= '+' ) ;
     public final void ruleLiteralValue() throws RecognitionException {
         Token kw=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1259:17: ( (kw= '!' | kw= '+' ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1260:2: (kw= '!' | kw= '+' )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1302:17: ( (kw= '!' | kw= '+' ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1303:2: (kw= '!' | kw= '+' )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1260:2: (kw= '!' | kw= '+' )
-            int alt40=2;
-            int LA40_0 = input.LA(1);
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1303:2: (kw= '!' | kw= '+' )
+            int alt42=2;
+            int LA42_0 = input.LA(1);
 
-            if ( (LA40_0==38) ) {
-                alt40=1;
+            if ( (LA42_0==38) ) {
+                alt42=1;
             }
-            else if ( (LA40_0==32) ) {
-                alt40=2;
+            else if ( (LA42_0==32) ) {
+                alt42=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 40, 0, input);
+                    new NoViableAltException("", 42, 0, input);
 
                 throw nvae;
             }
-            switch (alt40) {
+            switch (alt42) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1261:3: kw= '!'
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1304:3: kw= '!'
                     {
 
                     			markLeaf(elementTypeProvider.getLiteralValue_ExclamationMarkKeyword_0ElementType());
                     		
-                    kw=(Token)match(input,38,FollowSets000.FOLLOW_38_in_ruleLiteralValue4002); 
+                    kw=(Token)match(input,38,FollowSets000.FOLLOW_38_in_ruleLiteralValue4145); 
 
                     			doneLeaf(kw);
                     		
@@ -3812,12 +3971,12 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1269:3: kw= '+'
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1312:3: kw= '+'
                     {
 
                     			markLeaf(elementTypeProvider.getLiteralValue_PlusSignKeyword_1ElementType());
                     		
-                    kw=(Token)match(input,32,FollowSets000.FOLLOW_32_in_ruleLiteralValue4024); 
+                    kw=(Token)match(input,32,FollowSets000.FOLLOW_32_in_ruleLiteralValue4167); 
 
                     			doneLeaf(kw);
                     		
@@ -3842,82 +4001,20 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
     // $ANTLR end "ruleLiteralValue"
 
 
-    // $ANTLR start "entryRuleInverseLiteralValue"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1280:1: entryRuleInverseLiteralValue : ruleInverseLiteralValue EOF ;
-    public final void entryRuleInverseLiteralValue() throws RecognitionException {
-        try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1280:29: ( ruleInverseLiteralValue EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1281:2: ruleInverseLiteralValue EOF
-            {
-             markComposite(elementTypeProvider.getInverseLiteralValueElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleInverseLiteralValue_in_entryRuleInverseLiteralValue4044);
-            ruleInverseLiteralValue();
-
-            state._fsp--;
-
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleInverseLiteralValue4047); 
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-        }
-        return ;
-    }
-    // $ANTLR end "entryRuleInverseLiteralValue"
-
-
-    // $ANTLR start "ruleInverseLiteralValue"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1286:1: ruleInverseLiteralValue : ruleLiteralValue ;
-    public final void ruleInverseLiteralValue() throws RecognitionException {
-        try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1286:24: ( ruleLiteralValue )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1287:2: ruleLiteralValue
-            {
-
-            		markComposite(elementTypeProvider.getInverseLiteralValue_LiteralValueParserRuleCallElementType());
-            	
-            pushFollow(FollowSets000.FOLLOW_ruleLiteralValue_in_ruleInverseLiteralValue4059);
-            ruleLiteralValue();
-
-            state._fsp--;
-
-
-            		doneComposite();
-            	
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-        }
-        return ;
-    }
-    // $ANTLR end "ruleInverseLiteralValue"
-
-
     // $ANTLR start "entryRuleNamedArgument"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1297:1: entryRuleNamedArgument : ruleNamedArgument EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1323:1: entryRuleNamedArgument : ruleNamedArgument EOF ;
     public final void entryRuleNamedArgument() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1297:23: ( ruleNamedArgument EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1298:2: ruleNamedArgument EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1323:23: ( ruleNamedArgument EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1324:2: ruleNamedArgument EOF
             {
              markComposite(elementTypeProvider.getNamedArgumentElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleNamedArgument_in_entryRuleNamedArgument4075);
+            pushFollow(FollowSets000.FOLLOW_ruleNamedArgument_in_entryRuleNamedArgument4187);
             ruleNamedArgument();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleNamedArgument4078); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleNamedArgument4190); 
 
             }
 
@@ -3934,7 +4031,7 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleNamedArgument"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1303:1: ruleNamedArgument : ( ( ( (lv_literalValue_0_0= ruleLiteralValue ) ) ( (otherlv_1= RULE_ID ) ) ) | ( ( (otherlv_2= RULE_ID ) ) ( ( (lv_explicitValue_3_0= '=' ) ) ( (otherlv_4= RULE_ID ) ) )? ) ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1329:1: ruleNamedArgument : ( ( ( (lv_literalValue_0_0= ruleLiteralValue ) ) ( (otherlv_1= RULE_ID ) ) ) | ( ( (otherlv_2= RULE_ID ) ) ( ( (lv_explicitValue_3_0= '=' ) ) ( (otherlv_4= RULE_ID ) ) )? ) ) ;
     public final void ruleNamedArgument() throws RecognitionException {
         Token otherlv_1=null;
         Token otherlv_2=null;
@@ -3942,42 +4039,42 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
         Token otherlv_4=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1303:18: ( ( ( ( (lv_literalValue_0_0= ruleLiteralValue ) ) ( (otherlv_1= RULE_ID ) ) ) | ( ( (otherlv_2= RULE_ID ) ) ( ( (lv_explicitValue_3_0= '=' ) ) ( (otherlv_4= RULE_ID ) ) )? ) ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1304:2: ( ( ( (lv_literalValue_0_0= ruleLiteralValue ) ) ( (otherlv_1= RULE_ID ) ) ) | ( ( (otherlv_2= RULE_ID ) ) ( ( (lv_explicitValue_3_0= '=' ) ) ( (otherlv_4= RULE_ID ) ) )? ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1329:18: ( ( ( ( (lv_literalValue_0_0= ruleLiteralValue ) ) ( (otherlv_1= RULE_ID ) ) ) | ( ( (otherlv_2= RULE_ID ) ) ( ( (lv_explicitValue_3_0= '=' ) ) ( (otherlv_4= RULE_ID ) ) )? ) ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1330:2: ( ( ( (lv_literalValue_0_0= ruleLiteralValue ) ) ( (otherlv_1= RULE_ID ) ) ) | ( ( (otherlv_2= RULE_ID ) ) ( ( (lv_explicitValue_3_0= '=' ) ) ( (otherlv_4= RULE_ID ) ) )? ) )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1304:2: ( ( ( (lv_literalValue_0_0= ruleLiteralValue ) ) ( (otherlv_1= RULE_ID ) ) ) | ( ( (otherlv_2= RULE_ID ) ) ( ( (lv_explicitValue_3_0= '=' ) ) ( (otherlv_4= RULE_ID ) ) )? ) )
-            int alt42=2;
-            int LA42_0 = input.LA(1);
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1330:2: ( ( ( (lv_literalValue_0_0= ruleLiteralValue ) ) ( (otherlv_1= RULE_ID ) ) ) | ( ( (otherlv_2= RULE_ID ) ) ( ( (lv_explicitValue_3_0= '=' ) ) ( (otherlv_4= RULE_ID ) ) )? ) )
+            int alt44=2;
+            int LA44_0 = input.LA(1);
 
-            if ( (LA42_0==32||LA42_0==38) ) {
-                alt42=1;
+            if ( (LA44_0==32||LA44_0==38) ) {
+                alt44=1;
             }
-            else if ( (LA42_0==RULE_ID) ) {
-                alt42=2;
+            else if ( (LA44_0==RULE_ID) ) {
+                alt44=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 42, 0, input);
+                    new NoViableAltException("", 44, 0, input);
 
                 throw nvae;
             }
-            switch (alt42) {
+            switch (alt44) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1305:3: ( ( (lv_literalValue_0_0= ruleLiteralValue ) ) ( (otherlv_1= RULE_ID ) ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1331:3: ( ( (lv_literalValue_0_0= ruleLiteralValue ) ) ( (otherlv_1= RULE_ID ) ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1305:3: ( ( (lv_literalValue_0_0= ruleLiteralValue ) ) ( (otherlv_1= RULE_ID ) ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1306:4: ( (lv_literalValue_0_0= ruleLiteralValue ) ) ( (otherlv_1= RULE_ID ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1331:3: ( ( (lv_literalValue_0_0= ruleLiteralValue ) ) ( (otherlv_1= RULE_ID ) ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1332:4: ( (lv_literalValue_0_0= ruleLiteralValue ) ) ( (otherlv_1= RULE_ID ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1306:4: ( (lv_literalValue_0_0= ruleLiteralValue ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1307:5: (lv_literalValue_0_0= ruleLiteralValue )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1332:4: ( (lv_literalValue_0_0= ruleLiteralValue ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1333:5: (lv_literalValue_0_0= ruleLiteralValue )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1307:5: (lv_literalValue_0_0= ruleLiteralValue )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1308:6: lv_literalValue_0_0= ruleLiteralValue
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1333:5: (lv_literalValue_0_0= ruleLiteralValue )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1334:6: lv_literalValue_0_0= ruleLiteralValue
                     {
 
                     						markComposite(elementTypeProvider.getNamedArgument_LiteralValueLiteralValueParserRuleCall_0_0_0ElementType());
                     					
-                    pushFollow(FollowSets000.FOLLOW_ruleLiteralValue_in_ruleNamedArgument4118);
+                    pushFollow(FollowSets000.FOLLOW_ruleLiteralValue_in_ruleNamedArgument4230);
                     ruleLiteralValue();
 
                     state._fsp--;
@@ -3991,16 +4088,16 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
                     }
 
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1317:4: ( (otherlv_1= RULE_ID ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1318:5: (otherlv_1= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1343:4: ( (otherlv_1= RULE_ID ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1344:5: (otherlv_1= RULE_ID )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1318:5: (otherlv_1= RULE_ID )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1319:6: otherlv_1= RULE_ID
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1344:5: (otherlv_1= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1345:6: otherlv_1= RULE_ID
                     {
 
                     						markLeaf(elementTypeProvider.getNamedArgument_ParameterParameterCrossReference_0_1_0ElementType());
                     					
-                    otherlv_1=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleNamedArgument4163); 
+                    otherlv_1=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleNamedArgument4275); 
 
                     						doneLeaf(otherlv_1);
                     					
@@ -4017,21 +4114,21 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1330:3: ( ( (otherlv_2= RULE_ID ) ) ( ( (lv_explicitValue_3_0= '=' ) ) ( (otherlv_4= RULE_ID ) ) )? )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1356:3: ( ( (otherlv_2= RULE_ID ) ) ( ( (lv_explicitValue_3_0= '=' ) ) ( (otherlv_4= RULE_ID ) ) )? )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1330:3: ( ( (otherlv_2= RULE_ID ) ) ( ( (lv_explicitValue_3_0= '=' ) ) ( (otherlv_4= RULE_ID ) ) )? )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1331:4: ( (otherlv_2= RULE_ID ) ) ( ( (lv_explicitValue_3_0= '=' ) ) ( (otherlv_4= RULE_ID ) ) )?
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1356:3: ( ( (otherlv_2= RULE_ID ) ) ( ( (lv_explicitValue_3_0= '=' ) ) ( (otherlv_4= RULE_ID ) ) )? )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1357:4: ( (otherlv_2= RULE_ID ) ) ( ( (lv_explicitValue_3_0= '=' ) ) ( (otherlv_4= RULE_ID ) ) )?
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1331:4: ( (otherlv_2= RULE_ID ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1332:5: (otherlv_2= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1357:4: ( (otherlv_2= RULE_ID ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1358:5: (otherlv_2= RULE_ID )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1332:5: (otherlv_2= RULE_ID )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1333:6: otherlv_2= RULE_ID
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1358:5: (otherlv_2= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1359:6: otherlv_2= RULE_ID
                     {
 
                     						markLeaf(elementTypeProvider.getNamedArgument_ParameterParameterCrossReference_1_0_0ElementType());
                     					
-                    otherlv_2=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleNamedArgument4224); 
+                    otherlv_2=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleNamedArgument4336); 
 
                     						doneLeaf(otherlv_2);
                     					
@@ -4041,27 +4138,27 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
                     }
 
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1342:4: ( ( (lv_explicitValue_3_0= '=' ) ) ( (otherlv_4= RULE_ID ) ) )?
-                    int alt41=2;
-                    int LA41_0 = input.LA(1);
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1368:4: ( ( (lv_explicitValue_3_0= '=' ) ) ( (otherlv_4= RULE_ID ) ) )?
+                    int alt43=2;
+                    int LA43_0 = input.LA(1);
 
-                    if ( (LA41_0==34) ) {
-                        alt41=1;
+                    if ( (LA43_0==34) ) {
+                        alt43=1;
                     }
-                    switch (alt41) {
+                    switch (alt43) {
                         case 1 :
-                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1343:5: ( (lv_explicitValue_3_0= '=' ) ) ( (otherlv_4= RULE_ID ) )
+                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1369:5: ( (lv_explicitValue_3_0= '=' ) ) ( (otherlv_4= RULE_ID ) )
                             {
-                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1343:5: ( (lv_explicitValue_3_0= '=' ) )
-                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1344:6: (lv_explicitValue_3_0= '=' )
+                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1369:5: ( (lv_explicitValue_3_0= '=' ) )
+                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1370:6: (lv_explicitValue_3_0= '=' )
                             {
-                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1344:6: (lv_explicitValue_3_0= '=' )
-                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1345:7: lv_explicitValue_3_0= '='
+                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1370:6: (lv_explicitValue_3_0= '=' )
+                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1371:7: lv_explicitValue_3_0= '='
                             {
 
                             							markLeaf(elementTypeProvider.getNamedArgument_ExplicitValueEqualsSignKeyword_1_1_0_0ElementType());
                             						
-                            lv_explicitValue_3_0=(Token)match(input,34,FollowSets000.FOLLOW_34_in_ruleNamedArgument4278); 
+                            lv_explicitValue_3_0=(Token)match(input,34,FollowSets000.FOLLOW_34_in_ruleNamedArgument4390); 
 
                             							doneLeaf(lv_explicitValue_3_0);
                             						
@@ -4071,16 +4168,16 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
                             }
 
-                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1354:5: ( (otherlv_4= RULE_ID ) )
-                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1355:6: (otherlv_4= RULE_ID )
+                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1380:5: ( (otherlv_4= RULE_ID ) )
+                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1381:6: (otherlv_4= RULE_ID )
                             {
-                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1355:6: (otherlv_4= RULE_ID )
-                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1356:7: otherlv_4= RULE_ID
+                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1381:6: (otherlv_4= RULE_ID )
+                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1382:7: otherlv_4= RULE_ID
                             {
 
                             							markLeaf(elementTypeProvider.getNamedArgument_ValueParameterCrossReference_1_1_1_0ElementType());
                             						
-                            otherlv_4=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleNamedArgument4330); 
+                            otherlv_4=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleNamedArgument4442); 
 
                             							doneLeaf(otherlv_4);
                             						
@@ -4121,19 +4218,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleTerminalRuleCall"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1371:1: entryRuleTerminalRuleCall : ruleTerminalRuleCall EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1397:1: entryRuleTerminalRuleCall : ruleTerminalRuleCall EOF ;
     public final void entryRuleTerminalRuleCall() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1371:26: ( ruleTerminalRuleCall EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1372:2: ruleTerminalRuleCall EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1397:26: ( ruleTerminalRuleCall EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1398:2: ruleTerminalRuleCall EOF
             {
              markComposite(elementTypeProvider.getTerminalRuleCallElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalRuleCall_in_entryRuleTerminalRuleCall4377);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalRuleCall_in_entryRuleTerminalRuleCall4489);
             ruleTerminalRuleCall();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTerminalRuleCall4380); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTerminalRuleCall4492); 
 
             }
 
@@ -4150,22 +4247,22 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleTerminalRuleCall"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1377:1: ruleTerminalRuleCall : ( ( ruleRuleID ) ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1403:1: ruleTerminalRuleCall : ( ( ruleRuleID ) ) ;
     public final void ruleTerminalRuleCall() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1377:21: ( ( ( ruleRuleID ) ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1378:2: ( ( ruleRuleID ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1403:21: ( ( ( ruleRuleID ) ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1404:2: ( ( ruleRuleID ) )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1378:2: ( ( ruleRuleID ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1379:3: ( ruleRuleID )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1404:2: ( ( ruleRuleID ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1405:3: ( ruleRuleID )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1379:3: ( ruleRuleID )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1380:4: ruleRuleID
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1405:3: ( ruleRuleID )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1406:4: ruleRuleID
             {
 
             				markComposite(elementTypeProvider.getTerminalRuleCall_RuleAbstractRuleCrossReference_0ElementType());
             			
-            pushFollow(FollowSets000.FOLLOW_ruleRuleID_in_ruleTerminalRuleCall4403);
+            pushFollow(FollowSets000.FOLLOW_ruleRuleID_in_ruleTerminalRuleCall4515);
             ruleRuleID();
 
             state._fsp--;
@@ -4195,19 +4292,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleRuleID"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1392:1: entryRuleRuleID : ruleRuleID EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1418:1: entryRuleRuleID : ruleRuleID EOF ;
     public final void entryRuleRuleID() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1392:16: ( ruleRuleID EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1393:2: ruleRuleID EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1418:16: ( ruleRuleID EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1419:2: ruleRuleID EOF
             {
              markComposite(elementTypeProvider.getRuleIDElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleRuleID_in_entryRuleRuleID4428);
+            pushFollow(FollowSets000.FOLLOW_ruleRuleID_in_entryRuleRuleID4540);
             ruleRuleID();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleRuleID4431); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleRuleID4543); 
 
             }
 
@@ -4224,52 +4321,52 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleRuleID"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1398:1: ruleRuleID : (this_ID_0= RULE_ID (kw= '::' this_ID_2= RULE_ID )* ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1424:1: ruleRuleID : (this_ID_0= RULE_ID (kw= '::' this_ID_2= RULE_ID )* ) ;
     public final void ruleRuleID() throws RecognitionException {
         Token this_ID_0=null;
         Token kw=null;
         Token this_ID_2=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1398:11: ( (this_ID_0= RULE_ID (kw= '::' this_ID_2= RULE_ID )* ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1399:2: (this_ID_0= RULE_ID (kw= '::' this_ID_2= RULE_ID )* )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1424:11: ( (this_ID_0= RULE_ID (kw= '::' this_ID_2= RULE_ID )* ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1425:2: (this_ID_0= RULE_ID (kw= '::' this_ID_2= RULE_ID )* )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1399:2: (this_ID_0= RULE_ID (kw= '::' this_ID_2= RULE_ID )* )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1400:3: this_ID_0= RULE_ID (kw= '::' this_ID_2= RULE_ID )*
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1425:2: (this_ID_0= RULE_ID (kw= '::' this_ID_2= RULE_ID )* )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1426:3: this_ID_0= RULE_ID (kw= '::' this_ID_2= RULE_ID )*
             {
 
             			markLeaf(elementTypeProvider.getRuleID_IDTerminalRuleCall_0ElementType());
             		
-            this_ID_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleRuleID4450); 
+            this_ID_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleRuleID4562); 
 
             			doneLeaf(this_ID_0);
             		
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1407:3: (kw= '::' this_ID_2= RULE_ID )*
-            loop43:
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1433:3: (kw= '::' this_ID_2= RULE_ID )*
+            loop45:
             do {
-                int alt43=2;
-                int LA43_0 = input.LA(1);
+                int alt45=2;
+                int LA45_0 = input.LA(1);
 
-                if ( (LA43_0==28) ) {
-                    alt43=1;
+                if ( (LA45_0==28) ) {
+                    alt45=1;
                 }
 
 
-                switch (alt43) {
+                switch (alt45) {
             	case 1 :
-            	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1408:4: kw= '::' this_ID_2= RULE_ID
+            	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1434:4: kw= '::' this_ID_2= RULE_ID
             	    {
 
             	    				markLeaf(elementTypeProvider.getRuleID_ColonColonKeyword_1_0ElementType());
             	    			
-            	    kw=(Token)match(input,28,FollowSets000.FOLLOW_28_in_ruleRuleID4470); 
+            	    kw=(Token)match(input,28,FollowSets000.FOLLOW_28_in_ruleRuleID4582); 
 
             	    				doneLeaf(kw);
             	    			
 
             	    				markLeaf(elementTypeProvider.getRuleID_IDTerminalRuleCall_1_1ElementType());
             	    			
-            	    this_ID_2=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleRuleID4487); 
+            	    this_ID_2=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleRuleID4599); 
 
             	    				doneLeaf(this_ID_2);
             	    			
@@ -4278,7 +4375,7 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
             	    break;
 
             	default :
-            	    break loop43;
+            	    break loop45;
                 }
             } while (true);
 
@@ -4301,19 +4398,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRulePredicatedKeyword"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1427:1: entryRulePredicatedKeyword : rulePredicatedKeyword EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1453:1: entryRulePredicatedKeyword : rulePredicatedKeyword EOF ;
     public final void entryRulePredicatedKeyword() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1427:27: ( rulePredicatedKeyword EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1428:2: rulePredicatedKeyword EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1453:27: ( rulePredicatedKeyword EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1454:2: rulePredicatedKeyword EOF
             {
              markComposite(elementTypeProvider.getPredicatedKeywordElementType()); 
-            pushFollow(FollowSets000.FOLLOW_rulePredicatedKeyword_in_entryRulePredicatedKeyword4513);
+            pushFollow(FollowSets000.FOLLOW_rulePredicatedKeyword_in_entryRulePredicatedKeyword4625);
             rulePredicatedKeyword();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRulePredicatedKeyword4516); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRulePredicatedKeyword4628); 
 
             }
 
@@ -4330,49 +4427,49 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "rulePredicatedKeyword"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1433:1: rulePredicatedKeyword : ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) ( (lv_value_2_0= RULE_STRING ) ) ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1459:1: rulePredicatedKeyword : ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) ( (lv_value_2_0= RULE_STRING ) ) ) ;
     public final void rulePredicatedKeyword() throws RecognitionException {
         Token lv_predicated_0_0=null;
         Token lv_firstSetPredicated_1_0=null;
         Token lv_value_2_0=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1433:22: ( ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) ( (lv_value_2_0= RULE_STRING ) ) ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1434:2: ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) ( (lv_value_2_0= RULE_STRING ) ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1459:22: ( ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) ( (lv_value_2_0= RULE_STRING ) ) ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1460:2: ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) ( (lv_value_2_0= RULE_STRING ) ) )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1434:2: ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) ( (lv_value_2_0= RULE_STRING ) ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1435:3: ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) ( (lv_value_2_0= RULE_STRING ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1460:2: ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) ( (lv_value_2_0= RULE_STRING ) ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1461:3: ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) ( (lv_value_2_0= RULE_STRING ) )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1435:3: ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) )
-            int alt44=2;
-            int LA44_0 = input.LA(1);
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1461:3: ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) )
+            int alt46=2;
+            int LA46_0 = input.LA(1);
 
-            if ( (LA44_0==39) ) {
-                alt44=1;
+            if ( (LA46_0==39) ) {
+                alt46=1;
             }
-            else if ( (LA44_0==40) ) {
-                alt44=2;
+            else if ( (LA46_0==40) ) {
+                alt46=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 44, 0, input);
+                    new NoViableAltException("", 46, 0, input);
 
                 throw nvae;
             }
-            switch (alt44) {
+            switch (alt46) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1436:4: ( (lv_predicated_0_0= '=>' ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1462:4: ( (lv_predicated_0_0= '=>' ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1436:4: ( (lv_predicated_0_0= '=>' ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1437:5: (lv_predicated_0_0= '=>' )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1462:4: ( (lv_predicated_0_0= '=>' ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1463:5: (lv_predicated_0_0= '=>' )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1437:5: (lv_predicated_0_0= '=>' )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1438:6: lv_predicated_0_0= '=>'
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1463:5: (lv_predicated_0_0= '=>' )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1464:6: lv_predicated_0_0= '=>'
                     {
 
                     						markLeaf(elementTypeProvider.getPredicatedKeyword_PredicatedEqualsSignGreaterThanSignKeyword_0_0_0ElementType());
                     					
-                    lv_predicated_0_0=(Token)match(input,39,FollowSets000.FOLLOW_39_in_rulePredicatedKeyword4556); 
+                    lv_predicated_0_0=(Token)match(input,39,FollowSets000.FOLLOW_39_in_rulePredicatedKeyword4668); 
 
                     						doneLeaf(lv_predicated_0_0);
                     					
@@ -4386,18 +4483,18 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1448:4: ( (lv_firstSetPredicated_1_0= '->' ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1474:4: ( (lv_firstSetPredicated_1_0= '->' ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1448:4: ( (lv_firstSetPredicated_1_0= '->' ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1449:5: (lv_firstSetPredicated_1_0= '->' )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1474:4: ( (lv_firstSetPredicated_1_0= '->' ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1475:5: (lv_firstSetPredicated_1_0= '->' )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1449:5: (lv_firstSetPredicated_1_0= '->' )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1450:6: lv_firstSetPredicated_1_0= '->'
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1475:5: (lv_firstSetPredicated_1_0= '->' )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1476:6: lv_firstSetPredicated_1_0= '->'
                     {
 
                     						markLeaf(elementTypeProvider.getPredicatedKeyword_FirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0ElementType());
                     					
-                    lv_firstSetPredicated_1_0=(Token)match(input,40,FollowSets000.FOLLOW_40_in_rulePredicatedKeyword4610); 
+                    lv_firstSetPredicated_1_0=(Token)match(input,40,FollowSets000.FOLLOW_40_in_rulePredicatedKeyword4722); 
 
                     						doneLeaf(lv_firstSetPredicated_1_0);
                     					
@@ -4413,16 +4510,16 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             }
 
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1460:3: ( (lv_value_2_0= RULE_STRING ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1461:4: (lv_value_2_0= RULE_STRING )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1486:3: ( (lv_value_2_0= RULE_STRING ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1487:4: (lv_value_2_0= RULE_STRING )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1461:4: (lv_value_2_0= RULE_STRING )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1462:5: lv_value_2_0= RULE_STRING
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1487:4: (lv_value_2_0= RULE_STRING )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1488:5: lv_value_2_0= RULE_STRING
             {
 
             					markLeaf(elementTypeProvider.getPredicatedKeyword_ValueSTRINGTerminalRuleCall_1_0ElementType());
             				
-            lv_value_2_0=(Token)match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_rulePredicatedKeyword4655); 
+            lv_value_2_0=(Token)match(input,RULE_STRING,FollowSets000.FOLLOW_RULE_STRING_in_rulePredicatedKeyword4767); 
 
             					doneLeaf(lv_value_2_0);
             				
@@ -4451,19 +4548,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRulePredicatedRuleCall"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1475:1: entryRulePredicatedRuleCall : rulePredicatedRuleCall EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1501:1: entryRulePredicatedRuleCall : rulePredicatedRuleCall EOF ;
     public final void entryRulePredicatedRuleCall() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1475:28: ( rulePredicatedRuleCall EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1476:2: rulePredicatedRuleCall EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1501:28: ( rulePredicatedRuleCall EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1502:2: rulePredicatedRuleCall EOF
             {
              markComposite(elementTypeProvider.getPredicatedRuleCallElementType()); 
-            pushFollow(FollowSets000.FOLLOW_rulePredicatedRuleCall_in_entryRulePredicatedRuleCall4686);
+            pushFollow(FollowSets000.FOLLOW_rulePredicatedRuleCall_in_entryRulePredicatedRuleCall4798);
             rulePredicatedRuleCall();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRulePredicatedRuleCall4689); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRulePredicatedRuleCall4801); 
 
             }
 
@@ -4480,49 +4577,49 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "rulePredicatedRuleCall"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1481:1: rulePredicatedRuleCall : ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) ( (otherlv_2= RULE_ID ) ) ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1507:1: rulePredicatedRuleCall : ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) ( (otherlv_2= RULE_ID ) ) ) ;
     public final void rulePredicatedRuleCall() throws RecognitionException {
         Token lv_predicated_0_0=null;
         Token lv_firstSetPredicated_1_0=null;
         Token otherlv_2=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1481:23: ( ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) ( (otherlv_2= RULE_ID ) ) ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1482:2: ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) ( (otherlv_2= RULE_ID ) ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1507:23: ( ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) ( (otherlv_2= RULE_ID ) ) ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1508:2: ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) ( (otherlv_2= RULE_ID ) ) )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1482:2: ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) ( (otherlv_2= RULE_ID ) ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1483:3: ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) ( (otherlv_2= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1508:2: ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) ( (otherlv_2= RULE_ID ) ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1509:3: ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) ( (otherlv_2= RULE_ID ) )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1483:3: ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) )
-            int alt45=2;
-            int LA45_0 = input.LA(1);
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1509:3: ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) )
+            int alt47=2;
+            int LA47_0 = input.LA(1);
 
-            if ( (LA45_0==39) ) {
-                alt45=1;
+            if ( (LA47_0==39) ) {
+                alt47=1;
             }
-            else if ( (LA45_0==40) ) {
-                alt45=2;
+            else if ( (LA47_0==40) ) {
+                alt47=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 45, 0, input);
+                    new NoViableAltException("", 47, 0, input);
 
                 throw nvae;
             }
-            switch (alt45) {
+            switch (alt47) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1484:4: ( (lv_predicated_0_0= '=>' ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1510:4: ( (lv_predicated_0_0= '=>' ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1484:4: ( (lv_predicated_0_0= '=>' ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1485:5: (lv_predicated_0_0= '=>' )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1510:4: ( (lv_predicated_0_0= '=>' ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1511:5: (lv_predicated_0_0= '=>' )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1485:5: (lv_predicated_0_0= '=>' )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1486:6: lv_predicated_0_0= '=>'
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1511:5: (lv_predicated_0_0= '=>' )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1512:6: lv_predicated_0_0= '=>'
                     {
 
                     						markLeaf(elementTypeProvider.getPredicatedRuleCall_PredicatedEqualsSignGreaterThanSignKeyword_0_0_0ElementType());
                     					
-                    lv_predicated_0_0=(Token)match(input,39,FollowSets000.FOLLOW_39_in_rulePredicatedRuleCall4729); 
+                    lv_predicated_0_0=(Token)match(input,39,FollowSets000.FOLLOW_39_in_rulePredicatedRuleCall4841); 
 
                     						doneLeaf(lv_predicated_0_0);
                     					
@@ -4536,18 +4633,18 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1496:4: ( (lv_firstSetPredicated_1_0= '->' ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1522:4: ( (lv_firstSetPredicated_1_0= '->' ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1496:4: ( (lv_firstSetPredicated_1_0= '->' ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1497:5: (lv_firstSetPredicated_1_0= '->' )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1522:4: ( (lv_firstSetPredicated_1_0= '->' ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1523:5: (lv_firstSetPredicated_1_0= '->' )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1497:5: (lv_firstSetPredicated_1_0= '->' )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1498:6: lv_firstSetPredicated_1_0= '->'
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1523:5: (lv_firstSetPredicated_1_0= '->' )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1524:6: lv_firstSetPredicated_1_0= '->'
                     {
 
                     						markLeaf(elementTypeProvider.getPredicatedRuleCall_FirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0ElementType());
                     					
-                    lv_firstSetPredicated_1_0=(Token)match(input,40,FollowSets000.FOLLOW_40_in_rulePredicatedRuleCall4783); 
+                    lv_firstSetPredicated_1_0=(Token)match(input,40,FollowSets000.FOLLOW_40_in_rulePredicatedRuleCall4895); 
 
                     						doneLeaf(lv_firstSetPredicated_1_0);
                     					
@@ -4563,16 +4660,16 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             }
 
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1508:3: ( (otherlv_2= RULE_ID ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1509:4: (otherlv_2= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1534:3: ( (otherlv_2= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1535:4: (otherlv_2= RULE_ID )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1509:4: (otherlv_2= RULE_ID )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1510:5: otherlv_2= RULE_ID
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1535:4: (otherlv_2= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1536:5: otherlv_2= RULE_ID
             {
 
             					markLeaf(elementTypeProvider.getPredicatedRuleCall_RuleAbstractRuleCrossReference_1_0ElementType());
             				
-            otherlv_2=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rulePredicatedRuleCall4828); 
+            otherlv_2=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_rulePredicatedRuleCall4940); 
 
             					doneLeaf(otherlv_2);
             				
@@ -4601,19 +4698,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleAssignment"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1523:1: entryRuleAssignment : ruleAssignment EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1549:1: entryRuleAssignment : ruleAssignment EOF ;
     public final void entryRuleAssignment() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1523:20: ( ruleAssignment EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1524:2: ruleAssignment EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1549:20: ( ruleAssignment EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1550:2: ruleAssignment EOF
             {
              markComposite(elementTypeProvider.getAssignmentElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAssignment_in_entryRuleAssignment4859);
+            pushFollow(FollowSets000.FOLLOW_ruleAssignment_in_entryRuleAssignment4971);
             ruleAssignment();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAssignment4862); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAssignment4974); 
 
             }
 
@@ -4630,7 +4727,7 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleAssignment"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1529:1: ruleAssignment : ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) )? ( (lv_feature_2_0= RULE_ID ) ) ( ( (lv_operator_3_1= '+=' | lv_operator_3_2= '=' | lv_operator_3_3= '?=' ) ) ) ( (lv_terminal_4_0= ruleAssignableTerminal ) ) ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1555:1: ruleAssignment : ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) )? ( (lv_feature_2_0= RULE_ID ) ) ( ( (lv_operator_3_1= '+=' | lv_operator_3_2= '=' | lv_operator_3_3= '?=' ) ) ) ( (lv_terminal_4_0= ruleAssignableTerminal ) ) ) ;
     public final void ruleAssignment() throws RecognitionException {
         Token lv_predicated_0_0=null;
         Token lv_firstSetPredicated_1_0=null;
@@ -4640,36 +4737,36 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
         Token lv_operator_3_3=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1529:15: ( ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) )? ( (lv_feature_2_0= RULE_ID ) ) ( ( (lv_operator_3_1= '+=' | lv_operator_3_2= '=' | lv_operator_3_3= '?=' ) ) ) ( (lv_terminal_4_0= ruleAssignableTerminal ) ) ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1530:2: ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) )? ( (lv_feature_2_0= RULE_ID ) ) ( ( (lv_operator_3_1= '+=' | lv_operator_3_2= '=' | lv_operator_3_3= '?=' ) ) ) ( (lv_terminal_4_0= ruleAssignableTerminal ) ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1555:15: ( ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) )? ( (lv_feature_2_0= RULE_ID ) ) ( ( (lv_operator_3_1= '+=' | lv_operator_3_2= '=' | lv_operator_3_3= '?=' ) ) ) ( (lv_terminal_4_0= ruleAssignableTerminal ) ) ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1556:2: ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) )? ( (lv_feature_2_0= RULE_ID ) ) ( ( (lv_operator_3_1= '+=' | lv_operator_3_2= '=' | lv_operator_3_3= '?=' ) ) ) ( (lv_terminal_4_0= ruleAssignableTerminal ) ) )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1530:2: ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) )? ( (lv_feature_2_0= RULE_ID ) ) ( ( (lv_operator_3_1= '+=' | lv_operator_3_2= '=' | lv_operator_3_3= '?=' ) ) ) ( (lv_terminal_4_0= ruleAssignableTerminal ) ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1531:3: ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) )? ( (lv_feature_2_0= RULE_ID ) ) ( ( (lv_operator_3_1= '+=' | lv_operator_3_2= '=' | lv_operator_3_3= '?=' ) ) ) ( (lv_terminal_4_0= ruleAssignableTerminal ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1556:2: ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) )? ( (lv_feature_2_0= RULE_ID ) ) ( ( (lv_operator_3_1= '+=' | lv_operator_3_2= '=' | lv_operator_3_3= '?=' ) ) ) ( (lv_terminal_4_0= ruleAssignableTerminal ) ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1557:3: ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) )? ( (lv_feature_2_0= RULE_ID ) ) ( ( (lv_operator_3_1= '+=' | lv_operator_3_2= '=' | lv_operator_3_3= '?=' ) ) ) ( (lv_terminal_4_0= ruleAssignableTerminal ) )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1531:3: ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) )?
-            int alt46=3;
-            int LA46_0 = input.LA(1);
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1557:3: ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) )?
+            int alt48=3;
+            int LA48_0 = input.LA(1);
 
-            if ( (LA46_0==39) ) {
-                alt46=1;
+            if ( (LA48_0==39) ) {
+                alt48=1;
             }
-            else if ( (LA46_0==40) ) {
-                alt46=2;
+            else if ( (LA48_0==40) ) {
+                alt48=2;
             }
-            switch (alt46) {
+            switch (alt48) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1532:4: ( (lv_predicated_0_0= '=>' ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1558:4: ( (lv_predicated_0_0= '=>' ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1532:4: ( (lv_predicated_0_0= '=>' ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1533:5: (lv_predicated_0_0= '=>' )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1558:4: ( (lv_predicated_0_0= '=>' ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1559:5: (lv_predicated_0_0= '=>' )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1533:5: (lv_predicated_0_0= '=>' )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1534:6: lv_predicated_0_0= '=>'
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1559:5: (lv_predicated_0_0= '=>' )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1560:6: lv_predicated_0_0= '=>'
                     {
 
                     						markLeaf(elementTypeProvider.getAssignment_PredicatedEqualsSignGreaterThanSignKeyword_0_0_0ElementType());
                     					
-                    lv_predicated_0_0=(Token)match(input,39,FollowSets000.FOLLOW_39_in_ruleAssignment4902); 
+                    lv_predicated_0_0=(Token)match(input,39,FollowSets000.FOLLOW_39_in_ruleAssignment5014); 
 
                     						doneLeaf(lv_predicated_0_0);
                     					
@@ -4683,18 +4780,18 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1544:4: ( (lv_firstSetPredicated_1_0= '->' ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1570:4: ( (lv_firstSetPredicated_1_0= '->' ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1544:4: ( (lv_firstSetPredicated_1_0= '->' ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1545:5: (lv_firstSetPredicated_1_0= '->' )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1570:4: ( (lv_firstSetPredicated_1_0= '->' ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1571:5: (lv_firstSetPredicated_1_0= '->' )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1545:5: (lv_firstSetPredicated_1_0= '->' )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1546:6: lv_firstSetPredicated_1_0= '->'
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1571:5: (lv_firstSetPredicated_1_0= '->' )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1572:6: lv_firstSetPredicated_1_0= '->'
                     {
 
                     						markLeaf(elementTypeProvider.getAssignment_FirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0ElementType());
                     					
-                    lv_firstSetPredicated_1_0=(Token)match(input,40,FollowSets000.FOLLOW_40_in_ruleAssignment4956); 
+                    lv_firstSetPredicated_1_0=(Token)match(input,40,FollowSets000.FOLLOW_40_in_ruleAssignment5068); 
 
                     						doneLeaf(lv_firstSetPredicated_1_0);
                     					
@@ -4710,16 +4807,16 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             }
 
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1556:3: ( (lv_feature_2_0= RULE_ID ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1557:4: (lv_feature_2_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1582:3: ( (lv_feature_2_0= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1583:4: (lv_feature_2_0= RULE_ID )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1557:4: (lv_feature_2_0= RULE_ID )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1558:5: lv_feature_2_0= RULE_ID
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1583:4: (lv_feature_2_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1584:5: lv_feature_2_0= RULE_ID
             {
 
             					markLeaf(elementTypeProvider.getAssignment_FeatureIDTerminalRuleCall_1_0ElementType());
             				
-            lv_feature_2_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleAssignment5002); 
+            lv_feature_2_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleAssignment5114); 
 
             					doneLeaf(lv_feature_2_0);
             				
@@ -4729,45 +4826,45 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             }
 
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1567:3: ( ( (lv_operator_3_1= '+=' | lv_operator_3_2= '=' | lv_operator_3_3= '?=' ) ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1568:4: ( (lv_operator_3_1= '+=' | lv_operator_3_2= '=' | lv_operator_3_3= '?=' ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1593:3: ( ( (lv_operator_3_1= '+=' | lv_operator_3_2= '=' | lv_operator_3_3= '?=' ) ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1594:4: ( (lv_operator_3_1= '+=' | lv_operator_3_2= '=' | lv_operator_3_3= '?=' ) )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1568:4: ( (lv_operator_3_1= '+=' | lv_operator_3_2= '=' | lv_operator_3_3= '?=' ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1569:5: (lv_operator_3_1= '+=' | lv_operator_3_2= '=' | lv_operator_3_3= '?=' )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1594:4: ( (lv_operator_3_1= '+=' | lv_operator_3_2= '=' | lv_operator_3_3= '?=' ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1595:5: (lv_operator_3_1= '+=' | lv_operator_3_2= '=' | lv_operator_3_3= '?=' )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1569:5: (lv_operator_3_1= '+=' | lv_operator_3_2= '=' | lv_operator_3_3= '?=' )
-            int alt47=3;
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1595:5: (lv_operator_3_1= '+=' | lv_operator_3_2= '=' | lv_operator_3_3= '?=' )
+            int alt49=3;
             switch ( input.LA(1) ) {
             case 35:
                 {
-                alt47=1;
+                alt49=1;
                 }
                 break;
             case 34:
                 {
-                alt47=2;
+                alt49=2;
                 }
                 break;
             case 41:
                 {
-                alt47=3;
+                alt49=3;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 47, 0, input);
+                    new NoViableAltException("", 49, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt47) {
+            switch (alt49) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1570:6: lv_operator_3_1= '+='
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1596:6: lv_operator_3_1= '+='
                     {
 
                     						markLeaf(elementTypeProvider.getAssignment_OperatorPlusSignEqualsSignKeyword_2_0_0ElementType());
                     					
-                    lv_operator_3_1=(Token)match(input,35,FollowSets000.FOLLOW_35_in_ruleAssignment5048); 
+                    lv_operator_3_1=(Token)match(input,35,FollowSets000.FOLLOW_35_in_ruleAssignment5160); 
 
                     						doneLeaf(lv_operator_3_1);
                     					
@@ -4775,12 +4872,12 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1578:6: lv_operator_3_2= '='
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1604:6: lv_operator_3_2= '='
                     {
 
                     						markLeaf(elementTypeProvider.getAssignment_OperatorEqualsSignKeyword_2_0_1ElementType());
                     					
-                    lv_operator_3_2=(Token)match(input,34,FollowSets000.FOLLOW_34_in_ruleAssignment5082); 
+                    lv_operator_3_2=(Token)match(input,34,FollowSets000.FOLLOW_34_in_ruleAssignment5194); 
 
                     						doneLeaf(lv_operator_3_2);
                     					
@@ -4788,12 +4885,12 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1586:6: lv_operator_3_3= '?='
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1612:6: lv_operator_3_3= '?='
                     {
 
                     						markLeaf(elementTypeProvider.getAssignment_OperatorQuestionMarkEqualsSignKeyword_2_0_2ElementType());
                     					
-                    lv_operator_3_3=(Token)match(input,41,FollowSets000.FOLLOW_41_in_ruleAssignment5116); 
+                    lv_operator_3_3=(Token)match(input,41,FollowSets000.FOLLOW_41_in_ruleAssignment5228); 
 
                     						doneLeaf(lv_operator_3_3);
                     					
@@ -4809,16 +4906,16 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             }
 
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1596:3: ( (lv_terminal_4_0= ruleAssignableTerminal ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1597:4: (lv_terminal_4_0= ruleAssignableTerminal )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1622:3: ( (lv_terminal_4_0= ruleAssignableTerminal ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1623:4: (lv_terminal_4_0= ruleAssignableTerminal )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1597:4: (lv_terminal_4_0= ruleAssignableTerminal )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1598:5: lv_terminal_4_0= ruleAssignableTerminal
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1623:4: (lv_terminal_4_0= ruleAssignableTerminal )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1624:5: lv_terminal_4_0= ruleAssignableTerminal
             {
 
             					markComposite(elementTypeProvider.getAssignment_TerminalAssignableTerminalParserRuleCall_3_0ElementType());
             				
-            pushFollow(FollowSets000.FOLLOW_ruleAssignableTerminal_in_ruleAssignment5161);
+            pushFollow(FollowSets000.FOLLOW_ruleAssignableTerminal_in_ruleAssignment5273);
             ruleAssignableTerminal();
 
             state._fsp--;
@@ -4851,19 +4948,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleAssignableTerminal"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1611:1: entryRuleAssignableTerminal : ruleAssignableTerminal EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1637:1: entryRuleAssignableTerminal : ruleAssignableTerminal EOF ;
     public final void entryRuleAssignableTerminal() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1611:28: ( ruleAssignableTerminal EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1612:2: ruleAssignableTerminal EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1637:28: ( ruleAssignableTerminal EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1638:2: ruleAssignableTerminal EOF
             {
              markComposite(elementTypeProvider.getAssignableTerminalElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAssignableTerminal_in_entryRuleAssignableTerminal5192);
+            pushFollow(FollowSets000.FOLLOW_ruleAssignableTerminal_in_entryRuleAssignableTerminal5304);
             ruleAssignableTerminal();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAssignableTerminal5195); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAssignableTerminal5307); 
 
             }
 
@@ -4880,50 +4977,50 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleAssignableTerminal"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1617:1: ruleAssignableTerminal : ( ruleKeyword | ruleRuleCall | ruleParenthesizedAssignableElement | ruleCrossReference ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1643:1: ruleAssignableTerminal : ( ruleKeyword | ruleRuleCall | ruleParenthesizedAssignableElement | ruleCrossReference ) ;
     public final void ruleAssignableTerminal() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1617:23: ( ( ruleKeyword | ruleRuleCall | ruleParenthesizedAssignableElement | ruleCrossReference ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1618:2: ( ruleKeyword | ruleRuleCall | ruleParenthesizedAssignableElement | ruleCrossReference )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1643:23: ( ( ruleKeyword | ruleRuleCall | ruleParenthesizedAssignableElement | ruleCrossReference ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1644:2: ( ruleKeyword | ruleRuleCall | ruleParenthesizedAssignableElement | ruleCrossReference )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1618:2: ( ruleKeyword | ruleRuleCall | ruleParenthesizedAssignableElement | ruleCrossReference )
-            int alt48=4;
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1644:2: ( ruleKeyword | ruleRuleCall | ruleParenthesizedAssignableElement | ruleCrossReference )
+            int alt50=4;
             switch ( input.LA(1) ) {
             case RULE_STRING:
                 {
-                alt48=1;
+                alt50=1;
                 }
                 break;
             case RULE_ID:
                 {
-                alt48=2;
+                alt50=2;
                 }
                 break;
             case 15:
                 {
-                alt48=3;
+                alt50=3;
                 }
                 break;
             case 26:
                 {
-                alt48=4;
+                alt50=4;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 48, 0, input);
+                    new NoViableAltException("", 50, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt48) {
+            switch (alt50) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1619:3: ruleKeyword
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1645:3: ruleKeyword
                     {
 
                     			markComposite(elementTypeProvider.getAssignableTerminal_KeywordParserRuleCall_0ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_ruleAssignableTerminal5212);
+                    pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_ruleAssignableTerminal5324);
                     ruleKeyword();
 
                     state._fsp--;
@@ -4935,12 +5032,12 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1627:3: ruleRuleCall
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1653:3: ruleRuleCall
                     {
 
                     			markComposite(elementTypeProvider.getAssignableTerminal_RuleCallParserRuleCall_1ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleRuleCall_in_ruleAssignableTerminal5232);
+                    pushFollow(FollowSets000.FOLLOW_ruleRuleCall_in_ruleAssignableTerminal5344);
                     ruleRuleCall();
 
                     state._fsp--;
@@ -4952,12 +5049,12 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1635:3: ruleParenthesizedAssignableElement
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1661:3: ruleParenthesizedAssignableElement
                     {
 
                     			markComposite(elementTypeProvider.getAssignableTerminal_ParenthesizedAssignableElementParserRuleCall_2ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleParenthesizedAssignableElement_in_ruleAssignableTerminal5252);
+                    pushFollow(FollowSets000.FOLLOW_ruleParenthesizedAssignableElement_in_ruleAssignableTerminal5364);
                     ruleParenthesizedAssignableElement();
 
                     state._fsp--;
@@ -4969,12 +5066,12 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     }
                     break;
                 case 4 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1643:3: ruleCrossReference
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1669:3: ruleCrossReference
                     {
 
                     			markComposite(elementTypeProvider.getAssignableTerminal_CrossReferenceParserRuleCall_3ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleCrossReference_in_ruleAssignableTerminal5272);
+                    pushFollow(FollowSets000.FOLLOW_ruleCrossReference_in_ruleAssignableTerminal5384);
                     ruleCrossReference();
 
                     state._fsp--;
@@ -5004,19 +5101,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleParenthesizedAssignableElement"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1654:1: entryRuleParenthesizedAssignableElement : ruleParenthesizedAssignableElement EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1680:1: entryRuleParenthesizedAssignableElement : ruleParenthesizedAssignableElement EOF ;
     public final void entryRuleParenthesizedAssignableElement() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1654:40: ( ruleParenthesizedAssignableElement EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1655:2: ruleParenthesizedAssignableElement EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1680:40: ( ruleParenthesizedAssignableElement EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1681:2: ruleParenthesizedAssignableElement EOF
             {
              markComposite(elementTypeProvider.getParenthesizedAssignableElementElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleParenthesizedAssignableElement_in_entryRuleParenthesizedAssignableElement5292);
+            pushFollow(FollowSets000.FOLLOW_ruleParenthesizedAssignableElement_in_entryRuleParenthesizedAssignableElement5404);
             ruleParenthesizedAssignableElement();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleParenthesizedAssignableElement5295); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleParenthesizedAssignableElement5407); 
 
             }
 
@@ -5033,29 +5130,29 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleParenthesizedAssignableElement"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1660:1: ruleParenthesizedAssignableElement : (otherlv_0= '(' ruleAssignableAlternatives otherlv_2= ')' ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1686:1: ruleParenthesizedAssignableElement : (otherlv_0= '(' ruleAssignableAlternatives otherlv_2= ')' ) ;
     public final void ruleParenthesizedAssignableElement() throws RecognitionException {
         Token otherlv_0=null;
         Token otherlv_2=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1660:35: ( (otherlv_0= '(' ruleAssignableAlternatives otherlv_2= ')' ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1661:2: (otherlv_0= '(' ruleAssignableAlternatives otherlv_2= ')' )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1686:35: ( (otherlv_0= '(' ruleAssignableAlternatives otherlv_2= ')' ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1687:2: (otherlv_0= '(' ruleAssignableAlternatives otherlv_2= ')' )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1661:2: (otherlv_0= '(' ruleAssignableAlternatives otherlv_2= ')' )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1662:3: otherlv_0= '(' ruleAssignableAlternatives otherlv_2= ')'
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1687:2: (otherlv_0= '(' ruleAssignableAlternatives otherlv_2= ')' )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1688:3: otherlv_0= '(' ruleAssignableAlternatives otherlv_2= ')'
             {
 
             			markLeaf(elementTypeProvider.getParenthesizedAssignableElement_LeftParenthesisKeyword_0ElementType());
             		
-            otherlv_0=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleParenthesizedAssignableElement5314); 
+            otherlv_0=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleParenthesizedAssignableElement5426); 
 
             			doneLeaf(otherlv_0);
             		
 
             			markComposite(elementTypeProvider.getParenthesizedAssignableElement_AssignableAlternativesParserRuleCall_1ElementType());
             		
-            pushFollow(FollowSets000.FOLLOW_ruleAssignableAlternatives_in_ruleParenthesizedAssignableElement5326);
+            pushFollow(FollowSets000.FOLLOW_ruleAssignableAlternatives_in_ruleParenthesizedAssignableElement5438);
             ruleAssignableAlternatives();
 
             state._fsp--;
@@ -5066,7 +5163,7 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             			markLeaf(elementTypeProvider.getParenthesizedAssignableElement_RightParenthesisKeyword_2ElementType());
             		
-            otherlv_2=(Token)match(input,16,FollowSets000.FOLLOW_16_in_ruleParenthesizedAssignableElement5340); 
+            otherlv_2=(Token)match(input,16,FollowSets000.FOLLOW_16_in_ruleParenthesizedAssignableElement5452); 
 
             			doneLeaf(otherlv_2);
             		
@@ -5089,19 +5186,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleAssignableAlternatives"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1687:1: entryRuleAssignableAlternatives : ruleAssignableAlternatives EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1713:1: entryRuleAssignableAlternatives : ruleAssignableAlternatives EOF ;
     public final void entryRuleAssignableAlternatives() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1687:32: ( ruleAssignableAlternatives EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1688:2: ruleAssignableAlternatives EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1713:32: ( ruleAssignableAlternatives EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1714:2: ruleAssignableAlternatives EOF
             {
              markComposite(elementTypeProvider.getAssignableAlternativesElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAssignableAlternatives_in_entryRuleAssignableAlternatives5360);
+            pushFollow(FollowSets000.FOLLOW_ruleAssignableAlternatives_in_entryRuleAssignableAlternatives5472);
             ruleAssignableAlternatives();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAssignableAlternatives5363); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAssignableAlternatives5475); 
 
             }
 
@@ -5118,21 +5215,21 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleAssignableAlternatives"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1693:1: ruleAssignableAlternatives : ( ruleAssignableTerminal ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+ )? ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1719:1: ruleAssignableAlternatives : ( ruleAssignableTerminal ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+ )? ) ;
     public final void ruleAssignableAlternatives() throws RecognitionException {
         Token otherlv_2=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1693:27: ( ( ruleAssignableTerminal ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+ )? ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1694:2: ( ruleAssignableTerminal ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+ )? )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1719:27: ( ( ruleAssignableTerminal ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+ )? ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1720:2: ( ruleAssignableTerminal ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+ )? )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1694:2: ( ruleAssignableTerminal ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+ )? )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1695:3: ruleAssignableTerminal ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+ )?
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1720:2: ( ruleAssignableTerminal ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+ )? )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1721:3: ruleAssignableTerminal ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+ )?
             {
 
             			markComposite(elementTypeProvider.getAssignableAlternatives_AssignableTerminalParserRuleCall_0ElementType());
             		
-            pushFollow(FollowSets000.FOLLOW_ruleAssignableTerminal_in_ruleAssignableAlternatives5380);
+            pushFollow(FollowSets000.FOLLOW_ruleAssignableTerminal_in_ruleAssignableAlternatives5492);
             ruleAssignableTerminal();
 
             state._fsp--;
@@ -5140,19 +5237,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             			doneComposite();
             		
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1702:3: ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+ )?
-            int alt50=2;
-            int LA50_0 = input.LA(1);
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1728:3: ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+ )?
+            int alt52=2;
+            int LA52_0 = input.LA(1);
 
-            if ( (LA50_0==29) ) {
-                alt50=1;
+            if ( (LA52_0==29) ) {
+                alt52=1;
             }
-            switch (alt50) {
+            switch (alt52) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1703:4: () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1729:4: () (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1703:4: ()
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1704:5: 
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1729:4: ()
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1730:5: 
                     {
 
                     					precedeComposite(elementTypeProvider.getAssignableAlternatives_AlternativesElementsAction_1_0ElementType());
@@ -5161,39 +5258,39 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
                     }
 
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1709:4: (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+
-                    int cnt49=0;
-                    loop49:
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1735:4: (otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) ) )+
+                    int cnt51=0;
+                    loop51:
                     do {
-                        int alt49=2;
-                        int LA49_0 = input.LA(1);
+                        int alt51=2;
+                        int LA51_0 = input.LA(1);
 
-                        if ( (LA49_0==29) ) {
-                            alt49=1;
+                        if ( (LA51_0==29) ) {
+                            alt51=1;
                         }
 
 
-                        switch (alt49) {
+                        switch (alt51) {
                     	case 1 :
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1710:5: otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) )
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1736:5: otherlv_2= '|' ( (lv_elements_3_0= ruleAssignableTerminal ) )
                     	    {
 
                     	    					markLeaf(elementTypeProvider.getAssignableAlternatives_VerticalLineKeyword_1_1_0ElementType());
                     	    				
-                    	    otherlv_2=(Token)match(input,29,FollowSets000.FOLLOW_29_in_ruleAssignableAlternatives5423); 
+                    	    otherlv_2=(Token)match(input,29,FollowSets000.FOLLOW_29_in_ruleAssignableAlternatives5535); 
 
                     	    					doneLeaf(otherlv_2);
                     	    				
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1717:5: ( (lv_elements_3_0= ruleAssignableTerminal ) )
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1718:6: (lv_elements_3_0= ruleAssignableTerminal )
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1743:5: ( (lv_elements_3_0= ruleAssignableTerminal ) )
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1744:6: (lv_elements_3_0= ruleAssignableTerminal )
                     	    {
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1718:6: (lv_elements_3_0= ruleAssignableTerminal )
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1719:7: lv_elements_3_0= ruleAssignableTerminal
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1744:6: (lv_elements_3_0= ruleAssignableTerminal )
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1745:7: lv_elements_3_0= ruleAssignableTerminal
                     	    {
 
                     	    							markComposite(elementTypeProvider.getAssignableAlternatives_ElementsAssignableTerminalParserRuleCall_1_1_1_0ElementType());
                     	    						
-                    	    pushFollow(FollowSets000.FOLLOW_ruleAssignableTerminal_in_ruleAssignableAlternatives5460);
+                    	    pushFollow(FollowSets000.FOLLOW_ruleAssignableTerminal_in_ruleAssignableAlternatives5572);
                     	    ruleAssignableTerminal();
 
                     	    state._fsp--;
@@ -5212,12 +5309,12 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     	    break;
 
                     	default :
-                    	    if ( cnt49 >= 1 ) break loop49;
+                    	    if ( cnt51 >= 1 ) break loop51;
                                 EarlyExitException eee =
-                                    new EarlyExitException(49, input);
+                                    new EarlyExitException(51, input);
                                 throw eee;
                         }
-                        cnt49++;
+                        cnt51++;
                     } while (true);
 
 
@@ -5245,19 +5342,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleCrossReference"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1734:1: entryRuleCrossReference : ruleCrossReference EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1760:1: entryRuleCrossReference : ruleCrossReference EOF ;
     public final void entryRuleCrossReference() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1734:24: ( ruleCrossReference EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1735:2: ruleCrossReference EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1760:24: ( ruleCrossReference EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1761:2: ruleCrossReference EOF
             {
              markComposite(elementTypeProvider.getCrossReferenceElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleCrossReference_in_entryRuleCrossReference5508);
+            pushFollow(FollowSets000.FOLLOW_ruleCrossReference_in_entryRuleCrossReference5620);
             ruleCrossReference();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleCrossReference5511); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleCrossReference5623); 
 
             }
 
@@ -5274,36 +5371,36 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleCrossReference"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1740:1: ruleCrossReference : (otherlv_0= '[' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) ) )? otherlv_4= ']' ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1766:1: ruleCrossReference : (otherlv_0= '[' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) ) )? otherlv_4= ']' ) ;
     public final void ruleCrossReference() throws RecognitionException {
         Token otherlv_0=null;
         Token otherlv_2=null;
         Token otherlv_4=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1740:19: ( (otherlv_0= '[' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) ) )? otherlv_4= ']' ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1741:2: (otherlv_0= '[' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) ) )? otherlv_4= ']' )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1766:19: ( (otherlv_0= '[' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) ) )? otherlv_4= ']' ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1767:2: (otherlv_0= '[' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) ) )? otherlv_4= ']' )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1741:2: (otherlv_0= '[' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) ) )? otherlv_4= ']' )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1742:3: otherlv_0= '[' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) ) )? otherlv_4= ']'
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1767:2: (otherlv_0= '[' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) ) )? otherlv_4= ']' )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1768:3: otherlv_0= '[' ( (lv_type_1_0= ruleTypeRef ) ) (otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) ) )? otherlv_4= ']'
             {
 
             			markLeaf(elementTypeProvider.getCrossReference_LeftSquareBracketKeyword_0ElementType());
             		
-            otherlv_0=(Token)match(input,26,FollowSets000.FOLLOW_26_in_ruleCrossReference5530); 
+            otherlv_0=(Token)match(input,26,FollowSets000.FOLLOW_26_in_ruleCrossReference5642); 
 
             			doneLeaf(otherlv_0);
             		
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1749:3: ( (lv_type_1_0= ruleTypeRef ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1750:4: (lv_type_1_0= ruleTypeRef )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1775:3: ( (lv_type_1_0= ruleTypeRef ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1776:4: (lv_type_1_0= ruleTypeRef )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1750:4: (lv_type_1_0= ruleTypeRef )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1751:5: lv_type_1_0= ruleTypeRef
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1776:4: (lv_type_1_0= ruleTypeRef )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1777:5: lv_type_1_0= ruleTypeRef
             {
 
             					markComposite(elementTypeProvider.getCrossReference_TypeTypeRefParserRuleCall_1_0ElementType());
             				
-            pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_ruleCrossReference5557);
+            pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_ruleCrossReference5669);
             ruleTypeRef();
 
             state._fsp--;
@@ -5317,34 +5414,34 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             }
 
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1760:3: (otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) ) )?
-            int alt51=2;
-            int LA51_0 = input.LA(1);
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1786:3: (otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) ) )?
+            int alt53=2;
+            int LA53_0 = input.LA(1);
 
-            if ( (LA51_0==29) ) {
-                alt51=1;
+            if ( (LA53_0==29) ) {
+                alt53=1;
             }
-            switch (alt51) {
+            switch (alt53) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1761:4: otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1787:4: otherlv_2= '|' ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) )
                     {
 
                     				markLeaf(elementTypeProvider.getCrossReference_VerticalLineKeyword_2_0ElementType());
                     			
-                    otherlv_2=(Token)match(input,29,FollowSets000.FOLLOW_29_in_ruleCrossReference5588); 
+                    otherlv_2=(Token)match(input,29,FollowSets000.FOLLOW_29_in_ruleCrossReference5700); 
 
                     				doneLeaf(otherlv_2);
                     			
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1768:4: ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1769:5: (lv_terminal_3_0= ruleCrossReferenceableTerminal )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1794:4: ( (lv_terminal_3_0= ruleCrossReferenceableTerminal ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1795:5: (lv_terminal_3_0= ruleCrossReferenceableTerminal )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1769:5: (lv_terminal_3_0= ruleCrossReferenceableTerminal )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1770:6: lv_terminal_3_0= ruleCrossReferenceableTerminal
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1795:5: (lv_terminal_3_0= ruleCrossReferenceableTerminal )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1796:6: lv_terminal_3_0= ruleCrossReferenceableTerminal
                     {
 
                     						markComposite(elementTypeProvider.getCrossReference_TerminalCrossReferenceableTerminalParserRuleCall_2_1_0ElementType());
                     					
-                    pushFollow(FollowSets000.FOLLOW_ruleCrossReferenceableTerminal_in_ruleCrossReference5620);
+                    pushFollow(FollowSets000.FOLLOW_ruleCrossReferenceableTerminal_in_ruleCrossReference5732);
                     ruleCrossReferenceableTerminal();
 
                     state._fsp--;
@@ -5367,7 +5464,7 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             			markLeaf(elementTypeProvider.getCrossReference_RightSquareBracketKeyword_3ElementType());
             		
-            otherlv_4=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleCrossReference5653); 
+            otherlv_4=(Token)match(input,27,FollowSets000.FOLLOW_27_in_ruleCrossReference5765); 
 
             			doneLeaf(otherlv_4);
             		
@@ -5390,19 +5487,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleCrossReferenceableTerminal"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1791:1: entryRuleCrossReferenceableTerminal : ruleCrossReferenceableTerminal EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1817:1: entryRuleCrossReferenceableTerminal : ruleCrossReferenceableTerminal EOF ;
     public final void entryRuleCrossReferenceableTerminal() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1791:36: ( ruleCrossReferenceableTerminal EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1792:2: ruleCrossReferenceableTerminal EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1817:36: ( ruleCrossReferenceableTerminal EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1818:2: ruleCrossReferenceableTerminal EOF
             {
              markComposite(elementTypeProvider.getCrossReferenceableTerminalElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleCrossReferenceableTerminal_in_entryRuleCrossReferenceableTerminal5673);
+            pushFollow(FollowSets000.FOLLOW_ruleCrossReferenceableTerminal_in_entryRuleCrossReferenceableTerminal5785);
             ruleCrossReferenceableTerminal();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleCrossReferenceableTerminal5676); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleCrossReferenceableTerminal5788); 
 
             }
 
@@ -5419,36 +5516,36 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleCrossReferenceableTerminal"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1797:1: ruleCrossReferenceableTerminal : ( ruleKeyword | ruleRuleCall ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1823:1: ruleCrossReferenceableTerminal : ( ruleKeyword | ruleRuleCall ) ;
     public final void ruleCrossReferenceableTerminal() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1797:31: ( ( ruleKeyword | ruleRuleCall ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1798:2: ( ruleKeyword | ruleRuleCall )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1823:31: ( ( ruleKeyword | ruleRuleCall ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1824:2: ( ruleKeyword | ruleRuleCall )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1798:2: ( ruleKeyword | ruleRuleCall )
-            int alt52=2;
-            int LA52_0 = input.LA(1);
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1824:2: ( ruleKeyword | ruleRuleCall )
+            int alt54=2;
+            int LA54_0 = input.LA(1);
 
-            if ( (LA52_0==RULE_STRING) ) {
-                alt52=1;
+            if ( (LA54_0==RULE_STRING) ) {
+                alt54=1;
             }
-            else if ( (LA52_0==RULE_ID) ) {
-                alt52=2;
+            else if ( (LA54_0==RULE_ID) ) {
+                alt54=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 52, 0, input);
+                    new NoViableAltException("", 54, 0, input);
 
                 throw nvae;
             }
-            switch (alt52) {
+            switch (alt54) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1799:3: ruleKeyword
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1825:3: ruleKeyword
                     {
 
                     			markComposite(elementTypeProvider.getCrossReferenceableTerminal_KeywordParserRuleCall_0ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_ruleCrossReferenceableTerminal5693);
+                    pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_ruleCrossReferenceableTerminal5805);
                     ruleKeyword();
 
                     state._fsp--;
@@ -5460,12 +5557,12 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1807:3: ruleRuleCall
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1833:3: ruleRuleCall
                     {
 
                     			markComposite(elementTypeProvider.getCrossReferenceableTerminal_RuleCallParserRuleCall_1ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleRuleCall_in_ruleCrossReferenceableTerminal5713);
+                    pushFollow(FollowSets000.FOLLOW_ruleRuleCall_in_ruleCrossReferenceableTerminal5825);
                     ruleRuleCall();
 
                     state._fsp--;
@@ -5495,19 +5592,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleParenthesizedElement"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1818:1: entryRuleParenthesizedElement : ruleParenthesizedElement EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1844:1: entryRuleParenthesizedElement : ruleParenthesizedElement EOF ;
     public final void entryRuleParenthesizedElement() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1818:30: ( ruleParenthesizedElement EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1819:2: ruleParenthesizedElement EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1844:30: ( ruleParenthesizedElement EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1845:2: ruleParenthesizedElement EOF
             {
              markComposite(elementTypeProvider.getParenthesizedElementElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleParenthesizedElement_in_entryRuleParenthesizedElement5733);
+            pushFollow(FollowSets000.FOLLOW_ruleParenthesizedElement_in_entryRuleParenthesizedElement5845);
             ruleParenthesizedElement();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleParenthesizedElement5736); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleParenthesizedElement5848); 
 
             }
 
@@ -5524,29 +5621,29 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleParenthesizedElement"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1824:1: ruleParenthesizedElement : (otherlv_0= '(' ruleAlternatives otherlv_2= ')' ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1850:1: ruleParenthesizedElement : (otherlv_0= '(' ruleAlternatives otherlv_2= ')' ) ;
     public final void ruleParenthesizedElement() throws RecognitionException {
         Token otherlv_0=null;
         Token otherlv_2=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1824:25: ( (otherlv_0= '(' ruleAlternatives otherlv_2= ')' ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1825:2: (otherlv_0= '(' ruleAlternatives otherlv_2= ')' )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1850:25: ( (otherlv_0= '(' ruleAlternatives otherlv_2= ')' ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1851:2: (otherlv_0= '(' ruleAlternatives otherlv_2= ')' )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1825:2: (otherlv_0= '(' ruleAlternatives otherlv_2= ')' )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1826:3: otherlv_0= '(' ruleAlternatives otherlv_2= ')'
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1851:2: (otherlv_0= '(' ruleAlternatives otherlv_2= ')' )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1852:3: otherlv_0= '(' ruleAlternatives otherlv_2= ')'
             {
 
             			markLeaf(elementTypeProvider.getParenthesizedElement_LeftParenthesisKeyword_0ElementType());
             		
-            otherlv_0=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleParenthesizedElement5755); 
+            otherlv_0=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleParenthesizedElement5867); 
 
             			doneLeaf(otherlv_0);
             		
 
             			markComposite(elementTypeProvider.getParenthesizedElement_AlternativesParserRuleCall_1ElementType());
             		
-            pushFollow(FollowSets000.FOLLOW_ruleAlternatives_in_ruleParenthesizedElement5767);
+            pushFollow(FollowSets000.FOLLOW_ruleAlternatives_in_ruleParenthesizedElement5879);
             ruleAlternatives();
 
             state._fsp--;
@@ -5557,7 +5654,7 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             			markLeaf(elementTypeProvider.getParenthesizedElement_RightParenthesisKeyword_2ElementType());
             		
-            otherlv_2=(Token)match(input,16,FollowSets000.FOLLOW_16_in_ruleParenthesizedElement5781); 
+            otherlv_2=(Token)match(input,16,FollowSets000.FOLLOW_16_in_ruleParenthesizedElement5893); 
 
             			doneLeaf(otherlv_2);
             		
@@ -5580,19 +5677,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRulePredicatedGroup"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1851:1: entryRulePredicatedGroup : rulePredicatedGroup EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1877:1: entryRulePredicatedGroup : rulePredicatedGroup EOF ;
     public final void entryRulePredicatedGroup() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1851:25: ( rulePredicatedGroup EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1852:2: rulePredicatedGroup EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1877:25: ( rulePredicatedGroup EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1878:2: rulePredicatedGroup EOF
             {
              markComposite(elementTypeProvider.getPredicatedGroupElementType()); 
-            pushFollow(FollowSets000.FOLLOW_rulePredicatedGroup_in_entryRulePredicatedGroup5801);
+            pushFollow(FollowSets000.FOLLOW_rulePredicatedGroup_in_entryRulePredicatedGroup5913);
             rulePredicatedGroup();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRulePredicatedGroup5804); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRulePredicatedGroup5916); 
 
             }
 
@@ -5609,7 +5706,7 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "rulePredicatedGroup"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1857:1: rulePredicatedGroup : ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) otherlv_2= '(' ( (lv_elements_3_0= ruleAlternatives ) ) otherlv_4= ')' ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1883:1: rulePredicatedGroup : ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) otherlv_2= '(' ( (lv_elements_3_0= ruleAlternatives ) ) otherlv_4= ')' ) ;
     public final void rulePredicatedGroup() throws RecognitionException {
         Token lv_predicated_0_0=null;
         Token lv_firstSetPredicated_1_0=null;
@@ -5617,42 +5714,42 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
         Token otherlv_4=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1857:20: ( ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) otherlv_2= '(' ( (lv_elements_3_0= ruleAlternatives ) ) otherlv_4= ')' ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1858:2: ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) otherlv_2= '(' ( (lv_elements_3_0= ruleAlternatives ) ) otherlv_4= ')' )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1883:20: ( ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) otherlv_2= '(' ( (lv_elements_3_0= ruleAlternatives ) ) otherlv_4= ')' ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1884:2: ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) otherlv_2= '(' ( (lv_elements_3_0= ruleAlternatives ) ) otherlv_4= ')' )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1858:2: ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) otherlv_2= '(' ( (lv_elements_3_0= ruleAlternatives ) ) otherlv_4= ')' )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1859:3: ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) otherlv_2= '(' ( (lv_elements_3_0= ruleAlternatives ) ) otherlv_4= ')'
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1884:2: ( ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) otherlv_2= '(' ( (lv_elements_3_0= ruleAlternatives ) ) otherlv_4= ')' )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1885:3: ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) ) otherlv_2= '(' ( (lv_elements_3_0= ruleAlternatives ) ) otherlv_4= ')'
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1859:3: ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) )
-            int alt53=2;
-            int LA53_0 = input.LA(1);
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1885:3: ( ( (lv_predicated_0_0= '=>' ) ) | ( (lv_firstSetPredicated_1_0= '->' ) ) )
+            int alt55=2;
+            int LA55_0 = input.LA(1);
 
-            if ( (LA53_0==39) ) {
-                alt53=1;
+            if ( (LA55_0==39) ) {
+                alt55=1;
             }
-            else if ( (LA53_0==40) ) {
-                alt53=2;
+            else if ( (LA55_0==40) ) {
+                alt55=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 53, 0, input);
+                    new NoViableAltException("", 55, 0, input);
 
                 throw nvae;
             }
-            switch (alt53) {
+            switch (alt55) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1860:4: ( (lv_predicated_0_0= '=>' ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1886:4: ( (lv_predicated_0_0= '=>' ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1860:4: ( (lv_predicated_0_0= '=>' ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1861:5: (lv_predicated_0_0= '=>' )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1886:4: ( (lv_predicated_0_0= '=>' ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1887:5: (lv_predicated_0_0= '=>' )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1861:5: (lv_predicated_0_0= '=>' )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1862:6: lv_predicated_0_0= '=>'
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1887:5: (lv_predicated_0_0= '=>' )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1888:6: lv_predicated_0_0= '=>'
                     {
 
                     						markLeaf(elementTypeProvider.getPredicatedGroup_PredicatedEqualsSignGreaterThanSignKeyword_0_0_0ElementType());
                     					
-                    lv_predicated_0_0=(Token)match(input,39,FollowSets000.FOLLOW_39_in_rulePredicatedGroup5844); 
+                    lv_predicated_0_0=(Token)match(input,39,FollowSets000.FOLLOW_39_in_rulePredicatedGroup5956); 
 
                     						doneLeaf(lv_predicated_0_0);
                     					
@@ -5666,18 +5763,18 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1872:4: ( (lv_firstSetPredicated_1_0= '->' ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1898:4: ( (lv_firstSetPredicated_1_0= '->' ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1872:4: ( (lv_firstSetPredicated_1_0= '->' ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1873:5: (lv_firstSetPredicated_1_0= '->' )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1898:4: ( (lv_firstSetPredicated_1_0= '->' ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1899:5: (lv_firstSetPredicated_1_0= '->' )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1873:5: (lv_firstSetPredicated_1_0= '->' )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1874:6: lv_firstSetPredicated_1_0= '->'
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1899:5: (lv_firstSetPredicated_1_0= '->' )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1900:6: lv_firstSetPredicated_1_0= '->'
                     {
 
                     						markLeaf(elementTypeProvider.getPredicatedGroup_FirstSetPredicatedHyphenMinusGreaterThanSignKeyword_0_1_0ElementType());
                     					
-                    lv_firstSetPredicated_1_0=(Token)match(input,40,FollowSets000.FOLLOW_40_in_rulePredicatedGroup5898); 
+                    lv_firstSetPredicated_1_0=(Token)match(input,40,FollowSets000.FOLLOW_40_in_rulePredicatedGroup6010); 
 
                     						doneLeaf(lv_firstSetPredicated_1_0);
                     					
@@ -5696,20 +5793,20 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             			markLeaf(elementTypeProvider.getPredicatedGroup_LeftParenthesisKeyword_1ElementType());
             		
-            otherlv_2=(Token)match(input,15,FollowSets000.FOLLOW_15_in_rulePredicatedGroup5930); 
+            otherlv_2=(Token)match(input,15,FollowSets000.FOLLOW_15_in_rulePredicatedGroup6042); 
 
             			doneLeaf(otherlv_2);
             		
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1891:3: ( (lv_elements_3_0= ruleAlternatives ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1892:4: (lv_elements_3_0= ruleAlternatives )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1917:3: ( (lv_elements_3_0= ruleAlternatives ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1918:4: (lv_elements_3_0= ruleAlternatives )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1892:4: (lv_elements_3_0= ruleAlternatives )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1893:5: lv_elements_3_0= ruleAlternatives
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1918:4: (lv_elements_3_0= ruleAlternatives )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1919:5: lv_elements_3_0= ruleAlternatives
             {
 
             					markComposite(elementTypeProvider.getPredicatedGroup_ElementsAlternativesParserRuleCall_2_0ElementType());
             				
-            pushFollow(FollowSets000.FOLLOW_ruleAlternatives_in_rulePredicatedGroup5957);
+            pushFollow(FollowSets000.FOLLOW_ruleAlternatives_in_rulePredicatedGroup6069);
             ruleAlternatives();
 
             state._fsp--;
@@ -5726,7 +5823,7 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             			markLeaf(elementTypeProvider.getPredicatedGroup_RightParenthesisKeyword_3ElementType());
             		
-            otherlv_4=(Token)match(input,16,FollowSets000.FOLLOW_16_in_rulePredicatedGroup5982); 
+            otherlv_4=(Token)match(input,16,FollowSets000.FOLLOW_16_in_rulePredicatedGroup6094); 
 
             			doneLeaf(otherlv_4);
             		
@@ -5749,19 +5846,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleTerminalRule"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1913:1: entryRuleTerminalRule : ruleTerminalRule EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1939:1: entryRuleTerminalRule : ruleTerminalRule EOF ;
     public final void entryRuleTerminalRule() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1913:22: ( ruleTerminalRule EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1914:2: ruleTerminalRule EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1939:22: ( ruleTerminalRule EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1940:2: ruleTerminalRule EOF
             {
              markComposite(elementTypeProvider.getTerminalRuleElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalRule_in_entryRuleTerminalRule6002);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalRule_in_entryRuleTerminalRule6114);
             ruleTerminalRule();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTerminalRule6005); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTerminalRule6117); 
 
             }
 
@@ -5778,7 +5875,7 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleTerminalRule"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1919:1: ruleTerminalRule : (otherlv_0= 'terminal' ( ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) ) | ( ( (lv_name_3_0= RULE_ID ) ) (otherlv_4= 'returns' ( (lv_type_5_0= ruleTypeRef ) ) )? ) ) otherlv_6= ':' ( (lv_alternatives_7_0= ruleTerminalAlternatives ) ) otherlv_8= ';' ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1945:1: ruleTerminalRule : (otherlv_0= 'terminal' ( ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) ) | ( ( (lv_name_3_0= RULE_ID ) ) (otherlv_4= 'returns' ( (lv_type_5_0= ruleTypeRef ) ) )? ) ) otherlv_6= ':' ( (lv_alternatives_7_0= ruleTerminalAlternatives ) ) otherlv_8= ';' ) ;
     public final void ruleTerminalRule() throws RecognitionException {
         Token otherlv_0=null;
         Token lv_fragment_1_0=null;
@@ -5789,52 +5886,52 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
         Token otherlv_8=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1919:17: ( (otherlv_0= 'terminal' ( ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) ) | ( ( (lv_name_3_0= RULE_ID ) ) (otherlv_4= 'returns' ( (lv_type_5_0= ruleTypeRef ) ) )? ) ) otherlv_6= ':' ( (lv_alternatives_7_0= ruleTerminalAlternatives ) ) otherlv_8= ';' ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1920:2: (otherlv_0= 'terminal' ( ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) ) | ( ( (lv_name_3_0= RULE_ID ) ) (otherlv_4= 'returns' ( (lv_type_5_0= ruleTypeRef ) ) )? ) ) otherlv_6= ':' ( (lv_alternatives_7_0= ruleTerminalAlternatives ) ) otherlv_8= ';' )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1945:17: ( (otherlv_0= 'terminal' ( ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) ) | ( ( (lv_name_3_0= RULE_ID ) ) (otherlv_4= 'returns' ( (lv_type_5_0= ruleTypeRef ) ) )? ) ) otherlv_6= ':' ( (lv_alternatives_7_0= ruleTerminalAlternatives ) ) otherlv_8= ';' ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1946:2: (otherlv_0= 'terminal' ( ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) ) | ( ( (lv_name_3_0= RULE_ID ) ) (otherlv_4= 'returns' ( (lv_type_5_0= ruleTypeRef ) ) )? ) ) otherlv_6= ':' ( (lv_alternatives_7_0= ruleTerminalAlternatives ) ) otherlv_8= ';' )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1920:2: (otherlv_0= 'terminal' ( ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) ) | ( ( (lv_name_3_0= RULE_ID ) ) (otherlv_4= 'returns' ( (lv_type_5_0= ruleTypeRef ) ) )? ) ) otherlv_6= ':' ( (lv_alternatives_7_0= ruleTerminalAlternatives ) ) otherlv_8= ';' )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1921:3: otherlv_0= 'terminal' ( ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) ) | ( ( (lv_name_3_0= RULE_ID ) ) (otherlv_4= 'returns' ( (lv_type_5_0= ruleTypeRef ) ) )? ) ) otherlv_6= ':' ( (lv_alternatives_7_0= ruleTerminalAlternatives ) ) otherlv_8= ';'
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1946:2: (otherlv_0= 'terminal' ( ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) ) | ( ( (lv_name_3_0= RULE_ID ) ) (otherlv_4= 'returns' ( (lv_type_5_0= ruleTypeRef ) ) )? ) ) otherlv_6= ':' ( (lv_alternatives_7_0= ruleTerminalAlternatives ) ) otherlv_8= ';' )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1947:3: otherlv_0= 'terminal' ( ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) ) | ( ( (lv_name_3_0= RULE_ID ) ) (otherlv_4= 'returns' ( (lv_type_5_0= ruleTypeRef ) ) )? ) ) otherlv_6= ':' ( (lv_alternatives_7_0= ruleTerminalAlternatives ) ) otherlv_8= ';'
             {
 
             			markLeaf(elementTypeProvider.getTerminalRule_TerminalKeyword_0ElementType());
             		
-            otherlv_0=(Token)match(input,42,FollowSets000.FOLLOW_42_in_ruleTerminalRule6024); 
+            otherlv_0=(Token)match(input,42,FollowSets000.FOLLOW_42_in_ruleTerminalRule6136); 
 
             			doneLeaf(otherlv_0);
             		
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1928:3: ( ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) ) | ( ( (lv_name_3_0= RULE_ID ) ) (otherlv_4= 'returns' ( (lv_type_5_0= ruleTypeRef ) ) )? ) )
-            int alt55=2;
-            int LA55_0 = input.LA(1);
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1954:3: ( ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) ) | ( ( (lv_name_3_0= RULE_ID ) ) (otherlv_4= 'returns' ( (lv_type_5_0= ruleTypeRef ) ) )? ) )
+            int alt57=2;
+            int LA57_0 = input.LA(1);
 
-            if ( (LA55_0==21) ) {
-                alt55=1;
+            if ( (LA57_0==21) ) {
+                alt57=1;
             }
-            else if ( (LA55_0==RULE_ID) ) {
-                alt55=2;
+            else if ( (LA57_0==RULE_ID) ) {
+                alt57=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 55, 0, input);
+                    new NoViableAltException("", 57, 0, input);
 
                 throw nvae;
             }
-            switch (alt55) {
+            switch (alt57) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1929:4: ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1955:4: ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1929:4: ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1930:5: ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1955:4: ( ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1956:5: ( (lv_fragment_1_0= 'fragment' ) ) ( (lv_name_2_0= RULE_ID ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1930:5: ( (lv_fragment_1_0= 'fragment' ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1931:6: (lv_fragment_1_0= 'fragment' )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1956:5: ( (lv_fragment_1_0= 'fragment' ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1957:6: (lv_fragment_1_0= 'fragment' )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1931:6: (lv_fragment_1_0= 'fragment' )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1932:7: lv_fragment_1_0= 'fragment'
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1957:6: (lv_fragment_1_0= 'fragment' )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1958:7: lv_fragment_1_0= 'fragment'
                     {
 
                     							markLeaf(elementTypeProvider.getTerminalRule_FragmentFragmentKeyword_1_0_0_0ElementType());
                     						
-                    lv_fragment_1_0=(Token)match(input,21,FollowSets000.FOLLOW_21_in_ruleTerminalRule6068); 
+                    lv_fragment_1_0=(Token)match(input,21,FollowSets000.FOLLOW_21_in_ruleTerminalRule6180); 
 
                     							doneLeaf(lv_fragment_1_0);
                     						
@@ -5844,16 +5941,16 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
                     }
 
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1941:5: ( (lv_name_2_0= RULE_ID ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1942:6: (lv_name_2_0= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1967:5: ( (lv_name_2_0= RULE_ID ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1968:6: (lv_name_2_0= RULE_ID )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1942:6: (lv_name_2_0= RULE_ID )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1943:7: lv_name_2_0= RULE_ID
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1968:6: (lv_name_2_0= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1969:7: lv_name_2_0= RULE_ID
                     {
 
                     							markLeaf(elementTypeProvider.getTerminalRule_NameIDTerminalRuleCall_1_0_1_0ElementType());
                     						
-                    lv_name_2_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleTerminalRule6120); 
+                    lv_name_2_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleTerminalRule6232); 
 
                     							doneLeaf(lv_name_2_0);
                     						
@@ -5870,21 +5967,21 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1954:4: ( ( (lv_name_3_0= RULE_ID ) ) (otherlv_4= 'returns' ( (lv_type_5_0= ruleTypeRef ) ) )? )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1980:4: ( ( (lv_name_3_0= RULE_ID ) ) (otherlv_4= 'returns' ( (lv_type_5_0= ruleTypeRef ) ) )? )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1954:4: ( ( (lv_name_3_0= RULE_ID ) ) (otherlv_4= 'returns' ( (lv_type_5_0= ruleTypeRef ) ) )? )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1955:5: ( (lv_name_3_0= RULE_ID ) ) (otherlv_4= 'returns' ( (lv_type_5_0= ruleTypeRef ) ) )?
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1980:4: ( ( (lv_name_3_0= RULE_ID ) ) (otherlv_4= 'returns' ( (lv_type_5_0= ruleTypeRef ) ) )? )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1981:5: ( (lv_name_3_0= RULE_ID ) ) (otherlv_4= 'returns' ( (lv_type_5_0= ruleTypeRef ) ) )?
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1955:5: ( (lv_name_3_0= RULE_ID ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1956:6: (lv_name_3_0= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1981:5: ( (lv_name_3_0= RULE_ID ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1982:6: (lv_name_3_0= RULE_ID )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1956:6: (lv_name_3_0= RULE_ID )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1957:7: lv_name_3_0= RULE_ID
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1982:6: (lv_name_3_0= RULE_ID )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1983:7: lv_name_3_0= RULE_ID
                     {
 
                     							markLeaf(elementTypeProvider.getTerminalRule_NameIDTerminalRuleCall_1_1_0_0ElementType());
                     						
-                    lv_name_3_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleTerminalRule6191); 
+                    lv_name_3_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleTerminalRule6303); 
 
                     							doneLeaf(lv_name_3_0);
                     						
@@ -5894,34 +5991,34 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
                     }
 
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1966:5: (otherlv_4= 'returns' ( (lv_type_5_0= ruleTypeRef ) ) )?
-                    int alt54=2;
-                    int LA54_0 = input.LA(1);
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1992:5: (otherlv_4= 'returns' ( (lv_type_5_0= ruleTypeRef ) ) )?
+                    int alt56=2;
+                    int LA56_0 = input.LA(1);
 
-                    if ( (LA54_0==23) ) {
-                        alt54=1;
+                    if ( (LA56_0==23) ) {
+                        alt56=1;
                     }
-                    switch (alt54) {
+                    switch (alt56) {
                         case 1 :
-                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1967:6: otherlv_4= 'returns' ( (lv_type_5_0= ruleTypeRef ) )
+                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1993:6: otherlv_4= 'returns' ( (lv_type_5_0= ruleTypeRef ) )
                             {
 
                             						markLeaf(elementTypeProvider.getTerminalRule_ReturnsKeyword_1_1_1_0ElementType());
                             					
-                            otherlv_4=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleTerminalRule6234); 
+                            otherlv_4=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleTerminalRule6346); 
 
                             						doneLeaf(otherlv_4);
                             					
-                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1974:6: ( (lv_type_5_0= ruleTypeRef ) )
-                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1975:7: (lv_type_5_0= ruleTypeRef )
+                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2000:6: ( (lv_type_5_0= ruleTypeRef ) )
+                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2001:7: (lv_type_5_0= ruleTypeRef )
                             {
-                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1975:7: (lv_type_5_0= ruleTypeRef )
-                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1976:8: lv_type_5_0= ruleTypeRef
+                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2001:7: (lv_type_5_0= ruleTypeRef )
+                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2002:8: lv_type_5_0= ruleTypeRef
                             {
 
                             								markComposite(elementTypeProvider.getTerminalRule_TypeTypeRefParserRuleCall_1_1_1_1_0ElementType());
                             							
-                            pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_ruleTerminalRule6276);
+                            pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_ruleTerminalRule6388);
                             ruleTypeRef();
 
                             state._fsp--;
@@ -5953,20 +6050,20 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             			markLeaf(elementTypeProvider.getTerminalRule_ColonKeyword_2ElementType());
             		
-            otherlv_6=(Token)match(input,24,FollowSets000.FOLLOW_24_in_ruleTerminalRule6326); 
+            otherlv_6=(Token)match(input,24,FollowSets000.FOLLOW_24_in_ruleTerminalRule6438); 
 
             			doneLeaf(otherlv_6);
             		
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1995:3: ( (lv_alternatives_7_0= ruleTerminalAlternatives ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1996:4: (lv_alternatives_7_0= ruleTerminalAlternatives )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2021:3: ( (lv_alternatives_7_0= ruleTerminalAlternatives ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2022:4: (lv_alternatives_7_0= ruleTerminalAlternatives )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1996:4: (lv_alternatives_7_0= ruleTerminalAlternatives )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:1997:5: lv_alternatives_7_0= ruleTerminalAlternatives
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2022:4: (lv_alternatives_7_0= ruleTerminalAlternatives )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2023:5: lv_alternatives_7_0= ruleTerminalAlternatives
             {
 
             					markComposite(elementTypeProvider.getTerminalRule_AlternativesTerminalAlternativesParserRuleCall_3_0ElementType());
             				
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalAlternatives_in_ruleTerminalRule6353);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalAlternatives_in_ruleTerminalRule6465);
             ruleTerminalAlternatives();
 
             state._fsp--;
@@ -5983,7 +6080,7 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             			markLeaf(elementTypeProvider.getTerminalRule_SemicolonKeyword_4ElementType());
             		
-            otherlv_8=(Token)match(input,25,FollowSets000.FOLLOW_25_in_ruleTerminalRule6378); 
+            otherlv_8=(Token)match(input,25,FollowSets000.FOLLOW_25_in_ruleTerminalRule6490); 
 
             			doneLeaf(otherlv_8);
             		
@@ -6006,19 +6103,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleTerminalAlternatives"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2017:1: entryRuleTerminalAlternatives : ruleTerminalAlternatives EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2043:1: entryRuleTerminalAlternatives : ruleTerminalAlternatives EOF ;
     public final void entryRuleTerminalAlternatives() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2017:30: ( ruleTerminalAlternatives EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2018:2: ruleTerminalAlternatives EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2043:30: ( ruleTerminalAlternatives EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2044:2: ruleTerminalAlternatives EOF
             {
              markComposite(elementTypeProvider.getTerminalAlternativesElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalAlternatives_in_entryRuleTerminalAlternatives6398);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalAlternatives_in_entryRuleTerminalAlternatives6510);
             ruleTerminalAlternatives();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTerminalAlternatives6401); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTerminalAlternatives6513); 
 
             }
 
@@ -6035,21 +6132,21 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleTerminalAlternatives"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2023:1: ruleTerminalAlternatives : ( ruleTerminalGroup ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+ )? ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2049:1: ruleTerminalAlternatives : ( ruleTerminalGroup ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+ )? ) ;
     public final void ruleTerminalAlternatives() throws RecognitionException {
         Token otherlv_2=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2023:25: ( ( ruleTerminalGroup ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+ )? ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2024:2: ( ruleTerminalGroup ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+ )? )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2049:25: ( ( ruleTerminalGroup ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+ )? ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2050:2: ( ruleTerminalGroup ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+ )? )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2024:2: ( ruleTerminalGroup ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+ )? )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2025:3: ruleTerminalGroup ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+ )?
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2050:2: ( ruleTerminalGroup ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+ )? )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2051:3: ruleTerminalGroup ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+ )?
             {
 
             			markComposite(elementTypeProvider.getTerminalAlternatives_TerminalGroupParserRuleCall_0ElementType());
             		
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalGroup_in_ruleTerminalAlternatives6418);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalGroup_in_ruleTerminalAlternatives6530);
             ruleTerminalGroup();
 
             state._fsp--;
@@ -6057,19 +6154,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             			doneComposite();
             		
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2032:3: ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+ )?
-            int alt57=2;
-            int LA57_0 = input.LA(1);
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2058:3: ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+ )?
+            int alt59=2;
+            int LA59_0 = input.LA(1);
 
-            if ( (LA57_0==29) ) {
-                alt57=1;
+            if ( (LA59_0==29) ) {
+                alt59=1;
             }
-            switch (alt57) {
+            switch (alt59) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2033:4: () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2059:4: () (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2033:4: ()
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2034:5: 
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2059:4: ()
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2060:5: 
                     {
 
                     					precedeComposite(elementTypeProvider.getTerminalAlternatives_AlternativesElementsAction_1_0ElementType());
@@ -6078,39 +6175,39 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
                     }
 
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2039:4: (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+
-                    int cnt56=0;
-                    loop56:
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2065:4: (otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) ) )+
+                    int cnt58=0;
+                    loop58:
                     do {
-                        int alt56=2;
-                        int LA56_0 = input.LA(1);
+                        int alt58=2;
+                        int LA58_0 = input.LA(1);
 
-                        if ( (LA56_0==29) ) {
-                            alt56=1;
+                        if ( (LA58_0==29) ) {
+                            alt58=1;
                         }
 
 
-                        switch (alt56) {
+                        switch (alt58) {
                     	case 1 :
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2040:5: otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) )
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2066:5: otherlv_2= '|' ( (lv_elements_3_0= ruleTerminalGroup ) )
                     	    {
 
                     	    					markLeaf(elementTypeProvider.getTerminalAlternatives_VerticalLineKeyword_1_1_0ElementType());
                     	    				
-                    	    otherlv_2=(Token)match(input,29,FollowSets000.FOLLOW_29_in_ruleTerminalAlternatives6461); 
+                    	    otherlv_2=(Token)match(input,29,FollowSets000.FOLLOW_29_in_ruleTerminalAlternatives6573); 
 
                     	    					doneLeaf(otherlv_2);
                     	    				
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2047:5: ( (lv_elements_3_0= ruleTerminalGroup ) )
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2048:6: (lv_elements_3_0= ruleTerminalGroup )
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2073:5: ( (lv_elements_3_0= ruleTerminalGroup ) )
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2074:6: (lv_elements_3_0= ruleTerminalGroup )
                     	    {
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2048:6: (lv_elements_3_0= ruleTerminalGroup )
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2049:7: lv_elements_3_0= ruleTerminalGroup
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2074:6: (lv_elements_3_0= ruleTerminalGroup )
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2075:7: lv_elements_3_0= ruleTerminalGroup
                     	    {
 
                     	    							markComposite(elementTypeProvider.getTerminalAlternatives_ElementsTerminalGroupParserRuleCall_1_1_1_0ElementType());
                     	    						
-                    	    pushFollow(FollowSets000.FOLLOW_ruleTerminalGroup_in_ruleTerminalAlternatives6498);
+                    	    pushFollow(FollowSets000.FOLLOW_ruleTerminalGroup_in_ruleTerminalAlternatives6610);
                     	    ruleTerminalGroup();
 
                     	    state._fsp--;
@@ -6121,147 +6218,6 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
                     	    }
 
-
-                    	    }
-
-
-                    	    }
-                    	    break;
-
-                    	default :
-                    	    if ( cnt56 >= 1 ) break loop56;
-                                EarlyExitException eee =
-                                    new EarlyExitException(56, input);
-                                throw eee;
-                        }
-                        cnt56++;
-                    } while (true);
-
-
-                    }
-                    break;
-
-            }
-
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-        }
-        return ;
-    }
-    // $ANTLR end "ruleTerminalAlternatives"
-
-
-    // $ANTLR start "entryRuleTerminalGroup"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2064:1: entryRuleTerminalGroup : ruleTerminalGroup EOF ;
-    public final void entryRuleTerminalGroup() throws RecognitionException {
-        try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2064:23: ( ruleTerminalGroup EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2065:2: ruleTerminalGroup EOF
-            {
-             markComposite(elementTypeProvider.getTerminalGroupElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalGroup_in_entryRuleTerminalGroup6546);
-            ruleTerminalGroup();
-
-            state._fsp--;
-
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTerminalGroup6549); 
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-        }
-        return ;
-    }
-    // $ANTLR end "entryRuleTerminalGroup"
-
-
-    // $ANTLR start "ruleTerminalGroup"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2070:1: ruleTerminalGroup : ( ruleTerminalToken ( () ( (lv_elements_2_0= ruleTerminalToken ) )+ )? ) ;
-    public final void ruleTerminalGroup() throws RecognitionException {
-        try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2070:18: ( ( ruleTerminalToken ( () ( (lv_elements_2_0= ruleTerminalToken ) )+ )? ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2071:2: ( ruleTerminalToken ( () ( (lv_elements_2_0= ruleTerminalToken ) )+ )? )
-            {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2071:2: ( ruleTerminalToken ( () ( (lv_elements_2_0= ruleTerminalToken ) )+ )? )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2072:3: ruleTerminalToken ( () ( (lv_elements_2_0= ruleTerminalToken ) )+ )?
-            {
-
-            			markComposite(elementTypeProvider.getTerminalGroup_TerminalTokenParserRuleCall_0ElementType());
-            		
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalToken_in_ruleTerminalGroup6566);
-            ruleTerminalToken();
-
-            state._fsp--;
-
-
-            			doneComposite();
-            		
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2079:3: ( () ( (lv_elements_2_0= ruleTerminalToken ) )+ )?
-            int alt59=2;
-            int LA59_0 = input.LA(1);
-
-            if ( ((LA59_0>=RULE_ID && LA59_0<=RULE_STRING)||LA59_0==15||LA59_0==17||LA59_0==38||LA59_0==40||LA59_0==43) ) {
-                alt59=1;
-            }
-            switch (alt59) {
-                case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2080:4: () ( (lv_elements_2_0= ruleTerminalToken ) )+
-                    {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2080:4: ()
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2081:5: 
-                    {
-
-                    					precedeComposite(elementTypeProvider.getTerminalGroup_GroupElementsAction_1_0ElementType());
-                    					doneComposite();
-                    				
-
-                    }
-
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2086:4: ( (lv_elements_2_0= ruleTerminalToken ) )+
-                    int cnt58=0;
-                    loop58:
-                    do {
-                        int alt58=2;
-                        int LA58_0 = input.LA(1);
-
-                        if ( ((LA58_0>=RULE_ID && LA58_0<=RULE_STRING)||LA58_0==15||LA58_0==17||LA58_0==38||LA58_0==40||LA58_0==43) ) {
-                            alt58=1;
-                        }
-
-
-                        switch (alt58) {
-                    	case 1 :
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2087:5: (lv_elements_2_0= ruleTerminalToken )
-                    	    {
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2087:5: (lv_elements_2_0= ruleTerminalToken )
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2088:6: lv_elements_2_0= ruleTerminalToken
-                    	    {
-
-                    	    						markComposite(elementTypeProvider.getTerminalGroup_ElementsTerminalTokenParserRuleCall_1_1_0ElementType());
-                    	    					
-                    	    pushFollow(FollowSets000.FOLLOW_ruleTerminalToken_in_ruleTerminalGroup6617);
-                    	    ruleTerminalToken();
-
-                    	    state._fsp--;
-
-
-                    	    						doneComposite();
-                    	    					
 
                     	    }
 
@@ -6299,23 +6255,164 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
         }
         return ;
     }
-    // $ANTLR end "ruleTerminalGroup"
+    // $ANTLR end "ruleTerminalAlternatives"
 
 
-    // $ANTLR start "entryRuleTerminalToken"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2102:1: entryRuleTerminalToken : ruleTerminalToken EOF ;
-    public final void entryRuleTerminalToken() throws RecognitionException {
+    // $ANTLR start "entryRuleTerminalGroup"
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2090:1: entryRuleTerminalGroup : ruleTerminalGroup EOF ;
+    public final void entryRuleTerminalGroup() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2102:23: ( ruleTerminalToken EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2103:2: ruleTerminalToken EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2090:23: ( ruleTerminalGroup EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2091:2: ruleTerminalGroup EOF
             {
-             markComposite(elementTypeProvider.getTerminalTokenElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalToken_in_entryRuleTerminalToken6657);
+             markComposite(elementTypeProvider.getTerminalGroupElementType()); 
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalGroup_in_entryRuleTerminalGroup6658);
+            ruleTerminalGroup();
+
+            state._fsp--;
+
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTerminalGroup6661); 
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+        }
+        return ;
+    }
+    // $ANTLR end "entryRuleTerminalGroup"
+
+
+    // $ANTLR start "ruleTerminalGroup"
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2096:1: ruleTerminalGroup : ( ruleTerminalToken ( () ( (lv_elements_2_0= ruleTerminalToken ) )+ )? ) ;
+    public final void ruleTerminalGroup() throws RecognitionException {
+        try {
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2096:18: ( ( ruleTerminalToken ( () ( (lv_elements_2_0= ruleTerminalToken ) )+ )? ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2097:2: ( ruleTerminalToken ( () ( (lv_elements_2_0= ruleTerminalToken ) )+ )? )
+            {
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2097:2: ( ruleTerminalToken ( () ( (lv_elements_2_0= ruleTerminalToken ) )+ )? )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2098:3: ruleTerminalToken ( () ( (lv_elements_2_0= ruleTerminalToken ) )+ )?
+            {
+
+            			markComposite(elementTypeProvider.getTerminalGroup_TerminalTokenParserRuleCall_0ElementType());
+            		
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalToken_in_ruleTerminalGroup6678);
             ruleTerminalToken();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTerminalToken6660); 
+
+            			doneComposite();
+            		
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2105:3: ( () ( (lv_elements_2_0= ruleTerminalToken ) )+ )?
+            int alt61=2;
+            int LA61_0 = input.LA(1);
+
+            if ( ((LA61_0>=RULE_ID && LA61_0<=RULE_STRING)||LA61_0==15||LA61_0==17||LA61_0==38||LA61_0==40||LA61_0==43) ) {
+                alt61=1;
+            }
+            switch (alt61) {
+                case 1 :
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2106:4: () ( (lv_elements_2_0= ruleTerminalToken ) )+
+                    {
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2106:4: ()
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2107:5: 
+                    {
+
+                    					precedeComposite(elementTypeProvider.getTerminalGroup_GroupElementsAction_1_0ElementType());
+                    					doneComposite();
+                    				
+
+                    }
+
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2112:4: ( (lv_elements_2_0= ruleTerminalToken ) )+
+                    int cnt60=0;
+                    loop60:
+                    do {
+                        int alt60=2;
+                        int LA60_0 = input.LA(1);
+
+                        if ( ((LA60_0>=RULE_ID && LA60_0<=RULE_STRING)||LA60_0==15||LA60_0==17||LA60_0==38||LA60_0==40||LA60_0==43) ) {
+                            alt60=1;
+                        }
+
+
+                        switch (alt60) {
+                    	case 1 :
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2113:5: (lv_elements_2_0= ruleTerminalToken )
+                    	    {
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2113:5: (lv_elements_2_0= ruleTerminalToken )
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2114:6: lv_elements_2_0= ruleTerminalToken
+                    	    {
+
+                    	    						markComposite(elementTypeProvider.getTerminalGroup_ElementsTerminalTokenParserRuleCall_1_1_0ElementType());
+                    	    					
+                    	    pushFollow(FollowSets000.FOLLOW_ruleTerminalToken_in_ruleTerminalGroup6729);
+                    	    ruleTerminalToken();
+
+                    	    state._fsp--;
+
+
+                    	    						doneComposite();
+                    	    					
+
+                    	    }
+
+
+                    	    }
+                    	    break;
+
+                    	default :
+                    	    if ( cnt60 >= 1 ) break loop60;
+                                EarlyExitException eee =
+                                    new EarlyExitException(60, input);
+                                throw eee;
+                        }
+                        cnt60++;
+                    } while (true);
+
+
+                    }
+                    break;
+
+            }
+
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+        }
+        return ;
+    }
+    // $ANTLR end "ruleTerminalGroup"
+
+
+    // $ANTLR start "entryRuleTerminalToken"
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2128:1: entryRuleTerminalToken : ruleTerminalToken EOF ;
+    public final void entryRuleTerminalToken() throws RecognitionException {
+        try {
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2128:23: ( ruleTerminalToken EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2129:2: ruleTerminalToken EOF
+            {
+             markComposite(elementTypeProvider.getTerminalTokenElementType()); 
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalToken_in_entryRuleTerminalToken6769);
+            ruleTerminalToken();
+
+            state._fsp--;
+
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTerminalToken6772); 
 
             }
 
@@ -6332,23 +6429,23 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleTerminalToken"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2108:1: ruleTerminalToken : ( ruleTerminalTokenElement ( ( (lv_cardinality_1_1= '?' | lv_cardinality_1_2= '*' | lv_cardinality_1_3= '+' ) ) )? ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2134:1: ruleTerminalToken : ( ruleTerminalTokenElement ( ( (lv_cardinality_1_1= '?' | lv_cardinality_1_2= '*' | lv_cardinality_1_3= '+' ) ) )? ) ;
     public final void ruleTerminalToken() throws RecognitionException {
         Token lv_cardinality_1_1=null;
         Token lv_cardinality_1_2=null;
         Token lv_cardinality_1_3=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2108:18: ( ( ruleTerminalTokenElement ( ( (lv_cardinality_1_1= '?' | lv_cardinality_1_2= '*' | lv_cardinality_1_3= '+' ) ) )? ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2109:2: ( ruleTerminalTokenElement ( ( (lv_cardinality_1_1= '?' | lv_cardinality_1_2= '*' | lv_cardinality_1_3= '+' ) ) )? )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2134:18: ( ( ruleTerminalTokenElement ( ( (lv_cardinality_1_1= '?' | lv_cardinality_1_2= '*' | lv_cardinality_1_3= '+' ) ) )? ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2135:2: ( ruleTerminalTokenElement ( ( (lv_cardinality_1_1= '?' | lv_cardinality_1_2= '*' | lv_cardinality_1_3= '+' ) ) )? )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2109:2: ( ruleTerminalTokenElement ( ( (lv_cardinality_1_1= '?' | lv_cardinality_1_2= '*' | lv_cardinality_1_3= '+' ) ) )? )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2110:3: ruleTerminalTokenElement ( ( (lv_cardinality_1_1= '?' | lv_cardinality_1_2= '*' | lv_cardinality_1_3= '+' ) ) )?
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2135:2: ( ruleTerminalTokenElement ( ( (lv_cardinality_1_1= '?' | lv_cardinality_1_2= '*' | lv_cardinality_1_3= '+' ) ) )? )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2136:3: ruleTerminalTokenElement ( ( (lv_cardinality_1_1= '?' | lv_cardinality_1_2= '*' | lv_cardinality_1_3= '+' ) ) )?
             {
 
             			markComposite(elementTypeProvider.getTerminalToken_TerminalTokenElementParserRuleCall_0ElementType());
             		
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalTokenElement_in_ruleTerminalToken6677);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalTokenElement_in_ruleTerminalToken6789);
             ruleTerminalTokenElement();
 
             state._fsp--;
@@ -6356,53 +6453,53 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             			doneComposite();
             		
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2117:3: ( ( (lv_cardinality_1_1= '?' | lv_cardinality_1_2= '*' | lv_cardinality_1_3= '+' ) ) )?
-            int alt61=2;
-            int LA61_0 = input.LA(1);
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2143:3: ( ( (lv_cardinality_1_1= '?' | lv_cardinality_1_2= '*' | lv_cardinality_1_3= '+' ) ) )?
+            int alt63=2;
+            int LA63_0 = input.LA(1);
 
-            if ( (LA61_0==22||(LA61_0>=31 && LA61_0<=32)) ) {
-                alt61=1;
+            if ( (LA63_0==22||(LA63_0>=31 && LA63_0<=32)) ) {
+                alt63=1;
             }
-            switch (alt61) {
+            switch (alt63) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2118:4: ( (lv_cardinality_1_1= '?' | lv_cardinality_1_2= '*' | lv_cardinality_1_3= '+' ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2144:4: ( (lv_cardinality_1_1= '?' | lv_cardinality_1_2= '*' | lv_cardinality_1_3= '+' ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2118:4: ( (lv_cardinality_1_1= '?' | lv_cardinality_1_2= '*' | lv_cardinality_1_3= '+' ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2119:5: (lv_cardinality_1_1= '?' | lv_cardinality_1_2= '*' | lv_cardinality_1_3= '+' )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2144:4: ( (lv_cardinality_1_1= '?' | lv_cardinality_1_2= '*' | lv_cardinality_1_3= '+' ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2145:5: (lv_cardinality_1_1= '?' | lv_cardinality_1_2= '*' | lv_cardinality_1_3= '+' )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2119:5: (lv_cardinality_1_1= '?' | lv_cardinality_1_2= '*' | lv_cardinality_1_3= '+' )
-                    int alt60=3;
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2145:5: (lv_cardinality_1_1= '?' | lv_cardinality_1_2= '*' | lv_cardinality_1_3= '+' )
+                    int alt62=3;
                     switch ( input.LA(1) ) {
                     case 31:
                         {
-                        alt60=1;
+                        alt62=1;
                         }
                         break;
                     case 22:
                         {
-                        alt60=2;
+                        alt62=2;
                         }
                         break;
                     case 32:
                         {
-                        alt60=3;
+                        alt62=3;
                         }
                         break;
                     default:
                         NoViableAltException nvae =
-                            new NoViableAltException("", 60, 0, input);
+                            new NoViableAltException("", 62, 0, input);
 
                         throw nvae;
                     }
 
-                    switch (alt60) {
+                    switch (alt62) {
                         case 1 :
-                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2120:6: lv_cardinality_1_1= '?'
+                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2146:6: lv_cardinality_1_1= '?'
                             {
 
                             						markLeaf(elementTypeProvider.getTerminalToken_CardinalityQuestionMarkKeyword_1_0_0ElementType());
                             					
-                            lv_cardinality_1_1=(Token)match(input,31,FollowSets000.FOLLOW_31_in_ruleTerminalToken6712); 
+                            lv_cardinality_1_1=(Token)match(input,31,FollowSets000.FOLLOW_31_in_ruleTerminalToken6824); 
 
                             						doneLeaf(lv_cardinality_1_1);
                             					
@@ -6410,12 +6507,12 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                             }
                             break;
                         case 2 :
-                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2128:6: lv_cardinality_1_2= '*'
+                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2154:6: lv_cardinality_1_2= '*'
                             {
 
                             						markLeaf(elementTypeProvider.getTerminalToken_CardinalityAsteriskKeyword_1_0_1ElementType());
                             					
-                            lv_cardinality_1_2=(Token)match(input,22,FollowSets000.FOLLOW_22_in_ruleTerminalToken6746); 
+                            lv_cardinality_1_2=(Token)match(input,22,FollowSets000.FOLLOW_22_in_ruleTerminalToken6858); 
 
                             						doneLeaf(lv_cardinality_1_2);
                             					
@@ -6423,12 +6520,12 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                             }
                             break;
                         case 3 :
-                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2136:6: lv_cardinality_1_3= '+'
+                            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2162:6: lv_cardinality_1_3= '+'
                             {
 
                             						markLeaf(elementTypeProvider.getTerminalToken_CardinalityPlusSignKeyword_1_0_2ElementType());
                             					
-                            lv_cardinality_1_3=(Token)match(input,32,FollowSets000.FOLLOW_32_in_ruleTerminalToken6780); 
+                            lv_cardinality_1_3=(Token)match(input,32,FollowSets000.FOLLOW_32_in_ruleTerminalToken6892); 
 
                             						doneLeaf(lv_cardinality_1_3);
                             					
@@ -6466,19 +6563,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleTerminalTokenElement"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2150:1: entryRuleTerminalTokenElement : ruleTerminalTokenElement EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2176:1: entryRuleTerminalTokenElement : ruleTerminalTokenElement EOF ;
     public final void entryRuleTerminalTokenElement() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2150:30: ( ruleTerminalTokenElement EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2151:2: ruleTerminalTokenElement EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2176:30: ( ruleTerminalTokenElement EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2177:2: ruleTerminalTokenElement EOF
             {
              markComposite(elementTypeProvider.getTerminalTokenElementElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalTokenElement_in_entryRuleTerminalTokenElement6819);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalTokenElement_in_entryRuleTerminalTokenElement6931);
             ruleTerminalTokenElement();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTerminalTokenElement6822); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleTerminalTokenElement6934); 
 
             }
 
@@ -6495,61 +6592,61 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleTerminalTokenElement"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2156:1: ruleTerminalTokenElement : ( ruleCharacterRange | ruleTerminalRuleCall | ruleParenthesizedTerminalElement | ruleAbstractNegatedToken | ruleWildcard | ruleEOF ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2182:1: ruleTerminalTokenElement : ( ruleCharacterRange | ruleTerminalRuleCall | ruleParenthesizedTerminalElement | ruleAbstractNegatedToken | ruleWildcard | ruleEOF ) ;
     public final void ruleTerminalTokenElement() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2156:25: ( ( ruleCharacterRange | ruleTerminalRuleCall | ruleParenthesizedTerminalElement | ruleAbstractNegatedToken | ruleWildcard | ruleEOF ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2157:2: ( ruleCharacterRange | ruleTerminalRuleCall | ruleParenthesizedTerminalElement | ruleAbstractNegatedToken | ruleWildcard | ruleEOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2182:25: ( ( ruleCharacterRange | ruleTerminalRuleCall | ruleParenthesizedTerminalElement | ruleAbstractNegatedToken | ruleWildcard | ruleEOF ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2183:2: ( ruleCharacterRange | ruleTerminalRuleCall | ruleParenthesizedTerminalElement | ruleAbstractNegatedToken | ruleWildcard | ruleEOF )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2157:2: ( ruleCharacterRange | ruleTerminalRuleCall | ruleParenthesizedTerminalElement | ruleAbstractNegatedToken | ruleWildcard | ruleEOF )
-            int alt62=6;
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2183:2: ( ruleCharacterRange | ruleTerminalRuleCall | ruleParenthesizedTerminalElement | ruleAbstractNegatedToken | ruleWildcard | ruleEOF )
+            int alt64=6;
             switch ( input.LA(1) ) {
             case RULE_STRING:
                 {
-                alt62=1;
+                alt64=1;
                 }
                 break;
             case RULE_ID:
                 {
-                alt62=2;
+                alt64=2;
                 }
                 break;
             case 15:
                 {
-                alt62=3;
+                alt64=3;
                 }
                 break;
             case 38:
             case 40:
                 {
-                alt62=4;
+                alt64=4;
                 }
                 break;
             case 17:
                 {
-                alt62=5;
+                alt64=5;
                 }
                 break;
             case 43:
                 {
-                alt62=6;
+                alt64=6;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 62, 0, input);
+                    new NoViableAltException("", 64, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt62) {
+            switch (alt64) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2158:3: ruleCharacterRange
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2184:3: ruleCharacterRange
                     {
 
                     			markComposite(elementTypeProvider.getTerminalTokenElement_CharacterRangeParserRuleCall_0ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleCharacterRange_in_ruleTerminalTokenElement6839);
+                    pushFollow(FollowSets000.FOLLOW_ruleCharacterRange_in_ruleTerminalTokenElement6951);
                     ruleCharacterRange();
 
                     state._fsp--;
@@ -6561,12 +6658,12 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2166:3: ruleTerminalRuleCall
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2192:3: ruleTerminalRuleCall
                     {
 
                     			markComposite(elementTypeProvider.getTerminalTokenElement_TerminalRuleCallParserRuleCall_1ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleTerminalRuleCall_in_ruleTerminalTokenElement6859);
+                    pushFollow(FollowSets000.FOLLOW_ruleTerminalRuleCall_in_ruleTerminalTokenElement6971);
                     ruleTerminalRuleCall();
 
                     state._fsp--;
@@ -6578,12 +6675,12 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2174:3: ruleParenthesizedTerminalElement
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2200:3: ruleParenthesizedTerminalElement
                     {
 
                     			markComposite(elementTypeProvider.getTerminalTokenElement_ParenthesizedTerminalElementParserRuleCall_2ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleParenthesizedTerminalElement_in_ruleTerminalTokenElement6879);
+                    pushFollow(FollowSets000.FOLLOW_ruleParenthesizedTerminalElement_in_ruleTerminalTokenElement6991);
                     ruleParenthesizedTerminalElement();
 
                     state._fsp--;
@@ -6595,12 +6692,12 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     }
                     break;
                 case 4 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2182:3: ruleAbstractNegatedToken
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2208:3: ruleAbstractNegatedToken
                     {
 
                     			markComposite(elementTypeProvider.getTerminalTokenElement_AbstractNegatedTokenParserRuleCall_3ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleAbstractNegatedToken_in_ruleTerminalTokenElement6899);
+                    pushFollow(FollowSets000.FOLLOW_ruleAbstractNegatedToken_in_ruleTerminalTokenElement7011);
                     ruleAbstractNegatedToken();
 
                     state._fsp--;
@@ -6612,12 +6709,12 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     }
                     break;
                 case 5 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2190:3: ruleWildcard
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2216:3: ruleWildcard
                     {
 
                     			markComposite(elementTypeProvider.getTerminalTokenElement_WildcardParserRuleCall_4ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleWildcard_in_ruleTerminalTokenElement6919);
+                    pushFollow(FollowSets000.FOLLOW_ruleWildcard_in_ruleTerminalTokenElement7031);
                     ruleWildcard();
 
                     state._fsp--;
@@ -6629,12 +6726,12 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     }
                     break;
                 case 6 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2198:3: ruleEOF
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2224:3: ruleEOF
                     {
 
                     			markComposite(elementTypeProvider.getTerminalTokenElement_EOFParserRuleCall_5ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleEOF_in_ruleTerminalTokenElement6939);
+                    pushFollow(FollowSets000.FOLLOW_ruleEOF_in_ruleTerminalTokenElement7051);
                     ruleEOF();
 
                     state._fsp--;
@@ -6664,19 +6761,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleParenthesizedTerminalElement"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2209:1: entryRuleParenthesizedTerminalElement : ruleParenthesizedTerminalElement EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2235:1: entryRuleParenthesizedTerminalElement : ruleParenthesizedTerminalElement EOF ;
     public final void entryRuleParenthesizedTerminalElement() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2209:38: ( ruleParenthesizedTerminalElement EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2210:2: ruleParenthesizedTerminalElement EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2235:38: ( ruleParenthesizedTerminalElement EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2236:2: ruleParenthesizedTerminalElement EOF
             {
              markComposite(elementTypeProvider.getParenthesizedTerminalElementElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleParenthesizedTerminalElement_in_entryRuleParenthesizedTerminalElement6959);
+            pushFollow(FollowSets000.FOLLOW_ruleParenthesizedTerminalElement_in_entryRuleParenthesizedTerminalElement7071);
             ruleParenthesizedTerminalElement();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleParenthesizedTerminalElement6962); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleParenthesizedTerminalElement7074); 
 
             }
 
@@ -6693,29 +6790,29 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleParenthesizedTerminalElement"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2215:1: ruleParenthesizedTerminalElement : (otherlv_0= '(' ruleTerminalAlternatives otherlv_2= ')' ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2241:1: ruleParenthesizedTerminalElement : (otherlv_0= '(' ruleTerminalAlternatives otherlv_2= ')' ) ;
     public final void ruleParenthesizedTerminalElement() throws RecognitionException {
         Token otherlv_0=null;
         Token otherlv_2=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2215:33: ( (otherlv_0= '(' ruleTerminalAlternatives otherlv_2= ')' ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2216:2: (otherlv_0= '(' ruleTerminalAlternatives otherlv_2= ')' )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2241:33: ( (otherlv_0= '(' ruleTerminalAlternatives otherlv_2= ')' ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2242:2: (otherlv_0= '(' ruleTerminalAlternatives otherlv_2= ')' )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2216:2: (otherlv_0= '(' ruleTerminalAlternatives otherlv_2= ')' )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2217:3: otherlv_0= '(' ruleTerminalAlternatives otherlv_2= ')'
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2242:2: (otherlv_0= '(' ruleTerminalAlternatives otherlv_2= ')' )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2243:3: otherlv_0= '(' ruleTerminalAlternatives otherlv_2= ')'
             {
 
             			markLeaf(elementTypeProvider.getParenthesizedTerminalElement_LeftParenthesisKeyword_0ElementType());
             		
-            otherlv_0=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleParenthesizedTerminalElement6981); 
+            otherlv_0=(Token)match(input,15,FollowSets000.FOLLOW_15_in_ruleParenthesizedTerminalElement7093); 
 
             			doneLeaf(otherlv_0);
             		
 
             			markComposite(elementTypeProvider.getParenthesizedTerminalElement_TerminalAlternativesParserRuleCall_1ElementType());
             		
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalAlternatives_in_ruleParenthesizedTerminalElement6993);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalAlternatives_in_ruleParenthesizedTerminalElement7105);
             ruleTerminalAlternatives();
 
             state._fsp--;
@@ -6726,7 +6823,7 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             			markLeaf(elementTypeProvider.getParenthesizedTerminalElement_RightParenthesisKeyword_2ElementType());
             		
-            otherlv_2=(Token)match(input,16,FollowSets000.FOLLOW_16_in_ruleParenthesizedTerminalElement7007); 
+            otherlv_2=(Token)match(input,16,FollowSets000.FOLLOW_16_in_ruleParenthesizedTerminalElement7119); 
 
             			doneLeaf(otherlv_2);
             		
@@ -6749,19 +6846,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleAbstractNegatedToken"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2242:1: entryRuleAbstractNegatedToken : ruleAbstractNegatedToken EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2268:1: entryRuleAbstractNegatedToken : ruleAbstractNegatedToken EOF ;
     public final void entryRuleAbstractNegatedToken() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2242:30: ( ruleAbstractNegatedToken EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2243:2: ruleAbstractNegatedToken EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2268:30: ( ruleAbstractNegatedToken EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2269:2: ruleAbstractNegatedToken EOF
             {
              markComposite(elementTypeProvider.getAbstractNegatedTokenElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleAbstractNegatedToken_in_entryRuleAbstractNegatedToken7027);
+            pushFollow(FollowSets000.FOLLOW_ruleAbstractNegatedToken_in_entryRuleAbstractNegatedToken7139);
             ruleAbstractNegatedToken();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAbstractNegatedToken7030); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleAbstractNegatedToken7142); 
 
             }
 
@@ -6778,36 +6875,36 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleAbstractNegatedToken"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2248:1: ruleAbstractNegatedToken : ( ruleNegatedToken | ruleUntilToken ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2274:1: ruleAbstractNegatedToken : ( ruleNegatedToken | ruleUntilToken ) ;
     public final void ruleAbstractNegatedToken() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2248:25: ( ( ruleNegatedToken | ruleUntilToken ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2249:2: ( ruleNegatedToken | ruleUntilToken )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2274:25: ( ( ruleNegatedToken | ruleUntilToken ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2275:2: ( ruleNegatedToken | ruleUntilToken )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2249:2: ( ruleNegatedToken | ruleUntilToken )
-            int alt63=2;
-            int LA63_0 = input.LA(1);
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2275:2: ( ruleNegatedToken | ruleUntilToken )
+            int alt65=2;
+            int LA65_0 = input.LA(1);
 
-            if ( (LA63_0==38) ) {
-                alt63=1;
+            if ( (LA65_0==38) ) {
+                alt65=1;
             }
-            else if ( (LA63_0==40) ) {
-                alt63=2;
+            else if ( (LA65_0==40) ) {
+                alt65=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 63, 0, input);
+                    new NoViableAltException("", 65, 0, input);
 
                 throw nvae;
             }
-            switch (alt63) {
+            switch (alt65) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2250:3: ruleNegatedToken
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2276:3: ruleNegatedToken
                     {
 
                     			markComposite(elementTypeProvider.getAbstractNegatedToken_NegatedTokenParserRuleCall_0ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleNegatedToken_in_ruleAbstractNegatedToken7047);
+                    pushFollow(FollowSets000.FOLLOW_ruleNegatedToken_in_ruleAbstractNegatedToken7159);
                     ruleNegatedToken();
 
                     state._fsp--;
@@ -6819,12 +6916,12 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2258:3: ruleUntilToken
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2284:3: ruleUntilToken
                     {
 
                     			markComposite(elementTypeProvider.getAbstractNegatedToken_UntilTokenParserRuleCall_1ElementType());
                     		
-                    pushFollow(FollowSets000.FOLLOW_ruleUntilToken_in_ruleAbstractNegatedToken7067);
+                    pushFollow(FollowSets000.FOLLOW_ruleUntilToken_in_ruleAbstractNegatedToken7179);
                     ruleUntilToken();
 
                     state._fsp--;
@@ -6854,19 +6951,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleNegatedToken"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2269:1: entryRuleNegatedToken : ruleNegatedToken EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2295:1: entryRuleNegatedToken : ruleNegatedToken EOF ;
     public final void entryRuleNegatedToken() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2269:22: ( ruleNegatedToken EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2270:2: ruleNegatedToken EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2295:22: ( ruleNegatedToken EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2296:2: ruleNegatedToken EOF
             {
              markComposite(elementTypeProvider.getNegatedTokenElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleNegatedToken_in_entryRuleNegatedToken7087);
+            pushFollow(FollowSets000.FOLLOW_ruleNegatedToken_in_entryRuleNegatedToken7199);
             ruleNegatedToken();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleNegatedToken7090); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleNegatedToken7202); 
 
             }
 
@@ -6883,34 +6980,34 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleNegatedToken"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2275:1: ruleNegatedToken : (otherlv_0= '!' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2301:1: ruleNegatedToken : (otherlv_0= '!' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) ) ;
     public final void ruleNegatedToken() throws RecognitionException {
         Token otherlv_0=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2275:17: ( (otherlv_0= '!' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2276:2: (otherlv_0= '!' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2301:17: ( (otherlv_0= '!' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2302:2: (otherlv_0= '!' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2276:2: (otherlv_0= '!' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2277:3: otherlv_0= '!' ( (lv_terminal_1_0= ruleTerminalTokenElement ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2302:2: (otherlv_0= '!' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2303:3: otherlv_0= '!' ( (lv_terminal_1_0= ruleTerminalTokenElement ) )
             {
 
             			markLeaf(elementTypeProvider.getNegatedToken_ExclamationMarkKeyword_0ElementType());
             		
-            otherlv_0=(Token)match(input,38,FollowSets000.FOLLOW_38_in_ruleNegatedToken7109); 
+            otherlv_0=(Token)match(input,38,FollowSets000.FOLLOW_38_in_ruleNegatedToken7221); 
 
             			doneLeaf(otherlv_0);
             		
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2284:3: ( (lv_terminal_1_0= ruleTerminalTokenElement ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2285:4: (lv_terminal_1_0= ruleTerminalTokenElement )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2310:3: ( (lv_terminal_1_0= ruleTerminalTokenElement ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2311:4: (lv_terminal_1_0= ruleTerminalTokenElement )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2285:4: (lv_terminal_1_0= ruleTerminalTokenElement )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2286:5: lv_terminal_1_0= ruleTerminalTokenElement
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2311:4: (lv_terminal_1_0= ruleTerminalTokenElement )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2312:5: lv_terminal_1_0= ruleTerminalTokenElement
             {
 
             					markComposite(elementTypeProvider.getNegatedToken_TerminalTerminalTokenElementParserRuleCall_1_0ElementType());
             				
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalTokenElement_in_ruleNegatedToken7136);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalTokenElement_in_ruleNegatedToken7248);
             ruleTerminalTokenElement();
 
             state._fsp--;
@@ -6943,19 +7040,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleUntilToken"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2299:1: entryRuleUntilToken : ruleUntilToken EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2325:1: entryRuleUntilToken : ruleUntilToken EOF ;
     public final void entryRuleUntilToken() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2299:20: ( ruleUntilToken EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2300:2: ruleUntilToken EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2325:20: ( ruleUntilToken EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2326:2: ruleUntilToken EOF
             {
              markComposite(elementTypeProvider.getUntilTokenElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleUntilToken_in_entryRuleUntilToken7167);
+            pushFollow(FollowSets000.FOLLOW_ruleUntilToken_in_entryRuleUntilToken7279);
             ruleUntilToken();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleUntilToken7170); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleUntilToken7282); 
 
             }
 
@@ -6972,34 +7069,34 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleUntilToken"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2305:1: ruleUntilToken : (otherlv_0= '->' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2331:1: ruleUntilToken : (otherlv_0= '->' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) ) ;
     public final void ruleUntilToken() throws RecognitionException {
         Token otherlv_0=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2305:15: ( (otherlv_0= '->' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2306:2: (otherlv_0= '->' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2331:15: ( (otherlv_0= '->' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2332:2: (otherlv_0= '->' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2306:2: (otherlv_0= '->' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2307:3: otherlv_0= '->' ( (lv_terminal_1_0= ruleTerminalTokenElement ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2332:2: (otherlv_0= '->' ( (lv_terminal_1_0= ruleTerminalTokenElement ) ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2333:3: otherlv_0= '->' ( (lv_terminal_1_0= ruleTerminalTokenElement ) )
             {
 
             			markLeaf(elementTypeProvider.getUntilToken_HyphenMinusGreaterThanSignKeyword_0ElementType());
             		
-            otherlv_0=(Token)match(input,40,FollowSets000.FOLLOW_40_in_ruleUntilToken7189); 
+            otherlv_0=(Token)match(input,40,FollowSets000.FOLLOW_40_in_ruleUntilToken7301); 
 
             			doneLeaf(otherlv_0);
             		
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2314:3: ( (lv_terminal_1_0= ruleTerminalTokenElement ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2315:4: (lv_terminal_1_0= ruleTerminalTokenElement )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2340:3: ( (lv_terminal_1_0= ruleTerminalTokenElement ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2341:4: (lv_terminal_1_0= ruleTerminalTokenElement )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2315:4: (lv_terminal_1_0= ruleTerminalTokenElement )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2316:5: lv_terminal_1_0= ruleTerminalTokenElement
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2341:4: (lv_terminal_1_0= ruleTerminalTokenElement )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2342:5: lv_terminal_1_0= ruleTerminalTokenElement
             {
 
             					markComposite(elementTypeProvider.getUntilToken_TerminalTerminalTokenElementParserRuleCall_1_0ElementType());
             				
-            pushFollow(FollowSets000.FOLLOW_ruleTerminalTokenElement_in_ruleUntilToken7216);
+            pushFollow(FollowSets000.FOLLOW_ruleTerminalTokenElement_in_ruleUntilToken7328);
             ruleTerminalTokenElement();
 
             state._fsp--;
@@ -7032,19 +7129,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleWildcard"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2329:1: entryRuleWildcard : ruleWildcard EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2355:1: entryRuleWildcard : ruleWildcard EOF ;
     public final void entryRuleWildcard() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2329:18: ( ruleWildcard EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2330:2: ruleWildcard EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2355:18: ( ruleWildcard EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2356:2: ruleWildcard EOF
             {
              markComposite(elementTypeProvider.getWildcardElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleWildcard_in_entryRuleWildcard7247);
+            pushFollow(FollowSets000.FOLLOW_ruleWildcard_in_entryRuleWildcard7359);
             ruleWildcard();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleWildcard7250); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleWildcard7362); 
 
             }
 
@@ -7061,19 +7158,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleWildcard"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2335:1: ruleWildcard : ( () otherlv_1= '.' ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2361:1: ruleWildcard : ( () otherlv_1= '.' ) ;
     public final void ruleWildcard() throws RecognitionException {
         Token otherlv_1=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2335:13: ( ( () otherlv_1= '.' ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2336:2: ( () otherlv_1= '.' )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2361:13: ( ( () otherlv_1= '.' ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2362:2: ( () otherlv_1= '.' )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2336:2: ( () otherlv_1= '.' )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2337:3: () otherlv_1= '.'
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2362:2: ( () otherlv_1= '.' )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2363:3: () otherlv_1= '.'
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2337:3: ()
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2338:4: 
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2363:3: ()
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2364:4: 
             {
 
             				precedeComposite(elementTypeProvider.getWildcard_WildcardAction_0ElementType());
@@ -7085,7 +7182,7 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             			markLeaf(elementTypeProvider.getWildcard_FullStopKeyword_1ElementType());
             		
-            otherlv_1=(Token)match(input,17,FollowSets000.FOLLOW_17_in_ruleWildcard7282); 
+            otherlv_1=(Token)match(input,17,FollowSets000.FOLLOW_17_in_ruleWildcard7394); 
 
             			doneLeaf(otherlv_1);
             		
@@ -7108,19 +7205,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleEOF"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2354:1: entryRuleEOF : ruleEOF EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2380:1: entryRuleEOF : ruleEOF EOF ;
     public final void entryRuleEOF() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2354:13: ( ruleEOF EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2355:2: ruleEOF EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2380:13: ( ruleEOF EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2381:2: ruleEOF EOF
             {
              markComposite(elementTypeProvider.getEOFElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEOF_in_entryRuleEOF7302);
+            pushFollow(FollowSets000.FOLLOW_ruleEOF_in_entryRuleEOF7414);
             ruleEOF();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEOF7305); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEOF7417); 
 
             }
 
@@ -7137,19 +7234,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleEOF"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2360:1: ruleEOF : ( () otherlv_1= 'EOF' ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2386:1: ruleEOF : ( () otherlv_1= 'EOF' ) ;
     public final void ruleEOF() throws RecognitionException {
         Token otherlv_1=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2360:8: ( ( () otherlv_1= 'EOF' ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2361:2: ( () otherlv_1= 'EOF' )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2386:8: ( ( () otherlv_1= 'EOF' ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2387:2: ( () otherlv_1= 'EOF' )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2361:2: ( () otherlv_1= 'EOF' )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2362:3: () otherlv_1= 'EOF'
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2387:2: ( () otherlv_1= 'EOF' )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2388:3: () otherlv_1= 'EOF'
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2362:3: ()
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2363:4: 
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2388:3: ()
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2389:4: 
             {
 
             				precedeComposite(elementTypeProvider.getEOF_EOFAction_0ElementType());
@@ -7161,7 +7258,7 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             			markLeaf(elementTypeProvider.getEOF_EOFKeyword_1ElementType());
             		
-            otherlv_1=(Token)match(input,43,FollowSets000.FOLLOW_43_in_ruleEOF7337); 
+            otherlv_1=(Token)match(input,43,FollowSets000.FOLLOW_43_in_ruleEOF7449); 
 
             			doneLeaf(otherlv_1);
             		
@@ -7184,19 +7281,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleCharacterRange"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2379:1: entryRuleCharacterRange : ruleCharacterRange EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2405:1: entryRuleCharacterRange : ruleCharacterRange EOF ;
     public final void entryRuleCharacterRange() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2379:24: ( ruleCharacterRange EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2380:2: ruleCharacterRange EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2405:24: ( ruleCharacterRange EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2406:2: ruleCharacterRange EOF
             {
              markComposite(elementTypeProvider.getCharacterRangeElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleCharacterRange_in_entryRuleCharacterRange7357);
+            pushFollow(FollowSets000.FOLLOW_ruleCharacterRange_in_entryRuleCharacterRange7469);
             ruleCharacterRange();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleCharacterRange7360); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleCharacterRange7472); 
 
             }
 
@@ -7213,21 +7310,21 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleCharacterRange"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2385:1: ruleCharacterRange : ( ruleKeyword ( () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) ) )? ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2411:1: ruleCharacterRange : ( ruleKeyword ( () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) ) )? ) ;
     public final void ruleCharacterRange() throws RecognitionException {
         Token otherlv_2=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2385:19: ( ( ruleKeyword ( () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) ) )? ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2386:2: ( ruleKeyword ( () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) ) )? )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2411:19: ( ( ruleKeyword ( () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) ) )? ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2412:2: ( ruleKeyword ( () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) ) )? )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2386:2: ( ruleKeyword ( () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) ) )? )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2387:3: ruleKeyword ( () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) ) )?
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2412:2: ( ruleKeyword ( () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) ) )? )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2413:3: ruleKeyword ( () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) ) )?
             {
 
             			markComposite(elementTypeProvider.getCharacterRange_KeywordParserRuleCall_0ElementType());
             		
-            pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_ruleCharacterRange7377);
+            pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_ruleCharacterRange7489);
             ruleKeyword();
 
             state._fsp--;
@@ -7235,19 +7332,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             			doneComposite();
             		
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2394:3: ( () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) ) )?
-            int alt64=2;
-            int LA64_0 = input.LA(1);
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2420:3: ( () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) ) )?
+            int alt66=2;
+            int LA66_0 = input.LA(1);
 
-            if ( (LA64_0==44) ) {
-                alt64=1;
+            if ( (LA66_0==44) ) {
+                alt66=1;
             }
-            switch (alt64) {
+            switch (alt66) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2395:4: () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2421:4: () otherlv_2= '..' ( (lv_right_3_0= ruleKeyword ) )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2395:4: ()
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2396:5: 
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2421:4: ()
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2422:5: 
                     {
 
                     					precedeComposite(elementTypeProvider.getCharacterRange_CharacterRangeLeftAction_1_0ElementType());
@@ -7259,20 +7356,20 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
                     				markLeaf(elementTypeProvider.getCharacterRange_FullStopFullStopKeyword_1_1ElementType());
                     			
-                    otherlv_2=(Token)match(input,44,FollowSets000.FOLLOW_44_in_ruleCharacterRange7413); 
+                    otherlv_2=(Token)match(input,44,FollowSets000.FOLLOW_44_in_ruleCharacterRange7525); 
 
                     				doneLeaf(otherlv_2);
                     			
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2408:4: ( (lv_right_3_0= ruleKeyword ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2409:5: (lv_right_3_0= ruleKeyword )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2434:4: ( (lv_right_3_0= ruleKeyword ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2435:5: (lv_right_3_0= ruleKeyword )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2409:5: (lv_right_3_0= ruleKeyword )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2410:6: lv_right_3_0= ruleKeyword
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2435:5: (lv_right_3_0= ruleKeyword )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2436:6: lv_right_3_0= ruleKeyword
                     {
 
                     						markComposite(elementTypeProvider.getCharacterRange_RightKeywordParserRuleCall_1_2_0ElementType());
                     					
-                    pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_ruleCharacterRange7445);
+                    pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_ruleCharacterRange7557);
                     ruleKeyword();
 
                     state._fsp--;
@@ -7311,19 +7408,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleEnumRule"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2424:1: entryRuleEnumRule : ruleEnumRule EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2450:1: entryRuleEnumRule : ruleEnumRule EOF ;
     public final void entryRuleEnumRule() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2424:18: ( ruleEnumRule EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2425:2: ruleEnumRule EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2450:18: ( ruleEnumRule EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2451:2: ruleEnumRule EOF
             {
              markComposite(elementTypeProvider.getEnumRuleElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEnumRule_in_entryRuleEnumRule7484);
+            pushFollow(FollowSets000.FOLLOW_ruleEnumRule_in_entryRuleEnumRule7596);
             ruleEnumRule();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEnumRule7487); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEnumRule7599); 
 
             }
 
@@ -7340,7 +7437,7 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleEnumRule"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2430:1: ruleEnumRule : (otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= 'returns' ( (lv_type_3_0= ruleTypeRef ) ) )? otherlv_4= ':' ( (lv_alternatives_5_0= ruleEnumLiterals ) ) otherlv_6= ';' ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2456:1: ruleEnumRule : (otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= 'returns' ( (lv_type_3_0= ruleTypeRef ) ) )? otherlv_4= ':' ( (lv_alternatives_5_0= ruleEnumLiterals ) ) otherlv_6= ';' ) ;
     public final void ruleEnumRule() throws RecognitionException {
         Token otherlv_0=null;
         Token lv_name_1_0=null;
@@ -7349,29 +7446,29 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
         Token otherlv_6=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2430:13: ( (otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= 'returns' ( (lv_type_3_0= ruleTypeRef ) ) )? otherlv_4= ':' ( (lv_alternatives_5_0= ruleEnumLiterals ) ) otherlv_6= ';' ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2431:2: (otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= 'returns' ( (lv_type_3_0= ruleTypeRef ) ) )? otherlv_4= ':' ( (lv_alternatives_5_0= ruleEnumLiterals ) ) otherlv_6= ';' )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2456:13: ( (otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= 'returns' ( (lv_type_3_0= ruleTypeRef ) ) )? otherlv_4= ':' ( (lv_alternatives_5_0= ruleEnumLiterals ) ) otherlv_6= ';' ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2457:2: (otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= 'returns' ( (lv_type_3_0= ruleTypeRef ) ) )? otherlv_4= ':' ( (lv_alternatives_5_0= ruleEnumLiterals ) ) otherlv_6= ';' )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2431:2: (otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= 'returns' ( (lv_type_3_0= ruleTypeRef ) ) )? otherlv_4= ':' ( (lv_alternatives_5_0= ruleEnumLiterals ) ) otherlv_6= ';' )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2432:3: otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= 'returns' ( (lv_type_3_0= ruleTypeRef ) ) )? otherlv_4= ':' ( (lv_alternatives_5_0= ruleEnumLiterals ) ) otherlv_6= ';'
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2457:2: (otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= 'returns' ( (lv_type_3_0= ruleTypeRef ) ) )? otherlv_4= ':' ( (lv_alternatives_5_0= ruleEnumLiterals ) ) otherlv_6= ';' )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2458:3: otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= 'returns' ( (lv_type_3_0= ruleTypeRef ) ) )? otherlv_4= ':' ( (lv_alternatives_5_0= ruleEnumLiterals ) ) otherlv_6= ';'
             {
 
             			markLeaf(elementTypeProvider.getEnumRule_EnumKeyword_0ElementType());
             		
-            otherlv_0=(Token)match(input,45,FollowSets000.FOLLOW_45_in_ruleEnumRule7506); 
+            otherlv_0=(Token)match(input,45,FollowSets000.FOLLOW_45_in_ruleEnumRule7618); 
 
             			doneLeaf(otherlv_0);
             		
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2439:3: ( (lv_name_1_0= RULE_ID ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2440:4: (lv_name_1_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2465:3: ( (lv_name_1_0= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2466:4: (lv_name_1_0= RULE_ID )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2440:4: (lv_name_1_0= RULE_ID )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2441:5: lv_name_1_0= RULE_ID
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2466:4: (lv_name_1_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2467:5: lv_name_1_0= RULE_ID
             {
 
             					markLeaf(elementTypeProvider.getEnumRule_NameIDTerminalRuleCall_1_0ElementType());
             				
-            lv_name_1_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleEnumRule7533); 
+            lv_name_1_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleEnumRule7645); 
 
             					doneLeaf(lv_name_1_0);
             				
@@ -7381,34 +7478,34 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             }
 
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2450:3: (otherlv_2= 'returns' ( (lv_type_3_0= ruleTypeRef ) ) )?
-            int alt65=2;
-            int LA65_0 = input.LA(1);
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2476:3: (otherlv_2= 'returns' ( (lv_type_3_0= ruleTypeRef ) ) )?
+            int alt67=2;
+            int LA67_0 = input.LA(1);
 
-            if ( (LA65_0==23) ) {
-                alt65=1;
+            if ( (LA67_0==23) ) {
+                alt67=1;
             }
-            switch (alt65) {
+            switch (alt67) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2451:4: otherlv_2= 'returns' ( (lv_type_3_0= ruleTypeRef ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2477:4: otherlv_2= 'returns' ( (lv_type_3_0= ruleTypeRef ) )
                     {
 
                     				markLeaf(elementTypeProvider.getEnumRule_ReturnsKeyword_2_0ElementType());
                     			
-                    otherlv_2=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleEnumRule7564); 
+                    otherlv_2=(Token)match(input,23,FollowSets000.FOLLOW_23_in_ruleEnumRule7676); 
 
                     				doneLeaf(otherlv_2);
                     			
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2458:4: ( (lv_type_3_0= ruleTypeRef ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2459:5: (lv_type_3_0= ruleTypeRef )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2484:4: ( (lv_type_3_0= ruleTypeRef ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2485:5: (lv_type_3_0= ruleTypeRef )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2459:5: (lv_type_3_0= ruleTypeRef )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2460:6: lv_type_3_0= ruleTypeRef
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2485:5: (lv_type_3_0= ruleTypeRef )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2486:6: lv_type_3_0= ruleTypeRef
                     {
 
                     						markComposite(elementTypeProvider.getEnumRule_TypeTypeRefParserRuleCall_2_1_0ElementType());
                     					
-                    pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_ruleEnumRule7596);
+                    pushFollow(FollowSets000.FOLLOW_ruleTypeRef_in_ruleEnumRule7708);
                     ruleTypeRef();
 
                     state._fsp--;
@@ -7431,20 +7528,20 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             			markLeaf(elementTypeProvider.getEnumRule_ColonKeyword_3ElementType());
             		
-            otherlv_4=(Token)match(input,24,FollowSets000.FOLLOW_24_in_ruleEnumRule7629); 
+            otherlv_4=(Token)match(input,24,FollowSets000.FOLLOW_24_in_ruleEnumRule7741); 
 
             			doneLeaf(otherlv_4);
             		
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2477:3: ( (lv_alternatives_5_0= ruleEnumLiterals ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2478:4: (lv_alternatives_5_0= ruleEnumLiterals )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2503:3: ( (lv_alternatives_5_0= ruleEnumLiterals ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2504:4: (lv_alternatives_5_0= ruleEnumLiterals )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2478:4: (lv_alternatives_5_0= ruleEnumLiterals )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2479:5: lv_alternatives_5_0= ruleEnumLiterals
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2504:4: (lv_alternatives_5_0= ruleEnumLiterals )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2505:5: lv_alternatives_5_0= ruleEnumLiterals
             {
 
             					markComposite(elementTypeProvider.getEnumRule_AlternativesEnumLiteralsParserRuleCall_4_0ElementType());
             				
-            pushFollow(FollowSets000.FOLLOW_ruleEnumLiterals_in_ruleEnumRule7656);
+            pushFollow(FollowSets000.FOLLOW_ruleEnumLiterals_in_ruleEnumRule7768);
             ruleEnumLiterals();
 
             state._fsp--;
@@ -7461,7 +7558,7 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             			markLeaf(elementTypeProvider.getEnumRule_SemicolonKeyword_5ElementType());
             		
-            otherlv_6=(Token)match(input,25,FollowSets000.FOLLOW_25_in_ruleEnumRule7681); 
+            otherlv_6=(Token)match(input,25,FollowSets000.FOLLOW_25_in_ruleEnumRule7793); 
 
             			doneLeaf(otherlv_6);
             		
@@ -7484,19 +7581,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleEnumLiterals"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2499:1: entryRuleEnumLiterals : ruleEnumLiterals EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2525:1: entryRuleEnumLiterals : ruleEnumLiterals EOF ;
     public final void entryRuleEnumLiterals() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2499:22: ( ruleEnumLiterals EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2500:2: ruleEnumLiterals EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2525:22: ( ruleEnumLiterals EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2526:2: ruleEnumLiterals EOF
             {
              markComposite(elementTypeProvider.getEnumLiteralsElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEnumLiterals_in_entryRuleEnumLiterals7701);
+            pushFollow(FollowSets000.FOLLOW_ruleEnumLiterals_in_entryRuleEnumLiterals7813);
             ruleEnumLiterals();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEnumLiterals7704); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEnumLiterals7816); 
 
             }
 
@@ -7513,21 +7610,21 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleEnumLiterals"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2505:1: ruleEnumLiterals : ( ruleEnumLiteralDeclaration ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+ )? ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2531:1: ruleEnumLiterals : ( ruleEnumLiteralDeclaration ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+ )? ) ;
     public final void ruleEnumLiterals() throws RecognitionException {
         Token otherlv_2=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2505:17: ( ( ruleEnumLiteralDeclaration ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+ )? ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2506:2: ( ruleEnumLiteralDeclaration ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+ )? )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2531:17: ( ( ruleEnumLiteralDeclaration ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+ )? ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2532:2: ( ruleEnumLiteralDeclaration ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+ )? )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2506:2: ( ruleEnumLiteralDeclaration ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+ )? )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2507:3: ruleEnumLiteralDeclaration ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+ )?
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2532:2: ( ruleEnumLiteralDeclaration ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+ )? )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2533:3: ruleEnumLiteralDeclaration ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+ )?
             {
 
             			markComposite(elementTypeProvider.getEnumLiterals_EnumLiteralDeclarationParserRuleCall_0ElementType());
             		
-            pushFollow(FollowSets000.FOLLOW_ruleEnumLiteralDeclaration_in_ruleEnumLiterals7721);
+            pushFollow(FollowSets000.FOLLOW_ruleEnumLiteralDeclaration_in_ruleEnumLiterals7833);
             ruleEnumLiteralDeclaration();
 
             state._fsp--;
@@ -7535,19 +7632,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             			doneComposite();
             		
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2514:3: ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+ )?
-            int alt67=2;
-            int LA67_0 = input.LA(1);
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2540:3: ( () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+ )?
+            int alt69=2;
+            int LA69_0 = input.LA(1);
 
-            if ( (LA67_0==29) ) {
-                alt67=1;
+            if ( (LA69_0==29) ) {
+                alt69=1;
             }
-            switch (alt67) {
+            switch (alt69) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2515:4: () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2541:4: () (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2515:4: ()
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2516:5: 
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2541:4: ()
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2542:5: 
                     {
 
                     					precedeComposite(elementTypeProvider.getEnumLiterals_AlternativesElementsAction_1_0ElementType());
@@ -7556,39 +7653,39 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
                     }
 
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2521:4: (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+
-                    int cnt66=0;
-                    loop66:
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2547:4: (otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) ) )+
+                    int cnt68=0;
+                    loop68:
                     do {
-                        int alt66=2;
-                        int LA66_0 = input.LA(1);
+                        int alt68=2;
+                        int LA68_0 = input.LA(1);
 
-                        if ( (LA66_0==29) ) {
-                            alt66=1;
+                        if ( (LA68_0==29) ) {
+                            alt68=1;
                         }
 
 
-                        switch (alt66) {
+                        switch (alt68) {
                     	case 1 :
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2522:5: otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) )
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2548:5: otherlv_2= '|' ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) )
                     	    {
 
                     	    					markLeaf(elementTypeProvider.getEnumLiterals_VerticalLineKeyword_1_1_0ElementType());
                     	    				
-                    	    otherlv_2=(Token)match(input,29,FollowSets000.FOLLOW_29_in_ruleEnumLiterals7764); 
+                    	    otherlv_2=(Token)match(input,29,FollowSets000.FOLLOW_29_in_ruleEnumLiterals7876); 
 
                     	    					doneLeaf(otherlv_2);
                     	    				
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2529:5: ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) )
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2530:6: (lv_elements_3_0= ruleEnumLiteralDeclaration )
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2555:5: ( (lv_elements_3_0= ruleEnumLiteralDeclaration ) )
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2556:6: (lv_elements_3_0= ruleEnumLiteralDeclaration )
                     	    {
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2530:6: (lv_elements_3_0= ruleEnumLiteralDeclaration )
-                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2531:7: lv_elements_3_0= ruleEnumLiteralDeclaration
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2556:6: (lv_elements_3_0= ruleEnumLiteralDeclaration )
+                    	    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2557:7: lv_elements_3_0= ruleEnumLiteralDeclaration
                     	    {
 
                     	    							markComposite(elementTypeProvider.getEnumLiterals_ElementsEnumLiteralDeclarationParserRuleCall_1_1_1_0ElementType());
                     	    						
-                    	    pushFollow(FollowSets000.FOLLOW_ruleEnumLiteralDeclaration_in_ruleEnumLiterals7801);
+                    	    pushFollow(FollowSets000.FOLLOW_ruleEnumLiteralDeclaration_in_ruleEnumLiterals7913);
                     	    ruleEnumLiteralDeclaration();
 
                     	    state._fsp--;
@@ -7607,12 +7704,12 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
                     	    break;
 
                     	default :
-                    	    if ( cnt66 >= 1 ) break loop66;
+                    	    if ( cnt68 >= 1 ) break loop68;
                                 EarlyExitException eee =
-                                    new EarlyExitException(66, input);
+                                    new EarlyExitException(68, input);
                                 throw eee;
                         }
-                        cnt66++;
+                        cnt68++;
                     } while (true);
 
 
@@ -7640,19 +7737,19 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "entryRuleEnumLiteralDeclaration"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2546:1: entryRuleEnumLiteralDeclaration : ruleEnumLiteralDeclaration EOF ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2572:1: entryRuleEnumLiteralDeclaration : ruleEnumLiteralDeclaration EOF ;
     public final void entryRuleEnumLiteralDeclaration() throws RecognitionException {
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2546:32: ( ruleEnumLiteralDeclaration EOF )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2547:2: ruleEnumLiteralDeclaration EOF
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2572:32: ( ruleEnumLiteralDeclaration EOF )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2573:2: ruleEnumLiteralDeclaration EOF
             {
              markComposite(elementTypeProvider.getEnumLiteralDeclarationElementType()); 
-            pushFollow(FollowSets000.FOLLOW_ruleEnumLiteralDeclaration_in_entryRuleEnumLiteralDeclaration7849);
+            pushFollow(FollowSets000.FOLLOW_ruleEnumLiteralDeclaration_in_entryRuleEnumLiteralDeclaration7961);
             ruleEnumLiteralDeclaration();
 
             state._fsp--;
 
-            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEnumLiteralDeclaration7852); 
+            match(input,EOF,FollowSets000.FOLLOW_EOF_in_entryRuleEnumLiteralDeclaration7964); 
 
             }
 
@@ -7669,28 +7766,28 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
 
     // $ANTLR start "ruleEnumLiteralDeclaration"
-    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2552:1: ruleEnumLiteralDeclaration : ( ( (otherlv_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) ) )? ) ;
+    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2578:1: ruleEnumLiteralDeclaration : ( ( (otherlv_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) ) )? ) ;
     public final void ruleEnumLiteralDeclaration() throws RecognitionException {
         Token otherlv_0=null;
         Token otherlv_1=null;
 
         try {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2552:27: ( ( ( (otherlv_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) ) )? ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2553:2: ( ( (otherlv_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) ) )? )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2578:27: ( ( ( (otherlv_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) ) )? ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2579:2: ( ( (otherlv_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) ) )? )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2553:2: ( ( (otherlv_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) ) )? )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2554:3: ( (otherlv_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) ) )?
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2579:2: ( ( (otherlv_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) ) )? )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2580:3: ( (otherlv_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) ) )?
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2554:3: ( (otherlv_0= RULE_ID ) )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2555:4: (otherlv_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2580:3: ( (otherlv_0= RULE_ID ) )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2581:4: (otherlv_0= RULE_ID )
             {
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2555:4: (otherlv_0= RULE_ID )
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2556:5: otherlv_0= RULE_ID
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2581:4: (otherlv_0= RULE_ID )
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2582:5: otherlv_0= RULE_ID
             {
 
             					markLeaf(elementTypeProvider.getEnumLiteralDeclaration_EnumLiteralEEnumLiteralCrossReference_0_0ElementType());
             				
-            otherlv_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleEnumLiteralDeclaration7884); 
+            otherlv_0=(Token)match(input,RULE_ID,FollowSets000.FOLLOW_RULE_ID_in_ruleEnumLiteralDeclaration7996); 
 
             					doneLeaf(otherlv_0);
             				
@@ -7700,34 +7797,34 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
 
             }
 
-            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2565:3: (otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) ) )?
-            int alt68=2;
-            int LA68_0 = input.LA(1);
+            // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2591:3: (otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) ) )?
+            int alt70=2;
+            int LA70_0 = input.LA(1);
 
-            if ( (LA68_0==34) ) {
-                alt68=1;
+            if ( (LA70_0==34) ) {
+                alt70=1;
             }
-            switch (alt68) {
+            switch (alt70) {
                 case 1 :
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2566:4: otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2592:4: otherlv_1= '=' ( (lv_literal_2_0= ruleKeyword ) )
                     {
 
                     				markLeaf(elementTypeProvider.getEnumLiteralDeclaration_EqualsSignKeyword_1_0ElementType());
                     			
-                    otherlv_1=(Token)match(input,34,FollowSets000.FOLLOW_34_in_ruleEnumLiteralDeclaration7915); 
+                    otherlv_1=(Token)match(input,34,FollowSets000.FOLLOW_34_in_ruleEnumLiteralDeclaration8027); 
 
                     				doneLeaf(otherlv_1);
                     			
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2573:4: ( (lv_literal_2_0= ruleKeyword ) )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2574:5: (lv_literal_2_0= ruleKeyword )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2599:4: ( (lv_literal_2_0= ruleKeyword ) )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2600:5: (lv_literal_2_0= ruleKeyword )
                     {
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2574:5: (lv_literal_2_0= ruleKeyword )
-                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2575:6: lv_literal_2_0= ruleKeyword
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2600:5: (lv_literal_2_0= ruleKeyword )
+                    // ../../intellij/org.eclipse.xtext.xtext.idea/src-gen/org/eclipse/xtext/idea/parser/antlr/internal/PsiInternalXtext.g:2601:6: lv_literal_2_0= ruleKeyword
                     {
 
                     						markComposite(elementTypeProvider.getEnumLiteralDeclaration_LiteralKeywordParserRuleCall_1_1_0ElementType());
                     					
-                    pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_ruleEnumLiteralDeclaration7947);
+                    pushFollow(FollowSets000.FOLLOW_ruleKeyword_in_ruleEnumLiteralDeclaration8059);
                     ruleKeyword();
 
                     state._fsp--;
@@ -7856,220 +7953,222 @@ public class PsiInternalXtextParser extends AbstractPsiAntlrParser {
         public static final BitSet FOLLOW_EOF_in_entryRuleConditionalBranch2516 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_ruleUnorderedGroup_in_ruleConditionalBranch2533 = new BitSet(new long[]{0x0000000000000002L});
         public static final BitSet FOLLOW_26_in_ruleConditionalBranch2577 = new BitSet(new long[]{0x0000004100000000L});
-        public static final BitSet FOLLOW_ruleInverseLiteralValue_in_ruleConditionalBranch2609 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleConditionalBranch2654 = new BitSet(new long[]{0x0000000008000000L});
-        public static final BitSet FOLLOW_27_in_ruleConditionalBranch2684 = new BitSet(new long[]{0x0000018200008030L});
-        public static final BitSet FOLLOW_ruleUnorderedGroup_in_ruleConditionalBranch2716 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleUnorderedGroup_in_entryRuleUnorderedGroup2754 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleUnorderedGroup2757 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleGroup_in_ruleUnorderedGroup2774 = new BitSet(new long[]{0x0000000040000002L});
-        public static final BitSet FOLLOW_30_in_ruleUnorderedGroup2817 = new BitSet(new long[]{0x0000018200008030L});
-        public static final BitSet FOLLOW_ruleGroup_in_ruleUnorderedGroup2854 = new BitSet(new long[]{0x0000000040000002L});
-        public static final BitSet FOLLOW_ruleGroup_in_entryRuleGroup2902 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleGroup2905 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAbstractToken_in_ruleGroup2922 = new BitSet(new long[]{0x0000018200008032L});
-        public static final BitSet FOLLOW_ruleAbstractToken_in_ruleGroup2973 = new BitSet(new long[]{0x0000018200008032L});
-        public static final BitSet FOLLOW_ruleAbstractToken_in_entryRuleAbstractToken3013 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleAbstractToken3016 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAbstractTokenWithCardinality_in_ruleAbstractToken3033 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAction_in_ruleAbstractToken3053 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAbstractTokenWithCardinality_in_entryRuleAbstractTokenWithCardinality3073 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleAbstractTokenWithCardinality3076 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAssignment_in_ruleAbstractTokenWithCardinality3099 = new BitSet(new long[]{0x0000000180400002L});
-        public static final BitSet FOLLOW_ruleAbstractTerminal_in_ruleAbstractTokenWithCardinality3123 = new BitSet(new long[]{0x0000000180400002L});
-        public static final BitSet FOLLOW_31_in_ruleAbstractTokenWithCardinality3163 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_22_in_ruleAbstractTokenWithCardinality3197 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_32_in_ruleAbstractTokenWithCardinality3231 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAction_in_entryRuleAction3270 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleAction3273 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_33_in_ruleAction3292 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_ruleTypeRef_in_ruleAction3319 = new BitSet(new long[]{0x0000002000020000L});
-        public static final BitSet FOLLOW_17_in_ruleAction3350 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleAction3382 = new BitSet(new long[]{0x0000000C00000000L});
-        public static final BitSet FOLLOW_34_in_ruleAction3436 = new BitSet(new long[]{0x0000001000000000L});
-        public static final BitSet FOLLOW_35_in_ruleAction3474 = new BitSet(new long[]{0x0000001000000000L});
-        public static final BitSet FOLLOW_36_in_ruleAction3512 = new BitSet(new long[]{0x0000002000000000L});
-        public static final BitSet FOLLOW_37_in_ruleAction3532 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAbstractTerminal_in_entryRuleAbstractTerminal3552 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleAbstractTerminal3555 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleKeyword_in_ruleAbstractTerminal3572 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleRuleCall_in_ruleAbstractTerminal3592 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleParenthesizedElement_in_ruleAbstractTerminal3612 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rulePredicatedKeyword_in_ruleAbstractTerminal3632 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rulePredicatedRuleCall_in_ruleAbstractTerminal3652 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rulePredicatedGroup_in_ruleAbstractTerminal3672 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleKeyword_in_entryRuleKeyword3692 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleKeyword3695 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_STRING_in_ruleKeyword3720 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleRuleCall_in_entryRuleRuleCall3745 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleRuleCall3748 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleRuleID_in_ruleRuleCall3778 = new BitSet(new long[]{0x0000000004000002L});
-        public static final BitSet FOLLOW_26_in_ruleRuleCall3809 = new BitSet(new long[]{0x0000004100000010L});
-        public static final BitSet FOLLOW_ruleNamedArgument_in_ruleRuleCall3841 = new BitSet(new long[]{0x0000000008002000L});
-        public static final BitSet FOLLOW_13_in_ruleRuleCall3878 = new BitSet(new long[]{0x0000004100000010L});
-        public static final BitSet FOLLOW_ruleNamedArgument_in_ruleRuleCall3915 = new BitSet(new long[]{0x0000000008002000L});
-        public static final BitSet FOLLOW_27_in_ruleRuleCall3954 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleLiteralValue_in_entryRuleLiteralValue3980 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleLiteralValue3983 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_38_in_ruleLiteralValue4002 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_32_in_ruleLiteralValue4024 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleInverseLiteralValue_in_entryRuleInverseLiteralValue4044 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleInverseLiteralValue4047 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleLiteralValue_in_ruleInverseLiteralValue4059 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleNamedArgument_in_entryRuleNamedArgument4075 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleNamedArgument4078 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleLiteralValue_in_ruleNamedArgument4118 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleNamedArgument4163 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleNamedArgument4224 = new BitSet(new long[]{0x0000000400000002L});
-        public static final BitSet FOLLOW_34_in_ruleNamedArgument4278 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleNamedArgument4330 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTerminalRuleCall_in_entryRuleTerminalRuleCall4377 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleTerminalRuleCall4380 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleRuleID_in_ruleTerminalRuleCall4403 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleRuleID_in_entryRuleRuleID4428 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleRuleID4431 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleRuleID4450 = new BitSet(new long[]{0x0000000010000002L});
-        public static final BitSet FOLLOW_28_in_ruleRuleID4470 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleRuleID4487 = new BitSet(new long[]{0x0000000010000002L});
-        public static final BitSet FOLLOW_rulePredicatedKeyword_in_entryRulePredicatedKeyword4513 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRulePredicatedKeyword4516 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_39_in_rulePredicatedKeyword4556 = new BitSet(new long[]{0x0000000000000020L});
-        public static final BitSet FOLLOW_40_in_rulePredicatedKeyword4610 = new BitSet(new long[]{0x0000000000000020L});
-        public static final BitSet FOLLOW_RULE_STRING_in_rulePredicatedKeyword4655 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rulePredicatedRuleCall_in_entryRulePredicatedRuleCall4686 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRulePredicatedRuleCall4689 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_39_in_rulePredicatedRuleCall4729 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_40_in_rulePredicatedRuleCall4783 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_rulePredicatedRuleCall4828 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAssignment_in_entryRuleAssignment4859 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleAssignment4862 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_39_in_ruleAssignment4902 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_40_in_ruleAssignment4956 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleAssignment5002 = new BitSet(new long[]{0x0000020C00000000L});
-        public static final BitSet FOLLOW_35_in_ruleAssignment5048 = new BitSet(new long[]{0x0000000004008030L});
-        public static final BitSet FOLLOW_34_in_ruleAssignment5082 = new BitSet(new long[]{0x0000000004008030L});
-        public static final BitSet FOLLOW_41_in_ruleAssignment5116 = new BitSet(new long[]{0x0000000004008030L});
-        public static final BitSet FOLLOW_ruleAssignableTerminal_in_ruleAssignment5161 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAssignableTerminal_in_entryRuleAssignableTerminal5192 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleAssignableTerminal5195 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleKeyword_in_ruleAssignableTerminal5212 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleRuleCall_in_ruleAssignableTerminal5232 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleParenthesizedAssignableElement_in_ruleAssignableTerminal5252 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleCrossReference_in_ruleAssignableTerminal5272 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleParenthesizedAssignableElement_in_entryRuleParenthesizedAssignableElement5292 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleParenthesizedAssignableElement5295 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_15_in_ruleParenthesizedAssignableElement5314 = new BitSet(new long[]{0x0000000004008030L});
-        public static final BitSet FOLLOW_ruleAssignableAlternatives_in_ruleParenthesizedAssignableElement5326 = new BitSet(new long[]{0x0000000000010000L});
-        public static final BitSet FOLLOW_16_in_ruleParenthesizedAssignableElement5340 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAssignableAlternatives_in_entryRuleAssignableAlternatives5360 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleAssignableAlternatives5363 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAssignableTerminal_in_ruleAssignableAlternatives5380 = new BitSet(new long[]{0x0000000020000002L});
-        public static final BitSet FOLLOW_29_in_ruleAssignableAlternatives5423 = new BitSet(new long[]{0x0000000004008030L});
-        public static final BitSet FOLLOW_ruleAssignableTerminal_in_ruleAssignableAlternatives5460 = new BitSet(new long[]{0x0000000020000002L});
-        public static final BitSet FOLLOW_ruleCrossReference_in_entryRuleCrossReference5508 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleCrossReference5511 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_26_in_ruleCrossReference5530 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_ruleTypeRef_in_ruleCrossReference5557 = new BitSet(new long[]{0x0000000028000000L});
-        public static final BitSet FOLLOW_29_in_ruleCrossReference5588 = new BitSet(new long[]{0x0000000000000030L});
-        public static final BitSet FOLLOW_ruleCrossReferenceableTerminal_in_ruleCrossReference5620 = new BitSet(new long[]{0x0000000008000000L});
-        public static final BitSet FOLLOW_27_in_ruleCrossReference5653 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleCrossReferenceableTerminal_in_entryRuleCrossReferenceableTerminal5673 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleCrossReferenceableTerminal5676 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleKeyword_in_ruleCrossReferenceableTerminal5693 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleRuleCall_in_ruleCrossReferenceableTerminal5713 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleParenthesizedElement_in_entryRuleParenthesizedElement5733 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleParenthesizedElement5736 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_15_in_ruleParenthesizedElement5755 = new BitSet(new long[]{0x0000018204008030L});
-        public static final BitSet FOLLOW_ruleAlternatives_in_ruleParenthesizedElement5767 = new BitSet(new long[]{0x0000000000010000L});
-        public static final BitSet FOLLOW_16_in_ruleParenthesizedElement5781 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_rulePredicatedGroup_in_entryRulePredicatedGroup5801 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRulePredicatedGroup5804 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_39_in_rulePredicatedGroup5844 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_40_in_rulePredicatedGroup5898 = new BitSet(new long[]{0x0000000000008000L});
-        public static final BitSet FOLLOW_15_in_rulePredicatedGroup5930 = new BitSet(new long[]{0x0000018204008030L});
-        public static final BitSet FOLLOW_ruleAlternatives_in_rulePredicatedGroup5957 = new BitSet(new long[]{0x0000000000010000L});
-        public static final BitSet FOLLOW_16_in_rulePredicatedGroup5982 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTerminalRule_in_entryRuleTerminalRule6002 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleTerminalRule6005 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_42_in_ruleTerminalRule6024 = new BitSet(new long[]{0x0000000000200010L});
-        public static final BitSet FOLLOW_21_in_ruleTerminalRule6068 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleTerminalRule6120 = new BitSet(new long[]{0x0000000001000000L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleTerminalRule6191 = new BitSet(new long[]{0x0000000001800000L});
-        public static final BitSet FOLLOW_23_in_ruleTerminalRule6234 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_ruleTypeRef_in_ruleTerminalRule6276 = new BitSet(new long[]{0x0000000001000000L});
-        public static final BitSet FOLLOW_24_in_ruleTerminalRule6326 = new BitSet(new long[]{0x0000094000028030L});
-        public static final BitSet FOLLOW_ruleTerminalAlternatives_in_ruleTerminalRule6353 = new BitSet(new long[]{0x0000000002000000L});
-        public static final BitSet FOLLOW_25_in_ruleTerminalRule6378 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTerminalAlternatives_in_entryRuleTerminalAlternatives6398 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleTerminalAlternatives6401 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTerminalGroup_in_ruleTerminalAlternatives6418 = new BitSet(new long[]{0x0000000020000002L});
-        public static final BitSet FOLLOW_29_in_ruleTerminalAlternatives6461 = new BitSet(new long[]{0x0000094000028030L});
-        public static final BitSet FOLLOW_ruleTerminalGroup_in_ruleTerminalAlternatives6498 = new BitSet(new long[]{0x0000000020000002L});
-        public static final BitSet FOLLOW_ruleTerminalGroup_in_entryRuleTerminalGroup6546 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleTerminalGroup6549 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTerminalToken_in_ruleTerminalGroup6566 = new BitSet(new long[]{0x0000094000028032L});
-        public static final BitSet FOLLOW_ruleTerminalToken_in_ruleTerminalGroup6617 = new BitSet(new long[]{0x0000094000028032L});
-        public static final BitSet FOLLOW_ruleTerminalToken_in_entryRuleTerminalToken6657 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleTerminalToken6660 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTerminalTokenElement_in_ruleTerminalToken6677 = new BitSet(new long[]{0x0000000180400002L});
-        public static final BitSet FOLLOW_31_in_ruleTerminalToken6712 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_22_in_ruleTerminalToken6746 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_32_in_ruleTerminalToken6780 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTerminalTokenElement_in_entryRuleTerminalTokenElement6819 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleTerminalTokenElement6822 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleCharacterRange_in_ruleTerminalTokenElement6839 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleTerminalRuleCall_in_ruleTerminalTokenElement6859 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleParenthesizedTerminalElement_in_ruleTerminalTokenElement6879 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAbstractNegatedToken_in_ruleTerminalTokenElement6899 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleWildcard_in_ruleTerminalTokenElement6919 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEOF_in_ruleTerminalTokenElement6939 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleParenthesizedTerminalElement_in_entryRuleParenthesizedTerminalElement6959 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleParenthesizedTerminalElement6962 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_15_in_ruleParenthesizedTerminalElement6981 = new BitSet(new long[]{0x0000094000028030L});
-        public static final BitSet FOLLOW_ruleTerminalAlternatives_in_ruleParenthesizedTerminalElement6993 = new BitSet(new long[]{0x0000000000010000L});
-        public static final BitSet FOLLOW_16_in_ruleParenthesizedTerminalElement7007 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleAbstractNegatedToken_in_entryRuleAbstractNegatedToken7027 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleAbstractNegatedToken7030 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleNegatedToken_in_ruleAbstractNegatedToken7047 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleUntilToken_in_ruleAbstractNegatedToken7067 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleNegatedToken_in_entryRuleNegatedToken7087 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleNegatedToken7090 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_38_in_ruleNegatedToken7109 = new BitSet(new long[]{0x0000094000028030L});
-        public static final BitSet FOLLOW_ruleTerminalTokenElement_in_ruleNegatedToken7136 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleUntilToken_in_entryRuleUntilToken7167 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleUntilToken7170 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_40_in_ruleUntilToken7189 = new BitSet(new long[]{0x0000094000028030L});
-        public static final BitSet FOLLOW_ruleTerminalTokenElement_in_ruleUntilToken7216 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleWildcard_in_entryRuleWildcard7247 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleWildcard7250 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_17_in_ruleWildcard7282 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEOF_in_entryRuleEOF7302 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleEOF7305 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_43_in_ruleEOF7337 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleCharacterRange_in_entryRuleCharacterRange7357 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleCharacterRange7360 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleKeyword_in_ruleCharacterRange7377 = new BitSet(new long[]{0x0000100000000002L});
-        public static final BitSet FOLLOW_44_in_ruleCharacterRange7413 = new BitSet(new long[]{0x0000000000000020L});
-        public static final BitSet FOLLOW_ruleKeyword_in_ruleCharacterRange7445 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEnumRule_in_entryRuleEnumRule7484 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleEnumRule7487 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_45_in_ruleEnumRule7506 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleEnumRule7533 = new BitSet(new long[]{0x0000000001800000L});
-        public static final BitSet FOLLOW_23_in_ruleEnumRule7564 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_ruleTypeRef_in_ruleEnumRule7596 = new BitSet(new long[]{0x0000000001000000L});
-        public static final BitSet FOLLOW_24_in_ruleEnumRule7629 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_ruleEnumLiterals_in_ruleEnumRule7656 = new BitSet(new long[]{0x0000000002000000L});
-        public static final BitSet FOLLOW_25_in_ruleEnumRule7681 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEnumLiterals_in_entryRuleEnumLiterals7701 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleEnumLiterals7704 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_ruleEnumLiteralDeclaration_in_ruleEnumLiterals7721 = new BitSet(new long[]{0x0000000020000002L});
-        public static final BitSet FOLLOW_29_in_ruleEnumLiterals7764 = new BitSet(new long[]{0x0000000000000010L});
-        public static final BitSet FOLLOW_ruleEnumLiteralDeclaration_in_ruleEnumLiterals7801 = new BitSet(new long[]{0x0000000020000002L});
-        public static final BitSet FOLLOW_ruleEnumLiteralDeclaration_in_entryRuleEnumLiteralDeclaration7849 = new BitSet(new long[]{0x0000000000000000L});
-        public static final BitSet FOLLOW_EOF_in_entryRuleEnumLiteralDeclaration7852 = new BitSet(new long[]{0x0000000000000002L});
-        public static final BitSet FOLLOW_RULE_ID_in_ruleEnumLiteralDeclaration7884 = new BitSet(new long[]{0x0000000400000002L});
-        public static final BitSet FOLLOW_34_in_ruleEnumLiteralDeclaration7915 = new BitSet(new long[]{0x0000000000000020L});
-        public static final BitSet FOLLOW_ruleKeyword_in_ruleEnumLiteralDeclaration7947 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleGuardCondition_in_ruleConditionalBranch2609 = new BitSet(new long[]{0x0000000008002000L});
+        public static final BitSet FOLLOW_13_in_ruleConditionalBranch2646 = new BitSet(new long[]{0x0000004100000000L});
+        public static final BitSet FOLLOW_ruleGuardCondition_in_ruleConditionalBranch2683 = new BitSet(new long[]{0x0000000008002000L});
+        public static final BitSet FOLLOW_27_in_ruleConditionalBranch2722 = new BitSet(new long[]{0x0000018200008030L});
+        public static final BitSet FOLLOW_ruleAbstractToken_in_ruleConditionalBranch2754 = new BitSet(new long[]{0x0000018200008032L});
+        public static final BitSet FOLLOW_ruleGuardCondition_in_entryRuleGuardCondition2793 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleGuardCondition2796 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleLiteralValue_in_ruleGuardCondition2828 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleGuardCondition2866 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleUnorderedGroup_in_entryRuleUnorderedGroup2897 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleUnorderedGroup2900 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleGroup_in_ruleUnorderedGroup2917 = new BitSet(new long[]{0x0000000040000002L});
+        public static final BitSet FOLLOW_30_in_ruleUnorderedGroup2960 = new BitSet(new long[]{0x0000018200008030L});
+        public static final BitSet FOLLOW_ruleGroup_in_ruleUnorderedGroup2997 = new BitSet(new long[]{0x0000000040000002L});
+        public static final BitSet FOLLOW_ruleGroup_in_entryRuleGroup3045 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleGroup3048 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAbstractToken_in_ruleGroup3065 = new BitSet(new long[]{0x0000018200008032L});
+        public static final BitSet FOLLOW_ruleAbstractToken_in_ruleGroup3116 = new BitSet(new long[]{0x0000018200008032L});
+        public static final BitSet FOLLOW_ruleAbstractToken_in_entryRuleAbstractToken3156 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleAbstractToken3159 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAbstractTokenWithCardinality_in_ruleAbstractToken3176 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAction_in_ruleAbstractToken3196 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAbstractTokenWithCardinality_in_entryRuleAbstractTokenWithCardinality3216 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleAbstractTokenWithCardinality3219 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAssignment_in_ruleAbstractTokenWithCardinality3242 = new BitSet(new long[]{0x0000000180400002L});
+        public static final BitSet FOLLOW_ruleAbstractTerminal_in_ruleAbstractTokenWithCardinality3266 = new BitSet(new long[]{0x0000000180400002L});
+        public static final BitSet FOLLOW_31_in_ruleAbstractTokenWithCardinality3306 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_22_in_ruleAbstractTokenWithCardinality3340 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_32_in_ruleAbstractTokenWithCardinality3374 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAction_in_entryRuleAction3413 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleAction3416 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_33_in_ruleAction3435 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_ruleTypeRef_in_ruleAction3462 = new BitSet(new long[]{0x0000002000020000L});
+        public static final BitSet FOLLOW_17_in_ruleAction3493 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleAction3525 = new BitSet(new long[]{0x0000000C00000000L});
+        public static final BitSet FOLLOW_34_in_ruleAction3579 = new BitSet(new long[]{0x0000001000000000L});
+        public static final BitSet FOLLOW_35_in_ruleAction3617 = new BitSet(new long[]{0x0000001000000000L});
+        public static final BitSet FOLLOW_36_in_ruleAction3655 = new BitSet(new long[]{0x0000002000000000L});
+        public static final BitSet FOLLOW_37_in_ruleAction3675 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAbstractTerminal_in_entryRuleAbstractTerminal3695 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleAbstractTerminal3698 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleKeyword_in_ruleAbstractTerminal3715 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleRuleCall_in_ruleAbstractTerminal3735 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleParenthesizedElement_in_ruleAbstractTerminal3755 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePredicatedKeyword_in_ruleAbstractTerminal3775 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePredicatedRuleCall_in_ruleAbstractTerminal3795 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePredicatedGroup_in_ruleAbstractTerminal3815 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleKeyword_in_entryRuleKeyword3835 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleKeyword3838 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_STRING_in_ruleKeyword3863 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleRuleCall_in_entryRuleRuleCall3888 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleRuleCall3891 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleRuleID_in_ruleRuleCall3921 = new BitSet(new long[]{0x0000000004000002L});
+        public static final BitSet FOLLOW_26_in_ruleRuleCall3952 = new BitSet(new long[]{0x0000004100000010L});
+        public static final BitSet FOLLOW_ruleNamedArgument_in_ruleRuleCall3984 = new BitSet(new long[]{0x0000000008002000L});
+        public static final BitSet FOLLOW_13_in_ruleRuleCall4021 = new BitSet(new long[]{0x0000004100000010L});
+        public static final BitSet FOLLOW_ruleNamedArgument_in_ruleRuleCall4058 = new BitSet(new long[]{0x0000000008002000L});
+        public static final BitSet FOLLOW_27_in_ruleRuleCall4097 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleLiteralValue_in_entryRuleLiteralValue4123 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleLiteralValue4126 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_38_in_ruleLiteralValue4145 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_32_in_ruleLiteralValue4167 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleNamedArgument_in_entryRuleNamedArgument4187 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleNamedArgument4190 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleLiteralValue_in_ruleNamedArgument4230 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleNamedArgument4275 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleNamedArgument4336 = new BitSet(new long[]{0x0000000400000002L});
+        public static final BitSet FOLLOW_34_in_ruleNamedArgument4390 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleNamedArgument4442 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTerminalRuleCall_in_entryRuleTerminalRuleCall4489 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleTerminalRuleCall4492 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleRuleID_in_ruleTerminalRuleCall4515 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleRuleID_in_entryRuleRuleID4540 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleRuleID4543 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleRuleID4562 = new BitSet(new long[]{0x0000000010000002L});
+        public static final BitSet FOLLOW_28_in_ruleRuleID4582 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleRuleID4599 = new BitSet(new long[]{0x0000000010000002L});
+        public static final BitSet FOLLOW_rulePredicatedKeyword_in_entryRulePredicatedKeyword4625 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRulePredicatedKeyword4628 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_39_in_rulePredicatedKeyword4668 = new BitSet(new long[]{0x0000000000000020L});
+        public static final BitSet FOLLOW_40_in_rulePredicatedKeyword4722 = new BitSet(new long[]{0x0000000000000020L});
+        public static final BitSet FOLLOW_RULE_STRING_in_rulePredicatedKeyword4767 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePredicatedRuleCall_in_entryRulePredicatedRuleCall4798 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRulePredicatedRuleCall4801 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_39_in_rulePredicatedRuleCall4841 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_40_in_rulePredicatedRuleCall4895 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_rulePredicatedRuleCall4940 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAssignment_in_entryRuleAssignment4971 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleAssignment4974 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_39_in_ruleAssignment5014 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_40_in_ruleAssignment5068 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleAssignment5114 = new BitSet(new long[]{0x0000020C00000000L});
+        public static final BitSet FOLLOW_35_in_ruleAssignment5160 = new BitSet(new long[]{0x0000000004008030L});
+        public static final BitSet FOLLOW_34_in_ruleAssignment5194 = new BitSet(new long[]{0x0000000004008030L});
+        public static final BitSet FOLLOW_41_in_ruleAssignment5228 = new BitSet(new long[]{0x0000000004008030L});
+        public static final BitSet FOLLOW_ruleAssignableTerminal_in_ruleAssignment5273 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAssignableTerminal_in_entryRuleAssignableTerminal5304 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleAssignableTerminal5307 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleKeyword_in_ruleAssignableTerminal5324 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleRuleCall_in_ruleAssignableTerminal5344 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleParenthesizedAssignableElement_in_ruleAssignableTerminal5364 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleCrossReference_in_ruleAssignableTerminal5384 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleParenthesizedAssignableElement_in_entryRuleParenthesizedAssignableElement5404 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleParenthesizedAssignableElement5407 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_15_in_ruleParenthesizedAssignableElement5426 = new BitSet(new long[]{0x0000000004008030L});
+        public static final BitSet FOLLOW_ruleAssignableAlternatives_in_ruleParenthesizedAssignableElement5438 = new BitSet(new long[]{0x0000000000010000L});
+        public static final BitSet FOLLOW_16_in_ruleParenthesizedAssignableElement5452 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAssignableAlternatives_in_entryRuleAssignableAlternatives5472 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleAssignableAlternatives5475 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAssignableTerminal_in_ruleAssignableAlternatives5492 = new BitSet(new long[]{0x0000000020000002L});
+        public static final BitSet FOLLOW_29_in_ruleAssignableAlternatives5535 = new BitSet(new long[]{0x0000000004008030L});
+        public static final BitSet FOLLOW_ruleAssignableTerminal_in_ruleAssignableAlternatives5572 = new BitSet(new long[]{0x0000000020000002L});
+        public static final BitSet FOLLOW_ruleCrossReference_in_entryRuleCrossReference5620 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleCrossReference5623 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_26_in_ruleCrossReference5642 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_ruleTypeRef_in_ruleCrossReference5669 = new BitSet(new long[]{0x0000000028000000L});
+        public static final BitSet FOLLOW_29_in_ruleCrossReference5700 = new BitSet(new long[]{0x0000000000000030L});
+        public static final BitSet FOLLOW_ruleCrossReferenceableTerminal_in_ruleCrossReference5732 = new BitSet(new long[]{0x0000000008000000L});
+        public static final BitSet FOLLOW_27_in_ruleCrossReference5765 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleCrossReferenceableTerminal_in_entryRuleCrossReferenceableTerminal5785 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleCrossReferenceableTerminal5788 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleKeyword_in_ruleCrossReferenceableTerminal5805 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleRuleCall_in_ruleCrossReferenceableTerminal5825 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleParenthesizedElement_in_entryRuleParenthesizedElement5845 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleParenthesizedElement5848 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_15_in_ruleParenthesizedElement5867 = new BitSet(new long[]{0x0000018204008030L});
+        public static final BitSet FOLLOW_ruleAlternatives_in_ruleParenthesizedElement5879 = new BitSet(new long[]{0x0000000000010000L});
+        public static final BitSet FOLLOW_16_in_ruleParenthesizedElement5893 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_rulePredicatedGroup_in_entryRulePredicatedGroup5913 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRulePredicatedGroup5916 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_39_in_rulePredicatedGroup5956 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_40_in_rulePredicatedGroup6010 = new BitSet(new long[]{0x0000000000008000L});
+        public static final BitSet FOLLOW_15_in_rulePredicatedGroup6042 = new BitSet(new long[]{0x0000018204008030L});
+        public static final BitSet FOLLOW_ruleAlternatives_in_rulePredicatedGroup6069 = new BitSet(new long[]{0x0000000000010000L});
+        public static final BitSet FOLLOW_16_in_rulePredicatedGroup6094 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTerminalRule_in_entryRuleTerminalRule6114 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleTerminalRule6117 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_42_in_ruleTerminalRule6136 = new BitSet(new long[]{0x0000000000200010L});
+        public static final BitSet FOLLOW_21_in_ruleTerminalRule6180 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleTerminalRule6232 = new BitSet(new long[]{0x0000000001000000L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleTerminalRule6303 = new BitSet(new long[]{0x0000000001800000L});
+        public static final BitSet FOLLOW_23_in_ruleTerminalRule6346 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_ruleTypeRef_in_ruleTerminalRule6388 = new BitSet(new long[]{0x0000000001000000L});
+        public static final BitSet FOLLOW_24_in_ruleTerminalRule6438 = new BitSet(new long[]{0x0000094000028030L});
+        public static final BitSet FOLLOW_ruleTerminalAlternatives_in_ruleTerminalRule6465 = new BitSet(new long[]{0x0000000002000000L});
+        public static final BitSet FOLLOW_25_in_ruleTerminalRule6490 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTerminalAlternatives_in_entryRuleTerminalAlternatives6510 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleTerminalAlternatives6513 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTerminalGroup_in_ruleTerminalAlternatives6530 = new BitSet(new long[]{0x0000000020000002L});
+        public static final BitSet FOLLOW_29_in_ruleTerminalAlternatives6573 = new BitSet(new long[]{0x0000094000028030L});
+        public static final BitSet FOLLOW_ruleTerminalGroup_in_ruleTerminalAlternatives6610 = new BitSet(new long[]{0x0000000020000002L});
+        public static final BitSet FOLLOW_ruleTerminalGroup_in_entryRuleTerminalGroup6658 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleTerminalGroup6661 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTerminalToken_in_ruleTerminalGroup6678 = new BitSet(new long[]{0x0000094000028032L});
+        public static final BitSet FOLLOW_ruleTerminalToken_in_ruleTerminalGroup6729 = new BitSet(new long[]{0x0000094000028032L});
+        public static final BitSet FOLLOW_ruleTerminalToken_in_entryRuleTerminalToken6769 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleTerminalToken6772 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTerminalTokenElement_in_ruleTerminalToken6789 = new BitSet(new long[]{0x0000000180400002L});
+        public static final BitSet FOLLOW_31_in_ruleTerminalToken6824 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_22_in_ruleTerminalToken6858 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_32_in_ruleTerminalToken6892 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTerminalTokenElement_in_entryRuleTerminalTokenElement6931 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleTerminalTokenElement6934 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleCharacterRange_in_ruleTerminalTokenElement6951 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleTerminalRuleCall_in_ruleTerminalTokenElement6971 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleParenthesizedTerminalElement_in_ruleTerminalTokenElement6991 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAbstractNegatedToken_in_ruleTerminalTokenElement7011 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleWildcard_in_ruleTerminalTokenElement7031 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEOF_in_ruleTerminalTokenElement7051 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleParenthesizedTerminalElement_in_entryRuleParenthesizedTerminalElement7071 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleParenthesizedTerminalElement7074 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_15_in_ruleParenthesizedTerminalElement7093 = new BitSet(new long[]{0x0000094000028030L});
+        public static final BitSet FOLLOW_ruleTerminalAlternatives_in_ruleParenthesizedTerminalElement7105 = new BitSet(new long[]{0x0000000000010000L});
+        public static final BitSet FOLLOW_16_in_ruleParenthesizedTerminalElement7119 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleAbstractNegatedToken_in_entryRuleAbstractNegatedToken7139 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleAbstractNegatedToken7142 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleNegatedToken_in_ruleAbstractNegatedToken7159 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleUntilToken_in_ruleAbstractNegatedToken7179 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleNegatedToken_in_entryRuleNegatedToken7199 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleNegatedToken7202 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_38_in_ruleNegatedToken7221 = new BitSet(new long[]{0x0000094000028030L});
+        public static final BitSet FOLLOW_ruleTerminalTokenElement_in_ruleNegatedToken7248 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleUntilToken_in_entryRuleUntilToken7279 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleUntilToken7282 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_40_in_ruleUntilToken7301 = new BitSet(new long[]{0x0000094000028030L});
+        public static final BitSet FOLLOW_ruleTerminalTokenElement_in_ruleUntilToken7328 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleWildcard_in_entryRuleWildcard7359 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleWildcard7362 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_17_in_ruleWildcard7394 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEOF_in_entryRuleEOF7414 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleEOF7417 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_43_in_ruleEOF7449 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleCharacterRange_in_entryRuleCharacterRange7469 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleCharacterRange7472 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleKeyword_in_ruleCharacterRange7489 = new BitSet(new long[]{0x0000100000000002L});
+        public static final BitSet FOLLOW_44_in_ruleCharacterRange7525 = new BitSet(new long[]{0x0000000000000020L});
+        public static final BitSet FOLLOW_ruleKeyword_in_ruleCharacterRange7557 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEnumRule_in_entryRuleEnumRule7596 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleEnumRule7599 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_45_in_ruleEnumRule7618 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleEnumRule7645 = new BitSet(new long[]{0x0000000001800000L});
+        public static final BitSet FOLLOW_23_in_ruleEnumRule7676 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_ruleTypeRef_in_ruleEnumRule7708 = new BitSet(new long[]{0x0000000001000000L});
+        public static final BitSet FOLLOW_24_in_ruleEnumRule7741 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_ruleEnumLiterals_in_ruleEnumRule7768 = new BitSet(new long[]{0x0000000002000000L});
+        public static final BitSet FOLLOW_25_in_ruleEnumRule7793 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEnumLiterals_in_entryRuleEnumLiterals7813 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleEnumLiterals7816 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_ruleEnumLiteralDeclaration_in_ruleEnumLiterals7833 = new BitSet(new long[]{0x0000000020000002L});
+        public static final BitSet FOLLOW_29_in_ruleEnumLiterals7876 = new BitSet(new long[]{0x0000000000000010L});
+        public static final BitSet FOLLOW_ruleEnumLiteralDeclaration_in_ruleEnumLiterals7913 = new BitSet(new long[]{0x0000000020000002L});
+        public static final BitSet FOLLOW_ruleEnumLiteralDeclaration_in_entryRuleEnumLiteralDeclaration7961 = new BitSet(new long[]{0x0000000000000000L});
+        public static final BitSet FOLLOW_EOF_in_entryRuleEnumLiteralDeclaration7964 = new BitSet(new long[]{0x0000000000000002L});
+        public static final BitSet FOLLOW_RULE_ID_in_ruleEnumLiteralDeclaration7996 = new BitSet(new long[]{0x0000000400000002L});
+        public static final BitSet FOLLOW_34_in_ruleEnumLiteralDeclaration8027 = new BitSet(new long[]{0x0000000000000020L});
+        public static final BitSet FOLLOW_ruleKeyword_in_ruleEnumLiteralDeclaration8059 = new BitSet(new long[]{0x0000000000000002L});
     }
 
 

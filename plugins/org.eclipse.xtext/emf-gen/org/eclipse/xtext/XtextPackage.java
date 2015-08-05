@@ -1418,13 +1418,23 @@ public interface XtextPackage extends EPackage {
 	int GROUP__ELEMENTS = COMPOUND_ELEMENT__ELEMENTS;
 
 	/**
-	 * The number of structural features of the '<em>Group</em>' class.
+	 * The feature id for the '<em><b>Guard Conditions</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GROUP_FEATURE_COUNT = COMPOUND_ELEMENT_FEATURE_COUNT + 0;
+	int GROUP__GUARD_CONDITIONS = COMPOUND_ELEMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Group</em>' class.
+	 * <!-- begin-user-doc -->
+	 * @since 2.9
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GROUP_FEATURE_COUNT = COMPOUND_ELEMENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.xtext.impl.CharacterRangeImpl <em>Character Range</em>}' class.
@@ -1570,87 +1580,6 @@ public interface XtextPackage extends EPackage {
 	int PARAMETER_FEATURE_COUNT = 1;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.xtext.impl.ConditionalBranchImpl <em>Conditional Branch</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * @since 2.9
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.xtext.impl.ConditionalBranchImpl
-	 * @see org.eclipse.xtext.impl.XtextPackageImpl#getConditionalBranch()
-	 * @generated
-	 */
-	int CONDITIONAL_BRANCH = 27;
-
-	/**
-	 * The feature id for the '<em><b>Cardinality</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * @since 2.9
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_BRANCH__CARDINALITY = ABSTRACT_ELEMENT__CARDINALITY;
-
-	/**
-	 * The feature id for the '<em><b>Predicated</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * @since 2.9
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_BRANCH__PREDICATED = ABSTRACT_ELEMENT__PREDICATED;
-
-	/**
-	 * The feature id for the '<em><b>First Set Predicated</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * @since 2.9
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_BRANCH__FIRST_SET_PREDICATED = ABSTRACT_ELEMENT__FIRST_SET_PREDICATED;
-
-	/**
-	 * The feature id for the '<em><b>Parameter</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * @since 2.9
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_BRANCH__PARAMETER = ABSTRACT_ELEMENT_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Filtered</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * @since 2.9
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_BRANCH__FILTERED = ABSTRACT_ELEMENT_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Guarded Element</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * @since 2.9
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_BRANCH__GUARDED_ELEMENT = ABSTRACT_ELEMENT_FEATURE_COUNT + 2;
-
-	/**
-	 * The number of structural features of the '<em>Conditional Branch</em>' class.
-	 * <!-- begin-user-doc -->
-	 * @since 2.9
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_BRANCH_FEATURE_COUNT = ABSTRACT_ELEMENT_FEATURE_COUNT + 3;
-
-	/**
 	 * The meta object id for the '{@link org.eclipse.xtext.impl.NamedArgumentImpl <em>Named Argument</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * @since 2.9
@@ -1659,7 +1588,7 @@ public interface XtextPackage extends EPackage {
 	 * @see org.eclipse.xtext.impl.XtextPackageImpl#getNamedArgument()
 	 * @generated
 	 */
-	int NAMED_ARGUMENT = 28;
+	int NAMED_ARGUMENT = 27;
 
 	/**
 	 * The feature id for the '<em><b>Parameter</b></em>' reference.
@@ -1710,6 +1639,44 @@ public interface XtextPackage extends EPackage {
 	 * @ordered
 	 */
 	int NAMED_ARGUMENT_FEATURE_COUNT = 4;
+
+
+	/**
+	 * The meta object id for the '{@link org.eclipse.xtext.impl.GuardConditionImpl <em>Guard Condition</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.xtext.impl.GuardConditionImpl
+	 * @see org.eclipse.xtext.impl.XtextPackageImpl#getGuardCondition()
+	 * @generated
+	 */
+	int GUARD_CONDITION = 28;
+
+	/**
+	 * The feature id for the '<em><b>Parameter</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GUARD_CONDITION__PARAMETER = 0;
+
+	/**
+	 * The feature id for the '<em><b>Pass If True</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GUARD_CONDITION__PASS_IF_TRUE = 1;
+
+	/**
+	 * The number of structural features of the '<em>Guard Condition</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GUARD_CONDITION_FEATURE_COUNT = 2;
 
 
 	/**
@@ -2367,6 +2334,17 @@ public interface XtextPackage extends EPackage {
 	EClass getGroup();
 
 	/**
+	 * Returns the meta object for the containment reference list '{@link org.eclipse.xtext.Group#getGuardConditions <em>Guard Conditions</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Guard Conditions</em>'.
+	 * @see org.eclipse.xtext.Group#getGuardConditions()
+	 * @see #getGroup()
+	 * @generated
+	 */
+	EReference getGroup_GuardConditions();
+
+	/**
 	 * Returns the meta object for class '{@link org.eclipse.xtext.CharacterRange <em>Character Range</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2453,53 +2431,6 @@ public interface XtextPackage extends EPackage {
 	EAttribute getParameter_Name();
 
 	/**
-	 * Returns the meta object for class '{@link org.eclipse.xtext.ConditionalBranch <em>Conditional Branch</em>}'.
-	 * <!-- begin-user-doc -->
-	 * @since 2.9
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Conditional Branch</em>'.
-	 * @see org.eclipse.xtext.ConditionalBranch
-	 * @generated
-	 */
-	EClass getConditionalBranch();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.eclipse.xtext.ConditionalBranch#getParameter <em>Parameter</em>}'.
-	 * <!-- begin-user-doc -->
-	 * @since 2.9
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parameter</em>'.
-	 * @see org.eclipse.xtext.ConditionalBranch#getParameter()
-	 * @see #getConditionalBranch()
-	 * @generated
-	 */
-	EReference getConditionalBranch_Parameter();
-
-	/**
-	 * Returns the meta object for the attribute '{@link org.eclipse.xtext.ConditionalBranch#isFiltered <em>Filtered</em>}'.
-	 * <!-- begin-user-doc -->
-	 * @since 2.9
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Filtered</em>'.
-	 * @see org.eclipse.xtext.ConditionalBranch#isFiltered()
-	 * @see #getConditionalBranch()
-	 * @generated
-	 */
-	EAttribute getConditionalBranch_Filtered();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link org.eclipse.xtext.ConditionalBranch#getGuardedElement <em>Guarded Element</em>}'.
-	 * <!-- begin-user-doc -->
-	 * @since 2.9
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Guarded Element</em>'.
-	 * @see org.eclipse.xtext.ConditionalBranch#getGuardedElement()
-	 * @see #getConditionalBranch()
-	 * @generated
-	 */
-	EReference getConditionalBranch_GuardedElement();
-
-	/**
 	 * Returns the meta object for class '{@link org.eclipse.xtext.NamedArgument <em>Named Argument</em>}'.
 	 * <!-- begin-user-doc -->
 	 * @since 2.9
@@ -2557,6 +2488,38 @@ public interface XtextPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getNamedArgument_ExplicitValue();
+
+	/**
+	 * Returns the meta object for class '{@link org.eclipse.xtext.GuardCondition <em>Guard Condition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Guard Condition</em>'.
+	 * @see org.eclipse.xtext.GuardCondition
+	 * @generated
+	 */
+	EClass getGuardCondition();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.eclipse.xtext.GuardCondition#getParameter <em>Parameter</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Parameter</em>'.
+	 * @see org.eclipse.xtext.GuardCondition#getParameter()
+	 * @see #getGuardCondition()
+	 * @generated
+	 */
+	EReference getGuardCondition_Parameter();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.eclipse.xtext.GuardCondition#isPassIfTrue <em>Pass If True</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Pass If True</em>'.
+	 * @see org.eclipse.xtext.GuardCondition#isPassIfTrue()
+	 * @see #getGuardCondition()
+	 * @generated
+	 */
+	EAttribute getGuardCondition_PassIfTrue();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -3123,6 +3086,14 @@ public interface XtextPackage extends EPackage {
 		EClass GROUP = eINSTANCE.getGroup();
 
 		/**
+		 * The meta object literal for the '<em><b>Guard Conditions</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GROUP__GUARD_CONDITIONS = eINSTANCE.getGroup_GuardConditions();
+
+		/**
 		 * The meta object literal for the '{@link org.eclipse.xtext.impl.CharacterRangeImpl <em>Character Range</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -3197,44 +3168,6 @@ public interface XtextPackage extends EPackage {
 		EAttribute PARAMETER__NAME = eINSTANCE.getParameter_Name();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.xtext.impl.ConditionalBranchImpl <em>Conditional Branch</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * @since 2.9
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.xtext.impl.ConditionalBranchImpl
-		 * @see org.eclipse.xtext.impl.XtextPackageImpl#getConditionalBranch()
-		 * @generated
-		 */
-		EClass CONDITIONAL_BRANCH = eINSTANCE.getConditionalBranch();
-
-		/**
-		 * The meta object literal for the '<em><b>Parameter</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * @since 2.9
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CONDITIONAL_BRANCH__PARAMETER = eINSTANCE.getConditionalBranch_Parameter();
-
-		/**
-		 * The meta object literal for the '<em><b>Filtered</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * @since 2.9
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute CONDITIONAL_BRANCH__FILTERED = eINSTANCE.getConditionalBranch_Filtered();
-
-		/**
-		 * The meta object literal for the '<em><b>Guarded Element</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * @since 2.9
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CONDITIONAL_BRANCH__GUARDED_ELEMENT = eINSTANCE.getConditionalBranch_GuardedElement();
-
-		/**
 		 * The meta object literal for the '{@link org.eclipse.xtext.impl.NamedArgumentImpl <em>Named Argument</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * @since 2.9
@@ -3280,6 +3213,35 @@ public interface XtextPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute NAMED_ARGUMENT__EXPLICIT_VALUE = eINSTANCE.getNamedArgument_ExplicitValue();
+
+		/**
+		 * The meta object literal for the '{@link org.eclipse.xtext.impl.GuardConditionImpl <em>Guard Condition</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * @since 2.9
+		 * <!-- end-user-doc -->
+		 * @see org.eclipse.xtext.impl.GuardConditionImpl
+		 * @see org.eclipse.xtext.impl.XtextPackageImpl#getGuardCondition()
+		 * @generated
+		 */
+		EClass GUARD_CONDITION = eINSTANCE.getGuardCondition();
+
+		/**
+		 * The meta object literal for the '<em><b>Parameter</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * @since 2.9
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GUARD_CONDITION__PARAMETER = eINSTANCE.getGuardCondition_Parameter();
+
+		/**
+		 * The meta object literal for the '<em><b>Pass If True</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * @since 2.9
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GUARD_CONDITION__PASS_IF_TRUE = eINSTANCE.getGuardCondition_PassIfTrue();
 
 	}
 
