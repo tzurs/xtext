@@ -17,6 +17,9 @@ import org.eclipse.xtext.*;
  * An implementation of the model <b>Factory</b>.
  * <!-- end-user-doc -->
  * @generated
+ * @noextend This class is not intended to be subclassed by clients.
+ * @noinstantiate This class is not intended to be instantiated by clients.
+ * @noreference This class is not intended to be referenced by clients.
  */
 public class XtextFactoryImpl extends EFactoryImpl implements XtextFactory {
 	/**
@@ -374,6 +377,7 @@ public class XtextFactoryImpl extends EFactoryImpl implements XtextFactory {
 
 	/**
 	 * <!-- begin-user-doc -->
+	 * @since 2.9
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
