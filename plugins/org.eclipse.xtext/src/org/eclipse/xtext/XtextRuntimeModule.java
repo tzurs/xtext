@@ -19,6 +19,7 @@ import org.eclipse.xtext.parser.antlr.IReferableElementsUnloader;
 import org.eclipse.xtext.parser.antlr.SyntaxErrorMessageProvider;
 import org.eclipse.xtext.parsetree.reconstr.ITokenSerializer.ICrossReferenceSerializer;
 import org.eclipse.xtext.parsetree.reconstr.ITransientValueService;
+import org.eclipse.xtext.parsetree.reconstr.impl.ValueSerializer;
 import org.eclipse.xtext.resource.DerivedStateAwareResourceDescriptionManager;
 import org.eclipse.xtext.resource.IDefaultResourceDescriptionStrategy;
 import org.eclipse.xtext.resource.IDerivedStateComputer;
@@ -48,6 +49,7 @@ import org.eclipse.xtext.xtext.XtextTransientValueService;
 import org.eclipse.xtext.xtext.XtextTransientValueService2;
 import org.eclipse.xtext.xtext.XtextValidator;
 import org.eclipse.xtext.xtext.XtextValueConverters;
+import org.eclipse.xtext.xtext.XtextValueSerializer;
 import org.eclipse.xtext.xtext.ecoreInference.IXtext2EcorePostProcessor;
 import org.eclipse.xtext.xtext.ecoreInference.XtendXtext2EcorePostProcessor;
 import org.eclipse.xtext.xtext.parser.CardinalityAwareEcoreFactory;
@@ -181,5 +183,12 @@ public class XtextRuntimeModule extends AbstractXtextRuntimeModule {
 	 */
 	public Class<? extends SyntaxErrorMessageProvider> bindSyntaxErrorMessageProvider() {
 		return CardinalityAwareSyntaxErrorMessageProvider.class;
+	}
+	
+	/**
+	 * @since 2.9
+	 */
+	public Class<? extends ValueSerializer> bindValueSerializer() {
+		return XtextValueSerializer.class;
 	}
 }

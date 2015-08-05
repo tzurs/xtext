@@ -90,14 +90,14 @@ public class XtextGrammarSerializationTest extends AbstractXtextTests {
     StringConcatenation _builder_1 = new StringConcatenation();
     _builder_1.append("grammar foo with org.eclipse.xtext.common.Terminals");
     _builder_1.newLine();
+    _builder_1.newLine();
     _builder_1.append("generate mm \"http://bar\"");
     _builder_1.newLine();
-    _builder_1.append("Rule[arg]:");
+    _builder_1.newLine();
+    _builder_1.append("Rule [arg]:");
     _builder_1.newLine();
     _builder_1.append("\t");
-    _builder_1.append("name=ID child=Rule[arg]");
-    _builder_1.newLine();
-    _builder_1.append(";");
+    _builder_1.append("name=ID child=Rule[arg];");
     final String expectedModel = _builder_1.toString();
     this.doTestSerialization(model, expectedModel);
   }

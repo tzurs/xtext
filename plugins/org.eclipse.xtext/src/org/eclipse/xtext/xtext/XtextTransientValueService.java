@@ -75,7 +75,8 @@ public class XtextTransientValueService extends DefaultTransientValueService {
 			return !((NamedArgument)owner).isExplicitValue();
 		}
 		else if (feature == XtextPackage.eINSTANCE.getNamedArgument_LiteralValue()) {
-			return !((NamedArgument)owner).isSetLiteralValue();
+			boolean result = !((NamedArgument)owner).isSetLiteralValue();
+			return result;
 		}
 		return super.isTransient(owner, feature, index);
 	}

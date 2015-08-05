@@ -54,10 +54,11 @@ class XtextGrammarSerializationTest extends AbstractXtextTests {
 		'''
 		val String expectedModel = '''
 			grammar foo with org.eclipse.xtext.common.Terminals
+			
 			generate mm "http://bar"
-			Rule[arg]:
-				name=ID child=Rule[arg]
-			;'''
+			
+			Rule [arg]:
+				name=ID child=Rule[arg];'''
 		doTestSerialization(model, expectedModel)
 	}
 	
