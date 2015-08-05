@@ -39,6 +39,7 @@ import org.eclipse.xtext.psi.IPsiModelAssociator
 import org.eclipse.xtext.psi.impl.BaseXtextFile
 
 import static extension org.eclipse.xtext.GrammarUtil.*
+import org.eclipse.emf.ecore.EClass
 
 class PsiToEcoreTransformationContext {
 
@@ -76,6 +77,9 @@ class PsiToEcoreTransformationContext {
 
 	@Accessors(PUBLIC_GETTER)
 	ICompositeNode currentNode
+	
+	@Accessors
+	boolean createModelInParentNode
 
 	extension IASTNodeAwareNodeModelBuilder nodeModelBuilder
 
@@ -92,6 +96,7 @@ class PsiToEcoreTransformationContext {
 		childTransformationContext.currentNode = currentNode
 		childTransformationContext.lastConsumedNode = lastConsumedNode
 		childTransformationContext.nodeModelBuilder = nodeModelBuilder
+		childTransformationContext.createModelInParentNode = createModelInParentNode
 		childTransformationContext
 	}
 	
@@ -116,7 +121,11 @@ class PsiToEcoreTransformationContext {
 	}
 
 	def merge(PsiToEcoreTransformationContext childTransformationContext) {
-		if (current == null) {
+		return merge(childTransformationContext, false)
+	}
+	
+	def merge(PsiToEcoreTransformationContext childTransformationContext, boolean forced) {
+		if (current == null || forced) {
 			current = childTransformationContext.current
 		}
 		if (datatypeRuleToken != null && childTransformationContext.datatypeRuleToken != null) {
@@ -159,7 +168,11 @@ class PsiToEcoreTransformationContext {
 		currentNode = newCompositeNode(currentNode)
 	}
 
-	def ensureModelElementCreated(EObject grammarElement) {
+	def ensureModelElementCreatedInParent(EObject grammarElement) {
+		ensureModelElementCreated(grammarElement, currentNode.parent)
+	}
+	
+	private def ensureModelElementCreated(EObject grammarElement, ICompositeNode currentNode) {
 		if (grammarElement == null) {
 			return false
 		}
@@ -170,10 +183,26 @@ class PsiToEcoreTransformationContext {
 		}
 		if (!grammarElement.assigned) {
 			if (grammarElement.isEObjectFragmentRuleCall) {
+				if (current != null) {
+					return true
+				}
 				val classifier = grammarElement.containingParserRule.type.classifier
-				current = semanticModelBuilder.create(classifier)
-				associateWithSemanticElement(currentNode)
-				return true
+				if (classifier instanceof EClass) {
+					var node = currentNode
+					if (createModelInParentNode) {
+						node = node.parent
+						while(node.grammarElement instanceof Action) {
+							node = node.parent
+						}
+					}
+					if (node.hasDirectSemanticElement) {
+						current = node.semanticElement
+					} else {
+						current = semanticModelBuilder.create(classifier)
+						associateWithSemanticElement(node)
+					}
+					return true
+				}
 			}
 			return false
 		}
@@ -184,6 +213,13 @@ class PsiToEcoreTransformationContext {
 		current = semanticModelBuilder.create(classifier)
 		associateWithSemanticElement(
 			switch grammarElement {
+				case createModelInParentNode: {
+					var node = currentNode.parent
+					while(node.grammarElement instanceof Action) {
+						node = node.parent
+					}
+					node
+				}
 				case grammarElement.terminalRuleCall,
 				case grammarElement instanceof Keyword,
 				CrossReference case grammarElement.terminal.terminalRuleCall,
@@ -194,6 +230,10 @@ class PsiToEcoreTransformationContext {
 			}
 		)
 		true
+	}
+
+	def ensureModelElementCreated(EObject grammarElement) {
+		ensureModelElementCreated(grammarElement, currentNode)
 	}
 
 	protected def void mergeDatatypeRuleToken(LeafElement it) {

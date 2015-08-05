@@ -18,7 +18,7 @@ import org.eclipse.xtext.resource.XtextResource;
 
 @TestDecorator
 @SuppressWarnings("all")
-public abstract class IdeaFragmentsTest extends AbstractLanguageParsingTestCase {
+public class IdeaFragmentsTest extends AbstractLanguageParsingTestCase {
   @FinalFieldsConstructor
   private static class Delegate extends AbstractFragmentsPlainParsingTest {
     private final ModelChecker modelChecker;

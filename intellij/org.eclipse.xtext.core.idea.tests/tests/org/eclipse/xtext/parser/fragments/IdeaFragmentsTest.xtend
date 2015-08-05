@@ -14,7 +14,6 @@ import org.eclipse.xtext.parser.fragments.idea.lang.FragmentTestLanguageLanguage
 import com.google.inject.Injector
 
 @TestDecorator
-abstract /* @Ignore */ 
 class IdeaFragmentsTest extends AbstractLanguageParsingTestCase {
 	
 	Delegate delegate

@@ -33,7 +33,6 @@ import static extension org.eclipse.xtext.GrammarUtil.*
 import org.eclipse.xtext.EnumLiteralDeclaration
 import org.eclipse.xtext.idea.lang.GrammarAwarePsiErrorElement
 import org.eclipse.xtext.RuleNames
-import org.eclipse.xtext.GrammarUtil
 import org.eclipse.xtext.AbstractElement
 
 class PsiToEcoreTransformator implements IParser {
@@ -69,7 +68,9 @@ class PsiToEcoreTransformator implements IParser {
 		transformationContext
 	}
 
-	protected dispatch def void transformNode(ASTNode it, extension PsiToEcoreTransformationContext transformationContext) {
+	protected dispatch def void transformNode(ASTNode it,
+		extension PsiToEcoreTransformationContext transformationContext
+	) {
 		throw new IllegalStateException('Unexpected ast node: ' + it)
 	}
 
@@ -143,11 +144,25 @@ class PsiToEcoreTransformator implements IParser {
 		IGrammarAwareElementType elementType,
 		extension PsiToEcoreTransformationContext transformationContext) {
 		if (elementType.isInFragmentRule) {
-			newCompositeNode
-			transformFirstNoneActionChild(transformationContext)
-						
-			val actionTransformationContext = transformationContext.branch 
-			transformActionLeftElement(action, true, actionTransformationContext)
+			transformationContext.createModelInParentNode = true
+			val actionTransformationContext = transformationContext.branch
+			transformActionLeftElement(action, actionTransformationContext)
+			actionTransformationContext.sync
+			
+			val actionRuleCall = actionTransformationContext.actionRuleCall
+			if (ensureModelElementCreated(actionRuleCall)) {
+				if (transformationContext.current !== null && transformationContext.current.eContainer === null) {
+					actionTransformationContext.assign(transformationContext.current, action)
+				} else { 
+					assign(actionTransformationContext.current, actionRuleCall, actionRuleCall.rule.qualifiedName)
+				}
+			}
+			actionTransformationContext.merge(true)
+			compress
+		} else {
+			transformationContext.createModelInParentNode = false
+			val actionTransformationContext = transformationContext.branch
+			transformActionLeftElement(action, actionTransformationContext)
 			actionTransformationContext.sync
 			
 			val actionRuleCall = actionTransformationContext.actionRuleCall
@@ -156,17 +171,6 @@ class PsiToEcoreTransformator implements IParser {
 			}
 			actionTransformationContext.merge
 			compress
-		} else {
-			val actionTransformationContext = transformationContext.branch 
-			transformActionLeftElement(action, false, actionTransformationContext)
-			actionTransformationContext.sync
-			
-			val actionRuleCall = actionTransformationContext.actionRuleCall
-			if (ensureModelElementCreated(actionRuleCall)) {
-				assign(actionTransformationContext.current, actionRuleCall, actionRuleCall.rule.qualifiedName)
-			}
-			actionTransformationContext.merge
-			compress	
 		}
 	}
 	
@@ -229,57 +233,53 @@ class PsiToEcoreTransformator implements IParser {
 	}
 	
 	protected def dispatch void transformActionLeftElementNode(ASTNode it,
-		boolean skipLeftElement,
+		
 		extension PsiToEcoreTransformationContext transformationContext) {
 		throw new IllegalStateException('Unexpected ast node: ' + it)
 	}
 
 	protected def dispatch void transformActionLeftElementNode(CompositeElement it,
-		boolean skipLeftElement,
 		extension PsiToEcoreTransformationContext transformationContext) {
 		val elementType = elementType
 		if (elementType instanceof IGrammarAwareElementType) {
-			transformActionLeftElement(elementType.grammarElement, skipLeftElement, transformationContext)
+			transformActionLeftElement(elementType.grammarElement, transformationContext)
 		}
 	}
 
 	protected def dispatch void transformActionLeftElement(CompositeElement it, EObject grammarElement,
-		boolean skipLeftElement,
+		
 		extension PsiToEcoreTransformationContext transformationContext) {
 		throw new IllegalStateException('Unexpected grammar element: ' + grammarElement + ', for node: ' + it)
 	}
 	
 	protected def dispatch void transformActionLeftElement(CompositeElement it, ParserRule parserRule,
-		boolean skipLeftElement,
+		
 		extension PsiToEcoreTransformationContext transformationContext) {
 		newCompositeNode
 		transformChildren(transformationContext)
 	}
 
 	protected def dispatch void transformActionLeftElement(CompositeElement it, Action action,
-		boolean skipLeftElement,
 		extension PsiToEcoreTransformationContext transformationContext) {
+		
+		newCompositeNode
+		ensureModelElementCreated(action)
 		
 		val children = getChildren(null)
 		
 		val leftElement = children.head
-		if (!skipLeftElement) {
-			newCompositeNode
-			ensureModelElementCreated(action)
-			val leftElementTransformationContext = transformationContext.branch
-			leftElement.transformActionLeftElementNode(skipLeftElement, leftElementTransformationContext)
-			leftElementTransformationContext.sync.compress
-			leftElementTransformationContext.current.assign(action)
-			
-			actionRuleCall = leftElementTransformationContext.actionRuleCall
-		} else {
-			ensureModelElementCreated(action)
-		}
+		val leftElementTransformationContext = transformationContext.branch
+		leftElement.transformActionLeftElementNode(leftElementTransformationContext)
+		leftElementTransformationContext.compress.sync
+		leftElementTransformationContext.current.assign(action)
+		
+		actionRuleCall = leftElementTransformationContext.actionRuleCall
+
 		children.tail.transformChildren(transformationContext)
 	}
 
 	protected def dispatch void transformActionLeftElement(CompositeElement it, RuleCall ruleCall,
-		boolean skipLeftElement,
+		
 		extension PsiToEcoreTransformationContext transformationContext) {
 		newCompositeNode
 		transformationContext.actionRuleCall = ruleCall
@@ -370,15 +370,15 @@ class PsiToEcoreTransformator implements IParser {
 	}
 
 	override parse(ParserRule rule, Reader reader) {
-		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+		throw new UnsupportedOperationException("Unexpected invocation")
 	}
 
 	override parse(RuleCall ruleCall, Reader reader, int initialLookAhead) {
-		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+		throw new UnsupportedOperationException("Unexpected invocation")
 	}
 
 	override reparse(IParseResult previousParseResult, ReplaceRegion replaceRegion) {
-		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+		throw new UnsupportedOperationException("Unexpected invocation")
 	}
 
 }
