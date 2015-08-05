@@ -616,14 +616,6 @@ public class Xtext2EcoreTransformer {
 		final TypeHierarchyHelper helper = new TypeHierarchyHelper(grammar, this.eClassifierInfos, this.errorAcceptor);
 		helper.liftUpFeaturesRecursively();
 		helper.removeDuplicateDerivedFeatures();
-//		helper.detectEClassesWithCyclesInTypeHierachy();
-
-		// duplicated features can occur in rare cases when alternatives produce
-		// different types of a feature
-		// If the internal structure (Set) of the underlying algorithm
-		// produces the features for the subtype first the implementation of EClassInfo
-		// wont find a conflict
-//		helper.detectDuplicatedFeatures();
 	}
 
 	private void deriveTypesAndHierarchy(final ParserRule rule, final EClassifierInfo ruleReturnType,
@@ -742,6 +734,7 @@ public class Xtext2EcoreTransformer {
 								"Overriding fragment rules cannot redeclare their type.", rule.getType());
 					}
 				}
+				checkParameterLists(rule, casted);
 			}
 			if (parentRule.getType() != null && parentRule != rule) {			
 				if (parentRule.getType().getClassifier() instanceof EDataType)
@@ -756,6 +749,36 @@ public class Xtext2EcoreTransformer {
 			}
 		}
 		return false;
+	}
+
+	private void checkParameterLists(ParserRule rule, ParserRule overridden) throws TransformationException {
+		int inherited = overridden.getParameters().size();
+		if (inherited == rule.getParameters().size()) {
+			boolean ok = true;
+			for(int i = 0; ok && i < inherited; i++) {
+				if (!Strings.equal(rule.getParameters().get(i).getName(), overridden.getParameters().get(i).getName())) {
+					ok = false;
+				}
+			}
+			if (ok) {
+				return;
+			}
+		}
+		if (inherited == 0) {
+			throw new TransformationException(TransformationErrorCode.InvalidRuleOverride,
+					"Overridden rule " + rule.getName() + " does not declare any parameters", rule);
+		}
+		StringBuilder message = new StringBuilder("Parameter list is incompatible with inherited ");
+		message.append(rule.getName()).append("[");
+		for(int i = 0; i < overridden.getParameters().size(); i++) {
+			if (i != 0) {
+				message.append(", ");
+			}
+			message.append(overridden.getParameters().get(i).getName());
+		}
+		message.append("]");
+		throw new TransformationException(TransformationErrorCode.InvalidRuleOverride,
+				message.toString(), rule);
 	}
 
 	private void addSuperType(ParserRule rule, TypeRef subTypeRef, EClassifierInfo superTypeInfo) throws TransformationException {

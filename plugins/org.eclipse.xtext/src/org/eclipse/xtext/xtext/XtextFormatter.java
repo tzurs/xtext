@@ -23,7 +23,6 @@ import org.eclipse.xtext.services.XtextGrammarAccess.NamedArgumentElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.NegatedTokenElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.ParserRuleElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.RuleCallElements;
-import org.eclipse.xtext.services.XtextGrammarAccess.TerminalRuleCallElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.TerminalTokenElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.TypeRefElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.UnorderedGroupElements;

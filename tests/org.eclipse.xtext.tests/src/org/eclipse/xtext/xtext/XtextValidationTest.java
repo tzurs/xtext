@@ -82,6 +82,54 @@ public class XtextValidationTest extends AbstractValidationMessageAcceptingTestC
 		state.context = newHashMap();
 	}
 	
+	@Test public void testMissingArgument() throws Exception {
+		XtextResource resource = getResourceFromString(
+				"grammar com.acme.Bar with org.eclipse.xtext.common.Terminals\n" +
+				"generate metamodel 'myURI'\n" +
+				"Model: rule=Rule[+First, !Second];\n" + 
+				"Rule[First, Missing, Second]: name=ID;");
+
+		IResourceValidator validator = get(IResourceValidator.class);
+		List<Issue> issues = validator.validate(resource, CheckMode.FAST_ONLY, CancelIndicator.NullImpl);
+		assertEquals(issues.toString(), 1, issues.size());
+		assertEquals("Missing argument for parameter Missing", issues.get(0).getMessage());
+	}
+	
+	@Test public void testMissingArgument2() throws Exception {
+		XtextResource resource = getResourceFromString(
+				"grammar com.acme.Bar with org.eclipse.xtext.common.Terminals\n" +
+				"generate metamodel 'myURI'\n" +
+				"Model: rule=Rule[+First];\n" + 
+				"Rule[First, Missing, AlsoMissing]: name=ID;");
+
+		IResourceValidator validator = get(IResourceValidator.class);
+		List<Issue> issues = validator.validate(resource, CheckMode.FAST_ONLY, CancelIndicator.NullImpl);
+		assertEquals(issues.toString(), 1, issues.size());
+		assertEquals("2 missing arguments for the following parameters: Missing, AlsoMissing", issues.get(0).getMessage());
+	}
+	
+	@Test public void testDuplicateArgument() throws Exception {
+		XtextResource resource = getResourceFromString(
+				"grammar com.acme.Bar with org.eclipse.xtext.common.Terminals\n" +
+				"generate metamodel 'myURI'\n" +
+				"Model: rule=Rule[+Single, !Single];\n" + 
+				"Rule[Single]: name=ID;");
+
+		IResourceValidator validator = get(IResourceValidator.class);
+		List<Issue> issues = validator.validate(resource, CheckMode.FAST_ONLY, CancelIndicator.NullImpl);
+		assertEquals(issues.toString(), 1, issues.size());
+		assertEquals("Duplicate value for parameter Single", issues.get(0).getMessage());
+	}
+	
+	@Test public void testInvalidOverride() throws Exception {
+		XtextResource resource = getResourceFromStringAndExpect(
+				"grammar org.foo.Bar with org.eclipse.xtext.testlanguages.SimpleExpressionsTestLanguage\n" +
+				"import 'http://www.eclipse.org/xtext/test/simpleExpressions' as mm\n" +
+				"Atom[Whoot] returns mm::Atom: name = ID;", 1);
+		String message = resource.getErrors().get(0).getMessage();
+		assertEquals("Overridden rule Atom does not declare any parameters", message);
+	}
+	
 	@Test public void testParameterNotAvailable() throws Exception {
 		XtextResource resource = getResourceFromStringAndExpect(
 				"grammar Bar with org.eclipse.xtext.common.Terminals\n" +

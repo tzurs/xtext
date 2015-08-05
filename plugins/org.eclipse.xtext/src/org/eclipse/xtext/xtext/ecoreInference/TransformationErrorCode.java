@@ -22,7 +22,8 @@ public enum TransformationErrorCode {
 	InvalidDatatypeRule, 
 	InvalidSupertype, 
 	InvalidFeature,
-	InvalidFragmentOverride;
+	InvalidFragmentOverride,
+	InvalidRuleOverride;
 
 	public String getFullyQualifiedCode() {
 		return getClass().getCanonicalName() + "." + name();

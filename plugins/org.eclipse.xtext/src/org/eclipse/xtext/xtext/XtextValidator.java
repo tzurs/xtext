@@ -53,6 +53,8 @@ import org.eclipse.xtext.Grammar;
 import org.eclipse.xtext.GrammarUtil;
 import org.eclipse.xtext.Group;
 import org.eclipse.xtext.Keyword;
+import org.eclipse.xtext.NamedArgument;
+import org.eclipse.xtext.Parameter;
 import org.eclipse.xtext.ParserRule;
 import org.eclipse.xtext.ReferencedMetamodel;
 import org.eclipse.xtext.RuleCall;
@@ -107,6 +109,49 @@ public class XtextValidator extends AbstractDeclarativeValidator {
 	@Override
 	protected List<EPackage> getEPackages() {
 		return Collections.<EPackage>singletonList(XtextPackage.eINSTANCE);
+	}
+	
+	@Check
+	public void checkNumberOfNamedArguments(RuleCall call) {
+		AbstractRule rule = call.getRule();
+		if (rule instanceof ParserRule) {
+			Set<Parameter> usedParameters = Sets.newHashSet();
+			boolean hasError = false;
+			for(NamedArgument argument: call.getArguments()) {
+				Parameter parameter = argument.getParameter();
+				if (parameter == null || parameter.eIsProxy()) {
+					hasError = true;
+				} else if (!usedParameters.add(parameter)) {
+					hasError = true;
+					error("Duplicate value for parameter " + parameter.getName(),
+							argument, XtextPackage.Literals.NAMED_ARGUMENT__PARAMETER);
+				}
+			}
+			if (hasError) {
+				return;
+			}
+			List<Parameter> parameters = ((ParserRule) rule).getParameters();
+			if (usedParameters.size() != parameters.size()) {
+				StringBuilder missing = new StringBuilder();
+				int count = 0;
+				for(Parameter parameter: parameters) {
+					if (!usedParameters.contains(parameter)) {
+						if (count > 0) {
+							missing.append(", ");
+						}
+						missing.append(parameter.getName());
+						count++;
+					}
+				}
+				if (count == 1) {
+					error("Missing argument for parameter " + missing,
+							call, XtextPackage.Literals.RULE_CALL__RULE);
+				} else {
+					error(count + " missing arguments for the following parameters: " + missing,
+							call, XtextPackage.Literals.RULE_CALL__RULE); 
+				}
+			}
+		}
 	}
 
 	@Check
