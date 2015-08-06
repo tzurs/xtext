@@ -20,13 +20,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.xtext.AbstractElement;
 import org.eclipse.xtext.Action;
 import org.eclipse.xtext.Assignment;
 import org.eclipse.xtext.GrammarUtil;
-import org.eclipse.xtext.RuleCall;
 import org.eclipse.xtext.TypeRef;
 import org.eclipse.xtext.grammaranalysis.IGrammarNFAProvider.NFABuilder;
 import org.eclipse.xtext.grammaranalysis.impl.AbstractNFAState;

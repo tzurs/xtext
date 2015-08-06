@@ -15,7 +15,6 @@ import org.eclipse.xtext.services.XtextGrammarAccess.AbstractTokenWithCardinalit
 import org.eclipse.xtext.services.XtextGrammarAccess.ActionElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.AssignmentElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.CharacterRangeElements;
-import org.eclipse.xtext.services.XtextGrammarAccess.ConditionalBranchElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.CrossReferenceElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.EnumLiteralDeclarationElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.GrammarElements;

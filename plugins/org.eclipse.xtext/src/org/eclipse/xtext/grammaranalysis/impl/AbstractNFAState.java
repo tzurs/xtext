@@ -18,7 +18,6 @@ import java.util.Set;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.impl.AdapterImpl;
-import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.xtext.AbstractElement;
 import org.eclipse.xtext.AbstractRule;
