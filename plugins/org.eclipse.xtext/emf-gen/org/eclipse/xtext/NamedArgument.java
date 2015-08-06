@@ -16,7 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.eclipse.xtext.NamedArgument#getParameter <em>Parameter</em>}</li>
  *   <li>{@link org.eclipse.xtext.NamedArgument#isLiteralValue <em>Literal Value</em>}</li>
  *   <li>{@link org.eclipse.xtext.NamedArgument#getValue <em>Value</em>}</li>
- *   <li>{@link org.eclipse.xtext.NamedArgument#isExplicitValue <em>Explicit Value</em>}</li>
+ *   <li>{@link org.eclipse.xtext.NamedArgument#isCalledByName <em>Called By Name</em>}</li>
  * </ul>
  *
  * @see org.eclipse.xtext.XtextPackage#getNamedArgument()
@@ -131,29 +131,29 @@ public interface NamedArgument extends EObject {
 	void setValue(Parameter value);
 
 	/**
-	 * Returns the value of the '<em><b>Explicit Value</b></em>' attribute.
+	 * Returns the value of the '<em><b>Called By Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Explicit Value</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Called By Name</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Explicit Value</em>' attribute.
-	 * @see #setExplicitValue(boolean)
-	 * @see org.eclipse.xtext.XtextPackage#getNamedArgument_ExplicitValue()
+	 * @return the value of the '<em>Called By Name</em>' attribute.
+	 * @see #setCalledByName(boolean)
+	 * @see org.eclipse.xtext.XtextPackage#getNamedArgument_CalledByName()
 	 * @model
 	 * @generated
 	 */
-	boolean isExplicitValue();
+	boolean isCalledByName();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.xtext.NamedArgument#isExplicitValue <em>Explicit Value</em>}' attribute.
+	 * Sets the value of the '{@link org.eclipse.xtext.NamedArgument#isCalledByName <em>Called By Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Explicit Value</em>' attribute.
-	 * @see #isExplicitValue()
+	 * @param value the new value of the '<em>Called By Name</em>' attribute.
+	 * @see #isCalledByName()
 	 * @generated
 	 */
-	void setExplicitValue(boolean value);
+	void setCalledByName(boolean value);
 
 } // NamedArgument

@@ -19,13 +19,13 @@ import org.eclipse.xtext.Alternatives;
 import org.eclipse.xtext.Assignment;
 import org.eclipse.xtext.CharacterRange;
 import org.eclipse.xtext.CompoundElement;
+import org.eclipse.xtext.Condition;
 import org.eclipse.xtext.CrossReference;
 import org.eclipse.xtext.EnumLiteralDeclaration;
 import org.eclipse.xtext.EnumRule;
 import org.eclipse.xtext.GeneratedMetamodel;
 import org.eclipse.xtext.Grammar;
 import org.eclipse.xtext.Group;
-import org.eclipse.xtext.GuardCondition;
 import org.eclipse.xtext.Keyword;
 import org.eclipse.xtext.NamedArgument;
 import org.eclipse.xtext.NegatedToken;
@@ -252,7 +252,7 @@ public class XtextPackageImpl extends EPackageImpl implements XtextPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass guardConditionEClass = null;
+	private EClass conditionEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -1001,7 +1001,7 @@ public class XtextPackageImpl extends EPackageImpl implements XtextPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNamedArgument_ExplicitValue() {
+	public EAttribute getNamedArgument_CalledByName() {
 		return (EAttribute)namedArgumentEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -1010,8 +1010,8 @@ public class XtextPackageImpl extends EPackageImpl implements XtextPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getGuardCondition() {
-		return guardConditionEClass;
+	public EClass getCondition() {
+		return conditionEClass;
 	}
 
 	/**
@@ -1019,8 +1019,8 @@ public class XtextPackageImpl extends EPackageImpl implements XtextPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getGuardCondition_Parameter() {
-		return (EReference)guardConditionEClass.getEStructuralFeatures().get(0);
+	public EReference getCondition_Value() {
+		return (EReference)conditionEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1028,8 +1028,8 @@ public class XtextPackageImpl extends EPackageImpl implements XtextPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGuardCondition_PassIfTrue() {
-		return (EAttribute)guardConditionEClass.getEStructuralFeatures().get(1);
+	public EAttribute getCondition_Negate() {
+		return (EAttribute)conditionEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1161,11 +1161,11 @@ public class XtextPackageImpl extends EPackageImpl implements XtextPackage {
 		createEReference(namedArgumentEClass, NAMED_ARGUMENT__PARAMETER);
 		createEAttribute(namedArgumentEClass, NAMED_ARGUMENT__LITERAL_VALUE);
 		createEReference(namedArgumentEClass, NAMED_ARGUMENT__VALUE);
-		createEAttribute(namedArgumentEClass, NAMED_ARGUMENT__EXPLICIT_VALUE);
+		createEAttribute(namedArgumentEClass, NAMED_ARGUMENT__CALLED_BY_NAME);
 
-		guardConditionEClass = createEClass(GUARD_CONDITION);
-		createEReference(guardConditionEClass, GUARD_CONDITION__PARAMETER);
-		createEAttribute(guardConditionEClass, GUARD_CONDITION__PASS_IF_TRUE);
+		conditionEClass = createEClass(CONDITION);
+		createEReference(conditionEClass, CONDITION__VALUE);
+		createEAttribute(conditionEClass, CONDITION__NEGATE);
 	}
 
 	/**
@@ -1305,7 +1305,7 @@ public class XtextPackageImpl extends EPackageImpl implements XtextPackage {
 		initEClass(unorderedGroupEClass, UnorderedGroup.class, "UnorderedGroup", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(groupEClass, Group.class, "Group", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getGroup_GuardConditions(), this.getGuardCondition(), null, "guardConditions", null, 0, -1, Group.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getGroup_GuardConditions(), this.getCondition(), null, "guardConditions", null, 0, -1, Group.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(characterRangeEClass, CharacterRange.class, "CharacterRange", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCharacterRange_Left(), this.getKeyword(), null, "left", null, 0, 1, CharacterRange.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1323,11 +1323,11 @@ public class XtextPackageImpl extends EPackageImpl implements XtextPackage {
 		initEReference(getNamedArgument_Parameter(), this.getParameter(), null, "parameter", null, 0, 1, NamedArgument.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getNamedArgument_LiteralValue(), theEcorePackage.getEBoolean(), "literalValue", null, 0, 1, NamedArgument.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getNamedArgument_Value(), this.getParameter(), null, "value", null, 0, 1, NamedArgument.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getNamedArgument_ExplicitValue(), theEcorePackage.getEBoolean(), "explicitValue", null, 0, 1, NamedArgument.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNamedArgument_CalledByName(), theEcorePackage.getEBoolean(), "calledByName", null, 0, 1, NamedArgument.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(guardConditionEClass, GuardCondition.class, "GuardCondition", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getGuardCondition_Parameter(), this.getParameter(), null, "parameter", null, 0, 1, GuardCondition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getGuardCondition_PassIfTrue(), theEcorePackage.getEBoolean(), "passIfTrue", null, 0, 1, GuardCondition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(conditionEClass, Condition.class, "Condition", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getCondition_Value(), this.getParameter(), null, "value", null, 0, 1, Condition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCondition_Negate(), theEcorePackage.getEBoolean(), "negate", null, 0, 1, Condition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

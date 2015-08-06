@@ -25,7 +25,7 @@ import org.eclipse.xtext.XtextPackage;
  *   <li>{@link org.eclipse.xtext.impl.NamedArgumentImpl#getParameter <em>Parameter</em>}</li>
  *   <li>{@link org.eclipse.xtext.impl.NamedArgumentImpl#isLiteralValue <em>Literal Value</em>}</li>
  *   <li>{@link org.eclipse.xtext.impl.NamedArgumentImpl#getValue <em>Value</em>}</li>
- *   <li>{@link org.eclipse.xtext.impl.NamedArgumentImpl#isExplicitValue <em>Explicit Value</em>}</li>
+ *   <li>{@link org.eclipse.xtext.impl.NamedArgumentImpl#isCalledByName <em>Called By Name</em>}</li>
  * </ul>
  *
  * @generated
@@ -82,24 +82,24 @@ public class NamedArgumentImpl extends MinimalEObjectImpl.Container implements N
 	protected Parameter value;
 
 	/**
-	 * The default value of the '{@link #isExplicitValue() <em>Explicit Value</em>}' attribute.
+	 * The default value of the '{@link #isCalledByName() <em>Called By Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isExplicitValue()
+	 * @see #isCalledByName()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final boolean EXPLICIT_VALUE_EDEFAULT = false;
+	protected static final boolean CALLED_BY_NAME_EDEFAULT = false;
 
 	/**
-	 * The cached value of the '{@link #isExplicitValue() <em>Explicit Value</em>}' attribute.
+	 * The cached value of the '{@link #isCalledByName() <em>Called By Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isExplicitValue()
+	 * @see #isCalledByName()
 	 * @generated
 	 * @ordered
 	 */
-	protected boolean explicitValue = EXPLICIT_VALUE_EDEFAULT;
+	protected boolean calledByName = CALLED_BY_NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -247,8 +247,8 @@ public class NamedArgumentImpl extends MinimalEObjectImpl.Container implements N
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isExplicitValue() {
-		return explicitValue;
+	public boolean isCalledByName() {
+		return calledByName;
 	}
 
 	/**
@@ -256,11 +256,11 @@ public class NamedArgumentImpl extends MinimalEObjectImpl.Container implements N
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setExplicitValue(boolean newExplicitValue) {
-		boolean oldExplicitValue = explicitValue;
-		explicitValue = newExplicitValue;
+	public void setCalledByName(boolean newCalledByName) {
+		boolean oldCalledByName = calledByName;
+		calledByName = newCalledByName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, XtextPackage.NAMED_ARGUMENT__EXPLICIT_VALUE, oldExplicitValue, explicitValue));
+			eNotify(new ENotificationImpl(this, Notification.SET, XtextPackage.NAMED_ARGUMENT__CALLED_BY_NAME, oldCalledByName, calledByName));
 	}
 
 	/**
@@ -279,8 +279,8 @@ public class NamedArgumentImpl extends MinimalEObjectImpl.Container implements N
 			case XtextPackage.NAMED_ARGUMENT__VALUE:
 				if (resolve) return getValue();
 				return basicGetValue();
-			case XtextPackage.NAMED_ARGUMENT__EXPLICIT_VALUE:
-				return isExplicitValue();
+			case XtextPackage.NAMED_ARGUMENT__CALLED_BY_NAME:
+				return isCalledByName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -302,8 +302,8 @@ public class NamedArgumentImpl extends MinimalEObjectImpl.Container implements N
 			case XtextPackage.NAMED_ARGUMENT__VALUE:
 				setValue((Parameter)newValue);
 				return;
-			case XtextPackage.NAMED_ARGUMENT__EXPLICIT_VALUE:
-				setExplicitValue((Boolean)newValue);
+			case XtextPackage.NAMED_ARGUMENT__CALLED_BY_NAME:
+				setCalledByName((Boolean)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -326,8 +326,8 @@ public class NamedArgumentImpl extends MinimalEObjectImpl.Container implements N
 			case XtextPackage.NAMED_ARGUMENT__VALUE:
 				setValue((Parameter)null);
 				return;
-			case XtextPackage.NAMED_ARGUMENT__EXPLICIT_VALUE:
-				setExplicitValue(EXPLICIT_VALUE_EDEFAULT);
+			case XtextPackage.NAMED_ARGUMENT__CALLED_BY_NAME:
+				setCalledByName(CALLED_BY_NAME_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -347,8 +347,8 @@ public class NamedArgumentImpl extends MinimalEObjectImpl.Container implements N
 				return isSetLiteralValue();
 			case XtextPackage.NAMED_ARGUMENT__VALUE:
 				return value != null;
-			case XtextPackage.NAMED_ARGUMENT__EXPLICIT_VALUE:
-				return explicitValue != EXPLICIT_VALUE_EDEFAULT;
+			case XtextPackage.NAMED_ARGUMENT__CALLED_BY_NAME:
+				return calledByName != CALLED_BY_NAME_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -365,8 +365,8 @@ public class NamedArgumentImpl extends MinimalEObjectImpl.Container implements N
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (literalValue: ");
 		if (literalValueESet) result.append(literalValue); else result.append("<unset>");
-		result.append(", explicitValue: ");
-		result.append(explicitValue);
+		result.append(", calledByName: ");
+		result.append(calledByName);
 		result.append(')');
 		return result.toString();
 	}

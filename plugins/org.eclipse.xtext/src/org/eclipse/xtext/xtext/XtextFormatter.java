@@ -18,7 +18,7 @@ import org.eclipse.xtext.services.XtextGrammarAccess.CharacterRangeElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.CrossReferenceElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.EnumLiteralDeclarationElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.GrammarElements;
-import org.eclipse.xtext.services.XtextGrammarAccess.GuardConditionElements;
+import org.eclipse.xtext.services.XtextGrammarAccess.ConditionElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.NamedArgumentElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.NegatedTokenElements;
 import org.eclipse.xtext.services.XtextGrammarAccess.ParserRuleElements;
@@ -51,6 +51,10 @@ public class XtextFormatter extends AbstractDeclarativeFormatter {
 			cfg.setNoSpace().before(pair.getSecond());
 		}
 		for (Pair<Keyword, Keyword> pair : g.findKeywordPairs("[", "]")) {
+			cfg.setNoSpace().after(pair.getFirst());
+			cfg.setNoSpace().before(pair.getSecond());
+		}
+		for (Pair<Keyword, Keyword> pair : g.findKeywordPairs("<", ">")) {
 			cfg.setNoSpace().after(pair.getFirst());
 			cfg.setNoSpace().before(pair.getSecond());
 		}
@@ -131,17 +135,18 @@ public class XtextFormatter extends AbstractDeclarativeFormatter {
 		cfg.setNoSpace().around(eld.getEqualsSignKeyword_1_0());
 		
 		// GuardCondition
-		GuardConditionElements gca = g.getGuardConditionAccess();
-		cfg.setNoSpace().around(gca.getPassIfTrueAssignment_0());
+		ConditionElements gca = g.getConditionAccess();
+		cfg.setNoSpace().around(gca.getNegateAssignment_0());
 		
 		// RuleCall
 		RuleCallElements rca = g.getRuleCallAccess();
-		cfg.setNoSpace().before(rca.getLeftSquareBracketKeyword_1_0());
+		cfg.setNoSpace().before(rca.getLessThanSignKeyword_1_0());
 		
 		// NamedArgument
 		NamedArgumentElements naa = g.getNamedArgumentAccess();
-		cfg.setNoSpace().around(naa.getLiteralValueAssignment_0_0());
-		cfg.setNoSpace().around(naa.getExplicitValueAssignment_1_1_0());
+		cfg.setNoSpace().around(naa.getCalledByNameAssignment_0_1());
+		cfg.setNoSpace().around(naa.getLiteralValueAssignment_1_0());
+		cfg.setNoSpace().around(naa.getValueAssignment_1_1());
 
 		//saveDebugGraphvizDiagram("XtextFormatting.dot");
 	}

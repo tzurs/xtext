@@ -261,9 +261,9 @@ public class XtextSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case XtextPackage.GUARD_CONDITION: {
-				GuardCondition guardCondition = (GuardCondition)theEObject;
-				T result = caseGuardCondition(guardCondition);
+			case XtextPackage.CONDITION: {
+				Condition condition = (Condition)theEObject;
+				T result = caseCondition(condition);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -694,18 +694,18 @@ public class XtextSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Guard Condition</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Condition</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * @since 2.9
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Guard Condition</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Condition</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGuardCondition(GuardCondition object) {
+	public T caseCondition(Condition object) {
 		return null;
 	}
 

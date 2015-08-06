@@ -87,7 +87,7 @@ public class XtextFactoryImpl extends EFactoryImpl implements XtextFactory {
 			case XtextPackage.EOF: return createEOF();
 			case XtextPackage.PARAMETER: return createParameter();
 			case XtextPackage.NAMED_ARGUMENT: return createNamedArgument();
-			case XtextPackage.GUARD_CONDITION: return createGuardCondition();
+			case XtextPackage.CONDITION: return createCondition();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -377,13 +377,12 @@ public class XtextFactoryImpl extends EFactoryImpl implements XtextFactory {
 
 	/**
 	 * <!-- begin-user-doc -->
-	 * @since 2.9
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public GuardCondition createGuardCondition() {
-		GuardConditionImpl guardCondition = new GuardConditionImpl();
-		return guardCondition;
+	public Condition createCondition() {
+		ConditionImpl condition = new ConditionImpl();
+		return condition;
 	}
 
 	/**

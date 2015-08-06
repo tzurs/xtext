@@ -26,9 +26,9 @@ class XtextGrammarSerializationTest extends AbstractXtextTests {
 		val String model = '''
 			grammar foo with org.eclipse.xtext.common.Terminals
 			generate mm "http://bar"
-			MyRule[MyParam]:
-			    [!MyParam] name=ID
-			  | [+MyParam] name=STRING
+			MyRule<MyParam>:
+			    <MyParam> name=ID
+			  | <!MyParam> name=STRING
 			  | name='name'
 			;
 		'''
@@ -37,9 +37,9 @@ class XtextGrammarSerializationTest extends AbstractXtextTests {
 			
 			generate mm "http://bar"
 			
-			MyRule [MyParam]:
-				[!MyParam] name=ID
-				| [+MyParam] name=STRING
+			MyRule <MyParam>:
+				<MyParam> name=ID
+				| <!MyParam> name=STRING
 				| name='name';'''
 		doTestSerialization(model, expectedModel)
 	}
@@ -48,8 +48,8 @@ class XtextGrammarSerializationTest extends AbstractXtextTests {
 		val String model = '''
 			grammar foo with org.eclipse.xtext.common.Terminals
 			generate mm "http://bar"
-			Rule  [ arg  ] :
-				name=ID child=Rule[ arg ]
+			Rule  < arg  > :
+				name=ID child=Rule< arg >
 			;
 		'''
 		val String expectedModel = '''
@@ -57,8 +57,8 @@ class XtextGrammarSerializationTest extends AbstractXtextTests {
 			
 			generate mm "http://bar"
 			
-			Rule [arg]:
-				name=ID child=Rule[arg];'''
+			Rule <arg>:
+				name=ID child=Rule<arg>;'''
 		doTestSerialization(model, expectedModel)
 	}
 	
@@ -66,13 +66,13 @@ class XtextGrammarSerializationTest extends AbstractXtextTests {
 		val String model = '''
 			grammar foo with org.eclipse.xtext.common.Terminals
 			generate mm "http://bar"
-			MyRule[host]:
-				value1=MyParameterizedRule[ + arg ]
-				value2=MyParameterizedRule[ ! arg ]
-				value3=MyParameterizedRule [ arg = host ]
+			MyRule<host>:
+				value1=MyParameterizedRule< arg = true >
+				value2=MyParameterizedRule<  arg   = false >
+				value3=MyParameterizedRule < arg = host >
 			;
-			MyParameterizedRule  [ arg  ] :
-				name=ID child=MyParameterizedRule[ arg ]
+			MyParameterizedRule  < arg  > :
+				name=ID child=MyParameterizedRule< arg >
 			;
 		'''
 		val String expectedModel = '''
@@ -80,13 +80,13 @@ class XtextGrammarSerializationTest extends AbstractXtextTests {
 			
 			generate mm "http://bar"
 			
-			MyRule [host]:
-				value1=MyParameterizedRule[+arg]
-				value2=MyParameterizedRule[!arg]
-				value3=MyParameterizedRule[arg=host];
+			MyRule <host>:
+				value1=MyParameterizedRule<arg=true>
+				value2=MyParameterizedRule<arg=false>
+				value3=MyParameterizedRule<arg=host>;
 			
-			MyParameterizedRule [arg]:
-				name=ID child=MyParameterizedRule[arg];'''
+			MyParameterizedRule <arg>:
+				name=ID child=MyParameterizedRule<arg>;'''
 		doTestSerialization(model, expectedModel)
 	}
 

@@ -25,7 +25,7 @@ public class XtextValueSerializer extends ValueSerializer {
 	
 	@Override
 	public boolean isValid(EObject context, RuleCall ruleCall, Object value, IErrorAcceptor errorAcceptor) {
-		if (context instanceof NamedArgument && ruleCall == grammarAccess.getNamedArgumentAccess().getLiteralValueLiteralValueParserRuleCall_0_0_0()) {
+		if (context instanceof NamedArgument && ruleCall == grammarAccess.getNamedArgumentAccess().getLiteralValueBooleanParserRuleCall_1_0_0()) {
 			NamedArgument casted = (NamedArgument) context;
 			if (casted.isSetLiteralValue()) {
 				return true;

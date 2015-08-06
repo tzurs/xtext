@@ -180,8 +180,8 @@ public class XtextAdapterFactory extends AdapterFactoryImpl {
 				return createNamedArgumentAdapter();
 			}
 			@Override
-			public Adapter caseGuardCondition(GuardCondition object) {
-				return createGuardConditionAdapter();
+			public Adapter caseCondition(Condition object) {
+				return createConditionAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -598,17 +598,17 @@ public class XtextAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.eclipse.xtext.GuardCondition <em>Guard Condition</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.xtext.Condition <em>Condition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * @since 2.9
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.eclipse.xtext.GuardCondition
+	 * @see org.eclipse.xtext.Condition
 	 * @generated
 	 */
-	public Adapter createGuardConditionAdapter() {
+	public Adapter createConditionAdapter() {
 		return null;
 	}
 

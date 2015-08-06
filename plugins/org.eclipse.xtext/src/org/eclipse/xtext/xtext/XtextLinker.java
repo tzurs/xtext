@@ -33,7 +33,6 @@ import org.eclipse.xtext.GeneratedMetamodel;
 import org.eclipse.xtext.Grammar;
 import org.eclipse.xtext.GrammarUtil;
 import org.eclipse.xtext.NamedArgument;
-import org.eclipse.xtext.Parameter;
 import org.eclipse.xtext.ParserRule;
 import org.eclipse.xtext.ReferencedMetamodel;
 import org.eclipse.xtext.RuleCall;
@@ -42,10 +41,10 @@ import org.eclipse.xtext.XtextFactory;
 import org.eclipse.xtext.XtextPackage;
 import org.eclipse.xtext.diagnostics.AbstractDiagnosticProducerDecorator;
 import org.eclipse.xtext.diagnostics.DiagnosticMessage;
-import org.eclipse.xtext.diagnostics.Severity;
 import org.eclipse.xtext.diagnostics.ExceptionDiagnostic;
 import org.eclipse.xtext.diagnostics.IDiagnosticConsumer;
 import org.eclipse.xtext.diagnostics.IDiagnosticProducer;
+import org.eclipse.xtext.diagnostics.Severity;
 import org.eclipse.xtext.linking.impl.Linker;
 import org.eclipse.xtext.nodemodel.INode;
 import org.eclipse.xtext.nodemodel.util.NodeModelUtils;
@@ -158,23 +157,18 @@ public class XtextLinker extends Linker {
 				call.setRule(rule);
 				((CrossReference) obj).setTerminal(call);
 			}
-		} else if (XtextPackage.eINSTANCE.getNamedArgument_Value() == ref) {
+		} else if (XtextPackage.eINSTANCE.getNamedArgument_Parameter() == ref) {
 			final NamedArgument argument = (NamedArgument) obj;
-			if (!argument.isSetLiteralValue() && !argument.isExplicitValue()) {
-				Parameter linkedParameter = argument.getParameter();
-				if (linkedParameter != null && !linkedParameter.eIsProxy()) {
-					ParserRule containingRule = GrammarUtil.containingParserRule(argument);
-					if (containingRule != null) {
-						for(Parameter enclosing: containingRule.getParameters()) {
-							if (linkedParameter.getName().equals(enclosing.getName())) {
-								argument.setValue(enclosing);
-								return;
-							}
-						}
+			if (!argument.isCalledByName()) {
+				RuleCall ruleCall = EcoreUtil2.getContainerOfType(argument, RuleCall.class);
+				AbstractRule calledRule = ruleCall.getRule();
+				if (calledRule instanceof ParserRule && !calledRule.eIsProxy()) {
+					ParserRule casted = (ParserRule) calledRule;
+					int idx = ruleCall.getArguments().indexOf(argument);
+					if (idx < casted.getParameters().size()) {
+						argument.setParameter(casted.getParameters().get(idx));
+						return;
 					}
-					producer.addDiagnostic(new DiagnosticMessage(
-							"Cannot resolve implicit reference to enclosing parameter '" + linkedParameter.getName() + "'", 
-							Severity.ERROR, null));
 				}
 			}
 		} else {

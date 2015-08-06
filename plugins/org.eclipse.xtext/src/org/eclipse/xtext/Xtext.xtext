@@ -12,13 +12,13 @@ import "http://www.eclipse.org/emf/2002/Ecore" as ecore
 
 Grammar:
     'grammar' name=GrammarID ('with' usedGrammars+=[Grammar|GrammarID] (',' usedGrammars+=[Grammar|GrammarID])*)?
-	(definesHiddenTokens?='hidden' '(' (hiddenTokens+=[AbstractRule] (',' hiddenTokens+=[AbstractRule])*)? ')')?
+	(definesHiddenTokens?='hidden' '(' (hiddenTokens+=[AbstractRule|RuleID] (',' hiddenTokens+=[AbstractRule|RuleID])*)? ')')?
 	metamodelDeclarations+=AbstractMetamodelDeclaration* 
     (rules+=AbstractRule)+
 ;
 
 GrammarID returns ecore::EString:
-  ID ('.' ID)*;
+  ValidID ('.' ValidID)*;
   
 AbstractRule : ParserRule | TerminalRule | EnumRule;
 
@@ -28,25 +28,29 @@ AbstractMetamodelDeclaration :
 // constraint: typeSelect(GeneratedMetamodel).size() == typeSelect(GeneratedMetamodel).alias.size()
 // generated metamodels have to have different aliases
 GeneratedMetamodel :
-	'generate' name=ID ePackage=[ecore::EPackage|STRING] ('as' alias=ID)?;
+	'generate' name=ValidID ePackage=[ecore::EPackage|STRING] ('as' alias=ValidID)?;
 
 // referenced metamodels may share aliases with other referenced metamodels
 // and with generated metamodels
 ReferencedMetamodel :
-	'import' ePackage=[ecore::EPackage|STRING] ('as' alias=ID)?;
+	'import' ePackage=[ecore::EPackage|STRING] ('as' alias=ValidID)?;
+
+//fragment Alias returns AbstractMetamodelDeclaration:
+//	'as' alias=ValidID
+//;
 
 ParserRule :
 	(
 	  ^fragment?='fragment' RuleNameAndParams (wildcard?='*' | ('returns' type=TypeRef)?) 
 	| RuleNameAndParams ('returns' type=TypeRef)?
 	)
-	(definesHiddenTokens?='hidden' '(' (hiddenTokens+=[AbstractRule] (',' hiddenTokens+=[AbstractRule])*)? ')')? ':'
+	(definesHiddenTokens?='hidden' '(' (hiddenTokens+=[AbstractRule|RuleID] (',' hiddenTokens+=[AbstractRule|RuleID])*)? ')')? ':'
     	alternatives=Alternatives   
     ';'
 ;
 
 fragment RuleNameAndParams returns ParserRule:
-	name=ID ('[' (parameters+=Parameter (',' parameters+=Parameter)*)? ']')?
+	name=ValidID ('<' (parameters+=Parameter (',' parameters+=Parameter)*)? '>')?
 ;
 
 Parameter:
@@ -63,11 +67,11 @@ Alternatives returns AbstractElement:
 
 ConditionalBranch returns AbstractElement:
 	  UnorderedGroup
-	| {Group} '[' guardConditions+=GuardCondition (',' guardConditions+=GuardCondition)* ']' (elements+=AbstractToken)+
+	| {Group} '<' guardConditions+=Condition ('&' guardConditions+=Condition)* '>' (elements+=AbstractToken)+
 ;
 
-GuardCondition:
-	passIfTrue=LiteralValue parameter=[Parameter|ID]
+Condition:
+	negate?='!'? value=[Parameter|ID]
 ;
 
 UnorderedGroup returns AbstractElement:
@@ -89,7 +93,7 @@ AbstractTokenWithCardinality returns AbstractElement:
 ;
 
 Action returns Action:
-	'{' type=TypeRef ('.' feature=ID operator=('='|'+=') 'current')? '}'
+	'{' type=TypeRef ('.' feature=ValidID operator=('='|'+=') 'current')? '}'
 ;
 
 AbstractTerminal returns AbstractElement: 
@@ -111,17 +115,12 @@ Keyword :
 ;
 
 RuleCall :
-   rule=[AbstractRule|RuleID] ('[' arguments+=NamedArgument (',' arguments+=NamedArgument)* ']')?
-;
-
-LiteralValue returns ecore::EBoolean:
-	'!'|'+'
+   rule=[AbstractRule|RuleID] ('<' arguments+=NamedArgument (',' arguments+=NamedArgument)* '>')?
 ;
 
 NamedArgument:
-	( literalValue=LiteralValue parameter=[Parameter|ID]
-	| parameter=[Parameter|ID] (explicitValue?='=' value=[Parameter|ID])?
-	)
+	( parameter=[Parameter|ID] calledByName?= '=')?
+	( literalValue=Boolean | value=[Parameter|ID] )
 ;
 
 TerminalRuleCall returns RuleCall:
@@ -129,7 +128,15 @@ TerminalRuleCall returns RuleCall:
 ;
 
 RuleID returns ecore::EString:
-  ID ('::' ID)*
+  ValidID ('::' ValidID)*
+;
+
+ValidID returns ecore::EString:
+  ID | 'true' | 'false'
+;
+
+Boolean returns ecore::EBoolean:
+	'true' | 'false'
 ;
 
 PredicatedKeyword returns Keyword:
@@ -141,7 +148,7 @@ PredicatedRuleCall returns RuleCall:
 ;
 
 Assignment returns Assignment:
-   (predicated?='=>' | firstSetPredicated?='->')? feature=ID operator=('+='|'='|'?=') ^terminal=AssignableTerminal
+   (predicated?='=>' | firstSetPredicated?='->')? feature=ValidID operator=('+='|'='|'?=') ^terminal=AssignableTerminal
 ;
 
 AssignableTerminal returns AbstractElement:
@@ -173,7 +180,7 @@ PredicatedGroup returns Group:
 ;
 
 TerminalRule :
-	'terminal' (^fragment?='fragment' name=ID | name=ID ('returns' type=TypeRef)?) ':'
+	'terminal' (^fragment?='fragment' name=ValidID | name=ValidID ('returns' type=TypeRef)?) ':'
 		alternatives=TerminalAlternatives
 	';'
 ;
@@ -224,7 +231,7 @@ CharacterRange returns AbstractElement:
 ;
 
 EnumRule:
-    'enum' name=ID ('returns' type=TypeRef)? ':' 
+    'enum' name=ValidID ('returns' type=TypeRef)? ':' 
     	alternatives=EnumLiterals   
     ';'
 ;

@@ -14,8 +14,8 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
+import org.eclipse.xtext.Condition;
 import org.eclipse.xtext.Group;
-import org.eclipse.xtext.GuardCondition;
 import org.eclipse.xtext.Parameter;
 import org.eclipse.xtext.XtextPackage;
 
@@ -44,7 +44,7 @@ public class GroupImpl extends CompoundElementImpl implements Group {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<GuardCondition> guardConditions;
+	protected EList<Condition> guardConditions;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -70,9 +70,9 @@ public class GroupImpl extends CompoundElementImpl implements Group {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<GuardCondition> getGuardConditions() {
+	public EList<Condition> getGuardConditions() {
 		if (guardConditions == null) {
-			guardConditions = new EObjectContainmentEList<GuardCondition>(GuardCondition.class, this, XtextPackage.GROUP__GUARD_CONDITIONS);
+			guardConditions = new EObjectContainmentEList<Condition>(Condition.class, this, XtextPackage.GROUP__GUARD_CONDITIONS);
 		}
 		return guardConditions;
 	}
@@ -116,7 +116,7 @@ public class GroupImpl extends CompoundElementImpl implements Group {
 		switch (featureID) {
 			case XtextPackage.GROUP__GUARD_CONDITIONS:
 				getGuardConditions().clear();
-				getGuardConditions().addAll((Collection<? extends GuardCondition>)newValue);
+				getGuardConditions().addAll((Collection<? extends Condition>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);

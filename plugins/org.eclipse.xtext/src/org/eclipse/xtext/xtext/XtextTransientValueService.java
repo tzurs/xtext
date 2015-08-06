@@ -71,8 +71,8 @@ public class XtextTransientValueService extends DefaultTransientValueService {
 		else if (feature == XtextPackage.eINSTANCE.getRuleCall_ExplicitlyCalled()) {
 			return true;
 		}
-		else if (feature == XtextPackage.eINSTANCE.getNamedArgument_Value()) {
-			return !((NamedArgument)owner).isExplicitValue();
+		else if (feature == XtextPackage.eINSTANCE.getNamedArgument_Parameter()) {
+			return !((NamedArgument)owner).isCalledByName();
 		}
 		else if (feature == XtextPackage.eINSTANCE.getNamedArgument_LiteralValue()) {
 			boolean result = !((NamedArgument)owner).isSetLiteralValue();

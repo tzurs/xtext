@@ -86,8 +86,8 @@ public class XtextValidationTest extends AbstractValidationMessageAcceptingTestC
 		XtextResource resource = getResourceFromString(
 				"grammar com.acme.Bar with org.eclipse.xtext.common.Terminals\n" +
 				"generate metamodel 'myURI'\n" +
-				"Model: rule=Rule[+First, !Second];\n" + 
-				"Rule[First, Missing, Second]: name=ID;");
+				"Model: rule=Rule<First=true, Second=false>;\n" + 
+				"Rule<First, Missing, Second>: name=ID;");
 
 		IResourceValidator validator = get(IResourceValidator.class);
 		List<Issue> issues = validator.validate(resource, CheckMode.FAST_ONLY, CancelIndicator.NullImpl);
@@ -99,8 +99,8 @@ public class XtextValidationTest extends AbstractValidationMessageAcceptingTestC
 		XtextResource resource = getResourceFromString(
 				"grammar com.acme.Bar with org.eclipse.xtext.common.Terminals\n" +
 				"generate metamodel 'myURI'\n" +
-				"Model: rule=Rule[+First];\n" + 
-				"Rule[First, Missing, AlsoMissing]: name=ID;");
+				"Model: rule=Rule<First=true>;\n" + 
+				"Rule<First, Missing, AlsoMissing>: name=ID;");
 
 		IResourceValidator validator = get(IResourceValidator.class);
 		List<Issue> issues = validator.validate(resource, CheckMode.FAST_ONLY, CancelIndicator.NullImpl);
@@ -108,12 +108,63 @@ public class XtextValidationTest extends AbstractValidationMessageAcceptingTestC
 		assertEquals("2 missing arguments for the following parameters: Missing, AlsoMissing", issues.get(0).getMessage());
 	}
 	
+	@Test public void testMissingArgument3() throws Exception {
+		XtextResource resource = getResourceFromString(
+				"grammar com.acme.Bar with org.eclipse.xtext.common.Terminals\n" +
+				"generate metamodel 'myURI'\n" +
+				"Model: rule=Rule<true>;\n" + 
+				"Rule<First, Missing, AlsoMissing>: name=ID;");
+
+		IResourceValidator validator = get(IResourceValidator.class);
+		List<Issue> issues = validator.validate(resource, CheckMode.FAST_ONLY, CancelIndicator.NullImpl);
+		assertEquals(issues.toString(), 1, issues.size());
+		assertEquals("Expected 3 arguments but got 1", issues.get(0).getMessage());
+	}
+
+	@Test public void testOutOfSequenceArgument_01() throws Exception {
+		XtextResource resource = getResourceFromString(
+				"grammar com.acme.Bar with org.eclipse.xtext.common.Terminals\n" +
+				"generate metamodel 'myURI'\n" +
+				"Model: rule=Rule<true, C=false, B=true>;\n" + 
+				"Rule<A, B, C>: name=ID;");
+
+		IResourceValidator validator = get(IResourceValidator.class);
+		List<Issue> issues = validator.validate(resource, CheckMode.FAST_ONLY, CancelIndicator.NullImpl);
+		assertEquals(issues.toString(), 2, issues.size());
+		assertEquals("Out of sequence named argument. Expected value for B", issues.get(0).getMessage());
+		assertEquals("Out of sequence named argument. Expected value for C", issues.get(1).getMessage());
+	}
+	
+	@Test public void testOutOfSequenceArgument_02() throws Exception {
+		XtextResource resource = getResourceFromString(
+				"grammar com.acme.Bar with org.eclipse.xtext.common.Terminals\n" +
+				"generate metamodel 'myURI'\n" +
+				"Model: rule=Rule<true, B=false, C=true>;\n" + 
+				"Rule<A, B, C>: name=ID;");
+
+		IResourceValidator validator = get(IResourceValidator.class);
+		List<Issue> issues = validator.validate(resource, CheckMode.FAST_ONLY, CancelIndicator.NullImpl);
+		assertEquals(issues.toString(), 0, issues.size());
+	}
+
+	@Test public void testOutOfSequenceArgument_03() throws Exception {
+		XtextResource resource = getResourceFromString(
+				"grammar com.acme.Bar with org.eclipse.xtext.common.Terminals\n" +
+				"generate metamodel 'myURI'\n" +
+				"Model: rule=Rule<A=true, C=false, B=true>;\n" + 
+				"Rule<A, B, C>: name=ID;");
+
+		IResourceValidator validator = get(IResourceValidator.class);
+		List<Issue> issues = validator.validate(resource, CheckMode.FAST_ONLY, CancelIndicator.NullImpl);
+		assertEquals(issues.toString(), 0, issues.size());
+	}
+	
 	@Test public void testDuplicateArgument() throws Exception {
 		XtextResource resource = getResourceFromString(
 				"grammar com.acme.Bar with org.eclipse.xtext.common.Terminals\n" +
 				"generate metamodel 'myURI'\n" +
-				"Model: rule=Rule[+Single, !Single];\n" + 
-				"Rule[Single]: name=ID;");
+				"Model: rule=Rule<Single=true, Single=false>;\n" + 
+				"Rule<Single>: name=ID;");
 
 		IResourceValidator validator = get(IResourceValidator.class);
 		List<Issue> issues = validator.validate(resource, CheckMode.FAST_ONLY, CancelIndicator.NullImpl);
@@ -125,7 +176,7 @@ public class XtextValidationTest extends AbstractValidationMessageAcceptingTestC
 		XtextResource resource = getResourceFromStringAndExpect(
 				"grammar org.foo.Bar with org.eclipse.xtext.testlanguages.SimpleExpressionsTestLanguage\n" +
 				"import 'http://www.eclipse.org/xtext/test/simpleExpressions' as mm\n" +
-				"Atom[Whoot] returns mm::Atom: name = ID;", 1);
+				"Atom<Whoot> returns mm::Atom: name = ID;", 1);
 		String message = resource.getErrors().get(0).getMessage();
 		assertEquals("Overridden rule Atom does not declare any parameters", message);
 	}
@@ -134,11 +185,11 @@ public class XtextValidationTest extends AbstractValidationMessageAcceptingTestC
 		XtextResource resource = getResourceFromStringAndExpect(
 				"grammar Bar with org.eclipse.xtext.common.Terminals\n" +
 				"generate metamodel 'myURI'\n" +
-				"Model: rule=Rule[Arg];\n" + 
-				"Rule[Arg]: name=ID;", 1);
+				"Model: rule=Rule<Arg>;\n" + 
+				"Rule<Arg>: name=ID;", 1);
 
 		String message = resource.getErrors().get(0).getMessage();
-		assertEquals("Cannot resolve implicit reference to enclosing parameter 'Arg'", message);
+		assertEquals("Couldn't resolve reference to Parameter 'Arg'.", message);
 	}
 	
 	/**

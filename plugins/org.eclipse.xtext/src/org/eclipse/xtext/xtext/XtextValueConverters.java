@@ -13,9 +13,12 @@ import org.eclipse.xtext.conversion.IValueConverter;
 import org.eclipse.xtext.conversion.ValueConverter;
 import org.eclipse.xtext.conversion.ValueConverterException;
 import org.eclipse.xtext.conversion.impl.AbstractNullSafeConverter;
+import org.eclipse.xtext.conversion.impl.KeywordAlternativeConverter;
 import org.eclipse.xtext.nodemodel.ILeafNode;
 import org.eclipse.xtext.nodemodel.INode;
 
+import com.google.inject.Inject;
+import com.google.inject.Provider;
 import com.google.inject.Singleton;
 
 /**
@@ -24,6 +27,14 @@ import com.google.inject.Singleton;
 @Singleton
 public class XtextValueConverters extends DefaultTerminalConverters {
 
+	@Inject
+	private Provider<KeywordAlternativeConverter> validIDConverter;
+	
+	@ValueConverter(rule = "ValidID")
+	public IValueConverter<String> ValidID() {
+		return validIDConverter.get();
+	}
+	
 	@ValueConverter(rule = "GrammarID")
 	public IValueConverter<String> GrammarID() {
 		return new AbstractNullSafeConverter<String>() {

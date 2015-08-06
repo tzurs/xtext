@@ -278,14 +278,14 @@ public interface XtextFactory extends EFactory {
 	NamedArgument createNamedArgument();
 
 	/**
-	 * Returns a new object of class '<em>Guard Condition</em>'.
+	 * Returns a new object of class '<em>Condition</em>'.
 	 * <!-- begin-user-doc -->
 	 * @since 2.9
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Guard Condition</em>'.
+	 * @return a new object of class '<em>Condition</em>'.
 	 * @generated
 	 */
-	GuardCondition createGuardCondition();
+	Condition createCondition();
 
 	/**
 	 * Returns the package supported by this factory.

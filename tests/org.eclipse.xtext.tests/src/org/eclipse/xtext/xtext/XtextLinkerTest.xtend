@@ -33,25 +33,25 @@ class XtextLinkerTest extends AbstractXtextTests {
 		val grammarAsString = '''
 			grammar test.Lang with org.eclipse.xtext.common.Terminals
 			generate test 'http://test'
-			Root[MyArg]: [+MyArg] name=ID | [!MyArg] name=STRING;
+			Root<MyArg>: <MyArg> name=ID | <!MyArg> name=STRING;
 		'''
 		val grammar = grammarAsString.model as Grammar
 		val rootRule = grammar.rules.head as ParserRule
 		val alternatives = rootRule.alternatives as Alternatives
 		val firstGuard = (alternatives.elements.head as Group).guardConditions.head
-		assertEquals(rootRule.parameters.head, firstGuard.parameter)
-		assertTrue(firstGuard.isPassIfTrue)
+		assertEquals(rootRule.parameters.head, firstGuard.value)
+		assertFalse(firstGuard.negate)
 		val secondGuard = (alternatives.elements.last as Group).guardConditions.head
-		assertEquals(rootRule.parameters.head, secondGuard.parameter)
-		assertFalse(secondGuard.isPassIfTrue)
+		assertEquals(rootRule.parameters.head, secondGuard.value)
+		assertTrue(secondGuard.negate)
 	}
 	
 	@Test def void testNamedParameterLinking() throws Exception {
 		val grammarAsString = '''
 			grammar test.Lang with org.eclipse.xtext.common.Terminals
 			generate test 'http://test'
-			Root[MyArg]: rule=Rule[+MyParam];
-			Rule[MyParam]: name=ID child=Root[MyArg=MyParam]?;
+			Root<MyArg>: rule=Rule<MyArg>;
+			Rule<MyParam>: name=ID child=Root<MyArg=MyParam>?;
 		'''
 		val grammar = grammarAsString.model as Grammar
 		val rootRule = grammar.rules.head as ParserRule
@@ -63,12 +63,12 @@ class XtextLinkerTest extends AbstractXtextTests {
 		assertEquals(lastRule.parameters.head, argument.value)
 	}
 	
-	@Test def void testImplicitNamedParameterLinking() throws Exception {
+	@Test def void testImplicitNamedParameterLinking_01() throws Exception {
 		val grammarAsString = '''
 			grammar test.Lang with org.eclipse.xtext.common.Terminals
 			generate test 'http://test'
-			Root[MyParam]: rule=Rule[+MyParam];
-			Rule[MyParam]: name=ID child=Root[MyParam]?;
+			Root<MyParam>: rule=Rule<MyParam>;
+			Rule<MyParam>: name=ID child=Root<MyParam>?;
 		'''
 		val grammar = grammarAsString.model as Grammar
 		val rootRule = grammar.rules.head as ParserRule
@@ -78,6 +78,23 @@ class XtextLinkerTest extends AbstractXtextTests {
 		val argument = ruleCall.arguments.head
 		assertEquals(rootRule.parameters.head, argument.parameter)
 		assertEquals(lastRule.parameters.head, argument.value)
+	}
+	
+	@Test def void testImplicitNamedParameterLinking_02() throws Exception {
+		val grammarAsString = '''
+			grammar test.Lang with org.eclipse.xtext.common.Terminals
+			generate test 'http://test'
+			Root<MyParam>: rule=Rule<true>;
+			Rule<MyParam>: name=ID child=Root<false>?;
+		'''
+		val grammar = grammarAsString.model as Grammar
+		val rootRule = grammar.rules.head as ParserRule
+		val lastRule = grammar.rules.last as ParserRule
+		val lastAssignment = (lastRule.alternatives as Group).elements.last as Assignment
+		val ruleCall = lastAssignment.terminal as RuleCall
+		val argument = ruleCall.arguments.head
+		assertEquals(rootRule.parameters.head, argument.parameter)
+		assertFalse(argument.literalValue)
 	}
 	
 	@Test def void testExplicitRuleCallsAreTracked() throws Exception {

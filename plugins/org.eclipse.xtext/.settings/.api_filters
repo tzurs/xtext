@@ -46,75 +46,30 @@
                 <message_argument value="4"/>
             </message_arguments>
         </filter>
-        <filter id="1211105284">
-            <message_arguments>
-                <message_argument value="GROUP__GUARD_CONDITIONS"/>
-            </message_arguments>
-        </filter>
-        <filter id="1211105284">
-            <message_arguments>
-                <message_argument value="GUARD_CONDITION"/>
-            </message_arguments>
-        </filter>
-        <filter id="1211105284">
-            <message_arguments>
-                <message_argument value="GUARD_CONDITION_FEATURE_COUNT"/>
-            </message_arguments>
-        </filter>
-        <filter id="1211105284">
-            <message_arguments>
-                <message_argument value="GUARD_CONDITION__PARAMETER"/>
-            </message_arguments>
-        </filter>
-        <filter id="1211105284">
-            <message_arguments>
-                <message_argument value="GUARD_CONDITION__PASS_IF_TRUE"/>
-            </message_arguments>
-        </filter>
-        <filter id="1211105284">
-            <message_arguments>
-                <message_argument value="getGroup_GuardConditions()"/>
-            </message_arguments>
-        </filter>
-        <filter id="1211105284">
-            <message_arguments>
-                <message_argument value="getGuardCondition()"/>
-            </message_arguments>
-        </filter>
-        <filter id="1211105284">
-            <message_arguments>
-                <message_argument value="getGuardCondition_Parameter()"/>
-            </message_arguments>
-        </filter>
-        <filter id="1211105284">
-            <message_arguments>
-                <message_argument value="getGuardCondition_PassIfTrue()"/>
-            </message_arguments>
-        </filter>
     </resource>
     <resource path="emf-gen/org/eclipse/xtext/XtextPackage.java" type="org.eclipse.xtext.XtextPackage$Literals">
         <filter id="403767336">
             <message_arguments>
                 <message_argument value="org.eclipse.xtext.XtextPackage.Literals"/>
+                <message_argument value="CONDITION"/>
+            </message_arguments>
+        </filter>
+        <filter id="403767336">
+            <message_arguments>
+                <message_argument value="org.eclipse.xtext.XtextPackage.Literals"/>
+                <message_argument value="CONDITION__NEGATE"/>
+            </message_arguments>
+        </filter>
+        <filter id="403767336">
+            <message_arguments>
+                <message_argument value="org.eclipse.xtext.XtextPackage.Literals"/>
+                <message_argument value="CONDITION__VALUE"/>
+            </message_arguments>
+        </filter>
+        <filter id="403767336">
+            <message_arguments>
+                <message_argument value="org.eclipse.xtext.XtextPackage.Literals"/>
                 <message_argument value="GROUP__GUARD_CONDITIONS"/>
-            </message_arguments>
-        </filter>
-        <filter id="403767336">
-            <message_arguments>
-                <message_argument value="org.eclipse.xtext.XtextPackage.Literals"/>
-                <message_argument value="GUARD_CONDITION"/>
-            </message_arguments>
-        </filter>
-        <filter id="403767336">
-            <message_arguments>
-                <message_argument value="org.eclipse.xtext.XtextPackage.Literals"/>
-                <message_argument value="GUARD_CONDITION__PARAMETER"/>
-            </message_arguments>
-        </filter>
-        <filter id="403767336">
-            <message_arguments>
-                <message_argument value="org.eclipse.xtext.XtextPackage.Literals"/>
-                <message_argument value="GUARD_CONDITION__PASS_IF_TRUE"/>
             </message_arguments>
         </filter>
         <filter id="403767336">
@@ -126,7 +81,7 @@
         <filter id="403767336">
             <message_arguments>
                 <message_argument value="org.eclipse.xtext.XtextPackage.Literals"/>
-                <message_argument value="NAMED_ARGUMENT__EXPLICIT_VALUE"/>
+                <message_argument value="NAMED_ARGUMENT__CALLED_BY_NAME"/>
             </message_arguments>
         </filter>
         <filter id="403767336">
@@ -187,11 +142,6 @@
             <message_arguments>
                 <message_argument value="org.eclipse.xtext.XtextPackage.Literals"/>
                 <message_argument value="RULE_CALL__EXPLICITLY_CALLED"/>
-            </message_arguments>
-        </filter>
-        <filter id="1211105284">
-            <message_arguments>
-                <message_argument value="GROUP__GUARD_CONDITIONS"/>
             </message_arguments>
         </filter>
     </resource>

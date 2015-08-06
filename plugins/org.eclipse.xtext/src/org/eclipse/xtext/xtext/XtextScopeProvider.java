@@ -101,7 +101,7 @@ public class XtextScopeProvider extends AbstractScopeProvider {
 		if(reference == XtextPackage.eINSTANCE.getRuleCall_Rule()) {
 			return createScope(context.eResource(), reference.getEReferenceType(), new SuperCallScope(context));
 		}
-		if (reference == XtextPackage.eINSTANCE.getGuardCondition_Parameter() || reference == XtextPackage.eINSTANCE.getNamedArgument_Value()) {
+		if (reference == XtextPackage.eINSTANCE.getCondition_Value() || reference == XtextPackage.eINSTANCE.getNamedArgument_Value()) {
 			ParserRule rule = GrammarUtil.containingParserRule(context);
 			if (rule == null) {
 				return IScope.NULLSCOPE;

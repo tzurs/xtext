@@ -112,11 +112,13 @@ public class XtextValidator extends AbstractDeclarativeValidator {
 	}
 	
 	@Check
-	public void checkNumberOfNamedArguments(RuleCall call) {
+	public void checkOrderOfArguments(RuleCall call) {
 		AbstractRule rule = call.getRule();
 		if (rule instanceof ParserRule) {
 			Set<Parameter> usedParameters = Sets.newHashSet();
 			boolean hasError = false;
+			boolean hasPositionalArgument = false;
+			boolean hasNamedArgument = false;
 			for(NamedArgument argument: call.getArguments()) {
 				Parameter parameter = argument.getParameter();
 				if (parameter == null || parameter.eIsProxy()) {
@@ -126,29 +128,50 @@ public class XtextValidator extends AbstractDeclarativeValidator {
 					error("Duplicate value for parameter " + parameter.getName(),
 							argument, XtextPackage.Literals.NAMED_ARGUMENT__PARAMETER);
 				}
+				if (!argument.isCalledByName()) {
+					hasPositionalArgument = true;
+				} else {
+					hasNamedArgument = true;
+				}
 			}
 			if (hasError) {
 				return;
 			}
 			List<Parameter> parameters = ((ParserRule) rule).getParameters();
-			if (usedParameters.size() != parameters.size()) {
-				StringBuilder missing = new StringBuilder();
-				int count = 0;
-				for(Parameter parameter: parameters) {
-					if (!usedParameters.contains(parameter)) {
-						if (count > 0) {
-							missing.append(", ");
+			if (!hasPositionalArgument) {
+				if (usedParameters.size() != parameters.size()) {
+					StringBuilder missing = new StringBuilder();
+					int count = 0;
+					for(Parameter parameter: parameters) {
+						if (!usedParameters.contains(parameter)) {
+							if (count > 0) {
+								missing.append(", ");
+							}
+							missing.append(parameter.getName());
+							count++;
 						}
-						missing.append(parameter.getName());
-						count++;
+					}
+					if (count == 1) {
+						error("Missing argument for parameter " + missing,
+								call, XtextPackage.Literals.RULE_CALL__RULE);
+					} else {
+						error(count + " missing arguments for the following parameters: " + missing,
+								call, XtextPackage.Literals.RULE_CALL__RULE); 
 					}
 				}
-				if (count == 1) {
-					error("Missing argument for parameter " + missing,
+			} else {
+				if (usedParameters.size() != parameters.size()) {
+					error(String.format("Expected %d arguments but got %d", parameters.size(), usedParameters.size()),
 							call, XtextPackage.Literals.RULE_CALL__RULE);
-				} else {
-					error(count + " missing arguments for the following parameters: " + missing,
-							call, XtextPackage.Literals.RULE_CALL__RULE); 
+				} else if (hasNamedArgument) {
+					for(int i = 0, max = Math.min(usedParameters.size(), parameters.size()); i < max; i++) {
+						NamedArgument argument = call.getArguments().get(i);
+						Parameter param = parameters.get(i);
+						if (argument.isCalledByName() && argument.getParameter() != param) {
+							error("Out of sequence named argument. Expected value for " + param.getName(),
+									argument, XtextPackage.Literals.NAMED_ARGUMENT__PARAMETER);
+						}
+					}
 				}
 			}
 		}

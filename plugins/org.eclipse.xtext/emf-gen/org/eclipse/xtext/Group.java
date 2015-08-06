@@ -26,7 +26,7 @@ import org.eclipse.emf.common.util.EList;
 public interface Group extends CompoundElement {
 	/**
 	 * Returns the value of the '<em><b>Guard Conditions</b></em>' containment reference list.
-	 * The list contents are of type {@link org.eclipse.xtext.GuardCondition}.
+	 * The list contents are of type {@link org.eclipse.xtext.Condition}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Guard Conditions</em>' containment reference list isn't clear,
@@ -39,6 +39,6 @@ public interface Group extends CompoundElement {
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<GuardCondition> getGuardConditions();
+	EList<Condition> getGuardConditions();
 
 } // Group

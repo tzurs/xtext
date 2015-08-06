@@ -25,10 +25,10 @@ import org.eclipse.xtext.AbstractMetamodelDeclaration;
 import org.eclipse.xtext.AbstractRule;
 import org.eclipse.xtext.Alternatives;
 import org.eclipse.xtext.Assignment;
+import org.eclipse.xtext.Condition;
 import org.eclipse.xtext.Grammar;
 import org.eclipse.xtext.GrammarUtil;
 import org.eclipse.xtext.Group;
-import org.eclipse.xtext.GuardCondition;
 import org.eclipse.xtext.NamedArgument;
 import org.eclipse.xtext.Parameter;
 import org.eclipse.xtext.ParserRule;
@@ -62,7 +62,7 @@ public class XtextLinkerTest extends AbstractXtextTests {
     _builder.newLine();
     _builder.append("generate test \'http://test\'");
     _builder.newLine();
-    _builder.append("Root[MyArg]: [+MyArg] name=ID | [!MyArg] name=STRING;");
+    _builder.append("Root<MyArg>: <MyArg> name=ID | <!MyArg> name=STRING;");
     _builder.newLine();
     final String grammarAsString = _builder.toString();
     EObject _model = this.getModel(grammarAsString);
@@ -74,24 +74,24 @@ public class XtextLinkerTest extends AbstractXtextTests {
     final Alternatives alternatives = ((Alternatives) _alternatives);
     EList<AbstractElement> _elements = alternatives.getElements();
     AbstractElement _head_1 = IterableExtensions.<AbstractElement>head(_elements);
-    EList<GuardCondition> _guardConditions = ((Group) _head_1).getGuardConditions();
-    final GuardCondition firstGuard = IterableExtensions.<GuardCondition>head(_guardConditions);
+    EList<Condition> _guardConditions = ((Group) _head_1).getGuardConditions();
+    final Condition firstGuard = IterableExtensions.<Condition>head(_guardConditions);
     EList<Parameter> _parameters = rootRule.getParameters();
     Parameter _head_2 = IterableExtensions.<Parameter>head(_parameters);
-    Parameter _parameter = firstGuard.getParameter();
-    Assert.assertEquals(_head_2, _parameter);
-    boolean _isPassIfTrue = firstGuard.isPassIfTrue();
-    Assert.assertTrue(_isPassIfTrue);
+    Parameter _value = firstGuard.getValue();
+    Assert.assertEquals(_head_2, _value);
+    boolean _isNegate = firstGuard.isNegate();
+    Assert.assertFalse(_isNegate);
     EList<AbstractElement> _elements_1 = alternatives.getElements();
     AbstractElement _last = IterableExtensions.<AbstractElement>last(_elements_1);
-    EList<GuardCondition> _guardConditions_1 = ((Group) _last).getGuardConditions();
-    final GuardCondition secondGuard = IterableExtensions.<GuardCondition>head(_guardConditions_1);
+    EList<Condition> _guardConditions_1 = ((Group) _last).getGuardConditions();
+    final Condition secondGuard = IterableExtensions.<Condition>head(_guardConditions_1);
     EList<Parameter> _parameters_1 = rootRule.getParameters();
     Parameter _head_3 = IterableExtensions.<Parameter>head(_parameters_1);
-    Parameter _parameter_1 = secondGuard.getParameter();
-    Assert.assertEquals(_head_3, _parameter_1);
-    boolean _isPassIfTrue_1 = secondGuard.isPassIfTrue();
-    Assert.assertFalse(_isPassIfTrue_1);
+    Parameter _value_1 = secondGuard.getValue();
+    Assert.assertEquals(_head_3, _value_1);
+    boolean _isNegate_1 = secondGuard.isNegate();
+    Assert.assertTrue(_isNegate_1);
   }
   
   @Test
@@ -101,9 +101,9 @@ public class XtextLinkerTest extends AbstractXtextTests {
     _builder.newLine();
     _builder.append("generate test \'http://test\'");
     _builder.newLine();
-    _builder.append("Root[MyArg]: rule=Rule[+MyParam];");
+    _builder.append("Root<MyArg>: rule=Rule<MyArg>;");
     _builder.newLine();
-    _builder.append("Rule[MyParam]: name=ID child=Root[MyArg=MyParam]?;");
+    _builder.append("Rule<MyParam>: name=ID child=Root<MyArg=MyParam>?;");
     _builder.newLine();
     final String grammarAsString = _builder.toString();
     EObject _model = this.getModel(grammarAsString);
@@ -133,15 +133,15 @@ public class XtextLinkerTest extends AbstractXtextTests {
   }
   
   @Test
-  public void testImplicitNamedParameterLinking() throws Exception {
+  public void testImplicitNamedParameterLinking_01() throws Exception {
     StringConcatenation _builder = new StringConcatenation();
     _builder.append("grammar test.Lang with org.eclipse.xtext.common.Terminals");
     _builder.newLine();
     _builder.append("generate test \'http://test\'");
     _builder.newLine();
-    _builder.append("Root[MyParam]: rule=Rule[+MyParam];");
+    _builder.append("Root<MyParam>: rule=Rule<MyParam>;");
     _builder.newLine();
-    _builder.append("Rule[MyParam]: name=ID child=Root[MyParam]?;");
+    _builder.append("Rule<MyParam>: name=ID child=Root<MyParam>?;");
     _builder.newLine();
     final String grammarAsString = _builder.toString();
     EObject _model = this.getModel(grammarAsString);
@@ -168,6 +168,42 @@ public class XtextLinkerTest extends AbstractXtextTests {
     Parameter _head_2 = IterableExtensions.<Parameter>head(_parameters_1);
     Parameter _value = argument.getValue();
     Assert.assertEquals(_head_2, _value);
+  }
+  
+  @Test
+  public void testImplicitNamedParameterLinking_02() throws Exception {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("grammar test.Lang with org.eclipse.xtext.common.Terminals");
+    _builder.newLine();
+    _builder.append("generate test \'http://test\'");
+    _builder.newLine();
+    _builder.append("Root<MyParam>: rule=Rule<true>;");
+    _builder.newLine();
+    _builder.append("Rule<MyParam>: name=ID child=Root<false>?;");
+    _builder.newLine();
+    final String grammarAsString = _builder.toString();
+    EObject _model = this.getModel(grammarAsString);
+    final Grammar grammar = ((Grammar) _model);
+    EList<AbstractRule> _rules = grammar.getRules();
+    AbstractRule _head = IterableExtensions.<AbstractRule>head(_rules);
+    final ParserRule rootRule = ((ParserRule) _head);
+    EList<AbstractRule> _rules_1 = grammar.getRules();
+    AbstractRule _last = IterableExtensions.<AbstractRule>last(_rules_1);
+    final ParserRule lastRule = ((ParserRule) _last);
+    AbstractElement _alternatives = lastRule.getAlternatives();
+    EList<AbstractElement> _elements = ((Group) _alternatives).getElements();
+    AbstractElement _last_1 = IterableExtensions.<AbstractElement>last(_elements);
+    final Assignment lastAssignment = ((Assignment) _last_1);
+    AbstractElement _terminal = lastAssignment.getTerminal();
+    final RuleCall ruleCall = ((RuleCall) _terminal);
+    EList<NamedArgument> _arguments = ruleCall.getArguments();
+    final NamedArgument argument = IterableExtensions.<NamedArgument>head(_arguments);
+    EList<Parameter> _parameters = rootRule.getParameters();
+    Parameter _head_1 = IterableExtensions.<Parameter>head(_parameters);
+    Parameter _parameter = argument.getParameter();
+    Assert.assertEquals(_head_1, _parameter);
+    boolean _isLiteralValue = argument.isLiteralValue();
+    Assert.assertFalse(_isLiteralValue);
   }
   
   @Test

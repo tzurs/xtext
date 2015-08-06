@@ -1420,6 +1420,7 @@ public interface XtextPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Guard Conditions</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
+	 * @since 2.9
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
@@ -1621,14 +1622,14 @@ public interface XtextPackage extends EPackage {
 	int NAMED_ARGUMENT__VALUE = 2;
 
 	/**
-	 * The feature id for the '<em><b>Explicit Value</b></em>' attribute.
+	 * The feature id for the '<em><b>Called By Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * @since 2.9
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int NAMED_ARGUMENT__EXPLICIT_VALUE = 3;
+	int NAMED_ARGUMENT__CALLED_BY_NAME = 3;
 
 	/**
 	 * The number of structural features of the '<em>Named Argument</em>' class.
@@ -1642,42 +1643,45 @@ public interface XtextPackage extends EPackage {
 
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.xtext.impl.GuardConditionImpl <em>Guard Condition</em>}' class.
+	 * The meta object id for the '{@link org.eclipse.xtext.impl.ConditionImpl <em>Condition</em>}' class.
 	 * <!-- begin-user-doc -->
+	 * @since 2.9
 	 * <!-- end-user-doc -->
-	 * @see org.eclipse.xtext.impl.GuardConditionImpl
-	 * @see org.eclipse.xtext.impl.XtextPackageImpl#getGuardCondition()
+	 * @see org.eclipse.xtext.impl.ConditionImpl
+	 * @see org.eclipse.xtext.impl.XtextPackageImpl#getCondition()
 	 * @generated
 	 */
-	int GUARD_CONDITION = 28;
+	int CONDITION = 28;
 
 	/**
-	 * The feature id for the '<em><b>Parameter</b></em>' reference.
+	 * The feature id for the '<em><b>Value</b></em>' reference.
 	 * <!-- begin-user-doc -->
+	 * @since 2.9
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GUARD_CONDITION__PARAMETER = 0;
+	int CONDITION__VALUE = 0;
 
 	/**
-	 * The feature id for the '<em><b>Pass If True</b></em>' attribute.
+	 * The feature id for the '<em><b>Negate</b></em>' attribute.
 	 * <!-- begin-user-doc -->
+	 * @since 2.9
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GUARD_CONDITION__PASS_IF_TRUE = 1;
+	int CONDITION__NEGATE = 1;
 
 	/**
-	 * The number of structural features of the '<em>Guard Condition</em>' class.
+	 * The number of structural features of the '<em>Condition</em>' class.
 	 * <!-- begin-user-doc -->
+	 * @since 2.9
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GUARD_CONDITION_FEATURE_COUNT = 2;
-
+	int CONDITION_FEATURE_COUNT = 2;
 
 	/**
 	 * Returns the meta object for class '{@link org.eclipse.xtext.Grammar <em>Grammar</em>}'.
@@ -2336,6 +2340,7 @@ public interface XtextPackage extends EPackage {
 	/**
 	 * Returns the meta object for the containment reference list '{@link org.eclipse.xtext.Group#getGuardConditions <em>Guard Conditions</em>}'.
 	 * <!-- begin-user-doc -->
+	 * @since 2.9
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Guard Conditions</em>'.
 	 * @see org.eclipse.xtext.Group#getGuardConditions()
@@ -2478,48 +2483,51 @@ public interface XtextPackage extends EPackage {
 	EReference getNamedArgument_Value();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.eclipse.xtext.NamedArgument#isExplicitValue <em>Explicit Value</em>}'.
+	 * Returns the meta object for the attribute '{@link org.eclipse.xtext.NamedArgument#isCalledByName <em>Called By Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * @since 2.9
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Explicit Value</em>'.
-	 * @see org.eclipse.xtext.NamedArgument#isExplicitValue()
+	 * @return the meta object for the attribute '<em>Called By Name</em>'.
+	 * @see org.eclipse.xtext.NamedArgument#isCalledByName()
 	 * @see #getNamedArgument()
 	 * @generated
 	 */
-	EAttribute getNamedArgument_ExplicitValue();
+	EAttribute getNamedArgument_CalledByName();
 
 	/**
-	 * Returns the meta object for class '{@link org.eclipse.xtext.GuardCondition <em>Guard Condition</em>}'.
+	 * Returns the meta object for class '{@link org.eclipse.xtext.Condition <em>Condition</em>}'.
 	 * <!-- begin-user-doc -->
+	 * @since 2.9
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Guard Condition</em>'.
-	 * @see org.eclipse.xtext.GuardCondition
+	 * @return the meta object for class '<em>Condition</em>'.
+	 * @see org.eclipse.xtext.Condition
 	 * @generated
 	 */
-	EClass getGuardCondition();
+	EClass getCondition();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.eclipse.xtext.GuardCondition#getParameter <em>Parameter</em>}'.
+	 * Returns the meta object for the reference '{@link org.eclipse.xtext.Condition#getValue <em>Value</em>}'.
 	 * <!-- begin-user-doc -->
+	 * @since 2.9
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parameter</em>'.
-	 * @see org.eclipse.xtext.GuardCondition#getParameter()
-	 * @see #getGuardCondition()
+	 * @return the meta object for the reference '<em>Value</em>'.
+	 * @see org.eclipse.xtext.Condition#getValue()
+	 * @see #getCondition()
 	 * @generated
 	 */
-	EReference getGuardCondition_Parameter();
+	EReference getCondition_Value();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.eclipse.xtext.GuardCondition#isPassIfTrue <em>Pass If True</em>}'.
+	 * Returns the meta object for the attribute '{@link org.eclipse.xtext.Condition#isNegate <em>Negate</em>}'.
 	 * <!-- begin-user-doc -->
+	 * @since 2.9
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Pass If True</em>'.
-	 * @see org.eclipse.xtext.GuardCondition#isPassIfTrue()
-	 * @see #getGuardCondition()
+	 * @return the meta object for the attribute '<em>Negate</em>'.
+	 * @see org.eclipse.xtext.Condition#isNegate()
+	 * @see #getCondition()
 	 * @generated
 	 */
-	EAttribute getGuardCondition_PassIfTrue();
+	EAttribute getCondition_Negate();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -3088,6 +3096,7 @@ public interface XtextPackage extends EPackage {
 		/**
 		 * The meta object literal for the '<em><b>Guard Conditions</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
+		 * @since 2.9
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
@@ -3206,42 +3215,42 @@ public interface XtextPackage extends EPackage {
 		EReference NAMED_ARGUMENT__VALUE = eINSTANCE.getNamedArgument_Value();
 
 		/**
-		 * The meta object literal for the '<em><b>Explicit Value</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Called By Name</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * @since 2.9
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute NAMED_ARGUMENT__EXPLICIT_VALUE = eINSTANCE.getNamedArgument_ExplicitValue();
+		EAttribute NAMED_ARGUMENT__CALLED_BY_NAME = eINSTANCE.getNamedArgument_CalledByName();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.xtext.impl.GuardConditionImpl <em>Guard Condition</em>}' class.
+		 * The meta object literal for the '{@link org.eclipse.xtext.impl.ConditionImpl <em>Condition</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * @since 2.9
 		 * <!-- end-user-doc -->
-		 * @see org.eclipse.xtext.impl.GuardConditionImpl
-		 * @see org.eclipse.xtext.impl.XtextPackageImpl#getGuardCondition()
+		 * @see org.eclipse.xtext.impl.ConditionImpl
+		 * @see org.eclipse.xtext.impl.XtextPackageImpl#getCondition()
 		 * @generated
 		 */
-		EClass GUARD_CONDITION = eINSTANCE.getGuardCondition();
+		EClass CONDITION = eINSTANCE.getCondition();
 
 		/**
-		 * The meta object literal for the '<em><b>Parameter</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Value</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * @since 2.9
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference GUARD_CONDITION__PARAMETER = eINSTANCE.getGuardCondition_Parameter();
+		EReference CONDITION__VALUE = eINSTANCE.getCondition_Value();
 
 		/**
-		 * The meta object literal for the '<em><b>Pass If True</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Negate</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * @since 2.9
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute GUARD_CONDITION__PASS_IF_TRUE = eINSTANCE.getGuardCondition_PassIfTrue();
+		EAttribute CONDITION__NEGATE = eINSTANCE.getCondition_Negate();
 
 	}
 
