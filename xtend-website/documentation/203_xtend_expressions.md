@@ -652,7 +652,7 @@ A lambda expression also captures the current scope. Any final local variables a
 The variable `this` refers to the outer class. The lambda instance itself is available with the identifier `self`.
 
 ```xtend
-val lineReader = new LineReader(r);
+val lineReader = new LineReader(r)
 val AbstractIterator<String> lineIterator = [|
 	val result = lineReader.readLine 
 	if (result==null)
